@@ -1,0 +1,9 @@
+gradio>=4.44
+transformers>=4.51
+torch
+accelerate
+bitsandbytes
+sentencepiece
+pypdf
+numpy
+scikit-learn

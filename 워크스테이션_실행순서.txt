@@ -1,0 +1,207 @@
+====================================================================
+ ko-lettucedetect  워크스테이션 실행 순서
+ 대상: A5000 1장(24GB) 리눅스 워크스테이션
+ 위에서부터 순서대로 복사해서 붙여넣으면 됩니다.
+====================================================================
+
+
+[0] USB에서 복사
+--------------------------------------------------------------------
+USB가 어디에 붙었는지 먼저 확인
+
+    lsblk
+    ls /media/$USER/    (또는 /mnt/, /run/media/$USER/)
+
+폴더를 홈으로 복사
+
+    cp -r /media/$USER/USB이름/ko_lettucedetect ~/
+    cd ~/ko_lettucedetect
+    ls
+
+  → config.py, README.md, src/, scripts/ 가 보이면 정상 (파일 12개)
+
+
+[1] 환경 확인
+--------------------------------------------------------------------
+    nvidia-smi
+    python3 --version
+
+확인할 것
+  - GPU 이름에 A5000, 메모리 24564MiB 정도가 보이는지
+  - 다른 사람이 GPU를 이미 쓰고 있지 않은지 (Memory-Usage 확인)
+  - python 3.10 이상인지
+
+
+[2] 가상환경 2개 만들기  (한 번만 하면 됩니다)
+--------------------------------------------------------------------
+※ vLLM이 torch 버전을 고정해서 학습 환경과 섞으면 깨집니다. 반드시 분리.
+
+    cd ~/ko_lettucedetect
+
+    python3 -m venv .venv-train
+    source .venv-train/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements-train.txt
+    deactivate
+
+    python3 -m venv .venv-vllm
+    source .venv-vllm/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements-translate.txt
+    deactivate
+
+  (설치에 시간이 꽤 걸립니다. vllm 쪽이 특히 오래 걸림)
+
+
+[3] RAGTruth 데이터 받기
+--------------------------------------------------------------------
+    cd ~/ko_lettucedetect
+    git clone https://github.com/ParticleMedia/RAGTruth.git data/RAGTruth
+    ls data/RAGTruth/dataset/
+
+  → source_info.jsonl, response.jsonl 이 보여야 합니다.
+    파일명이 다르면 config.py 의 SOURCE_INFO_FILE / RESPONSE_FILE 을 고치세요.
+
+
+[4] ★ 가장 먼저 할 것 — 데이터 스키마 확인
+--------------------------------------------------------------------
+    cd ~/ko_lettucedetect
+    source .venv-train/bin/activate
+    python -m src.prepare_ragtruth --inspect
+
+화면에 나오는 키 이름들을 config.py 의 FIELD_ 로 시작하는 값들과 비교하세요.
+
+  예) 출력이  ['id','source_id','model','labels','response','split']  이면
+      config.py 의 FIELD_RESPONSE_ID="id", FIELD_LABELS="labels" ... 와 일치 → 그대로 진행
+      다르면 config.py 의 그 줄만 고치면 됩니다. 다른 파일은 건드릴 필요 없음.
+
+  labels 안의 키(start, end, text)도 함께 확인하세요.
+
+
+[5] 파일럿 200건 실행
+--------------------------------------------------------------------
+    cd ~/ko_lettucedetect
+    chmod +x scripts/run_pilot.sh
+    bash scripts/run_pilot.sh 200
+
+무슨 일이 일어나는지
+  1) 200건 골라서 <HAL> 태그 삽입
+  2) gemma-3-12b-it 로 한국어 번역
+  3) gemma-3-27b-it(int4)로도 번역        ← 느립니다. 건너뛰려면 아래 참고
+  4) 두 결과의 태그 보존율을 나란히 보여줌
+  5) 어느 쪽으로 학습할지 물어봄 → 12b 또는 27b 입력
+  6) 학습 + 평가
+
+27B를 건너뛰고 12B만 빠르게 보고 싶으면
+
+    SKIP_27B=1 bash scripts/run_pilot.sh 200
+
+첫 실행은 모델 다운로드 때문에 오래 걸립니다(12B 약 24GB 내려받음).
+
+
+[6] 결과 확인
+--------------------------------------------------------------------
+    cat work/qc_report_12b.md
+    cat work/qc_report_27b.md
+    cat runs/*/eval.json
+
+봐야 할 숫자
+  - "태그 보존율"  ← 이게 이번 파일럿의 핵심. 90% 넘으면 좋음
+  - 12B와 27B의 보존율 차이
+      거의 같다  → 전체 번역을 12B로 돌리면 됨 (1장으로 현실적)
+      27B가 확연히 높다 → 전체 번역 방법을 다시 논의해야 함
+  - eval.json 의 f1
+      참고 기준: 터키팀 전체 F1 0.7266 (다만 200건 학습이라 낮게 나오는 게 정상)
+
+
+====================================================================
+ 문제가 생겼을 때
+====================================================================
+
+■ "bad interpreter: /bin/bash^M" 또는 "$'\r': command not found"
+    sudo apt install dos2unix
+    dos2unix scripts/run_pilot.sh
+  (윈도우에서 옮기면서 줄바꿈이 바뀐 경우)
+
+■ CUDA out of memory  (번역 단계)
+  동시 처리량을 낮추세요
+    python -m src.translate --model google/gemma-3-12b-it \
+        --quantization bitsandbytes --max-num-seqs 4 --max-model-len 4096 --tag 12b
+  그래도 안 되면 --gpu-mem 0.85 추가
+
+■ CUDA out of memory  (학습 단계)
+  시퀀스 길이를 먼저 줄이세요
+    python -m src.train --model Alibaba-NLP/gte-multilingual-base \
+        --data work/ko_ragtruth_12b.jsonl --max-length 2048 --trust-remote-code
+
+■ 27B가 안 올라감
+  정상입니다. 24GB 1장에는 빠듯합니다. SKIP_27B=1 로 12B만 쓰세요.
+
+■ "fast tokenizer 가 필요합니다" 에러
+  그 모델은 못 씁니다. 다른 인코더로 바꾸세요
+    ENCODER=xlm-roberta-base bash scripts/run_pilot.sh 200
+
+■ trust_remote_code 관련 에러
+  gte-multilingual-base 는 --trust-remote-code 가 필요합니다.
+  스크립트에는 이미 들어가 있고, 직접 실행할 때만 붙이면 됩니다.
+
+■ 학습 데이터가 비었다고 나옴
+  postprocess 를 통과한 건이 없다는 뜻입니다.
+    cat work/qc_report_12b.md      ← 실패 사유 확인
+  "태그 개수 불일치" 가 대부분이면 번역 모델이 프롬프트를 안 지킨 것.
+  이 경우 그 자체가 중요한 실험 결과이니 리포트를 저장해 두세요.
+
+■ GPU를 다른 사람이 쓰고 있음
+    nvidia-smi
+  로 확인하고, 비었을 때 돌리세요. 학습은 몇 시간 걸립니다.
+
+
+====================================================================
+ 전체 데이터로 확대할 때 (파일럿 성공 후)
+====================================================================
+※ 전체는 2~4일 연속 가동 예상. 세션이 끊겨도 살아남게 nohup 으로 돌리세요.
+
+    cd ~/ko_lettucedetect
+    source .venv-train/bin/activate
+    python -m src.prepare_ragtruth
+    deactivate
+
+    source .venv-vllm/bin/activate
+    nohup python -m src.translate --model google/gemma-3-12b-it \
+        --quantization bitsandbytes --tag full > work/translate.log 2>&1 &
+
+    tail -f work/translate.log         (진행 상황 보기, Ctrl-C 로 빠져나와도 번역은 계속됨)
+
+번역이 끝나면
+
+    source .venv-train/bin/activate
+    python -m src.postprocess --in work/translated_full.jsonl
+    python -m src.train    --model Alibaba-NLP/gte-multilingual-base \
+                           --data work/ko_ragtruth_full.jsonl --trust-remote-code
+    python -m src.evaluate --run runs/gte-multilingual-base \
+                           --data work/ko_ragtruth_full.jsonl --trust-remote-code
+
+
+====================================================================
+ 인코더 3종 비교 (발표에 낼 표)
+====================================================================
+--model 만 바꿔서 세 번 돌리면 됩니다.
+
+    python -m src.train --model Alibaba-NLP/gte-multilingual-base \
+        --data work/ko_ragtruth_full.jsonl --out runs/gte --trust-remote-code
+    python -m src.train --model xlm-roberta-base \
+        --data work/ko_ragtruth_full.jsonl --out runs/xlmr --max-length 512
+    python -m src.train --model klue/roberta-base \
+        --data work/ko_ragtruth_full.jsonl --out runs/klue --max-length 512
+
+각각 evaluate 를 돌리면 runs/*/eval.json 에 과제별(QA/Data2txt/Summary) 점수가 남습니다.
+
+
+====================================================================
+ 결과 가져오기 (노트북으로)
+====================================================================
+    cd ~/ko_lettucedetect
+    tar czf 결과.tar.gz work/qc_report_*.md runs/*/eval.json runs/*/train_eval.json
+    ls -lh 결과.tar.gz
+
+이 파일만 USB로 가져오면 됩니다. 모델 가중치는 크니 두고 오세요.

@@ -1,0 +1,5 @@
+# 번역 전용 환경 (.venv-vllm). vLLM 이 torch 버전을 고정하므로 학습 환경과 분리한다.
+vllm>=0.7.0
+transformers>=4.50.0
+sentencepiece
+protobuf
