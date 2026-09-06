@@ -20,7 +20,7 @@ import numpy as np
 import torch
 from sklearn.metrics import precision_recall_fscore_support, roc_auc_score
 from transformers import (AutoModelForTokenClassification, AutoTokenizer,
-                          Trainer, TrainingArguments)
+                          Trainer, TrainerCallback, TrainingArguments)
 
 import config as C
 from src.dataset import Collator, HalluDataset
@@ -90,6 +90,44 @@ def build_training_args(total_steps: int, **kw):
     return TrainingArguments(**kw)
 
 
+class CollapseGuard(TrainerCallback):
+    """학습이 무너졌으면 일찍 멈춘다.
+
+    bge-m3 는 XLM-RoBERTa-large 기반이라 파인튜닝이 불안정하다. 실제로 영어 대조
+    런이 6 에폭 내내 AUROC 0.50 언저리에 머물다 상수로 굳었다(모든 토큰에 같은 값을
+    뱉는 상태). **다섯 시간을 태우고 나서야 그것을 알았다.**
+
+    AUROC 은 임계값과 무관하게 "순위를 매기는 능력" 을 보므로, 학습이 되고 있으면
+    첫 에폭부터 0.5 를 뚜렷하게 넘는다. 두 에폭 연속 문턱을 못 넘으면 되살아날
+    가능성이 낮으므로 멈추고, 무엇을 바꿔야 하는지 함께 찍는다.
+    """
+
+    def __init__(self, floor: float = 0.55, patience: int = 2):
+        self.floor = floor
+        self.patience = patience
+        self.bad = 0
+
+    def on_evaluate(self, args, state, control, metrics=None, **kw):
+        auroc = (metrics or {}).get("eval_auroc")
+        if auroc is None:
+            return
+        if auroc < self.floor:
+            self.bad += 1
+            print(f"[학습] ! AUROC {auroc:.4f} — 아직 배우지 못했습니다 "
+                  f"({self.bad}/{self.patience})")
+            if self.bad >= self.patience:
+                print("[학습] !! 두 에폭 연속으로 신호가 없어 멈춥니다. "
+                      "AUROC 0.5 는 동전 던지기와 같습니다.")
+                print("       다음을 순서대로 시도하세요 — "
+                      "① --seed 를 바꿔 다시 (large 계열은 초기값을 탄다) "
+                      "② --lr 5e-6 로 낮추기 "
+                      "③ --grad-accum 8 로 배치 키우기 "
+                      "④ 더 작고 안정적인 인코더(xlm-roberta-base)로 대조하기")
+                control.should_training_stop = True
+        else:
+            self.bad = 0
+
+
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
     mask = labels != C.IGNORE_INDEX
@@ -125,6 +163,10 @@ def main() -> None:
     ap.add_argument("--out", default=None)
     ap.add_argument("--class-weight", type=float, default=1.0,
                     help="환각 클래스 가중치. 1.0 이면 논문 그대로. 2~3 부터 시도해 볼 것")
+    ap.add_argument("--seed", type=int, default=42,
+                    help="난수 씨앗. large 계열이 무너지면 이것부터 바꿔 본다")
+    ap.add_argument("--no-guard", action="store_true",
+                    help="학습이 안 되어도 끝까지 돌린다")
     ap.add_argument("--save-total-limit", type=int, default=2,
                     help="남겨 둘 체크포인트 수. bge-m3 는 하나에 7GB 쯤이라 "
                          "디스크가 빠듯하면 1 로 줄인다")
@@ -188,6 +230,7 @@ def main() -> None:
         metric_for_best_model="hallu_f1",
         greater_is_better=True,
         report_to=[],
+        seed=args.seed,
     )
 
     kw = dict(
@@ -202,6 +245,8 @@ def main() -> None:
         trainer = WeightedTrainer(class_weight=args.class_weight, **kw)
     else:
         trainer = Trainer(**kw)
+    if not args.no_guard and len(eval_ds):
+        trainer.add_callback(CollapseGuard())
     trainer.train()
     trainer.save_model(out_dir)
     tok.save_pretrained(out_dir)
