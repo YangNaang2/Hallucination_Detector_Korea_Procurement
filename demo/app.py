@@ -46,14 +46,19 @@ SYSTEM = (
 
 
 class Retriever:
-    def __init__(self):
-        if not (INDEX_DIR / "vectors.npy").exists():
-            raise SystemExit("[!] 인덱스가 없습니다. 먼저 build_index.py 를 돌리세요.")
+    def __init__(self, index_dir=None):
+        # 문서 묶음마다 색인을 따로 두고 골라 쓸 수 있게 한다.
+        # 학사요람(검증된 세트)을 남겨 둔 채 MSDS 로 갈아탈 때 필요하다.
+        idx = Path(index_dir) if index_dir else INDEX_DIR
+        if not (idx / "vectors.npy").exists():
+            raise SystemExit(
+                f"[!] 인덱스가 없습니다: {idx}"
+                f"  →  python demo/build_index.py --src <문서폴더> --out {idx}")
         from transformers import AutoModel, AutoTokenizer
-        meta = json.loads((INDEX_DIR / "meta.json").read_text(encoding="utf-8"))
-        self.vecs = np.load(INDEX_DIR / "vectors.npy")
+        meta = json.loads((idx / "meta.json").read_text(encoding="utf-8"))
+        self.vecs = np.load(idx / "vectors.npy")
         self.chunks = [json.loads(l) for l in
-                       (INDEX_DIR / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+                       (idx / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.tok = AutoTokenizer.from_pretrained(meta["embedder"])
         self.model = AutoModel.from_pretrained(meta["embedder"]).to(self.device).eval()
@@ -184,12 +189,14 @@ def main() -> None:
                     help="창 집계 방식. 긴 실제 문서에는 min2 를 권한다")
     ap.add_argument("--generator", default="google/gemma-3-12b-it")
     ap.add_argument("--no-generator", action="store_true")
+    ap.add_argument("--index", default=None,
+                    help="쓸 색인 폴더. 생략하면 demo/index")
     ap.add_argument("--share", action="store_true")
     args = ap.parse_args()
 
     det = HalluDetector(args.run, max_length=args.max_length, threshold=args.threshold,
                         agg=args.agg)
-    ret = Retriever()
+    ret = Retriever(args.index)
     gen = None if args.no_generator else Generator(args.generator)
     build_ui(det, ret, gen, args.threshold).launch(share=args.share)
 

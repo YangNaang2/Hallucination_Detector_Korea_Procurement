@@ -91,6 +91,9 @@ def main() -> None:
     ap.add_argument("--embedder", default=DEFAULT_EMBEDDER)
     ap.add_argument("--chunk-size", type=int, default=700)
     ap.add_argument("--overlap", type=int, default=100)
+    ap.add_argument("--out", default=str(INDEX_DIR),
+                    help="색인을 저장할 폴더. 문서 묶음마다 따로 두면 "
+                         "학사요람과 MSDS 를 번갈아 쓸 수 있다")
     args = ap.parse_args()
 
     src = Path(args.src)
@@ -111,12 +114,13 @@ def main() -> None:
 
     vecs = embed([c["text"] for c in chunks], args.embedder)
 
-    INDEX_DIR.mkdir(parents=True, exist_ok=True)
-    np.save(INDEX_DIR / "vectors.npy", vecs)
-    with open(INDEX_DIR / "chunks.jsonl", "w", encoding="utf-8") as f:
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    np.save(out_dir / "vectors.npy", vecs)
+    with open(out_dir / "chunks.jsonl", "w", encoding="utf-8") as f:
         for c in chunks:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
-    (INDEX_DIR / "meta.json").write_text(
+    (out_dir / "meta.json").write_text(
         json.dumps({"embedder": args.embedder, "n_chunks": len(chunks),
                     "chunk_size": args.chunk_size, "overlap": args.overlap},
                    ensure_ascii=False, indent=2), encoding="utf-8")

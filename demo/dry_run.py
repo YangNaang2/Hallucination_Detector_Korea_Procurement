@@ -54,6 +54,8 @@ def main() -> None:
     ap.add_argument("--agg", default="min2", choices=["min", "min2", "mean"])
     ap.add_argument("--generator", default="google/gemma-3-12b-it")
     ap.add_argument("--no-generator", action="store_true")
+    ap.add_argument("--index", default=None,
+                    help="쓸 색인 폴더. 생략하면 demo/index")
     args = ap.parse_args()
 
     qs = load_questions(Path(args.questions))
@@ -61,7 +63,7 @@ def main() -> None:
 
     det = HalluDetector(args.run, max_length=args.max_length,
                         threshold=args.threshold, agg=args.agg)
-    ret = Retriever()
+    ret = Retriever(args.index)
     gen = None if args.no_generator else Generator(args.generator)
     if gen is None:
         raise SystemExit("[!] --no-generator 로는 답변을 만들 수 없어 시연 판단을 못 합니다.")
