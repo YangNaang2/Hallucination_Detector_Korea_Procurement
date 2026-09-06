@@ -125,6 +125,9 @@ def main() -> None:
     ap.add_argument("--out", default=None)
     ap.add_argument("--class-weight", type=float, default=1.0,
                     help="환각 클래스 가중치. 1.0 이면 논문 그대로. 2~3 부터 시도해 볼 것")
+    ap.add_argument("--save-total-limit", type=int, default=2,
+                    help="남겨 둘 체크포인트 수. bge-m3 는 하나에 7GB 쯤이라 "
+                         "디스크가 빠듯하면 1 로 줄인다")
     args = ap.parse_args()
 
     out_dir = args.out or str(C.RUNS_DIR / args.model.split("/")[-1])
@@ -149,6 +152,21 @@ def main() -> None:
         trust_remote_code=args.trust_remote_code,
     )
 
+    # 체크포인트 하나가 모델 크기의 3배쯤 된다(가중치 + 옵티마이저 상태).
+    # 두 시간 학습한 뒤 저장 단계에서 디스크가 터진 적이 있어 미리 경고한다.
+    try:
+        import shutil
+        n_param = sum(p.numel() for p in model.parameters())
+        need_gb = n_param * 4 * 3 * max(1, args.save_total_limit) / 1e9
+        free_gb = shutil.disk_usage(".").free / 1e9
+        print(f"[학습] 파라미터 {n_param/1e6:.0f}M · 체크포인트 {args.save_total_limit}개에 "
+              f"약 {need_gb:.1f}GB 필요 · 남은 공간 {free_gb:.1f}GB")
+        if free_gb < need_gb * 1.3:
+            print(f"[학습] ! 공간이 빠듯합니다. --save-total-limit 1 로 줄이거나 "
+                  f"runs/*/checkpoint-* 를 지우세요.")
+    except Exception:
+        pass
+
     total_steps = math.ceil(len(train_ds) / max(1, args.batch * args.grad_accum)) * args.epochs
     targs = build_training_args(
         total_steps=total_steps,
@@ -165,7 +183,7 @@ def main() -> None:
         logging_steps=50,
         eval_strategy="epoch" if len(eval_ds) else "no",
         save_strategy="epoch",
-        save_total_limit=2,
+        save_total_limit=args.save_total_limit,
         load_best_model_at_end=bool(len(eval_ds)),
         metric_for_best_model="hallu_f1",
         greater_is_better=True,
