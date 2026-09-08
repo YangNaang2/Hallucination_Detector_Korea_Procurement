@@ -9,28 +9,76 @@ const DEFAULT_THRESHOLD = 0.15;
 const USER_NAME = "박지훈";
 
 /** 환각 의심 구간에 빨간 형광펜을 칠한 답변 본문 */
+const LABEL_CONFLICT = "오류";
+const LABEL_ABSENT = "문서에 없음";
+const LABEL_SUPPORTED = "문서에서 확인";
+
+const MARK_STYLE = {
+  [LABEL_CONFLICT]: {
+    className:
+      "rounded bg-red-300/80 px-1 font-medium text-red-950 border-b-2 border-red-600",
+    title: "문서가 다루는 내용인데 세부가 어긋납니다",
+  },
+  [LABEL_ABSENT]: {
+    className:
+      "rounded bg-amber-200/90 px-1 font-medium text-amber-950 border-b-2 border-amber-500",
+    title: "문서에서 근거를 찾을 수 없는 내용입니다",
+  },
+  [LABEL_SUPPORTED]: {
+    className: "rounded bg-emerald-200/70 px-1 text-emerald-950",
+    title: "문서에서 근거를 찾은 문장입니다",
+  },
+};
+
 function HighlightedAnswer({ chunks }) {
   return (
     <p className="whitespace-pre-wrap leading-7 text-slate-800">
-      {chunks.map((chunk, i) =>
-        chunk.label === "환각 의심" ? (
-          <mark
-            key={i}
-            title="문서에서 근거를 찾지 못한 구간입니다"
-            className="rounded bg-red-300/80 px-1 font-medium text-red-950 decoration-red-600 border-b-2 border-red-600"
-          >
+      {chunks.map((chunk, i) => {
+        const style = MARK_STYLE[chunk.label];
+        return style ? (
+          <mark key={i} title={style.title} className={style.className}>
             {chunk.text}
           </mark>
         ) : (
           <span key={i}>{chunk.text}</span>
-        )
-      )}
+        );
+      })}
     </p>
   );
 }
 
+/** 두 색이 각각 무슨 뜻인지 알려 준다. 규칙 기반이라는 점도 함께 밝힌다. */
+function Legend({ conflicts, absents, supported }) {
+  if (!conflicts && !absents && !supported) return null;
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-slate-500">
+      {conflicts > 0 && (
+        <span className="flex items-center gap-1">
+          <span className="inline-block h-2.5 w-2.5 rounded-sm bg-red-300 ring-1 ring-red-600" />
+          오류 {conflicts} — 문서가 다루는 내용인데 세부가 어긋남
+        </span>
+      )}
+      {absents > 0 && (
+        <span className="flex items-center gap-1">
+          <span className="inline-block h-2.5 w-2.5 rounded-sm bg-amber-200 ring-1 ring-amber-500" />
+          문서에 없음 {absents} — 근거를 찾을 수 없음
+        </span>
+      )}
+      {supported > 0 && (
+        <span className="flex items-center gap-1">
+          <span className="inline-block h-2.5 w-2.5 rounded-sm bg-emerald-200 ring-1 ring-emerald-500" />
+          문서에서 확인 {supported}
+        </span>
+      )}
+      <span className="text-slate-400">
+        (색 없는 곳은 판단 보류 · 색 구분은 후처리 규칙이라 틀릴 수 있습니다)
+      </span>
+    </div>
+  );
+}
+
 /** suspicious_count 기반 요약 카드 + 오탐지 신고 */
-function VerdictCard({ count, ratio, onReport, reported }) {
+function VerdictCard({ count, ratio, conflicts, absents, onReport, reported }) {
   const clean = count === 0;
 
   return (
@@ -50,7 +98,12 @@ function VerdictCard({ count, ratio, onReport, reported }) {
           <p className="text-xs text-slate-500">
             {clean
               ? "답변이 업로드한 문서와 대체로 일치합니다."
-              : `답변 글자 수 기준 약 ${(ratio * 100).toFixed(1)}%가 근거 부족 구간입니다.`}
+              : [
+                  conflicts > 0 ? `오류 ${conflicts}곳` : null,
+                  absents > 0 ? `문서에 없음 ${absents}곳` : null,
+                ]
+                  .filter(Boolean)
+                  .join(" · ") + ` · 답변의 약 ${(ratio * 100).toFixed(1)}%`}
           </p>
         </div>
       </div>
@@ -96,7 +149,8 @@ export default function SecureDocChat() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [threshold, setThreshold] = useState(DEFAULT_THRESHOLD);
-  const [loose, setLoose] = useState(false);
+  // 기본은 끔 — AI 가 문서를 안 보고 답하게 두고, 문서 대조는 탐지 모델이 한다.
+  const [grounded, setGrounded] = useState(false);
 
   const onDrop = useCallback((accepted) => {
     if (accepted.length) {
@@ -132,7 +186,7 @@ export default function SecureDocChat() {
       form.append("file", file);
       form.append("question", asked);
       form.append("threshold", String(threshold));
-      form.append("loose", String(loose));
+      form.append("grounded", String(grounded));
 
       const res = await fetch(API_URL, { method: "POST", body: form });
       if (!res.ok) {
@@ -150,6 +204,9 @@ export default function SecureDocChat() {
           chunks: data.chunks ?? [],
           count: data.suspicious_count ?? 0,
           ratio: data.suspicious_ratio ?? 0,
+          conflicts: (data.chunks ?? []).filter((c) => c.label === LABEL_CONFLICT).length,
+          absents: (data.chunks ?? []).filter((c) => c.label === LABEL_ABSENT).length,
+          supported: (data.chunks ?? []).filter((c) => c.label === LABEL_SUPPORTED).length,
           generatedBy: data.generated_by,
           reported: false,
         },
@@ -174,8 +231,8 @@ export default function SecureDocChat() {
           question: target.question,
           answer: target.answer,
           flagged: target.chunks
-            .filter((c) => c.label === "환각 의심")
-            .map((c) => c.text),
+            .filter((c) => c.label === LABEL_CONFLICT || c.label === LABEL_ABSENT)
+            .map((c) => `[${c.label}] ${c.text}`),
         }),
       });
     } catch {
@@ -214,15 +271,25 @@ export default function SecureDocChat() {
           ) : (
             <div key={i} className="flex justify-start">
               <div className="max-w-[80%] rounded-2xl rounded-tl-sm border border-slate-200 bg-white px-4 py-3 shadow-sm">
-                {m.generatedBy === "mock" && (
-                  <p className="mb-2 inline-block rounded bg-amber-100 px-2 py-0.5 text-[11px] text-amber-700">
-                    목업 답변 (Ollama 미연결 · 탐지 결과는 실제 모델)
-                  </p>
-                )}
+                <p
+                  className={`mb-2 inline-block rounded px-2 py-0.5 text-[11px] ${
+                    m.generatedBy === "mock"
+                      ? "bg-amber-100 text-amber-700"
+                      : "bg-slate-100 text-slate-500"
+                  }`}
+                >
+                  {m.generatedBy === "mock"
+                    ? "목업 답변 (생성 모델 미연결)"
+                    : `생성: ${m.generatedBy}`}
+                  {" · 검증: 로컬 CPU 모델"}
+                </p>
                 <HighlightedAnswer chunks={m.chunks} />
+                <Legend conflicts={m.conflicts} absents={m.absents} supported={m.supported} />
                 <VerdictCard
                   count={m.count}
                   ratio={m.ratio}
+                  conflicts={m.conflicts}
+                  absents={m.absents}
                   reported={m.reported}
                   onReport={() => reportFalsePositive(i)}
                 />
@@ -301,11 +368,11 @@ export default function SecureDocChat() {
           <label className="flex shrink-0 cursor-pointer items-center gap-1.5 border-l border-slate-200 pl-3 text-xs text-slate-600">
             <input
               type="checkbox"
-              checked={loose}
-              onChange={(e) => setLoose(e.target.checked)}
-              className="accent-red-600"
+              checked={grounded}
+              onChange={(e) => setGrounded(e.target.checked)}
+              className="accent-slate-900"
             />
-            환각 유발 모드
+            AI 에게 문서 보여주기
           </label>
         </div>
 

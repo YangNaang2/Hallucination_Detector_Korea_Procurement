@@ -84,9 +84,7 @@ def run(det: Detector, rows, use_retrieval: bool):
     for r in rows:
         ctx = r["context"]
         if use_retrieval:
-            ctx = api.fit_for_detector(
-                api.select_context(ctx, r["question"]), r["question"], r["answer"]
-            )
+            ctx = api.fit_for_detector(api.select_context(ctx, r["question"]), r["question"])
 
         probs, offsets = det.token_probs(ctx, r["question"], r["answer"])
         if not len(probs):
