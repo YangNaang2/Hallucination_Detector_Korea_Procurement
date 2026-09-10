@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" style="background:#090d16; font-family:'Pretendard', 'Noto Sans KR', sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    
+    <!-- Accent Color Gradients -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowMagenta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e"/>
+    </marker>
+  </defs>
+
+  <!-- ==================== Title Header ==================== -->
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="1480" height="64" rx="12" fill="#131c2e" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="20" y="16" width="6" height="32" rx="3" fill="url(#headerGrad)"/>
+    <text x="36" y="38" fill="#f8fafc" font-size="22" font-weight="800" letter-spacing="0.5">외교부 가이드라인 대응: 비취인가(RBAC) 보안 RAG &amp; 한국어 환각 탐지 파이프라인</text>
+    <text x="36" y="54" fill="#94a3b8" font-size="12" font-weight="500">나라장터 입찰공고(Public)와 사내 기밀(Confidential)의 비취인가 격리 검색 및 구절(Span) 단위 실시간 거짓말 검증</text>
+    <rect x="1310" y="18" width="150" height="28" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="1385" y="36" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">B1조 통합 아키텍처</text>
+  </g>
+
+  <!-- ==================== Step 1: Data Collection & Structuring ==================== -->
+  <g transform="translate(60, 125)">
+    <rect x="0" y="0" width="340" height="715" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    
+    <!-- Header -->
+    <rect x="20" y="20" width="300" height="36" rx="8" fill="#1e293b"/>
+    <circle cx="38" cy="38" r="12" fill="url(#blueGrad)"/>
+    <text x="38" y="42" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+    <text x="58" y="43" fill="#e2e8f0" font-size="15" font-weight="700">나라장터 DB 수집 &amp; 계층 청킹</text>
+
+    <!-- Content 1: Open API -->
+    <g transform="translate(20, 75)">
+      <rect x="0" y="0" width="300" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="14" y="24" fill="#38bdf8" font-size="13" font-weight="700">① 나라장터 Open API 메타 수집</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">• IT/SW/AI 분야 공고 10~20건 수집</text>
+      <text x="14" y="60" fill="#94a3b8" font-size="11">• 공고명, 공고번호, 배정예산, 마감일시</text>
+      <text x="14" y="76" fill="#64748b" font-size="10">→ SQLite/JSONL 색인 (외곽 빠른 검색용)</text>
+    </g>
+
+    <!-- Content 2: Hierarchical Chunking -->
+    <g transform="translate(20, 180)">
+      <rect x="0" y="0" width="300" height="150" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="14" y="24" fill="#38bdf8" font-size="13" font-weight="700">② 제안요청서(RFP) 구조화 청킹</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">• 첨부파일(PDF/HWP) 텍스트 정밀 추출</text>
+      <text x="14" y="62" fill="#cbd5e1" font-size="11" font-weight="600">[핵심 섹션 타겟 추출]</text>
+      <text x="14" y="80" fill="#94a3b8" font-size="10"> ├ [사업개요] 사업목적 및 추진배경</text>
+      <text x="14" y="96" fill="#facc15" font-size="10" font-weight="600"> ├ [입찰참가자격] 실적·라이선스 요건</text>
+      <text x="14" y="112" fill="#facc15" font-size="10" font-weight="600"> ├ [평가기준표] 배점 한도 및 감점 규정</text>
+      <text x="14" y="128" fill="#94a3b8" font-size="10"> └ [과업내용] 기능/비기능 요구사항</text>
+      <text x="14" y="142" fill="#64748b" font-size="9">• 700자 단위 분할 + 100자 겹침(Overlap)</text>
+    </g>
+
+    <!-- Content 3: Output artifacts -->
+    <g transform="translate(20, 345)">
+      <rect x="0" y="0" width="300" height="70" rx="8" fill="#131d31" stroke="#0284c7" stroke-dasharray="3 3"/>
+      <text x="14" y="24" fill="#38bdf8" font-size="12" font-weight="700">📦 산출 데이터 (Clean Raw)</text>
+      <text x="14" y="44" fill="#94a3b8" font-size="11">• RFP 본문 정제 청크: 약 300~500개</text>
+      <text x="14" y="60" fill="#94a3b8" font-size="11">• 구조적 메타데이터 태깅 준비 완료</text>
+    </g>
+  </g>
+
+  <!-- Flow 1 -> 2 -->
+  <line x1="400" y1="480" x2="430" y2="480" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ==================== Step 2: RBAC Security Tagging ==================== -->
+  <g transform="translate(430, 125)">
+    <rect x="0" y="0" width="340" height="715" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    
+    <!-- Header -->
+    <rect x="20" y="20" width="300" height="36" rx="8" fill="#1e293b"/>
+    <circle cx="38" cy="38" r="12" fill="url(#purpleGrad)"/>
+    <text x="38" y="42" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+    <text x="58" y="43" fill="#e2e8f0" font-size="15" font-weight="700">보안 등급(RBAC) 태깅 구축</text>
+
+    <!-- Tier 1: Public -->
+    <g transform="translate(20, 75)">
+      <rect x="0" y="0" width="300" height="100" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+      <rect x="12" y="12" width="75" height="20" rx="4" fill="#064e3b"/>
+      <text x="49" y="26" fill="#34d399" font-size="10" font-weight="bold" text-anchor="middle">Level 1 (공개)</text>
+      <text x="96" y="27" fill="#cbd5e1" font-size="12" font-weight="700">나라장터 입찰 공고문</text>
+      <text x="14" y="48" fill="#94a3b8" font-size="11">• 입찰 공고 본문, 과업내용서, RFP</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">• 모든 사용자 자유 열람 가능</text>
+      <text x="14" y="86" fill="#64748b" font-size="10" font-family="monospace">{"security_level": 1, "type": "rfp"}</text>
+    </g>
+
+    <!-- Tier 2: Internal -->
+    <g transform="translate(20, 190)">
+      <rect x="0" y="0" width="300" height="110" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2"/>
+      <rect x="12" y="12" width="85" height="20" rx="4" fill="#1e3a8a"/>
+      <text x="54" y="26" fill="#60a5fa" font-size="10" font-weight="bold" text-anchor="middle">Level 2 (대외비)</text>
+      <text x="105" y="27" fill="#cbd5e1" font-size="12" font-weight="700">사내 수주 실적 &amp; 엔지니어</text>
+      <text x="14" y="48" fill="#94a3b8" font-size="11">• 유사 사업 수주 실적증명서 (5~10건)</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">• 투입 인력 M/M 공수표, 기술자 자격증</text>
+      <text x="14" y="80" fill="#94a3b8" font-size="11">• 제안 PM 이상 열람 인가</text>
+      <text x="14" y="98" fill="#64748b" font-size="10" font-family="monospace">{"security_level": 2, "type": "track_record"}</text>
+    </g>
+
+    <!-- Tier 3: Secret -->
+    <g transform="translate(20, 315)">
+      <rect x="0" y="0" width="300" height="110" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1.2"/>
+      <rect x="12" y="12" width="75" height="20" rx="4" fill="#7f1d1d"/>
+      <text x="49" y="26" fill="#f87171" font-size="10" font-weight="bold" text-anchor="middle">Level 3 (기밀)</text>
+      <text x="96" y="27" fill="#cbd5e1" font-size="12" font-weight="700">투찰 전략 &amp; 실행 원가</text>
+      <text x="14" y="48" fill="#94a3b8" font-size="11">• 목표 투찰가 및 마진율 계산서 (3~5건)</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">• 컨소시엄 지분 배분 협약서</text>
+      <text x="14" y="80" fill="#f87171" font-size="11" font-weight="600">• 유출 시 탈락 및 입찰 방해 형사책임</text>
+      <text x="14" y="98" fill="#64748b" font-size="10" font-family="monospace">{"security_level": 3, "type": "cost_secret"}</text>
+    </g>
+
+    <!-- Output Storage -->
+    <g transform="translate(20, 440)">
+      <rect x="0" y="0" width="300" height="90" rx="8" fill="#1e1b4b" stroke="#8b5cf6"/>
+      <text x="14" y="24" fill="#c084fc" font-size="12" font-weight="700">💾 chunks.jsonl + vectors.npy</text>
+      <text x="14" y="44" fill="#cbd5e1" font-size="11">• BAAI/bge-m3 임베딩 모델 인덱싱 (512d/1024d)</text>
+      <text x="14" y="60" fill="#cbd5e1" font-size="11">• Numpy float32 코사인 유사도 연산</text>
+      <text x="14" y="78" fill="#a78bfa" font-size="10">• Metadata Filtering 준비 완료</text>
+    </g>
+  </g>
+
+  <!-- Flow 2 -> 3 -->
+  <line x1="770" y1="480" x2="800" y2="480" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ==================== Step 3: User Session & RBAC Gateway ==================== -->
+  <g transform="translate(800, 125)">
+    <rect x="0" y="0" width="340" height="715" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    
+    <!-- Header -->
+    <rect x="20" y="20" width="300" height="36" rx="8" fill="#1e293b"/>
+    <circle cx="38" cy="38" r="12" fill="url(#amberGrad)"/>
+    <text x="38" y="42" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+    <text x="58" y="43" fill="#e2e8f0" font-size="15" font-weight="700">비취인가 사용자 세션 (RBAC)</text>
+
+    <!-- users.json Box -->
+    <g transform="translate(20, 75)">
+      <rect x="0" y="0" width="300" height="155" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="14" y="24" fill="#f59e0b" font-size="13" font-weight="700">① 가상 사용자 DB (users.json)</text>
+      
+      <!-- User A -->
+      <g transform="translate(14, 35)">
+        <rect x="0" y="0" width="272" height="32" rx="4" fill="#1e293b"/>
+        <text x="10" y="20" fill="#e2e8f0" font-size="11" font-weight="bold">User A (신입 실무자)</text>
+        <rect x="180" y="6" width="82" height="20" rx="3" fill="#064e3b"/>
+        <text x="221" y="20" fill="#34d399" font-size="10" font-weight="bold" text-anchor="middle">Level 1 (공개)</text>
+      </g>
+      <!-- User B -->
+      <g transform="translate(14, 72)">
+        <rect x="0" y="0" width="272" height="32" rx="4" fill="#1e293b"/>
+        <text x="10" y="20" fill="#e2e8f0" font-size="11" font-weight="bold">User B (제안 PM)</text>
+        <rect x="180" y="6" width="82" height="20" rx="3" fill="#1e3a8a"/>
+        <text x="221" y="20" fill="#60a5fa" font-size="10" font-weight="bold" text-anchor="middle">Level 2 (대외비)</text>
+      </g>
+      <!-- User C -->
+      <g transform="translate(14, 109)">
+        <rect x="0" y="0" width="272" height="32" rx="4" fill="#1e293b"/>
+        <text x="10" y="20" fill="#e2e8f0" font-size="11" font-weight="bold">User C (사업본부장)</text>
+        <rect x="180" y="6" width="82" height="20" rx="3" fill="#7f1d1d"/>
+        <text x="221" y="20" fill="#f87171" font-size="10" font-weight="bold" text-anchor="middle">Level 3 (기밀)</text>
+      </g>
+      <text x="14" y="148" fill="#64748b" font-size="9">* 데모 상단 드롭다운으로 즉시 세션 교체 시연</text>
+    </g>
+
+    <!-- RBAC Hard-Filtering Logic -->
+    <g transform="translate(20, 245)">
+      <rect x="0" y="0" width="300" height="150" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#f59e0b" font-size="13" font-weight="700">② 하드 필터링 검색 (RBAC RAG)</text>
+      <rect x="14" y="35" width="272" height="30" rx="4" fill="#1e293b"/>
+      <text x="24" y="54" fill="#fbbf24" font-size="11" font-family="monospace">WHERE chunk.level &lt;= user.level</text>
+      <text x="14" y="80" fill="#cbd5e1" font-size="11" font-weight="600">• 유사도 아무리 높아도 비인가 청크 배제</text>
+      <text x="14" y="96" fill="#94a3b8" font-size="10">• User A: Level 2, 3 문서는 존재조차 은닉</text>
+      <text x="14" y="112" fill="#94a3b8" font-size="10">• User B: 공고문(L1) + 사내실적(L2) 교차 검색</text>
+      <text x="14" y="128" fill="#94a3b8" font-size="10">• User C: 원가 계산서(L3) 포함 종합 검토</text>
+      <text x="14" y="142" fill="#10b981" font-size="9" font-weight="bold">✓ 에어갭 환경: 외부 API 통신 0건 (100% 폐쇄망)</text>
+    </g>
+
+    <!-- Flow Down to Step 4 -->
+    <g transform="translate(20, 410)">
+      <rect x="0" y="0" width="300" height="75" rx="8" fill="#1e1e38" stroke="#6366f1"/>
+      <text x="14" y="24" fill="#a5b4fc" font-size="12" font-weight="700">📤 인가된 컨텍스트(Context) 전달</text>
+      <text x="14" y="44" fill="#cbd5e1" font-size="11">• Top-3 인가 청크 + 사용자 질의 묶음</text>
+      <text x="14" y="60" fill="#94a3b8" font-size="10">→ 로컬 LLM 생성 및 검증 엔진으로 주입</text>
+    </g>
+  </g>
+
+  <!-- Flow 3 -> 4 -->
+  <line x1="1140" y1="480" x2="1170" y2="480" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowMagenta)"/>
+
+  <!-- ==================== Step 4: Core Verification & UI ==================== -->
+  <g transform="translate(1170, 125)">
+    <rect x="0" y="0" width="370" height="715" rx="16" fill="url(#cardGrad)" stroke="#f43f5e" stroke-width="1.5" filter="url(#dropShadow)"/>
+    
+    <!-- Header -->
+    <rect x="20" y="20" width="330" height="36" rx="8" fill="#1e293b"/>
+    <circle cx="38" cy="38" r="12" fill="url(#magentaGrad)"/>
+    <text x="38" y="42" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">4</text>
+    <text x="58" y="43" fill="#fb7185" font-size="15" font-weight="800">B1조 코어 엔진 &amp; 실시간 형광펜 UI</text>
+
+    <!-- Substep 4-1: Generation -->
+    <g transform="translate(20, 75)">
+      <rect x="0" y="0" width="330" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="14" y="22" fill="#e2e8f0" font-size="12" font-weight="700">① 폐쇄망 로컬 LLM 생성 (Air-Gapped)</text>
+      <text x="14" y="40" fill="#94a3b8" font-size="11">• Gemma-3-12b (4bit) 또는 Qwen-2.5 경량 모델</text>
+      <text x="14" y="54" fill="#64748b" font-size="10">• 인가된 청크만 참조하여 답변 스트리밍</text>
+    </g>
+
+    <!-- Substep 4-2: B1 Engine -->
+    <g transform="translate(20, 145)">
+      <rect x="0" y="0" width="330" height="145" rx="8" fill="#1e1b4b" stroke="#f43f5e" stroke-width="1.5"/>
+      <rect x="230" y="10" width="90" height="20" rx="4" fill="#881337"/>
+      <text x="275" y="24" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">CPU 0.1s 실시간</text>
+      <text x="14" y="24" fill="#fb7185" font-size="13" font-weight="800">② B1조 코어 환각 탐지기</text>
+      <text x="14" y="44" fill="#38bdf8" font-size="11" font-weight="bold">• klue/roberta-base (110M 토큰 분류 헤드)</text>
+      <text x="14" y="60" fill="#cbd5e1" font-size="11">• 인가 조항 원문 ↔ 생성 답변 토큰 단위 대조</text>
+      <text x="14" y="76" fill="#cbd5e1" font-size="11">• 이진 분류 (0: 근거 지지 / 1: 환각/왜곡)</text>
+      <text x="14" y="94" fill="#facc15" font-size="11" font-weight="600">[핵심 알고리즘 내장]</text>
+      <text x="14" y="110" fill="#94a3b8" font-size="10">• 슬라이딩 윈도우: 512 길이 제한 극복</text>
+      <text x="14" y="126" fill="#94a3b8" font-size="10">• min2 집계: 장문 공고문 과소 탐지 억제</text>
+      <text x="14" y="140" fill="#94a3b8" font-size="9">• RAGTruth 17,537건 번역 전이 학습 가중치 탑재</text>
+    </g>
+
+    <!-- Substep 4-3: UI Output -->
+    <g transform="translate(20, 305)">
+      <rect x="0" y="0" width="330" height="185" rx="8" fill="#0f172a" stroke="#f43f5e"/>
+      <text x="14" y="24" fill="#fb7185" font-size="13" font-weight="800">③ 형광펜 시각화 &amp; 원문 증거 대조</text>
+      
+      <!-- Chat Box -->
+      <rect x="12" y="36" width="306" height="64" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="20" y="54" fill="#e4e4e7" font-size="11">🤖 AI 답변:</text>
+      <text x="20" y="70" fill="#e4e4e7" font-size="11">"단독 참여 실적으로 <tspan fill="#f43f5e" font-weight="bold" text-decoration="underline">최근 3년 5억 원</tspan>이면</text>
+      <text x="20" y="86" fill="#e4e4e7" font-size="11">참가 자격이 <tspan fill="#f43f5e" font-weight="bold" text-decoration="underline">충족됩니다</tspan>." (위험 감지)</text>
+
+      <!-- Evidence Popup -->
+      <rect x="12" y="106" width="306" height="68" rx="6" fill="#1e1b4b" stroke="#0284c7"/>
+      <text x="20" y="122" fill="#38bdf8" font-size="10" font-weight="bold">🔍 클릭 시 팝업 (L1 RFP 원문 조항 대조)</text>
+      <text x="20" y="138" fill="#cbd5e1" font-size="10">• 제4조(참가자격): 단독 입찰은 <tspan fill="#facc15" font-weight="bold">10억 원 이상</tspan> 필수</text>
+      <text x="20" y="152" fill="#94a3b8" font-size="10">• 사내 실적(L2): 7억 원 보유 ➔ <tspan fill="#f87171" font-weight="bold">자격 미달 (탈락 방어)</tspan></text>
+      <text x="20" y="166" fill="#64748b" font-size="9">• 외교부 지침 1: 출처 및 오류 위험성 표기 충족</text>
+    </g>
+
+    <!-- Bottom summary tag -->
+    <g transform="translate(20, 500)">
+      <rect x="0" y="0" width="330" height="40" rx="6" fill="#131d31" stroke="#38bdf8"/>
+      <text x="165" y="24" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="middle">외교부 양대 과제(환각 방지 + 기밀 유출) 동시 해소</text>
+    </g>
+  </g>
+
+  <!-- Flow Legend & Metadata Footer -->
+  <g transform="translate(60, 850)">
+    <text x="0" y="20" fill="#64748b" font-size="12">흐름 범례 :</text>
+    <rect x="70" y="8" width="16" height="16" rx="4" fill="#0284c7"/>
+    <text x="94" y="21" fill="#94a3b8" font-size="11">데이터 파싱/임베딩</text>
+    
+    <rect x="230" y="8" width="16" height="16" rx="4" fill="#8b5cf6"/>
+    <text x="254" y="21" fill="#94a3b8" font-size="11">RBAC 보안 필터링</text>
+
+    <rect x="390" y="8" width="16" height="16" rx="4" fill="#f59e0b"/>
+    <text x="414" y="21" fill="#94a3b8" font-size="11">폐쇄망 로컬 서빙</text>
+
+    <rect x="540" y="8" width="16" height="16" rx="4" fill="#f43f5e"/>
+    <text x="564" y="21" fill="#94a3b8" font-size="11">B1조 코어 토큰 검증</text>
+
+    <text x="1480" y="20" fill="#475569" font-size="12" text-anchor="end">Engine: klue/roberta-base (110M) + BAAI/bge-m3 | Air-Gapped Compliant</text>
+  </g>
+</svg>

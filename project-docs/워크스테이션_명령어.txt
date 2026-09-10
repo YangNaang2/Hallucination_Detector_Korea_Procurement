@@ -1,0 +1,67 @@
+워크스테이션에 붙여넣을 명령어
+=====================================
+(이 파일은 메모장으로 열어서 복사하면 됩니다)
+
+
+[1] GitHub 연결 — 한 번만 하면 됩니다
+-------------------------------------
+
+cd ~/바탕화면/ko_lettucedetect
+
+gh auth login
+
+  → 브라우저 코드 입력 화면이 나오면 시키는 대로 진행
+  → "gh: command not found" 가 뜨면 알려주세요
+
+git init && git remote add origin https://github.com/YangNaang2/ko-lettucedetect.git && git fetch origin && git checkout -f -b main origin/main
+
+
+[2] 앞으로 코드 받을 때 — 이 한 줄이면 끝
+-------------------------------------
+
+git pull
+
+
+[3] bge-m3 학습이 끝나면
+-------------------------------------
+
+python -m src.diagnose --run runs/bgem3 --max-length 2048
+
+  → runs/bgem3/diagnosis.md 가 나옵니다. 그 파일을 보내주세요
+
+
+[4] 학습이 도는지 확인하는 법
+-------------------------------------
+
+tail -f runs/bgem3.log
+
+  → 진행 막대가 움직이면 정상. Ctrl+C 로 빠져나와도 학습은 안 끊깁니다
+
+nvidia-smi
+
+  → python 프로세스가 GPU 메모리를 잡고 있으면 도는 중입니다
+
+
+[5] 팀원 배포용 zip 만들기 (학습과 무관하게 아무 때나)
+-------------------------------------
+
+bash 팀원배포/build_package.sh
+
+  → ko_lettucedetect/한국어환각탐지기.zip 이 생깁니다
+  → 그 파일을 구글 드라이브에 올리고 링크를 공유하세요
+
+
+[6] 회의에서 즉석 시연 (72시간 공개 링크)
+-------------------------------------
+
+bash demo/share.sh
+
+  → "Running on public URL: https://....gradio.live" 주소를 팀에 공유
+  → 창을 닫으면 링크가 끊깁니다
+
+
+참고
+=====================================
+저장소   : https://github.com/YangNaang2/ko-lettucedetect  (비공개)
+메인 모델 : runs/klue  (macro F1 0.6980)
+데모 설정 : --agg min2 --threshold 0.35

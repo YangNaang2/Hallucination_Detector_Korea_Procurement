@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" style="background:#0b0f19; font-family:'Pretendard', 'Noto Sans KR', -apple-system, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="trackABg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="trackBBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c44" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a0f29" stop-opacity="0.9"/>
+    </linearGradient>
+    
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#06b6d4"/>
+    </marker>
+    <marker id="arrowMagenta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="1480" height="60" rx="8" fill="#1e293b" opacity="0.5"/>
+    <text x="24" y="38" fill="#f8fafc" font-size="22" font-weight="800" letter-spacing="1">엔드투엔드 보안 RAG &amp; 한국어 환각 탐지 파이프라인</text>
+    <text x="660" y="38" fill="#94a3b8" font-size="15" font-weight="500">B1조 코어 엔진 | 외교부 표준 지침(비취인가 폐쇄망 + 투 트랙 검증) 완벽 대응 아키텍처</text>
+  </g>
+
+  <!-- ==================== TRACK A (Left Column) ==================== -->
+  <g transform="translate(60, 125)">
+    <!-- Container Background -->
+    <rect x="0" y="0" width="680" height="730" rx="16" fill="url(#trackABg)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    
+    <!-- Track Header -->
+    <rect x="24" y="20" width="8" height="26" rx="4" fill="url(#cyanGrad)"/>
+    <text x="42" y="40" fill="#38bdf8" font-size="19" font-weight="800" letter-spacing="0.5">[TRACK A] 오프라인 엔진 사전 구축 (Build &amp; Train)</text>
+    <text x="480" y="40" fill="#64748b" font-size="13" font-weight="600">워크스테이션 환경</text>
+
+    <!-- Step A1 -->
+    <g transform="translate(30, 65)">
+      <rect x="0" y="0" width="620" height="95" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#0284c7"/>
+      <text x="30" y="35" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+      <text x="56" y="35" fill="#e2e8f0" font-size="16" font-weight="700">글로벌 골드 데이터셋 확보 (ACL 2024)</text>
+      <text x="56" y="60" fill="#94a3b8" font-size="13">• RAGTruth 원본 수집: 17,790건 전량 확보 (QA / Data2txt / Summary 3개 태스크)</text>
+      <text x="56" y="80" fill="#94a3b8" font-size="13">• 정밀 글자 단위(Character-level) 환각 구간(Span) 원본 라벨 보존</text>
+    </g>
+
+    <!-- Flow Arrow A1 -> A2 -->
+    <line x1="340" y1="160" x2="340" y2="185" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <!-- Step A2 -->
+    <g transform="translate(30, 185)">
+      <rect x="0" y="0" width="620" height="105" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#0284c7"/>
+      <text x="30" y="35" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+      <text x="56" y="35" fill="#e2e8f0" font-size="16" font-weight="700">기계번역 태그 보존 파이프라인 (Turk-Lettuce)</text>
+      <text x="56" y="60" fill="#94a3b8" font-size="13">• 환각 구간을 &lt;HAL&gt;...&lt;/HAL&gt; 특수 태그로 보존 패킹</text>
+      <text x="56" y="80" fill="#94a3b8" font-size="13">• gemma-3-12b-it (4-bit vLLM) 번역 프롬프트 고정 엔지니어링</text>
+      <text x="56" y="98" fill="#38bdf8" font-size="12" font-weight="600">✓ 태그 보존율 실측: 파일럿 98% ➔ 전체 97.2% 통과 (17,537건 유효 데이터셋 확정)</text>
+    </g>
+
+    <!-- Flow Arrow A2 -> A3 -->
+    <line x1="340" y1="290" x2="340" y2="315" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <!-- Step A3 -->
+    <g transform="translate(30, 315)">
+      <rect x="0" y="0" width="620" height="95" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#0284c7"/>
+      <text x="30" y="35" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+      <text x="56" y="35" fill="#e2e8f0" font-size="16" font-weight="700">라벨 좌표 재계산 및 정제 (Post-Processing)</text>
+      <text x="56" y="60" fill="#94a3b8" font-size="13">• 번역 후 태그 위치 역추적 ➔ 한국어 문자 오프셋(Start, End) 정밀 재정렬</text>
+      <text x="56" y="80" fill="#94a3b8" font-size="13">• 중첩 구간(1.5%) 병합 &amp; 교착어 조사 경계 밀림 정규화 ➔ 토큰 단위 이진 분류 라벨링</text>
+    </g>
+
+    <!-- Flow Arrow A3 -> A4 -->
+    <line x1="340" y1="410" x2="340" y2="435" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <!-- Step A4 -->
+    <g transform="translate(30, 435)">
+      <rect x="0" y="0" width="620" height="120" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+      <circle cx="30" cy="30" r="14" fill="#0284c7"/>
+      <text x="30" y="35" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">4</text>
+      <text x="56" y="35" fill="#e2e8f0" font-size="16" font-weight="700">인코더 3종 비교 학습 및 실측 가설 검증</text>
+      
+      <!-- Metrics Boxes -->
+      <g transform="translate(56, 50)">
+        <rect x="0" y="0" width="165" height="35" rx="6" fill="#0f172a" stroke="#334155"/>
+        <text x="10" y="16" fill="#94a3b8" font-size="11">xlmr-base (270M)</text>
+        <text x="10" y="30" fill="#cbd5e1" font-size="12" font-weight="bold">F1 0.6527 (임계 0.268)</text>
+      </g>
+      <g transform="translate(180, 50)">
+        <rect x="0" y="0" width="185" height="35" rx="6" fill="#0f172a" stroke="#0284c7"/>
+        <text x="10" y="16" fill="#38bdf8" font-size="11">klue/roberta (110M)</text>
+        <text x="10" y="30" fill="#38bdf8" font-size="12" font-weight="bold">F1 0.6980 (윈도우 결합)</text>
+      </g>
+      <g transform="translate(375, 50)">
+        <rect x="0" y="0" width="180" height="35" rx="6" fill="#0f172a" stroke="#10b981"/>
+        <text x="10" y="16" fill="#34d399" font-size="11">BAAI/bge-m3 (568M)</text>
+        <text x="10" y="30" fill="#34d399" font-size="12" font-weight="bold">F1 0.7385 (논문선 돌파)</text>
+      </g>
+      <text x="56" y="106" fill="#94a3b8" font-size="12">• 영-한 1:1 대조군 실험 완료: 번역으로 인한 성능 손실 0 입증</text>
+    </g>
+
+    <!-- Flow Arrow A4 -> A5 -->
+    <line x1="340" y1="555" x2="340" y2="580" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <!-- Step A5 -->
+    <g transform="translate(30, 580)">
+      <rect x="0" y="0" width="620" height="110" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="30" cy="30" r="14" fill="#38bdf8"/>
+      <text x="30" y="35" fill="#0f172a" font-size="13" font-weight="bold" text-anchor="middle">5</text>
+      <text x="56" y="35" fill="#38bdf8" font-size="16" font-weight="800">런타임 경량 엔진 패키징 (B1조 코어)</text>
+      <text x="56" y="60" fill="#e2e8f0" font-size="13">• 현장 데모 최적화: <tspan fill="#facc15" font-weight="bold">klue/roberta-base (110M)</tspan> 최종 채택</text>
+      <text x="56" y="80" fill="#94a3b8" font-size="13">• 일반 노트북 CPU 환경에서 <tspan fill="#38bdf8" font-weight="bold">0.1초 이내 실시간 토큰 추론</tspan> 구현</text>
+      <text x="56" y="98" fill="#94a3b8" font-size="13">• 슬라이딩 윈도우 + min2 풀링 알고리즘 내장으로 긴 공고문 압축 손실 방지</text>
+    </g>
+  </g>
+
+  <!-- ==================== TRACK B (Right Column) ==================== -->
+  <g transform="translate(780, 125)">
+    <!-- Container Background -->
+    <rect x="0" y="0" width="760" height="730" rx="16" fill="url(#trackBBg)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)"/>
+
+    <!-- Track Header -->
+    <rect x="24" y="20" width="8" height="26" rx="4" fill="url(#magentaGrad)"/>
+    <text x="42" y="40" fill="#f43f5e" font-size="19" font-weight="800" letter-spacing="0.5">[TRACK B] 비취인가 기반 실시간 감사 런타임 (Secure Inference)</text>
+    <text x="550" y="40" fill="#94a3b8" font-size="13" font-weight="600">외교부·공공 표준 규격</text>
+
+    <!-- User Login Indicator -->
+    <g transform="translate(30, 60)">
+      <rect x="0" y="0" width="700" height="40" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-dasharray="4 4"/>
+      <text x="20" y="25" fill="#a5b4fc" font-size="13" font-weight="600">👤 사용자 인증 세션 :</text>
+      <rect x="140" y="10" width="80" height="22" rx="4" fill="#312e81"/>
+      <text x="180" y="25" fill="#c7d2fe" font-size="11" font-weight="bold" text-anchor="middle">사번: #8204</text>
+      <rect x="230" y="10" width="115" height="22" rx="4" fill="#4338ca"/>
+      <text x="287" y="25" fill="#e0e7ff" font-size="11" font-weight="bold" text-anchor="middle">비취인가: Level 2</text>
+      <text x="360" y="25" fill="#94a3b8" font-size="12">▶ 질의: "우리 엔지니어 단가로 참가 자격 충족하는가?"</text>
+    </g>
+
+    <!-- Step B1 -->
+    <g transform="translate(30, 115)">
+      <rect x="0" y="0" width="700" height="75" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <circle cx="30" cy="25" r="13" fill="#6366f1"/>
+      <text x="30" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+      <text x="54" y="29" fill="#e2e8f0" font-size="15" font-weight="700">보안 관문 (Security Gateway) &amp; 전처리</text>
+      <text x="54" y="52" fill="#94a3b8" font-size="13">• 입력 쿼리 내 PII(개인정보), 계좌, 사내 고유 식별키 정규식 사전 마스킹 처리</text>
+      <text x="54" y="68" fill="#94a3b8" font-size="12">• 로컬 불변 감사 로그(Local Audit Log) 격리 기록</text>
+    </g>
+
+    <!-- Flow Arrow B1 -> B2 -->
+    <line x1="380" y1="190" x2="380" y2="210" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+    <!-- Step B2 -->
+    <g transform="translate(30, 210)">
+      <rect x="0" y="0" width="700" height="120" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+      <circle cx="30" cy="25" r="13" fill="#3b82f6"/>
+      <text x="30" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+      <text x="54" y="29" fill="#93c5fd" font-size="15" font-weight="700">비취인가(RBAC) 격리형 계층 검색 (Multi-Tier RAG)</text>
+      <text x="450" y="29" fill="#38bdf8" font-size="12" font-weight="600">Filter: doc_security_level ≤ user_level</text>
+      
+      <!-- Tier Grid -->
+      <g transform="translate(54, 45)">
+        <rect x="0" y="0" width="195" height="42" rx="6" fill="#1e293b" stroke="#10b981"/>
+        <text x="10" y="18" fill="#34d399" font-size="11" font-weight="bold">[L1 공개]</text>
+        <text x="10" y="34" fill="#cbd5e1" font-size="11">나라장터 RFP, 과업내용서</text>
+      </g>
+      <g transform="translate(205, 45)">
+        <rect x="0" y="0" width="205" height="42" rx="6" fill="#1e293b" stroke="#3b82f6"/>
+        <text x="10" y="18" fill="#60a5fa" font-size="11" font-weight="bold">[L2 대외비] (현재 인가)</text>
+        <text x="10" y="34" fill="#cbd5e1" font-size="11">사내 수주실적, 엔지니어 이력서</text>
+      </g>
+      <g transform="translate(415, 45)">
+        <rect x="0" y="0" width="215" height="42" rx="6" fill="#1e293b" stroke="#ef4444" stroke-dasharray="3 3"/>
+        <text x="10" y="18" fill="#f87171" font-size="11" font-weight="bold">[L3 비밀] 🔒 원천 차단</text>
+        <text x="10" y="34" fill="#94a3b8" font-size="11">투찰가, 원가서, 지분협약서</text>
+      </g>
+      <text x="54" y="107" fill="#94a3b8" font-size="12">✓ BAAI/bge-m3 임베딩 인덱스에서 인가된 조항 및 실적 증명서 청크(Chunk)만 상위 k개 추출</text>
+    </g>
+
+    <!-- Flow Arrow B2 -> B3 -->
+    <line x1="380" y1="330" x2="380" y2="350" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+    <!-- Step B3 -->
+    <g transform="translate(30, 350)">
+      <rect x="0" y="0" width="700" height="75" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <circle cx="30" cy="25" r="13" fill="#6366f1"/>
+      <text x="30" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+      <text x="54" y="29" fill="#e2e8f0" font-size="15" font-weight="700">폐쇄망 온프레미스 생성 (Air-Gapped LLM Generation)</text>
+      <text x="54" y="52" fill="#94a3b8" font-size="13">• 외부 API 통신 Zero (인터넷 차단 완전 폐쇄 내부망 단독 구동)</text>
+      <text x="54" y="68" fill="#94a3b8" font-size="12">• 로컬 경량 LLM(Gemma/Qwen)이 인가된 L1+L2 컨텍스트만을 바탕으로 답변 초안 생성</text>
+    </g>
+
+    <!-- Flow Arrow B3 -> B4 -->
+    <line x1="380" y1="425" x2="380" y2="445" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowMagenta)"/>
+
+    <!-- Step B4: Core Integration Box -->
+    <g transform="translate(30, 445)">
+      <rect x="0" y="0" width="700" height="115" rx="10" fill="#1e1b4b" stroke="#f43f5e" stroke-width="2" filter="url(#dropShadow)"/>
+      <circle cx="30" cy="25" r="13" fill="#f43f5e"/>
+      <text x="30" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">4</text>
+      <text x="54" y="29" fill="#fb7185" font-size="16" font-weight="800">B1조 코어 엔진 : 구절(Span) 단위 실시간 환각 탐지</text>
+      <text x="540" y="29" fill="#f43f5e" font-size="12" font-weight="bold">CPU 0.1s Real-time</text>
+      <text x="54" y="55" fill="#e2e8f0" font-size="13">• [TRACK A]에서 가중치 배포된 <tspan fill="#38bdf8" font-weight="bold">klue/roberta-base (110M)</tspan> 탑재 구동</text>
+      <text x="54" y="75" fill="#e2e8f0" font-size="13">• 인가된 조항 원문과 생성 답변을 토큰 단위로 실시간 대조 (0: 지지 / 1: 환각 판정)</text>
+      <text x="54" y="98" fill="#fda4af" font-size="12">• 슬라이딩 윈도우(min2 집계)로 512 한계를 극복하여 장문 RFP에서도 안정적 탐지</text>
+    </g>
+
+    <!-- Flow Arrow B4 -> B5 -->
+    <line x1="380" y1="560" x2="380" y2="580" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowMagenta)"/>
+
+    <!-- Step B5 -->
+    <g transform="translate(30, 580)">
+      <rect x="0" y="0" width="700" height="115" rx="10" fill="#0f172a" stroke="#f43f5e" stroke-width="1.5"/>
+      <circle cx="30" cy="25" r="13" fill="#f43f5e"/>
+      <text x="30" y="30" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">5</text>
+      <text x="54" y="29" fill="#fb7185" font-size="15" font-weight="800">형광펜 시각화 및 원문 증거 대조 (Evidence Grounding UI)</text>
+      
+      <!-- UI Demo Box Representation -->
+      <g transform="translate(54, 45)">
+        <rect x="0" y="0" width="370" height="58" rx="6" fill="#18181b" stroke="#3f3f46"/>
+        <text x="12" y="22" fill="#e4e4e7" font-size="12">AI 답변: "최근 3년간 실적이 <tspan fill="#f43f5e" font-weight="bold" text-decoration="underline">5억 원 이상</tspan>이면</text>
+        <text x="12" y="42" fill="#e4e4e7" font-size="12">단독 입찰이 <tspan fill="#f43f5e" font-weight="bold" text-decoration="underline">가능합니다</tspan>." (위험 감지)</text>
+      </g>
+      <g transform="translate(435, 45)">
+        <rect x="0" y="0" width="245" height="58" rx="6" fill="#18181b" stroke="#0284c7"/>
+        <text x="10" y="20" fill="#38bdf8" font-size="11" font-weight="bold">클릭 시 팝업 (L1 조항 원문 대조)</text>
+        <text x="10" y="36" fill="#cbd5e1" font-size="10">• 제4조: 단독 입찰 실적 10억 필수</text>
+        <text x="10" y="50" fill="#94a3b8" font-size="10">• 사내 실적(L2): 7억 보유 ➔ 결격 확인</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== Cross-Track Weight Deployment Flow ==================== -->
+  <path d="M 650 715 L 710 715 Q 740 715 740 680 L 740 635 Q 740 600 780 600 L 805 600" 
+        fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <rect x="680" y="650" width="125" height="26" rx="4" fill="#0284c7" filter="url(#dropShadow)"/>
+  <text x="742" y="667" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">가중치 배포 (110M)</text>
+  <circle cx="810" cy="600" r="4" fill="#38bdf8"/>
+</svg>

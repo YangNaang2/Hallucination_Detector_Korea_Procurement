@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" style="background:#090d16; font-family:'Pretendard', 'Noto Sans KR', sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <g transform="translate(50, 30)">
+    <rect x="0" y="0" width="1500" height="74" rx="12" fill="#131c2e" stroke="#1e293b" stroke-width="2"/>
+    <rect x="24" y="16" width="8" height="42" rx="4" fill="url(#headerGrad)"/>
+    <text x="44" y="44" fill="#f8fafc" font-size="24" font-weight="800">B1조 통합 데이터 &amp; 보안 RAG 병렬 업무 분담 구조도</text>
+    <text x="44" y="66" fill="#94a3b8" font-size="14" font-weight="600">나라장터 실공고 파싱, L2/L3 가상 사내 기밀 합성, 그리고 비취인가 RBAC 검색기 통합 흐름</text>
+  </g>
+
+  <!-- Team 1 Card -->
+  <g transform="translate(50, 130)">
+    <rect x="0" y="0" width="460" height="690" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    <rect x="20" y="20" width="420" height="48" rx="8" fill="#1e293b"/>
+    <circle cx="46" cy="44" r="14" fill="url(#blueGrad)"/>
+    <text x="46" y="49" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+    <text x="74" y="50" fill="#e2e8f0" font-size="18" font-weight="800">공고 수집 &amp; L2/L3 데이터팀 (3인)</text>
+    
+    <rect x="20" y="80" width="420" height="34" rx="6" fill="#0f172a"/>
+    <text x="36" y="102" fill="#38bdf8" font-size="13" font-weight="700">핵심 역할: 실공고 파싱 및 사내 대외비/기밀 합성</text>
+
+    <!-- Task 1-1 -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="420" height="140" rx="10" fill="#0f172a" stroke="#1e293b"/>
+      <text x="16" y="28" fill="#38bdf8" font-size="15" font-weight="800">1-1. 나라장터 공고문 수집 (Level 1)</text>
+      <text x="16" y="56" fill="#cbd5e1" font-size="13">• IT/SW 공고 10~20건 수집 (Open API / 웹)</text>
+      <text x="16" y="78" fill="#cbd5e1" font-size="13">• [참가자격], [평가기준], [예산] 텍스트 추출</text>
+      <text x="16" y="100" fill="#cbd5e1" font-size="13">• 700자 단위 청킹 후 level: 1 태깅</text>
+      <text x="16" y="122" fill="#94a3b8" font-size="12">→ 전 국민 공개 문서 데이터베이스 구축</text>
+    </g>
+
+    <!-- Task 1-2 -->
+    <g transform="translate(20, 285)">
+      <rect x="0" y="0" width="420" height="210" rx="10" fill="#0f172a" stroke="#0284c7" stroke-width="1.2"/>
+      <text x="16" y="28" fill="#38bdf8" font-size="15" font-weight="800">1-2. LLM 프롬프트 가상 합성 (L2, L3)</text>
+      <text x="16" y="56" fill="#60a5fa" font-size="13" font-weight="700">[Level 2 대외비] 사내 수주 실적 (10건)</text>
+      <text x="16" y="78" fill="#cbd5e1" font-size="12">• 7.2억 실적증명원 (10억 미달 ➔ 결격 유도)</text>
+      <text x="16" y="98" fill="#cbd5e1" font-size="12">• 투입 엔지니어 이력서 및 M/M 공수표</text>
+      <text x="16" y="126" fill="#f87171" font-size="13" font-weight="700">[Level 3 기밀] 투찰 전략 및 원가 (5건)</text>
+      <text x="16" y="148" fill="#cbd5e1" font-size="12">• 투찰률 87.95% 적용 분석서, 마진율 계산서</text>
+      <text x="16" y="168" fill="#cbd5e1" font-size="12">• 컨소시엄 지분 배분 협약서 초안</text>
+      <text x="16" y="194" fill="#facc15" font-size="12" font-weight="bold">★ 프롬프트 A, B를 활용해 30분 만에 생성</text>
+    </g>
+
+    <!-- Output 1 -->
+    <g transform="translate(20, 510)">
+      <rect x="0" y="0" width="420" height="150" rx="10" fill="#131d31" stroke="#38bdf8" stroke-dasharray="4 4"/>
+      <text x="16" y="30" fill="#38bdf8" font-size="15" font-weight="800">📦 최종 산출물: chunks.jsonl</text>
+      <text x="16" y="60" fill="#cbd5e1" font-size="13">• 약 300~500개 청크 통합 파일</text>
+      <text x="16" y="84" fill="#94a3b8" font-size="12" font-family="monospace">{"id":"C01", "security_level":1, "text":"..."}</text>
+      <text x="16" y="106" fill="#94a3b8" font-size="12" font-family="monospace">{"id":"C02", "security_level":2, "text":"..."}</text>
+      <text x="16" y="128" fill="#94a3b8" font-size="12" font-family="monospace">{"id":"C03", "security_level":3, "text":"..."}</text>
+    </g>
+  </g>
+
+  <!-- Flow 1 -> 2 -->
+  <line x1="510" y1="460" x2="560" y2="460" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Team 2 Card -->
+  <g transform="translate(560, 130)">
+    <rect x="0" y="0" width="460" height="690" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)"/>
+    <rect x="20" y="20" width="420" height="48" rx="8" fill="#1e293b"/>
+    <circle cx="46" cy="44" r="14" fill="url(#purpleGrad)"/>
+    <text x="46" y="49" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+    <text x="74" y="50" fill="#e2e8f0" font-size="18" font-weight="800">사용자 DB &amp; 보안 RAG팀 (2인)</text>
+
+    <rect x="20" y="80" width="420" height="34" rx="6" fill="#0f172a"/>
+    <text x="36" y="102" fill="#c084fc" font-size="13" font-weight="700">핵심 역할: 비취인가 RBAC 필터링 검색기 구현</text>
+
+    <!-- Task 2-1 -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="420" height="150" rx="10" fill="#0f172a" stroke="#1e293b"/>
+      <text x="16" y="28" fill="#c084fc" font-size="15" font-weight="800">2-1. 가상 사용자 세션 정의 (users.json)</text>
+      <text x="16" y="56" fill="#cbd5e1" font-size="13">• user_junior (신입): clearance 1 (공개 문서만)</text>
+      <text x="16" y="78" fill="#cbd5e1" font-size="13">• user_pm (제안PM): clearance 2 (실적 포함)</text>
+      <text x="16" y="100" fill="#cbd5e1" font-size="13">• user_exec (임원): clearance 3 (기밀 전체)</text>
+      <text x="16" y="126" fill="#94a3b8" font-size="12">→ 데모 상단 로그인 드롭다운 전환용 매핑</text>
+    </g>
+
+    <!-- Task 2-2 -->
+    <g transform="translate(20, 295)">
+      <rect x="0" y="0" width="420" height="180" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.2"/>
+      <text x="16" y="28" fill="#c084fc" font-size="15" font-weight="800">2-2. 비취인가 하드 필터링 RAG 구현</text>
+      <text x="16" y="56" fill="#cbd5e1" font-size="13">• chunks.jsonl을 bge-m3로 임베딩 (vectors.npy)</text>
+      <text x="16" y="82" fill="#fbbf24" font-size="13" font-family="monospace">mask = (chunk.level &lt;= user.clearance)</text>
+      <text x="16" y="104" fill="#cbd5e1" font-size="13">• 마스킹된 청크 중에서만 코사인 유사도 계산</text>
+      <text x="16" y="126" fill="#cbd5e1" font-size="13">• 비인가 문서는 검색 단계에서 원천 차단</text>
+      <text x="16" y="152" fill="#10b981" font-size="13" font-weight="bold">✓ 100% 에어갭 폐쇄망: 외부 API 통신 Zero</text>
+    </g>
+
+    <!-- Output 2 -->
+    <g transform="translate(20, 490)">
+      <rect x="0" y="0" width="420" height="170" rx="10" fill="#1e1b4b" stroke="#a78bfa" stroke-dasharray="4 4"/>
+      <text x="16" y="30" fill="#c084fc" font-size="15" font-weight="800">📦 최종 산출물: secure_retriever.py</text>
+      <text x="16" y="60" fill="#cbd5e1" font-size="13">• def get_context(query, user_session):</text>
+      <text x="16" y="84" fill="#94a3b8" font-size="12">  - 인가된 청크 Top-3 발췌</text>
+      <text x="16" y="106" fill="#94a3b8" font-size="12">  - 비인가 요구 시 즉시 차단 팝업 텍스트 반환</text>
+      <text x="16" y="132" fill="#38bdf8" font-size="13" font-weight="bold">→ 파트 C(양진우 코어 엔진)로 직결</text>
+    </g>
+  </g>
+
+  <!-- Flow 2 -> 3 -->
+  <line x1="1020" y1="460" x2="1070" y2="460" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Core Integration Card (Yang Jin-woo) -->
+  <g transform="translate(1070, 130)">
+    <rect x="0" y="0" width="480" height="690" rx="16" fill="url(#cardGrad)" stroke="#f43f5e" stroke-width="2" filter="url(#dropShadow)"/>
+    <rect x="20" y="20" width="440" height="48" rx="8" fill="#1e293b"/>
+    <circle cx="46" cy="44" r="14" fill="url(#magentaGrad)"/>
+    <text x="46" y="49" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">★</text>
+    <text x="74" y="50" fill="#fb7185" font-size="18" font-weight="800">코어 엔진 결합 &amp; UI 시연 (양진우 / 1인)</text>
+
+    <rect x="20" y="80" width="440" height="34" rx="6" fill="#1e1b4b"/>
+    <text x="36" y="102" fill="#fb7185" font-size="13" font-weight="800">기존 완결된 110M klue 인코더를 결합하여 최종 데모 완성</text>
+
+    <!-- Task C-1 -->
+    <g transform="translate(20, 130)">
+      <rect x="0" y="0" width="440" height="150" rx="10" fill="#0f172a" stroke="#1e293b"/>
+      <text x="16" y="28" fill="#fb7185" font-size="15" font-weight="800">3-1. 110M 토큰 분류 엔진 마운트</text>
+      <text x="16" y="56" fill="#38bdf8" font-size="13" font-weight="bold">• klue/roberta-base (110M) 가중치 로드</text>
+      <text x="16" y="78" fill="#cbd5e1" font-size="13">• 입력: secure_retriever의 인가 청크 + LLM 답변</text>
+      <text x="16" y="100" fill="#cbd5e1" font-size="13">• 토큰별 이진 분류 (0: 근거 지지 / 1: 환각)</text>
+      <text x="16" y="122" fill="#cbd5e1" font-size="13">• 슬라이딩 윈도우 + min2 집계로 긴 RFP 보정</text>
+    </g>
+
+    <!-- Task C-2 -->
+    <g transform="translate(20, 295)">
+      <rect x="0" y="0" width="440" height="180" rx="10" fill="#0f172a" stroke="#f43f5e" stroke-width="1.2"/>
+      <text x="16" y="28" fill="#fb7185" font-size="15" font-weight="800">3-2. Gradio 3단 시연 화면 연동</text>
+      <text x="16" y="56" fill="#cbd5e1" font-size="13">• [상단] 사용자 인가 세션 드롭다운 (L1~L3)</text>
+      <text x="16" y="78" fill="#cbd5e1" font-size="13">• [좌측] 질의 챗창 (폐쇄망 Gemma-3 스트리밍)</text>
+      <text x="16" y="100" fill="#cbd5e1" font-size="13">• [우측] 환각 구절 실시간 마젠타 밑줄 표시</text>
+      <text x="16" y="126" fill="#facc15" font-size="13" font-weight="bold">★ 클릭 시 제안요청서 제4조 원문 조항 즉시 팝업 대조</text>
+      <text x="16" y="152" fill="#94a3b8" font-size="12">✓ "단독 5억 충족" 오답을 빨간 줄 긋고 10억 규정 띄움</text>
+    </g>
+
+    <!-- Badge -->
+    <g transform="translate(20, 490)">
+      <rect x="0" y="0" width="440" height="170" rx="10" fill="#131d31" stroke="#38bdf8"/>
+      <text x="220" y="40" fill="#38bdf8" font-size="16" font-weight="800" text-anchor="middle">외교부 표준 가이드라인 100% 충족</text>
+      <text x="220" y="70" fill="#cbd5e1" font-size="13" text-anchor="middle">• 환각 방지: 구절(Span) 단위 실시간 형광펜 지목</text>
+      <text x="220" y="94" fill="#cbd5e1" font-size="13" text-anchor="middle">• 기밀 유출 방지: 비취인가 RBAC + 로컬 CPU 폐쇄망</text>
+      <text x="220" y="130" fill="#34d399" font-size="15" font-weight="bold" text-anchor="middle">🏆 최종 발표 및 시연 준비 완료</text>
+    </g>
+  </g>
+</svg>
