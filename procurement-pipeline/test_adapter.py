@@ -30,7 +30,7 @@ def fake_month(root):
         (root / 'raw' / 'aa' / f'{sha}.{name.rsplit(".", 1)[1]}').write_bytes(b'x' * 100)
         (root / 'parsed' / f'{sha}.json').write_text(json.dumps(dict(
             document_id=sha, sha256=sha, source=dict(filename=name),
-            parse=dict(status='parsed', detected_format='hwp', parser='fake', quality=q),
+            parse=dict(status='parsed' if q >= 0.55 else 'low_quality', detected_format='hwp', parser='fake', quality=q),
             text=text, blocks=[dict(type=btype, order=0, text=text)]), ensure_ascii=False), encoding='utf-8')
 
     def bid(no, order, name, business, mid=None, budget='1000000'):

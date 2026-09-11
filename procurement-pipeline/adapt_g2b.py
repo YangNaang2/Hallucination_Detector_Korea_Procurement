@@ -169,7 +169,7 @@ def main():
                 promoted += 1
                 status = 'parsed'
             parsed_path = parsed_path or selected[(key, doc_id)]
-        elif status in ('failed', 'low_quality') and parsed_path and doc_id:
+        elif status == 'failed' and parsed_path and doc_id:
             # 같은 파일이 여러 공고에 붙은 경우, 재파싱 도구는 첫 공고에만 chunk_ready 행을 추가한다.
             # parsed JSON 은 문서 단위로 갱신되므로 그 상태가 parsed 면 다른 공고에서도 parsed 로 본다.
             if doc_id not in parsed_status_cache:
