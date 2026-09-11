@@ -52,7 +52,9 @@ def fake_month(root):
             row.update(document_id=sha, raw_path=f'{ws}/raw/aa/{sha}.{ext}', parsed_path=f'{ws}/parsed/{sha}.json', cached=True)
         return row
     write_jsonl(root / 'manifest.jsonl', [
-        m('R1-001', 'aa01', '입찰공고문.hwp', 'parsed'), m('R1-001', 'aa02', '제안요청서.hwp', 'parsed'),
+        m('R1-001', 'aa01', '입찰공고문.hwp', 'parsed'),
+        # manifest 는 옛 failed 지만 나중에 재파싱되어 chunk_ready 에 들어간 문서: parsed 로 승격되어야 한다
+        m('R1-001', 'aa02', '제안요청서.hwp', 'failed'),
         m('R1-001', None, '제안요청서.pdf', 'skipped_duplicate'),
         m('R1-000', 'aa01', '입찰공고문.hwp', 'parsed'),
         m('R2-000', 'aa01', '입찰공고문.hwp', 'parsed'),
@@ -86,6 +88,7 @@ class AdapterTest(unittest.TestCase):
             self.assertGreater(len(secs), 1)
             self.assertTrue(all(set(s) == {'page', 'section', 'text'} for s in secs))
             report = json.loads((src / 'adapter' / 'adapt_report.json').read_text(encoding='utf-8'))
+            self.assertEqual(report['promoted_by_chunk_ready'], 1, 'manifest failed 였지만 chunk_ready 에 있는 문서는 parsed 로 승격')
             self.assertEqual(report['notices_dropped_old_version'], 1)
             self.assertEqual(report['status']['skipped_duplicate'], 1)
             # prepare.py 가 그대로 받아서 완전 공고(공고문+제안요청서) 1건을 추천한다

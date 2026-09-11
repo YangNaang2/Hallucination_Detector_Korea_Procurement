@@ -141,19 +141,38 @@ def main():
             latest[no] = order
 
     # 2) manifest: 공고별 첨부 상태 (skipped_duplicate는 대체본이므로 첨부 목록에서 제외, 집계만)
+    # chunk_ready 가 최종 인덱스다. 실패 문서를 나중에 따로 재파싱해 chunk_ready 에만 추가한 경우(manifest 는 옛 failed 그대로)
+    # 를 위해, chunk_ready 에 있으면 manifest 상태와 무관하게 parsed 로 본다(실제 parsed JSON 내용은 아래서 다시 검사).
     selected = {}
     for c in read_jsonl(src / 'chunk_ready.jsonl'):
-        selected[(c['bid']['bid_key'], c['document_id'])] = c.get('selection', {}).get('reason')
+        selected[(c['bid']['bid_key'], c['document_id'])] = c.get('parsed_path')
     attachments = defaultdict(list)
     status_count = Counter()
+    promoted = 0
+    seen_pairs = set()
     for m in read_jsonl(src / 'manifest.jsonl'):
         status_count[m['status']] += 1
         if m['status'] == 'skipped_duplicate':
             continue
         key = m['bid']['bid_key']
-        attachments[key].append((m.get('document_id'), m['attachment'].get('filename') or '',
-                                 m.get('raw_path'), m.get('parsed_path'), m['status'],
-                                 (key, m.get('document_id')) in selected))
+        doc_id = m.get('document_id')
+        status, parsed_path = m['status'], m.get('parsed_path')
+        if (key, doc_id) in selected:
+            if status != 'parsed':
+                promoted += 1
+                status = 'parsed'
+            parsed_path = parsed_path or selected[(key, doc_id)]
+        seen_pairs.add((key, doc_id))
+        attachments[key].append((doc_id, m['attachment'].get('filename') or '', m.get('raw_path'), parsed_path,
+                                 status, (key, doc_id) in selected))
+    # chunk_ready 에만 있고 manifest 에 없는 문서도 첨부로 넣는다 (raw 경로는 parsed JSON 의 source.raw_path 에서 찾는다).
+    only_in_chunk_ready = 0
+    for c in read_jsonl(src / 'chunk_ready.jsonl'):
+        key, doc_id = c['bid']['bid_key'], c['document_id']
+        if (key, doc_id) in seen_pairs:
+            continue
+        only_in_chunk_ready += 1
+        attachments[key].append((doc_id, c['attachment'].get('filename') or '', None, c.get('parsed_path'), 'parsed', True))
 
     # 3) bids 순회 → 공고 행 생성 + 텍스트 변환
     report = dict(status=dict(status_count), notices_total=0, notices_kept=0, notices_dropped_old_version=0,
@@ -186,40 +205,48 @@ def main():
                          selected=is_selected, text_path=None, quality=None, text_chars=0)
                 reason = None
                 if status == 'parsed':
-                    raw_file = Path(raw_path) if raw_path else None
                     parsed_file = Path(parsed_path) if parsed_path else None
-                    if not (raw_file and raw_file.is_file() and raw_file.stat().st_size > 0):
-                        reason = 'raw_missing'
-                    elif not (parsed_file and parsed_file.is_file()):
+                    parsed = None
+                    if not (parsed_file and parsed_file.is_file()):
                         reason = 'parsed_missing'
                     else:
                         try:
                             parsed = json.loads(parsed_file.read_text(encoding='utf-8'))
                         except (OSError, ValueError):
-                            parsed, reason = None, 'parsed_unreadable'
-                        if parsed is not None:
-                            a['quality'] = (parsed.get('parse') or {}).get('quality')
-                            secs = sections(parsed)
-                            a['text_chars'] = sum(len(s['text']) for s in secs)
-                            if a['text_chars'] < 100:
-                                reason = 'text_too_short'
-                            elif a['quality'] is not None and a['quality'] < args.min_quality:
-                                reason = 'quality_below_threshold'
-                            elif a['path'] is None:
-                                reason = 'raw_outside_root'
+                            reason = 'parsed_unreadable'
+                    if parsed is not None and not raw_path:
+                        raw_path = (parsed.get('source') or {}).get('raw_path')
+                        a['path'] = rel(raw_path) if raw_path else None
+                    raw_file = Path(raw_path) if raw_path else None
+                    if parsed is not None and not (raw_file and raw_file.is_file() and raw_file.stat().st_size > 0):
+                        reason = 'raw_missing'
+                    elif parsed is not None:
+                        pstatus = (parsed.get('parse') or {}).get('status', 'parsed')
+                        a['quality'] = (parsed.get('parse') or {}).get('quality')
+                        secs = sections(parsed)
+                        a['text_chars'] = sum(len(s['text']) for s in secs)
+                        if pstatus != 'parsed':
+                            reason = f'parsed_json_status_{pstatus}'
+                            a['parse_status'] = pstatus
+                        elif a['text_chars'] < 100:
+                            reason = 'text_too_short'
+                        elif a['quality'] is not None and a['quality'] < args.min_quality:
+                            reason = 'quality_below_threshold'
+                        elif a['path'] is None:
+                            reason = 'raw_outside_root'
+                        else:
+                            text_file = out / 'text' / f'{doc_id}.jsonl'
+                            if not args.no_text:
+                                with text_file.open('w', encoding='utf-8') as ft:
+                                    for s in secs:
+                                        ft.write(json.dumps(s, ensure_ascii=False) + '\n')
+                            a['text_path'] = rel(text_file)
+                            if a['text_path'] is None:
+                                reason = 'text_outside_root'
+                            elif args.no_text:
+                                reason = 'text_skipped'
                             else:
-                                text_file = out / 'text' / f'{doc_id}.jsonl'
-                                if not args.no_text:
-                                    with text_file.open('w', encoding='utf-8') as ft:
-                                        for s in secs:
-                                            ft.write(json.dumps(s, ensure_ascii=False) + '\n')
-                                a['text_path'] = rel(text_file)
-                                if a['text_path'] is None:
-                                    reason = 'text_outside_root'
-                                elif args.no_text:
-                                    reason = 'text_skipped'
-                                else:
-                                    a['integrity_ok'] = True
+                                a['integrity_ok'] = True
                     if reason in ('raw_missing', 'parsed_missing'):
                         report['missing_file'] += 1
                 else:
@@ -233,6 +260,8 @@ def main():
             report['notices_kept'] += 1
             report['sector'][sector] += 1
             fo.write(json.dumps(row, ensure_ascii=False) + '\n')
+    report['promoted_by_chunk_ready'] = promoted
+    report['only_in_chunk_ready'] = only_in_chunk_ready
     report['kind'] = dict(report['kind'])
     report['reason'] = dict(report['reason'])
     report['sector'] = dict(Counter(report['sector']).most_common(60))
