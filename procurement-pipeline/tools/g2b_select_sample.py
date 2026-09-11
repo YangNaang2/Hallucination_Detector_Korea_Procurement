@@ -52,12 +52,16 @@ def main():
     ap.add_argument('--per-month', type=int, default=17)
     ap.add_argument('--min-docs', type=int, default=2, help='공고당 최소 사용 문서 수')
     ap.add_argument('--out', required=True)
+    ap.add_argument('--exclude', default=None, help='제외할 공고 키 목록 파일 (사람이 검토해 뺀 것, 한 줄에 하나, # 주석 가능)')
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     sectors = set(args.sector)
     all_rows = []
     seen_titles = set()
+    exclude = set()
+    if args.exclude:
+        exclude = {l.split('#')[0].strip() for l in Path(args.exclude).read_text(encoding='utf-8-sig').splitlines() if l.split('#')[0].strip()}
     for item in args.src:
         label, folder = item.split('=', 1)
         folder = Path(folder)
@@ -71,7 +75,10 @@ def main():
                 info[f'{no}-{o}'] = dict(sector=sec, title=b.get('bidNtceNm'), agency=b.get('dminsttNm') or b.get('ntceInsttNm'),
                                          budget=budget_of(b), deadline=b.get('bidClseDt'), month=(b.get('bidNtceDt') or '')[:7],
                                          method=b.get('cntrctCnclsMthdNm'), url=b.get('bidNtceDtlUrl'))
-        keep = {f'{no}-{o}' for no, o in latest.items()} & set(info)
+        # 제외 공고의 제목을 미리 '본 것'으로 등록해 다른 달의 재공고(다른 공고번호)도 같이 빠지게 한다
+        for k in exclude & set(info):
+            seen_titles.add(norm_title(info[k]['title']))
+        keep = ({f'{no}-{o}' for no, o in latest.items()} & set(info)) - exclude
         docs = defaultdict(list)
         for c in read_jsonl(folder / 'chunk_ready.jsonl'):
             k = c['bid']['bid_key']
