@@ -157,9 +157,15 @@ def main():
             return (json.loads(Path(path).read_text(encoding='utf-8')).get('parse') or {}).get('status')
         except (OSError, ValueError):
             return None
+    group_summary_rows = 0
     for m in read_jsonl(src / 'manifest.jsonl'):
         status_count[m['status']] += 1
         if m['status'] == 'skipped_duplicate':
+            continue
+        if 'attachment' not in m:
+            # 같은 이름 다중 포맷 묶음에서 후보가 전부 실패/저품질이라 선택된 첨부가 없는 경우의 요약 행
+            # (키: bid, duplicate_group, candidates, candidate_attempts, reason). 첨부 단위 기록이 아니므로 건너뛴다.
+            group_summary_rows += 1
             continue
         key = m['bid']['bid_key']
         doc_id = m.get('document_id')
@@ -277,6 +283,7 @@ def main():
             fo.write(json.dumps(row, ensure_ascii=False) + '\n')
     report['promoted_by_chunk_ready'] = promoted
     report['only_in_chunk_ready'] = only_in_chunk_ready
+    report['manifest_group_summary_rows_skipped'] = group_summary_rows
     report['kind'] = dict(report['kind'])
     report['reason'] = dict(report['reason'])
     report['sector'] = dict(Counter(report['sector']).most_common(60))

@@ -62,6 +62,9 @@ def fake_month(root):
         # → parsed JSON 상태(parsed)를 보고 R2 에서도 parsed 로 승격되어야 한다
         m('R2-000', 'aa02', '제안요청서.hwp', 'failed'),
         m('R3-000', 'aa03', '과업지시서.pdf', 'low_quality'),
+        # 후보가 전부 실패한 다중 포맷 묶음의 요약 행: attachment 키가 없다. 건너뛰어야 한다 (실데이터 5월 14행, 4월 26행)
+        dict(status='unsupported', bid=dict(bid_key='R3-000'), duplicate_group='공고서', reason='동일 문서의 모든 포맷이 파싱 실패/저품질.',
+             candidates=[dict(filename='공고서.hwp'), dict(filename='공고서.pdf')], candidate_attempts=[]),
     ])
     write_jsonl(root / 'chunk_ready.jsonl', [
         dict(document_id='aa01', bid=dict(bid_key='R1-001'), attachment=dict(filename='입찰공고문.hwp'), parsed_path=f'{ws}/parsed/aa01.json', selection=dict(reason='single_attachment')),
@@ -97,6 +100,8 @@ class AdapterTest(unittest.TestCase):
             self.assertTrue(all(x['integrity_ok'] for x in r2['attachments']), 'R2 의 제안요청서도 parsed JSON 기준으로 사용 가능')
             self.assertEqual(report['notices_dropped_old_version'], 1)
             self.assertEqual(report['status']['skipped_duplicate'], 1)
+            self.assertEqual(report['manifest_group_summary_rows_skipped'], 1)
+            self.assertEqual(len(rows[('R3', '000')]['attachments']), 1, '요약 행은 첨부로 들어가지 않는다')
             # prepare.py 가 그대로 받아서 완전 공고(공고문+제안요청서) 1건을 추천한다
             r = subprocess.run([sys.executable, str(HERE / 'prepare.py'), '--input', str(src / 'adapter' / 'manifest.jsonl'),
                                 '--root', str(src), '--out', str(Path(tmp) / 'out'), '--n', '1', '--min-sector', '1'],
