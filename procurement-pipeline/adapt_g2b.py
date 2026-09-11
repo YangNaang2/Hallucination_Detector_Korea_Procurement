@@ -150,6 +150,13 @@ def main():
     status_count = Counter()
     promoted = 0
     seen_pairs = set()
+    parsed_status_cache = {}
+
+    def peek_parse_status(path):
+        try:
+            return (json.loads(Path(path).read_text(encoding='utf-8')).get('parse') or {}).get('status')
+        except (OSError, ValueError):
+            return None
     for m in read_jsonl(src / 'manifest.jsonl'):
         status_count[m['status']] += 1
         if m['status'] == 'skipped_duplicate':
@@ -162,6 +169,14 @@ def main():
                 promoted += 1
                 status = 'parsed'
             parsed_path = parsed_path or selected[(key, doc_id)]
+        elif status in ('failed', 'low_quality') and parsed_path and doc_id:
+            # 같은 파일이 여러 공고에 붙은 경우, 재파싱 도구는 첫 공고에만 chunk_ready 행을 추가한다.
+            # parsed JSON 은 문서 단위로 갱신되므로 그 상태가 parsed 면 다른 공고에서도 parsed 로 본다.
+            if doc_id not in parsed_status_cache:
+                parsed_status_cache[doc_id] = peek_parse_status(parsed_path)
+            if parsed_status_cache[doc_id] == 'parsed':
+                promoted += 1
+                status = 'parsed'
         seen_pairs.add((key, doc_id))
         attachments[key].append((doc_id, m['attachment'].get('filename') or '', m.get('raw_path'), parsed_path,
                                  status, (key, doc_id) in selected))

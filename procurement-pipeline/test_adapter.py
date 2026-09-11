@@ -58,6 +58,9 @@ def fake_month(root):
         m('R1-001', None, '제안요청서.pdf', 'skipped_duplicate'),
         m('R1-000', 'aa01', '입찰공고문.hwp', 'parsed'),
         m('R2-000', 'aa01', '입찰공고문.hwp', 'parsed'),
+        # 같은 문서가 다른 공고(R2)에도 붙어 있고 manifest 는 failed, chunk_ready 에는 R1 행만 있음
+        # → parsed JSON 상태(parsed)를 보고 R2 에서도 parsed 로 승격되어야 한다
+        m('R2-000', 'aa02', '제안요청서.hwp', 'failed'),
         m('R3-000', 'aa03', '과업지시서.pdf', 'low_quality'),
     ])
     write_jsonl(root / 'chunk_ready.jsonl', [
@@ -88,7 +91,10 @@ class AdapterTest(unittest.TestCase):
             self.assertGreater(len(secs), 1)
             self.assertTrue(all(set(s) == {'page', 'section', 'text'} for s in secs))
             report = json.loads((src / 'adapter' / 'adapt_report.json').read_text(encoding='utf-8'))
-            self.assertEqual(report['promoted_by_chunk_ready'], 1, 'manifest failed 였지만 chunk_ready 에 있는 문서는 parsed 로 승격')
+            self.assertEqual(report['promoted_by_chunk_ready'], 2, 'chunk_ready 또는 parsed JSON 상태로 승격된 문서 2건')
+            r2 = rows[('R2', '000')]
+            self.assertEqual(sorted(x['kind'] for x in r2['attachments']), ['notice', 'rfp'])
+            self.assertTrue(all(x['integrity_ok'] for x in r2['attachments']), 'R2 의 제안요청서도 parsed JSON 기준으로 사용 가능')
             self.assertEqual(report['notices_dropped_old_version'], 1)
             self.assertEqual(report['status']['skipped_duplicate'], 1)
             # prepare.py 가 그대로 받아서 완전 공고(공고문+제안요청서) 1건을 추천한다
