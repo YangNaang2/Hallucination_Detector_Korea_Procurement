@@ -107,6 +107,8 @@ def main():
     ap.add_argument('--n', type=int, default=40)
     ap.add_argument('--min-sector', type=int, default=30)
     ap.add_argument('--max-chars', type=int, default=10000)
+    ap.add_argument('--business', default=None, help="업무구분으로 제한. 예: 용역 (sector 가 '용역·' 로 시작하는 분야만 추천 대상)")
+    ap.add_argument('--sector', default=None, help='추천 대신 이 분야를 그대로 선택. 예: "용역·SW 및 시스템 개발"')
     args = ap.parse_args()
     if min(args.n,args.min_sector,args.max_chars) <= 0:
         ap.error('limits must be positive')
@@ -147,13 +149,25 @@ def main():
     for sector, s in stats.items():
         rate = s['complete']/s['notices']
         usable = s['usable_docs']/max(s['attachments'],1)
+        in_scope = args.business is None or sector == args.business or sector.startswith(args.business + '·')
         ranking.append(dict(sector=sector, **s, complete_rate=rate,
             usable_rate=usable, score=.8*wilson(s['complete'],s['notices'])+.2*usable,
-            eligible=sector!='미분류' and s['notices']>=args.min_sector and s['complete']>=args.n))
-    ranking.sort(key=lambda r:(r['eligible'],r['score'],r['complete']), reverse=True)
-    chosen = next((r['sector'] for r in ranking if r['eligible']),None)
+            eligible=in_scope and sector!='미분류' and s['notices']>=args.min_sector and s['complete']>=args.n))
+    # 점수(완전 공고 비율)는 자격 판단용이고, 적격 분야끼리는 완전 공고 '수'가 큰 쪽을 앞세운다.
+    # 2026-05 실데이터에서 비율만 쓰면 135건짜리 소분야가 1,096건·3,063건 분야를 제치고 1위가 됐다.
+    ranking.sort(key=lambda r:(r['eligible'],r['complete'],r['score']), reverse=True)
+    if args.sector:
+        match = next((r for r in ranking if r['sector']==args.sector), None)
+        if not match:
+            raise SystemExit(f'--sector 분야 없음: {args.sector}. sector_report.csv 의 sector 값을 그대로 쓴다')
+        if not match['eligible']:
+            print(f"경고: {args.sector} 는 적격 조건(모수 {args.min_sector}, 완전 {args.n}) 미달이지만 지정에 따라 선택한다")
+        chosen = args.sector
+    else:
+        chosen = next((r['sector'] for r in ranking if r['eligible']),None)
     save(out/'sector_report.json',dict(ranking=ranking,recommended=chosen,duplicate_rows=duplicates,
-        unit='notice_id + version', note='structural completeness, not semantic/legal completeness'))
+        business_filter=args.business, forced_sector=args.sector,
+        unit='notice_id + version', note='structural completeness, not semantic/legal completeness; eligible sectors ranked by complete count'))
     import csv
     if ranking:
         with (out/'sector_report.csv').open('w',encoding='utf-8-sig',newline='') as f:
