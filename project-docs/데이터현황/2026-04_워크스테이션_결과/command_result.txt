@@ -1,0 +1,8 @@
+(base) piai@piai-Precision-7920-Tower:~/다운로드/narajangteo_rag_ingest/procurem-pient-pient-pipeline$ python adapt_g2b.py --src /home/piai/다운로드/narajangteo_rag_ingest/data/2026-04
+공고 48033/53153 (이전 차수 제외 5120), 첨부 108332 중 사용 가능 92063 → /home/piai/다운로드/narajangteo_rag_ingest/data/2026-04/adapter/manifest.jsonl
+
+
+(base) piai@piai-Precision-7920-Tower:~/다운로드/narajangteo_rag_ingest/procurement-pipel
+ine$ python prepare.py --input /home/piai/다운로드/narajangteo_rag_ingest/data/2026-04/adapter/manifest.jsonl --root /home/piai/다운로드/narajangteo_rag_ingest/data/2026-04 --out out/2026-04 --n 40 --min-sector 30 
+용역·디자인: 40건 → out/2026-04/packets.jsonl (LLM 호출 0회)
+
