@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" style="font-family:'Malgun Gothic',sans-serif">
+  <defs>
+
+    <linearGradient id="trackABg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="trackBBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c44" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0a0f29" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="magentaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+
+
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#06b6d4" />
+    </marker>
+    <marker id="arrowMagenta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#3b82f6" />
+    </marker>
+  </defs>
+
+
+  <rect width="1600" height="900" fill="#0b0f19" /><g transform="translate(60, 45)">
+    <rect x="0" y="0" width="1480" height="60" rx="8" fill="#1e293b" opacity="0.5" />
+    <text x="24" y="39" font-size="28" fill="#f8fafc" font-weight="700">한국어 환각 탐지와 권한 기반 RAG 전체 구조</text><text x="1080" y="38" font-size="23" fill="#94a3b8" font-weight="400">B1조 · 3주차 중간 보고</text></g>
+
+
+  <g transform="translate(60, 125)">
+
+    <rect x="0" y="0" width="680" height="730" rx="16" fill="url(#trackABg)" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)" />
+
+
+    <rect x="24" y="20" width="8" height="26" rx="4" fill="url(#cyanGrad)" />
+    <text x="32" y="42" font-size="27" fill="#38bdf8" font-weight="700">TRACK A  학습 파이프라인</text><text x="32" y="76" font-size="21" fill="#94a3b8" font-weight="400">학습 완료 · 서비스 연결 예정</text><g transform="translate(30,105)"><rect width="620" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#0284c7" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">1</text><text x="56" y="39" font-size="24" fill="#38bdf8" font-weight="700">RAGTruth 원본·환각 구간 확보</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">학습 문맥, 생성 답변, 환각 span을 함께 보존</text></g><line x1="340" x2="340" y1="199" y2="222" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)" /><g transform="translate(30,225)"><rect width="620" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#0284c7" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">2</text><text x="56" y="39" font-size="24" fill="#38bdf8" font-weight="700">한국어 번역·태그 검사</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">Gemma 번역에 &lt;HAL&gt; 태그를 유지하고 검사</text></g><line x1="340" x2="340" y1="319" y2="342" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)" /><g transform="translate(30,345)"><rect width="620" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#0284c7" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">3</text><text x="56" y="39" font-size="24" fill="#38bdf8" font-weight="700">한국어 라벨 좌표 재계산</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">문자 오프셋을 다시 계산하여 토큰 라벨 구성</text></g><line x1="340" x2="340" y1="439" y2="462" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)" /><g transform="translate(30,465)"><rect width="620" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#0284c7" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">4</text><text x="56" y="39" font-size="24" fill="#38bdf8" font-weight="700">인코더 모델 학습 완료</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">KLUE-RoBERTa / XLM-RoBERTa / BGE-M3</text></g><line x1="340" x2="340" y1="559" y2="582" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)" /><g transform="translate(30,585)"><rect width="620" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#0284c7" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">5</text><text x="56" y="39" font-size="24" fill="#38bdf8" font-weight="700">서비스용 탐지기 연결 예정</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">체크포인트·임계값·장문 처리 조건을 고정</text></g></g>
+
+
+  <g transform="translate(780, 125)">
+
+    <rect x="0" y="0" width="760" height="730" rx="16" fill="url(#trackBBg)" stroke="#3b82f6" stroke-width="1.5" filter="url(#dropShadow)" />
+
+
+    <rect x="24" y="20" width="8" height="26" rx="4" fill="url(#magentaGrad)" />
+    <text x="32" y="42" font-size="27" fill="#fb7185" font-weight="700">TRACK B  질의 처리 파이프라인</text><text x="32" y="76" font-size="21" fill="#94a3b8" font-weight="400">목표 구조 · 실제 통합 예정</text><g transform="translate(30,105)"><rect width="700" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#be365f" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">1</text><text x="56" y="39" font-size="24" fill="#fb7185" font-weight="700">회사·프로젝트·승인 조건 확인</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">서버가 요청별 권한을 검사하고 기본 거부</text></g><line x1="380" x2="380" y1="199" y2="222" stroke="#fb7185" stroke-width="2" marker-end="url(#arrowMagenta)" /><g transform="translate(30,225)"><rect width="700" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#be365f" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">2</text><text x="56" y="39" font-size="24" fill="#fb7185" font-weight="700">허용된 문서 안에서 근거 검색</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">공고 + 접근 가능한 회사 증빙 / 원본 BGE-M3</text></g><line x1="380" x2="380" y1="319" y2="342" stroke="#fb7185" stroke-width="2" marker-end="url(#arrowMagenta)" /><g transform="translate(30,345)"><rect width="700" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#be365f" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">3</text><text x="56" y="39" font-size="24" fill="#fb7185" font-weight="700">인가 문맥으로 로컬 답변 생성</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">Gemma 활용 계획 / 사내 처리 경계 설계</text></g><line x1="380" x2="380" y1="439" y2="462" stroke="#fb7185" stroke-width="2" marker-end="url(#arrowMagenta)" /><g transform="translate(30,465)"><rect width="700" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#be365f" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">4</text><text x="56" y="39" font-size="24" fill="#fb7185" font-weight="700">문서 지지 여부와 수치 조건 검토</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">학습한 환각 탐지기 + 별도 숫자·기간 규칙</text></g><line x1="380" x2="380" y1="559" y2="582" stroke="#fb7185" stroke-width="2" marker-end="url(#arrowMagenta)" /><g transform="translate(30,585)"><rect width="700" height="94" rx="10" fill="#142034" stroke="#475569" /><circle cx="28" cy="31" r="16" fill="#be365f" /><text x="22" y="39" font-size="22" fill="#ffffff" font-weight="700">5</text><text x="56" y="39" font-size="24" fill="#fb7185" font-weight="700">근거 원문과 의심 구간 함께 표시</text><text x="26" y="76" font-size="21" fill="#e2e8f0" font-weight="400">동일한 문서 버전·인용 청크·답변을 연결</text></g></g>
+
+
+  <path d="M 720 758 L 766 758 L 766 622 L 808 622" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arrowCyan)" /><text x="648" y="871" font-size="19" fill="#38bdf8" font-weight="400">가중치 연결</text><text x="60" y="894" font-size="19" fill="#94a3b8" font-weight="400">학습된 모델은 입력 문서에 대한 지지 여부를 판정합니다. 실제 서비스의 권한·생성·탐지 통합은 다음 단계입니다.</text></svg>
