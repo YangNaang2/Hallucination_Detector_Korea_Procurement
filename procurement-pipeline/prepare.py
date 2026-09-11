@@ -26,8 +26,9 @@ def audit(row, root):
         if identity in seen:
             continue
         seen.add(identity)
-        path = (root / a.get('path', '__missing__')).resolve()
-        text_path = (root / a.get('text_path', '__missing__')).resolve()
+        # 실패/저품질 첨부는 path·text_path가 None으로 올 수 있다. 없는 경로로 취급한다.
+        path = (root / (a.get('path') or '__missing__')).resolve()
+        text_path = (root / (a.get('text_path') or '__missing__')).resolve()
         # A filename alone is never evidence of an intact, parsed attachment.
         a['usable'] = bool(path.is_relative_to(root) and text_path.is_relative_to(root)
                            and path.is_file() and path.stat().st_size > 0
@@ -42,7 +43,10 @@ def audit(row, root):
             good.update(a['groups'])
         attachments.append(a)
     row['attachments'] = attachments
-    row['complete'] = len(good) == 3
+    # 실데이터(2026-05 표본)에서는 공고문+제안요청서 또는 공고문+과업지시서 구성이 대부분이고 3종이 모두 있는 공고는 드물다.
+    # '완전' = 공고문 1건 + 요건 문서(제안요청서/과업·규격서) 1건 이상.
+    row['complete'] = 'notice' in good and bool(good & {'rfp', 'spec'})
+    row['groups_found'] = sorted(good)
     row['usable_docs'] = sum(a['usable'] for a in attachments)
     return row
 

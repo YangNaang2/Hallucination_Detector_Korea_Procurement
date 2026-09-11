@@ -34,7 +34,10 @@ class PipelineTest(unittest.TestCase):
             a=audit(r,root)
             self.assertEqual(len(a['attachments']),3)
             self.assertTrue(a['complete'])
+            # 완전 = 공고문 + (제안요청서 또는 과업지시서). spec이 빠져도 notice+rfp 로 완전, notice 가 빠지면 불완전.
             (root/'0-2.txt').unlink()
+            self.assertTrue(audit(r,root)['complete'])
+            (root/'0-0.txt').unlink()
             self.assertFalse(audit(r,root)['complete'])
 
     def test_quotes_and_no_invented_location(self):

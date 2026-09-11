@@ -52,7 +52,9 @@ python prepare.py --input /data/manifest.jsonl --root /data --out out --n 40 --m
 - `packets.jsonl`: 모델에 전달할 근거 묶음.
 
 핵심 그룹: **입찰공고 / 제안요청(RFP) / 과업·규격 문서**.
-통합 문서가 여러 그룹에 해당할 수 있다. 세 개의 별도 파일을 반드시 요구하는 기준은 아니다.
+통합 문서가 여러 그룹에 해당할 수 있다. 세 개의 별도 파일을 반드시 요구하는 기준이 아니다.
+**완전 공고 = 공고문 1건 + 요건 문서(제안요청서 또는 과업·규격서) 1건 이상.**
+2026-05 실데이터 표본에서 세 종류가 모두 있는 공고는 드물었고(5건 중 0건), 공고문+제안요청서 또는 공고문+과업지시서 구성이 일반적이라 이렇게 정했다.
 12대 문서 이름은 서로 겹치는 분류이며 모두 별도 파일로 존재해야 하는 조건이 아니다.
 
 파일 존재·크기, download_status=ok, parse_status=ok, integrity_ok=true, 파서 결과 존재를 모두 요구한다.
@@ -116,7 +118,27 @@ python generate.py --packets out/packets.jsonl --out generated --model YOUR_MODE
 
 3D 위치와 건물·설비 표현은 나중에 별도 scene 데이터로 연결한다. 기존 ASTRA UI/API에 자동 연결된 상태는 아니다.
 
-## 5. 실제 데이터 없이 먼저 테스트
+## 5. 실제 수집기 출력 연결 (adapt_g2b.py)
+
+팀 수집기(`narajangteo_ingest.py`)는 월 폴더에 `bids.jsonl`(API 원본), `manifest.jsonl`(첨부 처리 이력), `chunk_ready.jsonl`(선택 문서),
+`raw/<sha2>/<sha256>.<ext>`(원본), `parsed/<sha256>.json`(text + blocks)을 만든다. 공고별 폴더가 아니라 해시 기반 평탄 구조다.
+`adapt_g2b.py`가 이것을 위 입력 계약으로 바꾼다. 원본을 옮기거나 지우지 않고 `<월 폴더>/adapter/`에만 쓴다.
+
+```bash
+# 데이터가 있는 워크스테이션에서, procurement-pipeline 폴더에서 실행
+python adapt_g2b.py --src /data/g2b/nara/2026-05
+python prepare.py --input /data/g2b/nara/2026-05/adapter/manifest.jsonl --root /data/g2b/nara/2026-05 --out out/2026-05 --n 40 --min-sector 30
+```
+
+- 공고번호별 **최신 차수만** 남긴다(정정·재공고의 이전 차수 제외). 전부 남기려면 `--all-versions`.
+- `sector` = 업무구분·세부분류. 용역은 공공조달 중분류(`pubPrcrmntMidClsfcNm`), 물품은 세부품명, 공사는 주공종명. 세부분류가 없으면 업무구분만.
+- `kind` = 파일명 규칙 분류: notice / rfp / spec / eval / contract / estimate / form / other. 파일명이 애매하면 other가 되므로 표본 확정 전에 사람이 확인한다.
+- `integrity_ok` = manifest status=parsed + raw·parsed 파일 실재 + 본문 100자 이상 + parse.quality ≥ 0.9(`--min-quality`). 내용의 완전성은 보장하지 않는다.
+- `skipped_duplicate`(같은 이름의 다른 형식)는 첨부 목록에서 빼고 `adapt_report.json`에만 집계한다. `low_quality`/`failed`/`unsupported`는 첨부로 남기되 usable=false.
+- 텍스트: PDF는 페이지 단위, HWP는 줄바꿈 없는 문단 하나라 `제N조`, `1.`, `Ⅰ.`, `□` 같은 제목 패턴으로 나누고 3,000자 초과분은 문장 끝에서 자른다. `section`은 구간 첫 30자.
+- `adapt_report.json`: 상태별·종류별·분야별 집계, 파일 누락 수. 워크스테이션에서 이 파일과 `out/2026-05/sector_report.csv`만 공유하면 된다.
+
+## 6. 실제 데이터 없이 먼저 테스트
 
 ```bash
 python -m unittest -v test_pipeline.py
