@@ -108,7 +108,8 @@ def main():
     ap.add_argument('--min-sector', type=int, default=30)
     ap.add_argument('--max-chars', type=int, default=10000)
     ap.add_argument('--business', default=None, help="업무구분으로 제한. 예: 용역 (sector 가 '용역·' 로 시작하는 분야만 추천 대상)")
-    ap.add_argument('--sector', default=None, help='추천 대신 이 분야를 그대로 선택. 예: "용역·SW 및 시스템 개발"')
+    ap.add_argument('--sector', default=None, help='추천 대신 이 분야를 선택. 쉼표로 여러 개: "용역·SW 및 시스템 개발,용역·운영 및 유지관리"')
+    ap.add_argument('--ids', default=None, help='표본을 추천/추출하지 않고 이 파일의 공고 키(한 줄에 하나, 예 R26BK01500282-000)만 패킷으로 만든다')
     args = ap.parse_args()
     if min(args.n,args.min_sector,args.max_chars) <= 0:
         ap.error('limits must be positive')
@@ -156,15 +157,18 @@ def main():
     # 점수(완전 공고 비율)는 자격 판단용이고, 적격 분야끼리는 완전 공고 '수'가 큰 쪽을 앞세운다.
     # 2026-05 실데이터에서 비율만 쓰면 135건짜리 소분야가 1,096건·3,063건 분야를 제치고 1위가 됐다.
     ranking.sort(key=lambda r:(r['eligible'],r['complete'],r['score']), reverse=True)
-    if args.sector:
-        match = next((r for r in ranking if r['sector']==args.sector), None)
-        if not match:
-            raise SystemExit(f'--sector 분야 없음: {args.sector}. sector_report.csv 의 sector 값을 그대로 쓴다')
-        if not match['eligible']:
-            print(f"경고: {args.sector} 는 적격 조건(모수 {args.min_sector}, 완전 {args.n}) 미달이지만 지정에 따라 선택한다")
-        chosen = args.sector
+    wanted = [s.strip() for s in args.sector.split(',')] if args.sector else []
+    if wanted:
+        for w in wanted:
+            match = next((r for r in ranking if r['sector']==w), None)
+            if not match:
+                raise SystemExit(f'--sector 분야 없음: {w}. sector_report.csv 의 sector 값을 그대로 쓴다')
+            if not match['eligible']:
+                print(f"경고: {w} 는 적격 조건(모수 {args.min_sector}, 완전 {args.n}) 미달이지만 지정에 따라 선택한다")
+        chosen = ','.join(wanted)
     else:
         chosen = next((r['sector'] for r in ranking if r['eligible']),None)
+    chosen_set = set(wanted) if wanted else ({chosen} if chosen else set())
     save(out/'sector_report.json',dict(ranking=ranking,recommended=chosen,duplicate_rows=duplicates,
         business_filter=args.business, forced_sector=args.sector,
         unit='notice_id + version', note='structural completeness, not semantic/legal completeness; eligible sectors ranked by complete count'))
@@ -172,31 +176,56 @@ def main():
     if ranking:
         with (out/'sector_report.csv').open('w',encoding='utf-8-sig',newline='') as f:
             w=csv.DictWriter(f,fieldnames=list(ranking[0]));w.writeheader();w.writerows(ranking)
-    if not chosen:
-        print('추천 보류: 최소 모수/완전 공고 수 부족. sector_report.json 확인')
-        return
-    strata = defaultdict(list)
-    for key, month, agency, budget in candidates[chosen]:
-        try:
-            band = int(math.log10(max(float(budget),1)))
-        except (ValueError,TypeError):
-            band = 'unknown'
-        strata[(month,agency,str(band))].append(key)
-    for keys in strata.values():
-        keys.sort(key=lambda k:digest(['seed42',k]))
-    picked=[]
-    while len(picked)<args.n and any(strata.values()):
-        for k in sorted(strata):
-            if strata[k] and len(picked)<args.n:
-                picked.append(strata[k].pop())
+    if args.ids:
+        # 지정 목록 모드: 분야 추천을 건너뛰고 주어진 공고만 패킷으로 만든다 (로컬에서 고른 표본을 워크스테이션에서 추출할 때)
+        wanted_ids = [l.strip() for l in Path(args.ids).read_text(encoding='utf-8-sig').splitlines() if l.strip() and not l.startswith('#')]
+        picked, missing, incomplete = [], [], []
+        for k in wanted_ids:
+            key = k.replace('-', '::', 1) if '::' not in k else k
+            found = db.execute('SELECT payload FROM notices WHERE id=?', (key,)).fetchone()
+            if not found:
+                missing.append(k); continue
+            if not json.loads(found[0])['complete']:
+                incomplete.append(k)
+            picked.append(key)
+        chosen = f'ids:{Path(args.ids).name}'
+        method = 'explicit id list'
+        if missing:
+            print(f'경고: manifest 에 없는 공고 {len(missing)}건: {missing[:5]}')
+        if incomplete:
+            print(f'경고: 완전 공고가 아닌 공고 {len(incomplete)}건 (그대로 포함): {incomplete[:5]}')
+    else:
+        if not chosen:
+            print('추천 보류: 최소 모수/완전 공고 수 부족. sector_report.json 확인')
+            return
+        strata = defaultdict(list)
+        for sec in chosen_set:
+            for key, month, agency, budget in candidates[sec]:
+                try:
+                    band = int(math.log10(max(float(budget),1)))
+                except (ValueError,TypeError):
+                    band = 'unknown'
+                strata[(month,agency,str(band))].append(key)
+        for keys in strata.values():
+            keys.sort(key=lambda k:digest(['seed42',k]))
+        # 층 순회는 이름순이 아니라 해시 순 (이름순이면 '(사)…' 로 시작하는 기관만 뽑힌다)
+        order = sorted(strata, key=lambda s: digest(['seed42', list(s)]))
+        picked=[]
+        while len(picked)<args.n and any(strata.values()):
+            for k in order:
+                if strata[k] and len(picked)<args.n:
+                    picked.append(strata[k].pop())
+        method = 'equal round robin: month/agency/log10 budget; demo diversity, not unbiased evaluation'
     packets=[]
     for key in picked:
         row=json.loads(db.execute('SELECT payload FROM notices WHERE id=?',(key,)).fetchone()[0])
-        packets.append(packet(row,root,args.max_chars))
+        try:
+            packets.append(packet(row,root,args.max_chars))
+        except ValueError as e:
+            print(f'경고: {key} 패킷 생략 ({e})')
     jsonl(out/'packets.jsonl', packets)
     save(out/'sampling.json',dict(sector=chosen,selected=picked,n=len(picked),
-        method='equal round robin: month/agency/log10 budget; demo diversity, not unbiased evaluation',
-        total_text_chars=sum(p['text_chars'] for p in packets)))
+        method=method, total_text_chars=sum(p['text_chars'] for p in packets)))
     db.close()
     print(f'{chosen}: {len(packets)}건 → {out}/packets.jsonl (LLM 호출 0회)')
 
