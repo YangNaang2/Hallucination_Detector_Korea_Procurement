@@ -6,4 +6,4 @@ main{position:relative;display:block;isolation:isolate}.map-panel{position:absol
 
 /* MapLibre owns marker positioning; keep its absolute geographic anchors. */
 .region-marker.maplibregl-marker{position:absolute}@media(min-width:1201px){.maplibregl-ctrl-bottom-right{right:420px}.maplibregl-ctrl-bottom-left{left:360px}}
-
+.region-marker.maplibregl-marker{height:26px}
