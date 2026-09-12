@@ -4,7 +4,8 @@
  const $=q=>document.querySelector(q), core=window.PublicNotices;
  const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const money=v=>new Intl.NumberFormat('ko-KR').format(v)+'원';
- let records=[],visible=[],selected=null,map=null,engine=null,markers=[];
+ let records=[],visible=[],selected=null,map=null,engine=null,markers=[],ready=false,terrain=true;
+ const padding=()=>innerWidth>1200?{left:375,right:435,top:170,bottom:70}:{left:25,right:25,top:175,bottom:75};
  function showDetail(){
   const r=visible.find(r=>r.id===selected);
   if(!r){$('#detail').innerHTML='<h2>조회 결과가 없습니다.</h2><p class="empty">금액 범위나 검색 조건을 변경하세요.</p>';return;}
@@ -24,7 +25,7 @@
   $('#map-count').textContent=`조회 ${visible.length}건 중 지역 표시 ${mapped}건 · 위치 미확인 ${visible.length-mapped}건 · 지역 점 ${groups.length}개`;
   if(!map||!engine)return;
   markers.forEach(m=>m.remove());markers=[];
-  for(const g of groups){const button=document.createElement('button');button.className='region-marker';button.type='button';button.setAttribute('aria-label',g.name+' 지역 공고 '+g.records.length+'건으로 필터');button.innerHTML=escape(g.name)+'<b>'+g.records.length+'</b>';button.addEventListener('click',()=>{$('#region').value=g.name;apply();});markers.push(new engine.Marker({element:button}).setLngLat([g.lng,g.lat]).addTo(map));}
+  for(const g of groups){const button=document.createElement('button');button.className='region-marker';button.type='button';button.setAttribute('aria-label',g.name+' 지역 공고 '+g.records.length+'건으로 필터');button.innerHTML='<span class="gate-art" aria-hidden="true"><i class="shaft"></i><i class="core"></i><i class="pulse"></i><i class="pulse second"></i></span><span class="gate-label">'+escape(g.name)+' <b>'+g.records.length+'건</b></span>';button.addEventListener('click',()=>{$('#region').value=g.name;apply();});markers.push(new engine.Marker({element:button,anchor:'bottom'}).setLngLat([g.lng,g.lat]).addTo(map));}
  }
  function apply(){
   const range=core.parseRange($('#min').value,$('#max').value);
@@ -40,8 +41,10 @@
  // A reset event precedes the browser's reset default action.
  $('#filters').addEventListener('reset',()=>setTimeout(apply,0));
  document.querySelectorAll('[data-range]').forEach(b=>b.addEventListener('click',()=>{[$('#min').value,$('#max').value]=b.dataset.range.split(',');apply();}));
- $('#bid-list').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(!b)return;selected=b.dataset.id;renderList();showDetail();const r=visible.find(r=>r.id===selected);if(map&&r.region)map.flyTo({center:[r.region.lng,r.region.lat],zoom:7.5,pitch:25,duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:800});});
- $('#overview').addEventListener('click',()=>map?.flyTo({center:[127.7,36],zoom:5.7,pitch:0,duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:700}));
+ $('#bid-list').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(!b)return;selected=b.dataset.id;renderList();showDetail();const r=visible.find(r=>r.id===selected);if(map&&r.region)map.flyTo({center:[r.region.lng,r.region.lat],zoom:9,pitch:50,padding:padding(),duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1100});});
+ $('#overview').addEventListener('click',()=>map?.flyTo({center:[127.7,36],zoom:5.5,pitch:15,padding:padding(),duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:900}));
+ $('#map-light').addEventListener('click',()=>{if(!ready)return;const mode=document.body.dataset.mapLight==='night'?'dusk':'night';window.paintReality(map,mode);$('#map-light').textContent=mode==='night'?'야간 · NIGHT':'황혼 · DUSK';});
+ $('#terrain-toggle').addEventListener('click',()=>{if(!ready)return;terrain=!terrain;map.setTerrain(terrain?{source:'dem',exaggeration:1.6}:null);$('#terrain-toggle').textContent='3D 지형 '+(terrain?'ON':'OFF');$('#terrain-toggle').setAttribute('aria-pressed',String(terrain));});
  try{
   const response=await fetch('public-notices.json');if(!response.ok)throw Error('HTTP '+response.status);
   const data=await response.json();records=data.records.map(r=>({...r,region:core.locate(r.agency)}));
@@ -51,8 +54,9 @@
  }catch(e){$('#count').textContent='공고 자료를 불러오지 못했습니다. 실행.bat으로 서버를 실행한 뒤 다시 여세요.';$('#map-status').textContent='공고 자료 로딩 실패';console.error(e);return;}
  try{
   engine=await import('https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.mjs');
-  map=new engine.Map({container:'map',style:'https://tiles.openfreemap.org/styles/dark',center:[127.7,36],zoom:5.7,pitch:0,maxZoom:12,canvasContextAttributes:{antialias:false}});
-  map.on('load',()=>{$('#map-status').textContent='금액·월·분야·지역 필터가 목록과 지도에 함께 적용됩니다.';renderMap();});
+  const style=await window.makeRealityStyle();
+  map=new engine.Map({container:'map',style,center:[127.7,36],zoom:5.5,pitch:15,maxPitch:70,maxZoom:16,pixelRatio:Math.min(devicePixelRatio,1.25),maxTileCacheSize:240,canvasContextAttributes:{antialias:false}});
+  map.on('style.load',()=>{map.setProjection({type:'globe'});window.paintReality(map,'night');map.jumpTo({padding:padding()});ready=true;$('#map-status').textContent='ASTRA 3D 지형 1.6× · 지역별 공고 묶음 · 금액 필터 동시 적용';renderMap();});
   map.on('error',()=>{$('#map-status').textContent='지도 자료 일부를 불러오지 못했습니다. 공고 목록과 요건 조회는 계속 사용할 수 있습니다.';});
  }catch(e){$('#map-status').textContent='지도 엔진을 불러오지 못했습니다. 인터넷·WebGL을 확인하세요. 목록과 요건은 조회할 수 있습니다.';console.error(e);}
 })();

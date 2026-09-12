@@ -34,13 +34,18 @@ const assert=require('node:assert/strict'),path=require('node:path'),fs=require(
  console.log('PASS: browser filtering, 21 reviewed records, empty/invalid state, reset, selected detail, unknown regions, offline map, mobile width');
  // Online pass: map failures are environmental, but DOM/runtime failures are not.
  await page.unroute('https://**/*');await page.setViewportSize({width:1600,height:1000});
- await page.reload();await page.waitForTimeout(8000);
+ await page.reload();await page.waitForFunction(()=>document.querySelectorAll('.region-marker').length>0||document.querySelector('#map-status').textContent.includes('불러오지 못했습니다'),{},{timeout:45000});
  console.log('Online map:',await page.locator('#map-status').textContent(),'markers:',await page.locator('.region-marker').count());
  if(await page.locator('.region-marker').count()){
   await page.locator('.region-marker').first().click();
   assert.notEqual(await page.locator('#region').inputValue(),'');
   assert.equal(await page.locator('.region-marker').count(),1);
+  assert.equal(await page.locator('.region-marker').first().evaluate(el=>getComputedStyle(el).position),'absolute');
+  await page.locator('#map-light').click();assert.equal(await page.locator('#map-light').textContent(),'황혼 · DUSK');
+  await page.locator('#terrain-toggle').click();assert.equal(await page.locator('#terrain-toggle').getAttribute('aria-pressed'),'false');
+  await page.locator('#terrain-toggle').click();
   await page.getByRole('button',{name:'필터 초기화'}).click();
+  await page.waitForTimeout(1000);
  }
  await page.screenshot({path:path.join(process.env.TEMP,'astra-public-online.png'),fullPage:true});
  assert.deepEqual(errors,[]);
