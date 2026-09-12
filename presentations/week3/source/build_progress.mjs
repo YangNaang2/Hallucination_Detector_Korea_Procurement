@@ -81,7 +81,7 @@ function node(s,name,status,detail,x,y,w,h){
 }
 
 const {compose}=await import('./progress_slides.mjs');
-compose({p,C,text,change,title,table,bullets,node});
+await compose({p,C,text,change,title,table,bullets,node});
 const md=await fs.readFile(path.join(root,'3주차_진행보고_발표원고.md'),'utf8');
 const sections=md.split(/^## 슬라이드 /m).slice(1);
 if(sections.length!==8)throw new Error('Expected eight slide notes');
