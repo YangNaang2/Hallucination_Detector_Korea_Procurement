@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "validated_on": "2026-09-13",
+  "counts": {
+    "companies": 5,
+    "personnel": 45,
+    "projects": 16,
+    "evidence_records": 111,
+    "document_templates": 45,
+    "condition_mappings": 16,
+    "pilot_questions": 5,
+    "source_excerpts": 17
+  },
+  "source_checks": {
+    "quote_offsets": "passed:16",
+    "raw_sha256": "passed:17",
+    "visual_review_records": 1,
+    "visual_review_note": "기록된 수동 PDF 시각 확인 이력; 자동 재판독 검사가 아님"
+  },
+  "limitations": [
+    "실제 입찰 적격 판정·보안 서버·모델 성능 검증이 아니다.",
+    "인용의 문자열·해시 일치는 원문 표 전체·쪽수·법적 우선순위 검증이 아니다.",
+    "현재 문서·증빙 파일은 생성 목록 단계; 마스터 증빙 레코드만 존재한다."
+  ],
+  "unit_tests": {
+    "command": "python -m unittest -v test_company_master.py",
+    "tests_run": 32,
+    "failures": 0,
+    "errors": 0,
+    "status": "passed"
+  },
+  "access_rule_cases": {
+    "count": 20,
+    "passed": 20,
+    "live_service_tested": false
+  },
+  "artifact_sha256": {
+    "company_master.json": "841f8981dc1fc699e576c4c3348ab0be31f8c5c6bde315568c9f66debeecd583",
+    "company_master.schema.json": "a1353e438e1a719931b24fbe350b648e1ae23d7debf3e1e279b6c3257d363db1",
+    "generated_document.schema.json": "81dece0039f125dd3def8b6fe4c4e6a3143d62f671368d5a8968a792438f3dbe",
+    "document_inventory.json": "c4be25401fab490ae264a95f016c99cf514c5c46b2dcf9247ca447c97204f136",
+    "scenario_plans.json": "f397f74f9aafdc5701e8ac86ea5b14fc9d67a836e116e01f0ce9320c719a6a6f",
+    "condition_mappings.json": "e1fbe932d5ce51e19963c369c505e8e336f8192325330d2d72dc83409a154795",
+    "source_references.json": "2df0c5024159dd5d8114175f62ba8571c890c32a898b7b526fc6a65007e04ce5",
+    "requirements_analysis.json": "a78536c99975564aadec4579fe8e09ce9272aa945b6b9ea3d646177e144861a8",
+    "evaluation/qa_pilot_5.json": "b345980bac9b3f8214d27e2ff45b5cb193361f40b962d7ac106d6e42ba3cde0b",
+    "access_rule_checks.json": "a15e2165e3f5f5cb5a9884c4f2d4edfbf0781f3ed703e09b534b9209831abd68"
+  },
+  "validator_sha256": "8c20fad12861f37adafe230e7d3effde533e2ae1528ed051218da984a5f990b4",
+  "tests_sha256": "d12df4125d94e679d544e695432bfe256060d9b8f4b00b237578325495967ba8"
+}

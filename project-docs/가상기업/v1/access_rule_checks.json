@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "offline_reference_policy_only",
+  "live_service_tested": false,
+  "tests": [
+    {
+      "case_id": "guest_public",
+      "session": {},
+      "document_id": "guest_public",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "guest_nonpublic_L1",
+      "session": {},
+      "document_id": "guest_nonpublic_L1",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "guest_L2",
+      "session": {},
+      "document_id": "C01-DOC-PERF",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "own_viewer_L2",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "viewer",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "own_analyst_L2",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "own_cost_analyst_L2",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "cost_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "own_approver_L2",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "foreign_analyst_L2",
+      "session": {
+        "tenant_id": "astra-c02",
+        "role": "bid_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "foreign_approver_L2",
+      "session": {
+        "tenant_id": "astra-c02",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-PERF",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "own_analyst_cost",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-COST",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "own_cost_analyst_cost",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "cost_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-COST",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "own_approver_cost",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-COST",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "foreign_approver_cost",
+      "session": {
+        "tenant_id": "astra-c02",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-COST",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "cost_analyst_strategy",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "cost_analyst",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "approver_strategy",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case_id": "inactive_membership",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": false
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "unauthenticated_role",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": false,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "unknown_role",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "admin",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "missing_tenant",
+      "session": {
+        "tenant_id": null,
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "C01-DOC-BID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "case_id": "unknown_level",
+      "session": {
+        "tenant_id": "astra-c01",
+        "role": "bid_approver",
+        "authenticated": true,
+        "membership_active": true
+      },
+      "document_id": "unknown_level",
+      "expected": false,
+      "actual": false
+    }
+  ]
+}

@@ -1,0 +1,5145 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "created_on": "2026-09-13",
+  "snapshot_as_of": "2026-04-01",
+  "synthetic": true,
+  "provenance_policy": {
+    "company_default": "synthetic_setting",
+    "numeric_values": "value/unit/origin/formula",
+    "source_facts": "source_references.json",
+    "calculated_values": "origin=calculated + formula; 출처값으로 승격하지 않음",
+    "ids": "ID·업종코드는 수량이 아님",
+    "future_events": "snapshot 이후 기존 과업 종료일·배치 가능 기간은 계획값; 완료 실적으로 처리하지 않음"
+  },
+  "time_policy": "2026-04-01 기준 합성 상태를 고정. 4~6월 입찰 당시 시나리오에만 사용. 후일 판단은 증빙·재직·주소 유지 여부를 재검증하며 현재 9월의 실제 현황이라고 하지 않음.",
+  "rag_ingest": false,
+  "companies": [
+    {
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "company_name": "가상 한빛IT",
+      "version": "1.0.0",
+      "synthetic": true,
+      "snapshot_as_of": "2026-04-01",
+      "facts_origin": "synthetic_setting",
+      "founded_on": "2014-03-10",
+      "enterprise_size": "소기업",
+      "enterprise_size_basis": "합성 중소기업 확인 레코드에 따른 시나리오 구분; 매출·법적 규모 재판정 아님",
+      "headquarters": {
+        "region": "서울특별시",
+        "effective_from": "2014-03-10",
+        "effective_to": null,
+        "address": null,
+        "coordinates": null,
+        "location_kind": "region_only",
+        "evidence_id": "SYN-EV-C01-HQ"
+      },
+      "specialties": [
+        "공공 웹·포털",
+        "자료 아카이브",
+        "데이터 연계"
+      ],
+      "design_summary": "웹 개발 실적과 개발 인력 중심. 정보통신공사업 미보유; 단독 설비 유지관리 입찰에 제약.",
+      "registrations": [
+        {
+          "registration_id": "C01-REG-1468",
+          "code": "1468",
+          "name": "컴퓨터관련서비스사업",
+          "holder_id": "C01",
+          "registered_on": "2014-03-10",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C01-REG-1468"
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": "C01-CERT-01",
+          "code": "SME",
+          "label": "중소기업 확인",
+          "holder_type": "company",
+          "holder_id": "C01",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-04-01",
+          "valid_from": "2025-04-01",
+          "valid_until": "2027-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-CERT-01",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C01-CERT-02",
+          "code": "8111159901",
+          "label": "정보시스템개발서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C01",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-CERT-02",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C01-CERT-03",
+          "code": "8111189901",
+          "label": "정보시스템유지관리서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C01",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-CERT-03",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "C01-PRJ-01",
+          "title": "가상 자료 아카이브 개발",
+          "domain": "software_development",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C01-01",
+            "name": "가상 서울특별시 공공 웹·포털 연구기관 1",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 70000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 63636364,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 6363636,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-01-05",
+          "started_on": "2024-02-01",
+          "scheduled_end": "2024-08-30",
+          "completed_on": "2024-08-30",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-PRJ-01",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C01-PRJ-02",
+          "title": "가상 웹 포털 기능개선",
+          "domain": "software_development",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C01-02",
+            "name": "가상 민간 아카이브연구소",
+            "type": "fictional_private_company",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 69999999,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 63636363,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 6363636,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-09-02",
+          "started_on": "2024-09-10",
+          "scheduled_end": "2025-02-28",
+          "completed_on": "2025-02-28",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-PRJ-02",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C01-PRJ-03",
+          "title": "가상 문화자료 검색 고도화",
+          "domain": "software_development",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C01-03",
+            "name": "가상 서울특별시 공공 웹·포털 연구기관 3",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 120000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 109090909,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 10909091,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-03-03",
+          "started_on": "2025-03-10",
+          "scheduled_end": "2025-10-31",
+          "completed_on": "2025-10-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "missing",
+          "evidence_id": "SYN-EV-C01-PRJ-03",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C01-PRJ-04",
+          "title": "가상 통합 포털 운영",
+          "domain": "software_maintenance",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C01-04",
+            "name": "가상 서울특별시 공공 웹·포털 연구기관 4",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 220000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 200000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 20000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-11-03",
+          "started_on": "2025-12-01",
+          "scheduled_end": "2026-12-31",
+          "completed_on": null,
+          "status": "in_progress",
+          "joint_share": {
+            "value": 60,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C01-PRJ-04",
+          "amount_scope": "joint_total"
+        }
+      ],
+      "personnel": [
+        {
+          "person_id": "C01-P-01",
+          "display_name": "가상 인력 C01-01",
+          "company_id": "C01",
+          "role": "PM",
+          "career_started_on": "2013-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C01-P-01-A01",
+              "project_id": "C01-PRJ-04",
+              "start": "2025-12-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C01-P-01"
+        },
+        {
+          "person_id": "C01-P-02",
+          "display_name": "가상 인력 C01-02",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2014-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-02-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-02-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C01-P-02-A01",
+              "project_id": "C01-PRJ-04",
+              "start": "2025-12-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 0.5,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C01-P-02"
+        },
+        {
+          "person_id": "C01-P-03",
+          "display_name": "가상 인력 C01-03",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2015-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-03-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-03-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-03"
+        },
+        {
+          "person_id": "C01-P-04",
+          "display_name": "가상 인력 C01-04",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-04-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-04-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-04"
+        },
+        {
+          "person_id": "C01-P-05",
+          "display_name": "가상 인력 C01-05",
+          "company_id": "C01",
+          "role": "QA",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-05"
+        },
+        {
+          "person_id": "C01-P-06",
+          "display_name": "가상 인력 C01-06",
+          "company_id": "C01",
+          "role": "운영엔지니어",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-06"
+        },
+        {
+          "person_id": "C01-P-07",
+          "display_name": "가상 인력 C01-07",
+          "company_id": "C01",
+          "role": "PM",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-07"
+        },
+        {
+          "person_id": "C01-P-08",
+          "display_name": "가상 인력 C01-08",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-08-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-08-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-08"
+        },
+        {
+          "person_id": "C01-P-09",
+          "display_name": "가상 인력 C01-09",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-09-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-09-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-09"
+        },
+        {
+          "person_id": "C01-P-10",
+          "display_name": "가상 인력 C01-10",
+          "company_id": "C01",
+          "role": "SW개발자",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C01-P-10-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C01-P-10-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-10"
+        },
+        {
+          "person_id": "C01-P-11",
+          "display_name": "가상 인력 C01-11",
+          "company_id": "C01",
+          "role": "QA",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-11"
+        },
+        {
+          "person_id": "C01-P-12",
+          "display_name": "가상 인력 C01-12",
+          "company_id": "C01",
+          "role": "운영엔지니어",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": "2026-12-31",
+          "employment_type": "fixed_term",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C01-P-12"
+        }
+      ],
+      "services": [],
+      "evidence_ids": [
+        "SYN-EV-C01-HQ",
+        "SYN-EV-C01-REG-1468",
+        "SYN-EV-C01-NO-0036",
+        "SYN-EV-C01-CERT-01",
+        "SYN-EV-C01-CERT-02",
+        "SYN-EV-C01-CERT-03",
+        "SYN-EV-C01-PRJ-01",
+        "SYN-EV-C01-PRJ-02",
+        "SYN-EV-C01-PRJ-03",
+        "SYN-EV-C01-PRJ-04",
+        "SYN-EV-C01-P-01",
+        "SYN-EV-C01-P-02-Q01",
+        "SYN-EV-C01-P-02",
+        "SYN-EV-C01-P-03-Q01",
+        "SYN-EV-C01-P-03",
+        "SYN-EV-C01-P-04-Q01",
+        "SYN-EV-C01-P-04",
+        "SYN-EV-C01-P-05",
+        "SYN-EV-C01-P-06",
+        "SYN-EV-C01-P-07",
+        "SYN-EV-C01-P-08-Q01",
+        "SYN-EV-C01-P-08",
+        "SYN-EV-C01-P-09-Q01",
+        "SYN-EV-C01-P-09",
+        "SYN-EV-C01-P-10-Q01",
+        "SYN-EV-C01-P-10",
+        "SYN-EV-C01-P-11",
+        "SYN-EV-C01-P-12",
+        "SYN-EV-C01-COST-POLICY"
+      ],
+      "known_absences": [
+        {
+          "kind": "registration",
+          "code": "0036",
+          "state": "not_held",
+          "as_of": "2026-04-01",
+          "evidence_id": "SYN-EV-C01-NO-0036"
+        }
+      ],
+      "document_security": {
+        "default_level": "L2",
+        "cost_policy_level": "L3",
+        "whole_master_rag_ingest": false
+      },
+      "headcount": {
+        "value": 12,
+        "unit": "people",
+        "origin": "calculated",
+        "formula": "len(personnel); 합성 인력 명부 전체"
+      },
+      "l3_policy": {
+        "security_level": "L3",
+        "origin": "synthetic_setting",
+        "currency": "KRW",
+        "vat_basis": "exclusive",
+        "labor_rates": [
+          {
+            "role": "PM",
+            "monthly_base": {
+              "value": 3900000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 18,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "SW개발자",
+            "monthly_base": {
+              "value": 4130000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 18,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "QA",
+            "monthly_base": {
+              "value": 4360000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 18,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "운영엔지니어",
+            "monthly_base": {
+              "value": 4590000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 18,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          }
+        ],
+        "overhead": {
+          "value": 12,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "contingency": {
+          "value": 5,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "target_gross_margin": {
+          "value": 15,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "minimum_gross_margin": {
+          "value": 8,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "approval_role": "bid_approver",
+        "strategy": "최저 마진 미달 시 승인 요청 또는 참여 보류. 예정가격·경쟁사 가격은 추정하지 않음.",
+        "formula": "labor=sum(monthly_base * person_months * (1+employer_burden/100)); direct=labor+verified_supplier_quotes+other_direct; cost=direct*(1+overhead/100+contingency/100); proposed_net=cost/(1-target_gross_margin/100)",
+        "missing_quote_policy": "미확보 외부 견적은 null로 유지; 0원으로 계산하거나 예산에서 역산하지 않음",
+        "rounding": "중간 계산 Decimal 유지, 최종 원 단위 반올림; 투찰 VAT는 별도",
+        "evidence_id": "SYN-EV-C01-COST-POLICY"
+      }
+    },
+    {
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "company_name": "가상 해온시스템",
+      "version": "1.0.0",
+      "synthetic": true,
+      "snapshot_as_of": "2026-04-01",
+      "facts_origin": "synthetic_setting",
+      "founded_on": "2017-07-03",
+      "enterprise_size": "소기업",
+      "enterprise_size_basis": "합성 중소기업 확인 레코드에 따른 시나리오 구분; 매출·법적 규모 재판정 아님",
+      "headquarters": {
+        "region": "부산광역시",
+        "effective_from": "2017-07-03",
+        "effective_to": null,
+        "address": null,
+        "coordinates": null,
+        "location_kind": "region_only",
+        "evidence_id": "SYN-EV-C02-HQ"
+      },
+      "specialties": [
+        "도시 통합관제 유지관리",
+        "네트워크·GPU 운영"
+      ],
+      "design_summary": "부산 본점·정보통신기술자 보유. 개발 직접생산 증명은 만료; 대형 개발 실적 부족.",
+      "registrations": [
+        {
+          "registration_id": "C02-REG-1468",
+          "code": "1468",
+          "name": "컴퓨터관련서비스사업",
+          "holder_id": "C02",
+          "registered_on": "2017-07-03",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C02-REG-1468"
+        },
+        {
+          "registration_id": "C02-REG-0036",
+          "code": "0036",
+          "name": "정보통신공사업",
+          "holder_id": "C02",
+          "registered_on": "2017-07-03",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C02-REG-0036"
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": "C02-CERT-01",
+          "code": "SME",
+          "label": "중소기업 확인",
+          "holder_type": "company",
+          "holder_id": "C02",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-04-01",
+          "valid_from": "2025-04-01",
+          "valid_until": "2027-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-CERT-01",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C02-CERT-02",
+          "code": "8111189901",
+          "label": "정보시스템유지관리서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C02",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-CERT-02",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C02-CERT-03",
+          "code": "8111159901",
+          "label": "정보시스템개발서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C02",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2023-01-01",
+          "valid_from": "2023-01-01",
+          "valid_until": "2026-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-CERT-03",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "C02-PRJ-01",
+          "title": "가상 도시 관제망 유지관리",
+          "domain": "software_maintenance",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C02-01",
+            "name": "가상 부산광역시 도시 통합관제 유지관리 연구기관 1",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 82000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 74545455,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 7454545,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2023-12-04",
+          "started_on": "2024-01-01",
+          "scheduled_end": "2024-12-31",
+          "completed_on": "2024-12-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-PRJ-01",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C02-PRJ-02",
+          "title": "가상 연구용 GPU 운영",
+          "domain": "infrastructure_maintenance",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C02-02",
+            "name": "가상 부산광역시 도시 통합관제 유지관리 연구기관 2",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 55000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 50000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 5000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-11-01",
+          "started_on": "2025-01-01",
+          "scheduled_end": "2025-12-31",
+          "completed_on": "2025-12-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-PRJ-02",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C02-PRJ-03",
+          "title": "가상 관제 시스템 운영 지원",
+          "domain": "software_maintenance",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C02-03",
+            "name": "가상 부산광역시 도시 통합관제 유지관리 연구기관 3",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 66000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 60000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 6000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-12-01",
+          "started_on": "2026-01-01",
+          "scheduled_end": "2026-12-31",
+          "completed_on": null,
+          "status": "in_progress",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C02-PRJ-03",
+          "amount_scope": "company_contract"
+        }
+      ],
+      "personnel": [
+        {
+          "person_id": "C02-P-01",
+          "display_name": "가상 인력 C02-01",
+          "company_id": "C02",
+          "role": "유지관리PM",
+          "career_started_on": "2013-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C02-P-01-A01",
+              "project_id": "C02-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C02-P-01"
+        },
+        {
+          "person_id": "C02-P-02",
+          "display_name": "가상 인력 C02-02",
+          "company_id": "C02",
+          "role": "정보통신기술자",
+          "career_started_on": "2014-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C02-P-02-Q01",
+              "name": "정보통신기술자",
+              "grade": "중급",
+              "issued_on": "2022-01-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C02-P-02-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C02-P-02-A01",
+              "project_id": "C02-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 0.5,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C02-P-02"
+        },
+        {
+          "person_id": "C02-P-03",
+          "display_name": "가상 인력 C02-03",
+          "company_id": "C02",
+          "role": "정보통신기술자",
+          "career_started_on": "2015-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C02-P-03-Q01",
+              "name": "정보통신기술자",
+              "grade": "초급",
+              "issued_on": "2022-01-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C02-P-03-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-03"
+        },
+        {
+          "person_id": "C02-P-04",
+          "display_name": "가상 인력 C02-04",
+          "company_id": "C02",
+          "role": "운영엔지니어",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-04"
+        },
+        {
+          "person_id": "C02-P-05",
+          "display_name": "가상 인력 C02-05",
+          "company_id": "C02",
+          "role": "운영엔지니어",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-05"
+        },
+        {
+          "person_id": "C02-P-06",
+          "display_name": "가상 인력 C02-06",
+          "company_id": "C02",
+          "role": "SW개발자",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C02-P-06-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C02-P-06-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-06"
+        },
+        {
+          "person_id": "C02-P-07",
+          "display_name": "가상 인력 C02-07",
+          "company_id": "C02",
+          "role": "유지관리PM",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-07"
+        },
+        {
+          "person_id": "C02-P-08",
+          "display_name": "가상 인력 C02-08",
+          "company_id": "C02",
+          "role": "정보통신기술자",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": "2026-12-31",
+          "employment_type": "fixed_term",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C02-P-08"
+        }
+      ],
+      "services": [],
+      "evidence_ids": [
+        "SYN-EV-C02-HQ",
+        "SYN-EV-C02-REG-1468",
+        "SYN-EV-C02-REG-0036",
+        "SYN-EV-C02-CERT-01",
+        "SYN-EV-C02-CERT-02",
+        "SYN-EV-C02-CERT-03",
+        "SYN-EV-C02-PRJ-01",
+        "SYN-EV-C02-PRJ-02",
+        "SYN-EV-C02-PRJ-03",
+        "SYN-EV-C02-P-01",
+        "SYN-EV-C02-P-02-Q01",
+        "SYN-EV-C02-P-02",
+        "SYN-EV-C02-P-03-Q01",
+        "SYN-EV-C02-P-03",
+        "SYN-EV-C02-P-04",
+        "SYN-EV-C02-P-05",
+        "SYN-EV-C02-P-06-Q01",
+        "SYN-EV-C02-P-06",
+        "SYN-EV-C02-P-07",
+        "SYN-EV-C02-P-08",
+        "SYN-EV-C02-COST-POLICY"
+      ],
+      "known_absences": [],
+      "document_security": {
+        "default_level": "L2",
+        "cost_policy_level": "L3",
+        "whole_master_rag_ingest": false
+      },
+      "headcount": {
+        "value": 8,
+        "unit": "people",
+        "origin": "calculated",
+        "formula": "len(personnel); 합성 인력 명부 전체"
+      },
+      "l3_policy": {
+        "security_level": "L3",
+        "origin": "synthetic_setting",
+        "currency": "KRW",
+        "vat_basis": "exclusive",
+        "labor_rates": [
+          {
+            "role": "유지관리PM",
+            "monthly_base": {
+              "value": 4080000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 19,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "정보통신기술자",
+            "monthly_base": {
+              "value": 4310000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 19,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "운영엔지니어",
+            "monthly_base": {
+              "value": 4540000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 19,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "SW개발자",
+            "monthly_base": {
+              "value": 4770000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 19,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          }
+        ],
+        "overhead": {
+          "value": 13,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "contingency": {
+          "value": 5,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "target_gross_margin": {
+          "value": 16,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "minimum_gross_margin": {
+          "value": 9,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "approval_role": "bid_approver",
+        "strategy": "최저 마진 미달 시 승인 요청 또는 참여 보류. 예정가격·경쟁사 가격은 추정하지 않음.",
+        "formula": "labor=sum(monthly_base * person_months * (1+employer_burden/100)); direct=labor+verified_supplier_quotes+other_direct; cost=direct*(1+overhead/100+contingency/100); proposed_net=cost/(1-target_gross_margin/100)",
+        "missing_quote_policy": "미확보 외부 견적은 null로 유지; 0원으로 계산하거나 예산에서 역산하지 않음",
+        "rounding": "중간 계산 Decimal 유지, 최종 원 단위 반올림; 투찰 VAT는 별도",
+        "evidence_id": "SYN-EV-C02-COST-POLICY"
+      }
+    },
+    {
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "company_name": "가상 인우블록",
+      "version": "1.0.0",
+      "synthetic": true,
+      "snapshot_as_of": "2026-04-01",
+      "facts_origin": "synthetic_setting",
+      "founded_on": "2022-02-14",
+      "enterprise_size": "소기업",
+      "enterprise_size_basis": "합성 중소기업 확인 레코드에 따른 시나리오 구분; 매출·법적 규모 재판정 아님",
+      "headquarters": {
+        "region": "인천광역시",
+        "effective_from": "2022-02-14",
+        "effective_to": null,
+        "address": null,
+        "coordinates": null,
+        "location_kind": "region_only",
+        "evidence_id": "SYN-EV-C03-HQ"
+      },
+      "specialties": [
+        "블록체인 시민서비스",
+        "모바일 지갑"
+      ],
+      "design_summary": "신생 개발사. 지역 경험은 있지만 소수 인력과 일부 미확보 실적 증빙으로 검토 제한.",
+      "registrations": [
+        {
+          "registration_id": "C03-REG-1468",
+          "code": "1468",
+          "name": "컴퓨터관련서비스사업",
+          "holder_id": "C03",
+          "registered_on": "2022-02-14",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C03-REG-1468"
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": "C03-CERT-01",
+          "code": "SME",
+          "label": "중소기업 확인",
+          "holder_type": "company",
+          "holder_id": "C03",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-04-01",
+          "valid_from": "2025-04-01",
+          "valid_until": "2027-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C03-CERT-01",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C03-CERT-02",
+          "code": "8111159901",
+          "label": "정보시스템개발서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C03",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C03-CERT-02",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C03-CERT-03",
+          "code": "8111189901",
+          "label": "정보시스템유지관리서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C03",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C03-CERT-03",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "C03-PRJ-01",
+          "title": "가상 시민 지갑 기능개선",
+          "domain": "blockchain",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C03-01",
+            "name": "가상 인천광역시 블록체인 시민서비스 연구기관 1",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 88000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 80000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 8000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2023-02-01",
+          "started_on": "2023-03-01",
+          "scheduled_end": "2023-12-29",
+          "completed_on": "2023-12-29",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C03-PRJ-01",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C03-PRJ-02",
+          "title": "가상 지역 포인트 연계",
+          "domain": "blockchain",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C03-02",
+            "name": "가상 인천광역시 블록체인 시민서비스 연구기관 2",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 66000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 60000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 6000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-02-01",
+          "started_on": "2024-03-01",
+          "scheduled_end": "2024-12-31",
+          "completed_on": "2024-12-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "missing",
+          "evidence_id": "SYN-EV-C03-PRJ-02",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C03-PRJ-03",
+          "title": "가상 모바일 서비스 운영",
+          "domain": "software_maintenance",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C03-03",
+            "name": "가상 인천광역시 블록체인 시민서비스 연구기관 3",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 44000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 40000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 4000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-12-01",
+          "started_on": "2026-01-01",
+          "scheduled_end": "2026-09-30",
+          "completed_on": null,
+          "status": "in_progress",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C03-PRJ-03",
+          "amount_scope": "company_contract"
+        }
+      ],
+      "personnel": [
+        {
+          "person_id": "C03-P-01",
+          "display_name": "가상 인력 C03-01",
+          "company_id": "C03",
+          "role": "PM",
+          "career_started_on": "2013-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C03-P-01-A01",
+              "project_id": "C03-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-09-30",
+              "allocation_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C03-P-01"
+        },
+        {
+          "person_id": "C03-P-02",
+          "display_name": "가상 인력 C03-02",
+          "company_id": "C03",
+          "role": "SW개발자",
+          "career_started_on": "2014-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C03-P-02-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C03-P-02-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C03-P-02-A01",
+              "project_id": "C03-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-09-30",
+              "allocation_fte": {
+                "value": 0.5,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C03-P-02"
+        },
+        {
+          "person_id": "C03-P-03",
+          "display_name": "가상 인력 C03-03",
+          "company_id": "C03",
+          "role": "SW개발자",
+          "career_started_on": "2015-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C03-P-03-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C03-P-03-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C03-P-03"
+        },
+        {
+          "person_id": "C03-P-04",
+          "display_name": "가상 인력 C03-04",
+          "company_id": "C03",
+          "role": "SW개발자",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C03-P-04-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C03-P-04-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C03-P-04"
+        },
+        {
+          "person_id": "C03-P-05",
+          "display_name": "가상 인력 C03-05",
+          "company_id": "C03",
+          "role": "QA",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C03-P-05"
+        },
+        {
+          "person_id": "C03-P-06",
+          "display_name": "가상 인력 C03-06",
+          "company_id": "C03",
+          "role": "운영엔지니어",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": "2026-12-31",
+          "employment_type": "fixed_term",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C03-P-06"
+        }
+      ],
+      "services": [],
+      "evidence_ids": [
+        "SYN-EV-C03-HQ",
+        "SYN-EV-C03-REG-1468",
+        "SYN-EV-C03-NO-0036",
+        "SYN-EV-C03-CERT-01",
+        "SYN-EV-C03-CERT-02",
+        "SYN-EV-C03-CERT-03",
+        "SYN-EV-C03-PRJ-01",
+        "SYN-EV-C03-PRJ-02",
+        "SYN-EV-C03-PRJ-03",
+        "SYN-EV-C03-P-01",
+        "SYN-EV-C03-P-02-Q01",
+        "SYN-EV-C03-P-02",
+        "SYN-EV-C03-P-03-Q01",
+        "SYN-EV-C03-P-03",
+        "SYN-EV-C03-P-04-Q01",
+        "SYN-EV-C03-P-04",
+        "SYN-EV-C03-P-05",
+        "SYN-EV-C03-P-06",
+        "SYN-EV-C03-COST-POLICY"
+      ],
+      "known_absences": [
+        {
+          "kind": "registration",
+          "code": "0036",
+          "state": "not_held",
+          "as_of": "2026-04-01",
+          "evidence_id": "SYN-EV-C03-NO-0036"
+        }
+      ],
+      "document_security": {
+        "default_level": "L2",
+        "cost_policy_level": "L3",
+        "whole_master_rag_ingest": false
+      },
+      "headcount": {
+        "value": 6,
+        "unit": "people",
+        "origin": "calculated",
+        "formula": "len(personnel); 합성 인력 명부 전체"
+      },
+      "l3_policy": {
+        "security_level": "L3",
+        "origin": "synthetic_setting",
+        "currency": "KRW",
+        "vat_basis": "exclusive",
+        "labor_rates": [
+          {
+            "role": "PM",
+            "monthly_base": {
+              "value": 4260000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 20,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "SW개발자",
+            "monthly_base": {
+              "value": 4490000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 20,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "QA",
+            "monthly_base": {
+              "value": 4720000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 20,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "운영엔지니어",
+            "monthly_base": {
+              "value": 4950000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 20,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          }
+        ],
+        "overhead": {
+          "value": 14,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "contingency": {
+          "value": 5,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "target_gross_margin": {
+          "value": 17,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "minimum_gross_margin": {
+          "value": 10,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "approval_role": "bid_approver",
+        "strategy": "최저 마진 미달 시 승인 요청 또는 참여 보류. 예정가격·경쟁사 가격은 추정하지 않음.",
+        "formula": "labor=sum(monthly_base * person_months * (1+employer_burden/100)); direct=labor+verified_supplier_quotes+other_direct; cost=direct*(1+overhead/100+contingency/100); proposed_net=cost/(1-target_gross_margin/100)",
+        "missing_quote_policy": "미확보 외부 견적은 null로 유지; 0원으로 계산하거나 예산에서 역산하지 않음",
+        "rounding": "중간 계산 Decimal 유지, 최종 원 단위 반올림; 투찰 VAT는 별도",
+        "evidence_id": "SYN-EV-C03-COST-POLICY"
+      }
+    },
+    {
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "company_name": "가상 누리클라우드",
+      "version": "1.0.0",
+      "synthetic": true,
+      "snapshot_as_of": "2026-04-01",
+      "facts_origin": "synthetic_setting",
+      "founded_on": "2019-06-17",
+      "enterprise_size": "소기업",
+      "enterprise_size_basis": "합성 중소기업 확인 레코드에 따른 시나리오 구분; 매출·법적 규모 재판정 아님",
+      "headquarters": {
+        "region": "대전광역시",
+        "effective_from": "2019-06-17",
+        "effective_to": null,
+        "address": null,
+        "coordinates": null,
+        "location_kind": "region_only",
+        "evidence_id": "SYN-EV-C04-HQ"
+      },
+      "specialties": [
+        "클라우드 운영",
+        "보안 구성",
+        "데이터 연계"
+      ],
+      "design_summary": "운영 인력 중심 MSP. 공급 예정 서비스의 CSAP 증빙 미확보. 회사 ISO와 서비스 인증을 구분.",
+      "registrations": [
+        {
+          "registration_id": "C04-REG-1468",
+          "code": "1468",
+          "name": "컴퓨터관련서비스사업",
+          "holder_id": "C04",
+          "registered_on": "2019-06-17",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C04-REG-1468"
+        },
+        {
+          "registration_id": "C04-REG-0036",
+          "code": "0036",
+          "name": "정보통신공사업",
+          "holder_id": "C04",
+          "registered_on": "2019-06-17",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C04-REG-0036"
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": "C04-CERT-01",
+          "code": "SME",
+          "label": "중소기업 확인",
+          "holder_type": "company",
+          "holder_id": "C04",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-04-01",
+          "valid_from": "2025-04-01",
+          "valid_until": "2027-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-CERT-01",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C04-CERT-02",
+          "code": "8111189901",
+          "label": "정보시스템유지관리서비스 직접생산",
+          "holder_type": "company",
+          "holder_id": "C04",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-CERT-02",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C04-CERT-03",
+          "code": "ISO27001",
+          "label": "정보보호 관리체계 인증",
+          "holder_type": "company",
+          "holder_id": "C04",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-03-01",
+          "valid_from": "2025-03-01",
+          "valid_until": "2028-02-29",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-CERT-03",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C04-CERT-04",
+          "code": "CSAP",
+          "label": "공급 예정 클라우드 서비스 인증",
+          "holder_type": "service",
+          "holder_id": "C04-SERVICE-01",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": null,
+          "valid_from": null,
+          "valid_until": null,
+          "evidence_state": "missing",
+          "evidence_id": "SYN-EV-C04-CERT-04",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "C04-PRJ-01",
+          "title": "가상 기관 클라우드 이전",
+          "domain": "cloud",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C04-01",
+            "name": "가상 대전광역시 클라우드 운영 연구기관 1",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 154000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 140000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 14000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2023-02-01",
+          "started_on": "2023-03-01",
+          "scheduled_end": "2023-12-29",
+          "completed_on": "2023-12-29",
+          "status": "completed",
+          "joint_share": {
+            "value": 40,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-PRJ-01",
+          "amount_scope": "joint_total"
+        },
+        {
+          "project_id": "C04-PRJ-02",
+          "title": "가상 데이터 연계 운영",
+          "domain": "cloud",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C04-02",
+            "name": "가상 민간 데이터운영사",
+            "type": "fictional_private_company",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 99000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 90000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 9000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-02-01",
+          "started_on": "2024-03-01",
+          "scheduled_end": "2024-12-31",
+          "completed_on": "2024-12-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": true,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-PRJ-02",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C04-PRJ-03",
+          "title": "가상 연구 클라우드 상시 운영",
+          "domain": "cloud",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C04-03",
+            "name": "가상 대전광역시 클라우드 운영 연구기관 3",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 132000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 120000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 12000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-12-01",
+          "started_on": "2026-01-01",
+          "scheduled_end": "2026-12-31",
+          "completed_on": null,
+          "status": "in_progress",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C04-PRJ-03",
+          "amount_scope": "company_contract"
+        }
+      ],
+      "personnel": [
+        {
+          "person_id": "C04-P-01",
+          "display_name": "가상 인력 C04-01",
+          "company_id": "C04",
+          "role": "클라우드PM",
+          "career_started_on": "2013-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C04-P-01-A01",
+              "project_id": "C04-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C04-P-01"
+        },
+        {
+          "person_id": "C04-P-02",
+          "display_name": "가상 인력 C04-02",
+          "company_id": "C04",
+          "role": "보안엔지니어",
+          "career_started_on": "2014-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C04-P-02-A01",
+              "project_id": "C04-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 0.5,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C04-P-02"
+        },
+        {
+          "person_id": "C04-P-03",
+          "display_name": "가상 인력 C04-03",
+          "company_id": "C04",
+          "role": "운영엔지니어",
+          "career_started_on": "2015-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-03"
+        },
+        {
+          "person_id": "C04-P-04",
+          "display_name": "가상 인력 C04-04",
+          "company_id": "C04",
+          "role": "운영엔지니어",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-04"
+        },
+        {
+          "person_id": "C04-P-05",
+          "display_name": "가상 인력 C04-05",
+          "company_id": "C04",
+          "role": "SW개발자",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C04-P-05-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C04-P-05-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-05"
+        },
+        {
+          "person_id": "C04-P-06",
+          "display_name": "가상 인력 C04-06",
+          "company_id": "C04",
+          "role": "QA",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-06"
+        },
+        {
+          "person_id": "C04-P-07",
+          "display_name": "가상 인력 C04-07",
+          "company_id": "C04",
+          "role": "클라우드PM",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-07"
+        },
+        {
+          "person_id": "C04-P-08",
+          "display_name": "가상 인력 C04-08",
+          "company_id": "C04",
+          "role": "보안엔지니어",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-08"
+        },
+        {
+          "person_id": "C04-P-09",
+          "display_name": "가상 인력 C04-09",
+          "company_id": "C04",
+          "role": "운영엔지니어",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-09"
+        },
+        {
+          "person_id": "C04-P-10",
+          "display_name": "가상 인력 C04-10",
+          "company_id": "C04",
+          "role": "운영엔지니어",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": "2026-12-31",
+          "employment_type": "fixed_term",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C04-P-10"
+        }
+      ],
+      "services": [
+        {
+          "service_id": "C04-SERVICE-01",
+          "name": "가상 공급 예정 IaaS",
+          "provider": "가상 하늘인프라 제공자",
+          "operator_company_id": "C04",
+          "certification_ids": [
+            "C04-CERT-04"
+          ],
+          "supply_agreement_state": "missing"
+        }
+      ],
+      "evidence_ids": [
+        "SYN-EV-C04-HQ",
+        "SYN-EV-C04-REG-1468",
+        "SYN-EV-C04-REG-0036",
+        "SYN-EV-C04-CERT-01",
+        "SYN-EV-C04-CERT-02",
+        "SYN-EV-C04-CERT-03",
+        "SYN-EV-C04-CERT-04",
+        "SYN-EV-C04-PRJ-01",
+        "SYN-EV-C04-PRJ-02",
+        "SYN-EV-C04-PRJ-03",
+        "SYN-EV-C04-P-01",
+        "SYN-EV-C04-P-02",
+        "SYN-EV-C04-P-03",
+        "SYN-EV-C04-P-04",
+        "SYN-EV-C04-P-05-Q01",
+        "SYN-EV-C04-P-05",
+        "SYN-EV-C04-P-06",
+        "SYN-EV-C04-P-07",
+        "SYN-EV-C04-P-08",
+        "SYN-EV-C04-P-09",
+        "SYN-EV-C04-P-10",
+        "SYN-EV-C04-COST-POLICY"
+      ],
+      "known_absences": [],
+      "document_security": {
+        "default_level": "L2",
+        "cost_policy_level": "L3",
+        "whole_master_rag_ingest": false
+      },
+      "headcount": {
+        "value": 10,
+        "unit": "people",
+        "origin": "calculated",
+        "formula": "len(personnel); 합성 인력 명부 전체"
+      },
+      "l3_policy": {
+        "security_level": "L3",
+        "origin": "synthetic_setting",
+        "currency": "KRW",
+        "vat_basis": "exclusive",
+        "labor_rates": [
+          {
+            "role": "클라우드PM",
+            "monthly_base": {
+              "value": 4440000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 21,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "보안엔지니어",
+            "monthly_base": {
+              "value": 4670000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 21,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "운영엔지니어",
+            "monthly_base": {
+              "value": 4900000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 21,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "SW개발자",
+            "monthly_base": {
+              "value": 5130000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 21,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "QA",
+            "monthly_base": {
+              "value": 5360000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 21,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          }
+        ],
+        "overhead": {
+          "value": 15,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "contingency": {
+          "value": 5,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "target_gross_margin": {
+          "value": 18,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "minimum_gross_margin": {
+          "value": 11,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "approval_role": "bid_approver",
+        "strategy": "최저 마진 미달 시 승인 요청 또는 참여 보류. 예정가격·경쟁사 가격은 추정하지 않음.",
+        "formula": "labor=sum(monthly_base * person_months * (1+employer_burden/100)); direct=labor+verified_supplier_quotes+other_direct; cost=direct*(1+overhead/100+contingency/100); proposed_net=cost/(1-target_gross_margin/100)",
+        "missing_quote_policy": "미확보 외부 견적은 null로 유지; 0원으로 계산하거나 예산에서 역산하지 않음",
+        "rounding": "중간 계산 Decimal 유지, 최종 원 단위 반올림; 투찰 VAT는 별도",
+        "evidence_id": "SYN-EV-C04-COST-POLICY"
+      }
+    },
+    {
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "company_name": "가상 새온에너지SW",
+      "version": "1.0.0",
+      "synthetic": true,
+      "snapshot_as_of": "2026-04-01",
+      "facts_origin": "synthetic_setting",
+      "founded_on": "2016-09-05",
+      "enterprise_size": "중기업",
+      "enterprise_size_basis": "합성 중소기업 확인 레코드에 따른 시나리오 구분; 매출·법적 규모 재판정 아님",
+      "headquarters": {
+        "region": "전라남도",
+        "effective_from": "2016-09-05",
+        "effective_to": null,
+        "address": null,
+        "coordinates": null,
+        "location_kind": "region_only",
+        "evidence_id": "SYN-EV-C05-HQ"
+      },
+      "specialties": [
+        "EMS·PMS",
+        "ESS·PV 연계 제어",
+        "산업 모니터링"
+      ],
+      "design_summary": "전력 제어 및 제조업 등록을 가진 특화 SME. 일반 포털 인력·지역 조건에는 제약.",
+      "registrations": [
+        {
+          "registration_id": "C05-REG-1468",
+          "code": "1468",
+          "name": "컴퓨터관련서비스사업",
+          "holder_id": "C05",
+          "registered_on": "2016-09-05",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C05-REG-1468"
+        },
+        {
+          "registration_id": "C05-REG-28123",
+          "code": "28123",
+          "name": "배전반 및 전기 자동제어반 제조업",
+          "holder_id": "C05",
+          "registered_on": "2016-09-05",
+          "valid_until": null,
+          "status": "registered",
+          "evidence_id": "SYN-EV-C05-REG-28123"
+        }
+      ],
+      "certifications": [
+        {
+          "certification_id": "C05-CERT-01",
+          "code": "SME",
+          "label": "중소기업 확인",
+          "holder_type": "company",
+          "holder_id": "C05",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-04-01",
+          "valid_from": "2025-04-01",
+          "valid_until": "2027-03-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C05-CERT-01",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        },
+        {
+          "certification_id": "C05-CERT-02",
+          "code": "3912110604",
+          "label": "모니터링장치 직접생산",
+          "holder_type": "company",
+          "holder_id": "C05",
+          "issuer": "가상 증빙 설정(실제 발급기관 아님)",
+          "issued_on": "2025-01-01",
+          "valid_from": "2025-01-01",
+          "valid_until": "2027-12-31",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C05-CERT-02",
+          "validity_policy": "판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지"
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "C05-PRJ-01",
+          "title": "가상 PV·ESS 연계 EMS 구축",
+          "domain": "energy_control",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C05-01",
+            "name": "가상 전라남도 EMS·PMS 연구기관 1",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 330000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 300000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 30000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2022-02-01",
+          "started_on": "2022-03-01",
+          "scheduled_end": "2022-12-30",
+          "completed_on": "2022-12-30",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C05-PRJ-01",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C05-PRJ-02",
+          "title": "가상 전력망 PMS 고도화",
+          "domain": "energy_control",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C05-02",
+            "name": "가상 전라남도 EMS·PMS 연구기관 2",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 220000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 200000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 20000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2024-02-01",
+          "started_on": "2024-03-01",
+          "scheduled_end": "2024-12-31",
+          "completed_on": "2024-12-31",
+          "status": "completed",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "missing",
+          "evidence_id": "SYN-EV-C05-PRJ-02",
+          "amount_scope": "company_contract"
+        },
+        {
+          "project_id": "C05-PRJ-03",
+          "title": "가상 에너지 제어 운영",
+          "domain": "energy_control",
+          "customer": {
+            "customer_id": "SYN-CLIENT-C05-03",
+            "name": "가상 전라남도 EMS·PMS 연구기관 3",
+            "type": "fictional_public_institution",
+            "synthetic": true
+          },
+          "contract_amount": {
+            "currency": "KRW",
+            "vat_basis": "inclusive",
+            "gross": {
+              "value": 165000000,
+              "unit": "KRW",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "net": {
+              "value": 150000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "round_half_up(gross / 1.1)"
+            },
+            "vat": {
+              "value": 15000000,
+              "unit": "KRW",
+              "origin": "calculated",
+              "formula": "gross - net"
+            },
+            "vat_rate": {
+              "value": 10,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "rounding": "원 단위 반올림한 공급가액, VAT는 총액과의 차액; 실제 세금계산서 아님"
+          },
+          "contracted_on": "2025-12-01",
+          "started_on": "2026-01-01",
+          "scheduled_end": "2026-12-31",
+          "completed_on": null,
+          "status": "in_progress",
+          "joint_share": {
+            "value": 100,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "subcontractor": false,
+          "recognized_amount_policy": "공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토.",
+          "evidence_state": "synthetic_record",
+          "evidence_id": "SYN-EV-C05-PRJ-03",
+          "amount_scope": "company_contract"
+        }
+      ],
+      "personnel": [
+        {
+          "person_id": "C05-P-01",
+          "display_name": "가상 인력 C05-01",
+          "company_id": "C05",
+          "role": "EMS PM",
+          "career_started_on": "2013-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C05-P-01-A01",
+              "project_id": "C05-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C05-P-01"
+        },
+        {
+          "person_id": "C05-P-02",
+          "display_name": "가상 인력 C05-02",
+          "company_id": "C05",
+          "role": "전력제어엔지니어",
+          "career_started_on": "2014-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [
+            {
+              "assignment_id": "C05-P-02-A01",
+              "project_id": "C05-PRJ-03",
+              "start": "2026-01-01",
+              "end": "2026-12-31",
+              "allocation_fte": {
+                "value": 0.5,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              },
+              "status": "committed"
+            }
+          ],
+          "evidence_id": "SYN-EV-C05-P-02"
+        },
+        {
+          "person_id": "C05-P-03",
+          "display_name": "가상 인력 C05-03",
+          "company_id": "C05",
+          "role": "전력제어엔지니어",
+          "career_started_on": "2015-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2023-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-03"
+        },
+        {
+          "person_id": "C05-P-04",
+          "display_name": "가상 인력 C05-04",
+          "company_id": "C05",
+          "role": "SW개발자",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [
+            {
+              "qualification_id": "C05-P-04-Q01",
+              "name": "정보처리기사",
+              "grade": null,
+              "issued_on": "2021-06-01",
+              "valid_until": null,
+              "evidence_id": "SYN-EV-C05-P-04-Q01"
+            }
+          ],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-04"
+        },
+        {
+          "person_id": "C05-P-05",
+          "display_name": "가상 인력 C05-05",
+          "company_id": "C05",
+          "role": "전력제어엔지니어",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-05"
+        },
+        {
+          "person_id": "C05-P-06",
+          "display_name": "가상 인력 C05-06",
+          "company_id": "C05",
+          "role": "QA",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-06"
+        },
+        {
+          "person_id": "C05-P-07",
+          "display_name": "가상 인력 C05-07",
+          "company_id": "C05",
+          "role": "EMS PM",
+          "career_started_on": "2019-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-07"
+        },
+        {
+          "person_id": "C05-P-08",
+          "display_name": "가상 인력 C05-08",
+          "company_id": "C05",
+          "role": "전력제어엔지니어",
+          "career_started_on": "2020-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": null,
+          "employment_type": "permanent",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-08"
+        },
+        {
+          "person_id": "C05-P-09",
+          "display_name": "가상 인력 C05-09",
+          "company_id": "C05",
+          "role": "전력제어엔지니어",
+          "career_started_on": "2018-01-01",
+          "career_years_policy": "판단일 - career_started_on; 실제 SW 경력 인정 연수와 동일시 금지",
+          "joined_on": "2024-01-02",
+          "employment_end": "2026-12-31",
+          "employment_type": "fixed_term",
+          "qualifications": [],
+          "capacity_fte": {
+            "value": 1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "availability": [
+            {
+              "start": "2026-04-01",
+              "end": "2026-12-31",
+              "capacity_fte": {
+                "value": 1,
+                "unit": "FTE",
+                "origin": "synthetic_setting",
+                "formula": null
+              }
+            }
+          ],
+          "existing_assignments": [],
+          "evidence_id": "SYN-EV-C05-P-09"
+        }
+      ],
+      "services": [],
+      "evidence_ids": [
+        "SYN-EV-C05-HQ",
+        "SYN-EV-C05-REG-1468",
+        "SYN-EV-C05-REG-28123",
+        "SYN-EV-C05-NO-0036",
+        "SYN-EV-C05-CERT-01",
+        "SYN-EV-C05-CERT-02",
+        "SYN-EV-C05-PRJ-01",
+        "SYN-EV-C05-PRJ-02",
+        "SYN-EV-C05-PRJ-03",
+        "SYN-EV-C05-P-01",
+        "SYN-EV-C05-P-02",
+        "SYN-EV-C05-P-03",
+        "SYN-EV-C05-P-04-Q01",
+        "SYN-EV-C05-P-04",
+        "SYN-EV-C05-P-05",
+        "SYN-EV-C05-P-06",
+        "SYN-EV-C05-P-07",
+        "SYN-EV-C05-P-08",
+        "SYN-EV-C05-P-09",
+        "SYN-EV-C05-COST-POLICY"
+      ],
+      "known_absences": [
+        {
+          "kind": "registration",
+          "code": "0036",
+          "state": "not_held",
+          "as_of": "2026-04-01",
+          "evidence_id": "SYN-EV-C05-NO-0036"
+        }
+      ],
+      "document_security": {
+        "default_level": "L2",
+        "cost_policy_level": "L3",
+        "whole_master_rag_ingest": false
+      },
+      "headcount": {
+        "value": 9,
+        "unit": "people",
+        "origin": "calculated",
+        "formula": "len(personnel); 합성 인력 명부 전체"
+      },
+      "l3_policy": {
+        "security_level": "L3",
+        "origin": "synthetic_setting",
+        "currency": "KRW",
+        "vat_basis": "exclusive",
+        "labor_rates": [
+          {
+            "role": "EMS PM",
+            "monthly_base": {
+              "value": 4620000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 22,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "전력제어엔지니어",
+            "monthly_base": {
+              "value": 4850000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 22,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "SW개발자",
+            "monthly_base": {
+              "value": 5080000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 22,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          },
+          {
+            "role": "QA",
+            "monthly_base": {
+              "value": 5310000,
+              "unit": "KRW/person_month",
+              "origin": "synthetic_setting",
+              "formula": null
+            },
+            "employer_burden": {
+              "value": 22,
+              "unit": "percent",
+              "origin": "synthetic_setting",
+              "formula": null
+            }
+          }
+        ],
+        "overhead": {
+          "value": 16,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "contingency": {
+          "value": 5,
+          "unit": "percent_of_direct_cost",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "target_gross_margin": {
+          "value": 19,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "minimum_gross_margin": {
+          "value": 12,
+          "unit": "percent_of_revenue",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "approval_role": "bid_approver",
+        "strategy": "최저 마진 미달 시 승인 요청 또는 참여 보류. 예정가격·경쟁사 가격은 추정하지 않음.",
+        "formula": "labor=sum(monthly_base * person_months * (1+employer_burden/100)); direct=labor+verified_supplier_quotes+other_direct; cost=direct*(1+overhead/100+contingency/100); proposed_net=cost/(1-target_gross_margin/100)",
+        "missing_quote_policy": "미확보 외부 견적은 null로 유지; 0원으로 계산하거나 예산에서 역산하지 않음",
+        "rounding": "중간 계산 Decimal 유지, 최종 원 단위 반올림; 투찰 VAT는 별도",
+        "evidence_id": "SYN-EV-C05-COST-POLICY"
+      }
+    }
+  ],
+  "evidence_registry": [
+    {
+      "evidence_id": "SYN-EV-C01-HQ",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "headquarters",
+      "subject_id": "C01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-REG-1468",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "registration",
+      "subject_id": "C01-REG-1468",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-NO-0036",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "declaration",
+      "subject_id": "C01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-CERT-01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "certification",
+      "subject_id": "C01-CERT-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-CERT-02",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "certification",
+      "subject_id": "C01-CERT-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-CERT-03",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "certification",
+      "subject_id": "C01-CERT-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-PRJ-01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "performance",
+      "subject_id": "C01-PRJ-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-PRJ-02",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "performance",
+      "subject_id": "C01-PRJ-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-PRJ-03",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "performance",
+      "subject_id": "C01-PRJ-03",
+      "status": "missing",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-PRJ-04",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "performance",
+      "subject_id": "C01-PRJ-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-02-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-02",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-03-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-03",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-04-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-04",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-05",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-06",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-07",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-07",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-08-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-08",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-08",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-08",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-09-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-09",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-09",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-09",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-10-Q01",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "personnel_qualification",
+      "subject_id": "C01-P-10",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-10",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-10",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-11",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-11",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-P-12",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "employment_and_career",
+      "subject_id": "C01-P-12",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C01-COST-POLICY",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "kind": "cost_assumption",
+      "subject_id": "C01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-HQ",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "headquarters",
+      "subject_id": "C02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-REG-1468",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "registration",
+      "subject_id": "C02-REG-1468",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-REG-0036",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "registration",
+      "subject_id": "C02-REG-0036",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-CERT-01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "certification",
+      "subject_id": "C02-CERT-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-CERT-02",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "certification",
+      "subject_id": "C02-CERT-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-CERT-03",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "certification",
+      "subject_id": "C02-CERT-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-PRJ-01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "performance",
+      "subject_id": "C02-PRJ-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-PRJ-02",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "performance",
+      "subject_id": "C02-PRJ-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-PRJ-03",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "performance",
+      "subject_id": "C02-PRJ-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-02-Q01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "personnel_qualification",
+      "subject_id": "C02-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-02",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-03-Q01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "personnel_qualification",
+      "subject_id": "C02-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-03",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-04",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-05",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-06-Q01",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "personnel_qualification",
+      "subject_id": "C02-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-06",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-07",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-07",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-P-08",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "employment_and_career",
+      "subject_id": "C02-P-08",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C02-COST-POLICY",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "kind": "cost_assumption",
+      "subject_id": "C02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-HQ",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "headquarters",
+      "subject_id": "C03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-REG-1468",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "registration",
+      "subject_id": "C03-REG-1468",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-NO-0036",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "declaration",
+      "subject_id": "C03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "certification",
+      "subject_id": "C03-CERT-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-02",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "certification",
+      "subject_id": "C03-CERT-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-03",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "certification",
+      "subject_id": "C03-CERT-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "performance",
+      "subject_id": "C03-PRJ-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-02",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "performance",
+      "subject_id": "C03-PRJ-02",
+      "status": "missing",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-03",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "performance",
+      "subject_id": "C03-PRJ-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-02-Q01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "personnel_qualification",
+      "subject_id": "C03-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-02",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-03-Q01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "personnel_qualification",
+      "subject_id": "C03-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-03",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-04-Q01",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "personnel_qualification",
+      "subject_id": "C03-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-04",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-05",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-06",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "employment_and_career",
+      "subject_id": "C03-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C03-COST-POLICY",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "kind": "cost_assumption",
+      "subject_id": "C03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-HQ",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "headquarters",
+      "subject_id": "C04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-REG-1468",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "registration",
+      "subject_id": "C04-REG-1468",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-REG-0036",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "registration",
+      "subject_id": "C04-REG-0036",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-CERT-01",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "certification",
+      "subject_id": "C04-CERT-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-CERT-02",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "certification",
+      "subject_id": "C04-CERT-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-CERT-03",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "certification",
+      "subject_id": "C04-CERT-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-CERT-04",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "certification",
+      "subject_id": "C04-CERT-04",
+      "status": "missing",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-PRJ-01",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "performance",
+      "subject_id": "C04-PRJ-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-PRJ-02",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "performance",
+      "subject_id": "C04-PRJ-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-PRJ-03",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "performance",
+      "subject_id": "C04-PRJ-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-01",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-02",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-03",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-04",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-05-Q01",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "personnel_qualification",
+      "subject_id": "C04-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-05",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-06",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-07",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-07",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-08",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-08",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-09",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-09",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-P-10",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "employment_and_career",
+      "subject_id": "C04-P-10",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C04-COST-POLICY",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "kind": "cost_assumption",
+      "subject_id": "C04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-HQ",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "headquarters",
+      "subject_id": "C05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-REG-1468",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "registration",
+      "subject_id": "C05-REG-1468",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-REG-28123",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "registration",
+      "subject_id": "C05-REG-28123",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-NO-0036",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "declaration",
+      "subject_id": "C05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-CERT-01",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "certification",
+      "subject_id": "C05-CERT-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-CERT-02",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "certification",
+      "subject_id": "C05-CERT-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-PRJ-01",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "performance",
+      "subject_id": "C05-PRJ-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-PRJ-02",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "performance",
+      "subject_id": "C05-PRJ-02",
+      "status": "missing",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-PRJ-03",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "performance",
+      "subject_id": "C05-PRJ-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-01",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-01",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-02",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-02",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-03",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-03",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-04-Q01",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "personnel_qualification",
+      "subject_id": "C05-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-04",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-04",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-05",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-06",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-06",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-07",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-07",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-08",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-08",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-P-09",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "employment_and_career",
+      "subject_id": "C05-P-09",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    },
+    {
+      "evidence_id": "SYN-EV-C05-COST-POLICY",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "kind": "cost_assumption",
+      "subject_id": "C05",
+      "status": "synthetic_record",
+      "origin": "synthetic_setting",
+      "physical_document_generated": false,
+      "interpretation": "마스터에 존재하는 가상 증빙 레코드. 실제 기관 발급 또는 문서 파일 존재를 뜻하지 않음.",
+      "note": ""
+    }
+  ],
+  "data_version": "1.0.0"
+}

@@ -1,0 +1,229 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "document_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "template_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "master_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "company_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tenant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "security_level": {
+      "enum": [
+        "L2",
+        "L3"
+      ]
+    },
+    "allowed_roles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "bid_analyst",
+          "cost_analyst",
+          "bid_approver"
+        ]
+      },
+      "minItems": 1
+    },
+    "synthetic": {
+      "enum": [
+        true
+      ]
+    },
+    "kind": {
+      "enum": [
+        "company_profile",
+        "performance",
+        "personnel",
+        "certification",
+        "cost",
+        "staffing_plan",
+        "partner_quote",
+        "bidding_strategy"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notice_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scenario_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "unreviewed",
+        "approved"
+      ]
+    },
+    "rag_ingest": {
+      "type": "boolean"
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chunk_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tenant_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "security_level": {
+            "enum": [
+              "L2",
+              "L3"
+            ]
+          },
+          "allowed_roles": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "bid_analyst",
+                "cost_analyst",
+                "bid_approver"
+              ]
+            },
+            "minItems": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text_start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text_end": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "offset_unit": {
+            "enum": [
+              "Unicode code point, end exclusive"
+            ]
+          },
+          "source_fact_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "master_pointer": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "evidence_id": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "master_pointer",
+                "evidence_id"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "chunk_id",
+          "document_id",
+          "document_version",
+          "tenant_id",
+          "security_level",
+          "allowed_roles",
+          "text",
+          "text_start",
+          "text_end",
+          "offset_unit",
+          "source_fact_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "master_dataset_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "document_id",
+    "template_id",
+    "document_version",
+    "master_version",
+    "company_id",
+    "tenant_id",
+    "security_level",
+    "allowed_roles",
+    "synthetic",
+    "kind",
+    "title",
+    "content",
+    "notice_id",
+    "notice_version",
+    "scenario_id",
+    "review_status",
+    "rag_ingest",
+    "chunks",
+    "master_dataset_id"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:astra:generated-company-document:1.0.0",
+  "title": "Future L2/L3 generated document contract",
+  "description": "미생성 문서의 후속 계약. template_id는 문서 생성 목록 ID. 공통 문서 notice/scenario는 null; 공고별 문서는 차수와 시나리오 필수. 승인 후 서버 수집 단계에서 tenant·등급·역할·offset·원장 pointer·증빙 ID를 재검증하고 색인한다. 정답·판정 레이블 필드 금지."
+}

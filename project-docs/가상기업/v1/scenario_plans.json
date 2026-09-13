@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "origin": "synthetic_setting",
+  "scenarios": [
+    {
+      "scenario_id": "SC-WB-C01",
+      "bid_key": "R26BK01487327-000",
+      "company_id": "C01",
+      "mode": "solo",
+      "decision_as_of": "2026-04-01",
+      "status": "draft_not_submitted",
+      "mutually_exclusive_group": "C01-2026-OPTIONS",
+      "allocation_policy": "draft alternatives do not consume capacity until committed",
+      "staffing": [
+        {
+          "person_id": "C01-P-03",
+          "start": "2026-06-01",
+          "end": "2026-12-17",
+          "allocation_fte": {
+            "value": 0.5,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          }
+        }
+      ],
+      "joint_members": [],
+      "supplier_quotes": [],
+      "cost_sheet": null,
+      "bid_price": null
+    },
+    {
+      "scenario_id": "SC-IC-C03",
+      "bid_key": "R26BK01518315-000",
+      "company_id": "C03",
+      "mode": "joint_proposal",
+      "decision_as_of": "2026-04-01",
+      "status": "draft_not_submitted",
+      "mutually_exclusive_group": "C03-2026-OPTIONS",
+      "allocation_policy": "draft alternatives do not consume capacity until committed",
+      "staffing": [],
+      "joint_members": [
+        {
+          "company_id": "C03",
+          "share": {
+            "value": 80,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          }
+        },
+        {
+          "company_id": "C01",
+          "share": {
+            "value": 10,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          }
+        },
+        {
+          "company_id": "C02",
+          "share": {
+            "value": 10,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          }
+        }
+      ],
+      "supplier_quotes": [],
+      "cost_sheet": null,
+      "bid_price": null,
+      "use": "negative_test_fixture_not_submission_plan",
+      "review_gate": "blocked_region_mismatch_C01_C02"
+    }
+  ]
+}

@@ -1,0 +1,1708 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    {
+      "document_id": "C01-DOC-PROFILE",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "kind": "company_profile",
+      "title": "가상 한빛IT 기업·등록·지역 현황",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/0/company_name",
+        "/companies/0/founded_on",
+        "/companies/0/enterprise_size",
+        "/companies/0/headquarters",
+        "/companies/0/registrations",
+        "/companies/0/known_absences"
+      ],
+      "instance_key_template": "C01-PROFILE-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-PERF",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "kind": "performance",
+      "title": "가상 한빛IT 실적 대장 및 합성 증빙 레코드",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/0/projects"
+      ],
+      "instance_key_template": "C01-PERF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-STAFF",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "kind": "personnel",
+      "title": "가상 한빛IT 인력·경력·가용량 대장",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/0/personnel"
+      ],
+      "instance_key_template": "C01-STAFF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-CERT",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "kind": "certification",
+      "title": "가상 한빛IT 인증·유효기간·서비스 공급 범위",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/0/certifications",
+        "/companies/0/services"
+      ],
+      "instance_key_template": "C01-CERT-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-COST",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 한빛IT 표준 인건비·원가·마진 정책",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/0/l3_policy"
+      ],
+      "instance_key_template": "C01-COST-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-PLAN",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "kind": "staffing_plan",
+      "title": "가상 한빛IT 공고별 배치 계획",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C01-{bid_key}-PLAN-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-ESTIMATE",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 한빛IT 공고별 원가 산출표",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C01-{bid_key}-ESTIMATE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-QUOTE",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L3",
+      "kind": "partner_quote",
+      "title": "가상 한빛IT 공고별 공급사 견적 대장",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C01-{bid_key}-QUOTE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C01-DOC-BID",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L3",
+      "kind": "bidding_strategy",
+      "title": "가상 한빛IT 공고별 투찰 검토안",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C01-{bid_key}-BID-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-PROFILE",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "kind": "company_profile",
+      "title": "가상 해온시스템 기업·등록·지역 현황",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/1/company_name",
+        "/companies/1/founded_on",
+        "/companies/1/enterprise_size",
+        "/companies/1/headquarters",
+        "/companies/1/registrations",
+        "/companies/1/known_absences"
+      ],
+      "instance_key_template": "C02-PROFILE-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-PERF",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "kind": "performance",
+      "title": "가상 해온시스템 실적 대장 및 합성 증빙 레코드",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/1/projects"
+      ],
+      "instance_key_template": "C02-PERF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-STAFF",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "kind": "personnel",
+      "title": "가상 해온시스템 인력·경력·가용량 대장",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/1/personnel"
+      ],
+      "instance_key_template": "C02-STAFF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-CERT",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "kind": "certification",
+      "title": "가상 해온시스템 인증·유효기간·서비스 공급 범위",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/1/certifications",
+        "/companies/1/services"
+      ],
+      "instance_key_template": "C02-CERT-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-COST",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 해온시스템 표준 인건비·원가·마진 정책",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/1/l3_policy"
+      ],
+      "instance_key_template": "C02-COST-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-PLAN",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "kind": "staffing_plan",
+      "title": "가상 해온시스템 공고별 배치 계획",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C02-{bid_key}-PLAN-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-ESTIMATE",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 해온시스템 공고별 원가 산출표",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C02-{bid_key}-ESTIMATE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-QUOTE",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "kind": "partner_quote",
+      "title": "가상 해온시스템 공고별 공급사 견적 대장",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C02-{bid_key}-QUOTE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C02-DOC-BID",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "kind": "bidding_strategy",
+      "title": "가상 해온시스템 공고별 투찰 검토안",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C02-{bid_key}-BID-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-PROFILE",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "kind": "company_profile",
+      "title": "가상 인우블록 기업·등록·지역 현황",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/2/company_name",
+        "/companies/2/founded_on",
+        "/companies/2/enterprise_size",
+        "/companies/2/headquarters",
+        "/companies/2/registrations",
+        "/companies/2/known_absences"
+      ],
+      "instance_key_template": "C03-PROFILE-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-PERF",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "kind": "performance",
+      "title": "가상 인우블록 실적 대장 및 합성 증빙 레코드",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/2/projects"
+      ],
+      "instance_key_template": "C03-PERF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-STAFF",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "kind": "personnel",
+      "title": "가상 인우블록 인력·경력·가용량 대장",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/2/personnel"
+      ],
+      "instance_key_template": "C03-STAFF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-CERT",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "kind": "certification",
+      "title": "가상 인우블록 인증·유효기간·서비스 공급 범위",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/2/certifications",
+        "/companies/2/services"
+      ],
+      "instance_key_template": "C03-CERT-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-COST",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 인우블록 표준 인건비·원가·마진 정책",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/2/l3_policy"
+      ],
+      "instance_key_template": "C03-COST-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-PLAN",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "kind": "staffing_plan",
+      "title": "가상 인우블록 공고별 배치 계획",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C03-{bid_key}-PLAN-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-ESTIMATE",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 인우블록 공고별 원가 산출표",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C03-{bid_key}-ESTIMATE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-QUOTE",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "kind": "partner_quote",
+      "title": "가상 인우블록 공고별 공급사 견적 대장",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C03-{bid_key}-QUOTE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C03-DOC-BID",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "kind": "bidding_strategy",
+      "title": "가상 인우블록 공고별 투찰 검토안",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C03-{bid_key}-BID-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-PROFILE",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "kind": "company_profile",
+      "title": "가상 누리클라우드 기업·등록·지역 현황",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/3/company_name",
+        "/companies/3/founded_on",
+        "/companies/3/enterprise_size",
+        "/companies/3/headquarters",
+        "/companies/3/registrations",
+        "/companies/3/known_absences"
+      ],
+      "instance_key_template": "C04-PROFILE-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-PERF",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "kind": "performance",
+      "title": "가상 누리클라우드 실적 대장 및 합성 증빙 레코드",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/3/projects"
+      ],
+      "instance_key_template": "C04-PERF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-STAFF",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "kind": "personnel",
+      "title": "가상 누리클라우드 인력·경력·가용량 대장",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/3/personnel"
+      ],
+      "instance_key_template": "C04-STAFF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-CERT",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "kind": "certification",
+      "title": "가상 누리클라우드 인증·유효기간·서비스 공급 범위",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/3/certifications",
+        "/companies/3/services"
+      ],
+      "instance_key_template": "C04-CERT-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-COST",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 누리클라우드 표준 인건비·원가·마진 정책",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/3/l3_policy"
+      ],
+      "instance_key_template": "C04-COST-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-PLAN",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "kind": "staffing_plan",
+      "title": "가상 누리클라우드 공고별 배치 계획",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C04-{bid_key}-PLAN-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-ESTIMATE",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 누리클라우드 공고별 원가 산출표",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C04-{bid_key}-ESTIMATE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-QUOTE",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "kind": "partner_quote",
+      "title": "가상 누리클라우드 공고별 공급사 견적 대장",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C04-{bid_key}-QUOTE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C04-DOC-BID",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "kind": "bidding_strategy",
+      "title": "가상 누리클라우드 공고별 투찰 검토안",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C04-{bid_key}-BID-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-PROFILE",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "kind": "company_profile",
+      "title": "가상 새온에너지SW 기업·등록·지역 현황",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/4/company_name",
+        "/companies/4/founded_on",
+        "/companies/4/enterprise_size",
+        "/companies/4/headquarters",
+        "/companies/4/registrations",
+        "/companies/4/known_absences"
+      ],
+      "instance_key_template": "C05-PROFILE-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-PERF",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "kind": "performance",
+      "title": "가상 새온에너지SW 실적 대장 및 합성 증빙 레코드",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/4/projects"
+      ],
+      "instance_key_template": "C05-PERF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-STAFF",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "kind": "personnel",
+      "title": "가상 새온에너지SW 인력·경력·가용량 대장",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/4/personnel"
+      ],
+      "instance_key_template": "C05-STAFF-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-CERT",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "kind": "certification",
+      "title": "가상 새온에너지SW 인증·유효기간·서비스 공급 범위",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/4/certifications",
+        "/companies/4/services"
+      ],
+      "instance_key_template": "C05-CERT-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-COST",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 새온에너지SW 표준 인건비·원가·마진 정책",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "company_common",
+      "master_pointers": [
+        "/companies/4/l3_policy"
+      ],
+      "instance_key_template": "C05-COST-{master_version}",
+      "dependencies": [
+        "company_master.json"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-PLAN",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "kind": "staffing_plan",
+      "title": "가상 새온에너지SW 공고별 배치 계획",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C05-{bid_key}-PLAN-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping",
+        "l3_policy"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-ESTIMATE",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "kind": "cost",
+      "title": "가상 새온에너지SW 공고별 원가 산출표",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C05-{bid_key}-ESTIMATE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-QUOTE",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "kind": "partner_quote",
+      "title": "가상 새온에너지SW 공고별 공급사 견적 대장",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C05-{bid_key}-QUOTE-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    },
+    {
+      "document_id": "C05-DOC-BID",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "kind": "bidding_strategy",
+      "title": "가상 새온에너지SW 공고별 투찰 검토안",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "status": "planned_not_generated",
+      "rag_ingest": false,
+      "ingest_after_generation": true,
+      "scope": "notice_specific",
+      "master_pointers": [],
+      "instance_key_template": "C05-{bid_key}-BID-{revision}",
+      "dependencies": [
+        "company_master.json",
+        "notice_version",
+        "source_clause_ids",
+        "approved_scenario_id"
+      ],
+      "generation_rules": [
+        "사실은 마스터 ID로 참조; 부족한 증빙·견적은 missing 유지.",
+        "합성 자료 표기. expected_answer·label·condition_status를 본문에 복사하지 않음.",
+        "chunk마다 tenant_id/security_level/allowed_roles/document_version/source_offsets 복사."
+      ],
+      "excluded_fields": [
+        "expected_answer",
+        "gold_label",
+        "evaluation",
+        "other_tenant",
+        "condition_mapping"
+      ]
+    }
+  ],
+  "access_policy": {
+    "schema_version": "1.0.0",
+    "implemented_in_service": false,
+    "policy": "default_deny; authenticated AND active membership AND same tenant AND explicitly allowed role; L1 public separately",
+    "roles": {
+      "viewer": "L1 전용",
+      "bid_analyst": "자기 회사 L2 검토",
+      "cost_analyst": "자기 회사 L2 및 L3 원가·외부견적",
+      "bid_approver": "자기 회사 L2 및 L3 원가·투찰전략 승인"
+    },
+    "requirements": [
+      "tenant_id와 role은 서버 세션에서 읽고 사용자 질문에서 받지 않는다.",
+      "검색 후보 생성 전에 필터; 원문·그래프·다운로드·캐시·로그·스트리밍에도 동일 경계.",
+      "동일 테넌트라도 L3 전략은 cost_analyst에게 자동 허용하지 않는다.",
+      "서비스 운영자와 평가자 권한은 일반 검색 권한에서 제외한다.",
+      "회사 간 공동수급을 계획해도 상대 회사 L2/L3 읽기 권한을 자동 부여하지 않는다."
+    ],
+    "gold_policy": {
+      "path": "evaluation/",
+      "rag_ingest": false,
+      "allowed_principals": [
+        "offline_evaluator"
+      ],
+      "service_roles": []
+    },
+    "master_policy": {
+      "rag_ingest": false,
+      "reason": "5개 tenant와 L2/L3가 혼합된 설계용 원장; 필드별 문서 생성 후에만 색인",
+      "allowed_principals": [
+        "offline_data_designer"
+      ]
+    }
+  }
+}

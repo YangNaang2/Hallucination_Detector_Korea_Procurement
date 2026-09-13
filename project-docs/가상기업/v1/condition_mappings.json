@@ -1,0 +1,523 @@
+{
+  "schema_version": "1.0.0",
+  "rag_ingest": false,
+  "interpretation": "충족/미충족은 기록된 개별 하위조건에만 적용. 합성 마스터 내부의 테스트 판정이며 실제 입찰 자격 결론 아님.",
+  "mappings": [
+    {
+      "mapping_id": "M01",
+      "company_id": "C01",
+      "bid_key": "R26BK01487327-000",
+      "notice_id": "R26BK01487327",
+      "notice_version": "000",
+      "requirement_class": "evaluation_score",
+      "condition": "P01 단일 계약금액 VAT 포함 7천만원 이상 경계",
+      "status": "충족",
+      "source_ids": [
+        "S-WB-AMOUNT"
+      ],
+      "master_pointers": [
+        "/companies/0/projects/0"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-PRJ-01"
+      ],
+      "reason": "70,000,000 >= 70,000,000. 금액 하위조건만 충족한다. 유사성·기간·제출 증빙 최종 인정은 별개.",
+      "follow_up": "공고일 확정 및 제출용 합성 증빙 문서 생성 후 평가 범위를 재검토.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": {
+        "left": {
+          "value": 70000000,
+          "unit": "KRW",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "operator": ">=",
+        "right": {
+          "value": 70000000,
+          "unit": "KRW",
+          "origin": "source_extracted",
+          "formula": null
+        },
+        "result": true
+      },
+      "scenario_id": "SC-WB-C01"
+    },
+    {
+      "mapping_id": "M02",
+      "company_id": "C01",
+      "bid_key": "R26BK01487327-000",
+      "notice_id": "R26BK01487327",
+      "notice_version": "000",
+      "requirement_class": "evaluation_score",
+      "condition": "P02의 금액 경계",
+      "status": "미충족",
+      "source_ids": [
+        "S-WB-AMOUNT"
+      ],
+      "master_pointers": [
+        "/companies/0/projects/1"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-PRJ-02"
+      ],
+      "reason": "69,999,999원은 하한보다 1원 작다. 이 실적의 금액 조건 미달이며 회사 전체 입찰 탈락이 아니다.",
+      "follow_up": "금액을 반올림하여 7천만원으로 표시하지 않는다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": {
+        "left": {
+          "value": 69999999,
+          "unit": "KRW",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "operator": ">=",
+        "right": {
+          "value": 70000000,
+          "unit": "KRW",
+          "origin": "source_extracted",
+          "formula": null
+        },
+        "result": false
+      },
+      "scenario_id": "SC-WB-C01"
+    },
+    {
+      "mapping_id": "M03",
+      "company_id": "C01",
+      "bid_key": "R26BK01487327-000",
+      "notice_id": "R26BK01487327",
+      "notice_version": "000",
+      "requirement_class": "evaluation_score",
+      "condition": "P03 실적 증빙 확보",
+      "status": "자료부족",
+      "source_ids": [
+        "S-WB-PROOF"
+      ],
+      "master_pointers": [
+        "/companies/0/projects/2"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-PRJ-03"
+      ],
+      "reason": "마스터에 실적 주장은 있지만 증빙 상태가 missing이다. 금액만 보고 인정 실적으로 확정할 수 없다.",
+      "follow_up": "후속 문서 생성에서도 missing을 자동으로 완비 상태로 바꾸지 않는다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": "SC-WB-C01"
+    },
+    {
+      "mapping_id": "M04",
+      "company_id": "C01",
+      "bid_key": "R26BK01487327-000",
+      "notice_id": "R26BK01487327",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "단독 참여 시 정보통신공사업 0036 보유",
+      "status": "미충족",
+      "source_ids": [
+        "S-WB-0036"
+      ],
+      "master_pointers": [
+        "/companies/0/registrations",
+        "/companies/0/known_absences"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-NO-0036"
+      ],
+      "reason": "C01은 1468만 등록하고 0036은 명시적 미보유. 원문은 분담이행을 허용하므로 단독 모드에 한정한다.",
+      "follow_up": "분담이행 검토 시 별도 협정·상대 자격·지분 조건 확인; 자동 적격 판정 금지.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": "SC-WB-C01"
+    },
+    {
+      "mapping_id": "M05",
+      "company_id": "C01",
+      "bid_key": "R26BK01487327-000",
+      "notice_id": "R26BK01487327",
+      "notice_version": "000",
+      "requirement_class": "evaluation_score",
+      "condition": "최근 3년 실적 산정 기준일",
+      "status": "원문충돌",
+      "source_ids": [
+        "S-WB-AMOUNT",
+        "S-WB-YEAR",
+        "S-WB-DEADLINE"
+      ],
+      "master_pointers": [
+        "/companies/0/projects"
+      ],
+      "evidence_ids": [],
+      "reason": "2026년 사업의 제출일은 2026-05-15이나 공고문 말미는 2025-04-24. 어느 연도를 고쳐 쓸지 확정하지 않는다.",
+      "follow_up": "공식 게시일·정정 차수 또는 발주기관 확인 후 최근 3년 인정 건수·배점을 계산한다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": "SC-WB-C01"
+    },
+    {
+      "mapping_id": "M06",
+      "company_id": "C02",
+      "bid_key": "R26BK01474723-000",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "부산 본점 소재지",
+      "status": "충족",
+      "source_ids": [
+        "S-BS-REGION"
+      ],
+      "master_pointers": [
+        "/companies/1/headquarters"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C02-HQ"
+      ],
+      "reason": "합성 기준일 현재 설립 이후 부산 본점 설정이다. 위치 속성의 부산 일치만 확인하며 입찰일까지의 유지 요건은 별도.",
+      "follow_up": "입찰 전일·입찰일·계약일까지 주소 유지의 날짜별 증빙을 후속 생성.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M07",
+      "company_id": "C02",
+      "bid_key": "R26BK01474723-000",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "정보통신공사업 0036 및 유지관리 직접생산",
+      "status": "충족",
+      "source_ids": [
+        "S-BS-LICENSE",
+        "S-BS-DIRECT"
+      ],
+      "master_pointers": [
+        "/companies/1/registrations/1",
+        "/companies/1/certifications/1"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C02-REG-0036",
+        "SYN-EV-C02-CERT-02"
+      ],
+      "reason": "마스터의 등록 코드와 직접생산 코드가 일치하며 인증 기간은 2026년 4월을 포함한다. 실제 제출·발급기관 확인을 완료했다는 뜻은 아니다.",
+      "follow_up": "실제 RAG용 합성 등록·인증 문서 생성 후 날짜별 증빙을 다시 검사.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M08",
+      "company_id": "C02",
+      "bid_key": "R26BK01474723-000",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "requirement_class": "post_award_obligation",
+      "condition": "중급 이상 유지관리요원 배치",
+      "status": "자료부족",
+      "source_ids": [
+        "S-BS-STAFF"
+      ],
+      "master_pointers": [
+        "/companies/1/personnel/1",
+        "/companies/1/personnel/2"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C02-P-02-Q01",
+        "SYN-EV-C02-P-03-Q01"
+      ],
+      "reason": "P02는 중급이나 기존 투입 0.5 FTE, P03은 초급이다. 중급 인력 존재를 상주·전일 배치 완료로 확대하지 않는다.",
+      "follow_up": "필요 인원·투입률·기술지원 범위를 확인한 후 별도 배치안을 만든다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M09",
+      "company_id": "C01",
+      "bid_key": "R26BK01474723-000",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "부산 본점 조건에 서울 회사 대조",
+      "status": "미충족",
+      "source_ids": [
+        "S-BS-REGION"
+      ],
+      "master_pointers": [
+        "/companies/0/headquarters"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-HQ"
+      ],
+      "reason": "C01 본점은 서울로 고정되어 있다. 이 공고를 위해 부산으로 바꾸지 않는다.",
+      "follow_up": "지역 제한이 다른 공고를 검토한다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M10",
+      "company_id": "C03",
+      "bid_key": "R26BK01518315-000",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "requirement_class": "participation_structure",
+      "condition": "공동이행 구성원 수·지분 하한",
+      "status": "충족",
+      "source_ids": [
+        "S-IC-JOINT"
+      ],
+      "master_pointers": [
+        "/companies/2/company_id"
+      ],
+      "evidence_ids": [],
+      "reason": "초안 SC-IC-C03은 3개사, 지분 80/10/10으로 수·최소지분 하위조건만 만족한다. 협정 체결이나 전 구성원 자격 충족을 뜻하지 않는다.",
+      "follow_up": "PDF 뷰어 3쪽에서 인천 본점 조건을 확인했다. 초안 구성원 C01(서울)·C02(부산)는 지역 속성이 불일치한다. 지분 수치가 맞더라도 이 구성안을 적격으로 처리하지 않고 부정 테스트용으로만 유지한다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": {
+        "left": {
+          "value": 10,
+          "unit": "percent",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "operator": ">=",
+        "right": {
+          "value": 10,
+          "unit": "percent",
+          "origin": "source_extracted",
+          "formula": null
+        },
+        "result": true
+      },
+      "scenario_id": "SC-IC-C03"
+    },
+    {
+      "mapping_id": "M11",
+      "company_id": "C04",
+      "bid_key": "R26BK01574547-000",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "requirement_class": "technical_requirement",
+      "condition": "공급할 서비스의 CSAP 인증",
+      "status": "자료부족",
+      "source_ids": [
+        "S-CL-CSAP"
+      ],
+      "master_pointers": [
+        "/companies/3/services/0",
+        "/companies/3/certifications/3"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C04-CERT-04"
+      ],
+      "reason": "서비스 제공자가 보유해야 할 인증 레코드의 기간·증빙이 미확보다. C04 회사 ISO27001로 대체할 수 없다.",
+      "follow_up": "서비스 범위·실제 합성 인증 문서·공급권한 확인. 임의 인증번호나 발급 사실 생성 금지.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M12",
+      "company_id": "C04",
+      "bid_key": "R26BK01574547-000",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "requirement_class": "post_award_obligation",
+      "condition": "ISMS 기준 준수",
+      "status": "자료부족",
+      "source_ids": [
+        "S-CL-ISMS"
+      ],
+      "master_pointers": [
+        "/companies/3/certifications/2"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C04-CERT-03"
+      ],
+      "reason": "조항은 ISMS 기준 준수 요구다. 회사 인증 보유 여부만으로 준수 완료나 필수 ISMS 인증 보유를 단정할 수 없다.",
+      "follow_up": "서비스별 보안 계획·통제항목 대조 문서가 필요.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M13",
+      "company_id": "C05",
+      "bid_key": "R26BK01505744-000",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "최근 7년 EMS/PMS 등 실적 1건 이상",
+      "status": "충족",
+      "source_ids": [
+        "S-EN-EXP"
+      ],
+      "master_pointers": [
+        "/companies/4/projects/0"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C05-PRJ-01"
+      ],
+      "reason": "2022년 완료한 합성 EMS·PV/ESS 연계 실적 1건을 보유한다. 원문 공고월인 2026년 5월 중 어느 날을 적용해도 7년 범위 내라는 부분 검토다.",
+      "follow_up": "정확한 공고일·제출 증빙·세부 설비 경험은 후속 확인; 평가 최고점과 혼동 금지.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M14",
+      "company_id": "C05",
+      "bid_key": "R26BK01505744-000",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "제조업 28123·모니터링장치 직접생산",
+      "status": "충족",
+      "source_ids": [
+        "S-EN-REG"
+      ],
+      "master_pointers": [
+        "/companies/4/registrations/1",
+        "/companies/4/certifications/1"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C05-REG-28123",
+        "SYN-EV-C05-CERT-02"
+      ],
+      "reason": "합성 등록 28123 및 직접생산 3912110604가 일치한다. 다른 SW·중소기업·실적·직접수행 조항은 각각 확인한다.",
+      "follow_up": "가상 증빙을 실제 발급 자료처럼 외부 제출하지 않는다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M15",
+      "company_id": "C03",
+      "bid_key": "R26BK01518315-000",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "인천 본점 지역 속성 대조",
+      "status": "충족",
+      "source_ids": [
+        "S-IC-REGION"
+      ],
+      "master_pointers": [
+        "/companies/2/headquarters"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C03-HQ"
+      ],
+      "reason": "C03의 합성 본점 지역은 인천으로 원문 지역 속성과 일치한다. 공고 전일~개찰일(낙찰자는 계약일)까지의 유지 증빙은 별도 확인한다.",
+      "follow_up": "소재지 유지 기간은 별도 증빙 확인. 회사 본점을 공고 조건에 맞춰 변경하지 않는다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    },
+    {
+      "mapping_id": "M16",
+      "company_id": "C01",
+      "bid_key": "R26BK01518315-000",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "requirement_class": "eligibility",
+      "condition": "인천 본점 지역 속성 대조",
+      "status": "미충족",
+      "source_ids": [
+        "S-IC-REGION"
+      ],
+      "master_pointers": [
+        "/companies/0/headquarters"
+      ],
+      "evidence_ids": [
+        "SYN-EV-C01-HQ"
+      ],
+      "reason": "C01은 서울 본점이므로 인천 지역 조건과 일치하지 않는다. SC-IC-C03의 지분 10%가 수치 조건을 만족해도 구성원별 참가자격을 대신하지 않는다.",
+      "follow_up": "소재지 유지 기간은 별도 증빙 확인. 회사 본점을 공고 조건에 맞춰 변경하지 않는다.",
+      "scope": "individual_condition_only",
+      "overall_eligibility": null,
+      "evaluation_time": {
+        "master_snapshot": "2026-04-01",
+        "notice_anchor": "원문 조건별 적용; 기준일 불명확하면 보류"
+      },
+      "comparison": null,
+      "scenario_id": null
+    }
+  ]
+}
