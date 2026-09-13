@@ -1,0 +1,104 @@
+{
+  "run_id": "qwen3-pilot-v4-followup",
+  "counts": {
+    "generated": 2
+  },
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C03-N11-E3",
+      "status": "generated",
+      "category": "fact",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.5307,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "prompt_evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.5307,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "prompt_any_annotated_evidence_hit": true,
+      "context_budget_dropped_chunks": 4,
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 1,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.022874200018122792,
+      "generation_seconds": 141.1384283999796
+    },
+    {
+      "question_id": "ASTRA-300-C04-P01",
+      "status": "generated",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "prompt_evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "prompt_any_annotated_evidence_hit": true,
+      "context_budget_dropped_chunks": 2,
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 1,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.08786849997704849,
+      "generation_seconds": 154.91268209996633
+    }
+  ],
+  "any_annotated_evidence_hit": 2,
+  "all_checkable_annotated_evidence_hit": 1,
+  "non_denied_questions": 2,
+  "limitation": "근거 ID/구간 대응 진단. Recall@K·답변 정확도·환각률이 아님. 인용 번호 유효성은 주장 지지 여부가 아님."
+}

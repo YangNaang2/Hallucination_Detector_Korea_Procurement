@@ -32,7 +32,7 @@
   "human_approval": "pending",
   "initial_generation_model": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
   "initial_generation_revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
-  "model_trial_status": "paused_by_user; final 25 pending",
+  "model_trial_status": "25-case run and two affected reruns completed; answer-quality issues remain",
   "model_change_reason": "Qwen2.5 1.5B produced project-ID confusion, VAT threshold confusion and contradictory conclusions; preserve failed trials. Plain citation rendering and model change are confounded, not a controlled model comparison.",
   "generation_config": {
     "alias": "qwen3-4b-local",

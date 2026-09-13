@@ -1,0 +1,14 @@
+{
+  "completed_at": "2026-09-13T13:58:45.514783+00:00",
+  "unique_pilot_questions": 25,
+  "actual_generated_unique_questions": 20,
+  "access_denied_unique_questions": 5,
+  "followup_generations": 2,
+  "original_company_and_qa300_unchanged": true,
+  "agent_review": "completed_in_sidecars",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed",
+  "external_inference": false,
+  "production_deployment": false,
+  "local_server_status": "stopped"
+}

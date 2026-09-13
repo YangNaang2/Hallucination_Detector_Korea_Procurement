@@ -1,5 +1,5 @@
 {
-  "status": "pending_after_fixed_cohort",
+  "status": "completed",
   "baseline_run": "qwen3-pilot-v3",
   "policy": "Always preserve prior answers; rerun every affected selected request, regardless of earlier verdict. No new gold injected.",
   "changes": [
@@ -14,5 +14,6 @@
       "known_affected_question": "ASTRA-300-C04-P01"
     }
   ],
-  "no_index_or_original_dataset_change": true
+  "no_index_or_original_dataset_change": true,
+  "run_id": "qwen3-pilot-v4-followup"
 }

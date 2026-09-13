@@ -51,7 +51,7 @@ def summarize(run_id):
             minimum=min(durations) if durations else None, maximum=max(durations) if durations else None),
         timing_scope='Successful local HTTP generation only; model/index/query encoding/preflight/retries excluded. Wall-clock may include host scheduling or suspension.',
         agent_review_counts=dict(Counter(v['verdict'] for v in reviewed.values())),
-        agent_review_complete=set(reviewed)==set(ids) and len(ids)==25,
+        agent_review_complete=bool(ids) and set(reviewed)==set(ids),
         human_approval='pending', hallucination_span_labeling='not_performed',
         limitation='Finite offline fixture audit. Not a production authentication or universal non-leakage guarantee.')
     p.dump(p.OUT/'evaluation'/f'{run_id}-summary.json', report)

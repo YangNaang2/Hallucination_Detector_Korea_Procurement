@@ -1,0 +1,32 @@
+{
+  "reviewer": "agent",
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "scope": "All changed selected requests rerun after query-only retrieval repairs; retain failures.",
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C03-N11-E3",
+      "verdict": "needs_correction",
+      "finding": "회사명을 모두 표시해야 한다는 잘못된 결론이 남았다. [1]에 업체명 표기 1부·미표기 6부가 실제로 전달됐지만 이를 무시하고 [2]의 한글 표기 지침을 [1]로 잘못 인용했다.",
+      "cause": [
+        "generation",
+        "citation",
+        "explicit_evidence_ignored"
+      ],
+      "source_review": "실제 prompt_evidence [1] L1-R26BK01579684-000-4dae6c033b172173-CH-00001의 제출 부수·표기 구분 직접 확인. [2] 한글 표기 원칙은 업체명 표시 의무가 아님.",
+      "repair_status": "retrieval repaired; answer still fails despite correct source"
+    },
+    {
+      "question_id": "ASTRA-300-C04-P01",
+      "verdict": "needs_correction",
+      "finding": "ISO27001과 CSAP가 별개라는 결론은 맞지만 CSAP의 별도 증빙이 존재한다고 서술했다. 실제로 전달된 [2]는 증빙 확보 상태 missing이며 날짜도 null이다. [1]에 두 인증을 함께 귀속한 인용 오류도 남았다.",
+      "cause": [
+        "generation",
+        "evidence_state_interpretation",
+        "citation"
+      ],
+      "source_review": "[1] C04-CERT-03은 회사 ISO synthetic_record, [2] C04-CERT-04는 C04-SERVICE-01의 CSAP missing을 직접 확인. 두 레코드는 모두 실제 입력에 포함됐다.",
+      "repair_status": "both comparison records now present; model still conflates record existence with evidence availability"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "run_id": "qwen3-pilot-v4-followup",
+  "counts": {
+    "generated": 2
+  },
+  "company_counts": {
+    "C03": 1,
+    "C04": 1
+  },
+  "selected_25_complete": false,
+  "inspected_retrieved_chunks": 12,
+  "integrity_failures": [],
+  "generation_seconds": {
+    "total": 296.05111049994593,
+    "median": 148.02555524997297,
+    "minimum": 141.1384283999796,
+    "maximum": 154.91268209996633
+  },
+  "timing_scope": "Successful local HTTP generation only; model/index/query encoding/preflight/retries excluded. Wall-clock may include host scheduling or suspension.",
+  "agent_review_counts": {
+    "needs_correction": 2
+  },
+  "agent_review_complete": true,
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed",
+  "limitation": "Finite offline fixture audit. Not a production authentication or universal non-leakage guarantee."
+}
