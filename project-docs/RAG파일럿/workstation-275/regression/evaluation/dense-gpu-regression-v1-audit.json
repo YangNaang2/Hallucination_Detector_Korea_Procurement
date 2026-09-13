@@ -1,0 +1,21 @@
+{
+  "run_id": "dense-gpu-regression-v1",
+  "target_count": 25,
+  "record_count": 4,
+  "not_started": 21,
+  "counts": {
+    "generated": 4
+  },
+  "integrity_failures": [],
+  "truncated": 0,
+  "incomplete_attempts": 0,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 47.74824721000002,
+    "median": 3.732120850000001
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

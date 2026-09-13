@@ -1,0 +1,137 @@
+{
+  "run_id": "routing-repair-v2",
+  "code_head": "d1df90e1d22221f983e63889e35270472d446f31",
+  "config": {
+    "requests_sha256": "b82655c27251fa43aeaa033c07a1871f6bd4fa3a3c977ae7c80cf194c618efd4",
+    "index_sha256": "4fb586434b27871cf123a22554354348b22325d3f6bdf01147a224d53bf3b8e0",
+    "embedding_sha256": "ea64bdec2b6d5aa89fbf7f567b8d406fb70baa7997e62537191c2431cd70690a",
+    "vectors_sha256": "842a30221767c8f7ff336d237333eec01778dc36157377ec6068b3457fbad26e",
+    "queries_sha256": "34b892be3fe25d975cec78f351aa6bd54ba44a380c45af41a9e4a0c1feb76b2f",
+    "generation": {
+      "alias": "qwen3-4b-vulkan",
+      "model": "Qwen/Qwen3-4B-GGUF",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "model_path": "qwen3/Qwen3-4B-Q4_K_M.gguf",
+      "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "quantization": "Q4_K_M",
+      "context": 4096,
+      "max_tokens": 768,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "enable_thinking": false,
+      "cache_type": "f16",
+      "max_evidence_chunks": 4,
+      "min_p": 0.05,
+      "presence_penalty": 0.0,
+      "batch": 512,
+      "ubatch": 512,
+      "threads": 8,
+      "profile_version": "workstation-vulkan-v1",
+      "endpoint": "http://127.0.0.1:18769",
+      "parallel_slots": 4,
+      "backend": "Vulkan",
+      "device": "Vulkan0",
+      "gpu_layers": 999
+    },
+    "code": {
+      "adapt_g2b.py": "463bbd7224181fc03d2e3f159c10e139bfe5363dc3fc197e09af5aaedba74b1f",
+      "audit_workstation_rag.py": "1e367a0e2de2e67878d47a0d835b2a5145e707e9b0baffc9e80117ab0e4b3490",
+      "benchmark_rag_pilot.py": "4d0e8328619a00fea4dfe6a10fbee0045dfb2c5cf853e52aa592c0042735a299",
+      "build_qa300.py": "80d28d24fc42051f7ed10b7e3e43cd14592f672380800dfba123def651555aa5",
+      "check_rag_pilot.py": "ea76d24886cb9597e914288c5e063268d2ef98851f4796683c47ad419db85af0",
+      "common.py": "fbc7485f50b34637bd21b4d3bbb7036886e9522f3093c0dbc5c1d447754019c8",
+      "context_qa300.py": "4ff612a84e4cfd933808783fa1c59273837f342f04fd4e355384f0d23fb650d8",
+      "evaluate_rag_pilot.py": "2df9c6e4f2046811516b7613eeb738e77ddc45b3a70269741cec45b05de644ce",
+      "finalize_rag_pilot.py": "304c9f511a6b414e25982b139428fbc73b9384910abe75efd8caf739c1a59b61",
+      "generate.py": "0b9b6aa91ee10b76c5db9240013726c9f5ac40b3a0ee3e2ec66d3360ac2dc15b",
+      "generate_c01_documents.py": "ecbc18005efbd41fc73c0a712e4318d79097de3cf4363ff176e67f5f1eeb3d90",
+      "generate_remaining_companies.py": "11be8329bd7c6819b4208f3650934234274a25727cfbf5f7a28189a9b870f223",
+      "make_example.py": "7aa1b7e04b8d5f81e26e20e84b260667c9d73b6b52532519290226de3bd3b63f",
+      "prepare.py": "7949653a5e3c12adc49c6a6a7931553f4d8632b2baee12bc0a38710d5fff31d7",
+      "qa300_schemas.py": "3c9c2a8c02027ab30b9132b190c4e1b1bde98f729c934570b589f03bb81a1e57",
+      "rag_pilot.py": "11530cc4249da3cf84ccf1ba4558931c5548787571fe11c07d2f06de59eb8b39",
+      "rag_pilot_calculation.py": "1e393f5a3637894b470de0db2881c381712ed4776b39d4fd4fbe7a30923faf2b",
+      "rag_pilot_embedding.py": "2c53101e91365db72672ee57f50da51042fbc7d3f428e734b908a02c9b054208",
+      "rag_pilot_routing.py": "e10c24ea6bcc07404cc821126d2e7f8babe6d4c39f2add3b5889cdf42ecb3340",
+      "run_qa300_checks.py": "24d2da846b0008dbe1326bdeff2a0a82e9b0c6460f7c27a7535bbe9d634f4fae",
+      "run_workstation_shards.py": "4188bd93a54dc0f96bca889c7eaf79b974e9237d834382496d47463149314217",
+      "security_schema.py": "148f74fe620bcdec83642e6178c3fcae59a84d412042b7fa17c3181649a58540",
+      "setup_rag_pilot.py": "3054e9fdbad825ca74c0c5c99f86a851161453c97bd1fc72db0660e71f469237",
+      "setup_workstation_rag.py": "a77fbbdc4245f96eecd9f6314216c190ce8b8e1eadb90eca3fa293d0ab48a0af",
+      "start_host_gpu_rag.py": "e6712ff5cc37ca615fe9dcd5f5b304e5519e2bf79f72d84756c957bf5ce57743",
+      "start_workstation_rag_server.py": "e326d53a314f5264c3ac3c369e4c3558ac72294cc6992e274e3150d88f7849e3",
+      "summarize_rag_pilot.py": "09123edc893a844cad36b51689350da35ed08fb99c073c9f22b8005c74315c11",
+      "test_adapter.py": "e393a7dea3d7f6d2630446496ce93300048c09d6a74c37d10cb908387bc9710a",
+      "test_c01_documents.py": "1cba597e0b58cbae21c8f2bad2861c00c7ba7f29fea80d5a944ffd4b2d3c14e8",
+      "test_company_master.py": "fc84b48e1e265de8338035615313068b8245d152dd106aa571b706bd8c722c9f",
+      "test_pipeline.py": "8cd41f7694361afb84d941db61c2a3efde1718e0623abc944df6921bf343e1b0",
+      "test_qa300.py": "500a9b2aa669047860aace87bcf796a39ab5e91aef2f99a89ba60760e02f576d",
+      "test_rag_pilot.py": "9296969037ed79eab90532e166b33bb0251f51a0816d25616c32c2763d666f42",
+      "test_rag_pilot_calculation.py": "1d8be7075ffa010bb4aa56db88ad8802d09d186b35ff4f29789c37c9dbde1bb3",
+      "test_remaining_companies.py": "13abec71378ac34a58eca3cda3a09b5758caf48e65540c5712492f5d0dfba085",
+      "test_workstation_rag.py": "8c164eaec5f2a8285b0c29954368aad63df313302c698947f50cc348f1ff6459",
+      "test_workstation_routing.py": "03bcce5c588c6ec32f093954c51c7690f5730f71bb73485f2072e07ed462bcb1",
+      "test_workstation_shards.py": "382f3910d05b986820d1017dc59d237154f8ebcd99bc68c54e83e942dba09a37",
+      "validate_company_master.py": "917066daf72d9d9b1716f73a0839ea3850606cc02075911d5e48ffac7b2dba54",
+      "validate_qa300.py": "1335fd2869527ed171e42c39a118856807d69367355f88d23e1dd109605423b8",
+      "workstation_rag.py": "154d6ed29ff7f0030c9091ac5b2be6fa9a258d22593c9039f957ca84dc9e09cf"
+    },
+    "generation_model_sha256_verified": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "attempts": {
+    "ASTRA-300-C01-N01-E1": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C01-N01-E1-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C01-N01-E1-a001/ASTRA-300-C01-N01-E1.json",
+        "status": "generated",
+        "wall_seconds": 8.241655506999905
+      }
+    ],
+    "ASTRA-300-C01-N07-E5": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C01-N07-E5-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C01-N07-E5-a001/ASTRA-300-C01-N07-E5.json",
+        "status": "generated",
+        "wall_seconds": 3.441335814999775
+      }
+    ],
+    "ASTRA-300-C01-S03": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C01-S03-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C01-S03-a001/ASTRA-300-C01-S03.json",
+        "status": "generated",
+        "wall_seconds": 5.954854046000037
+      }
+    ],
+    "ASTRA-300-C02-N06-E2": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C02-N06-E2-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C02-N06-E2-a001/ASTRA-300-C02-N06-E2.json",
+        "status": "generated",
+        "wall_seconds": 4.1530476779998935
+      }
+    ],
+    "ASTRA-300-C03-P04": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C03-P04-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C03-P04-a001/ASTRA-300-C03-P04.json",
+        "status": "generated",
+        "wall_seconds": 6.936836665000101
+      }
+    ],
+    "ASTRA-300-C04-S03": [
+      {
+        "attempt_id": "routing-repair-v2-ASTRA-300-C04-S03-a001",
+        "record_path": "evaluation/runs/routing-repair-v2-ASTRA-300-C04-S03-a001/ASTRA-300-C04-S03.json",
+        "status": "generated",
+        "wall_seconds": 6.019667828000138
+      }
+    ]
+  },
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "selection_policy": "Latest attempted result, including failed/interrupted; no success-based selection.",
+  "pid": null,
+  "current_question": null
+}

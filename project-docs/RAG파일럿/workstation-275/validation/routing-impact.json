@@ -1,0 +1,167 @@
+{
+  "selection": "All requests whose ordered top-6 retrieval changed; no answer-quality selection.",
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N01-E1",
+      "old_chunks": [
+        "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00032",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00086",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00035",
+        "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00008",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00011",
+        "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00009"
+      ],
+      "new_chunks": [
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00004",
+        "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00032",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00086",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00035",
+        "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00008",
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00011"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "old_chunks": [
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00003",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00017",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00014",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00027",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00008",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00028"
+      ],
+      "new_chunks": [
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00018",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00003",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00017",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00014",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00027",
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00008"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C01-S03",
+      "old_chunks": [
+        "C01-STAFF-1.0.0-r1-CH-858cd2438dd0",
+        "C01-STAFF-1.0.0-r1-CH-0072af728f77",
+        "C01-QA300-PLAN-2.0.0-CH-002",
+        "C01-STAFF-1.0.0-r1-CH-6a94d08b3b7a",
+        "C01-STAFF-1.0.0-r1-CH-616af79fea86",
+        "C01-STAFF-1.0.0-r1-CH-a2de3d29a804"
+      ],
+      "new_chunks": [
+        "C01-QA300-PLAN-2.0.0-CH-001",
+        "C01-STAFF-1.0.0-r1-CH-858cd2438dd0",
+        "C01-STAFF-1.0.0-r1-CH-0072af728f77",
+        "C01-QA300-PLAN-2.0.0-CH-002",
+        "C01-STAFF-1.0.0-r1-CH-6a94d08b3b7a",
+        "C01-STAFF-1.0.0-r1-CH-616af79fea86"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C02-N06-E2",
+      "old_chunks": [
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00008",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00009",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00022",
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00000",
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00001",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00041"
+      ],
+      "new_chunks": [
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00000",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00008",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00009",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00022",
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00001",
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00041"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C03-P04",
+      "old_chunks": [
+        "C03-STAFF-1.0.0-r1-CH-e634006d0d45",
+        "C03-STAFF-1.0.0-r1-CH-e83b182743b6",
+        "C03-PLAN-1.0.0-r1-CH-002",
+        "C03-STAFF-1.0.0-r1-CH-a472a79cd1a6",
+        "C03-STAFF-1.0.0-r1-CH-ebb5e3f7a54e",
+        "C03-STAFF-1.0.0-r1-CH-6736b6cb9a9e"
+      ],
+      "new_chunks": [
+        "C03-STAFF-1.0.0-r1-CH-e634006d0d45",
+        "C03-PLAN-1.0.0-r1-CH-002",
+        "C03-STAFF-1.0.0-r1-CH-e83b182743b6",
+        "C03-STAFF-1.0.0-r1-CH-a472a79cd1a6",
+        "C03-STAFF-1.0.0-r1-CH-ebb5e3f7a54e",
+        "C03-STAFF-1.0.0-r1-CH-6736b6cb9a9e"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C04-S03",
+      "old_chunks": [
+        "C04-CERT-1.0.0-r1-CH-f047a13ee760",
+        "C04-CERT-1.0.0-r1-CH-1122f69556dd",
+        "C04-PROFILE-1.0.0-r1-CH-a97862f4a9ef",
+        "C04-CERT-1.0.0-r1-CH-2c833d6385be",
+        "C04-QA300-STATE-2.0.0-CH-001",
+        "C04-PROFILE-1.0.0-r1-CH-c9e0abb1db3e"
+      ],
+      "new_chunks": [
+        "C04-QA300-STATE-2.0.0-CH-001",
+        "C04-CERT-1.0.0-r1-CH-f047a13ee760",
+        "C04-CERT-1.0.0-r1-CH-1122f69556dd",
+        "C04-PROFILE-1.0.0-r1-CH-a97862f4a9ef",
+        "C04-CERT-1.0.0-r1-CH-2c833d6385be",
+        "C04-PROFILE-1.0.0-r1-CH-c9e0abb1db3e"
+      ],
+      "baseline": false
+    },
+    {
+      "question_id": "ASTRA-300-C03-S02",
+      "old_chunks": [
+        "C03-QA300-COST-2.0.0-CH-009",
+        "C03-QA300-COST-2.0.0-CH-001",
+        "C03-QA300-COST-2.0.0-CH-002",
+        "C03-QA300-STATE-2.0.0-CH-001",
+        "C03-COST-1.0.0-r1-CH-360876b14bc6",
+        "C03-COST-1.0.0-r1-CH-08bbca7479f9"
+      ],
+      "new_chunks": [
+        "C03-QA300-STATE-2.0.0-CH-001",
+        "C03-QA300-COST-2.0.0-CH-009",
+        "C03-QA300-COST-2.0.0-CH-001",
+        "C03-QA300-COST-2.0.0-CH-002",
+        "C03-COST-1.0.0-r1-CH-360876b14bc6",
+        "C03-COST-1.0.0-r1-CH-08bbca7479f9"
+      ],
+      "baseline": true
+    },
+    {
+      "question_id": "ASTRA-300-C04-S02",
+      "old_chunks": [
+        "C04-QA300-COST-2.0.0-CH-009",
+        "C04-QA300-COST-2.0.0-CH-003",
+        "C04-QA300-COST-2.0.0-CH-004",
+        "C04-QA300-STATE-2.0.0-CH-001",
+        "C04-COST-1.0.0-r1-CH-d8db07bdf662",
+        "C04-COST-1.0.0-r1-CH-7f39dfe98d3f"
+      ],
+      "new_chunks": [
+        "C04-QA300-STATE-2.0.0-CH-001",
+        "C04-QA300-COST-2.0.0-CH-009",
+        "C04-QA300-COST-2.0.0-CH-003",
+        "C04-QA300-COST-2.0.0-CH-004",
+        "C04-COST-1.0.0-r1-CH-d8db07bdf662",
+        "C04-COST-1.0.0-r1-CH-7f39dfe98d3f"
+      ],
+      "baseline": true
+    }
+  ],
+  "inspected": 300,
+  "uses_gold_for_ranking": false
+}

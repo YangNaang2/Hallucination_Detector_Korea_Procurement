@@ -1,0 +1,57 @@
+{
+  "run_id": "routing-repair-v2",
+  "reviewed_count": 6,
+  "status": "completed",
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N01-E1",
+      "judgment": "incorrect",
+      "reason": "영구라이선스 근거 전달은 개선됐으나 CPU/core에서 라이선스 가격 산식을 근거 없이 생성. 이전보다 핵심조항은 개선, 답변 전체 오류는 남음.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "judgment": "correct",
+      "reason": "2시간 방문·4시간 복구를 정확하게 구분해 누락 해결.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S03",
+      "judgment": "incorrect",
+      "reason": "올바른2026-05-16~12-17 staffing 근거를 전달했지만 5월·12월 한달 적용 가능으로 답하고 FTE도 잘못 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N06-E2",
+      "judgment": "partial",
+      "reason": "72,500면 및 면 단위를 정확히 답함. 원문에 변환규격·기술절차가 없다는 추가 단정은 검색 일부로 확정할 수 없어 유보 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P04",
+      "judgment": "incorrect",
+      "reason": "0.9FTE는 맞으나 기존과신규 FTE가 합산되지 않는다고 잘못 설명. 이전보다 나쁜 결과도 최신시도로 선택.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S03",
+      "judgment": "correct",
+      "reason": "시나리오 종료2027-05-19 및 다음날2027-05-20 무효를 정확히 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    }
+  ],
+  "human_approval": "pending",
+  "hallucination_spans": null
+}

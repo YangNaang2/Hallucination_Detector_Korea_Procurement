@@ -1,0 +1,116 @@
+[
+  {
+    "question_id": "ASTRA-300-C01-N01-E1",
+    "question": "OCR 사용권을 구독료만으로 계획해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01550466-000",
+    "scenario_id": "SC-L1-R26BK01550466-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N07-E5",
+    "question": "장애 신고 후 방문과 복구 시간을 같은 시간으로 해석해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01587385-000",
+    "scenario_id": "SC-L1-R26BK01587385-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-S03",
+    "question": "한빛IT 새 배치의 5월과 12월 공수에 온전한 한 달씩을 적용할 수 있는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-QA300-C01-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N06-E2",
+    "question": "전자화 물량은 어느 단위로 관리해야 하는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01565865-000",
+    "scenario_id": "SC-L1-R26BK01565865-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-P04",
+    "question": "P-02의 신규 0.4 FTE 계획은 기존 0.5와 병행 가능한가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518315-000",
+    "scenario_id": "SC-C03-REVIEW-r1",
+    "scenario_version": "1.0.0-r1",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C04-S03",
+    "question": "누리의 합성 서비스 인증이 끝나는 다음 날에도 같은 버전에서 유효하다고 답할 수 있는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01574547-000",
+    "scenario_id": "SC-QA300-C04-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "run_id": "workstation275-gpu-v1",
+  "target_count": 69,
+  "record_count": 69,
+  "not_started": 0,
+  "counts": {
+    "generated": 69
+  },
+  "integrity_failures": [],
+  "truncated": 1,
+  "incomplete_attempts": 0,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 623.4634637450002,
+    "median": 8.069490954999992
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

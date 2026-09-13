@@ -1,0 +1,21 @@
+{
+  "run_id": "routing-repair-v2",
+  "target_count": 6,
+  "record_count": 6,
+  "not_started": 0,
+  "counts": {
+    "generated": 6
+  },
+  "integrity_failures": [],
+  "truncated": 0,
+  "incomplete_attempts": 0,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 30.533671849000257,
+    "median": 5.4335237295000525
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

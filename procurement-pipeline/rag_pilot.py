@@ -423,7 +423,7 @@ def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
     if purpose:order=rare_anchor_first(req['question'],candidates,order)
     if purpose and not req['scenario_id'].startswith('SC-L1-'):
         # Query-text/document-schema routing only. Never consult QA category/gold IDs.
-        priority = []
+        priority = routing.scenario_sections(req['question'], req['scenario_id'], candidates, order)
         if re.search(r'원가|마진|총액|합산|민감도|연습 가격|인건비', req['question']):
             priority += [i for i in order if candidates[i]['security_level']=='L3' and
                          candidates[i].get('scenario_id')==req['scenario_id'] and
@@ -441,6 +441,8 @@ def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
         private_count=sum(candidates[i]['security_level']!='L1' for i in priority)
         priority += [i for i in order if candidates[i]['security_level']!='L1' and i not in priority][:max(0,2-private_count)]
         order = list(dict.fromkeys(priority+order))
+    if purpose:
+        order = list(dict.fromkeys(routing.specific_public(req['question'], candidates, order) + order))
     picked = []
     for i in order:
         c = candidates[i]

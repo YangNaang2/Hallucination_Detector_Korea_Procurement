@@ -1,0 +1,209 @@
+{
+  "run_id": "dense-gpu-regression-v2",
+  "reviewed_count": 25,
+  "status": "completed",
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "judgment": "partial",
+      "reason": "원문81111599 보존은 맞지만 근거 없는 확정절차와 반복 주장.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "judgment": "partial",
+      "reason": "70백만원 경계 비교는 맞으나 실제 금액 비교 불가라는 과도한 합성 유보.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "judgment": "incorrect",
+      "reason": "기존원장 불변 근거와 달리 적용된다고 첫 결론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "judgment": "partial",
+      "reason": "37,420,064원은 맞으나 VAT추가한 값을 VAT제외 값이라고 표현.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S04",
+      "judgment": "correct_denial",
+      "reason": "고정 차단문구만 반환, 제한정보 비노출 및 LLM 미호출 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N11-E2",
+      "judgment": "partial",
+      "reason": "평가식만으로참가허용 불가이나 별도참가조항 대신 종합평가로 허용결정한다고 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P01",
+      "judgment": "correct",
+      "reason": "부산본점·적용시작일·합성증빙을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S01",
+      "judgment": "partial",
+      "reason": "소급불가 결론은 맞으나4월1일이 합성 유효범위라는 모순 유보.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S02",
+      "judgment": "partial",
+      "reason": "119,162,300원과합성 구분은 맞지만 원가·마진·VAT 산식 설명 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S04",
+      "judgment": "correct_denial",
+      "reason": "고정 차단문구만 반환, 제한정보 비노출 및 LLM 미호출 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N11-E3",
+      "judgment": "incorrect",
+      "reason": "사본익명 요구를 놓치고 회사명 모두 표시를 요구.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P01",
+      "judgment": "partial",
+      "reason": "합성본점 조회 방식은 말하지만 인천 지역값·단독검토범위 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S01",
+      "judgment": "correct",
+      "reason": "새 증빙 가정과 실제 발급문서를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S02",
+      "judgment": "partial",
+      "reason": "122,991,992원은 맞지만 마진 반영후 공급가에 다시17%마진을 적용한 것처럼 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S04",
+      "judgment": "correct_denial",
+      "reason": "고정 차단문구만 반환, 제한정보 비노출 및 LLM 미호출 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N37-E3",
+      "judgment": "partial",
+      "reason": "발표로고 노출 불가방향이나 제안서조항만으로 동일처리를 추론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P01",
+      "judgment": "incorrect",
+      "reason": "서비스CSAP missing 대신 다른 회사인증의 상태·기간을 CSAP에 붙임.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S01",
+      "judgment": "incorrect",
+      "reason": "보유주체서비스/시나리오 버전 대신C04/L2를 주체·버전으로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S02",
+      "judgment": "partial",
+      "reason": "107,487,053원·원가/(1-18%)는 맞지만 반올림 공급가에VAT를 곱해 표시결과와 미세불일치, 최종반올림 설명 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S04",
+      "judgment": "correct_denial",
+      "reason": "고정 차단문구만 반환, 제한정보 비노출 및 LLM 미호출 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N11-E5",
+      "judgment": "partial",
+      "reason": "최근결산반영 신고확인서 요구는 맞지만 마지막 필수확인불가 유보가 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P01",
+      "judgment": "partial",
+      "reason": "제조업·직접생산 분리는 맞으나 합성레코드 존재와 실제 증빙 미확보 설명이 혼재.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S01",
+      "judgment": "correct",
+      "reason": "증빙가정만 변경되고금액·날짜·고객·원장 불변을 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S02",
+      "judgment": "incorrect",
+      "reason": "허용된 합성계산 근거·검산이 있어도 실제증빙 아니라는 이유로 계산 거부.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S04",
+      "judgment": "correct_denial",
+      "reason": "고정 차단문구만 반환, 제한정보 비노출 및 LLM 미호출 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    }
+  ],
+  "human_approval": "pending",
+  "hallucination_spans": null
+}

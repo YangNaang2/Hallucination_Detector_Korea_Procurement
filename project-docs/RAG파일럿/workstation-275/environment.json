@@ -49,5 +49,19 @@
   "new275_llm_generated": 0,
   "document_embeddings_complete": true,
   "embedding_windows": 7195,
-  "active_model_servers": 0
+  "active_model_servers": 0,
+  "gpu_execution_verified": true,
+  "gpu_device": "NVIDIA RTX A5000",
+  "gpu_backend": "Vulkan",
+  "gpu_driver": "580.178.04",
+  "gpu_offload": "37/37 layers",
+  "gpu_peak_memory_mib": 5588,
+  "gpu_peak_utilization_percent": 100,
+  "active_batch_processes": [],
+  "host_gpu_server": "User-owned host launcher remains open; safe to stop with Ctrl-C now.",
+  "final_status": "execution_and_agent_review_complete",
+  "final_counts": {
+    "generated": 295,
+    "access_denied": 5
+  }
 }

@@ -1,0 +1,2214 @@
+{
+  "run_id": "workstation275-gpu-v1",
+  "status": "completed",
+  "rubric": {
+    "correct": "핵심 판단·필수 조건이 맞고 검토에서 중대한 오류가 발견되지 않음",
+    "partial": "핵심 방향은 맞으나 조건 누락·무관하거나 과도한 보충 설명",
+    "incorrect": "실질적 결론·수치·상태 오류",
+    "correct_denial": "권한 거절 및 제한정보 비노출"
+  },
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N01-E1",
+      "judgment": "partial",
+      "reason": "구독 불가 결론은 맞지만 핵심 영구라이선스 요구 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N02-E5",
+      "judgment": "correct",
+      "reason": "원칙 금지와 고정장치·비밀번호·반출입 승인 예외를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N03-E4",
+      "judgment": "partial",
+      "reason": "별도 확약서 조건은 맞으나 대체 불가가 원문에 명시되어 있다는 과도한 인용 주장.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N04-E3",
+      "judgment": "incorrect",
+      "reason": "별도 기한 구분은 맞지만 기준일 2026-09-13을 가격 마감일로 잘못 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N05-E2",
+      "judgment": "incorrect",
+      "reason": "완료 실적만 인정하는 근거를 제시하고도 진행 중 과업 포함 가능으로 반대로 결론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N06-E1",
+      "judgment": "correct",
+      "reason": "순수 SW 실적과 HW·유지보수·컨설팅 제외를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "judgment": "partial",
+      "reason": "방문/복구를 구분하지만 2시간 방문·4시간 복구 조항 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N08-E4",
+      "judgment": "incorrect",
+      "reason": "입찰금액 5%는 맞으나 예산 140백만원을 입찰금액으로 놓고 보증금을 계산.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N09-E3",
+      "judgment": "partial",
+      "reason": "공동수급 불허 결론은 맞음. 별개의 하도급 불허를 공동수급 불허 증거처럼 연결.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N10-E2",
+      "judgment": "incorrect",
+      "reason": "공고/RFP 품명 충돌을 보존하지 않고 복사 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N12-E5",
+      "judgment": "correct",
+      "reason": "단독 참여 조건을 유지.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N13-E4",
+      "judgment": "partial",
+      "reason": "5일 인수인계는 맞으나 동급 이상 대체 조건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N14-E3",
+      "judgment": "partial",
+      "reason": "2026-05-01~12-31은 맞으나 기준일을 공고일로 표현하고 불필요한 문서 우선 규칙 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N15-E2",
+      "judgment": "partial",
+      "reason": "필수인원 확정 불가 결론은 맞으나 투입인원/기간 요구 금지 조항 대신 일반 준수 조항을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N16-E1",
+      "judgment": "partial",
+      "reason": "응용SW개발자 기준은 맞으나 보유 증빙 조건 누락 및 내부/외부 구분 주장 원문 검토 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N17-E5",
+      "judgment": "partial",
+      "reason": "10시와17시 차이를 정확히 설명하지만 합성 시나리오/투찰가의 무관한 유보 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N18-E4",
+      "judgment": "partial",
+      "reason": "외부망 차단은 맞으나 인터넷 연결이 내부망 구성에 포함되어야 한다는 모순 표현.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N19-E3",
+      "judgment": "incorrect",
+      "reason": "연구소 귀속 근거를 제시하고 수행사 단독 소유 가능으로 반대로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N20-E2",
+      "judgment": "correct",
+      "reason": "해외여행 포함 부득이한 교체의 즉시 보고를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N21-E1",
+      "judgment": "correct",
+      "reason": "업로드 성공과 별개로 200MB 용량 제한을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N24-E3",
+      "judgment": "incorrect",
+      "reason": "예정가격 미작성 근거에서 예산과 같은 예정가격 생성 가능을 잘못 도출.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N25-E2",
+      "judgment": "partial",
+      "reason": "업무시간 대응 불충분 결론은 맞지만 근거 설명에서 업무시간 내 운영이라고 축소해 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N28-E4",
+      "judgment": "partial",
+      "reason": "모호한 표현 불가 판단은 맞으나 접수 후 수정 제한 누락 및 교육 협의 내용 혼입.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N32-E5",
+      "judgment": "correct",
+      "reason": "외부 전문업체 점검과 자체 점검을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N22-E5",
+      "judgment": "incorrect",
+      "reason": "본문 권장 분량을 전체 강제 상한으로 합쳐도 된다고 잘못 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N23-E4",
+      "judgment": "correct",
+      "reason": "일반 개발 경력과 보안약점 진단 자격을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N26-E1",
+      "judgment": "correct",
+      "reason": "오염 제거율과 객체탐지 정확도를 구분. 혼합 영문 표현은 편집 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N27-E5",
+      "judgment": "partial",
+      "reason": "무조건 별도 청구 불가 방향은 맞지만 업체 부담 조항 대신 추가 개발 협의 조항 혼입.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N29-E3",
+      "judgment": "partial",
+      "reason": "정규직 조건은 맞으나 10년 경력 요건의 적용범위와 반복 부가 주장은 원문 재검토 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N31-E1",
+      "judgment": "correct",
+      "reason": "총괄책임자의 소속 재직3년 조건을 정확히 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N33-E4",
+      "judgment": "partial",
+      "reason": "월1회 정기보고는 맞으나 근거 없는 법적 책임 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N34-E3",
+      "judgment": "partial",
+      "reason": "온체인 확정 불가이나 오프체인 개인정보 조항 누락, 일반 파일서버 조건으로 대체.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N35-E2",
+      "judgment": "partial",
+      "reason": "원소속 명기 및 하도급 기준은 맞으나 명기 누락만으로 대체인력 의무를 자동 도출.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N36-E1",
+      "judgment": "incorrect",
+      "reason": "문구 보존 결론과 달리 공동소유 지식재산권을 공동계약 근거로 오인하고 법적 근거 유무도 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N37-E5",
+      "judgment": "correct",
+      "reason": "일일 점검 보고와 월말 요약을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N38-E4",
+      "judgment": "partial",
+      "reason": "복수 업종 요구 방향은 맞음. 생성한 코드·명칭·2개 이상 조합의 정확성 원문 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N39-E3",
+      "judgment": "incorrect",
+      "reason": "계획 공수를 법정 최소인원으로 표현해도 된다고 근거 없이 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N40-E2",
+      "judgment": "partial",
+      "reason": "지체시간 산식·30% 상한은 맞지만 허용시간 미확정 시 보류 조건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N41-E1",
+      "judgment": "partial",
+      "reason": "165백만원 보존은 맞지만 181.5백만원 충돌 누락 및 불법 판단 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N42-E5",
+      "judgment": "incorrect",
+      "reason": "지식재산권 대신 입찰제한 및 인증 보유주체를 근거로 잘못 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N43-E4",
+      "judgment": "partial",
+      "reason": "원칙적 재하도급 금지는 맞지만 하도급 조건을 자동 확장하고 불법 단정·출력 잘림이 있음.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N44-E3",
+      "judgment": "partial",
+      "reason": "구성 검토 필요 방향은 맞으나 비율 임계조건 대신 구성원 동의·출자비율 변경을 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N45-E2",
+      "judgment": "partial",
+      "reason": "소속6개월 조건은 맞으나 참여율 산식·기술자격 위반의 불필요한 주장 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N46-E1",
+      "judgment": "incorrect",
+      "reason": "컨소시엄 허용만 남기고 공동수급 불허를 무시할 수 있다고 잘못 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N47-E5",
+      "judgment": "partial",
+      "reason": "장비 구매액만 기준 불가이나 계약금액10% 기준 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N48-E4",
+      "judgment": "partial",
+      "reason": "생략 불가 결론은 맞지만 기능점수 전문가 조항 대신 저작권·일정계획을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N49-E3",
+      "judgment": "correct",
+      "reason": "영상처리서버 구매·구축 범위 및 기존 장비 연동 요구를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N50-E2",
+      "judgment": "correct",
+      "reason": "제안업체 재직3년과 총경력을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N51-E1",
+      "judgment": "partial",
+      "reason": "분리 발주 원칙은 맞지만 분리 발주에 따라 확정원가 포함 가능하다는 앞부분이 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P02",
+      "judgment": "partial",
+      "reason": "반올림 충족 불가 결론은 맞지만 1원 부족 비교 대신 VAT 환산·합성 증빙 설명으로 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P03",
+      "judgment": "partial",
+      "reason": "증빙 미확보 인정 불가이나 대상 missing 상태와 증빙 제출 조항의 직접 대조 부족.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P04",
+      "judgment": "partial",
+      "reason": "0036 단독 미충족은 맞으나 별도 분담이행 가능 유보 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S03",
+      "judgment": "incorrect",
+      "reason": "배치 가능기간을 실제 시나리오 투입기간으로 오인하여 부분월을 온전한 월로 계산.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N01-E2",
+      "judgment": "partial",
+      "reason": "투입인력 요구금지는 맞으나 무관한 다른 참가조건과 합성 유보 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N02-E1",
+      "judgment": "partial",
+      "reason": "PM 직접발표는 맞으나 입찰참가자 지정 및 법적 위반 설명은 과도함.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P05",
+      "judgment": "incorrect",
+      "reason": "상충 공고일 확인을 생략하고 인력 배치일로 실적 기준일·0건·0점을 만들어 계산.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N03-E5",
+      "judgment": "partial",
+      "reason": "11시와15시는 정확하나 변경되지 않는 일정·합성 투찰가의 불필요한 주장 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N04-E4",
+      "judgment": "correct",
+      "reason": "용역책임자 임원급 요건을 설명. 임원급 이하 표현은 문장 교정 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N05-E3",
+      "judgment": "partial",
+      "reason": "토큰 추적·한도·차단 요건은 맞음. 200만원 수치의 적용범위 원문 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N06-E2",
+      "judgment": "incorrect",
+      "reason": "종이기록물 면 단위를 예산그룹 단위로 잘못 답함.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N08-E5",
+      "judgment": "partial",
+      "reason": "별도 자료 확인 방향만 있고 FTA지원포털 안내 누락, 제안평가 조항 혼입.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N09-E4",
+      "judgment": "partial",
+      "reason": "퇴직공무원 현황 밀봉 제출은 맞으나 제출요건을 실제 증빙 확보처럼 표현.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N13-E5",
+      "judgment": "partial",
+      "reason": "상주 지원 조건을 제시하지만 필요 시 조건을 후반에 무조건 필수로 확대.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N14-E4",
+      "judgment": "partial",
+      "reason": "차등점수 미적용은 맞으나 평가기 설정 가능성·근거 부족 설명이 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N17-E1",
+      "judgment": "partial",
+      "reason": "명시되지 않은 등급·인원 확정 불가는 맞으나 불법 단정 및 협의 의무를 과도하게 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N07-E1",
+      "judgment": "partial",
+      "reason": "주소 직전 변경 불가 방향이나 계속 소재 기간 대신 농가 데이터 지역을 근거로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N10-E3",
+      "judgment": "partial",
+      "reason": "3개사·20%는 맞으나 인용에 지분율2개 이상이라는 단위 오류.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N12-E1",
+      "judgment": "incorrect",
+      "reason": "30일 고정 산식을 인용하면서 실제 월 일수 계산에 예라고 반대로 결론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N15-E3",
+      "judgment": "partial",
+      "reason": "계약후15일은 맞으나 준공과 착수 격차7일 이상을 근거 없이 산출.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N16-E2",
+      "judgment": "partial",
+      "reason": "내부 가입자명부·외부 확약 구분은 맞음. 기간/참여율 기준 차이 추가 주장 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N18-E5",
+      "judgment": "incorrect",
+      "reason": "기산점 차이를 인정하면서 계약일 미제시를 이유로 착수일 기준 법적 타당성을 임의 확정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N19-E4",
+      "judgment": "correct",
+      "reason": "일반 기능시험과 시큐어코딩·개발보안 요구 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N21-E2",
+      "judgment": "partial",
+      "reason": "PM/PL 정규직·경력은 맞으나 근로기준법 문제 등 근거 밖 설명 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N22-E1",
+      "judgment": "partial",
+      "reason": "필수 파일 누락 불가이나 특정 무효 조항 대신 일반 증빙자료 요구를 확대.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N23-E5",
+      "judgment": "correct",
+      "reason": "마감 후 수신은 불가하고 송신시작과 수신완료를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N25-E3",
+      "judgment": "incorrect",
+      "reason": "당월 통보·인수인계를 누락하고 다음달로 미뤄도 된다고 첫 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N26-E2",
+      "judgment": "correct",
+      "reason": "단시간 시연과24시간 연속운전 검증을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N27-E1",
+      "judgment": "incorrect",
+      "reason": "제외 서버 범위 누락하고 모든 서버 포함 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N29-E4",
+      "judgment": "partial",
+      "reason": "다른 공고 시간 재사용 불가이나 해당 복구기한 대신 저작권/보안 조항을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N30-E3",
+      "judgment": "partial",
+      "reason": "이메일 불가이나 방문제출·이메일 금지 조항 대신 PDF 형식으로 추론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N20-E3",
+      "judgment": "incorrect",
+      "reason": "월1회 보안교육을 연1회로 임의 변경.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N24-E4",
+      "judgment": "partial",
+      "reason": "공고 전날~평가일 계속 재직은 맞으나 증빙 가능성 추가 확인을 자료부족으로 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N31-E2",
+      "judgment": "correct",
+      "reason": "유사 실적과 직접 저작권 소유를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N33-E5",
+      "judgment": "incorrect",
+      "reason": "재직증명·건강보험 대신 대리인 지정 공문이 필요하다고 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N34-E4",
+      "judgment": "correct",
+      "reason": "우선구매 권장과 강제 원산지 조건을 구분. 반복은 편집 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N35-E3",
+      "judgment": "partial",
+      "reason": "직불과 하도급 허용 구분은 맞으나 법 위반이 없는 경우에만 제출한다는 조건은 원문 검토 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N37-E1",
+      "judgment": "correct",
+      "reason": "대표사 포함4개사 상한을 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N38-E5",
+      "judgment": "incorrect",
+      "reason": "85% 조건을 인용하고도 SW 기술점수 단서 생략 가능으로 반대로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N39-E4",
+      "judgment": "correct",
+      "reason": "우편접수 불가·무효를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N41-E2",
+      "judgment": "incorrect",
+      "reason": "인천 포함 근거를 인용하면서 제외 가능으로 첫 결론, 불법 단정 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N42-E1",
+      "judgment": "partial",
+      "reason": "연계·표준화 범위는 맞지만 화면개발을 포함하지 않는다고 과도하게 단정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N45-E3",
+      "judgment": "correct",
+      "reason": "비상주와 상시 방문 지원을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N28-E5",
+      "judgment": "partial",
+      "reason": "응답3초와 화면로딩 구분은 맞으나 무관한 인력평가와 불법 단정 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N32-E1",
+      "judgment": "partial",
+      "reason": "자체시험만 불가이나 감리 조항 대신 SW영향평가·과업심의를 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N43-E5",
+      "judgment": "partial",
+      "reason": "최고지분 대표는 맞으나 중복참가 금지 누락 및 최소10%를 상대지분 차이처럼 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N47-E1",
+      "judgment": "incorrect",
+      "reason": "3개월 이상 정규직 기준을 인용하면서 입사 직후 기간제 포함 가능으로 반대로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N49-E4",
+      "judgment": "partial",
+      "reason": "분기 교육은 맞으나 법 위반·전체 적격의 과도한 추가 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P03",
+      "judgment": "partial",
+      "reason": "초급 P03과 중급 P02를 구분하지만 실제 제출 증빙 확인 유보 부족.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N36-E2",
+      "judgment": "partial",
+      "reason": "지분만으로 승인 불가이나 공고/RFP 허용 충돌을 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N40-E3",
+      "judgment": "incorrect",
+      "reason": "미확정 허용시간을 관행값으로 대체 가능하다고 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N44-E4",
+      "judgment": "partial",
+      "reason": "점검 생략 불가이나 연1회·법조문 근거 범위의 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N46-E2",
+      "judgment": "incorrect",
+      "reason": "대구 조건 보존 방향이나 전국참가 허용을 명시 사실처럼 생성하고 반복 잘림.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N48-E5",
+      "judgment": "partial",
+      "reason": "상호협의·지원인력 예외는 맞으나 원격지 보안요건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N50-E3",
+      "judgment": "partial",
+      "reason": "서로 다른 하한을 구분하지만 종수를106으로 단순합산하고 핵심 같은 대상 하한 관계 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N51-E2",
+      "judgment": "incorrect",
+      "reason": "일반 투입공수 금지만 적용해 전담자1인 조건 삭제 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P02",
+      "judgment": "correct",
+      "reason": "개발/유지관리 인증 만료일과 증빙 확인을 분리.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P04",
+      "judgment": "partial",
+      "reason": "합계1.0FTE는 맞으나 잔여0.5와 같다고 표현, SLA 미검증 유보 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P05",
+      "judgment": "partial",
+      "reason": "견적 missing·가격 확정 불가는 맞으나 공개합계와 민감도·총원가 미확정 설명 부족.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N01-E3",
+      "judgment": "correct",
+      "reason": "구성원별10% 하한을 정확히 제시.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N02-E2",
+      "judgment": "correct",
+      "reason": "검수 후2개월 안정화와 사업금액 포함을 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N03-E1",
+      "judgment": "correct",
+      "reason": "서울 본점과 서울 지사를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N05-E4",
+      "judgment": "correct",
+      "reason": "기술90+가격10 합산85 기준을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N06-E3",
+      "judgment": "partial",
+      "reason": "대체 불가이나 상주3일 교육 조항 누락, 회계 기능요건으로 대체.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N07-E2",
+      "judgment": "incorrect",
+      "reason": "빅데이터분석서비스를 인용하고도 세부품명을 SW사업자 신고로 잘못 답함.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N09-E5",
+      "judgment": "partial",
+      "reason": "도착/복구 단계는 구분. 추가한4시간/6시간 수치의 원문 지지 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N14-E5",
+      "judgment": "partial",
+      "reason": "표시시각 확정 불가이나 기술평가 후 개찰과 종합평가 결과를 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N18-E1",
+      "judgment": "partial",
+      "reason": "개발경력만 불가이나 기록물관리전문요원·소속3개월 정직원 조건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S03",
+      "judgment": "incorrect",
+      "reason": "증액 불가 결론이나 기존 잔여0.5를0으로 오인하고1.01FTE 계산 누락·불법 단정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N04-E5",
+      "judgment": "correct",
+      "reason": "해당 공고 원문의 공고서 우선 규정을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N08-E1",
+      "judgment": "incorrect",
+      "reason": "국가/공공기관 실적 조건 대신 저작권·소유권과 불법 여부로 잘못 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N10-E4",
+      "judgment": "partial",
+      "reason": "USB 금지·승인 통한 전송은 맞으나 승인 후 USB 사용과 삭제의무를 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N12-E2",
+      "judgment": "correct",
+      "reason": "월1회 이상 정기점검을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N15-E4",
+      "judgment": "incorrect",
+      "reason": "원점수와 가중치 구분 부족하며90%+10%를100%로 볼 수 없다고 잘못 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N16-E3",
+      "judgment": "partial",
+      "reason": "방문제출·택배금지는 맞지만 구체적 조건이 없다는 유보가 자기모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N20-E4",
+      "judgment": "correct",
+      "reason": "정기와 불시 보안점검 모두 인정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N22-E2",
+      "judgment": "partial",
+      "reason": "기존 연계 필요는 맞으나 Liferay 등 구체적 대상 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N26-E3",
+      "judgment": "correct",
+      "reason": "AXR005 YOLOv8 요구를 설명. 구체적 버전 없다는 유보는 세부버전으로 명확화 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N30-E4",
+      "judgment": "incorrect",
+      "reason": "부하와 응답시간 각각 시험만으로 전체 성능 충족을 확정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N13-E1",
+      "judgment": "partial",
+      "reason": "자동 연도 정정 불가이나 접수연도 오기 대신 사업종료일을 근거로 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N17-E2",
+      "judgment": "correct",
+      "reason": "종합동점 시 기술점수 우선·재동점 추첨을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N19-E5",
+      "judgment": "incorrect",
+      "reason": "하도급 불허를 인용하고도 첫 판단 가능으로 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N23-E1",
+      "judgment": "partial",
+      "reason": "1.8점 차등 기준은 맞으나 불필요한 법적 판단 반복.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N24-E5",
+      "judgment": "correct",
+      "reason": "공동소유와 반출·제3자 제공 승인 조건을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N34-E5",
+      "judgment": "partial",
+      "reason": "사업자 비용 부담은 맞지만 불법 단정 및 금액 없어서 부담 판단 불가라는 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N38-E1",
+      "judgment": "partial",
+      "reason": "본점만 아님 방향은 맞으나 본점/지점 지역 조항 대신 사업명에서 추측.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N21-E3",
+      "judgment": "partial",
+      "reason": "신원조사 가능·투입불가 시 교체는 맞으나 불가사유 없으면 조사 비의무라는 역추론 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N25-E4",
+      "judgment": "partial",
+      "reason": "소유권과 공동지식재산권을 보존하지만 삭제의 법적 위반을 근거 없이 단정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N27-E2",
+      "judgment": "incorrect",
+      "reason": "업무시간 외 포함8시간을 인용하고 다음 근무일부터 계산 가능으로 반대로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N28-E1",
+      "judgment": "incorrect",
+      "reason": "80% 미만 특례를 그 경우만 점수 부여로 오인하고 예산/예정가격도 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N32-E2",
+      "judgment": "partial",
+      "reason": "외부 자문 참여인력 제외는 맞으나 하도급 대체 조건을 무조건 적용하고 추측 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N42-E2",
+      "judgment": "partial",
+      "reason": "전체 적격 확대 불가이나 실적 기재·평가 구분 대신 부정당업자 조건 반복.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N29-E5",
+      "judgment": "correct",
+      "reason": "낙찰 후 컨소시엄·하청·재하청 제한을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N31-E3",
+      "judgment": "incorrect",
+      "reason": "8부·원본1/사본7·익명 기준 누락하고 자동 구분이라는 근거 없는 동작 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N33-E1",
+      "judgment": "incorrect",
+      "reason": "입찰설명회와 제안발표회를 혼동하고 불참 평가 가능으로 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N35-E4",
+      "judgment": "correct",
+      "reason": "PM 미발표 시 서면평가를 정확히 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N36-E3",
+      "judgment": "correct",
+      "reason": "인정 직무분야 경력과 전체 경력을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N39-E5",
+      "judgment": "correct",
+      "reason": "리소스 변경 추적·감사 로그 요구를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N40-E4",
+      "judgment": "partial",
+      "reason": "공동수급 불가 방향이나 명시 불허 대신 참가자격 미확인으로 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N44-E5",
+      "judgment": "correct",
+      "reason": "제안서200쪽·요약70쪽을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N46-E3",
+      "judgment": "partial",
+      "reason": "관리 금지 대상 제외 결론이나 투입공수와 유지관리의 관계 설명이 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N50-E4",
+      "judgment": "incorrect",
+      "reason": "회당1점·최대5점 대신 임금체불 감점을 인용하고 무제한 합산 허용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N37-E2",
+      "judgment": "partial",
+      "reason": "전기간 상주 부족 방향이나 PM 주사업자 소속·상주 조항 대신 데이터 테스트를 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N41-E3",
+      "judgment": "correct",
+      "reason": "등록일 기준90일 보증기간을 계약기간과 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N43-E1",
+      "judgment": "partial",
+      "reason": "원문 코드 보존은 맞으나 불법 단정·오기를 증빙 missing으로 바꾸는 주장 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N45-E4",
+      "judgment": "correct",
+      "reason": "50% 이하 상한과 고정 청구액을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N47-E2",
+      "judgment": "incorrect",
+      "reason": "12쪽 미만 감점을12쪽 이하 면제로 뒤집어 해석.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N48-E1",
+      "judgment": "incorrect",
+      "reason": "10시/11시 충돌을 누락하고10시로 반복 확정·출력 잘림.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N51-E3",
+      "judgment": "correct",
+      "reason": "단일사용자와500명 동시접속·응답시간 요구를 함께 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P04",
+      "judgment": "partial",
+      "reason": "0.9FTE 용량 비교는 맞으나 총괄책임자·기능범위·승인 미확정 유보 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N02-E3",
+      "judgment": "correct",
+      "reason": "기능점수 측정 전문가 포함 요구를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N49-E5",
+      "judgment": "partial",
+      "reason": "자동 공동소유 부정은 맞으나 사용권만으로 지식재산권 단독소유를 도출.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P02",
+      "judgment": "correct",
+      "reason": "두번째 실적 missing을 증빙 확보와 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P03",
+      "judgment": "correct",
+      "reason": "직원 명부와 정식 기술등급 증명을 구분, 검색된3명 정보만 있다고 한계를 밝힘.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P05",
+      "judgment": "partial",
+      "reason": "미확정 외부비용0원 금지는 맞으나 불법 단정 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S03",
+      "judgment": "correct",
+      "reason": "2026-05-20 적용 전 새 상태 적용 불가 및 합성 증빙 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N01-E4",
+      "judgment": "correct",
+      "reason": "월1회 보안교육과 착수교육만을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N06-E4",
+      "judgment": "partial",
+      "reason": "공동수급 불허는 맞으나 이 조건 때문에 증빙/투찰가 확인 불가라는 무관한 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N03-E2",
+      "judgment": "incorrect",
+      "reason": "공고일을 기준일2026-09-13으로 치환하고5년을 누락·추정가격 산식을 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N04-E1",
+      "judgment": "partial",
+      "reason": "두 직접생산 확인 필요 방향이나 명시 코드 요건 대신 기능범위로 추론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N05-E5",
+      "judgment": "incorrect",
+      "reason": "발표3일전 제출 대신 최근2년 실적을 인용해 발표 당일 제출을 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N07-E3",
+      "judgment": "partial",
+      "reason": "5% 하한은 맞으나 구성원 상한 누락·전체적격 구분하지 않음이라는 잘못된 유보.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N08-E2",
+      "judgment": "correct",
+      "reason": "공동이행과 하도급 불허를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N09-E1",
+      "judgment": "partial",
+      "reason": "SW만 불가이나0036 조건 누락, 제안서 보상 제외를 업종 근거로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N10-E5",
+      "judgment": "incorrect",
+      "reason": "하자보수 의무를 권리소유의 법적 근거로 오인하고 공동소유 규정 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N14-E1",
+      "judgment": "partial",
+      "reason": "자료 미확보가 요건 없음은 아님을 말하지만 중소기업확인서를 인력 요건으로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N11-E4",
+      "judgment": "incorrect",
+      "reason": "일부 하도급 금지를 누락하고 외부 개발 협력 자유 허용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N12-E3",
+      "judgment": "incorrect",
+      "reason": "VAT 합계/공급가 구분 대신 예정가격±3%를 공급가 계산으로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N13-E2",
+      "judgment": "incorrect",
+      "reason": "진행중 제외 조항을 누락하고 최근3년 안이면 인정 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N15-E5",
+      "judgment": "incorrect",
+      "reason": "준공전 제출과 준공일 동일 처리 가능이라는 첫 결론이 근거와 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N17-E3",
+      "judgment": "partial",
+      "reason": "일반 배점표 대체 불가는 맞으나 유추 기준 사용 가능이라는 유보가 부족자료 보존을 약화.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N18-E2",
+      "judgment": "partial",
+      "reason": "즉시 병행확정 불가이나 상주비율 대신3개월 재직 조건을 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N16-E4",
+      "judgment": "partial",
+      "reason": "3점 이내·원점수 차 우선은 맞으나 동점처리를 차등 적용조건으로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N19-E1",
+      "judgment": "correct",
+      "reason": "원격개발에도 보안위험·통제대책 필요를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N20-E5",
+      "judgment": "correct",
+      "reason": "공동이행·분담이행·하도급 불가를 각각 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N21-E4",
+      "judgment": "partial",
+      "reason": "NAS와디스크를 구분하지만 별도 계약 필요까지 과도하게 도출.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N22-E3",
+      "judgment": "incorrect",
+      "reason": "공수와FP를 구분하는 근거에서 혼동 가능으로 첫 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N23-E2",
+      "judgment": "partial",
+      "reason": "외부전문가8인 요건은 확인하지만 법조문·50억 기준 일반화 확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N24-E1",
+      "judgment": "incorrect",
+      "reason": "디자이너 필수 근거 대신 저작권 위반으로 생략 불가를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N25-E5",
+      "judgment": "incorrect",
+      "reason": "익명전자본과기명출력본을 동일 제출 가능으로 판단, 합성시나리오로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N26-E4",
+      "judgment": "partial",
+      "reason": "칩만 불가이나 HW/SW키트50개·반도체10개 수량 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N27-E3",
+      "judgment": "partial",
+      "reason": "7일은 맞지만 참여명단·비상연락·보안서약 누락 및 기준일 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N28-E2",
+      "judgment": "incorrect",
+      "reason": "행위별 감점 조건을 동일 규칙으로 합쳐도 된다고 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N29-E1",
+      "judgment": "incorrect",
+      "reason": "10년 이상을 정확히10년 제외로 해석. 이상/초과 혼재 표기는 원문 재확인 필요.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N30-E5",
+      "judgment": "incorrect",
+      "reason": "공고후발급 조건은 맞으나 판단기준일2026-09-13을 입찰공고일로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N31-E4",
+      "judgment": "partial",
+      "reason": "15일 통보·승인·교육백업은 맞지만 위반 시 전체사업 참여불가로 확대.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N33-E2",
+      "judgment": "partial",
+      "reason": "TTA 경로·승인은 맞으나 불법 단정 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N34-E1",
+      "judgment": "correct",
+      "reason": "공고 기술인력 계수와 보편 법정 기술등급 규칙을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N32-E3",
+      "judgment": "partial",
+      "reason": "원격개발 보안통제는 맞지만 통제문구에서 개인PC 사용 허용을 도출하고 가상PC 조건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N35-E5",
+      "judgment": "partial",
+      "reason": "과업변경요청 절차는 맞으나 자가평가표를 변경양식으로 오인·계약무효 단정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N36-E4",
+      "judgment": "correct",
+      "reason": "승인된 지정단말기·접근인원 통제를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N38-E2",
+      "judgment": "incorrect",
+      "reason": "소속 재직조건 대신 회사실적5년을 직원 자격으로 오인하고 발급기준일 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N39-E1",
+      "judgment": "partial",
+      "reason": "서버수만 비용 산정 불가이나 RDS 등 범위 누락, 월사용료 원칙만 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N40-E5",
+      "judgment": "correct",
+      "reason": "등급별 인건비 포함 산출내역 요구를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N42-E3",
+      "judgment": "correct",
+      "reason": "참여인력 이력·조직의 구체적 제출정보를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N43-E2",
+      "judgment": "incorrect",
+      "reason": "5.0점 예외를95점 등급 부여로 오인하고 다시85점 조건을 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N44-E1",
+      "judgment": "partial",
+      "reason": "두 품명 중1개이상 선택 관계를 확인하지만 불필요한 발급기관 자료부족 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N47-E3",
+      "judgment": "incorrect",
+      "reason": "신인도 조건 개수를 전남소재 기업 개수로 오인하여 점수를 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N41-E4",
+      "judgment": "partial",
+      "reason": "최근3년·준공/수행중·지분금액은 맞지만 발급일을 기준일 이전으로 생성하고 하도급 승인 조건 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N45-E5",
+      "judgment": "correct",
+      "reason": "직접생산확인과0036업종면허를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N46-E4",
+      "judgment": "partial",
+      "reason": "4주 교체는 맞으나 무효·형사책임·계약해지성 주장 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N48-E2",
+      "judgment": "partial",
+      "reason": "하자요원2명과개발인력 구분은 맞으나 개별요건 여부가 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N51-E4",
+      "judgment": "incorrect",
+      "reason": "청구금액2.5%를 인용하고 총예산 일괄 적용 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P05",
+      "judgment": "partial",
+      "reason": "전체규격 미확정은 맞으나 scoped_cost_net에 전체공급가격이 포함되어 있다고 잘못 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N03-E3",
+      "judgment": "incorrect",
+      "reason": "원문 숫자 누락을1일로 임의 채우고15일 기한을 놓침.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N49-E1",
+      "judgment": "partial",
+      "reason": "내부명부만 불가이나 국민연금·재직증빙 대신 보안각서를 소속 증빙으로 오인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N50-E5",
+      "judgment": "partial",
+      "reason": "7일 대체와전체하자기간 구분은 맞으나 법적충돌·불필요한 기간 유보 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P02",
+      "judgment": "partial",
+      "reason": "대장 생성과공급권한 미확보 구분은 맞으나 외부 인증의 보유주체 유보 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P04",
+      "judgment": "partial",
+      "reason": "가격기간과실제개시 구분은 맞지만 미확정 실제개시일을 별도 확정 사실로 표현.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S03",
+      "judgment": "incorrect",
+      "reason": "서비스 시나리오2027-05-19 대신 다른 인증2027-12-31 만료를 적용하고 자동체크 동작 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N07-E4",
+      "judgment": "correct",
+      "reason": "VAT제외 계약금액1.25% 공채 기준을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P03",
+      "judgment": "incorrect",
+      "reason": "ISMS 준수와인증 보유 대신 합성 증빙·불법 여부를 근거로 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N01-E5",
+      "judgment": "correct",
+      "reason": "OCR 납품 GPU서버 포함을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N02-E4",
+      "judgment": "correct",
+      "reason": "90점의85%=76.5점과합산85점을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N04-E2",
+      "judgment": "partial",
+      "reason": "외부인력 무승인 불가이나 정규직 참여조항 대신 성과품·장비 반출 조건을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N06-E5",
+      "judgment": "partial",
+      "reason": "원시자료 반출금지는 맞으나 작업장 변경 요청 자체 불법이라는 주장 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N08-E3",
+      "judgment": "incorrect",
+      "reason": "우편불인정 대신 우편허용과전자제출 권장을 동시에 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N12-E4",
+      "judgment": "partial",
+      "reason": "HW·부품교체 범위는 맞으나 부품교체 없는 경우의 유보가 모호하고 과다.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N16-E5",
+      "judgment": "partial",
+      "reason": "자동종료연장 불가이나 사업종료일 대신 하자보수 책임 조건을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N05-E1",
+      "judgment": "correct",
+      "reason": "실적일천만원 하한·공동수주 지분금액·비고 항목을 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N09-E2",
+      "judgment": "partial",
+      "reason": "지역가점과 참가제한 구분은 맞으나 무관한 반복으로 잘림.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N10-E1",
+      "judgment": "incorrect",
+      "reason": "직접생산 품명을 사업시스템명 RUDAS로 잘못 답함.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N13-E3",
+      "judgment": "partial",
+      "reason": "개발자 자동PM 불가이나 소속·직급·개발인력 제외 대신 일반 역량을 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N15-E1",
+      "judgment": "partial",
+      "reason": "FP와인원 구분은 맞으나 기능규모 FP를 생산성 기준 산출값처럼 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N17-E4",
+      "judgment": "partial",
+      "reason": "발표참석과투입인원 구분은 맞으나 제안발표 세부요건 반복·정작 범위 설명 부족.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N19-E2",
+      "judgment": "partial",
+      "reason": "대표자 보안책임자는 맞으나 원문 양식을 실제 참여명단으로 간주.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N20-E1",
+      "judgment": "partial",
+      "reason": "PM·개발자·디자이너 필수는 맞으나 불법 단정 및 필수인지 불명이라는 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N24-E2",
+      "judgment": "incorrect",
+      "reason": "상생결제 의무 미확인 상태에서 일반계좌만으로 준비완료 가능으로 판단.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N28-E3",
+      "judgment": "partial",
+      "reason": "동급교체·승인·7일병행은 맞으나 근로기준법성 설명·근거부족 유보가 모순.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N14-E2",
+      "judgment": "partial",
+      "reason": "합산 비율 아님 방향이나 협상적격 임계값 대신 종합평가·차등미적용으로 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N18-E3",
+      "judgment": "partial",
+      "reason": "채용노력과참가제한 구분은 맞으나 별도 지역제한 확인 없이 전국참여·하도급까지 허용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N21-E5",
+      "judgment": "partial",
+      "reason": "통제불가 해외 저장금지는 맞으나2주전 협의 예외 및 정의불명 유보를 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N23-E3",
+      "judgment": "partial",
+      "reason": "인력기재 요구만 적용하고 FP 인력관리 금지와 목적·범위 충돌 유보 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N32-E4",
+      "judgment": "partial",
+      "reason": "실제채용 사실 임의생성 불가는 맞으나 합성 작성 자체의 규정위반으로 확대.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N22-E4",
+      "judgment": "correct",
+      "reason": "소유권과 반출·누출금지정보 삭제·제3자 승인 조건을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N25-E1",
+      "judgment": "partial",
+      "reason": "반복 시정 무시불가이나 누적횟수·계약파기 조항 누락.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N27-E4",
+      "judgment": "correct",
+      "reason": "채권양도·질권설정 제한을 확인. 개인정보 조항은 무관함.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N29-E2",
+      "judgment": "correct",
+      "reason": "개인별 참여율100% 상한을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N31-E5",
+      "judgment": "partial",
+      "reason": "DB튜닝 전문가 요구는 맞으나 휴대폰 등 무관한 역할·자원 부족 추측 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N33-E3",
+      "judgment": "incorrect",
+      "reason": "단독응찰 별도 가격자료 제출을 인용하고 불필요로 첫 결론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N36-E5",
+      "judgment": "partial",
+      "reason": "계약금액 기준은 맞지만10%와보험 제출조건 누락·1원 절사 조항 혼입.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N40-E1",
+      "judgment": "correct",
+      "reason": "NVIDIA공인/동등·DGXA100 전문성을 일반SW개발 자격과 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N44-E2",
+      "judgment": "correct",
+      "reason": "최소지분5%를 유지하고10% 임의대체 거부.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N26-E5",
+      "judgment": "incorrect",
+      "reason": "공고전 재직 대신 신규PM 대리인지정 공문을 필수조건으로 생성.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N35-E1",
+      "judgment": "incorrect",
+      "reason": "채용예정과현재재직을 구분하지 않고 조건부 현재재직 기록 허용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N37-E4",
+      "judgment": "partial",
+      "reason": "계열사 제한은 맞으나 계열사 아니면 자격합산 가능으로 충분조건 확대.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N41-E5",
+      "judgment": "incorrect",
+      "reason": "주사업자만 제출 근거와 달리 모두 제출로 첫 결론.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N48-E3",
+      "judgment": "partial",
+      "reason": "발표/전체분량 구분 방향이나10페이지 제한 누락·85% 점수조항 혼입.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P02",
+      "judgment": "incorrect",
+      "reason": "만점아님은 맞으나 완료PRJ01 대신 missing 다른실적을 적용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N30-E1",
+      "judgment": "partial",
+      "reason": "점수총합과인원 구분은 말하지만 평점을 직원수로 결정한다고 반복해 경력기준 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N34-E2",
+      "judgment": "correct",
+      "reason": "회사명 노출 페이지당1점 감점을 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N38-E3",
+      "judgment": "partial",
+      "reason": "추정채점 보류는 맞으나 본문과자기평가표 경계 불일치 대신 인력서식만 설명.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N39-E2",
+      "judgment": "correct",
+      "reason": "전담관리자 배정·요청시 보고서를 비상연락처와 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N43-E3",
+      "judgment": "correct",
+      "reason": "하도급 적정성 승인과제안서 기술평가 절차를 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N45-E1",
+      "judgment": "partial",
+      "reason": "대체불가 방향이나 소프트웨어유지및지원서비스 명칭을 잘린 품명으로 제시.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N49-E2",
+      "judgment": "correct",
+      "reason": "지정개발장소·상호협의·보안요건을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S03",
+      "judgment": "incorrect",
+      "reason": "기간제9번째 인력을 놓치고 정규직의 입사일/투입시작일을 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N42-E4",
+      "judgment": "partial",
+      "reason": "자료반환·PC삭제·보안확약서는 맞으나 불법 단정 추가.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N46-E5",
+      "judgment": "correct",
+      "reason": "대구/신한은행 중 사전약정·계약체결 전 준비를 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N47-E4",
+      "judgment": "correct",
+      "reason": "IEC제어기·통신·RemoteIO 규격을 일반공유기와 구분.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N51-E5",
+      "judgment": "correct",
+      "reason": "재위탁 사전승낙·사전통보 조건을 확인.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P03",
+      "judgment": "correct",
+      "reason": "PRJ02 완료설정과증빙 missing을 분리.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P05",
+      "judgment": "correct",
+      "reason": "전체장비견적 미확보와 현장조건 미확정으로 투찰확정 보류.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N50-E1",
+      "judgment": "partial",
+      "reason": "SW·정보통신만 불가이나 산업디자인 업종 대신 보안서약·위약금을 인용.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P04",
+      "judgment": "partial",
+      "reason": "인력초안으로하도급 허용 불가는 맞으나 직접수행·불허 조항 누락, 실적규칙과 혼동.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-N30-E2",
+      "judgment": "incorrect",
+      "reason": "전자입찰 금액 우선은 맞지만 금액불일치를 미제출 무효와 혼동하여 모두 무효로 단정.",
+      "reviewer": "agent",
+      "human_approval": "pending",
+      "hallucination_spans": null
+    }
+  ],
+  "reviewed_count": 275,
+  "scope": "All 275 latest initial-run answers read by agent. Not human approval; not hallucination span labeling."
+}
