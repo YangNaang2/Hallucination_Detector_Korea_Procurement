@@ -1,0 +1,36 @@
+{
+  "workbooks": [
+    {
+      "team_id": "T01",
+      "questions": 7,
+      "span_rows": 18,
+      "sheets": 6,
+      "exact_answers_and_offsets": "passed"
+    },
+    {
+      "team_id": "T02",
+      "questions": 6,
+      "span_rows": 17,
+      "sheets": 6,
+      "exact_answers_and_offsets": "passed"
+    },
+    {
+      "team_id": "T03",
+      "questions": 6,
+      "span_rows": 17,
+      "sheets": 6,
+      "exact_answers_and_offsets": "passed"
+    },
+    {
+      "team_id": "T04",
+      "questions": 6,
+      "span_rows": 16,
+      "sheets": 6,
+      "exact_answers_and_offsets": "passed"
+    }
+  ],
+  "human_approval": "pending",
+  "export_runtime_exit_code": 1,
+  "export_limitation": "Artifact runtime reported export success then exited 1 without an error. ZIP/XML and exact content independently verified.",
+  "scope": "Structural and exact content checks; no human label approval."
+}

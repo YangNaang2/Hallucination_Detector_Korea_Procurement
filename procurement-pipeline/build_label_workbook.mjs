@@ -5,8 +5,14 @@ import {pathToFileURL} from 'node:url';
 const require=createRequire(path.join(process.cwd(),'runner.cjs'));
 const {Workbook,SpreadsheetFile}=await import(pathToFileURL(require.resolve('@oai/artifact-tool')).href);
 const root=path.resolve(process.argv[2]);
-const out=path.join(root,'project-docs/환각라벨링/pilot-25-v1');
-const rows=(await fs.readFile(path.join(out,'labels_draft.jsonl'),'utf8')).trim().split('\n').map(JSON.parse);
+const sourceDir=path.join(root,'project-docs/환각라벨링/pilot-25-v1');
+const company=process.argv[3]||null;
+if(company&&!/^(C0[1-5]|T0[1-4])$/.test(company))throw new Error('Invalid group');
+const assignment=company?.startsWith('T')?JSON.parse(await fs.readFile(path.join(sourceDir,'team-delivery/assignments.json'),'utf8')).groups.find(g=>g.team_id===company):null;
+const out=process.argv[4]?path.resolve(process.argv[4]):sourceDir;
+await fs.mkdir(out,{recursive:true});
+const rows=(await fs.readFile(path.join(sourceDir,'labels_draft.jsonl'),'utf8')).trim().split('\n').map(JSON.parse).filter(r=>!company||(assignment?assignment.question_ids.includes(r.question_id):r.company_id===company));
+const lastRow=rows.length+4;
 const workbook=Workbook.create();
 const short=r=>r.question_id.replace('ASTRA-300-','');
 const sheets=[];
@@ -29,13 +35,13 @@ function sheet(name,title,subtitle,headers,data,widths,heights){
  sh.tables.add(sh.getRangeByIndexes(3,0,data.length+1,headers.length),true,'Table'+sheets.length);
  return sh;
 }
-const index=sheet('검수목록','ASTRA 답변 25개 검수','사람 승인 pending · 노란 칸에 의견 입력',
+const index=sheet('검수목록',`ASTRA 답변 ${rows.length}개 검수`,`${company||'5개 회사'} · 사람 승인 pending · 노란 칸에 의견 입력`,
  ['문항 ID','회사','질문','초안 구절 수','품질·추가 확인','사람 판정','검수자','검수 의견'],
  rows.map(r=>[short(r),r.company_id,r.question,r.draft_spans.length,r.quality_issues.join('\n'),'pending','','']),
  [32,10,55,12,52,18,16,50],r=>Math.max(75,Math.min(150,30+Math.ceil(r[4].length/40)*16)));
-index.getRange('D5:D29').setNumberFormat('0');
-index.getRange('F5:H29').format.fill='#FFF2CC';
-index.getRange('F5:F29').dataValidation={rule:{type:'list',values:['pending','동의','수정 제안','재검토']}};
+index.getRange(`D5:D${lastRow}`).setNumberFormat('0');
+index.getRange(`F5:H${lastRow}`).format.fill='#FFF2CC';
+index.getRange(`F5:F${lastRow}`).dataValidation={rule:{type:'list',values:['pending','동의','수정 제안','재검토']}};
 const spans=[];
 for(const r of rows)for(const s of [...r.draft_spans,...r.review_candidates])spans.push([short(r),s.span_id,s.quote,s.label,s.reason,s.evidence_ids.join(', '),s.start,s.end,'pending','','']);
 const sp=sheet('구절판정','오류 구절과 보류 후보','위치: 원시 답변의 Unicode [start,end)',
@@ -74,12 +80,13 @@ const guide=[
 sheet('기준','구절 라벨링 기준','에이전트 초안 · 학습 사용 전 사람 검수', ['항목','기준'],guide,[32,105],r=>Math.max(55,25+Math.ceil(r[1].length/80)*18));
 sheet('문항해설','기대답과 에이전트 설명','기대답은 원문 증거를 대체하지 않음',
  ['문항 ID','질문','기대답','에이전트 설명'],rows.map(r=>[short(r),r.question,r.expected_answer,r.agent_note]),[32,55,75,80],r=>Math.max(85,30+Math.ceil(Math.max(r[2].length/60,r[3].length/65))*18));
-await fs.mkdir(path.join(root,'work/labeling-pilot/previews'),{recursive:true});
+const previewDir=path.join(root,'work/labeling-pilot/previews',company||'all');
+await fs.mkdir(previewDir,{recursive:true});
 for(const sh of sheets){
  const preview=await workbook.render({sheetName:sh.name,range:sh.name==='기준'?'A1:B8':sh.name==='답변전문'?'A1:E7':sh.name==='근거'||sh.name==='문항해설'?'A1:D6':sh.name==='구절판정'?'A1:F7':'A1:H7',scale:1,format:'png'});
- await fs.writeFile(path.join(root,'work/labeling-pilot/previews',sh.name+'.png'),new Uint8Array(await preview.arrayBuffer()));
+ await fs.writeFile(path.join(previewDir,sh.name+'.png'),new Uint8Array(await preview.arrayBuffer()));
 }
 console.log((await workbook.inspect({kind:'table',range:'검수목록!A4:H7',include:'values',tableMaxRows:4,tableMaxCols:8,maxChars:1800})).ndjson);
 console.log((await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!|#SPILL!',options:{useRegex:true,maxResults:10},maxChars:1000})).ndjson);
-const dest=path.join(out,'검수시트_25개.xlsx');const xlsx=await SpreadsheetFile.exportXlsx(workbook);await xlsx.save(dest);
+const dest=path.join(out,company?`팀원${Number(company.slice(1))}_검수시트_${rows.length}문항.xlsx`:'검수시트_25개.xlsx');const xlsx=await SpreadsheetFile.exportXlsx(workbook);await xlsx.save(dest);
 console.log(JSON.stringify({output:dest,answers:rows.length,span_rows:spans.length,evidence_rows:ev.length,answer_blocks:parts.length,sheets:sheets.length}));
