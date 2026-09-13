@@ -1,0 +1,404 @@
+<mxfile host="drawio-skill" agent="diagram-ir" version="3.0.0">
+  <diagram id="system" name="System">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="group_0" value="collect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;fontColor=#6c8ebf;verticalAlign=top;fontStyle=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6" y="216" width="998" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="group_1" value="corp" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;fontColor=#9673a6;verticalAlign=top;fontStyle=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1616" y="256" width="408" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="group_2" value="human" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#d79b00;fontColor=#d79b00;verticalAlign=top;fontStyle=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1616" y="6" width="598" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="group_3" value="pipeline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;fontColor=#82b366;verticalAlign=top;fontStyle=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1006" y="176" width="598" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="group_4" value="serve" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#d6b656;fontColor=#d6b656;verticalAlign=top;fontStyle=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1396" y="466" width="1408" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="g2b_api" value="조달청 나라장터 OpenAPI&#10;(입찰공고정보서비스)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="group_0" data-model-id="g2b_api" data-kind="external" data-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:6}" data-source-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:6}" data-source-label="조달청 나라장터 OpenAPI&#10;(입찰공고정보서비스)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="public">
+          <mxGeometry x="24" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ingest" value="수집기 narajangteo_ingest.py&#10;공고 목록 + 첨부 다운로드 + 파싱" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_0" data-model-id="ingest" data-kind="service" data-properties="{&quot;owner&quot;:&quot;팀원1·2·3&quot;,&quot;importance&quot;:7}" data-source-properties="{&quot;owner&quot;:&quot;팀원1·2·3&quot;,&quot;importance&quot;:7}" data-source-label="수집기 narajangteo_ingest.py&#10;공고 목록 + 첨부 다운로드 + 파싱" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-owner="팀원1·2·3">
+          <mxGeometry x="224" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="raw_store" value="raw/ + parsed/&#10;SHA-256 해시 저장소&#10;4·5·6월 첨부 28.5만 개" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_0" data-model-id="raw_store" data-kind="database" data-properties="{&quot;importance&quot;:6}" data-source-properties="{&quot;importance&quot;:6}" data-source-label="raw/ + parsed/&#10;SHA-256 해시 저장소&#10;4·5·6월 첨부 28.5만 개" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="414" y="34" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lists" value="bids / manifest / chunk_ready .jsonl&#10;공고 137,745행" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_0" data-model-id="lists" data-kind="database" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="bids / manifest / chunk_ready .jsonl&#10;공고 137,745행" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="814" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="reparse" value="재파싱 도구&#10;(파서 미설치 캐시 복구)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_0" data-model-id="reparse" data-kind="service" data-properties="{&quot;importance&quot;:3}" data-source-properties="{&quot;importance&quot;:3}" data-source-label="재파싱 도구&#10;(파서 미설치 캐시 복구)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="614" y="34" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="adapter" value="adapt_g2b.py&#10;수집 출력 → 파이프라인 입력&#10;(최신 차수, 분야, 문서 종류, 사용 가능 판정)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_3" data-model-id="adapter" data-kind="service" data-properties="{&quot;owner&quot;:&quot;팀장&quot;,&quot;importance&quot;:8}" data-source-properties="{&quot;owner&quot;:&quot;팀장&quot;,&quot;importance&quot;:8}" data-source-label="adapt_g2b.py&#10;수집 출력 → 파이프라인 입력&#10;(최신 차수, 분야, 문서 종류, 사용 가능 판정)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-owner="팀장">
+          <mxGeometry x="24" y="64" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare" value="prepare.py&#10;분야별 완전 공고 집계&#10;표본 추출 · 패킷 생성" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_3" data-model-id="prepare" data-kind="service" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="prepare.py&#10;분야별 완전 공고 집계&#10;표본 추출 · 패킷 생성" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="224" y="64" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sector_report" value="3개월 통합 분야 표&#10;용역 28,852 완전 공고&#10;→ 정보시스템 구축·운영 확정" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_3" data-model-id="sector_report" data-kind="database" data-properties="{&quot;importance&quot;:6}" data-source-properties="{&quot;importance&quot;:6}" data-source-label="3개월 통합 분야 표&#10;용역 28,852 완전 공고&#10;→ 정보시스템 구축·운영 확정" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="414" y="114" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sample" value="표본 51건&#10;원본 151개 · 텍스트 430만 자" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_3" data-model-id="sample" data-kind="database" data-properties="{&quot;importance&quot;:9}" data-source-properties="{&quot;importance&quot;:9}" data-source-label="표본 51건&#10;원본 151개 · 텍스트 430만 자" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="414" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="team" value="팀원 5명&#10;요건 추출 시트 (9/13)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="group_2" data-model-id="team" data-kind="actor" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="팀원 5명&#10;요건 추출 시트 (9/13)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="24" y="114" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="req_sheet" value="요건 시트&#10;자격·실적·인력·인증·금액·일정·배점" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_2" data-model-id="req_sheet" data-kind="database" data-properties="{&quot;importance&quot;:8}" data-source-properties="{&quot;importance&quot;:8}" data-source-label="요건 시트&#10;자격·실적·인력·인증·금액·일정·배점" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="224" y="114" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="questions" value="검수 질문 300개&#10;유형 20 × 공고 × 기업&#10;(필요 등급 · 기대 결론)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_2" data-model-id="questions" data-kind="database" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="검수 질문 300개&#10;유형 20 × 공고 × 기업&#10;(필요 등급 · 기대 결론)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="414" y="114" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="labeling" value="환각 구간 라벨링&#10;5명 × 60건 + 교차 검수" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="group_2" data-model-id="labeling" data-kind="actor" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="환각 구간 라벨링&#10;5명 × 60건 + 교차 검수" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="24" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="synth" value="가상 기업 합성 (LLM + 검증 규칙)&#10;security_schema.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_1" data-model-id="synth" data-kind="service" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="가상 기업 합성 (LLM + 검증 규칙)&#10;security_schema.py" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="24" y="104" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="L1 공개 공고&#10;공고문 · 제안요청서 · 과업지시서" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_1" data-model-id="l1" data-kind="database" data-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:8}" data-source-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:8}" data-source-label="L1 공개 공고&#10;공고문 · 제안요청서 · 과업지시서" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="public">
+          <mxGeometry x="24" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="L2 기업 내부 자료&#10;실적 · 인력 · 인증 (기업 5곳)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_1" data-model-id="l2" data-kind="database" data-properties="{&quot;trust_boundary&quot;:&quot;private&quot;,&quot;importance&quot;:8}" data-source-properties="{&quot;trust_boundary&quot;:&quot;private&quot;,&quot;importance&quot;:8}" data-source-label="L2 기업 내부 자료&#10;실적 · 인력 · 인증 (기업 5곳)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="private">
+          <mxGeometry x="224" y="104" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="L3 기업 민감 자료&#10;단가 · 협력사 견적 · 투찰 전략" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_1" data-model-id="l3" data-kind="database" data-properties="{&quot;trust_boundary&quot;:&quot;data&quot;,&quot;importance&quot;:8}" data-source-properties="{&quot;trust_boundary&quot;:&quot;data&quot;,&quot;importance&quot;:8}" data-source-label="L3 기업 민감 자료&#10;단가 · 협력사 견적 · 투찰 전략" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="data">
+          <mxGeometry x="224" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value="입찰 기업 직원&#10;(회사 · 역할 로그인)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="group_4" data-model-id="user" data-kind="actor" data-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:9}" data-source-properties="{&quot;trust_boundary&quot;:&quot;public&quot;,&quot;importance&quot;:9}" data-source-label="입찰 기업 직원&#10;(회사 · 역할 로그인)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="public">
+          <mxGeometry x="24" y="74" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ui" value="ASTRA UI&#10;공고 선택 · 질문 · 근거 하이라이트 · 환각 표시" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="group_4" data-model-id="ui" data-kind="gateway" data-properties="{&quot;owner&quot;:&quot;팀원4&quot;,&quot;importance&quot;:8}" data-source-properties="{&quot;owner&quot;:&quot;팀원4&quot;,&quot;importance&quot;:8}" data-source-label="ASTRA UI&#10;공고 선택 · 질문 · 근거 하이라이트 · 환각 표시" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-owner="팀원4">
+          <mxGeometry x="244" y="74" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="authz" value="권한 필터&#10;회사(tenant) + 등급(L1/L2/L3)&#10;검색 전에 후보 문서 제한" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="group_4" data-model-id="authz" data-kind="gateway" data-properties="{&quot;trust_boundary&quot;:&quot;private&quot;,&quot;importance&quot;:9}" data-source-properties="{&quot;trust_boundary&quot;:&quot;private&quot;,&quot;importance&quot;:9}" data-source-label="권한 필터&#10;회사(tenant) + 등급(L1/L2/L3)&#10;검색 전에 후보 문서 제한" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-boundary="private">
+          <mxGeometry x="444" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rag" value="RAG 검색&#10;BGE-M3 원본 임베딩 색인" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_4" data-model-id="rag" data-kind="service" data-properties="{&quot;importance&quot;:8}" data-source-properties="{&quot;importance&quot;:8}" data-source-label="RAG 검색&#10;BGE-M3 원본 임베딩 색인" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="634" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gemma" value="답변 생성 LLM&#10;Gemma (소형 오픈 모델)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_4" data-model-id="gemma" data-kind="service" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="답변 생성 LLM&#10;Gemma (소형 오픈 모델)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="834" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="detector" value="환각 탐지 모델 (직접 학습)&#10;BGE-M3 토큰 분류 · macro F1 0.7385&#10;한국어 RAGTruth 17,537건" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_4" data-model-id="detector" data-kind="service" data-properties="{&quot;owner&quot;:&quot;팀장&quot;,&quot;importance&quot;:10}" data-source-properties="{&quot;owner&quot;:&quot;팀장&quot;,&quot;importance&quot;:10}" data-source-label="환각 탐지 모델 (직접 학습)&#10;BGE-M3 토큰 분류 · macro F1 0.7385&#10;한국어 RAGTruth 17,537건" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}" data-owner="팀장">
+          <mxGeometry x="1024" y="114" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rules" value="규칙 검증&#10;숫자·기간·금액 직접 대조&#10;(모델 약점 보완)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="group_4" data-model-id="rules" data-kind="service" data-properties="{&quot;importance&quot;:7}" data-source-properties="{&quot;importance&quot;:7}" data-source-label="규칙 검증&#10;숫자·기간·금액 직접 대조&#10;(모델 약점 보완)" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="1024" y="24" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eval" value="평가&#10;유형별 탐지율 · 권한 차단 20케이스" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="group_4" data-model-id="eval" data-kind="database" data-properties="{&quot;importance&quot;:6}" data-source-properties="{&quot;importance&quot;:6}" data-source-label="평가&#10;유형별 탐지율 · 권한 차단 20케이스" data-provenance="{&quot;path&quot;:&quot;C:\\Users\\aidan\\Desktop\\AI프로젝트\\ko-lettucedetect\\project-docs\\도면\\프로젝트_구조.ir.json&quot;}">
+          <mxGeometry x="1224" y="64" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" value="API · 첨부 다운로드" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="g2b_api" target="ingest" data-model-id="e1" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="API · 첨부 다운로드">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="280" />
+              <mxPoint x="220" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" value="저장" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ingest" target="raw_store" data-model-id="e2" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="저장">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="280" />
+              <mxPoint x="410" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="목록 기록" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ingest" target="lists" data-model-id="e3" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="목록 기록">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="250" />
+              <mxPoint x="810" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="실패 문서 재파싱" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="raw_store" target="reparse" data-model-id="e4" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="실패 문서 재파싱">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="290" />
+              <mxPoint x="610" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="chunk_ready 갱신" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="reparse" target="lists" data-model-id="e5" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="chunk_ready 갱신">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="280" />
+              <mxPoint x="810" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="jsonl 3종 + parsed/" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="lists" target="adapter" data-model-id="e6" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="jsonl 3종 + parsed/">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="280" />
+              <mxPoint x="1020" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="manifest + 구간 텍스트" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="adapter" target="prepare" data-model-id="e7" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="manifest + 구간 텍스트">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="280" />
+              <mxPoint x="1220" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="집계" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="prepare" target="sector_report" data-model-id="e8" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="집계">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="300" />
+              <mxPoint x="1410" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="--ids 51건 추출" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="prepare" target="sample" data-model-id="e9" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="--ids 51건 추출">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="250" />
+              <mxPoint x="1410" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="공고문 + 제안요청서 읽기" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="sample" target="team" data-model-id="e10" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="공고문 + 제안요청서 읽기">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="180" />
+              <mxPoint x="1500" y="150" />
+              <mxPoint x="1500" y="150" />
+              <mxPoint x="1500" y="150" />
+              <mxPoint x="1630" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="작성" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="team" target="req_sheet" data-model-id="e11" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="작성">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="140" />
+              <mxPoint x="1830" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="조건 반영 (충족/미충족/자료부족 설계)" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="req_sheet" target="synth" data-model-id="e12" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="조건 반영 (충족/미충족/자료부족 설계)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1820" y="170" />
+              <mxPoint x="1810" y="170" />
+              <mxPoint x="1810" y="170" />
+              <mxPoint x="1810" y="170" />
+              <mxPoint x="1810" y="400" />
+              <mxPoint x="1810" y="400" />
+              <mxPoint x="1810" y="400" />
+              <mxPoint x="1810" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="정답 근거" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="req_sheet" target="questions" data-model-id="e13" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="정답 근거">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2000" y="150" />
+              <mxPoint x="2020" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="그대로" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="sample" target="l1" data-model-id="e14" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="그대로">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="280" />
+              <mxPoint x="1500" y="280" />
+              <mxPoint x="1500" y="280" />
+              <mxPoint x="1500" y="280" />
+              <mxPoint x="1630" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="생성 + 사람 검수" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="synth" target="l2" data-model-id="e15" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="생성 + 사람 검수">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="420" />
+              <mxPoint x="1830" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="생성 + 사람 검수" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="synth" target="l3" data-model-id="e16" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="생성 + 사람 검수">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1810" y="380" />
+              <mxPoint x="1820" y="380" />
+              <mxPoint x="1820" y="380" />
+              <mxPoint x="1820" y="380" />
+              <mxPoint x="1820" y="310" />
+              <mxPoint x="1820" y="310" />
+              <mxPoint x="1820" y="310" />
+              <mxPoint x="1830" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="질문" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="user" target="ui" data-model-id="e17" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="질문">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="580" />
+              <mxPoint x="1630" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="회사·등급" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ui" target="authz" data-model-id="e18" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="회사·등급">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="550" />
+              <mxPoint x="1830" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="허용 문서만" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="authz" target="rag" data-model-id="e19" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="허용 문서만">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2000" y="520" />
+              <mxPoint x="2020" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="색인" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="l1" target="rag" data-model-id="e20" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="색인">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1720" y="350" />
+              <mxPoint x="1720" y="350" />
+              <mxPoint x="1720" y="350" />
+              <mxPoint x="1720" y="350" />
+              <mxPoint x="2110" y="350" />
+              <mxPoint x="2110" y="350" />
+              <mxPoint x="2110" y="350" />
+              <mxPoint x="2110" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" value="색인 (자기 회사만)" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="l2" target="rag" data-model-id="e21" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="색인 (자기 회사만)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2030" y="400" />
+              <mxPoint x="2070" y="400" />
+              <mxPoint x="2070" y="400" />
+              <mxPoint x="2070" y="400" />
+              <mxPoint x="2070" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" value="색인 (권한자만)" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="l3" target="rag" data-model-id="e22" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="색인 (권한자만)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2060" y="310" />
+              <mxPoint x="2150" y="310" />
+              <mxPoint x="2150" y="310" />
+              <mxPoint x="2150" y="310" />
+              <mxPoint x="2150" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" value="근거 구간" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rag" target="gemma" data-model-id="e23" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="근거 구간">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2190" y="520" />
+              <mxPoint x="2220" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" value="답변 토큰" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="gemma" target="detector" data-model-id="e24" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="답변 토큰">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2310" y="570" />
+              <mxPoint x="2310" y="590" />
+              <mxPoint x="2310" y="590" />
+              <mxPoint x="2310" y="590" />
+              <mxPoint x="2410" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e24" value="문맥" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rag" target="detector" data-model-id="e25" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="문맥">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2110" y="580" />
+              <mxPoint x="2110" y="600" />
+              <mxPoint x="2110" y="600" />
+              <mxPoint x="2110" y="600" />
+              <mxPoint x="2410" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e25" value="숫자 추출" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="gemma" target="rules" data-model-id="e26" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="숫자 추출">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2390" y="520" />
+              <mxPoint x="2410" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e26" value="환각 의심 구간" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="detector" target="ui" data-model-id="e27" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="환각 의심 구간">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2420" y="600" />
+              <mxPoint x="1810" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e27" value="숫자 불일치" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="rules" target="ui" data-model-id="e28" data-kind="sync" data-properties="{}" data-source-properties="{}" data-source-label="숫자 불일치">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2500" y="570" />
+              <mxPoint x="2500" y="570" />
+              <mxPoint x="2500" y="570" />
+              <mxPoint x="2500" y="570" />
+              <mxPoint x="1810" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e28" value="300개 질문 배치 실행" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="questions" target="gemma" data-model-id="e29" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="300개 질문 배치 실행">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2240" y="150" />
+              <mxPoint x="2280" y="150" />
+              <mxPoint x="2280" y="150" />
+              <mxPoint x="2280" y="150" />
+              <mxPoint x="2280" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e29" value="답변 300개" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="gemma" target="labeling" data-model-id="e30" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="답변 300개">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2340" y="380" />
+              <mxPoint x="2340" y="80" />
+              <mxPoint x="2340" y="80" />
+              <mxPoint x="2340" y="80" />
+              <mxPoint x="1810" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e30" value="정답 라벨" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="labeling" target="eval" data-model-id="e31" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="정답 라벨">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2030" y="60" />
+              <mxPoint x="2700" y="60" />
+              <mxPoint x="2700" y="60" />
+              <mxPoint x="2700" y="60" />
+              <mxPoint x="2700" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e31" value="예측" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="detector" target="eval" data-model-id="e32" data-kind="async" data-properties="{}" data-source-properties="{}" data-source-label="예측">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2580" y="590" />
+              <mxPoint x="2610" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
