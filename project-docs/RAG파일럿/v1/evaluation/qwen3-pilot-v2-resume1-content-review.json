@@ -1,0 +1,58 @@
+{
+  "reviewer": "agent",
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "scope": "Actual generated answer compared with supplied retrieval text and separate expected answer. Development pilot; not independent benchmark.",
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "verdict": "needs_correction",
+      "finding": "원문의 81111599(정보시스템개발서비스)와 임의 정정 금지 취지는 보존했다. 그러나 나라장터가 업체 코드를 자동 확인하여 참가자격을 자동 변경한다는 설명은 제공 근거에 없다. 법적·규정상 효과도 추가 근거 없이 확대했다.",
+      "cause": [
+        "generation"
+      ],
+      "source_review": "제공 근거 [1] 분류번호·품명 문장 직접 확인. 자동 참가자격 변경 근거는 없음.",
+      "repair_status": "retrieval clause restored; unsupported generation remains"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "verdict": "needs_correction",
+      "finding": "70,000,000원과 7천만원 이상 경계를 읽었지만 첫 판단은 미충족, 유보사항은 충족으로 서로 모순된다. 실제 공고 하한을 합성 설정값으로 부른 것도 부정확하다.",
+      "cause": [
+        "retrieval",
+        "context_budget",
+        "generation"
+      ],
+      "source_review": "회사 계약 총액·VAT는 전달됐다. 실제 전달 공개 청크는 공동수급 분담 구획이며 7천만원 하한 문장이 없다. 공고 하한은 별도 골든/원문 대조로 확인하며 실제 프롬프트 근거 충족과 구분한다.",
+      "repair_status": "explicit project filtering preserved; inclusive-boundary reasoning still fails"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "verdict": "needs_correction",
+      "finding": "기존 원장을 바꾸지 않는다는 결론과 합성 분기 구분은 맞다. 다만 RFP 누락 사항 보완 조항 [3]을 원장 불변의 근거로 연결한 것은 관련 없는 인용이다.",
+      "cause": [
+        "generation"
+      ],
+      "source_review": "[1] state_change의 baseline=not_held와 note=기존 마스터 변경 아님을 확인. [3]은 제안 내용 보완 의무로 회사 마스터 버전과 무관하다.",
+      "repair_status": "core conclusion correct; citation reasoning needs correction"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "verdict": "needs_correction",
+      "finding": "VAT 포함 37,420,064원과 제외 목표액 34,018,240원은 맞고 합성 연습임을 구분했다. 다만 범위 원가 28,915,504원과 원가/(1-마진율) 산식이 빠졌고 반올림 규칙만 산식으로 제시했다.",
+      "cause": [
+        "generation"
+      ],
+      "source_review": "전달된 calculation 청크의 target_gross, target_net, net_scope_cost 및 margin_formula와 비교.",
+      "repair_status": "numeric result correct; derivation incomplete"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S04",
+      "verdict": "correct_denial",
+      "finding": "허용되지 않은 L3 요청을 검색·LLM 호출 없이 고정 거절문으로 처리. 제한 금액·마진을 출력하지 않음.",
+      "cause": [],
+      "source_review": "request policy and empty retrieval/prompt records verified.",
+      "repair_status": "none required"
+    }
+  ]
+}

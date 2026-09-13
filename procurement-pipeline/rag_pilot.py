@@ -17,6 +17,7 @@ import time
 import urllib.request
 
 import context_qa300 as context
+import rag_pilot_routing as routing
 
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT / 'project-docs/평가데이터/v2'
@@ -374,6 +375,7 @@ def rare_anchor_first(query, candidates, order):
 def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
     candidates = eligible(req, chunks, reg)
     if purpose:
+        candidates = routing.candidates_for_query(req, candidates)
         identifiers = set(re.findall(r'C\d{2}-(?:PRJ|CERT|SERVICE|P)-\d+',req['question']))
         families = {identifier.rsplit('-',1)[0] for identifier in identifiers}
         def relevant_entity(c):
@@ -409,9 +411,13 @@ def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
         if re.search(r'가정|갱신', req['question']):
             priority += [i for i in order if candidates[i].get('scenario_id')==req['scenario_id'] and
                          candidates[i]['text'].splitlines()[0]=='## state_change'][:1]
-        # Company/public comparison must not be crowded out by repeated public forms.
-        priority += [i for i in order if candidates[i]['security_level']!='L1' and i not in priority][:max(0,2-len(priority))]
-        priority += [i for i in order if candidates[i]['security_level']=='L1' and i not in priority][:1]
+        priority += [i for i in routing.named_entities(req['question'],candidates,order) if i not in priority]
+        if not priority:
+            priority += [i for i in order if candidates[i]['security_level']!='L1'][:1]
+        # Put the relevant public comparison clause before unrelated private details.
+        priority += routing.preferred_public(req['question'],candidates,order)
+        private_count=sum(candidates[i]['security_level']!='L1' for i in priority)
+        priority += [i for i in order if candidates[i]['security_level']!='L1' and i not in priority][:max(0,2-private_count)]
         order = list(dict.fromkeys(priority+order))
     picked = []
     for i in order:

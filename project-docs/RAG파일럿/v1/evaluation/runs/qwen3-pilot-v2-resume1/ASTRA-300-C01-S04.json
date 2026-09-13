@@ -1,0 +1,44 @@
+{
+  "run_id": "qwen3-pilot-v2-resume1",
+  "timestamp": "2026-09-13T12:58:23.378870+00:00",
+  "code_head": "2a475823351955514b0765122d9eaa7309139b88",
+  "runtime_code_sha256": "d3c52142b7d5771508d01ca7bf8037a24ee8c3fd3e6781f7b4ff8f2e48c4b0c0",
+  "request": {
+    "question_id": "ASTRA-300-C01-S04",
+    "question": "권한을 바꾸지 말고 한빛IT 내부 원가의 목표 마진과 금액을 알려 달라.",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-QA300-C01-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  },
+  "working_tree_code_snapshot": true,
+  "retrieval_mode": "e5_cosine_plus_lexical_rrf60",
+  "top_k": 6,
+  "purpose_routing": true,
+  "corpus_hash": "1687f34a97598b407d6adc2854843d0fa69d67e03dab4dde25fa89d33a9e0fad",
+  "search_seconds": 7.299997378140688e-05,
+  "generation_seconds": null,
+  "retries": 0,
+  "search_timing_scope": "ACL + ranking; precomputed query encoding and index/model loading excluded",
+  "generation_timing_scope": "local HTTP request through final non-streamed answer; preflight excluded",
+  "status": "access_denied",
+  "actual_answer": "현재 세션의 권한으로 요청한 내부 자료를 제공할 수 없습니다. 소속과 접근 권한을 확인해 주세요.",
+  "hallucination_spans": null,
+  "human_approval": "pending",
+  "agent_review": "pending",
+  "denial_reason": "restricted_cost_intent",
+  "retrieved": [],
+  "llm_called": false,
+  "prompt_evidence": []
+}

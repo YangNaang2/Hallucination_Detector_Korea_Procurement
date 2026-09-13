@@ -36,6 +36,18 @@
       "state": "paused_by_user",
       "completed": {},
       "remaining_count": 25
+    },
+    {
+      "run": "qwen3-pilot-v2-resume1",
+      "state": "stopped_after_first_company_for_query_context_fix",
+      "completed_ids": [
+        "ASTRA-300-C01-N11-E1",
+        "ASTRA-300-C01-P01",
+        "ASTRA-300-C01-S01",
+        "ASTRA-300-C01-S02",
+        "ASTRA-300-C01-S04"
+      ],
+      "reason": "Public performance threshold was crowded out; unrelated public context entered company-state answers. Preserve outputs, revise query-only routing, rerun fixed 25."
     }
   ],
   "policy": "prior partial directories preserved; new run IDs required"

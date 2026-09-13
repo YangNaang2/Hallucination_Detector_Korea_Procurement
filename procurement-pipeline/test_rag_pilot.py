@@ -193,5 +193,19 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(ranked[0],17)
         self.assertEqual(sorted(ranked),list(range(20)))
 
+    def test_performance_boundary_prefers_condition_over_project_budget(self):
+        r=self.req('C01','P01')
+        cs=[{'security_level':'L1','text':'사업 예정금액 107,240,000원'},
+            {'security_level':'L1','text':'최근 실적: 단일건 계약금액 7천만원 이상'},
+            {'security_level':'L1','text':'공동수급 계약금액 기재란'}]
+        self.assertEqual(p.routing.preferred_public(r['question'],cs,[0,2,1]),[1])
+
+    def test_company_state_question_does_not_add_unrelated_public_clause(self):
+        r=self.req('C01','S01')
+        cs=p.retrieve(r,self.chunks,self.reg,purpose=True)
+        self.assertTrue(cs)
+        self.assertTrue(all(c['security_level']!='L1' for c in cs))
+        self.assertFalse(any(c['text'].startswith('## scenario_id\n') for c in cs))
+
 
 if __name__=='__main__':unittest.main()
