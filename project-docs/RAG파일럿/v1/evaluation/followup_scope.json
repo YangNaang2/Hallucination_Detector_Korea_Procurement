@@ -1,0 +1,9 @@
+{
+  "baseline_run": "qwen3-pilot-v3",
+  "new_retrieval_run": "hybrid-routing-v5",
+  "changed_retrieval_questions": [
+    "ASTRA-300-C03-N11-E3",
+    "ASTRA-300-C04-P01"
+  ],
+  "policy": "rerun all changed selected requests, not only previously failing ones"
+}

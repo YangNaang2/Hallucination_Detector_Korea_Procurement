@@ -207,5 +207,14 @@ class PilotTests(unittest.TestCase):
         self.assertTrue(all(c['security_level']!='L1' for c in cs))
         self.assertFalse(any(c['text'].startswith('## scenario_id\n') for c in cs))
 
+    def test_company_name_display_alias_finds_submission_rule(self):
+        cs=[{'text':'일반 작성 안내'} for _ in range(20)]
+        cs[19]={'text':'업체명 표기 1부, 미표기 6부'}
+        self.assertEqual(p.rare_anchor_first('사본에도 회사명을 모두 표시해야 하는가?',cs,list(range(20)))[0],19)
+
+    def test_iso_csap_comparison_keeps_both_certification_records(self):
+        cs=p.retrieve(self.req('C04','P01'),self.chunks,self.reg,purpose=True)
+        self.assertEqual({c['text'].splitlines()[0] for c in cs[:2]}, {'## C04-CERT-03','## C04-CERT-04'})
+
 
 if __name__=='__main__':unittest.main()

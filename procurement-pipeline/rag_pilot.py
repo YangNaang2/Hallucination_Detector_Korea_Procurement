@@ -359,6 +359,8 @@ def rare_anchor_first(query, candidates, order):
     Approximate Korean particle stripping, not a morphological analyzer. No gold used.
     """
     stop={'임의','다른','공고','자료','회사','가상','기존','이번','해도','정정','확인','모두','같은','대한','어떤','어떻게','되는가','있는가'}
+    # Retrieval aliases only: neither alters the original question nor supplies an answer.
+    query += ' ' + ' '.join(v for k,v in {'회사명':'업체명','표시':'표기'}.items() if k in query)
     anchors=set()
     for word in re.findall(r'[가-힣]+|[A-Za-z0-9]{3,}',query):
         stem=re.sub(r'(으로|에서|에게|까지|보다|처럼|의|을|를|은|는|이|가|와|과|도|에|로)$','',word)

@@ -1,0 +1,35 @@
+{
+  "run_id": "qwen3-pilot-v3",
+  "counts": {
+    "generated": 20,
+    "access_denied": 5
+  },
+  "company_counts": {
+    "C01": 5,
+    "C02": 5,
+    "C03": 5,
+    "C04": 5,
+    "C05": 5
+  },
+  "selected_25_complete": true,
+  "inspected_retrieved_chunks": 120,
+  "integrity_failures": [],
+  "generation_seconds": {
+    "total": 2739.630031100125,
+    "median": 134.06614914999227,
+    "minimum": 90.77953170001274,
+    "maximum": 165.3106319999788
+  },
+  "timing_scope": "Successful local HTTP generation only; model/index/query encoding/preflight/retries excluded. Wall-clock may include host scheduling or suspension.",
+  "agent_review_counts": {
+    "needs_correction": 8,
+    "needs_citation_fix": 4,
+    "acceptable": 3,
+    "correct_denial": 5,
+    "incomplete_answer": 5
+  },
+  "agent_review_complete": true,
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed",
+  "limitation": "Finite offline fixture audit. Not a production authentication or universal non-leakage guarantee."
+}

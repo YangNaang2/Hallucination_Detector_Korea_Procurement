@@ -1,0 +1,18 @@
+{
+  "status": "pending_after_fixed_cohort",
+  "baseline_run": "qwen3-pilot-v3",
+  "policy": "Always preserve prior answers; rerun every affected selected request, regardless of earlier verdict. No new gold injected.",
+  "changes": [
+    {
+      "problem": "company-name/display terminology mismatch",
+      "implementation": "query-only 회사명/업체명 and 표시/표기 aliases for literal anchoring",
+      "known_affected_question": "ASTRA-300-C03-N11-E3"
+    },
+    {
+      "problem": "one side of certification comparison crowded out",
+      "implementation": "preserve authorized certification entities for both explicitly named business codes",
+      "known_affected_question": "ASTRA-300-C04-P01"
+    }
+  ],
+  "no_index_or_original_dataset_change": true
+}

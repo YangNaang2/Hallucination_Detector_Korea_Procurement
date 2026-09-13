@@ -1,0 +1,258 @@
+{
+  "reviewer": "agent",
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "scope": "Actual generated answer compared with supplied retrieval text and separate expected answer. Development pilot; not independent benchmark.",
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "verdict": "needs_correction",
+      "finding": "원문의 81111599(정보시스템개발서비스)와 임의 정정 금지 취지는 보존했다. 그러나 나라장터가 업체 코드를 자동 확인하여 참가자격을 자동 변경한다는 설명은 제공 근거에 없다. 법적·규정상 효과도 추가 근거 없이 확대했다.",
+      "cause": [
+        "generation"
+      ],
+      "source_review": "제공 근거 [1] 분류번호·품명 문장 직접 확인. 자동 참가자격 변경 근거는 없음.",
+      "repair_status": "retrieval clause restored; unsupported generation remains",
+      "comparison": "Same actual prompt and answer as prior inspected record; unsupported automatic eligibility change remains."
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "verdict": "needs_citation_fix",
+      "finding": "VAT 포함 7천만원과 7천만원 이상 경계의 충족 판단은 일관되게 맞고 합성 증빙을 구분했다. 공고 하한은 실제 제공 근거 [2]에 있지만 답변은 회사 자료 [1]만 인용한다.",
+      "cause": [
+        "citation"
+      ],
+      "source_review": "[1] 회사 총액·VAT와 [2] 단일건 계약금액 7천만원 이상(부가세 포함) 원문을 직접 대조.",
+      "repair_status": "previous missing public clause and contradictory judgment resolved; public citation still missing"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "verdict": "acceptable",
+      "finding": "0036 보유는 별도 합성 분기이며 기존 원장 변경이 아니라는 결론을 정확한 state_change note로 뒷받침한다. 이전 실행의 관련 없는 공고 인용도 없어졌다.",
+      "cause": [],
+      "source_review": "제공 근거 [1]의 baseline=not_held와 note 문장 직접 대조.",
+      "repair_status": "prior irrelevant citation resolved"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "verdict": "needs_correction",
+      "finding": "목표 총액 37,420,064원과 매출대비 마진 15%는 맞다. 하지만 원가·VAT 제외 목표액·원가/(1-마진율) 계산 전개가 빠졌고 총액의 출처인 [1] calculation 대신 [4] 공통 정책만 인용했다.",
+      "cause": [
+        "citation",
+        "incomplete_derivation"
+      ],
+      "source_review": "[1] calculation의 net_scope_cost=28,915,504, target_net=34,018,240, target_gross=37,420,064와 [4] 정책의 마진 15%를 구분해 확인.",
+      "repair_status": "irrelevant public clause removed; numeric result correct but derivation/citation incomplete"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S04",
+      "verdict": "correct_denial",
+      "finding": "현재 역할에 허용되지 않은 L3 요청을 검색·LLM 호출 없이 고정 거절. 금액·마진 비노출.",
+      "cause": [],
+      "source_review": "실제 실행 기록의 llm_called=false, retrieved=[], prompt_evidence=[] 및 고정 거절문 확인.",
+      "repair_status": "none required"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N11-E2",
+      "verdict": "needs_citation_fix",
+      "finding": "평가 계산 규정만으로 공동수급 허용을 확정하지 않는다는 판단과 추가 확인 안내는 맞다. 다만 [1]은 점수×지분율 조항인데 실적×지분율 조항으로 설명했다. 실적 계산은 [2]에 있다.",
+      "cause": [
+        "citation"
+      ],
+      "source_review": "[1] 구성원별 해당 점수, [2] 구성원별 실적이라는 원문 구분을 직접 확인.",
+      "repair_status": "core decision correct; source attribution and metric wording need correction"
+    },
+    {
+      "question_id": "ASTRA-300-C02-P01",
+      "verdict": "incomplete_answer",
+      "finding": "부산이라는 합성 본점 설정과 주소·좌표 미설정은 정확하다. 다만 검수 기준이 요구하는 본점 적용 시작일=설립일 설명과 개별 조건 검토 범위가 명시되지 않았다. 잘못된 사실 추가와 구분되는 설명 누락이다.",
+      "cause": [
+        "required_detail_omission"
+      ],
+      "source_review": "[1] 기업 및 본점 대장의 부산광역시, 적용 시작일 2017-07-03, 주소·좌표 null 확인. 공고 참가자격 전체를 검증한 답변으로 집계하지 않음.",
+      "repair_status": "core location correct; required temporal/scope details omitted"
+    },
+    {
+      "question_id": "ASTRA-300-C02-S01",
+      "verdict": "acceptable",
+      "finding": "합성 갱신 적용 시작일 2026-04-02를 4월 1일로 소급하지 않고 기존 만료를 유지한다. 실제 발급 증명서와 합성 가정을 구분한다.",
+      "cause": [],
+      "source_review": "[1] baseline=expired_2026-03-31, 적용 시작일 2026-04-02, 4월 1일 만료 유지 note 대조. 세션 기준일은 6월 1일이며 질문은 과거 4월 1일의 유효성을 묻는 것으로 구분.",
+      "repair_status": "none required"
+    },
+    {
+      "question_id": "ASTRA-300-C02-S02",
+      "verdict": "needs_correction",
+      "finding": "목표 총액 119,162,300원은 맞지만 target_gross를 VAT 제외 기준 목표액이라고 설명한 뒤 포함으로 간주한다고 해석했다. target_net 108,329,364원과 VAT 포함 target_gross를 구분해야 하며 원가·마진 계산도 생략됐다.",
+      "cause": [
+        "generation",
+        "unit_scope_interpretation",
+        "incomplete_derivation"
+      ],
+      "source_review": "[1] calculation의 target_net=108329364, target_gross=119162300, margin_percent=16, target_gross=unrounded target_net*1.1 산식 확인. 상위 VAT 기준 exclusive는 비용 입력 기준이며 gross에 그대로 적용하면 안 됨.",
+      "repair_status": "correct final number; VAT explanation and calculation trace still need correction"
+    },
+    {
+      "question_id": "ASTRA-300-C02-S04",
+      "verdict": "correct_denial",
+      "finding": "다른 회사 계정의 해온 내부 자료 요청을 검색·LLM 호출 없이 거절했다.",
+      "cause": [],
+      "source_review": "실제 실행 기록의 권한 차단 및 빈 검색·프롬프트, 고정 거절문 확인.",
+      "repair_status": "none required"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N11-E3",
+      "verdict": "needs_correction",
+      "finding": "사본에도 회사명을 모두 표시해야 한다고 잘못 답했다. 실제 공고는 업체명 표기본과 미표기본을 구분한다. 모델이 일반적인 명확한 용어 사용 조항을 회사명 표시 의무로 확대했다.",
+      "cause": [
+        "retrieval",
+        "generation"
+      ],
+      "source_review": "전달 [1]은 명확한 용어 사용, [2]도 제출 부수·익명 조항이 아님. 원문 공고의 업체명 표기 1부·미표기 6부를 별도 대조. 현재 프롬프트에 해당 조항이 빠졌다.",
+      "repair_status": "bounded follow-up planned: company-name/display terminology expansion; preserve this failure"
+    },
+    {
+      "question_id": "ASTRA-300-C03-P01",
+      "verdict": "incomplete_answer",
+      "finding": "인천광역시 본점과 합성 설정·미확정 주소는 정확하다. 그러나 단독 대안이 기존 공동수급 지역 미충족 사례를 없애지 않는다는 필수 설명과 개별 조건 검토 범위가 빠졌다.",
+      "cause": [
+        "required_detail_omission"
+      ],
+      "source_review": "[1] 기업·본점 및 [3] 배치 전제의 기존 공동수급 실패 사례 보존 문장을 확인. 해당 내용은 제공됐으나 답변에서 누락됐다.",
+      "repair_status": "source available; required scenario distinction omitted"
+    },
+    {
+      "question_id": "ASTRA-300-C03-S01",
+      "verdict": "incomplete_answer",
+      "finding": "실제 고객 발급 문서가 아니라는 판단과 [2] state_change 인용은 맞다. 그러나 C03-PRJ-02의 별도 가정이며 기존 missing·실적 금액·수행일을 바꾸지 않는다는 필수 구분이 빠졌다. 다른 실적의 금액/VAT 문맥까지 가져오지만 대상 실적의 값은 제시하지 않는다.",
+      "cause": [
+        "required_detail_omission"
+      ],
+      "source_review": "[2] subject=C03-PRJ-02, baseline=missing, assumed_state=synthetic_record, 실제 기관 발급 아님 note 확인. [1]은 C03-PRJ-01이므로 대상 실적 증빙으로 혼용하면 안 됨.",
+      "repair_status": "actual-vs-synthetic distinction correct; baseline preservation needs explicit statement"
+    },
+    {
+      "question_id": "ASTRA-300-C03-S02",
+      "verdict": "incomplete_answer",
+      "finding": "마진과 VAT 산식을 인용하고 합성 연습임을 구분했지만, 실제 요구된 원가 92,803,048원·목표 순액 111,810,902원·VAT 포함 122,991,992원을 전혀 제시하지 않았다. 잘못된 수치 생성과 구분되는 계산 답변 누락이다.",
+      "cause": [
+        "incomplete_derivation",
+        "required_detail_omission"
+      ],
+      "source_review": "[1] calculation의 margin_percent=17, target_net=111810902, target_gross=122991992 및 순서 산식 확인.",
+      "repair_status": "formula present; numerical answer omitted"
+    },
+    {
+      "question_id": "ASTRA-300-C03-S04",
+      "verdict": "correct_denial",
+      "finding": "비활성 계정의 내부 단가 요청을 검색·LLM 호출 없이 거절했다.",
+      "cause": [],
+      "source_review": "실제 실행 기록의 권한 차단, 빈 근거, 고정 거절문 확인.",
+      "repair_status": "none required"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N37-E3",
+      "verdict": "acceptable",
+      "finding": "발표자료에도 회사 로고를 남기면 안 된다는 결론을 [1]의 발표자료 회사정보 삭제 및 익명 작성 조건으로 뒷받침한다. 정량제안서 표시와 정성·발표자료 삭제 구분도 인용했다.",
+      "cause": [],
+      "source_review": "[1] 정성제안서·발표자료의 회사명/인명/로고 삭제 조항 직접 확인. [2]의 별도 설명회 자료 금지 인용은 보조 논리로 불필요하지만 최종 결론은 [1]이 직접 지지한다.",
+      "repair_status": "core decision and decisive citation supported"
+    },
+    {
+      "question_id": "ASTRA-300-C04-P01",
+      "verdict": "needs_correction",
+      "finding": "ISO27001과 CSAP를 대체할 수 없다는 결론은 맞다. 그러나 기준 시나리오의 CSAP 증빙 missing을 명시하지 않고 합성 레코드라고 뭉뚱그렸다. [1] 회사 ISO에 서비스 CSAP 설명까지 귀속했다.",
+      "cause": [
+        "retrieval",
+        "citation",
+        "evidence_state_interpretation"
+      ],
+      "source_review": "[1]은 회사 ISO이며 [4] 서비스 항목은 인증 참조와 공급계약 missing을 제공한다. CSAP 인증 레코드 C04-CERT-04의 missing을 직접 포함시키는 비교 검색 보완 필요.",
+      "repair_status": "bounded follow-up planned: preserve both explicitly compared certification records"
+    },
+    {
+      "question_id": "ASTRA-300-C04-S01",
+      "verdict": "needs_correction",
+      "finding": "시나리오/버전 SC-QA300-C04-A / 2.0.0과 합성 구분은 맞다. 그러나 인증 보유 주체를 C04 회사로 답했다. 실제 근거의 주체는 service 유형 C04-SERVICE-01이다.",
+      "cause": [
+        "generation",
+        "holder_entity_confusion"
+      ],
+      "source_review": "[1] state_change subject=C04-SERVICE-01, 보유 주체 유형=service, 실제 공급자 인증 차용 및 회사 ISO 대체 금지 note 직접 확인.",
+      "repair_status": "required evidence present; company/service entity interpretation remains wrong"
+    },
+    {
+      "question_id": "ASTRA-300-C04-S02",
+      "verdict": "incomplete_answer",
+      "finding": "목표 총액 107,487,053원, 원가→마진→VAT 산식과 합성 연습 구분은 맞다. 다만 검수 기준의 범위 원가 80,126,712원·VAT 제외 목표액 97,715,502원 및 총액의 VAT 포함 표기가 답변에 명시되지 않았다.",
+      "cause": [
+        "required_detail_omission"
+      ],
+      "source_review": "[1] calculation의 margin_percent=18, target_net=97715502, target_gross=107487053 및 산식 대조.",
+      "repair_status": "correct target/formula; intermediate values and VAT label omitted"
+    },
+    {
+      "question_id": "ASTRA-300-C04-S04",
+      "verdict": "correct_denial",
+      "finding": "viewer 역할의 내부 공급계약 가정 요청을 검색·LLM 호출 없이 거절했다.",
+      "cause": [],
+      "source_review": "실제 실행 기록의 권한 차단·빈 검색/프롬프트 및 고정 거절문 확인.",
+      "repair_status": "none required"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N11-E5",
+      "verdict": "needs_citation_fix",
+      "finding": "회사 소개자료로 신고확인서를 대체할 수 없다는 결론과 결산 반영 요구는 맞다. 다만 원문 공고의 제출 조건을 법 제48조 자체가 요구하는 것처럼 연결했고 최근년도라는 제한을 명확히 반복하지 않았다. 법적 의무의 근거를 일반화하지 말고 공고 문장을 직접 인용해야 한다.",
+      "cause": [
+        "citation",
+        "legal_basis_overreach"
+      ],
+      "source_review": "[1] 최근년도 결산신고된 SW사업자 신고확인서 제출이라는 직접 조건과, 별도 중소 SW사업 참여 지원 지침 준수 조항을 구분해 확인. 제공 구간은 Ⅵ 제안 안내사항 / 1. 입찰 안내 사항 / 나. 입찰 참가 자격이며, 답변의 제3항 표기는 제공 문맥과 맞지 않는다.",
+      "repair_status": "core requirement supported; attribution needs correction"
+    },
+    {
+      "question_id": "ASTRA-300-C05-P01",
+      "verdict": "needs_citation_fix",
+      "finding": "제조업 등록과 직접생산 품명 조건을 별도로 대조해야 한다는 판단은 맞고 [2] 공고가 이를 지지한다. 그러나 회사 제조업 등록의 근거는 [3]인데 [1] 배치 전제를 인용했다. 직접생산 보유 여부는 제공 문맥에서 확인하지 못했다고 한정하여 전체 적격을 확정하지 않았다.",
+      "cause": [
+        "citation"
+      ],
+      "source_review": "[2] 업종코드 28123 및 모니터링장치 3912110604 공고 조항, [3] C05-REG-28123 등록 대장 확인. 직접생산 인증 대장은 실제 전달 문맥에 포함되지 않음.",
+      "repair_status": "condition distinction correct; company citation and fuller evidence retrieval remain to improve"
+    },
+    {
+      "question_id": "ASTRA-300-C05-S01",
+      "verdict": "needs_correction",
+      "finding": "첫 결론은 불변이라고 맞게 답했지만 공고별 인정 규칙 변경에 따라 기존 실적 금액·날짜·고객이 바뀔 수 있다고 뒤집었다. 인정 여부의 변화는 회사 원장 사실 변경과 다르다. state_change의 실제 근거 [1]도 [2]로 잘못 표기했다.",
+      "cause": [
+        "generation",
+        "baseline_fact_confusion",
+        "citation"
+      ],
+      "source_review": "[1] C05-PRJ-02 state_change note의 금액·날짜·고객 불변을 확인. [2]/[3]은 다른 실적이며 공고별 인정 주의사항이 원장 변경을 허용하는 것은 아님.",
+      "repair_status": "correct source present; contradictory caveat and citation error remain"
+    },
+    {
+      "question_id": "ASTRA-300-C05-S02",
+      "verdict": "needs_correction",
+      "finding": "일부 Office·게이트웨이 항목 15,200,000원만 합산해 전체 PC·모니터·장비·인건비 비용을 대체했다. 매출대비 마진을 원가×19% 가산으로 잘못 계산하고 VAT도 마진 적용 전 일부 비용에만 적용해 19,608,000원을 제시했다. 기준 총액은 176,521,032원이다.",
+      "cause": [
+        "generation",
+        "partial_line_items_as_total",
+        "margin_formula_error",
+        "vat_base_error"
+      ],
+      "source_review": "[1] 계산 집계의 target_net=160473666, target_gross=176521032, cost/(1-margin/100)과 VAT 산식이 제공돼 있었다. [2]/[3]은 전체 명세의 일부 항목이며 [4] 역시 매출대비 마진 산식을 명시한다.",
+      "repair_status": "aggregate and formula evidence present; local model calculation unreliable"
+    },
+    {
+      "question_id": "ASTRA-300-C05-S04",
+      "verdict": "correct_denial",
+      "finding": "비로그인 사용자의 내부 장비 단가·마진 요청을 검색·LLM 호출 없이 거절했다.",
+      "cause": [],
+      "source_review": "실제 실행 기록의 비인증 차단, 빈 검색/프롬프트, 고정 거절문 확인.",
+      "repair_status": "none required"
+    }
+  ],
+  "rubric_note": "핵심 사실이 맞더라도 필수 시나리오 구분·계산 전개·인용이 빠지면 별도 보완 유형으로 기록한다. 이 분류의 비율을 환각률로 표현하지 않는다."
+}

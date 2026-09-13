@@ -30,5 +30,16 @@ def preferred_public(query, candidates, order):
 
 def named_entities(query, candidates, order):
     identifiers=set(re.findall(r'C\d{2}-(?:PRJ|CERT|SERVICE|P)-\d+',query))
-    return [i for i in order if candidates[i]['security_level']!='L1'
+    ids = [i for i in order if candidates[i]['security_level']!='L1'
             and identifiers.intersection(re.findall(r'C\d{2}-(?:PRJ|CERT|SERVICE|P)-\d+',candidates[i]['text'].splitlines()[0]))]
+    code_matches=[]
+    for i in order:
+        if candidates[i]['security_level']=='L1':continue
+        match=re.search(r'^\| (?:state_change / )?업종·인증 코드 \| ([^|]+) \|',candidates[i]['text'],re.M)
+        if match and match[1].strip() in query:
+            code_matches.append((i,match[1].strip()))
+    # Preserve both sides when multiple business codes are explicitly compared.
+    # Read only the already-authorized candidate records, not a gold/company lookup.
+    if len({code for _,code in code_matches})>=2:
+        ids += [i for i,_ in code_matches]
+    return list(dict.fromkeys(ids))

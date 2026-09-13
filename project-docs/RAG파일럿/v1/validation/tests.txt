@@ -121,6 +121,7 @@ test_wrong_offset (test_qa300.QA300Tests.test_wrong_offset) ... ok
 test_all_denials_without_gold (test_rag_pilot.PilotTests.test_all_denials_without_gold) ... ok
 test_bad_date (test_rag_pilot.PilotTests.test_bad_date) ... ok
 test_baseline_before_renewal (test_rag_pilot.PilotTests.test_baseline_before_renewal) ... ok
+test_company_name_display_alias_finds_submission_rule (test_rag_pilot.PilotTests.test_company_name_display_alias_finds_submission_rule) ... ok
 test_company_state_question_does_not_add_unrelated_public_clause (test_rag_pilot.PilotTests.test_company_state_question_does_not_add_unrelated_public_clause) ... ok
 test_context_budget_drops_whole_entities (test_rag_pilot.PilotTests.test_context_budget_drops_whole_entities) ... ok
 test_cost_analyst_not_bid_approver (test_rag_pilot.PilotTests.test_cost_analyst_not_bid_approver) ... ok
@@ -130,6 +131,7 @@ test_foreign_tenant (test_rag_pilot.PilotTests.test_foreign_tenant) ... ok
 test_full_public_text_coverage (test_rag_pilot.PilotTests.test_full_public_text_coverage) ... ok
 test_gold_injection (test_rag_pilot.PilotTests.test_gold_injection) ... ok
 test_inactive (test_rag_pilot.PilotTests.test_inactive) ... ok
+test_iso_csap_comparison_keeps_both_certification_records (test_rag_pilot.PilotTests.test_iso_csap_comparison_keeps_both_certification_records) ... ok
 test_l2_never_l3 (test_rag_pilot.PilotTests.test_l2_never_l3) ... ok
 test_named_project_does_not_retrieve_other_projects (test_rag_pilot.PilotTests.test_named_project_does_not_retrieve_other_projects) ... ok
 test_nested_gold_injection (test_rag_pilot.PilotTests.test_nested_gold_injection) ... ok
@@ -156,6 +158,6 @@ test_wrong_bid (test_rag_pilot.PilotTests.test_wrong_bid) ... ok
 test_wrong_prompt_tenant (test_rag_pilot.PilotTests.test_wrong_prompt_tenant) ... ok
 
 ----------------------------------------------------------------------
-Ran 156 tests in 7.236s
+Ran 158 tests in 6.679s
 
 OK
