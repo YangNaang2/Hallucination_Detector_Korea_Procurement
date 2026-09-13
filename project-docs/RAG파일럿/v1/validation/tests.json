@@ -1,0 +1,13 @@
+{
+  "tests_run": 154,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "exact_question_matches_in_corpus": [],
+  "corpus_records": 3275,
+  "corpus_record_hash": "verified",
+  "source_note": "원천 바이너리 해시·정본 offset 검사; 원본 OCR/표 파싱 완전성은 별도",
+  "automatic_scope": "schema/IDs/amounts/ACL/tenant/scenario/offsets/gold-field isolation/whole-question literal matches",
+  "limitation": "자유서술 의미상 환각·정보유출 또는 모델 지침 준수를 보장하지 않음.",
+  "human_approval": "pending"
+}

@@ -5,6 +5,7 @@ data/
 demo/index/
 *.npz
 *.safetensors
+*.gguf
 *.bin
 
 # 배포 산출물
@@ -27,3 +28,6 @@ __pycache__/
 !.env.example
 *.pem
 *.key
+
+# Compact RAG evaluation records only; private prompts remain under ignored work/.
+!project-docs/RAG파일럿/v1/evaluation/runs/

@@ -1,0 +1,27 @@
+{
+  "reviewer": "agent",
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "scope": "completed N11 and P01 answers, compared with original company/public context; not model-independent benchmark",
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "verdict": "incorrect_grounding",
+      "finding": "정정 불가 결론을 관련 없는 보안대책 제출 조항으로 정당화했다. 실제 분류번호 문장이 프롬프트에 없었다.",
+      "cause": [
+        "retrieval",
+        "generation"
+      ],
+      "action": "rare literal business anchor promotion and four-parent context cap in subsequent run; old answer preserved"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "verdict": "partially_correct_with_unsupported_claim",
+      "finding": "VAT 포함 7천만원 경계 비교는 맞다. 그러나 실제 발급 증빙이 아니면서 증명서 제출 요건까지 충족됐다고 확대했다.",
+      "cause": [
+        "generation"
+      ],
+      "action": "retain as failure; final run independently reviewed, do not alter expected answer"
+    }
+  ]
+}

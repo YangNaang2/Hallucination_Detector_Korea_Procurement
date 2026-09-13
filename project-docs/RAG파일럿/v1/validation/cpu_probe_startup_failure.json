@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "stderr": "load_backend: loaded RPC backend from C:\\Users\\aidan\\OneDrive\\바탕 화면\\AI프로젝트\\ko-lettucedetect\\work\\rag-pilot\\llama-b10938\\ggml-rpc.dll\nload_backend: loaded CPU backend from C:\\Users\\aidan\\OneDrive\\바탕 화면\\AI프로젝트\\ko-lettucedetect\\work\\rag-pilot\\llama-b10938\\ggml-cpu-alderlake.dll\nllama_bench: error: failed to load model 'C:\\Users\\aidan\\OneDrive\\���� ȭ��\\AI������Ʈ\\ko-lettucedetect\\work\\rag-pilot\\qwen\\qwen2.5-1.5b-instruct-q4_k_m.gguf'\n"
+}

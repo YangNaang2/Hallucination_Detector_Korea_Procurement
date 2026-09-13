@@ -1,0 +1,961 @@
+{
+  "run_id": "hybrid-v1",
+  "counts": {
+    "retrieval_only": 20,
+    "access_denied": 5
+  },
+  "questions": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.0793,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.025019600056111813,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "status": "retrieval_only",
+      "category": "boundary",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.029245699988678098,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.031058399996254593,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "status": "retrieval_only",
+      "category": "cost",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.028804600005969405,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C01-S04",
+      "status": "access_denied",
+      "category": "access_control",
+      "expected_action": "접근 거절",
+      "evidence_checks": [],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": true,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 2.729997504502535e-05,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-N11-E2",
+      "status": "retrieval_only",
+      "category": "conflict",
+      "expected_action": "자료부족 안내",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.019063300045672804,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-P01",
+      "status": "retrieval_only",
+      "category": "eligibility",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.021144300000742078,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S01",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.020725199952721596,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S02",
+      "status": "retrieval_only",
+      "category": "cost",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "manual_pdf",
+          "hit": null,
+          "reason": "page-based source; requires content review"
+        },
+        {
+          "kind": "manual_pdf",
+          "hit": null,
+          "reason": "page-based source; requires content review"
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.022653999971225858,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C02-S04",
+      "status": "access_denied",
+      "category": "access_control",
+      "expected_action": "접근 거절",
+      "evidence_checks": [],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": true,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 1.3299984857439995e-05,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-N11-E3",
+      "status": "retrieval_only",
+      "category": "fact",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.5307,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.01927699998486787,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-P01",
+      "status": "retrieval_only",
+      "category": "eligibility",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "manual_pdf",
+          "hit": null,
+          "reason": "page-based source; requires content review"
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04837759997462854,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S01",
+      "status": "retrieval_only",
+      "category": "performance",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04899380001006648,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S02",
+      "status": "retrieval_only",
+      "category": "cost",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.052633199957199395,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C03-S04",
+      "status": "access_denied",
+      "category": "access_control",
+      "expected_action": "접근 거절",
+      "evidence_checks": [],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": true,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 1.4599994756281376e-05,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-N37-E3",
+      "status": "retrieval_only",
+      "category": "fact",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.9832,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04710910003632307,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-P01",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04479449999053031,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S01",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04827909998130053,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S02",
+      "status": "retrieval_only",
+      "category": "cost",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.824,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.04632659995695576,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C04-S04",
+      "status": "access_denied",
+      "category": "access_control",
+      "expected_action": "접근 거절",
+      "evidence_checks": [],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": true,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 2.239999594166875e-05,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-N11-E5",
+      "status": "retrieval_only",
+      "category": "certification",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": true,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.018533000024035573,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-P01",
+      "status": "retrieval_only",
+      "category": "eligibility",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 1.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.01677029998973012,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S01",
+      "status": "retrieval_only",
+      "category": "performance",
+      "expected_action": "답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "source_interval",
+          "hit": false,
+          "quoted_interval_coverage": 0.0,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.01775420003104955,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S02",
+      "status": "retrieval_only",
+      "category": "cost",
+      "expected_action": "조건부 답변",
+      "evidence_checks": [
+        {
+          "kind": "source_interval",
+          "hit": true,
+          "quoted_interval_coverage": 0.3638,
+          "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": true
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        },
+        {
+          "kind": "company_chunk",
+          "hit": false
+        }
+      ],
+      "any_annotated_evidence_hit": true,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": null,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 0.020832100010011345,
+      "generation_seconds": null
+    },
+    {
+      "question_id": "ASTRA-300-C05-S04",
+      "status": "access_denied",
+      "category": "access_control",
+      "expected_action": "접근 거절",
+      "evidence_checks": [],
+      "any_annotated_evidence_hit": false,
+      "all_checkable_annotated_evidence_hit": false,
+      "correct_denial": true,
+      "citation_numbers_valid": true,
+      "citation_count": 0,
+      "answer_truncated": false,
+      "answer_semantic_correctness": "agent_review_pending",
+      "human_approval": "pending",
+      "search_seconds": 1.799996243789792e-05,
+      "generation_seconds": null
+    }
+  ],
+  "any_annotated_evidence_hit": 19,
+  "all_checkable_annotated_evidence_hit": 6,
+  "non_denied_questions": 20,
+  "limitation": "근거 ID/구간 대응 진단. Recall@K·답변 정확도·환각률이 아님. 인용 번호 유효성은 주장 지지 여부가 아님."
+}

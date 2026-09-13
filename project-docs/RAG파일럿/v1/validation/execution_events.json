@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "run": "lexical-llm-v1",
+      "state": "startup_failed_before_answer",
+      "reason": "llama.cpp API key file loading failed with Unicode absolute path; fixed to workdir-relative path"
+    },
+    {
+      "run": "lexical-llm-v2",
+      "state": "interrupted_before_first_answer",
+      "reason": "Embedding and generation together left about 1.1 GiB available RAM; stopped own client/server to execute serially. No generated answer claimed."
+    },
+    {
+      "run": "hybrid-llm-v1",
+      "state": "stopped_after_three_completed_answers",
+      "reason": "No citations and wrong project comparison observed; preserve outputs, strengthen final task reminder and explicit entity filtering before full run.",
+      "note": "Two failures were inspected; third answer completed while stopping. All three are retained."
+    },
+    {
+      "run": "hybrid-llm-v2",
+      "state": "stopped_for_model_and_prompt_representation_revision",
+      "completed_ids": [
+        "ASTRA-300-C01-N11-E1",
+        "ASTRA-300-C01-P01",
+        "ASTRA-300-C01-S01"
+      ],
+      "reason": "Self-contradictory conclusion and technical document-ID confusion; preserve all outputs and trial larger quantized CPU model."
+    },
+    {
+      "run": "qwen3-smoke-v1",
+      "state": "completed_two_generated_one_timeout",
+      "reason": "Third request timed out; available RAM 0.28GiB on inspection. Stop own server and reduce context/CPU working memory. No other applications stopped."
+    },
+    {
+      "run": "qwen3-pilot-v2",
+      "state": "paused_by_user",
+      "completed": {},
+      "remaining_count": 25
+    }
+  ],
+  "policy": "prior partial directories preserved; new run IDs required"
+}

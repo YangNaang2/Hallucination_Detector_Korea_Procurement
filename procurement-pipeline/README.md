@@ -158,3 +158,8 @@ python generate.py --packets out/packets.jsonl --out generated
 ```
 
 샘플은 모두 가상이며 집계/청킹/요청 준비를 검증하는 8건이다. 대규모 실제 처리 시간과 LLM 생성 품질은 실제 데이터·서버에서 별도 측정해야 한다.
+
+
+## 7. 회사 권한·시나리오별 로컬 RAG 파일럿
+
+51건 공고와 명시적으로 허용한 L2/L3 문서를 색인하는 실험 경로는 [RAG 파일럿 설명](../project-docs/RAG파일럿/v1/README.md)을 따른다. `rag_pilot.py`는 검색 전 권한 검사와 실제 로컬 답변 생성을, `evaluate_rag_pilot.py`는 분리된 평가 자료의 근거 구간 대응 검사를 담당한다. 실제 운영 인증 서버나 환각 탐지 모델 실행을 포함하지 않는다. 원문·모델·인덱스는 `work/rag-pilot`에만 저장하며 커밋하지 않는다.
