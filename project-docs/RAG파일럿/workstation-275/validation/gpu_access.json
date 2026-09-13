@@ -1,0 +1,14 @@
+{
+  "gpu_used": false,
+  "device": "RTX A5000",
+  "host_user_report": "Failed to initialize NVML: Driver/library version mismatch; NVML library version 580.178",
+  "loaded_module": "580.173.02",
+  "installed_module": "580.178.04",
+  "installed_module_path": "/lib/modules/6.8.0-138-generic/updates/dkms/nvidia.ko",
+  "installed_nvml": "580.178.04",
+  "next_step": "After saving embedding/checkpoints, user reboot then host nvidia-smi and GPU launcher.",
+  "system_driver_changes_performed": false,
+  "reboot_performed": false,
+  "host_launcher": "procurement-pipeline/start_host_gpu_rag.py",
+  "official_reference": "https://docs.nvidia.com/dgx/dgx-os-6-user-guide/upgrading-the-os.html"
+}

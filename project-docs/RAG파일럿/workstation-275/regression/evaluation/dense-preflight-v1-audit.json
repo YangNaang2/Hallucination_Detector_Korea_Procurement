@@ -1,0 +1,22 @@
+{
+  "run_id": "dense-preflight-v1",
+  "target_count": 25,
+  "record_count": 25,
+  "not_started": 0,
+  "counts": {
+    "retrieval_only": 20,
+    "access_denied": 5
+  },
+  "integrity_failures": [],
+  "truncated": 0,
+  "incomplete_attempts": 0,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 0,
+    "median": null
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

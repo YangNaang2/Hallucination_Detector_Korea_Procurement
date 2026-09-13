@@ -13,7 +13,7 @@
   "loaded_kernel_module": "580.173.02",
   "installed_compute_libraries": "580.178.04",
   "free_disk_initial_gib": 13,
-  "free_disk_current_bytes": 8854188032,
+  "free_disk_current_bytes": 8902348800,
   "python": "3.13.9",
   "venv": ".venv-rag-workstation",
   "torch": "2.14.0+cpu",
@@ -41,5 +41,13 @@
   },
   "embedding_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
   "generation_smoke_completed": true,
-  "full_rag_completed": false
+  "full_rag_completed": false,
+  "installed_kernel_module": "580.178.04",
+  "gpu_status": "Host NVML driver/library mismatch confirmed; reboot pending",
+  "source_inputs_verified": true,
+  "document_index_built": true,
+  "new275_llm_generated": 0,
+  "document_embeddings_complete": true,
+  "embedding_windows": 7195,
+  "active_model_servers": 0
 }

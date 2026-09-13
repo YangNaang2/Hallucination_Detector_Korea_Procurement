@@ -32,3 +32,5 @@ __pycache__/
 # Compact RAG evaluation records only; private prompts remain under ignored work/.
 !project-docs/RAG파일럿/v1/evaluation/runs/
 !project-docs/RAG파일럿/workstation-275/evaluation/runs/
+!project-docs/RAG파일럿/workstation-275/regression/evaluation/runs/
+!project-docs/RAG파일럿/workstation-275/shards/*/evaluation/runs/

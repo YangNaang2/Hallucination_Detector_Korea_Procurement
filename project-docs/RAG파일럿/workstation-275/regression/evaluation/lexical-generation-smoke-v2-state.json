@@ -1,0 +1,18 @@
+{
+  "run_id": "lexical-generation-smoke-v2",
+  "attempts": {
+    "ASTRA-300-C01-N11-E1": [
+      {
+        "record_path": "evaluation/runs/lexical-generation-smoke-v2/ASTRA-300-C01-N11-E1.json",
+        "status": "generated"
+      }
+    ],
+    "ASTRA-300-C01-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-generation-smoke-v2/ASTRA-300-C01-P01.json",
+        "status": "interrupted"
+      }
+    ]
+  },
+  "scope": "CPU lexical development smoke on original cohort; not new275, not dense performance evaluation"
+}

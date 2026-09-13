@@ -1,0 +1,22 @@
+{
+  "run_id": "lexical-generation-smoke-v2",
+  "target_count": 25,
+  "record_count": 2,
+  "not_started": 23,
+  "counts": {
+    "generated": 1,
+    "interrupted": 1
+  },
+  "integrity_failures": [],
+  "truncated": 0,
+  "incomplete_attempts": 1,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 280.92042173002847,
+    "median": 280.92042173002847
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

@@ -1,0 +1,5 @@
+﻿question_id	split	category	question	expected_answer	actual_answer	status	truncated	invalid_citations	agent_review	human_approval
+ASTRA-300-C01-N11-E1	dev	certification	한밭대 공고의 분류번호를 임의로 다른 직접생산 코드로 정정해도 되는가?	원문에 표시된 분류번호와 품명을 보존하고 필요한 세부코드 확인을 분리한다.	"**판단**: 부적절함  
+**근거**: [2] 제안요청서(사전규격공개의견반영)에 따르면, 직접생산확인증명서는 「공공조달 분류번호 : 81111599(정보시스템개발서비스)」로 발급되어야 하며, 이는 공고문에서 명시적으로 지정된 분류번호에 따라 발급되어야 하는 것이므로, 임의로 다른 분류번호로 정정하는 것은 불법적이고, 공고문에 명시된 규격을 위반하게 됨.  
+**유보사항**: 공고문 및 제안요청서에 명시된 분류번호를 엄격히 준수해야 하며, 임의로 변경하는 것은 조달법상 위반으로 간주될 수 있음. 또한, 공고문에 명시된 분류번호를 준수하지 않으면 입찰자격이 부정확하게 판단될 수 있음."	generated	False	[]	pending	pending
+ASTRA-300-C01-P01	train	boundary	C01-PRJ-01의 계약금액은 이 공고의 실적 금액 하한을 만족하나요? 금액 조건만 비교해 주세요.	부가세 포함 70,000,000원으로, 원문의 단일 계약금액 7천만원 이상 경계와 같으므로 금액 조건은 충족합니다. 최근 3년·유사성·증빙 제출 및 전체 적격 여부는 별도 검토입니다.		interrupted	False	[]	pending	pending

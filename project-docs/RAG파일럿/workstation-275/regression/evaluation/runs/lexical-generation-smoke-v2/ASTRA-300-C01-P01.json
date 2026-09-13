@@ -1,0 +1,33 @@
+{
+  "run_id": "lexical-generation-smoke-v2",
+  "request": {
+    "question_id": "ASTRA-300-C01-P01",
+    "question": "C01-PRJ-01의 계약금액은 이 공고의 실적 금액 하한을 만족하나요? 금액 조건만 비교해 주세요.",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-WB-C01",
+    "scenario_version": "1.0.0",
+    "decision_as_of": "2026-04-01"
+  },
+  "status": "interrupted",
+  "actual_answer": null,
+  "llm_called": true,
+  "retrieved": [],
+  "prompt_evidence": [],
+  "search_seconds": null,
+  "generation_seconds": null,
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "interruption_reason": "Intentional stop after first 280.92s answer to measure faster CPU runtime; second HTTP task had started. Old runner did not persist pre-HTTP retrieval metadata; do not fabricate it.",
+  "private_prompt_path": "work/rag-workstation-regression/private_runs/lexical-generation-smoke-v2/ASTRA-300-C01-P01.prompt.json"
+}

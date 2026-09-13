@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "files": 183,
+  "notices": 51,
+  "original_cache_sha256": "22e692aaf88a3eb8669b44d55955af0e2c253884c42b980ef23b586e5e343ac7",
+  "posix_cache_sha256": "0afc91654c2410d5082dc997772447525c2b6bee8ec8e16220fb031b20bbe51b",
+  "relative_only_change": true,
+  "baseline_public_texts_verified": 167,
+  "upstream_commit": "7902090",
+  "human_approval": "pending",
+  "corpus_hash_matches": true,
+  "metadata_difference_only_l1_path_separators": true,
+  "documents": 223,
+  "parent_chunks": 3275,
+  "excluded": 16
+}

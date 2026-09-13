@@ -102,6 +102,12 @@ def configure():
     p.WORK = LOCAL
     p.DB = LOCAL / 'index.sqlite'
     LOCAL.mkdir(parents=True, exist_ok=True)
+    profile_path=LOCAL/'active_generation.json'
+    if profile_path.exists():
+        endpoint=p.read(profile_path).get('endpoint','http://127.0.0.1:18767')
+        if endpoint not in ('http://127.0.0.1:18767','http://127.0.0.1:18769'):
+            raise ValueError('only pinned loopback inference endpoints allowed')
+        p.ENDPOINT=endpoint
 
 
 def fingerprint(requests):
@@ -149,6 +155,11 @@ def run_batch(run_id, limit=None, retry=False):
                     prev = attempts[-1]; result = FOLLOWUP / prev['record_path']
                     if result.exists():
                         prev['status'] = p.read(result)['status']
+                        if prev['status'] == 'generation_running':
+                            record = p.read(result)
+                            record['status'] = 'interrupted'
+                            p.dump(result, record)
+                            prev['status'] = 'interrupted'
                     else:
                         prev['status'] = 'interrupted'
                     p.dump(state_path, state)

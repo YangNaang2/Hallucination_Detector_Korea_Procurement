@@ -72,5 +72,17 @@ class WorkstationTests(unittest.TestCase):
         self.assertEqual(self.run_mocked(),0)
         self.assertEqual(p.read(path)['attempts'][self.request['question_id']][-1]['status'],'generated')
 
+    def test_interrupted_http_checkpoint_is_not_completion(self):
+        self.run_mocked()
+        path=w.FOLLOWUP/'evaluation/test-state.json';state=p.read(path)
+        attempt=state['attempts'][self.request['question_id']][-1]
+        attempt['status']='running'
+        result=w.FOLLOWUP/attempt['record_path'];record=p.read(result)
+        record.update(status='generation_running',actual_answer=None)
+        p.dump(result,record);p.dump(path,state)
+        self.assertEqual(self.run_mocked(),0)
+        self.assertEqual(p.read(result)['status'],'interrupted')
+        self.assertIsNone(p.read(result)['actual_answer'])
+
 
 if __name__=='__main__':unittest.main()

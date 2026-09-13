@@ -20,6 +20,7 @@ import urllib.request
 
 import context_qa300 as context
 import rag_pilot_routing as routing
+import rag_pilot_calculation as calculation
 
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT / 'project-docs/평가데이터/v2'
@@ -40,6 +41,9 @@ SYSTEM = '''당신은 공고 검토 보조자다. 한국어로 간결하게 답�
 합성 시나리오는 지정된 기준일·버전에서만 적용하고 기존 원장을 바꾸었다고 하지 마라.
 자료가 부족하거나 서로 충돌하면 그 사실과 추가 확인 사항을 말하고 추측하지 마라.
 개별 조건 충족을 전체 입찰 적격·평가 만점·실제 증빙 확보로 확대하지 마라.
+근거에 없는 불법·법 위반·처벌이나 시스템의 자동 처리 동작을 추가하지 마라.
+판단을 반복하는 별도 결론과 근거 없는 일반 주의사항을 덧붙이지 마라.
+missing/미확보는 문서에 레코드가 있어도 증빙 미확보다. 서비스 보유 인증을 회사 보유 인증으로 바꾸지 마라.
 권한 밖 자료의 내용·존재를 추측하지 마라. 근거에 없는 질문은 자료부족이라고 답하라.'''
 
 
@@ -479,6 +483,10 @@ def prompt(req, retrieved, chunks, reg):
         nature='합성 회사 자료; 실제 발급 증명서 아님' if c['synthetic'] else '공개 공고 원문'
         label=c.get('filename') or c.get('title') or c['text'].splitlines()[0].lstrip('# ')
         displays.append(f'[{i}] {nature} — {label}\n{c["text"]}\n[자료 {i} 끝]')
+        if c['synthetic'] and c['security_level']=='L3':
+            check = calculation.calculation_note(c['text'])
+            if check:
+                displays[-1] += f'\n[자료 {i}의 명시 입력·산식 검산; 인용 출처는 [{i}]] {check}'
     # Technical hash IDs stay in the audit mapping, not beside business classification codes.
     return [dict(role='system', content=SYSTEM), dict(role='user', content=header+'\n\n'.join(displays)+tail)]
 
@@ -584,7 +592,7 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None, reques
                 record['context_limit'] = profile['context']
                 record['context_budget_policy'] = 'drop lowest-ranked whole parent; never truncate entity'
             record['prompt_sha256'] = digest(json.dumps(messages, ensure_ascii=False))
-            record['prompt_version'] = 'plain-citations-task-last-v3'
+            record['prompt_version'] = 'plain-citations-task-last-v4-decimal'
             record['system_prompt_sha256'] = digest(SYSTEM)
             record['prompt_evidence'] = [dict(chunk_id=c['chunk_id'], citation=i+1, text_start=c['text_start'], text_end=c['text_end'], text_sha256=digest(c['text'])) for i,c in enumerate(retrieved)]
             # Full private prompt is local-only; compact evidence references are committed.
@@ -592,6 +600,10 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None, reques
             record.update(status='retrieval_only', llm_called=False)
             if execute:
                 start = time.perf_counter()
+                record.update(status='generation_running', llm_called=True,
+                              generation_profile=profile, model=profile['model'],
+                              model_revision=profile['revision'], quantization=profile['quantization'])
+                dump(target / (req['question_id']+'.json'), record)
                 try:
                     response = local_post('/v1/chat/completions', dict(model=profile['alias'], messages=messages,
                                temperature=profile['temperature'],top_p=profile['top_p'],top_k=profile['top_k'],

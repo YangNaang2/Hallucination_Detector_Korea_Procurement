@@ -25,7 +25,10 @@ def main():
         with os.fdopen(fd,'w') as stream:stream.write(secrets.token_urlsafe(32))
     exe=work/'llama-b10938/llama-b10938/llama-server'
     cmd=[str(exe),'-m',str(model),'--alias',profile['alias'],'--host','127.0.0.1','--port','18767',
-        '-c',str(profile['context']),'-np','1','-t','8','-tb','8','-b','128','-ub','32','-ngl','0',
+        '-c',str(profile['context'] * profile.get('parallel_slots',1)),
+        '-np',str(profile.get('parallel_slots',1)),'-t',str(profile.get('threads',8)),
+        '-tb',str(profile.get('threads_batch',profile.get('threads',8))),
+        '-b',str(profile.get('batch',128)),'-ub',str(profile.get('ubatch',32)),'-ngl','0',
         '--cache-ram','0','-fa','on','--cache-type-k',profile['cache_type'],'--cache-type-v',profile['cache_type'],
         '--no-cache-prompt','--no-context-shift','--no-webui','--api-key-file',str(key),
         '--cors-origins','http://127.0.0.1:18767','--no-cors-credentials']
