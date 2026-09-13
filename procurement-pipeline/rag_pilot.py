@@ -9,11 +9,13 @@ from datetime import date, datetime, timezone
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import re
 import sqlite3
 import subprocess
 import time
+import tempfile
 import urllib.request
 
 import context_qa300 as context
@@ -52,7 +54,17 @@ def lines(path):
 def dump(path, obj):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    # Commit one complete checkpoint, including across interruptions during writes.
+    fd, temporary = tempfile.mkstemp(prefix='.' + path.name, dir=path.parent)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as stream:
+            stream.write(json.dumps(obj, ensure_ascii=False, indent=2) + '\n')
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
 
 
 def digest(text):
@@ -64,6 +76,10 @@ def repo_hash():
 
 
 def safe_path(base, relative):
+    # Source caches produced on Windows retain backslash separators on Linux.
+    relative = str(relative).replace('\\', '/')
+    if re.match(r'^[A-Za-z]:', relative) or relative.startswith('/'):
+        raise ValueError('absolute source path is not portable')
     p = (base / relative).resolve()
     if not p.is_relative_to(base.resolve()):
         raise ValueError('path escapes source root')
@@ -509,7 +525,7 @@ def fit_prompt(req, retrieved, chunks, reg, profile=None):
         retrieved = retrieved[:-1]
 
 
-def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
+def run(run_id, use_dense=False, execute=False, purpose=False, only=None, requests_path=None):
     target = safe_path(OUT / 'evaluation/runs', run_id)
     if target.exists():
         raise ValueError('run ID already exists; preserve previous results')
@@ -525,10 +541,14 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
     if use_dense:
         from rag_pilot_embedding import Dense
         dense = Dense()
-    requests = read(OUT / 'runtime/requests.json')
+    requests = read(requests_path or OUT / 'runtime/requests.json')
+    if len({r['question_id'] for r in requests}) != len(requests):
+        raise ValueError('duplicate request ID')
+    for req in requests:
+        no_gold(req)
     if only:
         if not set(only) <= {r['question_id'] for r in requests}:
-            raise ValueError('retry scope must be within selected 25 questions')
+            raise ValueError('retry scope must be within selected requests')
         requests = [r for r in requests if r['question_id'] in only]
     for req in requests:
         begin = time.perf_counter()
@@ -583,7 +603,8 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
                                   model=profile['model'], quantization=profile['quantization'],
                                   model_revision=profile['revision'],generation_profile=profile,seed=42)
                 except Exception as e:
-                    record.update(status='generation_failed', error=str(e), llm_called=True)
+                    timed_out = isinstance(e, TimeoutError) or isinstance(getattr(e, 'reason', None), TimeoutError)
+                    record.update(status='timeout' if timed_out else 'generation_failed', error=str(e), llm_called=True)
                 record['generation_seconds'] = time.perf_counter()-start
         dump(target / (req['question_id']+'.json'), record)
         print(req['question_id'], record['status'], round(search_time, 2), flush=True)

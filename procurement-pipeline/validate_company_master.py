@@ -347,8 +347,18 @@ def validate_bundle(b, source_cache=None, source_root=None):
             require(p.is_relative_to(root),'source path traversal')
             require(hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],'raw file hash mismatch')
         source_checks['raw_sha256']=f'passed:{len(refs)}'
+    source_checks['input_csv_hashes'] = []
     for inp in b['analysis']['input_files']:
-        require(hashlib.sha256((REPO/inp['path']).read_bytes()).hexdigest()==inp['sha256'],'input CSV changed: regenerate analysis and review master')
+        raw = (REPO/inp['path']).read_bytes()
+        actual = hashlib.sha256(raw).hexdigest()
+        # Historical Windows hashes predate Git LF checkout on Linux. Only this
+        # CSV metadata check allows exact CRLF reconstruction; source binaries,
+        # parsed text and citation offsets still require byte-exact hashes.
+        crlf = raw.replace(b'\r\n', b'\n').replace(b'\n', b'\r\n')
+        compatible = inp['path'].endswith('.csv') and hashlib.sha256(crlf).hexdigest() == inp['sha256']
+        require(actual == inp['sha256'] or compatible, 'input CSV changed: regenerate analysis and review master')
+        source_checks['input_csv_hashes'].append(dict(path=inp['path'], actual_sha256=actual,
+            recorded_sha256=inp['sha256'], match='exact' if actual == inp['sha256'] else 'CRLF_reconstructed'))
     counts.update(document_templates=len(docs),condition_mappings=len(maps),pilot_questions=len(qa),source_excerpts=len(refs))
     return dict(status='passed',validated_on=date.today().isoformat(),counts=counts,source_checks=source_checks,
                 limitations=['실제 입찰 적격 판정·보안 서버·모델 성능 검증이 아니다.',

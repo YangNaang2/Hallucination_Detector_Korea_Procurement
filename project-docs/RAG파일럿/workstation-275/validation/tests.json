@@ -1,0 +1,8 @@
+{
+  "tests_run": 167,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "158 existing offline regressions + 9 new tests; no complete source corpus, full RAG, or generated-answer semantic verification",
+  "human_approval": "pending"
+}
