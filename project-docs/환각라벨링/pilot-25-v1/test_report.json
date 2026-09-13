@@ -1,0 +1,7 @@
+{
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "structural checks and seven deliberate corruptions; not semantic correctness or human approval"
+}
