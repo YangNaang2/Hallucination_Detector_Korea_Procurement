@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C05-PLAN-1.0.0-r1",
+  "template_id": "C05-DOC-PLAN",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C05",
+  "tenant_id": "astra-c05",
+  "security_level": "L2",
+  "allowed_roles": [
+    "bid_analyst",
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "staffing_plan",
+  "title": "가상 새온에너지SW 공고별 배치 계획",
+  "notice_id": "R26BK01505744",
+  "notice_version": "000",
+  "scenario_id": "SC-C05-REVIEW-r1",
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 새온에너지SW 공고별 배치 계획\n\nR26BK01505744-000 / SC-C05-REVIEW-r1 / 1.0.0-r1\n\n합성 검토 초안. 제출 승인·증빙 확보·색인 적재 모두 미완료.\n\n## 배치 전제\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| bid_key | R26BK01505744-000 |\n| scenario_id | SC-C05-REVIEW-r1 |\n| basis | 착수일은 합성 가정이며 원문 계약일이 아님. 종료일까지 기존 자체 인력을 배치하는 대안; 장비 조달·시운전 상세 공정은 미확정. |\n| actual_contract_start | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| start_origin | synthetic_setting |\n| end_origin | source_extracted |\n| source_ids [1] | A-EN-PERIOD |\n| source_ids [2] | A-EN-SPEC |\n| source_ids [3] | A-EN-DIRECT |\n| source_ids [4] | S-EN-REG |\n| source_ids [5] | S-EN-EXP |\n| staffing_status | 독립 합성 대안; 기존 배치와 합산 검증, 실행 미승인 |\n| constraint | 문서에 나타난 자격·필수 증빙과 이행 의무를 별도 검토해야 한다. 이 초안은 전체 적격 판정이 아니다. |\n\n## C05-P-07 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A1 |\n| 인력 ID | C05-P-07 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.2 FTE · 합성 설정값 |\n| planned_work | EMS 관리 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n\n## C05-P-03 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A2 |\n| 인력 ID | C05-P-03 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.8 FTE · 합성 설정값 |\n| planned_work | 전력 제어 개발 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n\n## C05-P-04 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A3 |\n| 인력 ID | C05-P-04 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.8 FTE · 합성 설정값 |\n| planned_work | SW 구현 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n\n## C05-P-06 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A4 |\n| 인력 ID | C05-P-06 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.3 FTE · 합성 설정값 |\n| planned_work | 품질 시험 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+  "chunks": [
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-001",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 배치 전제\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| bid_key | R26BK01505744-000 |\n| scenario_id | SC-C05-REVIEW-r1 |\n| basis | 착수일은 합성 가정이며 원문 계약일이 아님. 종료일까지 기존 자체 인력을 배치하는 대안; 장비 조달·시운전 상세 공정은 미확정. |\n| actual_contract_start | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| start_origin | synthetic_setting |\n| end_origin | source_extracted |\n| source_ids [1] | A-EN-PERIOD |\n| source_ids [2] | A-EN-SPEC |\n| source_ids [3] | A-EN-DIRECT |\n| source_ids [4] | S-EN-REG |\n| source_ids [5] | S-EN-EXP |\n| staffing_status | 독립 합성 대안; 기존 배치와 합산 검증, 실행 미승인 |\n| constraint | 문서에 나타난 자격·필수 증빙과 이행 의무를 별도 검토해야 한다. 이 초안은 전체 적격 판정이 아니다. |\n",
+      "text_start": 110,
+      "text_end": 923,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/headquarters",
+          "evidence_id": "SYN-EV-C05-HQ"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-002",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-P-07 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A1 |\n| 인력 ID | C05-P-07 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.2 FTE · 합성 설정값 |\n| planned_work | EMS 관리 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+      "text_start": 924,
+      "text_end": 1506,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/6",
+          "evidence_id": "SYN-EV-C05-P-07"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-003",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-P-03 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A2 |\n| 인력 ID | C05-P-03 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.8 FTE · 합성 설정값 |\n| planned_work | 전력 제어 개발 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+      "text_start": 1507,
+      "text_end": 2091,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/2",
+          "evidence_id": "SYN-EV-C05-P-03"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-004",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-P-04 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A3 |\n| 인력 ID | C05-P-04 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.8 FTE · 합성 설정값 |\n| planned_work | SW 구현 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+      "text_start": 2092,
+      "text_end": 2673,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04"
+        },
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04-Q01"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-005",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-P-06 배치 초안\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 배치 ID | C05-R1-A4 |\n| 인력 ID | C05-P-06 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-11-30 |\n| 투입 FTE | 0.3 FTE · 합성 설정값 |\n| planned_work | 품질 시험 |\n| 값의 성격 | synthetic_setting |\n| rationale | 기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님 |\n| 기존 확정 배치 | 등록 항목 없음 (임의 보완하지 않음) |\n| 고용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+      "text_start": 2674,
+      "text_end": 3255,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/5",
+          "evidence_id": "SYN-EV-C05-P-06"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "rag_ingest": false,
+  "references": [
+    {
+      "reference_id": "W-NCLOUD",
+      "url": "https://www.gov-ncloud.com/charge/price",
+      "checked_on": "2026-09-13",
+      "provider": "NAVER CLOUD 공식 공공기관용 요금 소개",
+      "currency": "KRW",
+      "region": "대한민국",
+      "vat_basis": "unconfirmed",
+      "product_scope": "시간·사용량 기준 서비스별 요금 안내; 공고 전체 구성에 대한 확정 견적 없음",
+      "period": "현재 안내; 2026년 6월 역사 가격 확인 아님",
+      "accepted_price": null,
+      "actual_supplier_quote_state": "missing",
+      "result": "서비스별 사양·용량·트래픽과 라이선스 조건을 확정해야 산정 가능. 실제 서비스 공급권한이나 가상 서비스 인증의 증거로 사용하지 않는다."
+    },
+    {
+      "reference_id": "W-DELL",
+      "url": "https://www.dell.com/ko-kr/shop/dell-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91/xps-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91/spd/xps-8960-desktop",
+      "checked_on": "2026-09-13",
+      "provider": "Dell 대한민국 공식 제품 페이지",
+      "currency": "KRW",
+      "region": "대한민국",
+      "vat_basis": "unconfirmed",
+      "product_scope": "XPS 8960 구성 정보; PC·Office·모니터·랙·UPS·게이트웨이 전체 조합 아님",
+      "period": "현재 조회; 공고 시점 가격 아님",
+      "accepted_price": null,
+      "actual_supplier_quote_state": "missing",
+      "result": "판매 불가 표시 및 동일 전체 구성 가격 확인 불가. 다른 사양의 시작가를 대입하지 않는다."
+    }
+  ]
+}

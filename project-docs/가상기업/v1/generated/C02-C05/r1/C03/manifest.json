@@ -1,0 +1,353 @@
+{
+  "company_id": "C03",
+  "documents": [
+    {
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "json_path": "C03/L2/C03-PROFILE-1.0.0-r1.json",
+      "markdown_path": "C03/L2/C03-PROFILE-1.0.0-r1.md",
+      "chunks_path": "C03/L2/C03-PROFILE-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 3,
+      "content_sha256": "d8d55872b88aafd1c5777d29bd5143325f3c95529569c5ad0f71be89bcc9c45e",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-PERF-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "json_path": "C03/L2/C03-PERF-1.0.0-r1.json",
+      "markdown_path": "C03/L2/C03-PERF-1.0.0-r1.md",
+      "chunks_path": "C03/L2/C03-PERF-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 3,
+      "content_sha256": "478e7a6ef6f6140adf05e4ac1226bd6fdf8f8425828e29f3ef7912a246ea3489",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "json_path": "C03/L2/C03-STAFF-1.0.0-r1.json",
+      "markdown_path": "C03/L2/C03-STAFF-1.0.0-r1.md",
+      "chunks_path": "C03/L2/C03-STAFF-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 6,
+      "content_sha256": "511cb331d71d1d0521666795ec34679024ac299faa3dac1bfee57f78c0a56dce",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-CERT-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "json_path": "C03/L2/C03-CERT-1.0.0-r1.json",
+      "markdown_path": "C03/L2/C03-CERT-1.0.0-r1.md",
+      "chunks_path": "C03/L2/C03-CERT-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 3,
+      "content_sha256": "a81b29e91da436750c163a50e04521f8df414d075ff27de8c3346e0ec41a117f",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "json_path": "C03/L3/C03-COST-1.0.0-r1.json",
+      "markdown_path": "C03/L3/C03-COST-1.0.0-r1.md",
+      "chunks_path": "C03/L3/C03-COST-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 5,
+      "content_sha256": "8b36e2855351abca2b7f50b5d1721d72293a7438769ee88afcbecf4f244360a2",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "json_path": "C03/L2/C03-PLAN-1.0.0-r1.json",
+      "markdown_path": "C03/L2/C03-PLAN-1.0.0-r1.md",
+      "chunks_path": "C03/L2/C03-PLAN-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 6,
+      "content_sha256": "603d7e91b7b05bd54e2f2b77b84d62add2cae625a706dad29cf6e7791254a9af",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "json_path": "C03/L3/C03-ESTIMATE-1.0.0-r1.json",
+      "markdown_path": "C03/L3/C03-ESTIMATE-1.0.0-r1.md",
+      "chunks_path": "C03/L3/C03-ESTIMATE-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 6,
+      "content_sha256": "bffe4c4cc232da83de37ba8d97cacead7b9b3f4f591b276203853d4ddbf7d9b8",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-QUOTE-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "json_path": "C03/L3/C03-QUOTE-1.0.0-r1.json",
+      "markdown_path": "C03/L3/C03-QUOTE-1.0.0-r1.md",
+      "chunks_path": "C03/L3/C03-QUOTE-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 2,
+      "content_sha256": "218ed718a28905ea12bd1807b494d3227ddc2f2c8c9d0c1d25ad1bedd4fb8b50",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    },
+    {
+      "document_id": "C03-BID-1.0.0-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "json_path": "C03/L3/C03-BID-1.0.0-r1.json",
+      "markdown_path": "C03/L3/C03-BID-1.0.0-r1.md",
+      "chunks_path": "C03/L3/C03-BID-1.0.0-r1.chunks.jsonl",
+      "chunk_count": 1,
+      "content_sha256": "35c90863216630d473b32b8add2afeea66265d836936995d0dcf0043a006b133",
+      "document_generation": "generated",
+      "chunk_generation": "generated",
+      "automated_validation": "passed",
+      "human_approval": "pending",
+      "review_status": "unreviewed",
+      "rag_ingest": false,
+      "index_status": "not_indexed"
+    }
+  ],
+  "path_base": "C02-C05/r1",
+  "recursive_directory_ingest_allowed": false,
+  "retrieval_candidate_allowlist": [
+    "C03/L2/C03-PROFILE-1.0.0-r1.chunks.jsonl",
+    "C03/L2/C03-PERF-1.0.0-r1.chunks.jsonl",
+    "C03/L2/C03-STAFF-1.0.0-r1.chunks.jsonl",
+    "C03/L2/C03-CERT-1.0.0-r1.chunks.jsonl",
+    "C03/L3/C03-COST-1.0.0-r1.chunks.jsonl",
+    "C03/L2/C03-PLAN-1.0.0-r1.chunks.jsonl",
+    "C03/L3/C03-ESTIMATE-1.0.0-r1.chunks.jsonl",
+    "C03/L3/C03-QUOTE-1.0.0-r1.chunks.jsonl",
+    "C03/L3/C03-BID-1.0.0-r1.chunks.jsonl"
+  ],
+  "evidence_registry": [
+    {
+      "evidence_id": "SYN-EV-C03-HQ",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-REG-1468",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-NO-0036",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-02",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-CERT-03",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-02",
+      "master_status": "missing",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-PRJ-03",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-02-Q01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-02",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-03-Q01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-03",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-04-Q01",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-04",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-05",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-P-06",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    },
+    {
+      "evidence_id": "SYN-EV-C03-COST-POLICY",
+      "master_status": "synthetic_record",
+      "issued_evidence_document_generated": false
+    }
+  ]
+}

@@ -73,20 +73,21 @@ def fact_refs(ptr,value,fallback):
     return [dict(master_pointer=ptr,evidence_id=e) for e in (evidence_ids(value) or [fallback])]
 
 
-def render_block(title, payload, level, snapshot):
+def render_block(title, payload, level, snapshot, company=None):
     def safe(s):return s.replace('|','\\|').replace('\n','<br>')
-    lines=[f'## {title}','',f'가상 한빛IT · C01 · astra-c01 · {level} · 상태 기준일 {snapshot}',
+    identity='가상 한빛IT · C01 · astra-c01' if company is None else f'{company["company_name"]} · {company["company_id"]} · {company["tenant_id"]}'
+    lines=[f'## {title}','',f'{identity} · {level} · 상태 기준일 {snapshot}',
       '', '합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.',
       '문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.','', '| 항목 | 값 |','|---|---|']
     lines += [f'| {safe(k)} | {safe(val)} |' for k,val in flatten(payload)]
     return '\n'.join(lines)+'\n'
 
 
-def build_documents(bundle):
+def build_documents(bundle, company_id='C01'):
     """Read only master + inventory: gold/mapping data must not affect content."""
-    master=bundle['master']; c=master['companies'][0]
-    v.require(c['company_id']=='C01','C01 company position changed; review pointers')
-    base='/companies/0'; ev=c['headquarters']['evidence_id']; specs={}
+    master=bundle['master']; index=next(i for i,c in enumerate(master['companies']) if c['company_id']==company_id)
+    c=master['companies'][index]
+    base=f'/companies/{index}'; ev=c['headquarters']['evidence_id']; specs={}
     profile={k:c[k] for k in ('company_name','founded_on','enterprise_size','headquarters')}
     specs['PROFILE']=[('기업 및 본점',profile,[dict(master_pointer=base+'/'+k,evidence_id=ev) for k in profile])]
     for i,r in enumerate(c['registrations']):specs['PROFILE'].append((r['registration_id'],r,fact_refs(f'{base}/registrations/{i}',r,ev)))
@@ -101,6 +102,12 @@ def build_documents(bundle):
             if field=='certifications':
                 payload['snapshot_validity']='합성 레코드의 날짜 범위 내' if v.cert_valid(r,c['snapshot_as_of']) else '유효 확인 불가 또는 만료'
             specs[suffix].append((r[idkey],payload,fact_refs(f'{base}/{field}/{i}',r,ev)))
+    for i,r in enumerate(c['services']):
+        related=[cert for cert in c['certifications'] if cert['certification_id'] in r['certification_ids']]
+        refs=[dict(master_pointer=f'{base}/services/{i}',evidence_id=cert['evidence_id']) for cert in related]
+        v.require(refs,'service needs an explicit linked certification record')
+        payload=dict(**r,evidence_link_note='연결 증빙 ID는 서비스 인증 항목을 가리킨다. 공급계약 증명은 아니며 supply_agreement_state를 별도로 유지한다.')
+        specs['CERT'].append((r['service_id'],payload,refs))
     policy=c['l3_policy']; ptr=base+'/l3_policy'
     specs['COST']=[('원가·마진 공통 정책',{k:val for k,val in policy.items() if k!='labor_rates'},fact_refs(ptr,policy,policy['evidence_id']))]
     for i,r in enumerate(policy['labor_rates']):
@@ -110,15 +117,15 @@ def build_documents(bundle):
         specs['COST'].append((r['role']+' 표준 인건비',payload,refs))
     docs=[]
     for suffix,blocks in specs.items():
-        t=next(t for t in bundle['inventory']['documents'] if t['document_id']=='C01-DOC-'+suffix)
-        did=f'C01-{suffix}-{REVISION}'
+        t=next(t for t in bundle['inventory']['documents'] if t['document_id']==company_id+'-DOC-'+suffix)
+        did=f'{company_id}-{suffix}-{REVISION}'
         doc=dict(schema_version='1.0.0',document_id=did,template_id=t['document_id'],document_version=REVISION,
-          master_version=master['data_version'],master_dataset_id=master['dataset_id'],company_id='C01',tenant_id=c['tenant_id'],
+          master_version=master['data_version'],master_dataset_id=master['dataset_id'],company_id=company_id,tenant_id=c['tenant_id'],
           security_level=t['security_level'],allowed_roles=t['allowed_roles'],synthetic=True,kind=t['kind'],title=t['title'],
           notice_id=None,notice_version=None,scenario_id=None,review_status='unreviewed',rag_ingest=False,
           content=f'# {t["title"]}\n\n문서 버전 {REVISION} / 마스터 {master["data_version"]}. 합성 자료 기반 내부 대장.\n\n',chunks=[])
         for title,payload,refs in blocks:
-            text=render_block(title,payload,t['security_level'],c['snapshot_as_of'])
+            text=render_block(title,payload,t['security_level'],c['snapshot_as_of'],c)
             v.require(len(text)<=MAX_CHARS,f'oversize atomic entity {title}; review rather than truncate')
             start=len(doc['content']);doc['content']+=text+'\n'
             doc['chunks'].append(dict(chunk_id=did+'-CH-'+digest(refs)[:12],document_id=did,document_version=REVISION,

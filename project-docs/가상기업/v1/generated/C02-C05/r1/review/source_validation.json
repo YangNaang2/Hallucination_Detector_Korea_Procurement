@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "sources": 33,
+  "checks": [
+    {
+      "source_id": "S-WB-AMOUNT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-PROOF",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-SCORE",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-0036",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-JOINT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-YEAR",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-WB-DEADLINE",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-BS-REGION",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-BS-LICENSE",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-BS-DIRECT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-BS-STAFF",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-IC-JOINT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-CL-CSAP",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-CL-ISMS",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-EN-EXP",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-EN-REG",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "S-IC-REGION",
+      "original_sha256_matched": true,
+      "text_offsets_matched": false,
+      "visual_transcription_not_ocr_tested": true
+    },
+    {
+      "source_id": "A-BS-PERIOD",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-BS-CONFIRM",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-BS-SUPPORT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-BS-SLA",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-BS-PRORATA",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-IC-PERIOD",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-IC-INFRA",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-IC-STAFF",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-IC-PROOF",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-CL-PERIOD",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-CL-SPEC",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-EN-PERIOD",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-EN-SPEC",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-EN-DIRECT",
+      "original_sha256_matched": true,
+      "text_offsets_matched": true,
+      "visual_transcription_not_ocr_tested": false
+    },
+    {
+      "source_id": "A-BS-AGREEMENT-1",
+      "original_sha256_matched": true,
+      "text_offsets_matched": false,
+      "visual_transcription_not_ocr_tested": true
+    },
+    {
+      "source_id": "A-BS-AGREEMENT-2",
+      "original_sha256_matched": true,
+      "text_offsets_matched": false,
+      "visual_transcription_not_ocr_tested": true
+    }
+  ],
+  "scope": "원본 파일 해시와 추출 인용 자동 대조; 시각 전사는 에이전트의 별도 검토"
+}

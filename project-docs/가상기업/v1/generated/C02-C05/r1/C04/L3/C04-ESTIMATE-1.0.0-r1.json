@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C04-ESTIMATE-1.0.0-r1",
+  "template_id": "C04-DOC-ESTIMATE",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C04",
+  "tenant_id": "astra-c04",
+  "security_level": "L3",
+  "allowed_roles": [
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "cost",
+  "title": "가상 누리클라우드 공고별 원가 산출표",
+  "notice_id": "R26BK01574547",
+  "notice_version": "000",
+  "scenario_id": "SC-C04-REVIEW-r1",
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 누리클라우드 공고별 원가 산출표\n\nR26BK01574547-000 / SC-C04-REVIEW-r1 / 1.0.0-r1\n\n합성 검토 초안. 제출 승인·증빙 확보·색인 적재 모두 미완료.\n\n## 계산 범위 및 미확정 총액\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 통화 | KRW |\n| VAT 기준 | exclusive — VAT 제외 |\n| 값의 성격 | calculated |\n| labor_net | 19,972,260 KRW · 계산값 · 산식: round_half_up(sum(unrounded labor lines)) |\n| row_rounding_difference | 0 KRW · 계산값 · 산식: rounded total - sum(rounded rows) |\n| other_direct_net | 600,000 KRW · 계산값 · 산식: assumed visits * assumed unit cost |\n| scoped_direct_net | 20,572,260 KRW · 계산값 · 산식: unrounded labor + assumed visits |\n| scoped_cost_net | 24,686,712 KRW · 계산값 · 산식: scoped direct * (1+overhead/100+contingency/100) |\n| scope | 자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님. |\n| supplier_quote_state | missing — 증빙 미확보 |\n| supplier_quote_net | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| total_project_cost | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| bid_price | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n\n## C04-P-07 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-07 |\n| master_role | 클라우드PM |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.15 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 1.05 |\n| 1인·1개월 기준급 | 4,440,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 5,641,020 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n\n## C04-P-03 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-03 |\n| master_role | 운영엔지니어 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.25 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 1.75 |\n| 1인·1개월 기준급 | 4,900,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 10,375,750 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n\n## C04-P-08 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-08 |\n| master_role | 보안엔지니어 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.1 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 0.7 |\n| 1인·1개월 기준급 | 4,670,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 3,955,490 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n",
+  "chunks": [
+    {
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-001",
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 계산 범위 및 미확정 총액\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 통화 | KRW |\n| VAT 기준 | exclusive — VAT 제외 |\n| 값의 성격 | calculated |\n| labor_net | 19,972,260 KRW · 계산값 · 산식: round_half_up(sum(unrounded labor lines)) |\n| row_rounding_difference | 0 KRW · 계산값 · 산식: rounded total - sum(rounded rows) |\n| other_direct_net | 600,000 KRW · 계산값 · 산식: assumed visits * assumed unit cost |\n| scoped_direct_net | 20,572,260 KRW · 계산값 · 산식: unrounded labor + assumed visits |\n| scoped_cost_net | 24,686,712 KRW · 계산값 · 산식: scoped direct * (1+overhead/100+contingency/100) |\n| scope | 자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님. |\n| supplier_quote_state | missing — 증빙 미확보 |\n| supplier_quote_net | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| total_project_cost | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| bid_price | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n",
+      "text_start": 110,
+      "text_end": 1138,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-002",
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C04-P-07 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-07 |\n| master_role | 클라우드PM |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.15 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 1.05 |\n| 1인·1개월 기준급 | 4,440,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 5,641,020 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n",
+      "text_start": 1139,
+      "text_end": 2855,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/6",
+          "evidence_id": "SYN-EV-C04-P-07"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-003",
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C04-P-03 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-03 |\n| master_role | 운영엔지니어 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.25 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 1.75 |\n| 1인·1개월 기준급 | 4,900,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 10,375,750 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n",
+      "text_start": 2856,
+      "text_end": 4573,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/2",
+          "evidence_id": "SYN-EV-C04-P-03"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-004",
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C04-P-08 인건비\n\n가상 누리클라우드 · C04 · astra-c04 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인력 ID | C04-P-08 |\n| master_role | 보안엔지니어 |\n| 시작일 | 2026-06-01 |\n| 종료일 | 2026-12-31 |\n| 투입 FTE | 0.1 FTE · 합성 설정값 |\n| month_prorata [1] / month | 2026-06 |\n| month_prorata [1] / days | 30 |\n| month_prorata [1] / denominator | 30 |\n| month_prorata [1] / 값의 성격 | calculated |\n| month_prorata [2] / month | 2026-07 |\n| month_prorata [2] / days | 31 |\n| month_prorata [2] / denominator | 31 |\n| month_prorata [2] / 값의 성격 | calculated |\n| month_prorata [3] / month | 2026-08 |\n| month_prorata [3] / days | 31 |\n| month_prorata [3] / denominator | 31 |\n| month_prorata [3] / 값의 성격 | calculated |\n| month_prorata [4] / month | 2026-09 |\n| month_prorata [4] / days | 30 |\n| month_prorata [4] / denominator | 30 |\n| month_prorata [4] / 값의 성격 | calculated |\n| month_prorata [5] / month | 2026-10 |\n| month_prorata [5] / days | 31 |\n| month_prorata [5] / denominator | 31 |\n| month_prorata [5] / 값의 성격 | calculated |\n| month_prorata [6] / month | 2026-11 |\n| month_prorata [6] / days | 30 |\n| month_prorata [6] / denominator | 30 |\n| month_prorata [6] / 값의 성격 | calculated |\n| month_prorata [7] / month | 2026-12 |\n| month_prorata [7] / days | 31 |\n| month_prorata [7] / denominator | 31 |\n| month_prorata [7] / 값의 성격 | calculated |\n| person_months_exact_decimal | 0.7 |\n| 1인·1개월 기준급 | 4,670,000 KRW/person_month · 합성 설정값 |\n| 사업주 부담 가정 | 21 percent · 합성 설정값 |\n| labor_net | 3,955,490 KRW · 계산값 · 산식: round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100)) |\n",
+      "text_start": 4574,
+      "text_end": 6288,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/7",
+          "evidence_id": "SYN-EV-C04-P-08"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ]
+    }
+  ]
+}

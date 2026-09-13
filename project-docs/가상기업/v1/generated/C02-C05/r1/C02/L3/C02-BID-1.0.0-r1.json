@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C02-BID-1.0.0-r1",
+  "template_id": "C02-DOC-BID",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C02",
+  "tenant_id": "astra-c02",
+  "security_level": "L3",
+  "allowed_roles": [
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "bidding_strategy",
+  "title": "가상 해온시스템 공고별 투찰 검토안",
+  "notice_id": "R26BK01474723",
+  "notice_version": "000",
+  "scenario_id": "SC-C02-REVIEW-r1",
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 해온시스템 공고별 투찰 검토안\n\nR26BK01474723-000 / SC-C02-REVIEW-r1 / 1.0.0-r1\n\n합성 검토 초안. 제출 승인·증빙 확보·색인 적재 모두 미완료.\n\n## 참여 보류 및 후속 확인\n\n가상 해온시스템 · C02 · astra-c02 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| bid_key | R26BK01474723-000 |\n| scenario_id | SC-C02-REVIEW-r1 |\n| 상태 | hold_not_submission_ready |\n| holds [1] | 기술지원 확약서 미확보(계약 전 제출 의무) |\n| holds [2] | 중급 기술자 1명의 부분 투입만으로 장애 2시간 도착·4시간 복구 및 대체 인력 확보 여부 미검증 |\n| holds [3] | 장비 교체·부품 비용 범위 및 공급사 최종 적용 조건 미확정 |\n| bid_price | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| source_ids [1] | A-BS-PERIOD |\n| source_ids [2] | S-BS-STAFF |\n| source_ids [3] | A-BS-SLA |\n| source_ids [4] | A-BS-CONFIRM |\n| source_ids [5] | A-BS-SUPPORT |\n| source_ids [6] | A-BS-AGREEMENT-1 |\n| source_ids [7] | A-BS-AGREEMENT-2 |\n| decision_scope | 전체 적격 여부 미확정. 원가 일부 산출과 공급권한·증빙 확보를 혼동하지 않는다. |\n| approval_status | pending |\n| alternative_group | C02-2026-OPTIONS |\n",
+  "chunks": [
+    {
+      "chunk_id": "C02-BID-1.0.0-r1-CH-001",
+      "document_id": "C02-BID-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "text": "## 참여 보류 및 후속 확인\n\n가상 해온시스템 · C02 · astra-c02 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| bid_key | R26BK01474723-000 |\n| scenario_id | SC-C02-REVIEW-r1 |\n| 상태 | hold_not_submission_ready |\n| holds [1] | 기술지원 확약서 미확보(계약 전 제출 의무) |\n| holds [2] | 중급 기술자 1명의 부분 투입만으로 장애 2시간 도착·4시간 복구 및 대체 인력 확보 여부 미검증 |\n| holds [3] | 장비 교체·부품 비용 범위 및 공급사 최종 적용 조건 미확정 |\n| bid_price | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| source_ids [1] | A-BS-PERIOD |\n| source_ids [2] | S-BS-STAFF |\n| source_ids [3] | A-BS-SLA |\n| source_ids [4] | A-BS-CONFIRM |\n| source_ids [5] | A-BS-SUPPORT |\n| source_ids [6] | A-BS-AGREEMENT-1 |\n| source_ids [7] | A-BS-AGREEMENT-2 |\n| decision_scope | 전체 적격 여부 미확정. 원가 일부 산출과 공급권한·증빙 확보를 혼동하지 않는다. |\n| approval_status | pending |\n| alternative_group | C02-2026-OPTIONS |\n",
+      "text_start": 109,
+      "text_end": 1050,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ]
+    }
+  ]
+}

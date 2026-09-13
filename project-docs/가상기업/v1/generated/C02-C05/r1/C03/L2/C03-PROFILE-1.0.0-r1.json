@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C03-PROFILE-1.0.0-r1",
+  "template_id": "C03-DOC-PROFILE",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C03",
+  "tenant_id": "astra-c03",
+  "security_level": "L2",
+  "allowed_roles": [
+    "bid_analyst",
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "company_profile",
+  "title": "가상 인우블록 기업·등록·지역 현황",
+  "notice_id": null,
+  "notice_version": null,
+  "scenario_id": null,
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 인우블록 기업·등록·지역 현황\n\n문서 버전 1.0.0-r1 / 마스터 1.0.0. 합성 자료 기반 내부 대장.\n\n## 기업 및 본점\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 회사명 | 가상 인우블록 |\n| 설립일 | 2022-02-14 |\n| 기업 규모 | 소기업 |\n| 본점 / 지역 | 인천광역시 |\n| 본점 / 적용 시작일 | 2022-02-14 |\n| 본점 / 적용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 상세 주소 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 좌표 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 위치 종류 | 광역 지역만 표시 |\n| 본점 / 합성 증빙 레코드 ID | SYN-EV-C03-HQ |\n\n## C03-REG-1468\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 등록 레코드 ID | C03-REG-1468 |\n| 업종·인증 코드 | 1468 |\n| 명칭 | 컴퓨터관련서비스사업 |\n| 보유 주체 ID | C03 |\n| 등록일 | 2022-02-14 |\n| 유효 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 상태 | registered — 합성 등록 설정 |\n| 합성 증빙 레코드 ID | SYN-EV-C03-REG-1468 |\n\n## 미보유 등록 0036\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 종류 | registration |\n| 업종·인증 코드 | 0036 |\n| 보유 상태 | not_held — 미보유 |\n| 기준일 | 2026-04-01 |\n| 합성 증빙 레코드 ID | SYN-EV-C03-NO-0036 |\n",
+  "chunks": [
+    {
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-976d59347ab3",
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 기업 및 본점\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 회사명 | 가상 인우블록 |\n| 설립일 | 2022-02-14 |\n| 기업 규모 | 소기업 |\n| 본점 / 지역 | 인천광역시 |\n| 본점 / 적용 시작일 | 2022-02-14 |\n| 본점 / 적용 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 상세 주소 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 좌표 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 본점 / 위치 종류 | 광역 지역만 표시 |\n| 본점 / 합성 증빙 레코드 ID | SYN-EV-C03-HQ |\n",
+      "text_start": 68,
+      "text_end": 595,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/2/company_name",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/founded_on",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/enterprise_size",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/headquarters",
+          "evidence_id": "SYN-EV-C03-HQ"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-fd6373d6d47e",
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C03-REG-1468\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 등록 레코드 ID | C03-REG-1468 |\n| 업종·인증 코드 | 1468 |\n| 명칭 | 컴퓨터관련서비스사업 |\n| 보유 주체 ID | C03 |\n| 등록일 | 2022-02-14 |\n| 유효 종료일 | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| 상태 | registered — 합성 등록 설정 |\n| 합성 증빙 레코드 ID | SYN-EV-C03-REG-1468 |\n",
+      "text_start": 596,
+      "text_end": 1028,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/2/registrations/0",
+          "evidence_id": "SYN-EV-C03-REG-1468"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-1b3b34566b4a",
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 미보유 등록 0036\n\n가상 인우블록 · C03 · astra-c03 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 종류 | registration |\n| 업종·인증 코드 | 0036 |\n| 보유 상태 | not_held — 미보유 |\n| 기준일 | 2026-04-01 |\n| 합성 증빙 레코드 ID | SYN-EV-C03-NO-0036 |\n",
+      "text_start": 1029,
+      "text_end": 1359,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/2/known_absences/0",
+          "evidence_id": "SYN-EV-C03-NO-0036"
+        }
+      ]
+    }
+  ]
+}

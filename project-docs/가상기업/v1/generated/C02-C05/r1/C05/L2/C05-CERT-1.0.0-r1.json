@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C05-CERT-1.0.0-r1",
+  "template_id": "C05-DOC-CERT",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C05",
+  "tenant_id": "astra-c05",
+  "security_level": "L2",
+  "allowed_roles": [
+    "bid_analyst",
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "certification",
+  "title": "가상 새온에너지SW 인증·유효기간·서비스 공급 범위",
+  "notice_id": null,
+  "notice_version": null,
+  "scenario_id": null,
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 새온에너지SW 인증·유효기간·서비스 공급 범위\n\n문서 버전 1.0.0-r1 / 마스터 1.0.0. 합성 자료 기반 내부 대장.\n\n## C05-CERT-01\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인증 레코드 ID | C05-CERT-01 |\n| 업종·인증 코드 | SME |\n| 인증명 | 중소기업 확인 |\n| 보유 주체 유형 | company |\n| 보유 주체 ID | C05 |\n| 발급 주체 설정 | 가상 증빙 설정(실제 발급기관 아님) |\n| 발급 설정일 | 2025-04-01 |\n| 유효 시작일 | 2025-04-01 |\n| 유효 종료일 | 2027-03-31 |\n| 증빙 확보 상태 | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| 합성 증빙 레코드 ID | SYN-EV-C05-CERT-01 |\n| 날짜별 유효성 정책 | 판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지 |\n| 기준일에서의 합성 인증 상태 | 합성 레코드의 날짜 범위 내 |\n\n## C05-CERT-02\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인증 레코드 ID | C05-CERT-02 |\n| 업종·인증 코드 | 3912110604 |\n| 인증명 | 모니터링장치 직접생산 |\n| 보유 주체 유형 | company |\n| 보유 주체 ID | C05 |\n| 발급 주체 설정 | 가상 증빙 설정(실제 발급기관 아님) |\n| 발급 설정일 | 2025-01-01 |\n| 유효 시작일 | 2025-01-01 |\n| 유효 종료일 | 2027-12-31 |\n| 증빙 확보 상태 | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| 합성 증빙 레코드 ID | SYN-EV-C05-CERT-02 |\n| 날짜별 유효성 정책 | 판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지 |\n| 기준일에서의 합성 인증 상태 | 합성 레코드의 날짜 범위 내 |\n",
+  "chunks": [
+    {
+      "chunk_id": "C05-CERT-1.0.0-r1-CH-b724b24bee05",
+      "document_id": "C05-CERT-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-CERT-01\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인증 레코드 ID | C05-CERT-01 |\n| 업종·인증 코드 | SME |\n| 인증명 | 중소기업 확인 |\n| 보유 주체 유형 | company |\n| 보유 주체 ID | C05 |\n| 발급 주체 설정 | 가상 증빙 설정(실제 발급기관 아님) |\n| 발급 설정일 | 2025-04-01 |\n| 유효 시작일 | 2025-04-01 |\n| 유효 종료일 | 2027-03-31 |\n| 증빙 확보 상태 | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| 합성 증빙 레코드 ID | SYN-EV-C05-CERT-01 |\n| 날짜별 유효성 정책 | 판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지 |\n| 기준일에서의 합성 인증 상태 | 합성 레코드의 날짜 범위 내 |\n",
+      "text_start": 77,
+      "text_end": 706,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/certifications/0",
+          "evidence_id": "SYN-EV-C05-CERT-01"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-CERT-1.0.0-r1-CH-744a2f68a305",
+      "document_id": "C05-CERT-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## C05-CERT-02\n\n가상 새온에너지SW · C05 · astra-c05 · L2 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| 인증 레코드 ID | C05-CERT-02 |\n| 업종·인증 코드 | 3912110604 |\n| 인증명 | 모니터링장치 직접생산 |\n| 보유 주체 유형 | company |\n| 보유 주체 ID | C05 |\n| 발급 주체 설정 | 가상 증빙 설정(실제 발급기관 아님) |\n| 발급 설정일 | 2025-01-01 |\n| 유효 시작일 | 2025-01-01 |\n| 유효 종료일 | 2027-12-31 |\n| 증빙 확보 상태 | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| 합성 증빙 레코드 ID | SYN-EV-C05-CERT-02 |\n| 날짜별 유효성 정책 | 판단일별 valid_from <= date <= valid_until 및 증빙 상태 확인; 자동 갱신 금지 |\n| 기준일에서의 합성 인증 상태 | 합성 레코드의 날짜 범위 내 |\n",
+      "text_start": 707,
+      "text_end": 1347,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/certifications/1",
+          "evidence_id": "SYN-EV-C05-CERT-02"
+        }
+      ]
+    }
+  ]
+}

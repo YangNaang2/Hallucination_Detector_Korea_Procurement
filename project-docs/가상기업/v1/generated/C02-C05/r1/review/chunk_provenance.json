@@ -1,0 +1,4178 @@
+{
+  "rag_ingest": false,
+  "purpose": "audit_only_mixed_security",
+  "chunks": [
+    {
+      "document_id": "C02-PROFILE-1.0.0-r1",
+      "chunk_id": "C02-PROFILE-1.0.0-r1-CH-007f12be020c",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/company_name",
+          "evidence_id": "SYN-EV-C02-HQ"
+        },
+        {
+          "master_pointer": "/companies/1/founded_on",
+          "evidence_id": "SYN-EV-C02-HQ"
+        },
+        {
+          "master_pointer": "/companies/1/enterprise_size",
+          "evidence_id": "SYN-EV-C02-HQ"
+        },
+        {
+          "master_pointer": "/companies/1/headquarters",
+          "evidence_id": "SYN-EV-C02-HQ"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PROFILE-1.0.0-r1",
+      "chunk_id": "C02-PROFILE-1.0.0-r1-CH-f5ccce6ea976",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/registrations/0",
+          "evidence_id": "SYN-EV-C02-REG-1468"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PROFILE-1.0.0-r1",
+      "chunk_id": "C02-PROFILE-1.0.0-r1-CH-5418f012f76c",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/registrations/1",
+          "evidence_id": "SYN-EV-C02-REG-0036"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PERF-1.0.0-r1",
+      "chunk_id": "C02-PERF-1.0.0-r1-CH-0ad02813b53f",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/projects/0",
+          "evidence_id": "SYN-EV-C02-PRJ-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PERF-1.0.0-r1",
+      "chunk_id": "C02-PERF-1.0.0-r1-CH-9ba6d23e3ed8",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/projects/1",
+          "evidence_id": "SYN-EV-C02-PRJ-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PERF-1.0.0-r1",
+      "chunk_id": "C02-PERF-1.0.0-r1-CH-75d89737f60a",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/projects/2",
+          "evidence_id": "SYN-EV-C02-PRJ-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-5faae67456c6",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/0",
+          "evidence_id": "SYN-EV-C02-P-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-81cbb0e01cdb",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02"
+        },
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-253fa7f32acc",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/2",
+          "evidence_id": "SYN-EV-C02-P-03"
+        },
+        {
+          "master_pointer": "/companies/1/personnel/2",
+          "evidence_id": "SYN-EV-C02-P-03-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-4fea7be00572",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/3",
+          "evidence_id": "SYN-EV-C02-P-04"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-ce501af2ed8b",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/4",
+          "evidence_id": "SYN-EV-C02-P-05"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-8463fb51434d",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/5",
+          "evidence_id": "SYN-EV-C02-P-06"
+        },
+        {
+          "master_pointer": "/companies/1/personnel/5",
+          "evidence_id": "SYN-EV-C02-P-06-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-124b4df387f0",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/6",
+          "evidence_id": "SYN-EV-C02-P-07"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-0ee4e72a6499",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/7",
+          "evidence_id": "SYN-EV-C02-P-08"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-CERT-1.0.0-r1",
+      "chunk_id": "C02-CERT-1.0.0-r1-CH-d04796693ae8",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/certifications/0",
+          "evidence_id": "SYN-EV-C02-CERT-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-CERT-1.0.0-r1",
+      "chunk_id": "C02-CERT-1.0.0-r1-CH-fdade6be09bc",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/certifications/1",
+          "evidence_id": "SYN-EV-C02-CERT-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-CERT-1.0.0-r1",
+      "chunk_id": "C02-CERT-1.0.0-r1-CH-084b92c4b526",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/certifications/2",
+          "evidence_id": "SYN-EV-C02-CERT-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-COST-1.0.0-r1",
+      "chunk_id": "C02-COST-1.0.0-r1-CH-5318053aba38",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-COST-1.0.0-r1",
+      "chunk_id": "C02-COST-1.0.0-r1-CH-a57fbcda8f36",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy/labor_rates/0",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/currency",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-COST-1.0.0-r1",
+      "chunk_id": "C02-COST-1.0.0-r1-CH-3a22ab29b9f6",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy/labor_rates/1",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/currency",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-COST-1.0.0-r1",
+      "chunk_id": "C02-COST-1.0.0-r1-CH-bcb426935c0d",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy/labor_rates/2",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/currency",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-COST-1.0.0-r1",
+      "chunk_id": "C02-COST-1.0.0-r1-CH-5b73e66bc6d3",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy/labor_rates/3",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/currency",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PLAN-1.0.0-r1",
+      "chunk_id": "C02-PLAN-1.0.0-r1-CH-001",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/headquarters",
+          "evidence_id": "SYN-EV-C02-HQ"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-PLAN-1.0.0-r1",
+      "chunk_id": "C02-PLAN-1.0.0-r1-CH-002",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02"
+        },
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02-Q01"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C02-ESTIMATE-1.0.0-r1-CH-001",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C02-ESTIMATE-1.0.0-r1-CH-002",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02"
+        },
+        {
+          "master_pointer": "/companies/1/personnel/1",
+          "evidence_id": "SYN-EV-C02-P-02-Q01"
+        },
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C02-ESTIMATE-1.0.0-r1-CH-003",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-QUOTE-1.0.0-r1",
+      "chunk_id": "C02-QUOTE-1.0.0-r1-CH-001",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-QUOTE-1.0.0-r1",
+      "chunk_id": "C02-QUOTE-1.0.0-r1-CH-002",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-QUOTE-1.0.0-r1",
+      "chunk_id": "C02-QUOTE-1.0.0-r1-CH-003",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C02-BID-1.0.0-r1",
+      "chunk_id": "C02-BID-1.0.0-r1-CH-001",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01474723",
+      "notice_version": "000",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/1/l3_policy",
+          "evidence_id": "SYN-EV-C02-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/0",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-976d59347ab3",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/company_name",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/founded_on",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/enterprise_size",
+          "evidence_id": "SYN-EV-C03-HQ"
+        },
+        {
+          "master_pointer": "/companies/2/headquarters",
+          "evidence_id": "SYN-EV-C03-HQ"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-fd6373d6d47e",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/registrations/0",
+          "evidence_id": "SYN-EV-C03-REG-1468"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "chunk_id": "C03-PROFILE-1.0.0-r1-CH-1b3b34566b4a",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/known_absences/0",
+          "evidence_id": "SYN-EV-C03-NO-0036"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PERF-1.0.0-r1",
+      "chunk_id": "C03-PERF-1.0.0-r1-CH-fbedf1332481",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/projects/0",
+          "evidence_id": "SYN-EV-C03-PRJ-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PERF-1.0.0-r1",
+      "chunk_id": "C03-PERF-1.0.0-r1-CH-4d2e82bcb67e",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/projects/1",
+          "evidence_id": "SYN-EV-C03-PRJ-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PERF-1.0.0-r1",
+      "chunk_id": "C03-PERF-1.0.0-r1-CH-83fb9b1389fd",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/projects/2",
+          "evidence_id": "SYN-EV-C03-PRJ-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-a472a79cd1a6",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/0",
+          "evidence_id": "SYN-EV-C03-P-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-e634006d0d45",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-6736b6cb9a9e",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-c0280306f756",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-e83b182743b6",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/4",
+          "evidence_id": "SYN-EV-C03-P-05"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "chunk_id": "C03-STAFF-1.0.0-r1-CH-ebb5e3f7a54e",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/5",
+          "evidence_id": "SYN-EV-C03-P-06"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-CERT-1.0.0-r1",
+      "chunk_id": "C03-CERT-1.0.0-r1-CH-0b7c977af54b",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/certifications/0",
+          "evidence_id": "SYN-EV-C03-CERT-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-CERT-1.0.0-r1",
+      "chunk_id": "C03-CERT-1.0.0-r1-CH-ca3549b25d7c",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/certifications/1",
+          "evidence_id": "SYN-EV-C03-CERT-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-CERT-1.0.0-r1",
+      "chunk_id": "C03-CERT-1.0.0-r1-CH-1a4bfa9a816f",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/certifications/2",
+          "evidence_id": "SYN-EV-C03-CERT-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "chunk_id": "C03-COST-1.0.0-r1-CH-360876b14bc6",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "chunk_id": "C03-COST-1.0.0-r1-CH-9b1eac0b3d83",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy/labor_rates/0",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/currency",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "chunk_id": "C03-COST-1.0.0-r1-CH-08bbca7479f9",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy/labor_rates/1",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/currency",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "chunk_id": "C03-COST-1.0.0-r1-CH-2516746d7f6f",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy/labor_rates/2",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/currency",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-COST-1.0.0-r1",
+      "chunk_id": "C03-COST-1.0.0-r1-CH-09b69c8e7a28",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy/labor_rates/3",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/currency",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-001",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/headquarters",
+          "evidence_id": "SYN-EV-C03-HQ"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-002",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02-Q01"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-003",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03-Q01"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-004",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04-Q01"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-005",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/4",
+          "evidence_id": "SYN-EV-C03-P-05"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "chunk_id": "C03-PLAN-1.0.0-r1-CH-006",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/5",
+          "evidence_id": "SYN-EV-C03-P-06"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-001",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-002",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/1",
+          "evidence_id": "SYN-EV-C03-P-02-Q01"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-003",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/2",
+          "evidence_id": "SYN-EV-C03-P-03-Q01"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-004",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04"
+        },
+        {
+          "master_pointer": "/companies/2/personnel/3",
+          "evidence_id": "SYN-EV-C03-P-04-Q01"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-005",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/4",
+          "evidence_id": "SYN-EV-C03-P-05"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C03-ESTIMATE-1.0.0-r1-CH-006",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/personnel/5",
+          "evidence_id": "SYN-EV-C03-P-06"
+        },
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-QUOTE-1.0.0-r1",
+      "chunk_id": "C03-QUOTE-1.0.0-r1-CH-001",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-QUOTE-1.0.0-r1",
+      "chunk_id": "C03-QUOTE-1.0.0-r1-CH-002",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C03-BID-1.0.0-r1",
+      "chunk_id": "C03-BID-1.0.0-r1-CH-001",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01518315",
+      "notice_version": "000",
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/2/l3_policy",
+          "evidence_id": "SYN-EV-C03-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/1",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PROFILE-1.0.0-r1",
+      "chunk_id": "C04-PROFILE-1.0.0-r1-CH-0fecf0bed9f8",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/company_name",
+          "evidence_id": "SYN-EV-C04-HQ"
+        },
+        {
+          "master_pointer": "/companies/3/founded_on",
+          "evidence_id": "SYN-EV-C04-HQ"
+        },
+        {
+          "master_pointer": "/companies/3/enterprise_size",
+          "evidence_id": "SYN-EV-C04-HQ"
+        },
+        {
+          "master_pointer": "/companies/3/headquarters",
+          "evidence_id": "SYN-EV-C04-HQ"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PROFILE-1.0.0-r1",
+      "chunk_id": "C04-PROFILE-1.0.0-r1-CH-a97862f4a9ef",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/registrations/0",
+          "evidence_id": "SYN-EV-C04-REG-1468"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PROFILE-1.0.0-r1",
+      "chunk_id": "C04-PROFILE-1.0.0-r1-CH-c9e0abb1db3e",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/registrations/1",
+          "evidence_id": "SYN-EV-C04-REG-0036"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PERF-1.0.0-r1",
+      "chunk_id": "C04-PERF-1.0.0-r1-CH-bd74b43ace65",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/projects/0",
+          "evidence_id": "SYN-EV-C04-PRJ-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PERF-1.0.0-r1",
+      "chunk_id": "C04-PERF-1.0.0-r1-CH-bf8be576c998",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/projects/1",
+          "evidence_id": "SYN-EV-C04-PRJ-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PERF-1.0.0-r1",
+      "chunk_id": "C04-PERF-1.0.0-r1-CH-f2eab78d53b6",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/projects/2",
+          "evidence_id": "SYN-EV-C04-PRJ-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-fd617f9e1fd2",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/0",
+          "evidence_id": "SYN-EV-C04-P-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-50a4d54c2344",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/1",
+          "evidence_id": "SYN-EV-C04-P-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-129ab5c2e581",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/2",
+          "evidence_id": "SYN-EV-C04-P-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-6d8f82e76621",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/3",
+          "evidence_id": "SYN-EV-C04-P-04"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-377a0c1bbad3",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/4",
+          "evidence_id": "SYN-EV-C04-P-05"
+        },
+        {
+          "master_pointer": "/companies/3/personnel/4",
+          "evidence_id": "SYN-EV-C04-P-05-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-501fb9f7baf3",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/5",
+          "evidence_id": "SYN-EV-C04-P-06"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-1baad59538d6",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/6",
+          "evidence_id": "SYN-EV-C04-P-07"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-64924835db39",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/7",
+          "evidence_id": "SYN-EV-C04-P-08"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-606088d08dbd",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/8",
+          "evidence_id": "SYN-EV-C04-P-09"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "chunk_id": "C04-STAFF-1.0.0-r1-CH-58e1db0a35c0",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/9",
+          "evidence_id": "SYN-EV-C04-P-10"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-CERT-1.0.0-r1",
+      "chunk_id": "C04-CERT-1.0.0-r1-CH-2c833d6385be",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/certifications/0",
+          "evidence_id": "SYN-EV-C04-CERT-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-CERT-1.0.0-r1",
+      "chunk_id": "C04-CERT-1.0.0-r1-CH-f047a13ee760",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/certifications/1",
+          "evidence_id": "SYN-EV-C04-CERT-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-CERT-1.0.0-r1",
+      "chunk_id": "C04-CERT-1.0.0-r1-CH-1122f69556dd",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/certifications/2",
+          "evidence_id": "SYN-EV-C04-CERT-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-CERT-1.0.0-r1",
+      "chunk_id": "C04-CERT-1.0.0-r1-CH-01619ec28e77",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/certifications/3",
+          "evidence_id": "SYN-EV-C04-CERT-04"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-CERT-1.0.0-r1",
+      "chunk_id": "C04-CERT-1.0.0-r1-CH-40719c756a86",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/services/0",
+          "evidence_id": "SYN-EV-C04-CERT-04"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-d8db07bdf662",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-31296de61a42",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy/labor_rates/0",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/currency",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-0bedaecef88e",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy/labor_rates/1",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/currency",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-34d4e438f4db",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy/labor_rates/2",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/currency",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-7f39dfe98d3f",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy/labor_rates/3",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/currency",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-COST-1.0.0-r1",
+      "chunk_id": "C04-COST-1.0.0-r1-CH-bfcb3f53cc1a",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy/labor_rates/4",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/currency",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PLAN-1.0.0-r1",
+      "chunk_id": "C04-PLAN-1.0.0-r1-CH-001",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/headquarters",
+          "evidence_id": "SYN-EV-C04-HQ"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PLAN-1.0.0-r1",
+      "chunk_id": "C04-PLAN-1.0.0-r1-CH-002",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/6",
+          "evidence_id": "SYN-EV-C04-P-07"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PLAN-1.0.0-r1",
+      "chunk_id": "C04-PLAN-1.0.0-r1-CH-003",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/2",
+          "evidence_id": "SYN-EV-C04-P-03"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-PLAN-1.0.0-r1",
+      "chunk_id": "C04-PLAN-1.0.0-r1-CH-004",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/7",
+          "evidence_id": "SYN-EV-C04-P-08"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-001",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-002",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/6",
+          "evidence_id": "SYN-EV-C04-P-07"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-003",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/2",
+          "evidence_id": "SYN-EV-C04-P-03"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C04-ESTIMATE-1.0.0-r1-CH-004",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/personnel/7",
+          "evidence_id": "SYN-EV-C04-P-08"
+        },
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-QUOTE-1.0.0-r1",
+      "chunk_id": "C04-QUOTE-1.0.0-r1-CH-001",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-QUOTE-1.0.0-r1",
+      "chunk_id": "C04-QUOTE-1.0.0-r1-CH-002",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C04-BID-1.0.0-r1",
+      "chunk_id": "C04-BID-1.0.0-r1-CH-001",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01574547",
+      "notice_version": "000",
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/3/l3_policy",
+          "evidence_id": "SYN-EV-C04-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/2",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "chunk_id": "C05-PROFILE-1.0.0-r1-CH-1d532c6b5b6b",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/company_name",
+          "evidence_id": "SYN-EV-C05-HQ"
+        },
+        {
+          "master_pointer": "/companies/4/founded_on",
+          "evidence_id": "SYN-EV-C05-HQ"
+        },
+        {
+          "master_pointer": "/companies/4/enterprise_size",
+          "evidence_id": "SYN-EV-C05-HQ"
+        },
+        {
+          "master_pointer": "/companies/4/headquarters",
+          "evidence_id": "SYN-EV-C05-HQ"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "chunk_id": "C05-PROFILE-1.0.0-r1-CH-94db9a77246b",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/registrations/0",
+          "evidence_id": "SYN-EV-C05-REG-1468"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "chunk_id": "C05-PROFILE-1.0.0-r1-CH-259ec45b19c0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/registrations/1",
+          "evidence_id": "SYN-EV-C05-REG-28123"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "chunk_id": "C05-PROFILE-1.0.0-r1-CH-bf78c12a1aa4",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/known_absences/0",
+          "evidence_id": "SYN-EV-C05-NO-0036"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PERF-1.0.0-r1",
+      "chunk_id": "C05-PERF-1.0.0-r1-CH-a45ec127b309",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/projects/0",
+          "evidence_id": "SYN-EV-C05-PRJ-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PERF-1.0.0-r1",
+      "chunk_id": "C05-PERF-1.0.0-r1-CH-8488bbafa2a7",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/projects/1",
+          "evidence_id": "SYN-EV-C05-PRJ-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PERF-1.0.0-r1",
+      "chunk_id": "C05-PERF-1.0.0-r1-CH-846d6ae1d396",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/projects/2",
+          "evidence_id": "SYN-EV-C05-PRJ-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-da383dac142e",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/0",
+          "evidence_id": "SYN-EV-C05-P-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-9d5f218a6fb1",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/1",
+          "evidence_id": "SYN-EV-C05-P-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-48bcbde2b1f0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/2",
+          "evidence_id": "SYN-EV-C05-P-03"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-0b6e0a75d54a",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04"
+        },
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04-Q01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-56899183356e",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/4",
+          "evidence_id": "SYN-EV-C05-P-05"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-60cca8e168de",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/5",
+          "evidence_id": "SYN-EV-C05-P-06"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-d2b1b8173846",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/6",
+          "evidence_id": "SYN-EV-C05-P-07"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-ba4279541b31",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/7",
+          "evidence_id": "SYN-EV-C05-P-08"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "chunk_id": "C05-STAFF-1.0.0-r1-CH-877ae65cc809",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/8",
+          "evidence_id": "SYN-EV-C05-P-09"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-CERT-1.0.0-r1",
+      "chunk_id": "C05-CERT-1.0.0-r1-CH-b724b24bee05",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/certifications/0",
+          "evidence_id": "SYN-EV-C05-CERT-01"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-CERT-1.0.0-r1",
+      "chunk_id": "C05-CERT-1.0.0-r1-CH-744a2f68a305",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/certifications/1",
+          "evidence_id": "SYN-EV-C05-CERT-02"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-COST-1.0.0-r1",
+      "chunk_id": "C05-COST-1.0.0-r1-CH-ee41efd865a4",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-COST-1.0.0-r1",
+      "chunk_id": "C05-COST-1.0.0-r1-CH-244f15527d27",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy/labor_rates/0",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/currency",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-COST-1.0.0-r1",
+      "chunk_id": "C05-COST-1.0.0-r1-CH-5b9e4e6cb92d",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy/labor_rates/1",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/currency",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-COST-1.0.0-r1",
+      "chunk_id": "C05-COST-1.0.0-r1-CH-d7c333212b37",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy/labor_rates/2",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/currency",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-COST-1.0.0-r1",
+      "chunk_id": "C05-COST-1.0.0-r1-CH-7600cafe2b4b",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": null,
+      "notice_version": null,
+      "scenario_id": null,
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy/labor_rates/3",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/currency",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy/vat_basis",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": null,
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-001",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/headquarters",
+          "evidence_id": "SYN-EV-C05-HQ"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-002",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/6",
+          "evidence_id": "SYN-EV-C05-P-07"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-003",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/2",
+          "evidence_id": "SYN-EV-C05-P-03"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-004",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04"
+        },
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04-Q01"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-005",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/5",
+          "evidence_id": "SYN-EV-C05-P-06"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C05-ESTIMATE-1.0.0-r1-CH-001",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C05-ESTIMATE-1.0.0-r1-CH-002",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/6",
+          "evidence_id": "SYN-EV-C05-P-07"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C05-ESTIMATE-1.0.0-r1-CH-003",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/2",
+          "evidence_id": "SYN-EV-C05-P-03"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C05-ESTIMATE-1.0.0-r1-CH-004",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04"
+        },
+        {
+          "master_pointer": "/companies/4/personnel/3",
+          "evidence_id": "SYN-EV-C05-P-04-Q01"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "chunk_id": "C05-ESTIMATE-1.0.0-r1-CH-005",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/personnel/5",
+          "evidence_id": "SYN-EV-C05-P-06"
+        },
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-QUOTE-1.0.0-r1",
+      "chunk_id": "C05-QUOTE-1.0.0-r1-CH-001",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-QUOTE-1.0.0-r1",
+      "chunk_id": "C05-QUOTE-1.0.0-r1-CH-002",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    },
+    {
+      "document_id": "C05-BID-1.0.0-r1",
+      "chunk_id": "C05-BID-1.0.0-r1-CH-001",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "document_version": "1.0.0-r1",
+      "notice_id": "R26BK01505744",
+      "notice_version": "000",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "master_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ],
+      "planning_input_pointer": "/scenarios/3",
+      "planning_input_access": "L3 bid_approver only; provenance is audit-only and not retrievable",
+      "public_source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "rag_ingest": false
+    }
+  ]
+}

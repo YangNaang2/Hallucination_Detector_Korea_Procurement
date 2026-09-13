@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "document_id": "C05-QUOTE-1.0.0-r1",
+  "template_id": "C05-DOC-QUOTE",
+  "document_version": "1.0.0-r1",
+  "master_version": "1.0.0",
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "company_id": "C05",
+  "tenant_id": "astra-c05",
+  "security_level": "L3",
+  "allowed_roles": [
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "synthetic": true,
+  "kind": "partner_quote",
+  "title": "가상 새온에너지SW 공고별 공급사 견적 대장",
+  "notice_id": "R26BK01505744",
+  "notice_version": "000",
+  "scenario_id": "SC-C05-REVIEW-r1",
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "content": "# 가상 새온에너지SW 공고별 공급사 견적 대장\n\nR26BK01505744-000 / SC-C05-REVIEW-r1 / 1.0.0-r1\n\n합성 검토 초안. 제출 승인·증빙 확보·색인 적재 모두 미완료.\n\n## 합성 직접 경비 가정\n\n가상 새온에너지SW · C05 · astra-c05 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| item | 내부 검토용 현장 방문 경비 |\n| quantity | 12 visits · 합성 설정값 |\n| unit_net | 200,000 KRW/visit · 합성 설정값 |\n| reason | 교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음 |\n\n## 외부 견적 미확보\n\n가상 새온에너지SW · C05 · astra-c05 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| supplier_quote_state | missing — 증빙 미확보 |\n| supplier_quote_amount | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| pending [1] | PC·게이트웨이·서버랙·UPS·스위치·상용SW 전체 견적 미확보 |\n| pending [2] | 시험설비 인터페이스와 현장 설치 조건 미확정 |\n| pending [3] | 제출 일정의 요일 표기 및 계약 일정은 공식 확인 전 확정하지 않음 |\n| source_ids [1] | A-EN-PERIOD |\n| source_ids [2] | A-EN-SPEC |\n| source_ids [3] | A-EN-DIRECT |\n| source_ids [4] | S-EN-REG |\n| source_ids [5] | S-EN-EXP |\n| external_reference_ids [1] | W-DELL |\n| resolution | 확인된 인건비·방문 가정은 계산. 동일 규격 공급 조건과 실제 확보 상태는 별도로 남김. |\n",
+  "chunks": [
+    {
+      "chunk_id": "C05-QUOTE-1.0.0-r1-CH-001",
+      "document_id": "C05-QUOTE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 합성 직접 경비 가정\n\n가상 새온에너지SW · C05 · astra-c05 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| item | 내부 검토용 현장 방문 경비 |\n| quantity | 12 visits · 합성 설정값 |\n| unit_net | 200,000 KRW/visit · 합성 설정값 |\n| reason | 교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음 |\n",
+      "text_start": 114,
+      "text_end": 546,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ]
+    },
+    {
+      "chunk_id": "C05-QUOTE-1.0.0-r1-CH-002",
+      "document_id": "C05-QUOTE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## 외부 견적 미확보\n\n가상 새온에너지SW · C05 · astra-c05 · L3 · 상태 기준일 2026-04-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 회사 사실은 합성 원장 기준이다. 공고 추출값은 source_ids, 합성 계획값은 origin·basis, 계산값은 formula로 구분한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| supplier_quote_state | missing — 증빙 미확보 |\n| supplier_quote_amount | null — 미설정/해당 없음; 유효·완료·0원으로 간주하지 않음 |\n| pending [1] | PC·게이트웨이·서버랙·UPS·스위치·상용SW 전체 견적 미확보 |\n| pending [2] | 시험설비 인터페이스와 현장 설치 조건 미확정 |\n| pending [3] | 제출 일정의 요일 표기 및 계약 일정은 공식 확인 전 확정하지 않음 |\n| source_ids [1] | A-EN-PERIOD |\n| source_ids [2] | A-EN-SPEC |\n| source_ids [3] | A-EN-DIRECT |\n| source_ids [4] | S-EN-REG |\n| source_ids [5] | S-EN-EXP |\n| external_reference_ids [1] | W-DELL |\n| resolution | 확인된 인건비·방문 가정은 계산. 동일 규격 공급 조건과 실제 확보 상태는 별도로 남김. |\n",
+      "text_start": 547,
+      "text_end": 1318,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/4/l3_policy",
+          "evidence_id": "SYN-EV-C05-COST-POLICY"
+        }
+      ]
+    }
+  ]
+}

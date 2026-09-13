@@ -1,0 +1,433 @@
+{
+  "version": "1.0.0-r1",
+  "master_sha256": "3bb404952ce3aa17cd8de5e0db8f3d762f3f569316e9914bc1dfd6f8fb0fada0",
+  "rag_ingest": false,
+  "scenarios": [
+    {
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "version": "1.0.0-r1",
+      "bid_key": "R26BK01474723-000",
+      "mode": "independent_draft_alternative",
+      "mutually_exclusive_group": "C02-2026-OPTIONS",
+      "committed": false,
+      "actual_contract_start": null,
+      "planning_start": "2026-05-01",
+      "planning_end": "2026-12-31",
+      "start_origin": "source_extracted",
+      "end_origin": "source_extracted",
+      "basis": "공고 명시 기간. 중급 기술자 잔여 0.5 FTE를 활용하는 내부 검토안이며 SLA 충족 보증이 아님.",
+      "source_ids": [
+        "A-BS-PERIOD",
+        "S-BS-STAFF",
+        "A-BS-SLA",
+        "A-BS-CONFIRM",
+        "A-BS-SUPPORT",
+        "A-BS-AGREEMENT-1",
+        "A-BS-AGREEMENT-2"
+      ],
+      "staffing": [
+        {
+          "assignment_id": "C02-R1-A1",
+          "person_id": "C02-P-02",
+          "start": "2026-05-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.5,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "중급 유지관리 기술자",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        }
+      ],
+      "exercise_scope": "내부 검토·비용 민감도만; 전체 참가자격 충족 또는 제출 승인 아님",
+      "holds": [
+        "기술지원 확약서 미확보(계약 전 제출 의무)",
+        "중급 기술자 1명의 부분 투입만으로 장애 2시간 도착·4시간 복구 및 대체 인력 확보 여부 미검증",
+        "장비 교체·부품 비용 범위 및 공급사 최종 적용 조건 미확정"
+      ],
+      "other_direct_assumption": {
+        "item": "내부 검토용 현장 방문 경비",
+        "quantity": {
+          "value": 8,
+          "unit": "visits",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "unit_net": {
+          "value": 150000,
+          "unit": "KRW/visit",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "reason": "교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음"
+      },
+      "supplier_quote_state": "missing",
+      "supplier_quote_amount": null,
+      "bid_price": null,
+      "rag_ingest": false,
+      "human_approval": "pending",
+      "index_status": "not_indexed"
+    },
+    {
+      "scenario_id": "SC-C03-REVIEW-r1",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "version": "1.0.0-r1",
+      "bid_key": "R26BK01518315-000",
+      "mode": "independent_draft_alternative",
+      "mutually_exclusive_group": "C03-2026-OPTIONS",
+      "committed": false,
+      "actual_contract_start": null,
+      "planning_start": "2026-06-01",
+      "planning_end": "2026-12-10",
+      "start_origin": "synthetic_setting",
+      "end_origin": "source_extracted",
+      "basis": "착수일은 합성 가정, 종료일만 공고 기준. 기존 공동수급 실패 사례를 보존한 별도의 단독 대안. 기능개선 범위·역할 배분은 협의 전 초안.",
+      "source_ids": [
+        "A-IC-PERIOD",
+        "A-IC-INFRA",
+        "A-IC-STAFF",
+        "S-IC-REGION"
+      ],
+      "staffing": [
+        {
+          "assignment_id": "C03-R1-A1",
+          "person_id": "C03-P-02",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.4,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "개발 조정 담당",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C03-R1-A2",
+          "person_id": "C03-P-03",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "기능 개발",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C03-R1-A3",
+          "person_id": "C03-P-04",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.5,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "개발·운영 보완",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C03-R1-A4",
+          "person_id": "C03-P-05",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "품질 검증",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C03-R1-A5",
+          "person_id": "C03-P-06",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "운영 지원",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        }
+      ],
+      "exercise_scope": "내부 검토·비용 민감도만; 전체 참가자격 충족 또는 제출 승인 아님",
+      "holds": [
+        "총괄책임자와 세부 개발 범위에 대한 발주처 협의 미완료",
+        "기술등급 및 제출용 경력·가입자 증명 확인 필요",
+        "기존 인프라 활용 전제이며 추가 상용SW·보안 도구 비용 미확정"
+      ],
+      "other_direct_assumption": {
+        "item": "내부 검토용 현장 방문 경비",
+        "quantity": {
+          "value": 8,
+          "unit": "visits",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "unit_net": {
+          "value": 150000,
+          "unit": "KRW/visit",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "reason": "교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음"
+      },
+      "supplier_quote_state": "missing",
+      "supplier_quote_amount": null,
+      "bid_price": null,
+      "rag_ingest": false,
+      "human_approval": "pending",
+      "index_status": "not_indexed"
+    },
+    {
+      "scenario_id": "SC-C04-REVIEW-r1",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "version": "1.0.0-r1",
+      "bid_key": "R26BK01574547-000",
+      "mode": "independent_draft_alternative",
+      "mutually_exclusive_group": "C04-2026-OPTIONS",
+      "committed": false,
+      "actual_contract_start": null,
+      "planning_start": "2026-06-01",
+      "planning_end": "2026-12-31",
+      "start_origin": "source_extracted",
+      "end_origin": "source_extracted",
+      "basis": "공고의 7개월 가격 산정 기간 사용. 실제 개시일이 지연되면 서비스 정산과 배치를 다시 계산해야 함.",
+      "source_ids": [
+        "A-CL-PERIOD",
+        "A-CL-SPEC",
+        "S-CL-CSAP",
+        "S-CL-ISMS"
+      ],
+      "staffing": [
+        {
+          "assignment_id": "C04-R1-A1",
+          "person_id": "C04-P-07",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.15,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "클라우드 조정",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C04-R1-A2",
+          "person_id": "C04-P-03",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.25,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "서비스 운영",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C04-R1-A3",
+          "person_id": "C04-P-08",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "보안 운영",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        }
+      ],
+      "exercise_scope": "내부 검토·비용 민감도만; 전체 참가자격 충족 또는 제출 승인 아님",
+      "holds": [
+        "공급 대상 서비스 CSAP 증빙 missing",
+        "공급 계약·권한 missing",
+        "서버·스토리지·트래픽·보안·솔루션을 포함하는 전체 동일 규격 공급가격 미확정"
+      ],
+      "other_direct_assumption": {
+        "item": "내부 검토용 현장 방문 경비",
+        "quantity": {
+          "value": 4,
+          "unit": "visits",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "unit_net": {
+          "value": 150000,
+          "unit": "KRW/visit",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "reason": "교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음"
+      },
+      "supplier_quote_state": "missing",
+      "supplier_quote_amount": null,
+      "bid_price": null,
+      "rag_ingest": false,
+      "human_approval": "pending",
+      "index_status": "not_indexed"
+    },
+    {
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "bid_approver"
+      ],
+      "version": "1.0.0-r1",
+      "bid_key": "R26BK01505744-000",
+      "mode": "independent_draft_alternative",
+      "mutually_exclusive_group": "C05-2026-OPTIONS",
+      "committed": false,
+      "actual_contract_start": null,
+      "planning_start": "2026-06-01",
+      "planning_end": "2026-11-30",
+      "start_origin": "synthetic_setting",
+      "end_origin": "source_extracted",
+      "basis": "착수일은 합성 가정이며 원문 계약일이 아님. 종료일까지 기존 자체 인력을 배치하는 대안; 장비 조달·시운전 상세 공정은 미확정.",
+      "source_ids": [
+        "A-EN-PERIOD",
+        "A-EN-SPEC",
+        "A-EN-DIRECT",
+        "S-EN-REG",
+        "S-EN-EXP"
+      ],
+      "staffing": [
+        {
+          "assignment_id": "C05-R1-A1",
+          "person_id": "C05-P-07",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "EMS 관리",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C05-R1-A2",
+          "person_id": "C05-P-03",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "전력 제어 개발",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C05-R1-A3",
+          "person_id": "C05-P-04",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "SW 구현",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        },
+        {
+          "assignment_id": "C05-R1-A4",
+          "person_id": "C05-P-06",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.3,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "planned_work": "품질 시험",
+          "origin": "synthetic_setting",
+          "rationale": "기존 확정 배치의 잔여 가용량 안에서 역할별로 책정한 내부 작업량; 발주기관 필수 인원·등급 판정 아님"
+        }
+      ],
+      "exercise_scope": "내부 검토·비용 민감도만; 전체 참가자격 충족 또는 제출 승인 아님",
+      "holds": [
+        "PC·게이트웨이·서버랙·UPS·스위치·상용SW 전체 견적 미확보",
+        "시험설비 인터페이스와 현장 설치 조건 미확정",
+        "제출 일정의 요일 표기 및 계약 일정은 공식 확인 전 확정하지 않음"
+      ],
+      "other_direct_assumption": {
+        "item": "내부 검토용 현장 방문 경비",
+        "quantity": {
+          "value": 12,
+          "unit": "visits",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "unit_net": {
+          "value": 200000,
+          "unit": "KRW/visit",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "reason": "교통·현장 소모품을 묶은 계획 가정. 실제 공공 운임표나 업체 견적이 아니며 숙박·장비 구매·상용 라이선스는 포함하지 않음"
+      },
+      "supplier_quote_state": "missing",
+      "supplier_quote_amount": null,
+      "bid_price": null,
+      "rag_ingest": false,
+      "human_approval": "pending",
+      "index_status": "not_indexed"
+    }
+  ],
+  "assumption_policy": "가용 인력으로 제한한 합성 대안이다. 기존 확정 배치와만 합산하고, 여러 대안을 동시 실행하려면 committed 계획 전체로 재검증한다.",
+  "prorata_policy": "내부 인건비는 양 끝 날짜 포함, 해당 월 실제 달력 일수 분모. 공고상 지급 일할 규칙과 구분(C02 유지관리 대금은 30일 기준).",
+  "rounding_policy": "Decimal 중간값 유지; 최종 항목 원 단위 HALF_UP. 표시된 반올림 행 합계와 총액의 차이는 별도 기록."
+}

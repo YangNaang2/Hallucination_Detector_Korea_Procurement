@@ -1,0 +1,1167 @@
+{
+  "rag_ingest": false,
+  "companies": {
+    "C02": {
+      "currency": "KRW",
+      "vat_basis": "exclusive",
+      "origin": "calculated",
+      "labor_lines": [
+        {
+          "person_id": "C02-P-02",
+          "master_role": "정보통신기술자",
+          "start": "2026-05-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.5,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-05",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "4.0",
+          "monthly_base": {
+            "value": 4310000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 19,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 20515600,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        }
+      ],
+      "labor_net": {
+        "value": 20515600,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "round_half_up(sum(unrounded labor lines))"
+      },
+      "row_rounding_difference": {
+        "value": 0,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "rounded total - sum(rounded rows)"
+      },
+      "other_direct_net": {
+        "value": 1200000,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "assumed visits * assumed unit cost"
+      },
+      "scoped_direct_net": {
+        "value": 21715600,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "unrounded labor + assumed visits"
+      },
+      "scoped_cost_net": {
+        "value": 25624408,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "scoped direct * (1+overhead/100+contingency/100)"
+      },
+      "scope": "자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님.",
+      "public_price_sensitivity": {
+        "original_agreement_gross": {
+          "value": 56320240,
+          "unit": "KRW",
+          "origin": "calculated",
+          "formula": "32628780 + 23691460 (A-BS-AGREEMENT-1/2)"
+        },
+        "vat_basis": "inclusive",
+        "vat_rate_assumption": {
+          "value": 10,
+          "unit": "percent",
+          "origin": "synthetic_setting",
+          "formula": null
+        },
+        "conditional_scope_cost_net": {
+          "value": 86040665,
+          "unit": "KRW",
+          "origin": "calculated",
+          "formula": "(labor + assumed visits + public agreement gross/1.1) * (1+overhead/100+contingency/100)"
+        },
+        "conditional_target_net": {
+          "value": 102429364,
+          "unit": "KRW",
+          "origin": "calculated",
+          "formula": "conditional_scope_cost_net before rounding / (1-target_gross_margin/100)"
+        },
+        "conditional_target_gross": {
+          "value": 112672300,
+          "unit": "KRW",
+          "origin": "calculated",
+          "formula": "unrounded conditional target net * 1.1"
+        },
+        "warning": "공개 협약 금액을 가정 적용한 민감도 예시. 실제 견적·전체 수행원가·투찰금액이 아니며 부품 등 미확정 비용 제외."
+      },
+      "supplier_quote_state": "missing",
+      "supplier_quote_net": null,
+      "total_project_cost": null,
+      "bid_price": null
+    },
+    "C03": {
+      "currency": "KRW",
+      "vat_basis": "exclusive",
+      "origin": "calculated",
+      "labor_lines": [
+        {
+          "person_id": "C03-P-02",
+          "master_role": "SW개발자",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.4,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 10,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "2.529032258064516129032258064",
+          "monthly_base": {
+            "value": 4490000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 20,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 13626426,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C03-P-03",
+          "master_role": "SW개발자",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 10,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "5.058064516129032258064516129",
+          "monthly_base": {
+            "value": 4490000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 20,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 27252852,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C03-P-04",
+          "master_role": "SW개발자",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.5,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 10,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "3.161290322580645161290322580",
+          "monthly_base": {
+            "value": 4490000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 20,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 17033032,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C03-P-05",
+          "master_role": "QA",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 10,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.264516129032258064516129032",
+          "monthly_base": {
+            "value": 4720000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 20,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 7162219,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C03-P-06",
+          "master_role": "운영엔지니어",
+          "start": "2026-06-01",
+          "end": "2026-12-10",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 10,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.264516129032258064516129032",
+          "monthly_base": {
+            "value": 4950000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 20,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 7511226,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        }
+      ],
+      "labor_net": {
+        "value": 72585755,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "round_half_up(sum(unrounded labor lines))"
+      },
+      "row_rounding_difference": {
+        "value": 0,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "rounded total - sum(rounded rows)"
+      },
+      "other_direct_net": {
+        "value": 1200000,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "assumed visits * assumed unit cost"
+      },
+      "scoped_direct_net": {
+        "value": 73785755,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "unrounded labor + assumed visits"
+      },
+      "scoped_cost_net": {
+        "value": 87805048,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "scoped direct * (1+overhead/100+contingency/100)"
+      },
+      "scope": "자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님.",
+      "public_price_sensitivity": null,
+      "supplier_quote_state": "missing",
+      "supplier_quote_net": null,
+      "total_project_cost": null,
+      "bid_price": null
+    },
+    "C04": {
+      "currency": "KRW",
+      "vat_basis": "exclusive",
+      "origin": "calculated",
+      "labor_lines": [
+        {
+          "person_id": "C04-P-07",
+          "master_role": "클라우드PM",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.15,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.05",
+          "monthly_base": {
+            "value": 4440000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 21,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 5641020,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C04-P-03",
+          "master_role": "운영엔지니어",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.25,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.75",
+          "monthly_base": {
+            "value": 4900000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 21,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 10375750,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C04-P-08",
+          "master_role": "보안엔지니어",
+          "start": "2026-06-01",
+          "end": "2026-12-31",
+          "allocation_fte": {
+            "value": 0.1,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-12",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "0.7",
+          "monthly_base": {
+            "value": 4670000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 21,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 3955490,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        }
+      ],
+      "labor_net": {
+        "value": 19972260,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "round_half_up(sum(unrounded labor lines))"
+      },
+      "row_rounding_difference": {
+        "value": 0,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "rounded total - sum(rounded rows)"
+      },
+      "other_direct_net": {
+        "value": 600000,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "assumed visits * assumed unit cost"
+      },
+      "scoped_direct_net": {
+        "value": 20572260,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "unrounded labor + assumed visits"
+      },
+      "scoped_cost_net": {
+        "value": 24686712,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "scoped direct * (1+overhead/100+contingency/100)"
+      },
+      "scope": "자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님.",
+      "public_price_sensitivity": null,
+      "supplier_quote_state": "missing",
+      "supplier_quote_net": null,
+      "total_project_cost": null,
+      "bid_price": null
+    },
+    "C05": {
+      "currency": "KRW",
+      "vat_basis": "exclusive",
+      "origin": "calculated",
+      "labor_lines": [
+        {
+          "person_id": "C05-P-07",
+          "master_role": "EMS PM",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.2,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.2",
+          "monthly_base": {
+            "value": 4620000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 22,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 6763680,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C05-P-03",
+          "master_role": "전력제어엔지니어",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "4.8",
+          "monthly_base": {
+            "value": 4850000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 22,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 28401600,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C05-P-04",
+          "master_role": "SW개발자",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.8,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "4.8",
+          "monthly_base": {
+            "value": 5080000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 22,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 29748480,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        },
+        {
+          "person_id": "C05-P-06",
+          "master_role": "QA",
+          "start": "2026-06-01",
+          "end": "2026-11-30",
+          "allocation_fte": {
+            "value": 0.3,
+            "unit": "FTE",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "month_prorata": [
+            {
+              "month": "2026-06",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-07",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-08",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-09",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-10",
+              "days": 31,
+              "denominator": 31,
+              "origin": "calculated"
+            },
+            {
+              "month": "2026-11",
+              "days": 30,
+              "denominator": 30,
+              "origin": "calculated"
+            }
+          ],
+          "person_months_exact_decimal": "1.8",
+          "monthly_base": {
+            "value": 5310000,
+            "unit": "KRW/person_month",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "employer_burden": {
+            "value": 22,
+            "unit": "percent",
+            "origin": "synthetic_setting",
+            "formula": null
+          },
+          "labor_net": {
+            "value": 11660760,
+            "unit": "KRW",
+            "origin": "calculated",
+            "formula": "round_half_up(monthly_base * sum(days/month_days) * FTE * (1+burden/100))"
+          }
+        }
+      ],
+      "labor_net": {
+        "value": 76574520,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "round_half_up(sum(unrounded labor lines))"
+      },
+      "row_rounding_difference": {
+        "value": 0,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "rounded total - sum(rounded rows)"
+      },
+      "other_direct_net": {
+        "value": 2400000,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "assumed visits * assumed unit cost"
+      },
+      "scoped_direct_net": {
+        "value": 78974520,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "unrounded labor + assumed visits"
+      },
+      "scoped_cost_net": {
+        "value": 95559169,
+        "unit": "KRW",
+        "origin": "calculated",
+        "formula": "scoped direct * (1+overhead/100+contingency/100)"
+      },
+      "scope": "자체 인력과 합성 방문 경비만. 장비·클라우드·외부SW 및 전체 사업 원가는 아님.",
+      "public_price_sensitivity": null,
+      "supplier_quote_state": "missing",
+      "supplier_quote_net": null,
+      "total_project_cost": null,
+      "bid_price": null
+    }
+  }
+}
