@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "status": "passed",
+  "documents": 5,
+  "chunks": 27,
+  "chunk_characters": {
+    "min": 330,
+    "max": 1223,
+    "total": 21319
+  },
+  "qa_bindings": 5,
+  "master_changed": false,
+  "external_llm_calls": 0,
+  "db_writes": 0,
+  "span_labels_generated": 0,
+  "offline_permission_chunk_checks": 189,
+  "checks": [
+    "strict document schema",
+    "master projection exact rendering",
+    "certificate dates and missing states",
+    "money/VAT and FTE via master validator",
+    "source pointers and offsets",
+    "JSONL metadata matches document",
+    "gold isolated by separate output and allowlist",
+    "draft cost Decimal calculation"
+  ],
+  "limits": [
+    "실제 검색 성능·모델 답변·권한 서버를 검사하지 않았다.",
+    "정형 원장 투영의 일치 검증이며 일반 자유서술 문서의 무환각을 보장하지 않는다.",
+    "검수 승인 대기, 벡터 DB 미적재.",
+    "공고 원문 참조는 기존 대조 결과를 사용; 이번에 새로운 원문 재파싱은 하지 않았다."
+  ],
+  "artifacts": {
+    "chunk_export.schema.json": "13cdbdd8cee390f22c6f6178c12205c76da7950e9c2d8948d0e038cfbcc88d6d",
+    "L2/C01-PROFILE-1.0.0-r1.md": "58cc7b1b00a0195b924e6d3ea60137e2935117680c83d6174c866dd40fe80649",
+    "L2/C01-PROFILE-1.0.0-r1.json": "96d14cb53f6d352eca06b8163abec159833475c0cd565998bf3ddaaf42974c66",
+    "L2/C01-PROFILE-1.0.0-r1.chunks.jsonl": "4d05c1d6cb94255a0712299572d47a74663da4471323aeace59ec0ac63dda23d",
+    "L2/C01-PERF-1.0.0-r1.md": "98d2d3acbce2fb6267c0bc160a7879a5ce042340a8b1b04b60c0486e138b7329",
+    "L2/C01-PERF-1.0.0-r1.json": "67029c059f79ca8ac99528c949a5c753e51b903ea3118bf623c6c3b634ce30f6",
+    "L2/C01-PERF-1.0.0-r1.chunks.jsonl": "3191f8e8848f356b17736901d33edced093e25df29c97b6e3cf652faedf8a8e3",
+    "L2/C01-STAFF-1.0.0-r1.md": "d960187e6fcd31251c396769469ea7c92697e803c948af455f739b12f8b7727c",
+    "L2/C01-STAFF-1.0.0-r1.json": "66d4cad1cae2587b477fef93b1c9ed4c9fc59f1d54b897010aca807df2dd9361",
+    "L2/C01-STAFF-1.0.0-r1.chunks.jsonl": "bc0b2332e1d15c7d6215ce5fa812436016579e3854ef81ff5e4ccda3e3263dd6",
+    "L2/C01-CERT-1.0.0-r1.md": "a04a783c80706c7b2a82cba920b5e223d5c75dfc01f2342ac7d4d2afc43ca504",
+    "L2/C01-CERT-1.0.0-r1.json": "74740f31d78cc750d75c01cf9c37f0a1cd1778adf155143c2f7c2397b77cc07a",
+    "L2/C01-CERT-1.0.0-r1.chunks.jsonl": "0eec0e21e06317c5a51597cd3a0e368637a76efe8b70d2e9e780861f665e267b",
+    "L3/C01-COST-1.0.0-r1.md": "f4e3602b9b9cd0ca2cce404caafaff1a63e61674429bc869aafc371ea5a48157",
+    "L3/C01-COST-1.0.0-r1.json": "64f4e52f96922b843ac4693108a99f2c383844a9016c52814de5ec8a477d96fe",
+    "L3/C01-COST-1.0.0-r1.chunks.jsonl": "6483a3c2d39b24f14738363c70f0d2ff68ac66298c6af71fe7cbff0d5cdefcbc",
+    "manifest.json": "1ce7e1e622d5cb1d9ee6232dea74e3ed55fa3e7c91215d9dc0afb211cf521a57",
+    "evaluation/qa_document_bindings.json": "9c2c34d160534e219536d4a3e261a72fa2b115168bd8674953a692c807ff734e",
+    "review/access_checks.json": "a697dba380138532b51e0a2fa0f860523111ccdab66ab14722f1d8ea1904ce35",
+    "review/scenario_review.json": "33468b5ec2ce0b056b7c8aaf9dc415a372bcbee3fd65de013b917e599902dbbe",
+    "review/scenario_review.md": "2c9218dca08ea7fe7e980e775c6fbf9f610f771dbae8c6267973855330267062"
+  }
+}

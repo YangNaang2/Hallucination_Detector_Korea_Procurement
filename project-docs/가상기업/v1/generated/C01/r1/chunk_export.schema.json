@@ -1,0 +1,134 @@
+{
+  "type": "object",
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tenant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "security_level": {
+      "enum": [
+        "L2",
+        "L3"
+      ]
+    },
+    "allowed_roles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "bid_analyst",
+          "cost_analyst",
+          "bid_approver"
+        ]
+      },
+      "minItems": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "text_start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "text_end": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "offset_unit": {
+      "enum": [
+        "Unicode code point, end exclusive"
+      ]
+    },
+    "source_fact_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "master_pointer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "master_pointer",
+          "evidence_id"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "company_id": {
+      "enum": [
+        "C01"
+      ]
+    },
+    "master_dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "master_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synthetic": {
+      "enum": [
+        true
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "unreviewed"
+      ]
+    },
+    "rag_ingest": {
+      "enum": [
+        false
+      ]
+    },
+    "index_status": {
+      "enum": [
+        "not_indexed"
+      ]
+    }
+  },
+  "required": [
+    "chunk_id",
+    "document_id",
+    "document_version",
+    "tenant_id",
+    "security_level",
+    "allowed_roles",
+    "text",
+    "text_start",
+    "text_end",
+    "offset_unit",
+    "source_fact_refs",
+    "company_id",
+    "master_dataset_id",
+    "master_version",
+    "synthetic",
+    "review_status",
+    "rag_ingest",
+    "index_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:astra:c01-pilot-chunk-export:r1",
+  "description": "C01 r1 전용 JSONL 행 계약. 문서 내부 청크에 회사·마스터 버전·적재 상태를 추가한 외부 전송 형식."
+}

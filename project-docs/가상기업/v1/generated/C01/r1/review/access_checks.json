@@ -1,0 +1,252 @@
+{
+  "scope": "offline_metadata_policy_only",
+  "live_service_tested": false,
+  "chunk_checks": 189,
+  "cases": [
+    {
+      "session_case": "own_analyst",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_analyst",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "own_analyst",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "own_analyst",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_analyst",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "own_cost",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_cost",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "own_cost",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "own_cost",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_cost",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "own_approver",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_approver",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "own_approver",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "own_approver",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_approver",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": true,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "own_viewer",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_viewer",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "own_viewer",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "own_viewer",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "own_viewer",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "foreign_approver",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "foreign_approver",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "foreign_approver",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "foreign_approver",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "foreign_approver",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "unauthenticated",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "unauthenticated",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "unauthenticated",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "unauthenticated",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "unauthenticated",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 5,
+      "passed": true
+    },
+    {
+      "session_case": "inactive",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "inactive",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 4,
+      "passed": true
+    },
+    {
+      "session_case": "inactive",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 12,
+      "passed": true
+    },
+    {
+      "session_case": "inactive",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 3,
+      "passed": true
+    },
+    {
+      "session_case": "inactive",
+      "document_id": "C01-COST-1.0.0-r1",
+      "expected_allow": false,
+      "chunks_checked": 5,
+      "passed": true
+    }
+  ]
+}
