@@ -1,0 +1,263 @@
+{
+  "date": "2026-09-13",
+  "archives": [
+    "result_4.zip",
+    "nara_2026-05_export.zip",
+    "6월_export_2026-06.zip"
+  ],
+  "scope": "12개 공고의 재확인 쟁점. 아래 파일 식별은 전 문장 검증 완료를 뜻하지 않음.",
+  "files": [
+    {
+      "bid": "R26BK01435344-000",
+      "name": "공정청렴특별유의서및협약서.hwp",
+      "sha256": "ce0fd922ed726cf841ab3d1e24595874d34b00df66535f53b9f51d6e71f9a5fb",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01435344-000",
+      "name": "용역계약일반조건_23.12.29.hwp",
+      "sha256": "d3ff09ab1c21a2095ba318cde528300338d206e470ed7516ddb54ca99b7e97a3",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01435344-000",
+      "name": "용역입찰유의서_23.12.29.hwp",
+      "sha256": "b5b6f0c0b57f28c105095e751d3b476adb91635d5f40f2a412986afbe2c83e3b",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01435344-000",
+      "name": "입찰공고문(재공고).hwp",
+      "sha256": "94bad39d4609f3fc25450f98292955b9ece65a10ef055b3c4ae14cf5fc368ef0",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01435344-000",
+      "name": "제안요청서.hwp",
+      "sha256": "94a77a60a98228c83e7422cea2e22b2a99ee537b6a441ab8479d7582e4aef087",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01440737-000",
+      "name": "1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx",
+      "sha256": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01440737-000",
+      "name": "2. [입찰공고문-재공고] 26년 부동산광고감시센터 관리시스템 기능개선 및 유지보수_260403.hwpx",
+      "sha256": "524396a0663b2bfb1855d2fe8aa9883a0f2fb31deee143e2e3e384adfde7d9e3",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01440737-000",
+      "name": "3. [입찰공고문-재공고] 26년 부동산광고감시센터 관리시스템 기능개선 및 유지보수_260403.pdf",
+      "sha256": "f8ed4c44b39a4279f5502ff398758f5a78b77703131c34d4dcb2db34bb4a6130",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01440737-000",
+      "name": "4. 긴급입찰사유서_260403.hwp",
+      "sha256": "2fbe775ce2ea2f3a0ca04157f1ef220fc1edb1e920bcf352e1e6dc0dc8b4967c",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01465791-000",
+      "name": "6. 입찰공고문(26.04.15.).hwp",
+      "sha256": "c71b73387303ff687f9a27c3c12c1fea51777600f88d493b8107d2d54585e97f",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01465791-000",
+      "name": "4. 물품공급및기술지원협약서.pdf",
+      "sha256": "cec5537ebbb7966c3b36351d722dc03bf426ad108838bd614e48f2b9ec07d9e5",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01465791-000",
+      "name": "5. 긴급입찰 사유서.hwp",
+      "sha256": "dff8f6be276805db4d62ae16749cd7bdcf13634286cbce941de837e3799dd52a",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01465791-000",
+      "name": "8. 간소화방식 과업내용 확정 심의결과서(2026년).pdf",
+      "sha256": "eb4ff4b6036faf371f9dfdb5e51a9fb4e308d517591ae89f3f4d6abce5d8ad7b",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01504777-000",
+      "name": "공고문(제2026-31호).hwp",
+      "sha256": "ad3af49c6dd9a1bfc35fe25191b98523fb27dd9e3bfcda90686217f310198947",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01504777-000",
+      "name": "과업지시서_2026 경기도장애인체육회 홈페이지 유지보수 및 고도화 과업내용 및 제안요청서.hwp",
+      "sha256": "026f943ce67c62cc293c72aae1640013f7e97f3368a242682d6c69b7dd403230",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01504777-000",
+      "name": "제안서 평가항목 및 배점표.hwp",
+      "sha256": "f71ba84b33c52cfc1ea8bfb7e5a8d5835e7b1acba6e53669dfb68ef0f9dc061d",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01505476-000",
+      "name": "입찰공고문_26K0039.hwp",
+      "sha256": "a4686780ddd5ee1288cc9d782fc3bc8b03b48136a9affd5bbe4da599e7d683b3",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01505476-000",
+      "name": "제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp",
+      "sha256": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01535546-000",
+      "name": "★ 제안요청서.hwpx",
+      "sha256": "30098fe2a1003915e1632b4b7c291360c35360f56b6d85671354d3765fb33507",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01535546-000",
+      "name": "★공고문.hwpx",
+      "sha256": "2992ec2b2b3913e4fbc24f9d896aa4b4f54a86a78f2208faeab2459d59941cdc",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01543875-000",
+      "name": "공고문(제2026-1776호)(2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역).hwpx",
+      "sha256": "726cd743214765ebc1261517677f94b4f100367ea19b6184b886f7ef83622ad2",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01543875-000",
+      "name": "공고문(제2026-1776호)(PDF).pdf",
+      "sha256": "d26254c91883adb0fb0804b77e30a2ffe89badc140d729ecaedab9a667e08250",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01543875-000",
+      "name": "과업지시서[2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역].hwpx",
+      "sha256": "46ecd13bed8e09f58fcf0d2d0b65b57a898da56e83c026570e128bed5a8f3180",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01549747-000",
+      "name": "(공고문)강릉시 아동돌봄 통합 정보제공 플랫폼 운영 용역_최종.hwpx",
+      "sha256": "127e596827fa4d9ec965a7e98a66925d78226b73d50897f91f5082b49963e637",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01549747-000",
+      "name": "강릉시 아동 돌봄 통합정보제공 플랫폼 운영 제안요청서(운영).hwpx",
+      "sha256": "f868bdca87f7fdfa108744964520ac986383b5f97f925dd0fde15ad72f07c08a",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01553185-000",
+      "name": "2026 혁신지원JOY사업 차세대 종합정보시스템 유지보수 용역(제안요청서)_최종_수정_20260518.hwp",
+      "sha256": "8f73143a17bc2900dd572d82114a5fea94bb88549d025f98edf5405d4aa99422",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01553185-000",
+      "name": "2026-10 차세대 종합정보시스템 유지보수공고문_.pdf",
+      "sha256": "79dbf51f4ebe15fa06c5d528dbca7f8b5c674daee6becc3f77263533833568a4",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01592548-000",
+      "name": "과업지시서(중요 비전자기록물 DB구축 5개년 사업-2년차).hwpx",
+      "sha256": "2ba073c042c5d471cad199c68612a62de77d517e24495f9ae52cc622d9e0c0f9",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01592548-000",
+      "name": "제안요청서(중요 비전자기록물 DB구축 5개년 사업-2년차)_수정.hwpx",
+      "sha256": "723005033ab445b9eebf6156f34cfe8fcbec82e2d5f15366aceee1b789470803",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01592548-000",
+      "name": "중요 비전자기록물 DB구축 5개년 사업(2년차) 입찰 공고(협상의의한계약)_2026-109호.hwpx",
+      "sha256": "398e9ccd53c3162b256958579b926c60a6ec608f7302e0927afee9d859abf86d",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01604996-000",
+      "name": "과업지시서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx",
+      "sha256": "05270afabdb2b4b137056b328302aee771081924c28150cf802f0a0df516e4fe",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01604996-000",
+      "name": "입찰 공고문 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발(2차).pdf",
+      "sha256": "003886877bdae87cd9ed78c460dcad2de7f52c982d7ddb07672f9cf850451605",
+      "method": "PDF text extraction",
+      "error": null
+    },
+    {
+      "bid": "R26BK01604996-000",
+      "name": "제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx",
+      "sha256": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "method": "HWPX section XML paragraphs",
+      "error": null
+    },
+    {
+      "bid": "R26BK01605618-000",
+      "name": "2. 입찰공고문(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업_.hwp",
+      "sha256": "5fc0a50d45533973e143c866aaa89062d92c513159fda72f5fb634f092ee98f7",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01605618-000",
+      "name": "3. 제안요청서(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업).hwp",
+      "sha256": "d5a3ab742345a7d49c508b289223139250008af2002c0bb89591920454b66e9f",
+      "method": "HWP BodyText paragraph records",
+      "error": null
+    },
+    {
+      "bid": "R26BK01605618-000",
+      "name": "입찰공고문(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업_.pdf",
+      "sha256": "de3b89cb2213651c6077762f01955de91d3e2d210958141fa13fc6c230091414",
+      "method": "PDF text extraction",
+      "error": null
+    }
+  ]
+}
