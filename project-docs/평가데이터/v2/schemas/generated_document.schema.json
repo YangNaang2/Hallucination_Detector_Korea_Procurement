@@ -1,0 +1,198 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "company_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tenant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "security_level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "master_dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "master_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "index_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_approval": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_roles": {
+      "type": "array"
+    },
+    "synthetic": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "rag_ingest": {
+      "type": "boolean",
+      "enum": [
+        false
+      ]
+    },
+    "chunks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "chunk_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tenant_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "security_level": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "offset_unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "allowed_roles": {
+            "type": "array"
+          },
+          "text_start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_fact_refs": {
+            "type": "array"
+          },
+          "scenario_fact_ref": {
+            "type": "object",
+            "properties": {
+              "scenario_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scenario_version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "scenario_id",
+              "scenario_version",
+              "pointer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "chunk_id",
+          "document_id",
+          "document_version",
+          "tenant_id",
+          "security_level",
+          "text",
+          "offset_unit",
+          "allowed_roles",
+          "text_start",
+          "text_end",
+          "source_fact_refs",
+          "scenario_fact_ref"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "document_id",
+    "document_version",
+    "company_id",
+    "tenant_id",
+    "security_level",
+    "master_dataset_id",
+    "master_version",
+    "scenario_id",
+    "scenario_version",
+    "notice_id",
+    "notice_version",
+    "review_status",
+    "index_status",
+    "human_approval",
+    "content",
+    "allowed_roles",
+    "synthetic",
+    "rag_ingest",
+    "chunks"
+  ],
+  "additionalProperties": false,
+  "title": "ASTRA synthetic scenario document v2",
+  "description": "v1 문서 스키마를 변경하지 않고 scenario_fact_ref가 있는 새 문서에만 적용."
+}

@@ -1,0 +1,710 @@
+{
+  "version": "2.0.0",
+  "documents": [
+    {
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C01-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C01/L2/C01-QA300-STATE-2.0.0.json",
+      "chunks_path": "retrieval/C01/L2/C01-QA300-STATE-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C01-QA300-PLAN-2.0.0",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C01-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C01/L2/C01-QA300-PLAN-2.0.0.json",
+      "chunks_path": "retrieval/C01/L2/C01-QA300-PLAN-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C01-QA300-COST-2.0.0",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C01-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C01/L3/C01-QA300-COST-2.0.0.json",
+      "chunks_path": "retrieval/C01/L3/C01-QA300-COST-2.0.0.chunks.jsonl",
+      "chunk_count": 8,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C02-QA300-STATE-2.0.0",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C02-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C02/L2/C02-QA300-STATE-2.0.0.json",
+      "chunks_path": "retrieval/C02/L2/C02-QA300-STATE-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C02-QA300-PLAN-2.0.0",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C02-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C02/L2/C02-QA300-PLAN-2.0.0.json",
+      "chunks_path": "retrieval/C02/L2/C02-QA300-PLAN-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C02-QA300-COST-2.0.0",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C02-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C02/L3/C02-QA300-COST-2.0.0.json",
+      "chunks_path": "retrieval/C02/L3/C02-QA300-COST-2.0.0.chunks.jsonl",
+      "chunk_count": 8,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C03-QA300-STATE-2.0.0",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C03-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C03/L2/C03-QA300-STATE-2.0.0.json",
+      "chunks_path": "retrieval/C03/L2/C03-QA300-STATE-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C03-QA300-PLAN-2.0.0",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C03-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C03/L2/C03-QA300-PLAN-2.0.0.json",
+      "chunks_path": "retrieval/C03/L2/C03-QA300-PLAN-2.0.0.chunks.jsonl",
+      "chunk_count": 8,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C03-QA300-COST-2.0.0",
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C03-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C03/L3/C03-QA300-COST-2.0.0.json",
+      "chunks_path": "retrieval/C03/L3/C03-QA300-COST-2.0.0.chunks.jsonl",
+      "chunk_count": 12,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C04-QA300-STATE-2.0.0",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C04-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C04/L2/C04-QA300-STATE-2.0.0.json",
+      "chunks_path": "retrieval/C04/L2/C04-QA300-STATE-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C04-QA300-PLAN-2.0.0",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C04-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C04/L2/C04-QA300-PLAN-2.0.0.json",
+      "chunks_path": "retrieval/C04/L2/C04-QA300-PLAN-2.0.0.chunks.jsonl",
+      "chunk_count": 6,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C04-QA300-COST-2.0.0",
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C04-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C04/L3/C04-QA300-COST-2.0.0.json",
+      "chunks_path": "retrieval/C04/L3/C04-QA300-COST-2.0.0.chunks.jsonl",
+      "chunk_count": 12,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C05-QA300-STATE-2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C05-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C05/L2/C05-QA300-STATE-2.0.0.json",
+      "chunks_path": "retrieval/C05/L2/C05-QA300-STATE-2.0.0.chunks.jsonl",
+      "chunk_count": 4,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C05-QA300-PLAN-2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C05-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C05/L2/C05-QA300-PLAN-2.0.0.json",
+      "chunks_path": "retrieval/C05/L2/C05-QA300-PLAN-2.0.0.chunks.jsonl",
+      "chunk_count": 7,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    },
+    {
+      "document_id": "C05-QA300-COST-2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "allowed_roles": [
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "scenario_id": "SC-QA300-C05-A",
+      "scenario_version": "2.0.0",
+      "version": "2.0.0",
+      "json_path": "retrieval/C05/L3/C05-QA300-COST-2.0.0.json",
+      "chunks_path": "retrieval/C05/L3/C05-QA300-COST-2.0.0.chunks.jsonl",
+      "chunk_count": 17,
+      "document_generation": "complete",
+      "chunk_generation": "complete",
+      "automatic_validation": "passed",
+      "human_approval": "pending",
+      "index_status": "not_indexed",
+      "rag_ingest": false,
+      "source_state": "synthetic_scenario; original company facts unchanged"
+    }
+  ],
+  "recursive_ingest": false,
+  "rag_ingest": false,
+  "query_requirements": [
+    "authenticated",
+    "membership_active",
+    "tenant_id",
+    "role",
+    "company_id",
+    "scenario_id",
+    "scenario_version",
+    "decision_as_of"
+  ],
+  "baseline_document_allowlist": [
+    {
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-CERT-1.0.0-r1.json",
+      "document_id": "C01-CERT-1.0.0-r1",
+      "company_id": "C01",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-PERF-1.0.0-r1.json",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "company_id": "C01",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-PROFILE-1.0.0-r1.json",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "company_id": "C01",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-STAFF-1.0.0-r1.json",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "company_id": "C01",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L3/C01-COST-1.0.0-r1.json",
+      "document_id": "C01-COST-1.0.0-r1",
+      "company_id": "C01",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-CERT-1.0.0-r1.json",
+      "document_id": "C02-CERT-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PERF-1.0.0-r1.json",
+      "document_id": "C02-PERF-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PLAN-1.0.0-r1.json",
+      "document_id": "C02-PLAN-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C02-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PROFILE-1.0.0-r1.json",
+      "document_id": "C02-PROFILE-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-STAFF-1.0.0-r1.json",
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L3/C02-BID-1.0.0-r1.json",
+      "document_id": "C02-BID-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C02-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L3/C02-COST-1.0.0-r1.json",
+      "document_id": "C02-COST-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L3/C02-ESTIMATE-1.0.0-r1.json",
+      "document_id": "C02-ESTIMATE-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C02-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L3/C02-QUOTE-1.0.0-r1.json",
+      "document_id": "C02-QUOTE-1.0.0-r1",
+      "company_id": "C02",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C02-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L2/C03-CERT-1.0.0-r1.json",
+      "document_id": "C03-CERT-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L2/C03-PERF-1.0.0-r1.json",
+      "document_id": "C03-PERF-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L2/C03-PLAN-1.0.0-r1.json",
+      "document_id": "C03-PLAN-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C03-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L2/C03-PROFILE-1.0.0-r1.json",
+      "document_id": "C03-PROFILE-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L2/C03-STAFF-1.0.0-r1.json",
+      "document_id": "C03-STAFF-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L3/C03-BID-1.0.0-r1.json",
+      "document_id": "C03-BID-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C03-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L3/C03-COST-1.0.0-r1.json",
+      "document_id": "C03-COST-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L3/C03-ESTIMATE-1.0.0-r1.json",
+      "document_id": "C03-ESTIMATE-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C03-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C03/L3/C03-QUOTE-1.0.0-r1.json",
+      "document_id": "C03-QUOTE-1.0.0-r1",
+      "company_id": "C03",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C03-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L2/C04-CERT-1.0.0-r1.json",
+      "document_id": "C04-CERT-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L2/C04-PERF-1.0.0-r1.json",
+      "document_id": "C04-PERF-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L2/C04-PLAN-1.0.0-r1.json",
+      "document_id": "C04-PLAN-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C04-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L2/C04-PROFILE-1.0.0-r1.json",
+      "document_id": "C04-PROFILE-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L2/C04-STAFF-1.0.0-r1.json",
+      "document_id": "C04-STAFF-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L3/C04-BID-1.0.0-r1.json",
+      "document_id": "C04-BID-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C04-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L3/C04-COST-1.0.0-r1.json",
+      "document_id": "C04-COST-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L3/C04-ESTIMATE-1.0.0-r1.json",
+      "document_id": "C04-ESTIMATE-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C04-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C04/L3/C04-QUOTE-1.0.0-r1.json",
+      "document_id": "C04-QUOTE-1.0.0-r1",
+      "company_id": "C04",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C04-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-CERT-1.0.0-r1.json",
+      "document_id": "C05-CERT-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-PERF-1.0.0-r1.json",
+      "document_id": "C05-PERF-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-PLAN-1.0.0-r1.json",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C05-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-PROFILE-1.0.0-r1.json",
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-STAFF-1.0.0-r1.json",
+      "document_id": "C05-STAFF-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L2",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L3/C05-BID-1.0.0-r1.json",
+      "document_id": "C05-BID-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C05-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L3/C05-COST-1.0.0-r1.json",
+      "document_id": "C05-COST-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": null
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L3/C05-ESTIMATE-1.0.0-r1.json",
+      "document_id": "C05-ESTIMATE-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C05-REVIEW-r1"
+    },
+    {
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L3/C05-QUOTE-1.0.0-r1.json",
+      "document_id": "C05-QUOTE-1.0.0-r1",
+      "company_id": "C05",
+      "security_level": "L3",
+      "document_version": "1.0.0-r1",
+      "scenario_id": "SC-C05-REVIEW-r1"
+    }
+  ],
+  "context_policy": "context_qa300.py의 권한·시나리오 필터를 사용. 원장 전체/상위 디렉터리 재귀 색인 금지. 새 상태는 유효일에만 별도 가정 분기로 적용; baseline을 수정하지 않음.",
+  "excluded": [
+    "evaluation/",
+    "validation/",
+    "inputs/",
+    "scenarios/",
+    "company_master.json"
+  ]
+}

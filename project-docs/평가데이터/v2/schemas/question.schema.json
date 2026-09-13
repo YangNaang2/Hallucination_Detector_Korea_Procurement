@@ -1,0 +1,264 @@
+{
+  "type": "object",
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_version": {
+      "type": "string",
+      "enum": [
+        "2.0.0"
+      ]
+    },
+    "company_id": {
+      "type": "string",
+      "enum": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ]
+    },
+    "tenant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bid_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_version": {
+      "type": "string",
+      "pattern": "^[0-9]{3}$"
+    },
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_as_of": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_answer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reasoning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_action": {
+      "type": "string",
+      "enum": [
+        "답변",
+        "조건부 답변",
+        "자료부족 안내",
+        "접근 거절"
+      ]
+    },
+    "expected_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "split": {
+      "type": "string",
+      "enum": [
+        "train",
+        "dev",
+        "test"
+      ]
+    },
+    "decision_date_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notice_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "condition_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_nature": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_kinds": {
+      "type": "array"
+    },
+    "public_notice_evidence": {
+      "type": "array"
+    },
+    "company_evidence": {
+      "type": "array"
+    },
+    "private_audit_evidence": {
+      "type": "array"
+    },
+    "master_pointers": {
+      "type": "array"
+    },
+    "synthetic_evidence_ids": {
+      "type": "array"
+    },
+    "scenario_pointers": {
+      "type": "array"
+    },
+    "scenario_evidence_ids": {
+      "type": "array"
+    },
+    "must_include": {
+      "type": "array"
+    },
+    "must_not_claim": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array"
+    },
+    "unresolved_issues": {
+      "type": "array"
+    },
+    "response_requirements": {
+      "type": "array"
+    },
+    "expected_overall_eligibility": {
+      "type": "null"
+    },
+    "actual_answer": {
+      "type": "null"
+    },
+    "hallucination_spans": {
+      "type": "null"
+    },
+    "calculation": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "reuse_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "answer_evidence_excerpt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rag_ingest": {
+      "type": "boolean",
+      "enum": [
+        false
+      ]
+    },
+    "review": {
+      "type": "object"
+    },
+    "user_context": {
+      "type": "object",
+      "properties": {
+        "tenant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authenticated": {
+          "type": "boolean"
+        },
+        "membership_active": {
+          "type": "boolean"
+        },
+        "allowed_security_levels": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "tenant_id",
+        "role",
+        "authenticated",
+        "membership_active",
+        "allowed_security_levels"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "question_id",
+    "dataset_version",
+    "company_id",
+    "tenant_id",
+    "bid_key",
+    "notice_id",
+    "notice_version",
+    "scenario_id",
+    "scenario_version",
+    "decision_as_of",
+    "category",
+    "difficulty",
+    "question",
+    "expected_answer",
+    "reasoning",
+    "expected_action",
+    "expected_status",
+    "split",
+    "decision_date_basis",
+    "notice_name",
+    "condition_scope",
+    "source_nature",
+    "evidence_kinds",
+    "public_notice_evidence",
+    "company_evidence",
+    "private_audit_evidence",
+    "master_pointers",
+    "synthetic_evidence_ids",
+    "scenario_pointers",
+    "scenario_evidence_ids",
+    "must_include",
+    "must_not_claim",
+    "assumptions",
+    "unresolved_issues",
+    "response_requirements",
+    "expected_overall_eligibility",
+    "actual_answer",
+    "hallucination_spans",
+    "calculation",
+    "reuse_of",
+    "answer_evidence_excerpt",
+    "rag_ingest",
+    "review",
+    "user_context"
+  ],
+  "additionalProperties": false,
+  "title": "ASTRA question/expected answer/evidence v2",
+  "description": "평가 전용. 실제 답변과 span은 null. 보안 증거는 관리자 전용으로 분리."
+}

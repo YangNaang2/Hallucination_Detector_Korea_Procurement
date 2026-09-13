@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0.0",
+  "document_id": "C01-QA300-STATE-2.0.0",
+  "document_version": "2.0.0",
+  "company_id": "C01",
+  "tenant_id": "astra-c01",
+  "security_level": "L2",
+  "allowed_roles": [
+    "bid_analyst",
+    "cost_analyst",
+    "bid_approver"
+  ],
+  "master_dataset_id": "ASTRA-SYN-COMPANIES-2026-04-v1",
+  "master_version": "1.0.0",
+  "scenario_id": "SC-QA300-C01-A",
+  "scenario_version": "2.0.0",
+  "notice_id": "R26BK01487327",
+  "notice_version": "000",
+  "synthetic": true,
+  "review_status": "unreviewed",
+  "rag_ingest": false,
+  "index_status": "not_indexed",
+  "human_approval": "pending",
+  "content": "# 가상 한빛IT 합성 시나리오 STATE\n\n합성 내부 검토 자료. 실제 기관 발급 증명서·견적서가 아니다. SC-QA300-C01-A / 2.0.0\n\n## state_change\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| state_change / 합성 증빙 레코드 ID | SYN-QA300-C01-STATE |\n| state_change / 값의 성격 | synthetic_setting |\n| state_change / 종류 | hypothetical_registration |\n| state_change / subject | C01 |\n| state_change / 업종·인증 코드 | 0036 |\n| state_change / baseline | not_held — 미보유 |\n| state_change / assumed_state | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| state_change / 적용 시작일 | 2026-04-01 |\n| state_change / effective_until | 2026-12-31 |\n| state_change / note | 정보통신공사업 등록을 보유한다고 가정한 분기. 실제 등록 또는 기존 마스터 변경 아님. |\n\n## effective_as_of\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| effective_as_of | 2026-06-01 |\n\n## baseline_master_version\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| baseline_master_version | 1.0.0 |\n\n## scenario_id\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| scenario_id | SC-QA300-C01-A |\n",
+  "chunks": [
+    {
+      "chunk_id": "C01-QA300-STATE-2.0.0-CH-001",
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "document_version": "2.0.0",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## state_change\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| state_change / 합성 증빙 레코드 ID | SYN-QA300-C01-STATE |\n| state_change / 값의 성격 | synthetic_setting |\n| state_change / 종류 | hypothetical_registration |\n| state_change / subject | C01 |\n| state_change / 업종·인증 코드 | 0036 |\n| state_change / baseline | not_held — 미보유 |\n| state_change / assumed_state | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님 |\n| state_change / 적용 시작일 | 2026-04-01 |\n| state_change / effective_until | 2026-12-31 |\n| state_change / note | 정보통신공사업 등록을 보유한다고 가정한 분기. 실제 등록 또는 기존 마스터 변경 아님. |\n",
+      "text_start": 85,
+      "text_end": 788,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/0/known_absences",
+          "evidence_id": "SYN-EV-C01-NO-0036"
+        }
+      ],
+      "scenario_fact_ref": {
+        "scenario_id": "SC-QA300-C01-A",
+        "scenario_version": "2.0.0",
+        "pointer": "/scenarios/0/state_change"
+      }
+    },
+    {
+      "chunk_id": "C01-QA300-STATE-2.0.0-CH-002",
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "document_version": "2.0.0",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## effective_as_of\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| effective_as_of | 2026-06-01 |\n",
+      "text_start": 789,
+      "text_end": 1028,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/0/known_absences",
+          "evidence_id": "SYN-EV-C01-NO-0036"
+        }
+      ],
+      "scenario_fact_ref": {
+        "scenario_id": "SC-QA300-C01-A",
+        "scenario_version": "2.0.0",
+        "pointer": "/scenarios/0/effective_as_of"
+      }
+    },
+    {
+      "chunk_id": "C01-QA300-STATE-2.0.0-CH-003",
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "document_version": "2.0.0",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## baseline_master_version\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| baseline_master_version | 1.0.0 |\n",
+      "text_start": 1029,
+      "text_end": 1279,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/0/known_absences",
+          "evidence_id": "SYN-EV-C01-NO-0036"
+        }
+      ],
+      "scenario_fact_ref": {
+        "scenario_id": "SC-QA300-C01-A",
+        "scenario_version": "2.0.0",
+        "pointer": "/scenarios/0/baseline_master_version"
+      }
+    },
+    {
+      "chunk_id": "C01-QA300-STATE-2.0.0-CH-004",
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "document_version": "2.0.0",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "allowed_roles": [
+        "bid_analyst",
+        "cost_analyst",
+        "bid_approver"
+      ],
+      "text": "## scenario_id\n\n가상 한빛IT · C01 · astra-c01 · L2 · 상태 기준일 2026-06-01\n\n합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다. 수치·날짜·보유 사실은 합성 원장의 설정이며 계산값은 별도 표시한다.\n문서 생성은 증빙 확보와 다르다. missing은 그대로 미확보 상태다.\n\n| 항목 | 값 |\n|---|---|\n| scenario_id | SC-QA300-C01-A |\n",
+      "text_start": 1280,
+      "text_end": 1515,
+      "offset_unit": "Unicode code point, end exclusive",
+      "source_fact_refs": [
+        {
+          "master_pointer": "/companies/0/known_absences",
+          "evidence_id": "SYN-EV-C01-NO-0036"
+        }
+      ],
+      "scenario_fact_ref": {
+        "scenario_id": "SC-QA300-C01-A",
+        "scenario_version": "2.0.0",
+        "pointer": "/scenarios/0/scenario_id"
+      }
+    }
+  ]
+}

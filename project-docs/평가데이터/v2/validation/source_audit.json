@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "version": "2.0.0",
+  "questions": 300,
+  "sample_questions": 25,
+  "companies": {
+    "C01": 60,
+    "C02": 60,
+    "C03": 60,
+    "C04": 60,
+    "C05": 60
+  },
+  "notices": 51,
+  "new_documents": 15,
+  "new_chunks": 106,
+  "unique_notice_excerpts": 299,
+  "company_chunk_links": 237,
+  "source_checks": {
+    "canonical_offsets": "passed",
+    "binary_hashes": "passed"
+  },
+  "baseline_regression": "v1/r1 hashes and C01 byte regeneration passed",
+  "human_approval": "pending",
+  "actual_answers": 0,
+  "span_labels": 0,
+  "limitations": [
+    "문자열·참조 검사는 의미적 정답 보증이나 RAG 성능 평가가 아니다.",
+    "기존 수동 PDF 3개 인용은 원래 페이지 대조 상태를 보존; 자동 문자 offset 검사 대상 아님.",
+    "자유서술 신규 질문의 동일 의미 중복·표 해석·법적 조건은 사람 검수 필요."
+  ]
+}

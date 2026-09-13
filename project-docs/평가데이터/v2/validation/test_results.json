@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "suites": [
+    {
+      "module": "test_company_master",
+      "tests_run": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": true
+    },
+    {
+      "module": "test_c01_documents",
+      "tests_run": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": true
+    },
+    {
+      "module": "test_remaining_companies",
+      "tests_run": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": true
+    },
+    {
+      "module": "test_qa300",
+      "tests_run": 37,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": true
+    }
+  ],
+  "total": 120,
+  "status": "passed",
+  "scope": "파일·스키마·권한·산식·날짜·오류 주입·회귀 테스트; 실제 RAG/LLM 성능 아님"
+}

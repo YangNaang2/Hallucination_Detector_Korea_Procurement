@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "total": 300,
+  "company_targets": {
+    "C01": 60,
+    "C02": 60,
+    "C03": 60,
+    "C04": 60,
+    "C05": 60
+  },
+  "notice_target": 51,
+  "construction": {
+    "reviewed_existing": 25,
+    "notice_specific": 255,
+    "new_scenario": 20
+  },
+  "allocation": "51개 공고 각각 5개의 서로 다른 질문; (공고 순번+질문 순번)%5로 회사 배정. 회사별 기존 5개+새 시나리오 4개.",
+  "category_targets": {
+    "contract": 32,
+    "personnel": 41,
+    "boundary": 33,
+    "multi_document": 13,
+    "access_policy": 14,
+    "eligibility": 21,
+    "performance": 10,
+    "certification": 22,
+    "conflict": 24,
+    "cost": 26,
+    "fact": 19
+  },
+  "category_target_scope": "공고 255건의 사전 유형 배정; 기존 25건과 신규 시나리오 20건은 별도 합산",
+  "split_policy": "대표 공고 C01/C02=train, C03=dev, C04/C05=test. 나머지 공고 46건을 SHA256 정렬 후 37/5/4건 배정. 동일 공고와 하위 시나리오는 분리 금지. 각 분할에 회사 대조·합성 시나리오 포함.",
+  "limitation": "공통 회사 원장은 공유 지식이다. 회사 일반화·완전히 독립된 평가셋이라는 주장은 하지 않는다. 유사 문형은 사람 검토 대상."
+}
