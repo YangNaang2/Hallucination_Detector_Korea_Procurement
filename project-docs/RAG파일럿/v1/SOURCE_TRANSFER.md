@@ -10,7 +10,29 @@
 - 별도 체크섬: `work/source-transfer/astra-source-transfer.zip.sha256`
 - 실제 원천 루트: `C:/Users/aidan/AppData/Local/Temp/astra-source-review`
 
-ZIP과 원천 파일은 Git에 올리지 않는다. 사용자가 USB 또는 직접 파일 전송으로 워크스테이션에 전달해야 한다. 이 문서의 커밋/push는 ZIP 전송을 의미하지 않는다.
+사용자의 추가 요청에 따라 ZIP과 체크섬을 같은 비공개 저장소의 GitHub Release 첨부파일로 전달한다. Git 커밋에는 대용량 원천 파일을 넣지 않는다. 모델·키·전체 실행 프롬프트는 Release에도 포함하지 않는다.
+
+## GitHub에서 받기
+
+Release: `source-transfer-v1-20260913`
+
+저장소 주소: `https://github.com/YangNaang2/ko-lettucedetect`
+
+워크스테이션에서 GitHub 인증 후 저장소 루트에서 실행한다. 미커밋 변경이 있으면 먼저 보존하고, 작업 브랜치에서는 `origin/main`을 안전하게 통합한다. 아래 `pull`은 수정 없는 main 체크아웃을 기준으로 한다.
+
+```bash
+git pull --ff-only origin main
+mkdir -p work/source-transfer
+gh release download source-transfer-v1-20260913 \
+  --repo YangNaang2/ko-lettucedetect \
+  --pattern 'astra-source-transfer.zip*' \
+  --dir work/source-transfer
+(cd work/source-transfer && sha256sum -c astra-source-transfer.zip.sha256)
+```
+
+기존 다운로드가 있으면 해시부터 확인하고 재사용한다. 다른 파일을 무조건 덮어쓰지 않는다. 저장소는 비공개이므로 브라우저 다운로드도 해당 저장소에 접근할 수 있는 GitHub 로그인이 필요하다. Codex 계정 로그인과 GitHub 저장소 인증은 별도다.
+
+Git의 `Download ZIP` 또는 `git clone`만으로는 Release 첨부파일이 내려오지 않는다. 위 다운로드 단계까지 실행해야 원천 자료가 준비된다. 원천 자료 이후 GPU에 맞는 Linux 실행 환경·고정 모델 다운로드·색인 재구축은 워크스테이션에서 수행한다.
 
 ## ZIP 내용 및 검증
 
