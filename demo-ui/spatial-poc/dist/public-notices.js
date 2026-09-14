@@ -12,6 +12,7 @@
   const url=new URL(r.url);const safe=url.protocol==='https:'&&url.hostname==='www.g2b.go.kr';
   $('#detail').innerHTML='<small>'+escape(r.id)+'</small><h2>'+escape(r.title)+'</h2><p>'+escape(r.agency)+'</p>'+
    '<dl><dt>사업금액 · 공고정보 예산</dt><dd>'+money(r.budget)+'</dd><dt>수집 월 / 분야</dt><dd>'+escape(r.month+' / '+r.sector)+'</dd><dt>지도 표시</dt><dd>'+escape(r.region?r.region.name+' 지역 대표점 · 기관명 표기 기준':'위치 미확인 · 지도에 임의 배치하지 않음')+'</dd><dt>수집된 마감 정보</dt><dd>'+escape(r.deadline||'미기재 · 공고 원문 또는 아래 일정 요건 확인')+'</dd><dt>표본 목록의 첨부 수</dt><dd>'+r.attachmentCount+'개 · 첨부 원문은 이 화면에 미탑재</dd></dl>'+
+   '<p><a href="rag-observatory.html?bid='+encodeURIComponent(r.id)+'">이 공고 질문하기 ↗</a></p>'+
    (safe?'<a href="'+escape(r.url)+'" target="_blank" rel="noopener noreferrer">나라장터 공고 열기 ↗</a>':'')+
    '<p class="source-note">'+(r.reviewAvailable?'아래는 사람이 작성한 요건 시트입니다. 원문 청크나 RAG 생성 답변이 아닙니다. 미확인·불일치 메모를 함께 확인하세요.':'요건 시트 미제출 · 공고 기본정보만 표시합니다.')+'</p>'+
    r.requirements.map((x,i)=>'<details '+(i===0?'open':'')+'><summary>'+escape(x.label)+'</summary><p class="extracted">'+escape(x.text)+'</p></details>').join('')+
