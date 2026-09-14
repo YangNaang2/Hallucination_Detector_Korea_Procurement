@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-09-14T03:55:56.994819+00:00",
+  "actual_model_calls": 0,
+  "actual_index": {
+    "notices": 51,
+    "documents": 167,
+    "chunks": 3002,
+    "access": "read_only",
+    "retrieval": "lexical"
+  },
+  "commands": [
+    {
+      "command": [
+        "python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "demo-ui/spatial-poc",
+        "-p",
+        "test_l1_server.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_cancel_and_deadline (test_l1_server.Fixture.test_cancel_and_deadline) ... ok\ntest_cancel_before_reservation_and_duplicates (test_l1_server.Fixture.test_cancel_before_reservation_and_duplicates) ... ok\ntest_disconnected_empty_error_timeout (test_l1_server.Fixture.test_disconnected_empty_error_timeout) ... ok\ntest_hash_offsets_and_gold_rejected (test_l1_server.Fixture.test_hash_offsets_and_gold_rejected) ... ok\ntest_invalid_inputs_and_claimed_roles (test_l1_server.Fixture.test_invalid_inputs_and_claimed_roles) ... ok\ntest_l2_other_bid_and_private_excluded (test_l1_server.Fixture.test_l2_other_bid_and_private_excluded) ... ok\ntest_missing_index (test_l1_server.Fixture.test_missing_index) ... ok\ntest_model_endpoint_is_operator_pinned (test_l1_server.Fixture.test_model_endpoint_is_operator_pinned) ... ok\ntest_model_sse_adapter_with_mock_transport_only (test_l1_server.Fixture.test_model_sse_adapter_with_mock_transport_only) ... ok\ntest_no_results_no_generator (test_l1_server.Fixture.test_no_results_no_generator) ... ok\ntest_normal_and_source (test_l1_server.Fixture.test_normal_and_source) ... ok\ntest_return_reverification (test_l1_server.Fixture.test_return_reverification) ... ok\ntest_http_cancel (test_l1_server.HTTP.test_http_cancel) ... ok\ntest_http_disconnect_releases_worker (test_l1_server.HTTP.test_http_disconnect_releases_worker) ... ok\ntest_http_origin_host_token_and_paths (test_l1_server.HTTP.test_http_origin_host_token_and_paths) ... ok\ntest_http_stream_and_status (test_l1_server.HTTP.test_http_stream_and_status) ... ok\ntest_all_51_real_index_no_model (test_l1_server.LocalIndex.test_all_51_real_index_no_model) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 10.096s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node.exe",
+        "demo-ui/spatial-poc/test-rag-http.mjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS UTF-8 byte splits and coalesced records\nPASS invalid JSON, oversized line, unterminated stream\nPASS happy path canonical answer and sources\nPASS request, notice, mode, snapshot, sequence and detection spoof\nPASS unauthorized/evaluation evidence, invalid hashes and offsets\nPASS done hash/string mismatch and incomplete connection\nPASS terminal errors, late packets, unknown events\n{\"tests\":7,\"passed\":7,\"actual_model_called\":false}\n"
+    },
+    {
+      "command": [
+        "node.exe",
+        "demo-ui/spatial-poc/test-rag-ux.mjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS saved matching/cancel/stale responses, event guards, XSS, citations, Unicode spans, all 4 canonical cases\n"
+    },
+    {
+      "command": [
+        "node.exe",
+        "demo-ui/spatial-poc/check-public-notices.cjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS: 51 IDs, 51 sheets; budget boundaries, invalid ranges, combined filters, unknown locations and map counts\n"
+    },
+    {
+      "command": [
+        "python.exe",
+        "demo-ui/spatial-poc/check_rag_observatory.py"
+      ],
+      "exit_code": 0,
+      "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.006s\n\nOK\n"
+    }
+  ],
+  "final_server_rerun": {
+    "tests": 17,
+    "passed": 17,
+    "exit_code": 0,
+    "seconds": 7.743,
+    "reason": "Reject non-string test behavior; drain small rejected bodies before Windows 4xx close",
+    "actual_model_calls": 0
+  }
+}
