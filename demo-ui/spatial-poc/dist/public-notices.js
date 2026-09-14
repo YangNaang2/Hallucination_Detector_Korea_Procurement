@@ -31,7 +31,7 @@
   const range=core.parseRange($('#min').value,$('#max').value);
   $('#filter-error').textContent=range.error||'';$('#min').setAttribute('aria-invalid',String(!!range.error));$('#max').setAttribute('aria-invalid',String(!!range.error));
   document.querySelectorAll('[data-range]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.range===$('#min').value+','+$('#max').value)));
-  visible=range.error?[]:core.filter(records,{...range,query:$('#query').value,sector:$('#sector').value,month:$('#month').value,region:$('#region').value,review:$('#review').checked});
+  visible=range.error?[]:core.filter(records,{...range,query:$('#query').value,condition:$('#condition').value,sector:$('#sector').value,month:$('#month').value,region:$('#region').value,review:$('#review').checked});
   if(!visible.some(r=>r.id===selected))selected=visible[0]?.id||null;
   $('#count').textContent=range.error?'금액 입력을 확인하세요.':`${visible.length} / ${records.length}건 · 요건 시트 ${visible.filter(r=>r.reviewAvailable).length}건`;
   renderList();showDetail();renderMap();
@@ -50,7 +50,7 @@
   const data=await response.json();records=data.records.map(r=>({...r,region:core.locate(r.agency)}));
   $('#sector').innerHTML+=[...new Set(records.map(r=>r.sector))].map(c=>'<option>'+escape(c)+'</option>').join('');
   $('#region').innerHTML+=[...new Set(records.filter(r=>r.region).map(r=>r.region.name))].sort().map(c=>'<option>'+escape(c)+'</option>').join('');
-  apply();
+  const requested=new URLSearchParams(location.search).get('bid');if(requested){$('#query').value=requested;}apply();
  }catch(e){$('#count').textContent='공고 자료를 불러오지 못했습니다. 실행.bat으로 서버를 실행한 뒤 다시 여세요.';$('#map-status').textContent='공고 자료 로딩 실패';console.error(e);return;}
  try{
   engine=await import('https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.mjs');

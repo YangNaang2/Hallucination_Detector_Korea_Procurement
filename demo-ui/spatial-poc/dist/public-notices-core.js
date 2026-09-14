@@ -22,7 +22,7 @@
  function filter(records,f){return records.filter(r=>
   (f.min==null||r.budget>=f.min)&&(f.max==null||r.budget<f.max)&&
   (!f.sector||r.sector===f.sector)&&(!f.month||r.month===f.month)&&
-  (!f.review||r.reviewAvailable)&&(!f.region||(r.region?.name||'미확인')===f.region)&&
+  (!f.review||r.reviewAvailable)&&(!f.condition||r.conditionMentions?.includes(f.condition))&&(!f.region||(r.region?.name||'미확인')===f.region)&&
   (!f.query||[r.id,r.title,r.agency].some(v=>v.toLowerCase().includes(f.query.toLowerCase().trim()))));}
  function group(records){const g=new Map();for(const r of records){if(!r.region)continue;const key=r.region.name;if(!g.has(key))g.set(key,{...r.region,records:[]});g.get(key).records.push(r);}return [...g.values()];}
  const api={locate,parseRange,filter,group};root.PublicNotices=api;if(typeof module!=='undefined')module.exports=api;
