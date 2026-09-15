@@ -1,0 +1,18 @@
+{
+  "reviewed_answers": 71,
+  "new_this_turn": 31,
+  "unreviewed_answers": 224,
+  "unit_tests_passed": 25,
+  "handoff_check": "PASS 300 selected;295 generated;5 denials",
+  "manual_evidence_anchors_verified": 138,
+  "anchor_checks": [
+    "exact chunk text SHA256",
+    "citation and chunk_id",
+    "context quote Unicode offsets",
+    "canonical source offsets"
+  ],
+  "machine_assistance": "4-record smoke rejected;excluded from evaluation",
+  "original_llama_server_pid": 4922,
+  "original_llama_server_preserved": true,
+  "final_gold_count": 0
+}

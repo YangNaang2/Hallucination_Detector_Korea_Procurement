@@ -1,0 +1,131 @@
+{
+  "question_id": "ASTRA-300-C01-N06-E1",
+  "answer_sha256": "bf30d549968940b377464507b283f370786c6789f7e7bec58c97cad27686d83a",
+  "context_sha256": "c0478ef3e0d3584e3685cc7a52a47a19ddfba95544da2ae09b593d706bb08c73",
+  "identity_sha256": "e0d341a77bf5e90d7aa0a74bf6d95141b61b8e5eb3efa2f5275dc7d353107d3a",
+  "author": "local Qwen3-4B model",
+  "independent_of_answer_generator": false,
+  "human_approval": "pending",
+  "approved_spans": null,
+  "root_agent_reviewed": false,
+  "attempt": 1,
+  "status": "completed",
+  "claim_labels": [
+    {
+      "segment_id": 0,
+      "start": 0,
+      "end": 52,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "판단이 근거와 일치함",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 0,
+        "end": 52,
+        "quote": "**판단**: 기록물 DB 사업 실적 평가에 하드웨어 공급액을 전부 합산할 수 없습니다.  \n",
+        "label": "uncertain",
+        "reason": "판단이 근거와 일치함"
+      }
+    },
+    {
+      "segment_id": 1,
+      "start": 52,
+      "end": 225,
+      "label": "supported",
+      "model_label": "supported",
+      "reason": "근거가 명확하게 지지함",
+      "validation_issues": [],
+      "evidence": {
+        "context_start": 3505,
+        "context_end": 3586,
+        "quote": "수행실적 총괄표(서식21)와 수행실적증명서(서식22) 또는 소프트웨어사업 이행실적 확인서(한국소프트웨어산업협회 발행) 원본을 제출한 실적건만 인정"
+      },
+      "span": null
+    },
+    {
+      "segment_id": 2,
+      "start": 225,
+      "end": 295,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "근거가 명확하게 지지함",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 225,
+        "end": 295,
+        "quote": "**유보사항**: 하드웨어 공급액은 정보시스템 구축 실적에 포함되지 않으므로, 해당 금액을 실적 평가에 반영할 수 없습니다. ",
+        "label": "uncertain",
+        "reason": "근거가 명확하게 지지함"
+      }
+    },
+    {
+      "segment_id": 3,
+      "start": 295,
+      "end": 322,
+      "label": "uncertain",
+      "model_label": "uncertain",
+      "reason": "근거가 명확하지 않으며, 실적 증빙이 필요하다는 문장은 근거가 없음",
+      "validation_issues": [],
+      "evidence": null,
+      "span": {
+        "start": 295,
+        "end": 322,
+        "quote": "근거가 명확하지 않으며, 실적 증빙이 필요합니다.",
+        "label": "uncertain",
+        "reason": "근거가 명확하지 않으며, 실적 증빙이 필요하다는 문장은 근거가 없음"
+      }
+    }
+  ],
+  "segment_count": 4,
+  "model_reviewed_ranges": [
+    [
+      0,
+      52
+    ],
+    [
+      52,
+      225
+    ],
+    [
+      225,
+      295
+    ],
+    [
+      295,
+      322
+    ]
+  ],
+  "spans": [
+    {
+      "start": 0,
+      "end": 52,
+      "quote": "**판단**: 기록물 DB 사업 실적 평가에 하드웨어 공급액을 전부 합산할 수 없습니다.  \n",
+      "label": "uncertain",
+      "reason": "판단이 근거와 일치함"
+    },
+    {
+      "start": 225,
+      "end": 295,
+      "quote": "**유보사항**: 하드웨어 공급액은 정보시스템 구축 실적에 포함되지 않으므로, 해당 금액을 실적 평가에 반영할 수 없습니다. ",
+      "label": "uncertain",
+      "reason": "근거가 명확하게 지지함"
+    },
+    {
+      "start": 295,
+      "end": 322,
+      "quote": "근거가 명확하지 않으며, 실적 증빙이 필요합니다.",
+      "label": "uncertain",
+      "reason": "근거가 명확하지 않으며, 실적 증빙이 필요하다는 문장은 근거가 없음"
+    }
+  ],
+  "prompt_tokens": 3727,
+  "completion_tokens": 522,
+  "validation_downgrades": 2,
+  "seconds": 50.50013128199498
+}

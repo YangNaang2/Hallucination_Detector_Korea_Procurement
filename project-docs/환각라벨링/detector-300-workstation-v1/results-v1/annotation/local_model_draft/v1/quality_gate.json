@@ -1,0 +1,11 @@
+{
+  "status": "rejected_for_full_expansion",
+  "records": 4,
+  "reason": "Qwen3-4B falsely supported invented price deadline and often paraphrased evidence instead of quoting it. Exact-quote validation masked failures. Do not score these drafts or mark them root-agent reviewed.",
+  "integrated_into_labels": false,
+  "canonical_answers_modified": false,
+  "own_server_stopped": true,
+  "original_server_preserved": true,
+  "experimental_runner_private_path": "work/detector300/annotation/rejected_machine_draft.py",
+  "experimental_runner_sha256": "b62446c8c896e48c0192a12f2e2fba8462e58fe0c0785b5c72760a9210a0ab4f"
+}

@@ -1,0 +1,144 @@
+{
+  "question_id": "ASTRA-300-C01-N03-E4",
+  "answer_sha256": "9d62af69a52e58b8cb9b94a6d1d7e97daf3539560ad829146cc241797853edce",
+  "context_sha256": "f1e7b2739e1da5482161a014534371194f6cb488874d20e468de56e27fd9478f",
+  "identity_sha256": "e0d341a77bf5e90d7aa0a74bf6d95141b61b8e5eb3efa2f5275dc7d353107d3a",
+  "author": "local Qwen3-4B model",
+  "independent_of_answer_generator": false,
+  "human_approval": "pending",
+  "approved_spans": null,
+  "root_agent_reviewed": false,
+  "attempt": 1,
+  "status": "completed",
+  "claim_labels": [
+    {
+      "segment_id": 0,
+      "start": 0,
+      "end": 57,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "제안요청서에 명시된 기술지원 확약서 제출의 필수성",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 0,
+        "end": 57,
+        "quote": "**판단**: 대학 시스템의 기술지원 확약서 요구를 일반 SW사업자 등록으로 대체할 수 없습니다.  \n",
+        "label": "uncertain",
+        "reason": "제안요청서에 명시된 기술지원 확약서 제출의 필수성"
+      }
+    },
+    {
+      "segment_id": 1,
+      "start": 57,
+      "end": 232,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고 원문에 기술지원 확약서 제출의 필수성 명시",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 57,
+        "end": 232,
+        "quote": "**근거**: [1] 공고 원문에 따르면, \"부속기관 외국인입시 시스템 연동을 위해 세종대학교 세종어학원 부속행정시스템 고도화 사업 수행업체의 기술지원 확약서를 제출 한 업체\"가 제안요건에 포함되어 있으며, 이는 일반 SW사업자 등록으로 대체할 수 있는 조건이 아니므로, 기술지원 확약서 제출이 필수적입니다.  \n",
+        "label": "uncertain",
+        "reason": "공고 원문에 기술지원 확약서 제출의 필수성 명시"
+      }
+    },
+    {
+      "segment_id": 2,
+      "start": 232,
+      "end": 357,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 232,
+        "end": 357,
+        "quote": "**유보사항**: 제안요청서([2] 공고 원문)에 따르면, 기술지원 확약서 제출은 특정 시스템 연동을 위한 필수 조건으로 명시되어 있으며, 이는 일반 SW사업자 등록으로 대체할 수 없다는 점을 명시적으로 규정하고 있습니다. ",
+        "label": "uncertain",
+        "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시"
+      }
+    },
+    {
+      "segment_id": 3,
+      "start": 357,
+      "end": 397,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 357,
+        "end": 397,
+        "quote": "따라서, 기술지원 확약서는 일반 SW사업자 등록으로 대체할 수 없습니다.",
+        "label": "uncertain",
+        "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시"
+      }
+    }
+  ],
+  "segment_count": 4,
+  "model_reviewed_ranges": [
+    [
+      0,
+      57
+    ],
+    [
+      57,
+      232
+    ],
+    [
+      232,
+      357
+    ],
+    [
+      357,
+      397
+    ]
+  ],
+  "spans": [
+    {
+      "start": 0,
+      "end": 57,
+      "quote": "**판단**: 대학 시스템의 기술지원 확약서 요구를 일반 SW사업자 등록으로 대체할 수 없습니다.  \n",
+      "label": "uncertain",
+      "reason": "제안요청서에 명시된 기술지원 확약서 제출의 필수성"
+    },
+    {
+      "start": 57,
+      "end": 232,
+      "quote": "**근거**: [1] 공고 원문에 따르면, \"부속기관 외국인입시 시스템 연동을 위해 세종대학교 세종어학원 부속행정시스템 고도화 사업 수행업체의 기술지원 확약서를 제출 한 업체\"가 제안요건에 포함되어 있으며, 이는 일반 SW사업자 등록으로 대체할 수 있는 조건이 아니므로, 기술지원 확약서 제출이 필수적입니다.  \n",
+      "label": "uncertain",
+      "reason": "공고 원문에 기술지원 확약서 제출의 필수성 명시"
+    },
+    {
+      "start": 232,
+      "end": 357,
+      "quote": "**유보사항**: 제안요청서([2] 공고 원문)에 따르면, 기술지원 확약서 제출은 특정 시스템 연동을 위한 필수 조건으로 명시되어 있으며, 이는 일반 SW사업자 등록으로 대체할 수 없다는 점을 명시적으로 규정하고 있습니다. ",
+      "label": "uncertain",
+      "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시"
+    },
+    {
+      "start": 357,
+      "end": 397,
+      "quote": "따라서, 기술지원 확약서는 일반 SW사업자 등록으로 대체할 수 없습니다.",
+      "label": "uncertain",
+      "reason": "제안요청서에 기술지원 확약서 제출의 필수성 명시"
+    }
+  ],
+  "prompt_tokens": 3856,
+  "completion_tokens": 646,
+  "validation_downgrades": 4,
+  "seconds": 52.17549964899081
+}

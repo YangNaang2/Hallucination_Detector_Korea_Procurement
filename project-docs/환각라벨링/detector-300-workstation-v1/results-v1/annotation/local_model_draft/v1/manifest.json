@@ -1,0 +1,53 @@
+{
+  "version": "local-draft-v1",
+  "model": "Qwen/Qwen3-4B-GGUF",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "model_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+  "prompt_sha256": "7ad14d7f48f0f88473280df12ef692048ba8c59c9bd1597b2448624ad30a6050",
+  "code_sha256": "b62446c8c896e48c0192a12f2e2fba8462e58fe0c0785b5c72760a9210a0ab4f",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "label": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "contradiction",
+            "unsupported",
+            "uncertain",
+            "citation_error",
+            "quality_only"
+          ]
+        },
+        "span": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "span",
+        "evidence",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "temperature": 0,
+  "seed": 0,
+  "context_per_slot": 8192,
+  "answer_generator_same_model": true,
+  "detector_predictions_used": false,
+  "expected_answers_used": false
+}

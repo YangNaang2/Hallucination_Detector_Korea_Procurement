@@ -1,0 +1,234 @@
+{
+  "question_id": "ASTRA-300-C01-N04-E3",
+  "answer_sha256": "9ea876d68be542860e7f0f4c9d2d9ae05fc6455118577e44bffa19cacdbd7918",
+  "context_sha256": "9f2256ee364ea123aee544d5ff2e1a17e5173429b79723aa1ae2bb1458ff9566",
+  "identity_sha256": "e0d341a77bf5e90d7aa0a74bf6d95141b61b8e5eb3efa2f5275dc7d353107d3a",
+  "author": "local Qwen3-4B model",
+  "independent_of_answer_generator": false,
+  "human_approval": "pending",
+  "approved_spans": null,
+  "root_agent_reviewed": false,
+  "attempt": 1,
+  "status": "completed",
+  "claim_labels": [
+    {
+      "segment_id": 0,
+      "start": 0,
+      "end": 13,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "판단문은 근거와 일치하며, 공고문에서 명시된 제출기한과 마감일의 차이를 기준으로 한 결론이다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 0,
+        "end": 13,
+        "quote": "**판단:** No  \n",
+        "label": "uncertain",
+        "reason": "판단문은 근거와 일치하며, 공고문에서 명시된 제출기한과 마감일의 차이를 기준으로 한 결론이다."
+      }
+    },
+    {
+      "segment_id": 1,
+      "start": 13,
+      "end": 100,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출기한과 마감일의 차이가 명시되어 있으며, 이는 결론에 기반한다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 13,
+        "end": 100,
+        "quote": "**근거:** [1] 공고문에서 공동수급협정서 제출기한은 2026년 5월 11일 18:00까지이며, 가격제안서 제출 마감일은 2026년 9월 13일입니다. ",
+        "label": "uncertain",
+        "reason": "공고문에서 제출기한과 마감일의 차이가 명시되어 있으며, 이는 결론에 기반한다."
+      }
+    },
+    {
+      "segment_id": 2,
+      "start": 100,
+      "end": 172,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 100,
+        "end": 172,
+        "quote": "공동수급협정서는 제출마감 후에는 변경하거나 제출할 수 없으며, 제출마감 전에 가격제안서를 제출하면 협정서를 변경할 수 없습니다. ",
+        "label": "uncertain",
+        "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+      }
+    },
+    {
+      "segment_id": 3,
+      "start": 172,
+      "end": 212,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 172,
+        "end": 212,
+        "quote": "따라서 공동수급협정서는 가격제안서 마감 시점에 제출할 수 없습니다.  \n",
+        "label": "uncertain",
+        "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+      }
+    },
+    {
+      "segment_id": 4,
+      "start": 212,
+      "end": 292,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 212,
+        "end": 292,
+        "quote": "**유보사항:** 공동수급협정서는 제출마감일(2026년 5월 11일)과 가격제안서 마감일(2026년 9월 13일) 사이에 제출할 수 없습니다. ",
+        "label": "uncertain",
+        "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+      }
+    },
+    {
+      "segment_id": 5,
+      "start": 292,
+      "end": 361,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 292,
+        "end": 361,
+        "quote": "또한, 공동수급협정서는 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능합니다. ",
+        "label": "uncertain",
+        "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+      }
+    },
+    {
+      "segment_id": 6,
+      "start": 361,
+      "end": 398,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다.",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 361,
+        "end": 398,
+        "quote": "따라서 공동수급협정서는 가격제안서 마감 시점에 제출할 수 없습니다.",
+        "label": "uncertain",
+        "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+      }
+    }
+  ],
+  "segment_count": 7,
+  "model_reviewed_ranges": [
+    [
+      0,
+      13
+    ],
+    [
+      13,
+      100
+    ],
+    [
+      100,
+      172
+    ],
+    [
+      172,
+      212
+    ],
+    [
+      212,
+      292
+    ],
+    [
+      292,
+      361
+    ],
+    [
+      361,
+      398
+    ]
+  ],
+  "spans": [
+    {
+      "start": 0,
+      "end": 13,
+      "quote": "**판단:** No  \n",
+      "label": "uncertain",
+      "reason": "판단문은 근거와 일치하며, 공고문에서 명시된 제출기한과 마감일의 차이를 기준으로 한 결론이다."
+    },
+    {
+      "start": 13,
+      "end": 100,
+      "quote": "**근거:** [1] 공고문에서 공동수급협정서 제출기한은 2026년 5월 11일 18:00까지이며, 가격제안서 제출 마감일은 2026년 9월 13일입니다. ",
+      "label": "uncertain",
+      "reason": "공고문에서 제출기한과 마감일의 차이가 명시되어 있으며, 이는 결론에 기반한다."
+    },
+    {
+      "start": 100,
+      "end": 172,
+      "quote": "공동수급협정서는 제출마감 후에는 변경하거나 제출할 수 없으며, 제출마감 전에 가격제안서를 제출하면 협정서를 변경할 수 없습니다. ",
+      "label": "uncertain",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+    },
+    {
+      "start": 172,
+      "end": 212,
+      "quote": "따라서 공동수급협정서는 가격제안서 마감 시점에 제출할 수 없습니다.  \n",
+      "label": "uncertain",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+    },
+    {
+      "start": 212,
+      "end": 292,
+      "quote": "**유보사항:** 공동수급협정서는 제출마감일(2026년 5월 11일)과 가격제안서 마감일(2026년 9월 13일) 사이에 제출할 수 없습니다. ",
+      "label": "uncertain",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+    },
+    {
+      "start": 292,
+      "end": 361,
+      "quote": "또한, 공동수급협정서는 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능합니다. ",
+      "label": "uncertain",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+    },
+    {
+      "start": 361,
+      "end": 398,
+      "quote": "따라서 공동수급협정서는 가격제안서 마감 시점에 제출할 수 없습니다.",
+      "label": "uncertain",
+      "reason": "공고문에서 제출마감 후에는 변경이 불가능하며, 제출마감 전에 가격제안서를 제출하면 협정서 변경이 불가능하다는 내용이 명시되어 있다."
+    }
+  ],
+  "prompt_tokens": 3510,
+  "completion_tokens": 1137,
+  "validation_downgrades": 7,
+  "seconds": 57.48146425100276
+}

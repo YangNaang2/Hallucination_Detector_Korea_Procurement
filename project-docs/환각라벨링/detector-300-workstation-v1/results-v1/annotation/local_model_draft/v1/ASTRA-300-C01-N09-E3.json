@@ -1,0 +1,156 @@
+{
+  "question_id": "ASTRA-300-C01-N09-E3",
+  "answer_sha256": "1fb57ba8862dd8a3ff59a732ba2a1ffd07d3e405af02114e4210466380361e33",
+  "context_sha256": "8d9ac3b659bd9a74638eb03b5941dbb56c8000d1165b73c729513cb6ce5358ca",
+  "identity_sha256": "e0d341a77bf5e90d7aa0a74bf6d95141b61b8e5eb3efa2f5275dc7d353107d3a",
+  "author": "local Qwen3-4B model",
+  "independent_of_answer_generator": false,
+  "human_approval": "pending",
+  "approved_spans": null,
+  "root_agent_reviewed": false,
+  "attempt": 1,
+  "status": "completed",
+  "claim_labels": [
+    {
+      "segment_id": 0,
+      "start": 0,
+      "end": 50,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "문서에서 직접 명시된 결론",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 0,
+        "end": 50,
+        "quote": "**판단:** 부족한 자격을 공동수급으로 보완할 수 있다고 바로 안내할 수 없습니다.  \n",
+        "label": "uncertain",
+        "reason": "문서에서 직접 명시된 결론"
+      }
+    },
+    {
+      "segment_id": 1,
+      "start": 50,
+      "end": 165,
+      "label": "supported",
+      "model_label": "supported",
+      "reason": "근거가 지지",
+      "validation_issues": [],
+      "evidence": {
+        "context_start": 246,
+        "context_end": 293,
+        "quote": "본 사업은 시스템 일체형 구축이 요구되는 사업으로, 공동수급체 구성을 허용하지 아니함"
+      },
+      "span": null
+    },
+    {
+      "segment_id": 2,
+      "start": 165,
+      "end": 177,
+      "label": "quality_only",
+      "model_label": "quality_only",
+      "reason": "문서에서의 제목 또는 반복",
+      "validation_issues": [],
+      "evidence": null,
+      "span": null
+    },
+    {
+      "segment_id": 3,
+      "start": 177,
+      "end": 319,
+      "label": "supported",
+      "model_label": "supported",
+      "reason": "근거가 지지",
+      "validation_issues": [],
+      "evidence": {
+        "context_start": 301,
+        "context_end": 384,
+        "quote": "본 사업은 하드웨어와 소프트웨어가 기능적으로 불가분의 관계에 있고 실시간 연계 및 통합 운영이 요구되는 사업 특성상 공동수급체 구성을 허용하지 아니함"
+      },
+      "span": null
+    },
+    {
+      "segment_id": 4,
+      "start": 319,
+      "end": 399,
+      "label": "uncertain",
+      "model_label": "supported",
+      "reason": "근거가 지지",
+      "validation_issues": [
+        "supported_without_verifiable_evidence"
+      ],
+      "evidence": null,
+      "span": {
+        "start": 319,
+        "end": 399,
+        "quote": "- 따라서, 부족한 자격을 공동수급으로 보완하는 것은 허용되지 않으며, 해당 사업에 입찰을 희망하는 업체는 자체 자격을 충족시켜야 합니다.  \n",
+        "label": "uncertain",
+        "reason": "근거가 지지"
+      }
+    },
+    {
+      "segment_id": 5,
+      "start": 399,
+      "end": 543,
+      "label": "supported",
+      "model_label": "supported",
+      "reason": "근거가 지지",
+      "validation_issues": [],
+      "evidence": {
+        "context_start": 392,
+        "context_end": 470,
+        "quote": "본 사업은 시스템 통합 구축 사업의 특성을 고려하여 사업의 원활한 수행, 품질 확보 및 책임 소재의 명확화를 위하여 하도급을 허용하지 아니함"
+      },
+      "span": null
+    }
+  ],
+  "segment_count": 6,
+  "model_reviewed_ranges": [
+    [
+      0,
+      50
+    ],
+    [
+      50,
+      165
+    ],
+    [
+      165,
+      177
+    ],
+    [
+      177,
+      319
+    ],
+    [
+      319,
+      399
+    ],
+    [
+      399,
+      543
+    ]
+  ],
+  "spans": [
+    {
+      "start": 0,
+      "end": 50,
+      "quote": "**판단:** 부족한 자격을 공동수급으로 보완할 수 있다고 바로 안내할 수 없습니다.  \n",
+      "label": "uncertain",
+      "reason": "문서에서 직접 명시된 결론"
+    },
+    {
+      "start": 319,
+      "end": 399,
+      "quote": "- 따라서, 부족한 자격을 공동수급으로 보완하는 것은 허용되지 않으며, 해당 사업에 입찰을 희망하는 업체는 자체 자격을 충족시켜야 합니다.  \n",
+      "label": "uncertain",
+      "reason": "근거가 지지"
+    }
+  ],
+  "prompt_tokens": 3832,
+  "completion_tokens": 722,
+  "validation_downgrades": 2,
+  "seconds": 53.87804005999351
+}
