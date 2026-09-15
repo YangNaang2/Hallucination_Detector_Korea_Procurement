@@ -1,0 +1,28 @@
+{
+  "selected": {
+    "model": "fp1",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.8,
+    "answer": {
+      "tp": 21,
+      "fp": 3,
+      "fn": 14,
+      "precision": 0.875,
+      "recall": 0.6,
+      "f1": 0.711864406779661
+    },
+    "tn": 12,
+    "false_alarm_rate": 0.2,
+    "characters": {
+      "tp": 515,
+      "fp": 404,
+      "fn": 2801,
+      "precision": 0.5603917301414582,
+      "recall": 0.15530759951749096,
+      "f1": 0.24321133412042503
+    }
+  },
+  "policy_sha256": "646b140a828f5959adee08c617b22edc7f0cb7637868fd24247c9088ca59146a",
+  "dev_success": true
+}
