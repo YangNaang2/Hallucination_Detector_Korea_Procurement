@@ -1,0 +1,71 @@
+{
+  "metrics": {
+    "answers": 182,
+    "scored_characters": 62460,
+    "reviewed_characters": 82772,
+    "masked_characters": 2065,
+    "answer_characters": 82772,
+    "characters": {
+      "tp": 4469,
+      "fp": 1744,
+      "fn": 3885,
+      "precision": 0.7192982456140351,
+      "recall": 0.5349533157768733,
+      "f1": 0.6135786366444704
+    },
+    "exact_spans": {
+      "tp": 1,
+      "fp": 1953,
+      "fn": 280,
+      "precision": 0.0005117707267144319,
+      "recall": 0.0035587188612099642,
+      "f1": 0.0008948545861297539
+    },
+    "answer_presence": {
+      "tp": 94,
+      "fp": 1,
+      "fn": 23,
+      "precision": 0.9894736842105263,
+      "recall": 0.8034188034188035,
+      "f1": 0.8867924528301887
+    },
+    "answer_tn": 64,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 15
+  },
+  "strict_metrics": {
+    "answers": 182,
+    "scored_characters": 62460,
+    "reviewed_characters": 82772,
+    "masked_characters": 2065,
+    "answer_characters": 82772,
+    "characters": {
+      "tp": 3325,
+      "fp": 795,
+      "fn": 5029,
+      "precision": 0.8070388349514563,
+      "recall": 0.398012927938712,
+      "f1": 0.5331088664421998
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 1292,
+      "fn": 281,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 80,
+      "fp": 0,
+      "fn": 37,
+      "precision": 1.0,
+      "recall": 0.6837606837606838,
+      "f1": 0.8121827411167513
+    },
+    "answer_tn": 65,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 14
+  },
+  "interpretation": "training data fit using revised agent labels; not generalization"
+}

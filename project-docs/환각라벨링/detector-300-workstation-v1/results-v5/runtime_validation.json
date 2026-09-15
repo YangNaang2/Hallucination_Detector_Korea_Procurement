@@ -1,0 +1,12 @@
+{
+  "questions": [
+    "ASTRA-300-C01-N03-E4",
+    "ASTRA-300-C01-N06-E1",
+    "ASTRA-300-C01-N07-E5"
+  ],
+  "predictions_equal": true,
+  "loaded_once": true,
+  "load_seconds": 5.930200470989803,
+  "warmup_seconds": 0.34621533800964244,
+  "labels_used_by_runtime": false
+}

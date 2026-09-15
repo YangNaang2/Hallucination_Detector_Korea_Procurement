@@ -1,0 +1,16 @@
+{
+  "completed": 295,
+  "failed": 0,
+  "all_nonwhitespace_checked": true,
+  "same_coverage": true,
+  "input_hashes_unchanged": true,
+  "prior_results_preserved": true,
+  "training_ids_182_only": true,
+  "model": "fp1",
+  "checkpoint": "/home/piai/Documents/Codex/2026-09-15/yangnaang2-ko-lettucedetect-fetch-origin-feature/work/detector-quality-v2/work/quality-v5/checkpoints/fp1",
+  "checkpoint_sha256": "5ed09ce185d86abe29503d15bb5d05449a4b57a7d3e61617fd01468491ce7c82",
+  "record_inference_seconds_sum": 61.989667741640005,
+  "peak_allocated_bytes": 660082688,
+  "llama_server_preserved": true,
+  "human_gold": false
+}

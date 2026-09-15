@@ -1,0 +1,352 @@
+{
+  "C01": {
+    "baseline": {
+      "answers": 11,
+      "scored_characters": 4019,
+      "reviewed_characters": 5266,
+      "masked_characters": 28,
+      "answer_characters": 5266,
+      "characters": {
+        "tp": 183,
+        "fp": 396,
+        "fn": 346,
+        "precision": 0.3160621761658031,
+        "recall": 0.34593572778827975,
+        "f1": 0.3303249097472924
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 191,
+        "fn": 16,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 6,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571
+      },
+      "answer_tn": 3,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 1
+    },
+    "selected": {
+      "answers": 11,
+      "scored_characters": 4019,
+      "reviewed_characters": 5266,
+      "masked_characters": 28,
+      "answer_characters": 5266,
+      "characters": {
+        "tp": 15,
+        "fp": 94,
+        "fn": 514,
+        "precision": 0.13761467889908258,
+        "recall": 0.02835538752362949,
+        "f1": 0.047021943573667714
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 41,
+        "fn": 16,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 2,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846154
+      },
+      "answer_tn": 2,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    }
+  },
+  "C02": {
+    "baseline": {
+      "answers": 11,
+      "scored_characters": 4369,
+      "reviewed_characters": 5773,
+      "masked_characters": 143,
+      "answer_characters": 5773,
+      "characters": {
+        "tp": 308,
+        "fp": 632,
+        "fn": 295,
+        "precision": 0.3276595744680851,
+        "recall": 0.5107794361525705,
+        "f1": 0.39922229423201555
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 301,
+        "fn": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.7272727272727273,
+        "recall": 1.0,
+        "f1": 0.8421052631578947
+      },
+      "answer_tn": 0,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    },
+    "selected": {
+      "answers": 11,
+      "scored_characters": 4369,
+      "reviewed_characters": 5773,
+      "masked_characters": 143,
+      "answer_characters": 5773,
+      "characters": {
+        "tp": 100,
+        "fp": 120,
+        "fn": 503,
+        "precision": 0.45454545454545453,
+        "recall": 0.16583747927031509,
+        "f1": 0.24301336573511542
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 87,
+        "fn": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1": 0.875
+      },
+      "answer_tn": 2,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    }
+  },
+  "C03": {
+    "baseline": {
+      "answers": 11,
+      "scored_characters": 3878,
+      "reviewed_characters": 5073,
+      "masked_characters": 57,
+      "answer_characters": 5073,
+      "characters": {
+        "tp": 89,
+        "fp": 426,
+        "fn": 382,
+        "precision": 0.17281553398058253,
+        "recall": 0.18895966029723993,
+        "f1": 0.18052738336713997
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 160,
+        "fn": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 6,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "answer_tn": 2,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    },
+    "selected": {
+      "answers": 11,
+      "scored_characters": 3878,
+      "reviewed_characters": 5073,
+      "masked_characters": 57,
+      "answer_characters": 5073,
+      "characters": {
+        "tp": 14,
+        "fp": 164,
+        "fn": 457,
+        "precision": 0.07865168539325842,
+        "recall": 0.029723991507430998,
+        "f1": 0.04314329738058552
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 60,
+        "fn": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.8,
+        "recall": 0.6666666666666666,
+        "f1": 0.7272727272727273
+      },
+      "answer_tn": 4,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    }
+  },
+  "C04": {
+    "baseline": {
+      "answers": 11,
+      "scored_characters": 3745,
+      "reviewed_characters": 4859,
+      "masked_characters": 22,
+      "answer_characters": 4859,
+      "characters": {
+        "tp": 152,
+        "fp": 454,
+        "fn": 104,
+        "precision": 0.2508250825082508,
+        "recall": 0.59375,
+        "f1": 0.35266821345707655
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 215,
+        "fn": 11,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 3,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.3,
+        "recall": 0.75,
+        "f1": 0.42857142857142855
+      },
+      "answer_tn": 0,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 5
+    },
+    "selected": {
+      "answers": 11,
+      "scored_characters": 3745,
+      "reviewed_characters": 4859,
+      "masked_characters": 22,
+      "answer_characters": 4859,
+      "characters": {
+        "tp": 53,
+        "fp": 213,
+        "fn": 203,
+        "precision": 0.19924812030075187,
+        "recall": 0.20703125,
+        "f1": 0.20306513409961685
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 95,
+        "fn": 11,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 3,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.42857142857142855,
+        "recall": 0.75,
+        "f1": 0.5454545454545454
+      },
+      "answer_tn": 3,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 5
+    }
+  },
+  "C05": {
+    "baseline": {
+      "answers": 19,
+      "scored_characters": 6711,
+      "reviewed_characters": 8896,
+      "masked_characters": 196,
+      "answer_characters": 8896,
+      "characters": {
+        "tp": 156,
+        "fp": 519,
+        "fn": 375,
+        "precision": 0.2311111111111111,
+        "recall": 0.2937853107344633,
+        "f1": 0.25870646766169153
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 214,
+        "fn": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 9,
+        "fp": 6,
+        "fn": 2,
+        "precision": 0.6,
+        "recall": 0.8181818181818182,
+        "f1": 0.6923076923076923
+      },
+      "answer_tn": 2,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 1
+    },
+    "selected": {
+      "answers": 19,
+      "scored_characters": 6711,
+      "reviewed_characters": 8896,
+      "masked_characters": 196,
+      "answer_characters": 8896,
+      "characters": {
+        "tp": 82,
+        "fp": 211,
+        "fn": 449,
+        "precision": 0.27986348122866894,
+        "recall": 0.1544256120527307,
+        "f1": 0.19902912621359223
+      },
+      "exact_spans": {
+        "tp": 0,
+        "fp": 90,
+        "fn": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "answer_presence": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.8571428571428571,
+        "recall": 0.5454545454545454,
+        "f1": 0.6666666666666666
+      },
+      "answer_tn": 7,
+      "excluded_gold_spans": 0,
+      "excluded_prediction_spans": 0
+    }
+  }
+}
