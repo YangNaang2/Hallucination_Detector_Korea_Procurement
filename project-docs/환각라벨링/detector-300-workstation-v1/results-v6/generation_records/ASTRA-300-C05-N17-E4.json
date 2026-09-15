@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N17-E4",
+  "answer_sha256": "e900f690f3ba7a9ddd222facb422c0aa9fa8a47ecd4c8755a809d04d77bb82b0",
+  "context_sha256": "b291a39065565ef60b9ca9ad41499028c29c5c7b1a3a12159de515b293ca6194",
+  "question_sha256": "8e20250c339b48289b6265944c7a97db5ef0684797f0fcb5c1b9ceed72367af4",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "a61670b283487b7dc73352c3f07c7e9e6ea420c8a2a814753e1326543b302dc5",
+  "prompt_tokens": 2797,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2797,
+    "total_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.715331771993078,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01543875-000-726cd743214765eb-CH-00002",
+      "citation": 1,
+      "text_start": 3022,
+      "text_end": 4810,
+      "text_sha256": "8713e07852b25699b9aba7ceea3324141f849e0a947f815b0c1bbccda239c9b9",
+      "document_id": "L1-R26BK01543875-000-726cd743214765eb",
+      "document_version": "726cd743214765ebc1261517677f94b4f100367ea19b6184b886f7ef83622ad2",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/공고문(제2026-1776호)(2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01543875-000-d26254c91883adb0-CH-00003",
+      "citation": 2,
+      "text_start": 3314,
+      "text_end": 4668,
+      "text_sha256": "c55f18509e2d17d7bb2b60b90961a8c3d446d791981d166bc2aa9ee082630226",
+      "document_id": "L1-R26BK01543875-000-d26254c91883adb0",
+      "document_version": "d26254c91883adb0fb0804b77e30a2ffe89badc140d729ecaedab9a667e08250",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/공고문(제2026-1776호)(PDF).pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N04-E2",
+  "answer_sha256": "c978fe127c03d502eb9da0b52f37408b8c065f280850dc1bf0b18e9e14431bff",
+  "context_sha256": "22958c3e78600a4ad546721fb96165e8c84cb3a05df9ecc99dfdea937982f787",
+  "question_sha256": "c86e31a40087a458f273338ee9371d763e14b4afe034e543984564f1adc2e8f4",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "a63ba9ed50256fe5b2ce6a03d2f8ecd191786e0890d543e3eb065e75123f40be",
+  "prompt_tokens": 2724,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 319,
+    "prompt_tokens": 2724,
+    "total_tokens": 3043,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.9169472139910795,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01478467-000-11874311cf57e1ad-CH-00011",
+      "citation": 1,
+      "text_start": 16848,
+      "text_end": 18625,
+      "text_sha256": "6c8e0607e410ff4e196f0cdb863c0625da12a243f28a086f1f4c8776b226101e",
+      "document_id": "L1-R26BK01478467-000-11874311cf57e1ad",
+      "document_version": "11874311cf57e1ad0c3e31922c8e3ad30e50fc3f3c8686dbeeb225c7adaa93a4",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01478467-000/원본/제안요청서(농산업수출종합지원시스템 유지관리 및 고도화)_수정.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01478467-000-1145af80b5212d50-CH-00002",
+      "citation": 2,
+      "text_start": 3079,
+      "text_end": 4865,
+      "text_sha256": "3bdaa800eccf70c60964feff81bbabaf9853f77601a88e8b533b1df9f95ae6d4",
+      "document_id": "L1-R26BK01478467-000-1145af80b5212d50",
+      "document_version": "1145af80b5212d500a05e469c233c45d2d7026f7eec102418292e6db606e4949",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01478467-000/원본/과업내용서_농산업수출종합지원시스템 유지관리 및 고도화.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

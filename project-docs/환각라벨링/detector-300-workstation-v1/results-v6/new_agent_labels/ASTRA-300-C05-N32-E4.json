@@ -1,0 +1,73 @@
+{
+  "question_id": "ASTRA-300-C05-N32-E4",
+  "answer_sha256": "ac0f88714d5d0c08ebe40d5ac0ed7f48d1e45a5cc363e2ee9fd3ea157bccbdd0",
+  "context_sha256": "6f22291e78fa26d1e4c4affc1d5b71d3674c65166c8b24b36da40ef291bf958d",
+  "spans": [
+    {
+      "start": 280,
+      "end": 309,
+      "quote": "**실제 채용 사실이 있는 경우**에만 작성해야 한다",
+      "label": "contradiction",
+      "reason": "자료1 확인서는 해당없음도 표시할 수 있고 자료2 입찰 제출서류로 요구함. 영입현황표만 해당시에 작성.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 324,
+      "end": 358,
+      "quote": "**실제 채용 사실이 없으면 해당 확인서를 작성할 수 없다**",
+      "label": "contradiction",
+      "reason": "자료1 확인서는 해당없음도 표시할 수 있고 자료2 입찰 제출서류로 요구함. 영입현황표만 해당시에 작성.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 397,
+      "end": 428,
+      "quote": "**실제 채용 사실이 있는 경우**에만 작성할 수 있다.",
+      "label": "contradiction",
+      "reason": "자료1 확인서는 해당없음도 표시할 수 있고 자료2 입찰 제출서류로 요구함. 영입현황표만 해당시에 작성.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 557,
+      "end": 592,
+      "quote": "**계약이 이루어지지 않았다면 해당 확인서는 작성할 수 없다**",
+      "label": "contradiction",
+      "reason": "자료1 확인서는 해당없음도 표시할 수 있고 자료2 입찰 제출서류로 요구함. 영입현황표만 해당시에 작성.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 441,
+      "end": 459,
+      "quote": "**실제 채용 사실이 없으므로**",
+      "label": "unsupported",
+      "reason": "제공된 빈 양식만으로 해당 회사의 실제 채용 유무를 알 수 없다.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      605
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "해당없음 표시와 입찰 전 확인서 제출을 누락하고 작성 조건을 왜곡함",
+  "review_note": ""
+}

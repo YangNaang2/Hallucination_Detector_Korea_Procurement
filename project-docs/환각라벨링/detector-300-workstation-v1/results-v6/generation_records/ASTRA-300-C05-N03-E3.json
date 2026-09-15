@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N03-E3",
+  "answer_sha256": "a8e7de25c4136f6734a04dc19e56c453e17382c5070c5517d46615ae137cd375",
+  "context_sha256": "526ab5c80dff6e5e1059b5a1fb72521ae1867c69578c4da31dda3b27555fedd2",
+  "question_sha256": "3729d39f3aa8001a936deba8bc18c5d98bc523748776e605f4305f15219203d6",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "15130ed1707d3ba00e1911a64937e094e03c269d3091dbf8aea6b98ed034cb05",
+  "prompt_tokens": 2619,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 344,
+    "prompt_tokens": 2619,
+    "total_tokens": 2963,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.257439395005349,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00003",
+      "citation": 1,
+      "text_start": 4608,
+      "text_end": 6404,
+      "text_sha256": "eee5568a184db5cce17f4f24df1c26f4dd1fdb3e33463208c3b63289d0fcd951",
+      "document_id": "L1-R26BK01448046-000-9941e835ad1b0e19",
+      "document_version": "9941e835ad1b0e193ffde16fa2f45d04a236e03cb4e661c21dbb3d190f6d6545",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/3. 제안요청서.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01448046-000-3873b26ef1fd0c84-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1516,
+      "text_sha256": "bd5e3e7a842388ab8b6d7f2cac13d6d1d616170520d5784b8d6b8cea1c3e2268",
+      "document_id": "L1-R26BK01448046-000-3873b26ef1fd0c84",
+      "document_version": "3873b26ef1fd0c84cacf1012c861c1d2fed5f055cf31350069904289c98fc331",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/4. 용역입찰유의서 및 계약일반조건.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

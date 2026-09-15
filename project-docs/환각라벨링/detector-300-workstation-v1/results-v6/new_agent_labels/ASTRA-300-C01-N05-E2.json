@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N05-E2",
+  "answer_sha256": "3e176035b0a9ddcef339c23ac5af2428fd6412861dfd86e94117b246c7e7a084",
+  "context_sha256": "effcb73cc0d4432e08b7257c3b47a9aca50752e5b9c48c9884954567d3a8cdad",
+  "spans": [
+    {
+      "start": 306,
+      "end": 396,
+      "quote": "**2026년 11월 30일** 이전에 완료된 실적만 인정되며, **2024년 11월 30일** 이전에 완료된 실적은 **최근 2년 이내**로 인정되지 않습니다.",
+      "label": "contradiction",
+      "reason": "원문 기준은 입찰참가신청 마감일. 11월30일은 본 과업 제작기간 종료일로 실적 기준일이 아님.",
+      "evidence_ids": [
+        "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 401,
+      "end": 450,
+      "quote": "**현재 진행 중인 과업**은 **2026년 11월 30일** 이전에 완료되지 않았으므로",
+      "label": "unsupported",
+      "reason": "현재 진행중이라는 정보에서 미래 11월30일 이전 미완료를 단정할 수 없다.",
+      "evidence_ids": [
+        "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      636
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "완료실적만 기재라는 핵심 결론·금액/수주비율 규정은 정확하나 기준일을 혼동함."
+}

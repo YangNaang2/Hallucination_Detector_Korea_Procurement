@@ -1,0 +1,64 @@
+{
+  "question_id": "ASTRA-300-C05-P01",
+  "answer_sha256": "5cc9f083c59bba7335f3ad82934f17f3208ec21dae9dc5fc78af9622a22d5b94",
+  "context_sha256": "202700edd24b6ac834eb9af6c7e314308d43cabce07e88cce6fb85c407ea306d",
+  "question_sha256": "5088df36f06ea3637303818c1b7174d5a20062bd5f2c866a46c8941b44a8dd4a",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "43ab11c78258dabf7b87e4bc1b49891059f0a0768fbb860867bc911348d7e940",
+  "prompt_tokens": 2416,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 238,
+    "prompt_tokens": 2416,
+    "total_tokens": 2654,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.511430868995376,
+  "source_evidence": [
+    {
+      "chunk_id": "C05-PLAN-1.0.0-r1-CH-001",
+      "citation": 1,
+      "text_start": 110,
+      "text_end": 923,
+      "text_sha256": "2847ae77fd5d8839ee0d1e15a01b5428a4f7c45293a7b1ed53266946e2b1280c",
+      "document_id": "C05-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "scenario_id": "SC-C05-REVIEW-r1",
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-PLAN-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "L1-R26BK01505744-000-5a1e6c08680c26d8-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1749,
+      "text_sha256": "f36c8239fb8fbce7729876882416a278b2750c506e60ea0ef0f4106281d571c3",
+      "document_id": "L1-R26BK01505744-000-5a1e6c08680c26d8",
+      "document_version": "5a1e6c08680c26d8b4b5349ff4ab7fe822a728fd5b455a64b9ba065753f82469",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505744-000/원본/붙임 1. [공고문]글로벌특구인프라구축 EMS 개발 용역.hwp"
+    },
+    {
+      "chunk_id": "C05-PROFILE-1.0.0-r1-CH-259ec45b19c0",
+      "citation": 3,
+      "text_start": 1040,
+      "text_end": 1487,
+      "text_sha256": "8262d308091d8233beedaeab9d6d8a3aa986df10518df2568f8c96b16591b580",
+      "document_id": "C05-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L2/C05-PROFILE-1.0.0-r1.json"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

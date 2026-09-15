@@ -1,0 +1,84 @@
+{
+  "question_id": "ASTRA-300-C01-N46-E1",
+  "answer_sha256": "3c3931f78f17f6502645a654ca12dbe74a0f0fa049bb17ca8bd4ed22c0169f5f",
+  "context_sha256": "ca13943fea436d79625cdf10d99a76fc9d6209de56f6e960760f0e8b2438e7f6",
+  "spans": [
+    {
+      "start": 185,
+      "end": 233,
+      "quote": "**\"공동수급체 전원 해당\"**라는 문구는 **공동수급을 금지**하는 조건으로 해석된다",
+      "label": "contradiction",
+      "reason": "등록정보 일치 요건을 공동수급 전원에게 적용한다는 문구이며 금지조항 아님.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-a4686780ddd5ee12-CH-00005"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 352,
+      "end": 392,
+      "quote": "**컨소시엄 허용 조건만 따르면 공동수급 불허 조건은 무시할 수 있다**",
+      "label": "unsupported",
+      "reason": "충돌 규정 무시 허용 근거 없음. 실제 근거 발췌에도 공동수급 불허 조항 없음.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00005"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 525,
+      "end": 565,
+      "quote": "**컨소시엄 허용 조건만 따르면 공동수급 불허 조건은 무시할 수 있다**",
+      "label": "unsupported",
+      "reason": "충돌 규정 무시 허용 근거 없음. 실제 근거 발췌에도 공동수급 불허 조항 없음.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00005"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 575,
+      "end": 615,
+      "quote": "**컨소시엄 허용 조건만 따르면 공동수급 불허 조건은 무시할 수 있다**",
+      "label": "unsupported",
+      "reason": "충돌 규정 무시 허용 근거 없음. 실제 근거 발췌에도 공동수급 불허 조항 없음.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00005"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 422,
+      "end": 466,
+      "quote": "\"공동수급체 전원 해당\"라는 문구가 **공동수급을 금지**하는 조건으로 해석된다",
+      "label": "contradiction",
+      "reason": "전원에게 등록요건 적용하는 문구를 금지로 오해.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-a4686780ddd5ee12-CH-00005"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 471,
+      "end": 493,
+      "quote": "**공동수급을 허용하지 않는 조건**으로",
+      "label": "contradiction",
+      "reason": "공동수급체 전원 해당은 공동수급 금지가 아님.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-a4686780ddd5ee12-CH-00005"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      616
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "공고/제안서 충돌 여부 추가 확인을 설명하지 않고 무시 가능으로 단정.",
+  "review_note": ""
+}

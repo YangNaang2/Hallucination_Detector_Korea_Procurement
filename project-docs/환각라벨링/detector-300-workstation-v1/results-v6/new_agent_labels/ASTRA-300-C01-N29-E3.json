@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N29-E3",
+  "answer_sha256": "9993bd2e7f6b109ae8e4d27f089fc95645ecb27dda5a2eea61ac256fb15bdb95",
+  "context_sha256": "1e2b1c7052cd211f97f5781d2f79fcee5c191f4fb127c68ffea522b9f7ddcdcc",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      392
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료1 정규직10년이상/자료2 정규직10년이상초과 원문에 맞게 설명. 파견·프리랜서를 정규직으로 산입하지 않는 결론 지지."
+}

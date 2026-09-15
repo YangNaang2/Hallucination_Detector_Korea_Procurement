@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N16-E1",
+  "answer_sha256": "fcf9e481d6a89a931c7ebbb6d618d93d5ac150ffbd70651c0c82d482a68efda1",
+  "context_sha256": "e766b075e2747a80f4fb18610525f10674855e576d88938acb47aeb2d27b4aed",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      697
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "응용SW개발자7/6/5/4/3명 점수, 내부·외부 증빙 및 참여인력 기준 모두 자료1과 일치."
+}

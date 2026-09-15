@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C04-N22-E3",
+  "answer_sha256": "9d45061ea6daa1c893afb1ca4d17e324778b5b3e025ec046a4bd04b418937c43",
+  "context_sha256": "9bb1c0a09df817327b81ebd70fbc5acb2a18f1d68603a6c57eb3ecc0cf1c7fe6",
+  "spans": [
+    {
+      "start": 117,
+      "end": 157,
+      "quote": "**기능점수(FP) 방식으로 사업기간을 산정**하는 것이 명시되어 있으며",
+      "label": "unsupported",
+      "reason": "자료1의 해당 문장은 사업대가 FP 산정이다. 적정기간은 별첨4 참조로 따로 기술되어 있어 기간 산정 방식까지 명시됐다고 할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01538557-000-79791513d620e291-CH-00025"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      484
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "공수와 기능점수 구분 결론, 인력 요구관리 금지, 기능점수 방식 인용은 정확함."
+}

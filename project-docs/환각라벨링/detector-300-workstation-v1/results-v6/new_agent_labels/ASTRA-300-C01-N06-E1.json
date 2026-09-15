@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N06-E1",
+  "answer_sha256": "6f1db5a89ee4ab9c5ed12328b772896f6a124276bcbf6bbdcc350c51fb36b677",
+  "context_sha256": "c0478ef3e0d3584e3685cc7a52a47a19ddfba95544da2ae09b593d706bb08c73",
+  "spans": [
+    {
+      "start": 551,
+      "end": 608,
+      "quote": "**하드웨어 공급액**을 **수행실적**에 포함시킬 수 있는 **구체적인 기준**을 제공하지는 않는다.",
+      "label": "contradiction",
+      "reason": "자료2 실적인정기준에 H/W 유지보수 컨설팅 실적금액 제외라고 명시되어 있다.",
+      "evidence_ids": [
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00044"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 675,
+      "end": 747,
+      "quote": "**구체적인 기준이 제시되지 않았기 때문에, 문서에 따르면 \"합산할 수 있는지\"에 대한 **확정적인 판단**은 **불가능**하다.",
+      "label": "contradiction",
+      "reason": "자료2 명시적 제외 규정을 놓쳐 판단 불가로 잘못 응답.",
+      "evidence_ids": [
+        "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00044"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      782
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "H/W 금액 제외라는 직접 답변을 누락하고 길이 제한으로 문장도 중단됨",
+  "review_note": ""
+}

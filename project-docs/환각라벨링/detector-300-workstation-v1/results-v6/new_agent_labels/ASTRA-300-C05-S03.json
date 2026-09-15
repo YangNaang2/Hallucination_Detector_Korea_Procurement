@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C05-S03",
+  "answer_sha256": "5603faaa50d5521f8aca989299add17a96f22a80296194a04920b021c587a85d",
+  "context_sha256": "379f5b3d07904bbd09b85d887c658200dacbfa35b446f8cf5414aa9640d088a2",
+  "spans": [
+    {
+      "start": 178,
+      "end": 247,
+      "quote": "C05-P-04, C05-P-07, C05-P-06 등 3명의 인력이 3개월 이상 재직 정규직 평가 인원으로 기재되어 있지만",
+      "label": "unsupported",
+      "reason": "3명 정규직/입사일은 있으나 평가 인원 확정 기재 아님. 실제 평가 규정이 제공되지 않음.",
+      "evidence_ids": [
+        "C05-STAFF-1.0.0-r1-CH-0b6e0a75d54a"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      477
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "9명 전체 명부와 평가 기준이 제공되지 않아 전원 산입 가능 여부를 확정할 수 없음을 명료하게 설명하지 않음.",
+  "review_note": "배치 가능 기간과 재직기간을 구분한 부분 정상; 3명 입사일은2024년으로 기준일보다3개월이상 앞섬."
+}

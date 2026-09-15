@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C04-N47-E3",
+  "answer_sha256": "df95627e34deea87864dbae140d43fb17835cdc6ef1d31e248db337e59b85770",
+  "context_sha256": "74bd2171a7082b24b2867ad474ddc6d2c948c48b8f8de1081e6c36a800872260",
+  "spans": [
+    {
+      "start": 413,
+      "end": 440,
+      "quote": "**전라남도내 소재기업만 참가할 수 있는 조건**",
+      "label": "contradiction",
+      "reason": "자료1 신인도 평가 가점 요건으로 참가 지역제한이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00008"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 486,
+      "end": 498,
+      "quote": "**참가 자격 요건**",
+      "label": "unsupported",
+      "reason": "소재지 증빙은 신인도 점수 기준이지 입찰 참가자격이라고 제공 문서가 정하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00008"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      521
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "가점과 참가자격을 혼동하는 자기모순 설명",
+  "review_note": ""
+}

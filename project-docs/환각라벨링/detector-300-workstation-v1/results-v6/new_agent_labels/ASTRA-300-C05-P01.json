@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-P01",
+  "answer_sha256": "5cc9f083c59bba7335f3ad82934f17f3208ec21dae9dc5fc78af9622a22d5b94",
+  "context_sha256": "202700edd24b6ac834eb9af6c7e314308d43cabce07e88cce6fb85c407ea306d",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      329
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "제조업 등록28123과 직접생산 모니터링장치3912110604는 각각 명시된 별도 조건. 회사 전체 적격을 주장하지 않음."
+}

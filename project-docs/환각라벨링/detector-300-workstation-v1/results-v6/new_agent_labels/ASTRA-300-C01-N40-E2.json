@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N40-E2",
+  "answer_sha256": "e991a2ebf8703a10f16f02ae72cff5f08bf3fce261c5f55a88429c3bda091efb",
+  "context_sha256": "8ea80dbc4a74728c0d1678610f271216170505aedd91ed5aa047b7c1c5bcbc59",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      401
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "초과 지체시간/24와1.25/1000,30%상한 정확. 해당장비 유지관리계약금액이라는 범위를 명료하게 덧붙일 필요는 있으나 다른 금액을 확정하지 않음."
+}

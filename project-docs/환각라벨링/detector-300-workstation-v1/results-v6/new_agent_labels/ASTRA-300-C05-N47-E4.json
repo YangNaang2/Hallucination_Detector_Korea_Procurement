@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C05-N47-E4",
+  "answer_sha256": "5d5d879fb5eabb9ac0e32ada42ebaeda7691844c61e72976abe10c60eb7ccd07",
+  "context_sha256": "d3bf7cb355fe1311351e59d106dcc55914d5ab6c35716154fca6ea53582bd201",
+  "spans": [
+    {
+      "start": 327,
+      "end": 420,
+      "quote": "**제어 및 모니터링, 데이터 기능 통신 게이트웨이 장치**의 사양은 **16코어 이상 CPU, 64GB 이상 메모리, SSD 1TB 이상 스토리지**를 요구하고 있다",
+      "label": "contradiction",
+      "reason": "수치는 별도 PC 사양이며 게이트웨이 장치 사양이 아님.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-4eff91818809e0e7-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 429,
+      "end": 439,
+      "quote": "**[2]**에서도",
+      "label": "citation_error",
+      "reason": "OPC-UA와 OCPP1.6 상세 연결 조건은 자료1에 있음. 자료2 인용 잘못이나 내용은 지지됨.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      852
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "마지막 결론이 생성 길이 제한으로 잘림.",
+  "review_note": "원문1전체 재확인 후 통신 상세는 사실로 정정; PC와 게이트웨이 주체 혼동 유지. 모델예측 미참조."
+}

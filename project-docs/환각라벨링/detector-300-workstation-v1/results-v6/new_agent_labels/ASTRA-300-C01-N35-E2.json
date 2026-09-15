@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N35-E2",
+  "answer_sha256": "d34b4a8610bdc57b77783436fb84358f1b4bc84a915a8fcabc1e31469b4d9fd0",
+  "context_sha256": "c8e5ea81210745e64216f61a3a16c1a8c77500e8ec5320b7ee659402644d3cb2",
+  "spans": [
+    {
+      "start": 255,
+      "end": 299,
+      "quote": "파견근로자의 원소속사가 아닌 경우에도 원소속사를 명기해야 함을 강조하고 있습니다",
+      "label": "unsupported",
+      "reason": "컨소시엄 외 인력에 대한 승인/대체 규정으로부터 해당 문구를 도출할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00026"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 331,
+      "end": 336,
+      "quote": "불법적이고",
+      "label": "unsupported",
+      "reason": "원소속사 명기 의무 위반이라는 문서상 판단을 법적 불법성 확정으로 확대.",
+      "evidence_ids": [
+        "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00026"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      360
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "원소속사 생략 불가 핵심 자체 정확."
+}

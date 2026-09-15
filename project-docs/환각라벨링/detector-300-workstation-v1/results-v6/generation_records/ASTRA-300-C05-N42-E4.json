@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N42-E4",
+  "answer_sha256": "f17880032916eb2e9689f56fa605f6d504b596f8bbb828af70b58b702df16e0e",
+  "context_sha256": "7ebde6d804e74e790271e9c0dfe34e07c05ee1372fd00bc4914c34d529e20995",
+  "question_sha256": "d8203d4ee672182cfd9663a191c7dad6a043fccb66da4f48ca2988da3ca95172",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "20164925d707763d8ef067939e66073bc6c2e213078082b77391b75267fcbbab",
+  "prompt_tokens": 2601,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 228,
+    "prompt_tokens": 2601,
+    "total_tokens": 2829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.415201922005508,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01564087-000-661cc1088ecc1f31-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1389,
+      "text_sha256": "0ccd8d30625fa8a95dd540d52adef6b40c5c2b6ece848344bebc278c8fd2a312",
+      "document_id": "L1-R26BK01564087-000-661cc1088ecc1f31",
+      "document_version": "661cc1088ecc1f3118841ec2356ee32322d2d2b3d28777ce0e01c43e38bb2f3e",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01564087-000/원본/26-HS061 03. 입찰공고문(협상(SW)).pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01564087-000-df4355b8ff7bdf61-CH-00021",
+      "citation": 2,
+      "text_start": 27942,
+      "text_end": 29709,
+      "text_sha256": "ec26f195b721388d7b570c53eeab906990477082c2ff0b6819faeb0509abb057",
+      "document_id": "L1-R26BK01564087-000-df4355b8ff7bdf61",
+      "document_version": "df4355b8ff7bdf61867ab79d9571266b7bc29d5d50e578ef82919e152e4da7ce",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01564087-000/원본/26-HS061 00. 제안요청서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

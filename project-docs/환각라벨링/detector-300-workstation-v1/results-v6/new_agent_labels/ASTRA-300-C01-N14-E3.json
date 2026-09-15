@@ -1,0 +1,84 @@
+{
+  "question_id": "ASTRA-300-C01-N14-E3",
+  "answer_sha256": "c67a4a8fa37f54677c522fe3e5f763635b0670644e39ad7d0478443e61c8a23d",
+  "context_sha256": "b02827dd0e8e1d1de143ba3511152e4c5f69bb764ad98b366b7273156a35469c",
+  "spans": [
+    {
+      "start": 93,
+      "end": 96,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "사업기간은 자료3 긴급입찰 사유서.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 214,
+      "end": 230,
+      "quote": "**10일 단축**된 공고기간",
+      "label": "contradiction",
+      "reason": "자료3은 공고기간10일, 30일 단축.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 183,
+      "end": 239,
+      "quote": "이는 **입찰공고** 시에 **긴급입찰 사유**로 인해 **10일 단축**된 공고기간을 반영한 것이며",
+      "label": "unsupported",
+      "reason": "운영기간이 공고기간 단축을 반영한 것이라는 인과 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 703,
+      "end": 735,
+      "quote": "**1년으로 대체**할 수 있는 **변경 가능성이 존재**",
+      "label": "unsupported",
+      "reason": "명시된5월1일~12월31일을 1년으로 대체 가능한 조항은 없음.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 592,
+      "end": 610,
+      "quote": "**변경될 수 있는 예외 조건**",
+      "label": "unsupported",
+      "reason": "원문에 운영기간 예외로 제시된 사실 없음.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 784,
+      "end": 802,
+      "quote": "**변경될 수 있는 예외 조건**",
+      "label": "unsupported",
+      "reason": "원문에 운영기간 예외로 제시된 사실 없음.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-dff8f6be276805db-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      823
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "기간변경을 임의 허용하고 최종 문장이 잘림",
+  "review_note": ""
+}

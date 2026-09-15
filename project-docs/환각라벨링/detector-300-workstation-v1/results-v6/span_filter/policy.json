@@ -1,0 +1,12 @@
+{
+  "minimum_nonspace_characters": [
+    1,
+    4,
+    8,
+    12
+  ],
+  "base": "fixed contrast3/repeat192/min/.3",
+  "selection": "dev FPR <= .20, maximize recall then answer F1; success recall>=.5; no abstention",
+  "limitation": "short numeric or negation errors may be suppressed; historically exposed data, exploratory",
+  "source_sha256": "8a91ee6d5acf0f2538b39b6d40ea57f240ed3f92e880e8fdbdacce7069bbdda3"
+}

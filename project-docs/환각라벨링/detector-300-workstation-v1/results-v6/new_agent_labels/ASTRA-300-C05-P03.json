@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-P03",
+  "answer_sha256": "0332c5c66d91e112eb190904a001c953b1f8c48c40ccbf25acd0df0a7c19e4ea",
+  "context_sha256": "d94fb421a57c30768d49d9500b051518c79decdf31e8fa6b4d1b5e59553fc647",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      462
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "PMS PRJ02 missing과 다른 실적 synthetic_record를 설명. 문서 생성만으로 실제 증빙 확보 아님 정확."
+}

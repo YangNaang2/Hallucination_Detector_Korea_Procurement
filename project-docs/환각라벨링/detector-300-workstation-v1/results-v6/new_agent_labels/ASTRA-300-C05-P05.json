@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C05-P05",
+  "answer_sha256": "5b846e9f409a8cb49048a4e9e4101f9f99fd17a2bf042305592b135ddd2e1c3a",
+  "context_sha256": "f7d2ad4e425ddfde2f2dbb48b99cd7af4315ba7b9c50e4a42ad90e3be8dea3c7",
+  "spans": [
+    {
+      "start": 141,
+      "end": 160,
+      "quote": "**합성 증빙 레코드**가 필요하며",
+      "label": "unsupported",
+      "reason": "총액 확정에 필요한 것은 실제 전체 견적과 조건 확인이며 합성 증빙 자체가 필수 요건 아님.",
+      "evidence_ids": [
+        "C05-ESTIMATE-1.0.0-r1-CH-001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      798
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "문장 끝이 잘렸으나 PC 외 전체 장비 견적 필요라는 핵심은 설명됨.",
+  "review_note": ""
+}

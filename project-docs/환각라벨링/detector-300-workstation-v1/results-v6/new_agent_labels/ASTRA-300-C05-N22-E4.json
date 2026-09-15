@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-N22-E4",
+  "answer_sha256": "c575b3d5c6acf18e2debaa3aff7488d6c96ea85b09a13e6621c518214e15c5cb",
+  "context_sha256": "83e07b3d1b21b8a6dd0553ada45323e3dfda0da2e19532d23753c3723dcc907f",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      369
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료2 SW산출물 반출 절차 요청/누출정보제외/확약서/제3자 사전승인 모두 충실히 설명."
+}

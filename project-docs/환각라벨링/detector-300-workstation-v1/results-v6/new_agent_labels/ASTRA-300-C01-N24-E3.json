@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C01-N24-E3",
+  "answer_sha256": "761a1e9a4baa3f2331b4a94d9074fff415b2862bb648d5a9c6efdc87780e29be",
+  "context_sha256": "e74a630383b514dc722c9044c74c8dce999af66f4a1e2e56673d654103ff186a",
+  "spans": [
+    {
+      "start": 63,
+      "end": 109,
+      "quote": "예정가격은 공고 예산과 동일한 확정값으로 생성할 수 있다는 점이 명시되어 있습니다.",
+      "label": "contradiction",
+      "reason": "자료2는 예정가격을 작성하지 않고 가격평가 산식의 추정가격에 사업금액을 적용한다고 한다. 동일한 확정 예정가격 생성 허용이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01508724-000-9c6403d327e25b37-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 230,
+      "end": 274,
+      "quote": "예정가격을 공고 예산과 동일한 확정값으로 생성해도 문제가 없는 것으로 보입니다.",
+      "label": "contradiction",
+      "reason": "자료2는 예정가격을 작성하지 않고 가격평가 산식의 추정가격에 사업금액을 적용한다고 한다. 동일한 확정 예정가격 생성 허용이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01508724-000-9c6403d327e25b37-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 326,
+      "end": 365,
+      "quote": "예정가격을 공고 예산과 동일한 확정값으로 생성할 수 있음을 시사합니다.",
+      "label": "contradiction",
+      "reason": "자료2는 예정가격을 작성하지 않고 가격평가 산식의 추정가격에 사업금액을 적용한다고 한다. 동일한 확정 예정가격 생성 허용이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01508724-000-9c6403d327e25b37-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 373,
+      "end": 410,
+      "quote": "예정가격을 공고 예산과 동일한 확정값으로 생성해도 문제가 없습니다.",
+      "label": "contradiction",
+      "reason": "자료2는 예정가격을 작성하지 않고 가격평가 산식의 추정가격에 사업금액을 적용한다고 한다. 동일한 확정 예정가격 생성 허용이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01508724-000-9c6403d327e25b37-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      410
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "비예가와 산식 적용금액 구분 실패",
+  "review_note": ""
+}

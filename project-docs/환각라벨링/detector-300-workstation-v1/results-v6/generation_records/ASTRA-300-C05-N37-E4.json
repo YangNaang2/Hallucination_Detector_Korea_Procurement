@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N37-E4",
+  "answer_sha256": "9e9d917a90c8229f8d7db98faf881dfb6b2faa23bb2389b96d3b7d13fbb161c1",
+  "context_sha256": "b75a611f6b446627ade286a3e40e1a9c571a75fef6d27928b92faf37a78bee52",
+  "question_sha256": "61df347c4540364cfa61902671e8ab5dc44c546b957b5ff9268669cb5fafb652",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "98949f3ca475acced132ddd37f8f3d7a25b879d2088b6d015c85293354c09162",
+  "prompt_tokens": 2579,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2579,
+    "total_tokens": 3091,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 17.946583887009183,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01511309-000-cca1a47bbf50e96e-CH-00092",
+      "citation": 1,
+      "text_start": 135198,
+      "text_end": 136867,
+      "text_sha256": "0ca90d8203b67276f9148aea899ab67b0e0204f00e95f1dbc3a159a75e3a0037",
+      "document_id": "L1-R26BK01511309-000-cca1a47bbf50e96e",
+      "document_version": "cca1a47bbf50e96e00a6a79dbaaacc3abec08583304d9adf9795bb9db5b2e761",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/붙임 2. 2026 TOMS 기능개선 및 유지관리 용역 제안요청서_(최종).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01511309-000-ef7b9f23f204b4de-CH-00002",
+      "citation": 2,
+      "text_start": 2998,
+      "text_end": 4759,
+      "text_sha256": "e5e15d38cb0696e84bb29da6efc7271a8fd844789dd9ffb9440c750c7cbbcc34",
+      "document_id": "L1-R26BK01511309-000-ef7b9f23f204b4de",
+      "document_version": "ef7b9f23f204b4de258fa701e8ccaccf09772e8527bca6c19f79a8cf537456db",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/공고문_2026년 TOMS 기능개선 및 유지관리 용역(한국농어촌공사 제2026-95호).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

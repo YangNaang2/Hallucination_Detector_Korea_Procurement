@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N45-E1",
+  "answer_sha256": "dc8c1774df490fed527453d0a865105de7e4f7510e919f04daff77fd0c283c96",
+  "context_sha256": "3b6c4b9d2b1c5e21f689ae3ad06b2b31e8fb90ee693504813932edc75b400625",
+  "question_sha256": "34c0ddbc0767ba390352168563d793667c9379bb75aa308b4e5833fec386ee13",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "a9a66e9320b708d79c2c53289207d881bfef1fd59375e8d3c8923249dcc84729",
+  "prompt_tokens": 2832,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2832,
+    "total_tokens": 3344,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 18.7882503340079,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01593644-000-7026fb66d76ccc3c-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1800,
+      "text_sha256": "66a2afbc5d3b5f49579b8ee847b86833ee18cf313cd09c5c56fe0de59a33abcf",
+      "document_id": "L1-R26BK01593644-000-7026fb66d76ccc3c",
+      "document_version": "7026fb66d76ccc3ce193eba986451c77135c62ecb03e12fad9061becef36d06e",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/1.입찰공고문.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1800,
+      "text_sha256": "26df76ae4b0fa550fc6a786ff1e08ec83546c63690497624b32eace54ee86027",
+      "document_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5",
+      "document_version": "9b7dbaefc2a36fe5247f24fabf927f1c53074838972b2f41d4da416606a8a339",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/2.과업지시서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

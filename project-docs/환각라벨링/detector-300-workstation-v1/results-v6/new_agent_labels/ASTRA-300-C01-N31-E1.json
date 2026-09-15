@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N31-E1",
+  "answer_sha256": "50183658d88a8c6d45c6c5c65cc0afb8ed263152622087110cd771f0d22435e9",
+  "context_sha256": "e8ecb6e66386fda17217e9607b02e676a0bda4dcca2dd0df0984bc822626cd10",
+  "spans": [
+    {
+      "start": 138,
+      "end": 145,
+      "quote": "PMR-001",
+      "label": "citation_error",
+      "reason": "3년 재직 조건은 PMR-002에 기재.",
+      "evidence_ids": [
+        "L1-R26BK01553217-000-97fb86912ed59b6e-CH-00009"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 631,
+      "end": 659,
+      "quote": "입사 직후 인력은 해당 업무 공백을 발생시키지 못함",
+      "label": "unsupported",
+      "reason": "재직기간으로 특정 인력의 업무 공백 발생 여부를 단정할 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01553217-000-97fb86912ed59b6e-CH-00009"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      746
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "3년 이상 재직자 조건과 신규 입사자 지정 불가 결론 자체는 지지됨."
+}

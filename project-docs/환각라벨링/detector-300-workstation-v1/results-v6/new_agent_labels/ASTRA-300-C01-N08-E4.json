@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N08-E4",
+  "answer_sha256": "1044808d3e6c3652b019ef2044b1193b97281f29b7053dc511496351f2a4ebf9",
+  "context_sha256": "f942ca9351b5b3dd1f9bab6ea51dfb7900568d6034a38659b0ff0201227fb7da",
+  "spans": [
+    {
+      "start": 335,
+      "end": 350,
+      "quote": "**변경 가능**하지 않으며",
+      "label": "unsupported",
+      "reason": "문서가 입찰금액5%이상을 정하지만 변경 절대 불가 조항은 없음.",
+      "evidence_ids": [
+        "L1-R26BK01491524-000-ff03c8c704d3384a-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      381
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "비율의 기준금액을 입찰금액으로 정확히 확인함."
+}

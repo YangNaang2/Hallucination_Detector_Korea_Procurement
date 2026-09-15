@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N25-E2",
+  "answer_sha256": "23b982213cbbd8c3cb9a864cf02a1c322b11ea5aedc2f143a9adb20ef1807eaa",
+  "context_sha256": "e9fc039ac11fbc1db92590e991e9940f603f59c85cb9b7c057659207b9a7c46d",
+  "spans": [
+    {
+      "start": 394,
+      "end": 429,
+      "quote": "**24시간 상시 대응**이 필요하다는 점이 명시되어 있습니다.",
+      "label": "unsupported",
+      "reason": "제공 근거는 신속 대응·상시 유지관리이며 24시간 대응 인력/시간을 명시하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01469220-000-158d1add5a61076a-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      539
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "일반 업무시간만의 계획 부족은 합리적 경고지만 24시간이 명시됐다는 단정은 근거를 초과함."
+}

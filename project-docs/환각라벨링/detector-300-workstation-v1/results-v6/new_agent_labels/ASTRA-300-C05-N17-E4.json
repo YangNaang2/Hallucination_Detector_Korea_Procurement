@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C05-N17-E4",
+  "answer_sha256": "e900f690f3ba7a9ddd222facb422c0aa9fa8a47ecd4c8755a809d04d77bb82b0",
+  "context_sha256": "b291a39065565ef60b9ca9ad41499028c29c5c7b1a3a12159de515b293ca6194",
+  "spans": [
+    {
+      "start": 11,
+      "end": 55,
+      "quote": "**제안 발표에 참석하는 인원과 실제 과업 투입인원을 같은 수로 잡아도 된다**",
+      "label": "unsupported",
+      "reason": "자료1/2의 2인 제한은 발표 참석인원이며 실제 과업인원과 동일해야 한다는 조건은 없다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-726cd743214765eb-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 186,
+      "end": 212,
+      "quote": "**참석인원과 과업 투입인원이 동일해야 한다**",
+      "label": "unsupported",
+      "reason": "자료1/2의 2인 제한은 발표 참석인원이며 실제 과업인원과 동일해야 한다는 조건은 없다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-726cd743214765eb-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 235,
+      "end": 251,
+      "quote": "**같은 수로 잡아도 된다**",
+      "label": "unsupported",
+      "reason": "자료1/2의 2인 제한은 발표 참석인원이며 실제 과업인원과 동일해야 한다는 조건은 없다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-726cd743214765eb-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      690
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "발표인원과 과업인원의 범위를 혼동하고 문장이 길이 제한으로 중단됨",
+  "review_note": ""
+}

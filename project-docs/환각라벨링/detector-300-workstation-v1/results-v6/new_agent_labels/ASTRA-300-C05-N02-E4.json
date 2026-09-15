@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-N02-E4",
+  "answer_sha256": "a0e4fa421bd433482d562dc8a0363f5e01bcddbef94b5890ed2cf51cd57e5003",
+  "context_sha256": "7309e35e33bc25416a9a9c6505686087e483b77a09eacd5de333047faea15965",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      566
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "90점의85%=76.5점과 종합점수 구분 정확. 자료1/2 모두 뒷받침."
+}

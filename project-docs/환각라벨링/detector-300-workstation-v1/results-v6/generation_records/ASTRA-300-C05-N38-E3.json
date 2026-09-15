@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C05-N38-E3",
+  "answer_sha256": "eee4305904cffe472e112fb7d341076adc7d01a8f957c4fe559d98fe39f81ffb",
+  "context_sha256": "b120e2ac2ba99a4da06d9410d2e770ad463c8299ca12c708409d0744a9290de9",
+  "question_sha256": "2320f2f911aa2722de7e3aec52a5719ce567ef6537965a431b2ab2c6babea0b3",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e8fc7000dad9270b385e4ef65a11b89c902c103d40abdfa73e4440eeb2738f9b",
+  "prompt_tokens": 1681,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 301,
+    "prompt_tokens": 1681,
+    "total_tokens": 1982,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.982532209978672,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01604996-000-3c970206f616ed99-CH-00024",
+      "citation": 1,
+      "text_start": 35840,
+      "text_end": 37559,
+      "text_sha256": "f5cd884b62f4b3647fe74c0caa03a5037834fd887e49809047ab6cf2c39cce3c",
+      "document_id": "L1-R26BK01604996-000-3c970206f616ed99",
+      "document_version": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

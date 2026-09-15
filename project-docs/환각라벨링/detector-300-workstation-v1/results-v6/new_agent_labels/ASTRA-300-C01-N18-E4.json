@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N18-E4",
+  "answer_sha256": "2a3dc1f1c9c62fc6c5a9181d673f891563e6c1eda965bce73862d29d6896de00",
+  "context_sha256": "609a7c815c2739b7ec05ff5fe90ce1466887ab8668a2eda68374c2ef582ced34",
+  "spans": [
+    {
+      "start": 127,
+      "end": 130,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "외부 네트워크 차단 직접 인용은 자료2 작업장 구축 항목.",
+      "evidence_ids": [
+        "L1-R26BK01592548-000-2ba073c042c5d471-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      487
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "작업장 외부망 차단은 자료2에 명확. 자료1에도 업무망 인터넷망 혼용 금지가 있어 결론 정상."
+}

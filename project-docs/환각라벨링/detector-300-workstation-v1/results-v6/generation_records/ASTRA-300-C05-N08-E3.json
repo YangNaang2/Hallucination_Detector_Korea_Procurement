@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N08-E3",
+  "answer_sha256": "7aae7be462a36db28fe8762f658953acc23d2ee96da5fe507bb0e7c79d32e7b6",
+  "context_sha256": "ad604bc018e321e22d50f775bf316dc01401a63b0f2a2e5bc3e76d7e08776917",
+  "question_sha256": "a45a7d5c903874194867de5abe9f6097ddd60bf89cdd3ac836d5c395dfedaa38",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "c5b4ef9697bdb03a7cc0eebb1c22bfea17b6206cafd0161b08a1c1a3f859403b",
+  "prompt_tokens": 2540,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 206,
+    "prompt_tokens": 2540,
+    "total_tokens": 2746,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 4.264555670000846,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01491524-000-40cbdf94b865b078-CH-00006",
+      "citation": 1,
+      "text_start": 8563,
+      "text_end": 10137,
+      "text_sha256": "6a821fcbd3c036407d5ff598d6d847dc41507e6927c61cbcfc1138770cb9ba91",
+      "document_id": "L1-R26BK01491524-000-40cbdf94b865b078",
+      "document_version": "40cbdf94b865b078ac561a89783a5f15c1ebe9b9beea80437a8b7597df2f9d41",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01491524-000/원본/제안요청서_섬유생산기업정보시스템 통합유지보수 수행기관 선정.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01491524-000-40cbdf94b865b078-CH-00010",
+      "citation": 2,
+      "text_start": 14107,
+      "text_end": 15812,
+      "text_sha256": "c61ec3f6bdc1994ad8a170043af427f6685fc916fc14b376150ea809f295ddd6",
+      "document_id": "L1-R26BK01491524-000-40cbdf94b865b078",
+      "document_version": "40cbdf94b865b078ac561a89783a5f15c1ebe9b9beea80437a8b7597df2f9d41",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01491524-000/원본/제안요청서_섬유생산기업정보시스템 통합유지보수 수행기관 선정.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

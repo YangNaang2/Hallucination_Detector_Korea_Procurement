@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N11-E1",
+  "answer_sha256": "17f14bb1bda013bf32aea7fbb0b6bf8227fcda8d97c489c1918a8ee886d6ad7f",
+  "context_sha256": "7088408a29f4ccc583741c0a57d703343d53956ea42d90e203e53556eeeda4b4",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      694
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "원문 81111599를 임의 코드로 고치지 않고 유지했고 직접생산 증명/발급 시점/자격을 정확히 반영. 발급조건 차이 가능성은 해당 품명 증명을 요구한다는 문맥상의 설명."
+}

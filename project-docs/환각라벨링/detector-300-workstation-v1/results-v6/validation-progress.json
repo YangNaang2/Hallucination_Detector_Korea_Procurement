@@ -3,14 +3,14 @@
   "original_inputs_and_results_preserved": true,
   "synthetic_training_cases": 248,
   "train_only": true,
-  "generated": 214,
+  "generated": 293,
   "generation_status": {
-    "stop": 197,
-    "length": 17
+    "stop": 266,
+    "length": 27
   },
   "new_prediction_slots": {
-    "mil3": 214,
-    "contrast3": 214
+    "mil3": 293,
+    "contrast3": 293
   },
   "unchecked_private_use_glyphs": [
     {
@@ -46,7 +46,7 @@
       "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
     }
   ],
-  "agent_reviewed": 34,
+  "agent_reviewed": 94,
   "human_gold": 0,
   "original_inference_seconds": 90.77448342213756,
   "llama_server_preserved": true,

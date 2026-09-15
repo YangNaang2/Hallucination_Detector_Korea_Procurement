@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C04-N50-E5",
+  "answer_sha256": "021e33f37beb74efdbb22a1931fb14d7a0a8e7ae3b5ab4b48e58f3cb5463541f",
+  "context_sha256": "dfd5de8df17cadcf57d11f118f4c23fce16d6df008cade2595ef8dcf2cb99273",
+  "spans": [
+    {
+      "start": 306,
+      "end": 342,
+      "quote": "**하자보증 전체 기간으로 대체 기한을 변경하는 것은 허용된다**",
+      "label": "contradiction",
+      "reason": "PSR003의 하자보증1년과 대체장비 최대7일은 다른 조건이며 협의 조항도 7일 처리를 명시한다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00033"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 498,
+      "end": 540,
+      "quote": "**대체 기한을 하자보증 전체 기간으로 변경**하는 것이 **규정에 부합**",
+      "label": "contradiction",
+      "reason": "PSR003의 하자보증1년과 대체장비 최대7일은 다른 조건이며 협의 조항도 7일 처리를 명시한다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00033"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 555,
+      "end": 594,
+      "quote": "**장비 고장 시 대체 기한을 하자보증 전체 기간으로 바꾸어도 된다**",
+      "label": "contradiction",
+      "reason": "PSR003의 하자보증1년과 대체장비 최대7일은 다른 조건이며 협의 조항도 7일 처리를 명시한다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00033"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      644
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "원문 수치 인용 뒤 결론을 뒤집음",
+  "review_note": ""
+}

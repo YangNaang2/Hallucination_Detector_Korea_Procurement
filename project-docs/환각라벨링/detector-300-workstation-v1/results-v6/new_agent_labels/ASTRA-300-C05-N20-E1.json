@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C05-N20-E1",
+  "answer_sha256": "d70b35843ab8be21e751a59b7e84fb6bc874e35ad75d2040824fb0677f7af7a1",
+  "context_sha256": "5e3f8e9334608126b4f5c84deb2a24b55a4dc2bcefbdd56060421b0f48efab16",
+  "spans": [
+    {
+      "start": 465,
+      "end": 636,
+      "quote": "6. 추진체계, 5. 용역관리 방안, 6. 추진일정, 1. 기획 및 정의, 2. 기획 및 정의, 3. 시각화 시스템 개발, 4. 시각화 시스템 개발, 5. 수정 및 보완, 6. 훈련 시스템과 데이터 연동 테스트, 7. 설치 및 검증, 8. 과제 정리, 9. 사용자 교육 및 운용, 10. 이전 설치 및 검수",
+      "label": "citation_error",
+      "reason": "시험입회 및 서버 협의 내용은 자료1 시험 및 검수 조항이고 나열한 일정표 항목 위치가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01501715-001-58d1ee1c2092b487-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      743
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "PM/개발자/디자이너 참석과 시험입회·서버협의의 실제 내용은 두 자료에 존재. 마지막 문장 마침표가 없지만 핵심은 완결됨."
+}

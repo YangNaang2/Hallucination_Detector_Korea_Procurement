@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N21-E1",
+  "answer_sha256": "de2a357c30d60f538dc8952ccd3e1deada3ea2642bab47893bc8a1e4fbc7b094",
+  "context_sha256": "f58f2a6c57eccf0d968da785a28b191972064b9cd206bdf1705de4324f394947",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      407
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "PDF총200MB 제한, 최종제출/정상파일 확인 및 마감 미수신 무효 규정 일치. 업로드만으로 용량 확인 생략 불가는 정상적인 추론."
+}

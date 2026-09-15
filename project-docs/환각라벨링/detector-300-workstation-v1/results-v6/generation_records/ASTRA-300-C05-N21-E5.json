@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N21-E5",
+  "answer_sha256": "eeb4fd77d2f99c840e08265f319d33e94008f9d1d2ed67c9bd0e16ffdeb6d969",
+  "context_sha256": "5f163c71b6eb4a37a478adb257baf314b1055d7a6089ee43c2072d9761126706",
+  "question_sha256": "0fcfa2ecef058df8d355cee76624030b8d03814ca28af6b4617a5a4ad7675579",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "46dfbb80c11aa09222ed88c6a499b1527860967f1728a9293bc8158be7104db8",
+  "prompt_tokens": 2535,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 229,
+    "prompt_tokens": 2535,
+    "total_tokens": 2764,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 3.442016277986113,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01574547-000-a18be783a219e51d-CH-00019",
+      "citation": 1,
+      "text_start": 26939,
+      "text_end": 28603,
+      "text_sha256": "868f3cca03fe996b2d6d7afae685415b9c11ee1f4ad244bd5a3460e5b27b79c7",
+      "document_id": "L1-R26BK01574547-000-a18be783a219e51d",
+      "document_version": "a18be783a219e51dc7a73992681b6135c22338de209b9ac26def8a9faab97643",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임2_제안요청서(항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01574547-000-a18be783a219e51d-CH-00067",
+      "citation": 2,
+      "text_start": 95814,
+      "text_end": 97535,
+      "text_sha256": "cedab7a5e82a12a929a879bdcead741dcd6446aeaf3463bab5c5f9c6c6bdad9f",
+      "document_id": "L1-R26BK01574547-000-a18be783a219e51d",
+      "document_version": "a18be783a219e51dc7a73992681b6135c22338de209b9ac26def8a9faab97643",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임2_제안요청서(항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

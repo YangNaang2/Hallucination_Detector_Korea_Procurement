@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N20-E1",
+  "answer_sha256": "d70b35843ab8be21e751a59b7e84fb6bc874e35ad75d2040824fb0677f7af7a1",
+  "context_sha256": "5e3f8e9334608126b4f5c84deb2a24b55a4dc2bcefbdd56060421b0f48efab16",
+  "question_sha256": "917c35ee477d8c48f04b27e34704c596f4774cc1016adc7bf78ee99d16f03d0a",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "217d860d07be8b5cf42d51397e95aa9be27a8ef8c02a6fee978752c6ebfa22a9",
+  "prompt_tokens": 2743,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2743,
+    "total_tokens": 3255,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.0395447909832,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01501715-001-58d1ee1c2092b487-CH-00006",
+      "citation": 1,
+      "text_start": 9272,
+      "text_end": 11019,
+      "text_sha256": "7b532b9cab24f2c6fd29bf61220c1ee57c49b4bb1892e6bab911f9c48f8dad78",
+      "document_id": "L1-R26BK01501715-001-58d1ee1c2092b487",
+      "document_version": "58d1ee1c2092b487bb8b8cc3fabb71a99f0d01bb12fe34adbb579c9dea64c172",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501715-001/원본/제안요청서_2026년 국제 사이버 훈련 시각화 시스템 개발.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01501715-001-58d1ee1c2092b487-CH-00001",
+      "citation": 2,
+      "text_start": 1559,
+      "text_end": 3312,
+      "text_sha256": "1ca3525b867f368249a60b8b0fc7bf9bf43bb6c1b23a47a71b080371d121e4a5",
+      "document_id": "L1-R26BK01501715-001-58d1ee1c2092b487",
+      "document_version": "58d1ee1c2092b487bb8b8cc3fabb71a99f0d01bb12fe34adbb579c9dea64c172",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501715-001/원본/제안요청서_2026년 국제 사이버 훈련 시각화 시스템 개발.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

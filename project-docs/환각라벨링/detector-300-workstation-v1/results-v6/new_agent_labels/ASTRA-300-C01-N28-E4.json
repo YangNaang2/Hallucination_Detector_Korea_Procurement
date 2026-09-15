@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N28-E4",
+  "answer_sha256": "4cb69e009d686a15643f7ba943f19ba0a801597a3abc6db44ff5b98e22da88bd",
+  "context_sha256": "d3b95e3bb228f858ed33c566c38e6715fb0ef64e0056760cee8df65f402ff84a",
+  "spans": [
+    {
+      "start": 163,
+      "end": 194,
+      "quote": "협의를 통해 모호성을 해소할 수 있는 **의무가 있다**",
+      "label": "unsupported",
+      "reason": "명확한 표현/계량화 요구는 있지만 협의를 통한 해소 의무를 정하지 않음. 접수후 임의 수정도 금지.",
+      "evidence_ids": [
+        "L1-R26BK01595553-000-4bf76d9de1692aaf-CH-00019"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 359,
+      "end": 390,
+      "quote": "협의를 통해 모호성을 해소할 수 있는 **의무가 있다**",
+      "label": "unsupported",
+      "reason": "명확한 표현/계량화 요구는 있지만 협의를 통한 해소 의무를 정하지 않음. 접수후 임의 수정도 금지.",
+      "evidence_ids": [
+        "L1-R26BK01595553-000-4bf76d9de1692aaf-CH-00019"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 618,
+      "end": 645,
+      "quote": "협의를 통해 모호성을 해소할 수 있는 의무가 있다",
+      "label": "unsupported",
+      "reason": "객관적 증빙 의무로부터 별도 협의 의무를 도출할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01595553-000-4bf76d9de1692aaf-CH-00018"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      731
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "모호한 표현 평가불가 및 나중협의로 미루면 안된다는 결론은 지지됨."
+}

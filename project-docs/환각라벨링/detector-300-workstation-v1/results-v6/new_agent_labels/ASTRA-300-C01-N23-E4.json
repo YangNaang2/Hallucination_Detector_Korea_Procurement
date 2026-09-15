@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N23-E4",
+  "answer_sha256": "1328599f1f06788270ed157ffeffcce3ddbb5462cddd54dfc053565202d29625",
+  "context_sha256": "7bd87c33c57d8eba2d53ae9f3b935833803b4283c24c25cee865dd57c78161ed",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      451
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료1 SER006에 진단원 자격에 준한 인력 및 개발보안 교육이 명시되어 일반 개발 경력만으로 충족 불가 결론 지지."
+}

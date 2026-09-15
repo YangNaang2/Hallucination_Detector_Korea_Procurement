@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C04-N36-E4",
+  "answer_sha256": "f3cac29dcce45c69049ce1aec75554a072af0197d20c060adbf4de23b6e28104",
+  "context_sha256": "2468944d9138ff140d73481bafddd3871e7a95a72b36d8a0363b8089afed4049",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      666
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "직접 인용은 보조매체 조항이지만 같은 자료1 SER-006에 발주기관 승인하 지정단말기 접속이 명시되어 결론 전체가 지지됨. 인접 인용만 보고 근거없음으로 라벨링하지 않음."
+}

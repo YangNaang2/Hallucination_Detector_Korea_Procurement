@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N29-E2",
+  "answer_sha256": "17dc655b12f92ed5e1689cf360c555864d38b3f3d1083e35e7b9c8edabb2d66a",
+  "context_sha256": "e89a69c00807ab175aa7bcd4e057c0512c2a0e8751ebc4d5dcfd8f106d2db336",
+  "question_sha256": "fca663996d0ae180d7d6af12d22362388e9392ea5a0bf82ae82e6487ff348b4d",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e5455642f968dd0c113f8e8f167bf1889ce80f2980bc133ade49f0981008a25d",
+  "prompt_tokens": 2624,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 313,
+    "prompt_tokens": 2624,
+    "total_tokens": 2937,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.650542991992552,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01434357-000-625ad51b41d28cc1-CH-00010",
+      "citation": 1,
+      "text_start": 15390,
+      "text_end": 17165,
+      "text_sha256": "a3d893445dbf52af75470386c9b8f05e86663efee6d792c93d8657f15446297e",
+      "document_id": "L1-R26BK01434357-000-625ad51b41d28cc1",
+      "document_version": "625ad51b41d28cc162dc26c5340cd3313c20c0f83e54c3e409598928ed51d717",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01434357-000/원본/2. 입시지원시스템제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01434357-000-625ad51b41d28cc1-CH-00011",
+      "citation": 2,
+      "text_start": 16925,
+      "text_end": 18655,
+      "text_sha256": "8df9b2f5b2fda339f63ceb8ed010fffd6a5eceffe55d07569a854768b7e879e8",
+      "document_id": "L1-R26BK01434357-000-625ad51b41d28cc1",
+      "document_version": "625ad51b41d28cc162dc26c5340cd3313c20c0f83e54c3e409598928ed51d717",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01434357-000/원본/2. 입시지원시스템제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

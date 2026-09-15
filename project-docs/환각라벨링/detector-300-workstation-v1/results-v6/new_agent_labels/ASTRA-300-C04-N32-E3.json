@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C04-N32-E3",
+  "answer_sha256": "0667f8d7a40d4e0baf3fb237b0f446016f4ebeb7bdf932df7c6407e2445507c3",
+  "context_sha256": "1f31f6bbc02d83b8908a2c6078b9e4338a422be6afcd468398f382451e454833",
+  "spans": [
+    {
+      "start": 740,
+      "end": 742,
+      "quote": "볫도",
+      "label": "quality_only",
+      "reason": "별도의 오타이며 사실 판단을 바꾸지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-57cd356f46790fed-CH-00031"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      776
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "개인 PC 반입반출 통제·협의·보안조건 및 자료보관은 두 근거에 존재함. 제한없는 원격작업 불가 결론 지지."
+}

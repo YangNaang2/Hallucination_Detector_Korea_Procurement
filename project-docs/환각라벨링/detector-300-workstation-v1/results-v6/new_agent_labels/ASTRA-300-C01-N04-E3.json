@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N04-E3",
+  "answer_sha256": "51ff2df6b24eae3c19528dc6ea93875aba4a13c649101b3881cb507c40754d71",
+  "context_sha256": "9f2256ee364ea123aee544d5ff2e1a17e5173429b79723aa1ae2bb1458ff9566",
+  "spans": [
+    {
+      "start": 205,
+      "end": 252,
+      "quote": "공동수급협정서의 제출이 가격제안서 마감 시점과 동일한 시점이 아니면, 제출이 불가능함",
+      "label": "contradiction",
+      "reason": "원문은 협정서 자체 마감과 입찰서 선제출 이후 제한이며 가격마감과 동일시점 제출 의무가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 385,
+      "end": 417,
+      "quote": "가격제안서 제출 마감 시점이 2026년 9월 13일인 경우",
+      "label": "uncertain",
+      "reason": "가정형 표현이지만 판단 기준일을 실제 가격제안 마감처럼 혼동할 위험. 실제 마감으로 단정하지는 않아 양성 확정에서 제외.",
+      "evidence_ids": [
+        "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      559
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "공동협정서 5월11일18시 및 선제출 제한은 정확함."
+}

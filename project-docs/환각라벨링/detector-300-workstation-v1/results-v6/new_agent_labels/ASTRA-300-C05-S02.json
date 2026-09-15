@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C05-S02",
+  "answer_sha256": "024f0e50de4005685027b1b485eb24d0d73f260304f7251116da346570021c94",
+  "context_sha256": "906cc824b10cb60f971c14a4400eb7e1433006feb9534808c0609f03b11bd443",
+  "spans": [
+    {
+      "start": 129,
+      "end": 171,
+      "quote": "PC·모니터: 78,974,520 KRW (scoped_direct_net)",
+      "label": "contradiction",
+      "reason": "scoped_direct는 자체인력 방문비 범위이지 PC·모니터 아님.",
+      "evidence_ids": [
+        "C05-QA300-COST-2.0.0-CH-014"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 174,
+      "end": 221,
+      "quote": "Office: 28,450,000 KRW (synthetic_external_net)",
+      "label": "contradiction",
+      "reason": "28,450,000은 외부비용 합계. Office 공급가액은 800,000.",
+      "evidence_ids": [
+        "C05-QA300-COST-2.0.0-CH-003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 265,
+      "end": 302,
+      "quote": "부대 장비: 8,000,000 KRW (prices-3의 공급가액)",
+      "label": "contradiction",
+      "reason": "prices-3는 Office 800,000이며 부대장비8백만원 아님.",
+      "evidence_ids": [
+        "C05-QA300-COST-2.0.0-CH-003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 304,
+      "end": 385,
+      "quote": "합산된 합성 명세는 78,974,520 + 28,450,000 + 14,400,000 + 8,000,000 = 129,824,520 KRW입니다.",
+      "label": "contradiction",
+      "reason": "범위 혼동과 중복 합산. 실제 외부 합계28,450,000이며 기존 scoped direct와 더한 direct107,424,520.",
+      "evidence_ids": [
+        "C05-QA300-COST-2.0.0-CH-014"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      587
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "최종 target_net/gross는 정확히 옮겼지만 장비 합계 과정이 틀림.",
+  "review_note": ""
+}

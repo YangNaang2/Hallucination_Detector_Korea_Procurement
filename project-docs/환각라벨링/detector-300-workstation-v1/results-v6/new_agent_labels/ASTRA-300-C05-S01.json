@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-S01",
+  "answer_sha256": "78379f5e1f427a74972dc218e8c404c0fe0bd673850e7500405078ca125cf871",
+  "context_sha256": "b99a9d9828ec4d2083b759549eb60bd611eb4c346b667d3a45c50c17f8247e84",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      310
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "상태변경 노트가 금액·날짜·고객 불변을 명시. 뒤 합성자료 설명은 중복적이지만 별도 사실 오류 없음."
+}

@@ -1,0 +1,480 @@
+[
+  {
+    "question_id": "ASTRA-300-C01-N03-E4",
+    "characters": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 34,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_tn": 0,
+    "scored_characters": 298,
+    "reviewed_characters": 397,
+    "masked_characters": 14,
+    "answer_characters": 397,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [
+      [
+        313,
+        315
+      ],
+      [
+        316,
+        321
+      ],
+      [
+        322,
+        326
+      ],
+      [
+        327,
+        330
+      ],
+      [
+        331,
+        332
+      ],
+      [
+        333,
+        336
+      ],
+      [
+        337,
+        339
+      ],
+      [
+        340,
+        345
+      ],
+      [
+        346,
+        350
+      ],
+      [
+        351,
+        356
+      ]
+    ],
+    "fp_ranges": [],
+    "gold_positive": true,
+    "prediction_positive": false
+  },
+  {
+    "question_id": "ASTRA-300-C01-N06-E1",
+    "characters": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_tn": 1,
+    "scored_characters": 249,
+    "reviewed_characters": 322,
+    "masked_characters": 12,
+    "answer_characters": 322,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [],
+    "fp_ranges": [],
+    "gold_positive": false,
+    "prediction_positive": false
+  },
+  {
+    "question_id": "ASTRA-300-C01-N07-E5",
+    "characters": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_tn": 1,
+    "scored_characters": 156,
+    "reviewed_characters": 210,
+    "masked_characters": 0,
+    "answer_characters": 210,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [],
+    "fp_ranges": [],
+    "gold_positive": false,
+    "prediction_positive": false
+  },
+  {
+    "question_id": "ASTRA-300-C01-N10-E2",
+    "characters": {
+      "tp": 68,
+      "fp": 0,
+      "fn": 7,
+      "precision": 1.0,
+      "recall": 0.9066666666666666,
+      "f1": 0.951048951048951
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 19,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "answer_tn": 0,
+    "scored_characters": 525,
+    "reviewed_characters": 715,
+    "masked_characters": 42,
+    "answer_characters": 715,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 8,
+    "fn_ranges": [
+      [
+        14,
+        20
+      ],
+      [
+        28,
+        29
+      ]
+    ],
+    "fp_ranges": [],
+    "gold_positive": true,
+    "prediction_positive": true
+  },
+  {
+    "question_id": "ASTRA-300-C01-N28-E4",
+    "characters": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "answer_tn": 1,
+    "scored_characters": 180,
+    "reviewed_characters": 284,
+    "masked_characters": 51,
+    "answer_characters": 284,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [],
+    "fp_ranges": [],
+    "gold_positive": false,
+    "prediction_positive": false
+  },
+  {
+    "question_id": "ASTRA-300-C01-N29-E3",
+    "characters": {
+      "tp": 0,
+      "fp": 36,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 11,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "answer_tn": 0,
+    "scored_characters": 645,
+    "reviewed_characters": 921,
+    "masked_characters": 81,
+    "answer_characters": 921,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [],
+    "fp_ranges": [
+      [
+        283,
+        284
+      ],
+      [
+        285,
+        288
+      ],
+      [
+        289,
+        292
+      ],
+      [
+        297,
+        300
+      ],
+      [
+        301,
+        303
+      ],
+      [
+        304,
+        307
+      ],
+      [
+        308,
+        311
+      ],
+      [
+        312,
+        316
+      ],
+      [
+        317,
+        323
+      ],
+      [
+        324,
+        328
+      ],
+      [
+        329,
+        333
+      ]
+    ],
+    "gold_positive": false,
+    "prediction_positive": true
+  },
+  {
+    "question_id": "ASTRA-300-C01-N30-E2",
+    "characters": {
+      "tp": 18,
+      "fp": 17,
+      "fn": 27,
+      "precision": 0.5142857142857142,
+      "recall": 0.4,
+      "f1": 0.45
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "answer_tn": 0,
+    "scored_characters": 279,
+    "reviewed_characters": 357,
+    "masked_characters": 0,
+    "answer_characters": 357,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [
+      [
+        262,
+        263
+      ],
+      [
+        264,
+        266
+      ],
+      [
+        269,
+        270
+      ],
+      [
+        286,
+        289
+      ],
+      [
+        327,
+        329
+      ],
+      [
+        335,
+        338
+      ],
+      [
+        339,
+        342
+      ],
+      [
+        343,
+        347
+      ],
+      [
+        348,
+        352
+      ],
+      [
+        353,
+        357
+      ]
+    ],
+    "fp_ranges": [
+      [
+        294,
+        296
+      ],
+      [
+        302,
+        303
+      ],
+      [
+        304,
+        307
+      ],
+      [
+        308,
+        310
+      ],
+      [
+        311,
+        313
+      ],
+      [
+        314,
+        315
+      ],
+      [
+        316,
+        320
+      ],
+      [
+        321,
+        323
+      ]
+    ],
+    "gold_positive": true,
+    "prediction_positive": true
+  },
+  {
+    "question_id": "ASTRA-300-C01-N38-E4",
+    "characters": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "answer_tn": 0,
+    "scored_characters": 341,
+    "reviewed_characters": 418,
+    "masked_characters": 0,
+    "answer_characters": 418,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "fn_ranges": [],
+    "fp_ranges": [
+      [
+        274,
+        276
+      ]
+    ],
+    "gold_positive": false,
+    "prediction_positive": true
+  }
+]

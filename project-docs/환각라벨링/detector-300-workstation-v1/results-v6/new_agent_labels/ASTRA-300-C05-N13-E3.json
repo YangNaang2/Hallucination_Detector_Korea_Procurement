@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C05-N13-E3",
+  "answer_sha256": "11df3b5cb456d79356d0a305e5c4b8175fa94d7e398bbe44324f508d3bbc17c8",
+  "context_sha256": "f94caa01ad7e0effbb23207c54330fab2a6973fe0b221dd3d6caef54246060bc",
+  "spans": [
+    {
+      "start": 42,
+      "end": 45,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "PM 관리역량 평가는 자료2이고 자료1은 하자보수 및 교육 지원.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00053"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 246,
+      "end": 278,
+      "quote": "구체적인 평가 기준은 개발자의 역량과 경험에 따라 달라지며",
+      "label": "uncertain",
+      "reason": "평가 결과가 역량에 따라 달라진다는 뜻인지 기준 자체가 변한다는 뜻인지 모호함.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00053"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      383
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "직함 배정만으로 PM 관리경험·소통능력을 자동 충족하지 않는다는 핵심 추론은 정상."
+}

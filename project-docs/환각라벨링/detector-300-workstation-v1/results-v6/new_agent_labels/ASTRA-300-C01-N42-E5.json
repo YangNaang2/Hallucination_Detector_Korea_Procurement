@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N42-E5",
+  "answer_sha256": "d86994fcb59665ff912258a10e9ce9c56a49eb821923f8ef7fab9207891416ef",
+  "context_sha256": "1b7bcb5d7d44215b7e7e2f8cf212bbbb1271e86067d85fe86c93b54d41ea4438",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      426
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "제공 발췌에 산출물 권리 귀속 규정 없음을 명시하며 회사정책으로 확정하지 않음. 근거부족을 정직하게 설명한 정상 답변."
+}

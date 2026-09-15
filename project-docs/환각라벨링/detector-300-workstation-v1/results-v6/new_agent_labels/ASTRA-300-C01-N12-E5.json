@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N12-E5",
+  "answer_sha256": "739b38d7b47256566c29fa02582f2395409518ce0442f4f94bd4be89b2fab378",
+  "context_sha256": "a903d19996b4dcc867a23f87f528188bec14f7af6e7b20b11b56c3b4305b0618",
+  "spans": [
+    {
+      "start": 496,
+      "end": 526,
+      "quote": "**참여 방식의 변경**에 대한 구체적인 규정은 없으며",
+      "label": "contradiction",
+      "reason": "자료2의 2나에 단독이라고 명시되어 있다.",
+      "evidence_ids": [
+        "L1-R26BK01474723-000-006fb459fca21c72-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 339,
+      "end": 401,
+      "quote": "**문서에 명시된 규정에 따라 가능하나, 구체적인 조건이 명시되지 않았기 때문에 확정적으로 변경할 수는 없다**",
+      "label": "unsupported",
+      "reason": "점검일정 협의조항에서 공동이행 참여 변경 허용을 도출할 수 없다.",
+      "evidence_ids": [
+        "L1-R26BK01474723-000-7553e5b717a40050-CH-00007"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 686,
+      "end": 752,
+      "quote": "**문서에 명시된 규정에 따라 변경이 가능하나, 구체적인 조건이 명시되지 않았기 때문에 확정적으로 변경할 수는 없다**",
+      "label": "unsupported",
+      "reason": "점검일정과 참가방식은 별개이며 단독 규정 존재.",
+      "evidence_ids": [
+        "L1-R26BK01474723-000-006fb459fca21c72-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      762
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "단독 참가 조항을 놓치고 일정 변경과 혼동함",
+  "review_note": ""
+}

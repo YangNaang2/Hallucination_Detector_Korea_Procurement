@@ -1,0 +1,43 @@
+{
+  "before": {
+    "question_id": "ASTRA-300-C05-N47-E4",
+    "answer_sha256": "5d5d879fb5eabb9ac0e32ada42ebaeda7691844c61e72976abe10c60eb7ccd07",
+    "context_sha256": "d3bf7cb355fe1311351e59d106dcc55914d5ab6c35716154fca6ea53582bd201",
+    "spans": [
+      {
+        "start": 327,
+        "end": 420,
+        "quote": "**제어 및 모니터링, 데이터 기능 통신 게이트웨이 장치**의 사양은 **16코어 이상 CPU, 64GB 이상 메모리, SSD 1TB 이상 스토리지**를 요구하고 있다",
+        "label": "contradiction",
+        "reason": "이 수치는 별도 PC 사양이며 게이트웨이 장치 사양이 아님.",
+        "evidence_ids": [
+          "L1-R26BK01505744-000-4eff91818809e0e7-CH-00006"
+        ],
+        "human_decision": "pending"
+      },
+      {
+        "start": 429,
+        "end": 560,
+        "quote": "**[2]**에서도 EMS와 통신 게이트웨이 간의 통신 기능 개발은 **OPC UA 기반 게이트웨이와 인터페이스**를 통해 이루어져야 하며, **OCPP1.6** 프로토콜을 사용하여 EV 충전 스테이션과의 통신도 이루어져야 한다(1).",
+        "label": "unsupported",
+        "reason": "제공된 자료2는 SFR002 제목까지만 포함; OCPP1.6 통신 조건은 제공 근거에 없음.",
+        "evidence_ids": [
+          "L1-R26BK01505744-000-4eff91818809e0e7-CH-00006"
+        ],
+        "human_decision": "pending"
+      }
+    ],
+    "reviewed_ranges": [
+      [
+        0,
+        852
+      ]
+    ],
+    "review_status": "agent evidence review; not human gold",
+    "human_approved": false,
+    "question_fulfillment": "partial",
+    "omission": "마지막 결론이 생성 길이 제한으로 잘림.",
+    "review_note": "일반 공유기로 제어 프로토콜 요건을 충족할 수 없다는 핵심 취지는 지지. PC와 게이트웨이 주체 혼동 별도 표시."
+  },
+  "reason": "Full context1 contains OCPP1.6: revise unsupported to citation_error; detector predictions not consulted"
+}

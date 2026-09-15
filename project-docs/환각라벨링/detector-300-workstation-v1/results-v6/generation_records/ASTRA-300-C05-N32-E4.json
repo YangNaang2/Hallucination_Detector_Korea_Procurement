@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N32-E4",
+  "answer_sha256": "ac0f88714d5d0c08ebe40d5ac0ed7f48d1e45a5cc363e2ee9fd3ea157bccbdd0",
+  "context_sha256": "6f22291e78fa26d1e4c4affc1d5b71d3674c65166c8b24b36da40ef291bf958d",
+  "question_sha256": "436cbeea3dc36c22649c0239d5a574794681699512063659a5737e15ffaac9c5",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e315fcced2ef3dd40bef5842e7fa0386b22461098709f9ee9b0e28ee7ac99d6f",
+  "prompt_tokens": 2117,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 401,
+    "prompt_tokens": 2117,
+    "total_tokens": 2518,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 14.206907925021369,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01548452-000-e88b298dbb15e992-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1022,
+      "text_sha256": "312e9cdc5530e879e0a9c095d4ca852fb7c2426750df223cc00d97cd429ddc19",
+      "document_id": "L1-R26BK01548452-000-e88b298dbb15e992",
+      "document_version": "e88b298dbb15e992952cc014e0b113703d303bb12e63eb7a75aa2f0a1d059c60",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01548452-000/원본_사용불가/5. (양식) 한국소비자원 퇴직자 영입 확인서 양식.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01548452-000-d94308d00f27deb0-CH-00003",
+      "citation": 2,
+      "text_start": 4525,
+      "text_end": 6234,
+      "text_sha256": "8d5b9eeb4fede8f01f464271e2ba7eb0a381713d010ae98069cb080685bf7e6e",
+      "document_id": "L1-R26BK01548452-000-d94308d00f27deb0",
+      "document_version": "d94308d00f27deb0b742f669a1e5f9ebab7a5cd3c429f9fe9a45b78804f6a94a",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01548452-000/원본/1. (입찰공고문) 「2026년 소망챗 고도화」.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

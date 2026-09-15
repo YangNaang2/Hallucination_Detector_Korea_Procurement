@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N05-E1",
+  "answer_sha256": "251615a771e5643a577acc95e25b868ce8111dcdb58f2b8d03b7b7b1a2ec0ead",
+  "context_sha256": "372503b2f43d31c6512989f07f8e2f7a10ee30874fac723af89101da04cd6641",
+  "question_sha256": "e33aa91acfa489cf91ae2e11173e33532363123458dedd376c395824c0e4f9fc",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e02155f6fcafda56a0b7939e35c7d1d254cc5b56ea31ba076f20f712131fea7d",
+  "prompt_tokens": 2624,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 267,
+    "prompt_tokens": 2624,
+    "total_tokens": 2891,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 4.5922781889967155,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1796,
+      "text_sha256": "5cd7e0f39fd40a8e690a24141b54a7a366de07ca5690580984aa88614a621d66",
+      "document_id": "L1-R26BK01481037-000-f6bce1d46faa354c",
+      "document_version": "f6bce1d46faa354c21135a954cdc90779978024f362b8a65f7b36b1efc526bfb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01481037-000/원본/[별첨서류] 섬유소재 정보 제공 서비스 고도화 및 AI 검색 기능 도입.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00001",
+      "citation": 2,
+      "text_start": 1556,
+      "text_end": 3356,
+      "text_sha256": "b71b1b8e47baa6ba75c8187db6e861a3c1c6e0f3c58093023a15053aead6a327",
+      "document_id": "L1-R26BK01481037-000-f6bce1d46faa354c",
+      "document_version": "f6bce1d46faa354c21135a954cdc90779978024f362b8a65f7b36b1efc526bfb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01481037-000/원본/[별첨서류] 섬유소재 정보 제공 서비스 고도화 및 AI 검색 기능 도입.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N16-E5",
+  "answer_sha256": "3da580eff3c2ece552ef88e23eebf44e0a8b6231d99a394246a3937a358f6f71",
+  "context_sha256": "47aa6bee1d6ac9c3aa2fbec28a5d5520bdf222ce46d067f79eeb25b69e76917d",
+  "question_sha256": "e67725be996651afe273b3a79373f4564052cde8aa685ba5f41fb4ddb5b56368",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "1a5b74f85576b62fab427e0c2ece2c4ee48eb5bef082f89ed8cb1a9b10f9ae48",
+  "prompt_tokens": 2842,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 341,
+    "prompt_tokens": 2842,
+    "total_tokens": 3183,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.297343430982437,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01487327-000-4bb8f527b6f4df16-CH-00006",
+      "citation": 1,
+      "text_start": 9231,
+      "text_end": 10984,
+      "text_sha256": "48fe3bbe5b91ad008d13538d4f78b546b1850a3edb7747968e6f8f2df0588159",
+      "document_id": "L1-R26BK01487327-000-4bb8f527b6f4df16",
+      "document_version": "4bb8f527b6f4df16d5078c784702db1a1601deffe0311dfc87f39de3691342ac",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01487327-000/원본/260422과업지시서(아카이브시스템유지보수).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01487327-000-4bb8f527b6f4df16-CH-00011",
+      "citation": 2,
+      "text_start": 16933,
+      "text_end": 18690,
+      "text_sha256": "af01b84a9d5fb89731c07a18d4b38cd536a16a17cf3628eacc88c45b37e84c54",
+      "document_id": "L1-R26BK01487327-000-4bb8f527b6f4df16",
+      "document_version": "4bb8f527b6f4df16d5078c784702db1a1601deffe0311dfc87f39de3691342ac",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01487327-000/원본/260422과업지시서(아카이브시스템유지보수).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N45-E2",
+  "answer_sha256": "43fff2aaba34d9c6c9a7bc9c6ab711d031e527c55cdfebf1276f0f0557a2690b",
+  "context_sha256": "5a94aebb5ac9d77ac772669fac892431349f23b822439eaf9277d26d07244f39",
+  "spans": [
+    {
+      "start": 67,
+      "end": 73,
+      "quote": "[양식 7]",
+      "label": "citation_error",
+      "reason": "참여인력은 양식6 아래, 양식7은 자기평가서. 내용6개월조건은 맞음.",
+      "evidence_ids": [
+        "L1-R26BK01593644-000-6f322cd0ece39ccb-CH-00007"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 235,
+      "end": 241,
+      "quote": "[양식 7]",
+      "label": "citation_error",
+      "reason": "참여인력은 양식6 아래, 양식7은 자기평가서. 내용6개월조건은 맞음.",
+      "evidence_ids": [
+        "L1-R26BK01593644-000-6f322cd0ece39ccb-CH-00007"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 399,
+      "end": 405,
+      "quote": "[양식 7]",
+      "label": "citation_error",
+      "reason": "참여인력은 양식6 아래, 양식7은 자기평가서. 내용6개월조건은 맞음.",
+      "evidence_ids": [
+        "L1-R26BK01593644-000-6f322cd0ece39ccb-CH-00007"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      597
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "총경력으로 해당회사6개월 근무 조건 대체불가 결론 지지. 경력기준 언급은 해당 재직조건 문맥으로 해석."
+}

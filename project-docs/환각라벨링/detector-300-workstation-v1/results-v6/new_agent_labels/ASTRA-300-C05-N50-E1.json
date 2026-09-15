@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C05-N50-E1",
+  "answer_sha256": "fa63106f9acde29a62fa26da803e7a3e064a3866ee845d320f71390c68c4e539",
+  "context_sha256": "815172629551a7e8777f33483acecacc8bdd9ce3cf3f8dac538074b6e86cd86b",
+  "spans": [
+    {
+      "start": 48,
+      "end": 160,
+      "quote": "**SW·정보통신 등록은 보안 관리의 기본 요건이지만, 업종 요건은 보안 준수사항, 보안확약서 제출, 정보 누출 금지 등 다양한 조건을 포함하므로, 단독으로 SW·정보통신 등록만으로는 충분하지 않다**",
+      "label": "unsupported",
+      "reason": "제공 보안 조건은 업종 등록 요건을 규정하지 않음. 등록과 보안 의무를 혼동.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00053"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 452,
+      "end": 495,
+      "quote": "이 정보를 누출할 경우 입찰참가자 자격 제한을 위한 부정당업체로 등록해야 한다",
+      "label": "unsupported",
+      "reason": "해당 자료는 누출금지 대상 목록 제목이며 의무적 부정당업체 등록 절차는 명시하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00053"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 649,
+      "end": 733,
+      "quote": "**SW·정보통신 등록만으로는 업종 요건이 충족되지 않으며, 보안 준수사항, 보안확약서 제출, 정보 누출 금지 등 다양한 요건을 모두 충족해야 한다**",
+      "label": "unsupported",
+      "reason": "보안 준수 의무로부터 업종 요건 충족 여부를 도출할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00053"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      734
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "실제 업종 요건은 제공 근거로 확인 불가; 이를 명시하지 않음.",
+  "review_note": ""
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N24-E2",
+  "answer_sha256": "98a284eb4f49703bae53c0d10fde670a7727fd7f94e1835264daa2e5f0af86c8",
+  "context_sha256": "1f88ebe8a959189374b505e7bb9bf7d77c75891a5865bab5bb090a6de03f1875",
+  "question_sha256": "60f74a4777fcc27fad8f15123d878478496c881317aca6b42d4ecc472e0f41fb",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "5fd13c4269146e3bd14beeaacd0868be44cbee1a27ffc253e0845d9b1a5eea7f",
+  "prompt_tokens": 2706,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 359,
+    "prompt_tokens": 2706,
+    "total_tokens": 3065,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.622515733994078,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01508724-000-fc60e3934f896b90-CH-00030",
+      "citation": 1,
+      "text_start": 46252,
+      "text_end": 48031,
+      "text_sha256": "c549ad81d830965f326063acbbc58e75355379dcbf4d26f6cefc0f6e8022aea8",
+      "document_id": "L1-R26BK01508724-000-fc60e3934f896b90",
+      "document_version": "fc60e3934f896b9017e8fd3d28c574708063dbb878a2d960a395d282dc6f90b7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01508724-000/원본/2. 제안요청서_2026년 중소기업 전략기술로드맵 시스템 유지보수 및 기능개선.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01508724-000-9c6403d327e25b37-CH-00008",
+      "citation": 2,
+      "text_start": 12294,
+      "text_end": 13888,
+      "text_sha256": "3dde35f2ced76fa5005089ba653cad1d01a76220bf42d41729c09eac4cb05361",
+      "document_id": "L1-R26BK01508724-000-9c6403d327e25b37",
+      "document_version": "9c6403d327e25b379ab8e04011a6935320bffe93f1bd364fe2ce94b95a934e3c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01508724-000/원본/1. 공고문_2026년 중소기업 전략기술로드맵 시스템 유지보수 및 기능개선.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

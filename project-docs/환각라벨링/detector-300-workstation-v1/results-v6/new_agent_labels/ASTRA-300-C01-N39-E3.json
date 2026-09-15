@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C01-N39-E3",
+  "answer_sha256": "69e7a7d16ab3625c13a4f98b729a0c4e4a5f5822b641bf6d542d99501623ced7",
+  "context_sha256": "adf650b6589c83f407d9501c099fe4f44edd7281d3bcc1e68b5a63ed488e1f84",
+  "spans": [
+    {
+      "start": 205,
+      "end": 239,
+      "quote": "**목표 공수를 법정 최소 인원으로 표현하는 것은 허용된다**",
+      "label": "unsupported",
+      "reason": "목표투입공수 서식과 인력증빙 조건은 법정 최소 인원 근거 아님.",
+      "evidence_ids": [
+        "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00011"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 538,
+      "end": 572,
+      "quote": "**목표 공수를 법정 최소 인원으로 표현하는 것은 허용된다**",
+      "label": "unsupported",
+      "reason": "목표투입공수 서식과 인력증빙 조건은 법정 최소 인원 근거 아님.",
+      "evidence_ids": [
+        "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00011"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 425,
+      "end": 468,
+      "quote": "**참여인력의 목표 공수를 법정 최소 인원으로 표현하는 것이 허용되는 근거**",
+      "label": "unsupported",
+      "reason": "증빙자료 제출 조건으로 법정 최소 인원 표현을 허용할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00011"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 501,
+      "end": 532,
+      "quote": "**법정 최소 인원을 포함하는 것으로 해석**될 수 있다",
+      "label": "unsupported",
+      "reason": "채용예정인력 범주와 법정 최소 인원은 관계 없음.",
+      "evidence_ids": [
+        "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00011"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      573
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "증빙 조건 인용 자체는 정확하지만 그로부터 도출한 결론이 근거 없음."
+}

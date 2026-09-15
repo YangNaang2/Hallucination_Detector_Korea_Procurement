@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N37-E5",
+  "answer_sha256": "5abfd28862c0bb82bec34c27cd46c719d35313123335e10c4607eab0cbd23b65",
+  "context_sha256": "5c6fff43783a664b06590b6b79ac4685e2dda9153e6ba6ff9caf59e103ad2f54",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      665
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "일일보안점검보고서 산출 의무로 월말1회 대체 불가 결론 지지. 첫 문장은 질문 재진술이며 최종 허용 주장 아님."
+}

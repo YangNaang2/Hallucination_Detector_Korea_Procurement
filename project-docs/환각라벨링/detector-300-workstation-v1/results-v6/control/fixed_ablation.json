@@ -1,0 +1,8 @@
+{
+  "model": "contrast3",
+  "profile": "repeat192",
+  "aggregation": "min",
+  "threshold": 0.3,
+  "selection": "fixed epoch3 and threshold .3; no control-result tuning",
+  "frozen_before_control_inference": true
+}

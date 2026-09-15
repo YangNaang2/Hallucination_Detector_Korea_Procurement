@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C05-N30-E1",
+  "answer_sha256": "2b705eb1390da5f8e55a63718a74b3e01b8ebecc0083020e776a6412a6b1cd4c",
+  "context_sha256": "25753acf34ea67881e1e935bd9295d2e7ddadd5343638b46323ce12f7d639426",
+  "question_sha256": "fc4e909b48cf2c9cccb4374b6d0eb11aedccf04a671bdef588a2400ceac06b25",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "5d4afb11ddca4a8ac75172f3127ae995b3b0492437ff6b976cc4baa20ed89bd0",
+  "prompt_tokens": 1715,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 327,
+    "prompt_tokens": 1715,
+    "total_tokens": 2042,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.096187752991682,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00039",
+      "citation": 1,
+      "text_start": 59604,
+      "text_end": 61403,
+      "text_sha256": "ba32b4c84a45188f550eda07559237160f23008ca3c47a9e41574ba8ca307bbd",
+      "document_id": "L1-R26BK01518323-000-c3cdf55e774fda9d",
+      "document_version": "c3cdf55e774fda9d968329f67eb8dc4dbec63f2201609e45db0b8cf8aaf0fddd",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01518323-000/원본/제안요청서(2026년 부산광역정신건강복지센터 홈페이지 재구축).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

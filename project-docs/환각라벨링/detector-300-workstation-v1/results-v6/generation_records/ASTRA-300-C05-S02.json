@@ -1,0 +1,78 @@
+{
+  "question_id": "ASTRA-300-C05-S02",
+  "answer_sha256": "024f0e50de4005685027b1b485eb24d0d73f260304f7251116da346570021c94",
+  "context_sha256": "906cc824b10cb60f971c14a4400eb7e1433006feb9534808c0609f03b11bd443",
+  "question_sha256": "56032f6e8d7ca05ebd66a773e88ca61e7c733a3687bc2d1a4b0e87021c5b0386",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "cfa5d53479ade868a3ff4b84c8844ef898e222764a1fcdf8037135c1f98532e4",
+  "prompt_tokens": 2364,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 405,
+    "prompt_tokens": 2364,
+    "total_tokens": 2769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.523003052017884,
+  "source_evidence": [
+    {
+      "chunk_id": "C05-QA300-COST-2.0.0-CH-014",
+      "citation": 1,
+      "text_start": 16290,
+      "text_end": 17504,
+      "text_sha256": "ebaa127d9a7b393231bd6f29f597c6ac751c42c1c25163abec890787e0c0b685",
+      "document_id": "C05-QA300-COST-2.0.0",
+      "document_version": "2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "scenario_id": "SC-QA300-C05-A",
+      "path": "project-docs/평가데이터/v2/retrieval/C05/L3/C05-QA300-COST-2.0.0.json"
+    },
+    {
+      "chunk_id": "C05-QA300-COST-2.0.0-CH-003",
+      "citation": 2,
+      "text_start": 2080,
+      "text_end": 3079,
+      "text_sha256": "e5e3c99b72e5d321321350ae5529f61670fc0542d5c9384b6b4741ca825bfd46",
+      "document_id": "C05-QA300-COST-2.0.0",
+      "document_version": "2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "scenario_id": "SC-QA300-C05-A",
+      "path": "project-docs/평가데이터/v2/retrieval/C05/L3/C05-QA300-COST-2.0.0.json"
+    },
+    {
+      "chunk_id": "C05-QA300-COST-2.0.0-CH-007",
+      "citation": 3,
+      "text_start": 6057,
+      "text_end": 7068,
+      "text_sha256": "b954224cb380508ad738088b4e727826909131d4b08c2c6ed30ea480cff823fb",
+      "document_id": "C05-QA300-COST-2.0.0",
+      "document_version": "2.0.0",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "scenario_id": "SC-QA300-C05-A",
+      "path": "project-docs/평가데이터/v2/retrieval/C05/L3/C05-QA300-COST-2.0.0.json"
+    },
+    {
+      "chunk_id": "C05-COST-1.0.0-r1-CH-ee41efd865a4",
+      "citation": 4,
+      "text_start": 75,
+      "text_end": 1024,
+      "text_sha256": "00d78c5cb3cc283356b998210ae9a09847a8713cbefcce8e48542b6d976b4ba4",
+      "document_id": "C05-COST-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "security_level": "L3",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C05/L3/C05-COST-1.0.0-r1.json"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

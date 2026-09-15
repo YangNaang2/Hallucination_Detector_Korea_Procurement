@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N10-E1",
+  "answer_sha256": "32f2b6030d481138473b817cc72157f37e2d34d79e7c599b4f2c248b99e69630",
+  "context_sha256": "abaa13c9191b812ac1c05534c06e20895bf5d3a5ab0a341983726c579a64dfbd",
+  "question_sha256": "d5d29124b0801e5b8b12d1df092cf2ef7af510d542384448303eb68a394599a1",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "9b769760210cf4dcb15295f6d73f16fe5ed71d995f7cf62551c2be8840e1ae99",
+  "prompt_tokens": 2750,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 219,
+    "prompt_tokens": 2750,
+    "total_tokens": 2969,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.024263449013233,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01577397-000-df48155ac0564d45-CH-00004",
+      "citation": 1,
+      "text_start": 6112,
+      "text_end": 7871,
+      "text_sha256": "578657b75deec4edfb3b79ecb90c7c295a217e67ec5eecab650f3188d763b5d4",
+      "document_id": "L1-R26BK01577397-000-df48155ac0564d45",
+      "document_version": "df48155ac0564d45e7efdbfadc67e5c8fcd7cd5182dd06d82e3edfa70ebecdcb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/[입찰공고문]_KIOST 연구선 빅데이터 통합관리시스템(RUDAS) 고도화 용역.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01577397-000-df48155ac0564d45-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1766,
+      "text_sha256": "a3d70a11826931798da78bcbd928c9605f8b610da00af375a55e1dd719c7a5f3",
+      "document_id": "L1-R26BK01577397-000-df48155ac0564d45",
+      "document_version": "df48155ac0564d45e7efdbfadc67e5c8fcd7cd5182dd06d82e3edfa70ebecdcb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/[입찰공고문]_KIOST 연구선 빅데이터 통합관리시스템(RUDAS) 고도화 용역.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

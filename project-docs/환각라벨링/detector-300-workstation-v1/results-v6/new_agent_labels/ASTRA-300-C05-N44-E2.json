@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-N44-E2",
+  "answer_sha256": "d783e6def78545ae85a8a4f1feeed4224c8ad69133ae7941d16b0fa45d8c6a62",
+  "context_sha256": "c902a511d91758d597134a64dc346df259ba45bf7f1c0f6ab88cfc815e7361b0",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      413
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "최소 지분율 질문에 원문 5%를 제시. 10%를 최소 의무로 대체해서는 안 된다는 문맥으로 읽음; 실제 10% 참여 자체 금지로 확대 해석하지 않음."
+}

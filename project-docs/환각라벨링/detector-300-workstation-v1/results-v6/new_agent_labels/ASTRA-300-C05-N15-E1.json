@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C05-N15-E1",
+  "answer_sha256": "f8b3036171eaf994e1c886f7802ebb867e1f2c3b0dddfe14dbd36de531836e3d",
+  "context_sha256": "88cc40ffa28420ae1241ce709457b797a46b849f826c635a4fbe473ccabeee2a",
+  "spans": [
+    {
+      "start": 46,
+      "end": 49,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "FP산정표는 자료2.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-4ac0e4f3a547e712-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      413
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "127.6/19는 1인총투입기간 계산이며 이후 인원/기간 계산 과정의 일부라고 표현. FP자체=인원 아님을 정확히 구분. 1.12명 수치는 질문에 필수 아님."
+}

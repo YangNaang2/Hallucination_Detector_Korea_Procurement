@@ -8,7 +8,7 @@ Original answers, evidence, v1–v5 results and original weights are preserved. 
 
 | Configuration | TP | FP / 28 normal | FN | TN | Answer recall | Character F1 |
 |---|---:|---:|---:|---:|---:|---:|
-| v3 mil3 min .5 | 32 | 21 | 3 | 7 | 91.43% | 31.13% |
+| v3 mil3 min2 .5 | 32 | 21 | 3 | 7 | 91.43% | 31.13% |
 | v5 fp1 min .8 | 24 | 10 | 11 | 18 | 68.57% | 15.28% |
 | v5 fp1 min .9 | 15 | 8 | 20 | 20 | 42.86% | 7.81% |
 | v6 contrast3 min .3 | 27 | 14 | 8 | 14 | 77.14% | 24.89% |
@@ -38,3 +38,14 @@ python -m unittest discover -s procurement-pipeline -p 'test_detector_v6.py'
 ```
 
 Private weights/probability matrices/full prompts must not be committed. Generation and inference validate immutable input/configuration identity before reusing per-record outputs.
+
+## Additional completed experiments (checkpoint update)
+
+- Control training without the 248 synthetic pairs completed three GPU epochs. Fixed epoch3/min/.3 comparison: TP27, FP13, FN8, TN15, character F1 24.14%. The augmented variant has TP27/FP14 and character F1 24.89%. No clear benefit of numeric augmentation; sample count and optimizer steps also differ. See `control/fixed_ablation.json` and `control/fixed-evaluation.json`.
+- Warning continuity filtering tried minimum nonspace lengths 1/4/8/12 on development data. Selection retained minimum1, so suppressing short warnings was not adopted. Whitespace-only joining changes span presentation, not answer warnings or character decisions.
+- New answers: 293/295 successfully saved. Two repeatable local server parser failures (C05-N18-E3, C05-N34-E2): `expected peg-native format`; no source evidence was shortened to conceal the failure.
+- All 63 historical comparison questions now have fresh agent review drafts. Confirmed new hallucination34/63, unresolved4/63; occurrence interval53.97–60.32%, versus old35/63. Question fulfillment: complete31, partial32. This does not establish generation improvement.
+- Operational whole-answer scoring excludes uncertain-only truth from normal counts. Historical A: TP32/FP19/FN3/TN7 (2 unknown); B:27/12/8/14 (2 unknown); C:30/18/4/7 (4 unknown); D:23/11/11/14 (4 unknown). These differ from legacy masked counts above by design; unknown truth is never counted as normal. See `abcd_comparison.json`.
+- `group_bootstrap.json` reports bid-group intervals on exposed data; `label_revision_effect.json` rescores unchanged predictions before/after a documented new-label correction. Original labels remain unchanged.
+
+Remaining work: review the rest of the new answers, resolve/document generation parser failures, complete resource and final validation report. No autonomous operational configuration has met the target.

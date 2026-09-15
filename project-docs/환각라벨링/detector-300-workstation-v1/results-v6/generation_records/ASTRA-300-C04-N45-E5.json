@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N45-E5",
+  "answer_sha256": "8addef7978ddc307e4f36a90376104781852b08f014e430d57be355b625420cf",
+  "context_sha256": "db47a16f564748e965f7a33fa45049e8f6e034d8c963333100641e574c94e1c8",
+  "question_sha256": "349a5979ef43c56c5a2809c25bd26e9f54c23a2597ec242b4294d76f608fd76a",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "14b3148e8a91dfa35933328823391d919a8a41db8d7dc7cc60485f3a5e6fbee9",
+  "prompt_tokens": 2667,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2667,
+    "total_tokens": 3179,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.130705591989681,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01593644-000-7026fb66d76ccc3c-CH-00001",
+      "citation": 1,
+      "text_start": 1560,
+      "text_end": 3144,
+      "text_sha256": "5642aa357534d1efde191bae3c95b7980bf8b4e9973e81cee67dd0e6c492ffcc",
+      "document_id": "L1-R26BK01593644-000-7026fb66d76ccc3c",
+      "document_version": "7026fb66d76ccc3ce193eba986451c77135c62ecb03e12fad9061becef36d06e",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/1.입찰공고문.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01593644-000-6f322cd0ece39ccb-CH-00001",
+      "citation": 2,
+      "text_start": 1553,
+      "text_end": 3258,
+      "text_sha256": "9a22a3c80979eb9ec8b49f6d8d0fd5e21a144fd79475b60f9bf12f7d899a304d",
+      "document_id": "L1-R26BK01593644-000-6f322cd0ece39ccb",
+      "document_version": "6f322cd0ece39ccbb9d38120f494a3c88a7cf1cef6589d03e1eb56be41fd07ce",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/3.제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

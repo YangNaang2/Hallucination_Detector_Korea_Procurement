@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N09-E3",
+  "answer_sha256": "1f98f6cfceb7c95391641785d19c102697f33ac48cd9d2fa952428f4212d2e58",
+  "context_sha256": "8d9ac3b659bd9a74638eb03b5941dbb56c8000d1165b73c729513cb6ce5358ca",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      532
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "공동수급 불허와 상호출자제한기업 참여/계약 불가 모두 두 원문에 존재하고 구분도 정확."
+}

@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C04-N47-E3",
+  "answer_sha256": "df95627e34deea87864dbae140d43fb17835cdc6ef1d31e248db337e59b85770",
+  "context_sha256": "74bd2171a7082b24b2867ad474ddc6d2c948c48b8f8de1081e6c36a800872260",
+  "question_sha256": "a7a9183e8b43abd12d014b3cdaa70e7bf19dd837c1979757f273d2b893523a9b",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "daf77b9d5f2ecf3976525ba7c8e33cc630157c75b553578825331b9b30dccb69",
+  "prompt_tokens": 1677,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 354,
+    "prompt_tokens": 1677,
+    "total_tokens": 2031,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.328062290005619,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01505744-000-977db6b66205b1a1-CH-00008",
+      "citation": 1,
+      "text_start": 12321,
+      "text_end": 14072,
+      "text_sha256": "8538c41fd4f46dadf42d995eda055c23cd90395cc87e6bfea6ccab003d92283d",
+      "document_id": "L1-R26BK01505744-000-977db6b66205b1a1",
+      "document_version": "977db6b66205b1a1a68607e520da2d96fa93ecfe3eaeed9362ec4815382d53f9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505744-000/원본/붙임 2. [제안요청서]글로벌특구인프라구축 EMS 개발 용역-260424.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

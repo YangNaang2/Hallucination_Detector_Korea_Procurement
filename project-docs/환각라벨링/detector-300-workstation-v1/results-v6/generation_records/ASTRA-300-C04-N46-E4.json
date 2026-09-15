@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N46-E4",
+  "answer_sha256": "97329c3eb58fcf1c88944f5169939d6e49714f8a40134495e6a83e6e2f66ee92",
+  "context_sha256": "ec1fadbc8bc63aee12a58b0942c31200945312072f77149f7a7b6bd7a9b2d28a",
+  "question_sha256": "9994121d7c1652bbf6a993e495de7058566590e33acffeea9bb7b872d69cbad5",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "3fca6e596a55d8379895dd56d957f56cc4b0c5d00a8db274448d1229c9831497",
+  "prompt_tokens": 2754,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 329,
+    "prompt_tokens": 2754,
+    "total_tokens": 3083,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.862844943010714,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00005",
+      "citation": 1,
+      "text_start": 7689,
+      "text_end": 9482,
+      "text_sha256": "d325dc588726962ec8e8b046e324e31a2aec1b631453d3ea91dbd01e07e4a96c",
+      "document_id": "L1-R26BK01505476-000-b81b01796f0a6bcf",
+      "document_version": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00006",
+      "citation": 2,
+      "text_start": 9242,
+      "text_end": 11017,
+      "text_sha256": "fc16d93d1aaa3f0ebe22c8d08949a747f4f9356e722c20a27e42e9fd61edfd95",
+      "document_id": "L1-R26BK01505476-000-b81b01796f0a6bcf",
+      "document_version": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

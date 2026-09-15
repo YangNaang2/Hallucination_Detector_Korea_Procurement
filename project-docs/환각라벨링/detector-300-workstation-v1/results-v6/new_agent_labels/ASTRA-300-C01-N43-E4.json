@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N43-E4",
+  "answer_sha256": "90784609c11eb81f09ef33c7f823ee0430a146f91a52dc1a6c24cf42cd559765",
+  "context_sha256": "cc82792ffa5506a94ecb2f9cee1fe9a6ba221f70f5fe7dd79ae28c165e1a373a",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      320
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "하도급 허용만으로 재하도급 자유허용 불가, 원칙적 금지 명시와 일치. 절대 예외없음으로 확대하지 않음."
+}

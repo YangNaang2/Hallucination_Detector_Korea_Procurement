@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N07-E5",
+  "answer_sha256": "8ef453d8d4ba83d2b8829eed01d1c7fbb30e57a1917057214519a1668fcede3f",
+  "context_sha256": "a75d9f7c0900a3a51259d80c963accca191324e49be9616e547442d3c0d16c10",
+  "spans": [
+    {
+      "start": 66,
+      "end": 86,
+      "quote": "**의무가 아니며, 변경 가능하다**",
+      "label": "uncertain",
+      "reason": "같은 시간으로 해석할 의무가 없다는 뜻인지 방문/복구 의무 자체가 없다는 뜻인지 모호함. 자료2에는 상호협의 과업변경 절차 있음.",
+      "evidence_ids": [
+        "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      326
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "핵심 결론은 방문2시간/복구4시간을 정확히 분리함."
+}

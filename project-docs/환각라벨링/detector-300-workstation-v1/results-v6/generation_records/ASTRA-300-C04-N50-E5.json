@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N50-E5",
+  "answer_sha256": "021e33f37beb74efdbb22a1931fb14d7a0a8e7ae3b5ab4b48e58f3cb5463541f",
+  "context_sha256": "dfd5de8df17cadcf57d11f118f4c23fce16d6df008cade2595ef8dcf2cb99273",
+  "question_sha256": "704e2d5e3b6ee5541309b745973dfbb823ef806b58adcb9ddca7b4af5c726702",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "201b43b1321b437e444dfee20b5e76282a349d973a722d50f8be75f0a41c799b",
+  "prompt_tokens": 2810,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 400,
+    "prompt_tokens": 2810,
+    "total_tokens": 3210,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.513967576989671,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01535546-000-30098fe2a1003915-CH-00033",
+      "citation": 1,
+      "text_start": 46082,
+      "text_end": 47855,
+      "text_sha256": "07c0667bb0ddbbc6669080efad373368a898d9c8fd113e963c8d79943c45d9df",
+      "document_id": "L1-R26BK01535546-000-30098fe2a1003915",
+      "document_version": "30098fe2a1003915e1632b4b7c291360c35360f56b6d85671354d3765fb33507",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01535546-000/원본/★ 제안요청서.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01535546-000-30098fe2a1003915-CH-00046",
+      "citation": 2,
+      "text_start": 66051,
+      "text_end": 67777,
+      "text_sha256": "c2ec26d62ba1abb784e4d3ce70938108f1b0c50a42f453725ab437e9824185c8",
+      "document_id": "L1-R26BK01535546-000-30098fe2a1003915",
+      "document_version": "30098fe2a1003915e1632b4b7c291360c35360f56b6d85671354d3765fb33507",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01535546-000/원본/★ 제안요청서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C05-P02",
+  "answer_sha256": "05b3926537388977086a1d38ee72af5d194f690eca3e180bceac5c77a99edf53",
+  "context_sha256": "881b004537b30f0aa7b75b301238213ad07718241632569800e7e939cb179e1d",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      245
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "완료 한 건으로 평가만점을 보장하지 못하며 실적증빙 상태와 인정규칙 별도 확인 필요. 자료1 PMS 실적에missing 정확."
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N33-E4",
+  "answer_sha256": "03e47edc7c38c4fb33fbc762c962703d499e58dc0714b89d025f094e2f83cd97",
+  "context_sha256": "229d79c646669d389b77ff7b56287e02c4391865bc9ea88754b27a771f144cb2",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      490
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "매월 추진경과 보고와 최종보고서 제출은 별도 의무. 1회 종료보고로 대체 불가 결론 지지."
+}

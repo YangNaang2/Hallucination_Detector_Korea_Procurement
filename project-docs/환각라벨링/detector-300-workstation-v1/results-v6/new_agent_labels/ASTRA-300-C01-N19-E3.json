@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N19-E3",
+  "answer_sha256": "88ecd3bbcf128765fede8958df3580a446f72b4313542975d7fd4890b7481aa6",
+  "context_sha256": "31dc6546b20629ef378461b38a97495f72d49edec14da2af3e6b0d998557e7e5",
+  "spans": [
+    {
+      "start": 509,
+      "end": 554,
+      "quote": "**수행사**가 결과물의 권리를 소유할 수 있는 **법적 근거**는 **없다**.",
+      "label": "unsupported",
+      "reason": "제공 문서의 연구소 귀속 원칙은 모든 법적 권리 근거 부재를 뜻하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01437827-000-b9df58aba5c4601f-CH-00016"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 630,
+      "end": 675,
+      "quote": "**수행사**가 결과물의 권리를 소유할 수 있는 **법적 근거**는 **없다**.",
+      "label": "unsupported",
+      "reason": "제공 문서의 연구소 귀속 원칙은 모든 법적 권리 근거 부재를 뜻하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01437827-000-b9df58aba5c4601f-CH-00016"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 610,
+      "end": 624,
+      "quote": "**변경 가능성은 없다**",
+      "label": "unsupported",
+      "reason": "원문은 협의를 통한 단독소유/귀속 원칙이며 절대 변경 불가로 정하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01437827-000-b9df58aba5c4601f-CH-00008"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      675
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "연구소 귀속 원칙 및 수행사 임의 단독소유 불가라는 결론 자체는 지지됨."
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N27-E5",
+  "answer_sha256": "5536d2ef690129908c40194bcef27d64e2b51de53d84e55ad4905c6e10df0921",
+  "context_sha256": "0c789c8bebecf02eadb8ea6fc76bd5e977151b29026e0676c0113b5f01e8ff9e",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      418
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "보안취약점 조치는 자료1 과업범위이며 추가기능 등은 별도협의. 범위내 비용과 미명시 청구방식 조정을 구분하여 무조건 별도청구 불가라는 합리적 결론."
+}

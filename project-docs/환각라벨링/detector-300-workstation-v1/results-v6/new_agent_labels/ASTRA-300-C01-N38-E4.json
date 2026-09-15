@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N38-E4",
+  "answer_sha256": "b01430207796198adfa46f0995e914c4dd758d085b2649fb0c5021f0b3f4394a",
+  "context_sha256": "cf465a0980f85614930a6d809c858e63323b467685871ec42d97df33e2ad18d7",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      503
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "나열된 업종 중2개 이상 필요, 단일SW등록으로 불충분이라는 결론 지지. 업종별로라는 표현 다소 부정확하지만 문맥 전체는2개 업종 요구로 설명."
+}

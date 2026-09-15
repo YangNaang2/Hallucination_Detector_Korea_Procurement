@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C05-N36-E5",
+  "answer_sha256": "f23a9ba294a466597d0b607238e9379bf16c437b61a3128a2c2eeaa285deeb8c",
+  "context_sha256": "c60562546559baebc070fb695ce7eec1c0f4a0ab3c09916a12bd650c7ed0e656",
+  "spans": [
+    {
+      "start": 131,
+      "end": 136,
+      "quote": "제7항 라",
+      "label": "citation_error",
+      "reason": "계약금액10% 계약이행보증은 제6항 라.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-ad3af49c6dd9a1bf-CH-00001"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 231,
+      "end": 236,
+      "quote": "제7항 라",
+      "label": "citation_error",
+      "reason": "계약금액10% 계약이행보증은 제6항 라.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-ad3af49c6dd9a1bf-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      498
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "기준금액/비율/제안작성비와 구분은 정확."
+}

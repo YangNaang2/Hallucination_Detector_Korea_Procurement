@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N26-E1",
+  "answer_sha256": "9acc6f30f7a8120568ae84edea419c539a9bd90a0a400ae077fd8f696bbf4da1",
+  "context_sha256": "16ffc399f2cb47404c76abfc673b0e7344a7e2bb317c81956cd75574f249fe5e",
+  "spans": [
+    {
+      "start": 184,
+      "end": 300,
+      "quote": "**객체탐지 정확도 90%**는 **AX 디바이스의 AI 기능**을 구현하는 데 필요한 **기술적 기준**으로, 이는 **AI반도체의 성능**과 **개발 키트의 기능**에 따라 정의되는 **입력 지표**이다.",
+      "label": "unsupported",
+      "reason": "원문은 오염제거율90%만 명시. 객체탐지90%라는 별도 요건/입력지표 정의 없음.",
+      "evidence_ids": [
+        "L1-R26BK01497114-000-47a6b78a6f45214b-CH-00001"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 485,
+      "end": 605,
+      "quote": "\"객체탐지 정확도 90%\"는 **AI반도체의 성능**과 **개발 키트의 기능**에 따라 정의되는 **입력 지표**로, 이는 **AI 기반 장애물 인식 및 실시간 추론**을 구현하는 데 필요한 **기술적 기준**이다.",
+      "label": "unsupported",
+      "reason": "객체탐지90%와 입력지표라는 설명은 문서에 없음.",
+      "evidence_ids": [
+        "L1-R26BK01497114-000-47a6b78a6f45214b-CH-00001"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 641,
+      "end": 668,
+      "quote": "**객체탐지 정확도 90%**는 **입력 지표**",
+      "label": "unsupported",
+      "reason": "문서에서 해당 지표를 설정하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01497114-000-47a6b78a6f45214b-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      761
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "대체 불가 결론은 보이나 없는 객체탐지 기준을 추가하고 끝 문장 중단",
+  "review_note": ""
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N48-E3",
+  "answer_sha256": "5a1774cebde8db2d810456d40a090302e83ee80945fd9a9e6bd3073dc0b90835",
+  "context_sha256": "0f672883f597906875be0cf158952e2ea43f9433e7ed25f44c12a8876bc92d97",
+  "question_sha256": "98bc3f6c06ed0966f90451e4162be5b54ec11b3fde63d1fc0879492a799f99ad",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "528a1708312172ece6af05db59b2d3cbed6003fd644b0675da595c4d6d9617fb",
+  "prompt_tokens": 2666,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2666,
+    "total_tokens": 3178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 20.70707365698763,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01605618-000-de3b89cb2213651c-CH-00002",
+      "citation": 1,
+      "text_start": 2408,
+      "text_end": 3953,
+      "text_sha256": "377e1ca20f3d48b256c99fbb318af8b28221a07bea8bbed8e7082c0b1fad4594",
+      "document_id": "L1-R26BK01605618-000-de3b89cb2213651c",
+      "document_version": "de3b89cb2213651c6077762f01955de91d3e2d210958141fa13fc6c230091414",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01605618-000/원본/입찰공고문(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업_.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01605618-000-d5a3ab742345a7d4-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1785,
+      "text_sha256": "f23daf59c489b34ecd0d33012dc5ee74133be4ac5165a61803187231e0615ca1",
+      "document_id": "L1-R26BK01605618-000-d5a3ab742345a7d4",
+      "document_version": "d5a3ab742345a7d49c508b289223139250008af2002c0bb89591920454b66e9f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01605618-000/원본/3. 제안요청서(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

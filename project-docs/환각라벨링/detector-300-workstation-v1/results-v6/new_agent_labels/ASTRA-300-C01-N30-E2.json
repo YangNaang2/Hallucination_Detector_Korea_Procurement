@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N30-E2",
+  "answer_sha256": "c3272591de028f6f1c8b945b5725d8834350ee3ba088d3837b06a4fbc84b14c2",
+  "context_sha256": "f0f2a5c17beb328bdfc4c62416cc1d54d70539da24cee2fc366cae014259e469",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      324
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료1 전자투찰 우선, 일치의무, 어느하나미제출무효 모두 정확."
+}

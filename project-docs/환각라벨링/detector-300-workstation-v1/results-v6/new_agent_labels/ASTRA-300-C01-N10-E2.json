@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N10-E2",
+  "answer_sha256": "7fd0fc6cb27f82de1c9617f4bbb6f335903e11ffd555815904289e913d9f2102",
+  "context_sha256": "12c4548d9fe6b5d2def079503982c3e41e749d77439bd40338551eea95c9e828",
+  "spans": [
+    {
+      "start": 253,
+      "end": 287,
+      "quote": "직접생산 품명을 공고문과 동일하다고 복사해도 제출할 수 있지만",
+      "label": "unsupported",
+      "reason": "원본대조필 사본 제출 요건은 제안요청서/공고문 품명을 동일하다고 단정하거나 복사할 근거가 아니다. 실제 품명 대조 자료도 부족함.",
+      "evidence_ids": [
+        "L1-R26BK01577397-000-df48155ac0564d45-CH-00004"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 440,
+      "end": 474,
+      "quote": "직접생산 품명을 공고문과 동일하다고 복사해도 제출할 수 있지만",
+      "label": "unsupported",
+      "reason": "원본대조필 사본 제출 요건은 제안요청서/공고문 품명을 동일하다고 단정하거나 복사할 근거가 아니다. 실제 품명 대조 자료도 부족함.",
+      "evidence_ids": [
+        "L1-R26BK01577397-000-df48155ac0564d45-CH-00004"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      528
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "문서 간 품명 대조 대신 사본 제출 형식으로 잘못 답함",
+  "review_note": ""
+}

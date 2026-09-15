@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C05-N41-E5",
+  "answer_sha256": "f76b24cf8ffcd0cfa09c006931374155a2c6d365ff820bb04fcb2f0c0bfc5a04",
+  "context_sha256": "a3033027eefc8e5726caf21103467097bb92dd1c95330a7b0e05659355b466ca",
+  "question_sha256": "a388358da032d27aa026408a3fb3d73ced89c1fa8f9c2db3d01609d0b6e336c8",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "98d7e6b7c007db720257f0657f5e04a3a464d33fdec094542ca9f759436e2560",
+  "prompt_tokens": 2754,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 238,
+    "prompt_tokens": 2754,
+    "total_tokens": 2992,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.520658582012402,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00001",
+      "citation": 1,
+      "text_start": 1044,
+      "text_end": 2580,
+      "text_sha256": "801cfba42aedb9c8d785a66b316c296a2088e69208a110e9aa0fc385c7cc68cd",
+      "document_id": "L1-R26BK01553185-000-79dbf51f4ebe15fa",
+      "document_version": "79dbf51f4ebe15fa06c5d528dbca7f8b5c674daee6becc3f77263533833568a4",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026-10 차세대 종합정보시스템 유지보수공고문_.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01553185-000-8f73143a17bc2900-CH-00010",
+      "citation": 2,
+      "text_start": 15403,
+      "text_end": 17167,
+      "text_sha256": "8412b952ef2fda50e1190c33a2a2278f4b4328be86a2f791400889e38f62792a",
+      "document_id": "L1-R26BK01553185-000-8f73143a17bc2900",
+      "document_version": "8f73143a17bc2900dd572d82114a5fea94bb88549d025f98edf5405d4aa99422",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026 혁신지원JOY사업 차세대 종합정보시스템 유지보수 용역(제안요청서)_최종_수정_20260518.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

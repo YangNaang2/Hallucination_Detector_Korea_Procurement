@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C04-N44-E1",
+  "answer_sha256": "f12c7e80b08880ab1d0e7686b08fa2dad4792ced01a6dfb89cc9542ab043b302",
+  "context_sha256": "37e2ee4680d1b1e933afc61a33aeb9d33b25ef4733e5b4d89f99bb78bc4ddfc8",
+  "spans": [
+    {
+      "start": 188,
+      "end": 214,
+      "quote": "**개발서비스 한 종류만으로는 충족하지 못함**",
+      "label": "contradiction",
+      "reason": "자료1 직접생산 확인은 개발서비스 또는 패키지개발도입서비스 중1개이상이고 SW사업자 업종도 대안이다. 한 종류로 충족하지 못한다는 단정은 반대이다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-2f495858a3c9a1de-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      340
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "직접생산 서비스 코드와 SW사업자 업종을 혼동하고 대안 조건을 설명하지 않음",
+  "review_note": ""
+}
