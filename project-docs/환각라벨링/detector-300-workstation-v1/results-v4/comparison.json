@@ -1,0 +1,155 @@
+{
+  "selected": {
+    "config": {
+      "model": "epoch2",
+      "aggregation": "min2",
+      "reduction": "top10mean"
+    },
+    "metrics": {
+      "0.3": {
+        "answers": 63,
+        "reviewed": 18,
+        "positive_answers": 35,
+        "tp": 10,
+        "fp": 8,
+        "fn": 25,
+        "tn": 20,
+        "recall": 0.2857142857142857,
+        "precision": 0.5555555555555556,
+        "false_alarm_rate": 0.2857142857142857,
+        "random_expected_recall": 0.2857142857142857,
+        "maximum_possible_recall": 0.5142857142857142
+      },
+      "0.5": {
+        "answers": 63,
+        "reviewed": 31,
+        "positive_answers": 35,
+        "tp": 19,
+        "fp": 12,
+        "fn": 16,
+        "tn": 16,
+        "recall": 0.5428571428571428,
+        "precision": 0.6129032258064516,
+        "false_alarm_rate": 0.42857142857142855,
+        "random_expected_recall": 0.49206349206349204,
+        "maximum_possible_recall": 0.8857142857142857
+      },
+      "0.6": {
+        "answers": 63,
+        "reviewed": 37,
+        "positive_answers": 35,
+        "tp": 23,
+        "fp": 14,
+        "fn": 12,
+        "tn": 14,
+        "recall": 0.6571428571428571,
+        "precision": 0.6216216216216216,
+        "false_alarm_rate": 0.5,
+        "random_expected_recall": 0.5873015873015873,
+        "maximum_possible_recall": 1.0
+      }
+    }
+  },
+  "previous_v3": {
+    "config": {
+      "model": "mil3",
+      "aggregation": "min2",
+      "reduction": "max"
+    },
+    "metrics": {
+      "0.3": {
+        "answers": 63,
+        "reviewed": 18,
+        "positive_answers": 35,
+        "tp": 13,
+        "fp": 5,
+        "fn": 22,
+        "tn": 23,
+        "recall": 0.37142857142857144,
+        "precision": 0.7222222222222222,
+        "false_alarm_rate": 0.17857142857142858,
+        "random_expected_recall": 0.2857142857142857,
+        "maximum_possible_recall": 0.5142857142857142
+      },
+      "0.5": {
+        "answers": 63,
+        "reviewed": 31,
+        "positive_answers": 35,
+        "tp": 19,
+        "fp": 12,
+        "fn": 16,
+        "tn": 16,
+        "recall": 0.5428571428571428,
+        "precision": 0.6129032258064516,
+        "false_alarm_rate": 0.42857142857142855,
+        "random_expected_recall": 0.49206349206349204,
+        "maximum_possible_recall": 0.8857142857142857
+      },
+      "0.6": {
+        "answers": 63,
+        "reviewed": 37,
+        "positive_answers": 35,
+        "tp": 23,
+        "fp": 14,
+        "fn": 12,
+        "tn": 14,
+        "recall": 0.6571428571428571,
+        "precision": 0.6216216216216216,
+        "false_alarm_rate": 0.5,
+        "random_expected_recall": 0.5873015873015873,
+        "maximum_possible_recall": 1.0
+      }
+    }
+  },
+  "previous_v2": {
+    "config": {
+      "model": "epoch2",
+      "aggregation": "min",
+      "reduction": "max"
+    },
+    "metrics": {
+      "0.3": {
+        "answers": 63,
+        "reviewed": 18,
+        "positive_answers": 35,
+        "tp": 11,
+        "fp": 7,
+        "fn": 24,
+        "tn": 21,
+        "recall": 0.3142857142857143,
+        "precision": 0.6111111111111112,
+        "false_alarm_rate": 0.25,
+        "random_expected_recall": 0.2857142857142857,
+        "maximum_possible_recall": 0.5142857142857142
+      },
+      "0.5": {
+        "answers": 63,
+        "reviewed": 31,
+        "positive_answers": 35,
+        "tp": 19,
+        "fp": 12,
+        "fn": 16,
+        "tn": 16,
+        "recall": 0.5428571428571428,
+        "precision": 0.6129032258064516,
+        "false_alarm_rate": 0.42857142857142855,
+        "random_expected_recall": 0.49206349206349204,
+        "maximum_possible_recall": 0.8857142857142857
+      },
+      "0.6": {
+        "answers": 63,
+        "reviewed": 37,
+        "positive_answers": 35,
+        "tp": 24,
+        "fp": 13,
+        "fn": 11,
+        "tn": 15,
+        "recall": 0.6857142857142857,
+        "precision": 0.6486486486486487,
+        "false_alarm_rate": 0.4642857142857143,
+        "random_expected_recall": 0.5873015873015873,
+        "maximum_possible_recall": 1.0
+      }
+    }
+  }
+}

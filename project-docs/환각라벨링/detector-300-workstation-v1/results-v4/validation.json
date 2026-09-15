@@ -1,0 +1,10 @@
+{
+  "original_artifacts_preserved": true,
+  "queue_records": 295,
+  "evaluation_labels_unchanged": true,
+  "agent_approved_span_changes": 2,
+  "human_approved": false,
+  "selection_lock_commit": "ddf9ac6",
+  "model_retraining_this_round": false,
+  "new_ranking_adopted": false
+}

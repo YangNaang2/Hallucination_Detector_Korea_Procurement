@@ -1,0 +1,45 @@
+{
+  "source_sha256": "04ec65446f556f9e347b2fcbcd85c4c99b5ecf6505cf2a1ab667f7ba9dd5e9ef",
+  "revised_sha256": "5e0d71c85eaa815def73eac2bd0370cfbe3beb8ef6b468c4b3cdc66fe23d0c00",
+  "status": "agent-approved changes only; all other annotations retain original status; no human gold",
+  "authorization": "User delegated judgement and changes in this task",
+  "review_scope": "Two span decisions, not fresh full review of 295",
+  "changes": [
+    {
+      "question_id": "ASTRA-300-C03-N48-E1",
+      "operation": "replace_label",
+      "start": 360,
+      "end": 382,
+      "old": "unsupported",
+      "new": "supported",
+      "quote": "**최종 마감일**로 명시되어 있습니다.",
+      "reason": "현재 명시된 제출기한을 최종 마감일로 바꾸어 말한 것만으로 변경 불가능성을 단정한 것은 아니다. 실제 근거 [1]에 제출 종료 시각이 존재한다. 다른 메타데이터만/고정 주장 라벨은 그대로 유지한다.",
+      "evidence_quote": "전자입찰(가격입찰, 제안발표회 자료) 제출기간",
+      "answer_sha256": "2fde01508c19785503c3c7b726c5a7081b499e4e2505e7e19e0e1389df6895d5",
+      "context_sha256": "6d51836b19157254008572db0bf9c6328b208d59025716346c93e6f03a51f863"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N12-E4",
+      "operation": "add_span",
+      "start": 444,
+      "end": 510,
+      "quote": "**부품 교체가 전혀 없을 경우**는 공고문에 명시된 **하드웨어 유지관리**의 범위를 벗어난 것으로 간주될 수 있으나",
+      "label": "unsupported",
+      "reason": "근거 [2] MAR-002는 교체할 경우의 부품 조건을 정한다. 실제 교체가 발생하지 않으면 하드웨어 유지관리 범위 밖이라는 규정은 없다. 인용번호 오류와 별도인 근거 없는 조건 확장이다.",
+      "evidence_ids": [
+        "ASTRA-300-C05-N12-E4-INPUT-2"
+      ],
+      "human_decision": "pending",
+      "final_human_approval": "pending",
+      "agent_revision_status": "approved_by_agent_under_user_delegation",
+      "answer_sha256": "619f42147efea45dce4b9bc1477340ad2a97ccee0968834fed800b3a58b6e331",
+      "context_sha256": "5e8ac4cd511330136d47d099da79f2a4dbca1d1b177c4afc6fa26e9b43ddc2c6"
+    }
+  ],
+  "retained": [
+    {
+      "question_id": "ASTRA-300-C05-N25-E1",
+      "decision": "retain unsupported proposal-evaluation penalty claim: actual evidence only describes operational duties"
+    }
+  ]
+}
