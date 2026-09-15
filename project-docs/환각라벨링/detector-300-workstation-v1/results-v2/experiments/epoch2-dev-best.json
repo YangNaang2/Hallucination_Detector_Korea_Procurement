@@ -1,0 +1,15 @@
+{
+  "model": "epoch2",
+  "profile": "repeat192",
+  "aggregation": "min",
+  "threshold": 0.2,
+  "windows": 886,
+  "characters": {
+    "tp": 675,
+    "fp": 965,
+    "fn": 2641,
+    "precision": 0.4115853658536585,
+    "recall": 0.20355850422195415,
+    "f1": 0.27239709443099275
+  }
+}

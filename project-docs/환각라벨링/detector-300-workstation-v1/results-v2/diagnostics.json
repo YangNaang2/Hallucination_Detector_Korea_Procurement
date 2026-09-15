@@ -1,0 +1,29 @@
+{
+  "model_sha256": "74523acd66c826c32d9d34954b99e41667286dec3f1e027d708266a7591dd782",
+  "training_data_sha256": "96cc473eb8b94a38305c9e047ed4d92454237d1f3b6bdb129802ff47280d3af9",
+  "available_split_counts": {
+    "train": 14863,
+    "test": 2674
+  },
+  "historical_eval_sample": 36,
+  "historical_sample_positive_token_metrics": {
+    "tp": 115,
+    "fp": 68,
+    "fn": 104,
+    "precision": 0.6284153005464481,
+    "recall": 0.5251141552511416,
+    "f1": 0.572139303482587
+  },
+  "historical_sample_truncated": 29,
+  "training_wrapper_probability_max_difference": 0.0,
+  "baseline_dev50_reproduction_max_difference": 1.1920928955078125e-07,
+  "new_independent_labels_found": false,
+  "interpretation": "Historical translated RAGTruth heldout was already used during original training/evaluation. Small deterministic sample is implementation regression only.",
+  "max_position_embeddings": 514,
+  "label_mapping": {
+    "0": "SUPPORTED",
+    "1": "HALLUCINATED"
+  },
+  "format": "CLS question+context SEP answer SEP; no token_type_ids in either training or inference; context/padding loss masked -100",
+  "known_shift": "historical training truncates prompt head; production windows aggregate min over every evidence window; BF16 diagnostic stored separately"
+}
