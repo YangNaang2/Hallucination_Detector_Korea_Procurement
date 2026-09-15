@@ -1,0 +1,11 @@
+{
+  "private_viewer": "work/detector300/review.html",
+  "sha256": "9f45935e1f09eda1a607d49a4c005f908e7ede3e72172090448f44e09192f636",
+  "records": 295,
+  "full_evidence_git_export": false,
+  "browser_render_validation": "not_performed",
+  "labels": "annotation/agent_draft/labels.json",
+  "proposals": "annotation/adjudicated/proposals.json",
+  "human_submissions": "annotation/human_submitted/references.json",
+  "remaining": "annotation/resume.json"
+}

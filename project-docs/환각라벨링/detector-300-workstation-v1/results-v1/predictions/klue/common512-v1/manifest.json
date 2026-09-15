@@ -1,0 +1,33 @@
+{
+  "config": {
+    "profile": "common512-answer192-v1",
+    "max_length": 512,
+    "answer_segment_tokens": 192,
+    "answer_overlap": 0,
+    "prompt_stride": "half remaining budget",
+    "aggregation": "min",
+    "threshold": 0.5,
+    "dtype": "float32_weights_bfloat16_cuda_autocast",
+    "char_overlap": "max",
+    "zero_offset_tokens": "excluded",
+    "whitespace_gaps": "unchecked",
+    "microbatch": 1,
+    "device": "cuda",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.16.1",
+    "runner_sha256": "a4b90f942f437ca59c53df51c6995cd83f198f57b3224b0bb3b07ea6723a6094",
+    "detector_sha256": "17a09ffd6df38aab43ae6ec75a56cd285d85b41ce511ded4cbf05ed55b031212"
+  },
+  "files": {
+    "model.safetensors": "74523acd66c826c32d9d34954b99e41667286dec3f1e027d708266a7591dd782",
+    "tokenizer.json": "cc02cedb56df2e4d3bb6b5478cef6aa0daa98930c96b46976c8acdd2432459a8",
+    "tokenizer_config.json": "f9051b19e43e2a1be479bc0ed9e27e1e40a43a2a32f4bd6d585b3e7045f62654",
+    "config.json": "38456389cfee2e4ef5aac2eb3a644a79a0a25119ae7ccff7dda19bc791f9b125"
+  },
+  "model": "klue",
+  "identity_sha256": "459c8dd8146b32187a583cadf9874e41d03fa3b9627f61568d900895f5003e03",
+  "gpu": "NVIDIA RTX A5000",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "checkpoint_path": "/home/piai/바탕화면/ko_lettucedetect/runs/klue"
+}

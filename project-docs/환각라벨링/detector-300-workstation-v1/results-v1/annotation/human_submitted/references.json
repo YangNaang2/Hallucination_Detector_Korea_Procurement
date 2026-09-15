@@ -1,0 +1,6 @@
+{
+  "source": "project-docs/환각라벨링/pilot-25-human-review-v1/submitted_reviews.jsonl",
+  "sha256": "f0ad2bc1368f0c2e21801a1556df95348db9ffa0752ee86e236b12f1b8b7b75d",
+  "question_count": 25,
+  "final_human_approval": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "successful_prediction_records": {
+    "klue": 295,
+    "xlmr": 295,
+    "bgem3": 295
+  },
+  "full_prompt_hash_verified": 295,
+  "denials_verified": 5,
+  "non_whitespace_unchecked": [],
+  "unit_tests": 22,
+  "checks": [
+    "frozen answers",
+    "context identity",
+    "model/config identity",
+    "all 885 unique slots",
+    "Unicode quote slices",
+    "checked/unchecked partition",
+    "probability count and bounds",
+    "source slice/hash and ACL in recovery",
+    "pending human approval"
+  ],
+  "completion": "inference complete; annotation checkpoint only",
+  "resume_same_config": "all 885 skipped, no inference",
+  "resume_changed_config": "injected runner identity rejected before model load"
+}
