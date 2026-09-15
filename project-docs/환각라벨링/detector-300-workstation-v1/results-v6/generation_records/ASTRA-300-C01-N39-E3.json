@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N39-E3",
+  "answer_sha256": "69e7a7d16ab3625c13a4f98b729a0c4e4a5f5822b641bf6d542d99501623ced7",
+  "context_sha256": "adf650b6589c83f407d9501c099fe4f44edd7281d3bcc1e68b5a63ed488e1f84",
+  "question_sha256": "776626cda55658153f71ba9679c49198909bf70fcf92028a1c1d94d537a57e06",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "d82a7ee7608904a1f10847fa93b474be9cbc0b4ebcd2f318a66117861c1ef45e",
+  "prompt_tokens": 2745,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 382,
+    "prompt_tokens": 2745,
+    "total_tokens": 3127,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.36364085500827,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00011",
+      "citation": 1,
+      "text_start": 17033,
+      "text_end": 18800,
+      "text_sha256": "0b2ea95b825a6c6cbc1e15ca7cf639b2446be13fbffadec6ba620874c1f3a2da",
+      "document_id": "L1-R26BK01431532-000-c7e43e3070b259e2",
+      "document_version": "c7e43e3070b259e2d92d014354bc4ee69e74995cf25cb844d94eebd36439b226",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(제안요청서)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00007",
+      "citation": 2,
+      "text_start": 10850,
+      "text_end": 12600,
+      "text_sha256": "b1ebf676443071b0a1672fa159708e72280163f2b79d3321d6cc0615e3a349ef",
+      "document_id": "L1-R26BK01431532-000-c7e43e3070b259e2",
+      "document_version": "c7e43e3070b259e2d92d014354bc4ee69e74995cf25cb844d94eebd36439b226",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(제안요청서)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

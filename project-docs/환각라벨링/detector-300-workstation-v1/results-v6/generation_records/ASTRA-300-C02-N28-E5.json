@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N28-E5",
+  "answer_sha256": "15eed785531f434b3e33e8bb48df2f31d15ce81eee6ca9ac415e401a5d647447",
+  "context_sha256": "ba5f3f104fc13b8e8551a3f93a3a70ed0d82d22b03b1b629d16de26b2871d505",
+  "question_sha256": "2f4c40cb1f3ee9daf3d156cc200b12494dc91d232192027c198fabb6c5c66483",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "880d9e34be7e9c2a19f6529b32655104a0f2ff5e492a66d35fb7da7b2669d215",
+  "prompt_tokens": 2754,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 296,
+    "prompt_tokens": 2754,
+    "total_tokens": 3050,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.975832967000315,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01595553-000-4bf76d9de1692aaf-CH-00007",
+      "citation": 1,
+      "text_start": 10609,
+      "text_end": 12402,
+      "text_sha256": "eef1ed85b8b974ab1c1e50fbee5f40d1c9ca2734cbb2c2a885691bbf5ce6ecfa",
+      "document_id": "L1-R26BK01595553-000-4bf76d9de1692aaf",
+      "document_version": "4bf76d9de1692aaf17a8b4771c4d4880d0ff3b7965fc9625dbc399ea2f28569e",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01595553-000/원본/제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01595553-000-5d16f11ba91cf9c1-CH-00006",
+      "citation": 2,
+      "text_start": 8965,
+      "text_end": 10759,
+      "text_sha256": "03e56aad3fdb1d5364715bb0efce877ec45943deae800e2985c9ac8008af2247",
+      "document_id": "L1-R26BK01595553-000-5d16f11ba91cf9c1",
+      "document_version": "5d16f11ba91cf9c17400b98f093bd6f618611af764a1324076c23a9e6f93a56f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01595553-000/원본/입찰공고문.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N47-E1",
+  "answer_sha256": "ecc42767b7fccbb265e88621661bae90c8889b5c5d2925ec3ba9f69098394267",
+  "context_sha256": "6e66870506857cfd814a99cbf953d61ab1afa1a75b17b94d7a0482fc385422d7",
+  "spans": [
+    {
+      "start": 124,
+      "end": 127,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "정규직·3개월 평가 조건은 자료2 기술능력 평가기준에 있다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00008"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      344
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "정규직·3개월이라는 실제 조건으로 입사 직후 기간제 제외 결론을 낸 정상 추론."
+}

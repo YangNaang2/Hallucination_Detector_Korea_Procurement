@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N50-E3",
+  "answer_sha256": "fdcd3b929b09fc2ba321ecad238dc167d0ecaac6b0eeef9d147cca2ba39cdda8",
+  "context_sha256": "1438a13d8d8bf5e7c15de92aca42434b8d40936a67bc1333e2bb8426eac98686",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      577
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "서로 다른 하한을 동시에 만족할 수 있다는 논리와 동일 항목/범위 확인 설명 부족",
+  "review_note": "자료1의 수량·평가위원회 인용은 정확하고 모순 처리 근거 없다는 결론도 지지된다. 불충분한 설명을 환각으로 세지 않음."
+}

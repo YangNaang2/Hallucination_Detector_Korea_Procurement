@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N13-E4",
+  "answer_sha256": "20735ce44eff9aba813e0403f2c6926d74033e704d6581c5d8e038ee93c4c0a4",
+  "context_sha256": "d51f1096d20fa835d980f38f00f574d28711563549efaca9e8cc26fd18ec39c4",
+  "spans": [
+    {
+      "start": 58,
+      "end": 61,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "5일 인계와 PMR-003 조항은 실제 근거 [2]에 있다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00032"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 275,
+      "end": 278,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "5일 인계와 PMR-003 조항은 실제 근거 [2]에 있다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00032"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      530
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "전체 근거 대조: 사전 승인·동급인력·5일 이상 인계·사업자 비용 부담 설명은 지지됨. 인용번호만 별도 오류."
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N25-E3",
+  "answer_sha256": "78ad08da001b340da785aa4c550364045d63bee864826023411e35e88bd882e7",
+  "context_sha256": "158aa181834b42bc3772e326dfe4865aee0a47080c7de4b1b108a29ee9765f7f",
+  "question_sha256": "b03b03af90d72785615343505e9c54e1b9600a24d85deb781adcdb390359dc35",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "3d248752ace54a53152ab5bcdbbccaa2113aeee8bf226035053c03047eaf4b11",
+  "prompt_tokens": 2836,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 455,
+    "prompt_tokens": 2836,
+    "total_tokens": 3291,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.424700403993484,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01469220-000-2a080caf396c1934-CH-00001",
+      "citation": 1,
+      "text_start": 1552,
+      "text_end": 3309,
+      "text_sha256": "feafdffe386b86e7802b03f5d338c1dca54531c559c61f47e404fc9001ad5173",
+      "document_id": "L1-R26BK01469220-000-2a080caf396c1934",
+      "document_version": "2a080caf396c1934447231b215929e3444e64cdfb1faba4150749d46a6a7673c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01469220-000/원본/[붙임3] 제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01469220-000-158d1add5a61076a-CH-00033",
+      "citation": 2,
+      "text_start": 45474,
+      "text_end": 47263,
+      "text_sha256": "c6302d0a018c25ae3cbded5c99ba15153ba99d549bc3b08229ea071ea0473727",
+      "document_id": "L1-R26BK01469220-000-158d1add5a61076a",
+      "document_version": "158d1add5a61076af2178fdbf4c942948d097ec0380319b6955866ade8b233d4",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01469220-000/원본/[붙임2] 과업지시서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

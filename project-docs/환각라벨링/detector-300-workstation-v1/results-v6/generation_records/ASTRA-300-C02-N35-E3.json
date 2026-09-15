@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N35-E3",
+  "answer_sha256": "625206c29d044f40455069696da90cd03d997de0c75f1234d873501312729fab",
+  "context_sha256": "74384bb66e26d6752f88de0265bdb81bf7783023238e5e9d3f6ad49f13486225",
+  "question_sha256": "a5e5a24244c71ff0fe2e9875e2ce3bd05f354692334955112edeba769bf97c90",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "01f38250ebfbb6059ea171c3aaa016355db9cdb08d453d95c2c27906d217e477",
+  "prompt_tokens": 2499,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 364,
+    "prompt_tokens": 2499,
+    "total_tokens": 2863,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.11854330499773,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01415425-000-d1e61af4ee0bf2ae-CH-00007",
+      "citation": 1,
+      "text_start": 10620,
+      "text_end": 12374,
+      "text_sha256": "3837f734a6bc40f9f1d27130b6cd26ba1c1fd5fd87fb9620508df361cfbcb562",
+      "document_id": "L1-R26BK01415425-000-d1e61af4ee0bf2ae",
+      "document_version": "d1e61af4ee0bf2ae5eb054d0e94dd0ce6aa5728708bf1378324d337ffa56157c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01415425-000/원본/(재공고서) 국립민속박물관 발간자료 웹서비스 확장 및 기능개선_0403.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00028",
+      "citation": 2,
+      "text_start": 42585,
+      "text_end": 44365,
+      "text_sha256": "7b487ceacb443136fbacea5167c591de3e56183c71bd3589af70a63af86c64f4",
+      "document_id": "L1-R26BK01415425-000-73cbf96b2bda78e6",
+      "document_version": "73cbf96b2bda78e638815eab3174edb2c71ab3ca7070fb59c1493472d42b83e3",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01415425-000/원본/제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

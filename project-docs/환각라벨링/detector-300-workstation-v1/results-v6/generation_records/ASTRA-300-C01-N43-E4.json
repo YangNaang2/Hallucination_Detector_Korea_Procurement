@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N43-E4",
+  "answer_sha256": "90784609c11eb81f09ef33c7f823ee0430a146f91a52dc1a6c24cf42cd559765",
+  "context_sha256": "cc82792ffa5506a94ecb2f9cee1fe9a6ba221f70f5fe7dd79ae28c165e1a373a",
+  "question_sha256": "b70e83a02e5bd6a8f59ef1c080e37e696e85b23419f856619123a3f92f6252b7",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "0f63020a85e87c935a0d74885230dbd1b9fb9c015897e1aefa43e035da79d87a",
+  "prompt_tokens": 2884,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 222,
+    "prompt_tokens": 2884,
+    "total_tokens": 3106,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.325777168007335,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01435344-000-94a77a60a98228c8-CH-00015",
+      "citation": 1,
+      "text_start": 23066,
+      "text_end": 24866,
+      "text_sha256": "1f645f6e1759624a0514d1c46a8dbeb40338a09fbe4356d35adb156090c510e3",
+      "document_id": "L1-R26BK01435344-000-94a77a60a98228c8",
+      "document_version": "94a77a60a98228c83e7422cea2e22b2a99ee537b6a441ab8479d7582e4aef087",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01435344-000/원본/제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01435344-000-94a77a60a98228c8-CH-00016",
+      "citation": 2,
+      "text_start": 24626,
+      "text_end": 26389,
+      "text_sha256": "98527f45f2024f9fdfe05bd53900104ce322abfdba38dc1cffe5cfbc60aa4262",
+      "document_id": "L1-R26BK01435344-000-94a77a60a98228c8",
+      "document_version": "94a77a60a98228c83e7422cea2e22b2a99ee537b6a441ab8479d7582e4aef087",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01435344-000/원본/제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

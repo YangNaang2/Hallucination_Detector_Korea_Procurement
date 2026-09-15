@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N35-E4",
+  "answer_sha256": "63d4ea9dd31f644851e9075463e86eecf76281a0ff27ad737b57d94b29cd2ad4",
+  "context_sha256": "964e98f9a61ba0b329f4aa1dde508f7ad1bc31030bd7ba1bc3d349a4587b0cc8",
+  "question_sha256": "f99882968ceba73650fc1321473e13b61fe4026e80d864b331ba7b28fa397821",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "4349761c860a206519267b8dcff9bd71332cf5f2efdfca8ba1b7ce44a29db859",
+  "prompt_tokens": 2700,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 325,
+    "prompt_tokens": 2700,
+    "total_tokens": 3025,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 12.753338312002597,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00025",
+      "citation": 1,
+      "text_start": 37932,
+      "text_end": 39713,
+      "text_sha256": "4c878ed6bc90a38113c51ca3877a1cf1182c1452fa512b7dbfad5b31abbc576f",
+      "document_id": "L1-R26BK01415425-000-73cbf96b2bda78e6",
+      "document_version": "73cbf96b2bda78e638815eab3174edb2c71ab3ca7070fb59c1493472d42b83e3",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01415425-000/원본/제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00020",
+      "citation": 2,
+      "text_start": 30487,
+      "text_end": 32250,
+      "text_sha256": "4e367f8f73e2eaacae256045b9249752f82d0df9f9dc072229262ed92d616c09",
+      "document_id": "L1-R26BK01415425-000-73cbf96b2bda78e6",
+      "document_version": "73cbf96b2bda78e638815eab3174edb2c71ab3ca7070fb59c1493472d42b83e3",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01415425-000/원본/제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

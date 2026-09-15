@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N51-E2",
+  "answer_sha256": "22849f9a2af31b27a404bb64cc920437c4803587b66641daeef4bdcda683d910",
+  "context_sha256": "a0ca280ad928d06d9112d8d1e6603b76e2362a2b3026245ca2f6fffd18727624",
+  "question_sha256": "f7a86cd602da6f638a54c065bf7c46675fa81c86fa70974acf87c3cd169ad391",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "0800f2931e1b5d122bc641304417871f79a2e758b17ee1e3ab2d1b2927575f6c",
+  "prompt_tokens": 2793,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 412,
+    "prompt_tokens": 2793,
+    "total_tokens": 3205,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.641278752998915,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00013",
+      "citation": 1,
+      "text_start": 18597,
+      "text_end": 20292,
+      "text_sha256": "7a3ac2363621675934552b2a71a7ea5b0bf0f56ba59b969c2e1e4b200d04a4fb",
+      "document_id": "L1-R26BK01549747-000-f868bdca87f7fdfa",
+      "document_version": "f868bdca87f7fdfa108744964520ac986383b5f97f925dd0fde15ad72f07c08a",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01549747-000/원본/강릉시 아동 돌봄 통합정보제공 플랫폼 운영 제안요청서(운영).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00039",
+      "citation": 2,
+      "text_start": 54317,
+      "text_end": 56072,
+      "text_sha256": "be7f8ea1069f538af0d50e43685ed1a145c6a19166bf5a2ff9f99f50e80b8783",
+      "document_id": "L1-R26BK01549747-000-f868bdca87f7fdfa",
+      "document_version": "f868bdca87f7fdfa108744964520ac986383b5f97f925dd0fde15ad72f07c08a",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01549747-000/원본/강릉시 아동 돌봄 통합정보제공 플랫폼 운영 제안요청서(운영).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

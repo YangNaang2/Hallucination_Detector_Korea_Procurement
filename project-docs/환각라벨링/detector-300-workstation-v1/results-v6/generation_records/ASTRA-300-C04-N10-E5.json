@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N10-E5",
+  "answer_sha256": "d9c8a1fea05b435fbe65c663e3732198c9fed9621c33512cb61d8120539feafb",
+  "context_sha256": "a37af3ba816e5990ad162585fec01554684fce751dd4435329b0805860cfefd4",
+  "question_sha256": "0d3583522b993a86a32762d2ea01033eb592ba862f6a720c956e21805ad2641d",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "9547f22b5366fc39a97f4aa3513f5c25c8a506531b7196cc17bf9df39da15da2",
+  "prompt_tokens": 2716,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 338,
+    "prompt_tokens": 2716,
+    "total_tokens": 3054,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 4.680420082004275,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00012",
+      "citation": 1,
+      "text_start": 18522,
+      "text_end": 20320,
+      "text_sha256": "9afd8fe25bf0ca11228e4b3c053e455a37a5278dff066794fc34ae77b7d7d0f1",
+      "document_id": "L1-R26BK01577397-000-6f28cb3f41f21a21",
+      "document_version": "6f28cb3f41f21a21d6c024fed763a42ca8457f53853fd5257ae09781dd159770",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/RUDAS 고도화 제안요청서 및 과업지시서_사전협의 수정.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00031",
+      "citation": 2,
+      "text_start": 47393,
+      "text_end": 49187,
+      "text_sha256": "3f8b2498db138dce9287839d8d3ceaad665a9a5d7b7bfe962246e1eeaba7698f",
+      "document_id": "L1-R26BK01577397-000-6f28cb3f41f21a21",
+      "document_version": "6f28cb3f41f21a21d6c024fed763a42ca8457f53853fd5257ae09781dd159770",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/RUDAS 고도화 제안요청서 및 과업지시서_사전협의 수정.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

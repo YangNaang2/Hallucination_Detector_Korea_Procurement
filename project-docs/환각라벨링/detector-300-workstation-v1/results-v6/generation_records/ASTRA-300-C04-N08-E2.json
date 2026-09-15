@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C04-N08-E2",
+  "answer_sha256": "6cc572c97e00f3b35941ba6cb714deace536bb51a063e798a15aca3906944a3a",
+  "context_sha256": "751cff52f85972066a90a8ca9d17c947936c7fad028130883c8d51b6cb15bc34",
+  "question_sha256": "5fe0a748db7f3780dd8dc4157c61551a58a6df0bce263acbdf578652e5b12de3",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "b228fe2824619adb407a143422676d5290890b1d83e7250eef47d3b1cce2132b",
+  "prompt_tokens": 1543,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 352,
+    "prompt_tokens": 1543,
+    "total_tokens": 1895,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.324679228011519,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01491524-000-ff03c8c704d3384a-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1564,
+      "text_sha256": "7e47d9670f73001f0ed6f0044882b020baaf35fae03ba7b2b79651c5dab91e5b",
+      "document_id": "L1-R26BK01491524-000-ff03c8c704d3384a",
+      "document_version": "ff03c8c704d3384a9b2bd3e24d1aef12987b5bd6a92e6b0232d503ee321c56c6",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01491524-000/원본/공고서_섬유생산기업정보시스템 통합유지보수 수행기관 선정 입찰공고.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

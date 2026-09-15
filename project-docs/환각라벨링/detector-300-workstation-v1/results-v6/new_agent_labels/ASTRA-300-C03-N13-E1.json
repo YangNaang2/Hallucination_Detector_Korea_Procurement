@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C03-N13-E1",
+  "answer_sha256": "9088efde28ef780f4ce9b1efb5687decb365ccf4238dba9240c41153356f08d8",
+  "context_sha256": "9066112fa3963dfdee8d755c94ce2504951a92aae230c2a5040810f023aaaea5",
+  "spans": [
+    {
+      "start": 221,
+      "end": 263,
+      "quote": "**사업금액**은 \"2026년 기능개선 사업기간과 별도\"로 명시되어 있으므로",
+      "label": "contradiction",
+      "reason": "원문에서 별도인 것은 유지보수/장비운영 계약기간이며 사업금액이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 300,
+      "end": 378,
+      "quote": "**2026년을 현재 사업연도로 자동 교정**하는 것은 **문서에 명시된 정보에 기반한 정확한 판단**이므로 **가능하다**고 볼 수 있다.",
+      "label": "unsupported",
+      "reason": "사업연도가 2026년이라는 사실은 접수 연도 표기의 자동 수정 권한이나 오탈자 확인 근거가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 479,
+      "end": 557,
+      "quote": "**2026년을 현재 사업연도로 자동 교정**하는 것은 **문서에 명시된 정보에 기반한 정확한 판단**이므로 **가능하다**고 볼 수 있다.",
+      "label": "unsupported",
+      "reason": "사업연도가 2026년이라는 사실은 접수 연도 표기의 자동 수정 권한이나 오탈자 확인 근거가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 610,
+      "end": 642,
+      "quote": "**문서에 명시된 정보에 기반하여 가능하다**고 판단된다.",
+      "label": "unsupported",
+      "reason": "실제 접수 표기 및 정정 근거 없이 자동교정을 허용함.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-2fbe775ce2ea2f3a-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      642
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "사업기간과 접수 연도의 구분, 원문 유지 및 정정 확인 필요성을 누락함",
+  "review_note": ""
+}

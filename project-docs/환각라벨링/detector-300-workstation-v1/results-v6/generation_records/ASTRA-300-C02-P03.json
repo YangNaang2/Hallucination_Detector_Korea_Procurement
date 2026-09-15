@@ -1,0 +1,64 @@
+{
+  "question_id": "ASTRA-300-C02-P03",
+  "answer_sha256": "3e7bae63f82c8945223423dc881aa21fe97beb8f3bb2789a67224c23f00ab79b",
+  "context_sha256": "64ab8ce23e176a724a02c3ae249ca5da258a35d31f6b536a460ef88357840403",
+  "question_sha256": "c779b3825bd1817f4937916aa66a2f06ad5092ee52f1ae3ffaffd9e1abdfe49e",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "2794150e2964c56216f973a473ef178aa1f2fff8d6a11310515a50853917be5a",
+  "prompt_tokens": 2387,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 247,
+    "prompt_tokens": 2387,
+    "total_tokens": 2634,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.232645782001782,
+  "source_evidence": [
+    {
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-253fa7f32acc",
+      "citation": 1,
+      "text_start": 2261,
+      "text_end": 3262,
+      "text_sha256": "ced423618f4cc5653445a731c64ed5e9149be1657c09f7710b12c953aa9313bd",
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-STAFF-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "C02-STAFF-1.0.0-r1-CH-81cbb0e01cdb",
+      "citation": 2,
+      "text_start": 1067,
+      "text_end": 2260,
+      "text_sha256": "d3a88b0741db402d33af2ae03dcbcb7a897ef9987a664d79956da6c0b18ea2f4",
+      "document_id": "C02-STAFF-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-STAFF-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "C02-PLAN-1.0.0-r1-CH-002",
+      "citation": 3,
+      "text_start": 987,
+      "text_end": 1764,
+      "text_sha256": "cef867537c354a7ff64fc0ec96008ba5dcde0dbe7eb2f5b3897abfcfc3e88ed5",
+      "document_id": "C02-PLAN-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "scenario_id": "SC-C02-REVIEW-r1",
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PLAN-1.0.0-r1.json"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

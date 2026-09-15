@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N13-E1",
+  "answer_sha256": "9088efde28ef780f4ce9b1efb5687decb365ccf4238dba9240c41153356f08d8",
+  "context_sha256": "9066112fa3963dfdee8d755c94ce2504951a92aae230c2a5040810f023aaaea5",
+  "question_sha256": "db5ff89ceae2457f8a82bfd3950eac299a970cc1bd08cc127a4f373755c76250",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "19b28757a064694692f1335bb210a16d74dc6e82c59b021f08faaf6a3c551ba3",
+  "prompt_tokens": 2466,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 413,
+    "prompt_tokens": 2466,
+    "total_tokens": 2879,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.330257657013135,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1793,
+      "text_sha256": "ae614c3a7b5306a0c4e9253f0c3f9830c1a009c47cc218dc6bcb31c46b96dac6",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01440737-000-2fbe775ce2ea2f3a-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1099,
+      "text_sha256": "0c7b22f98a266e4d8ca57ffc4e9ea0338944559c661ed1c316357d786bd4a778",
+      "document_id": "L1-R26BK01440737-000-2fbe775ce2ea2f3a",
+      "document_version": "2fbe775ce2ea2f3a0ca04157f1ef220fc1edb1e920bcf352e1e6dc0dc8b4967c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/4. 긴급입찰사유서_260403.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

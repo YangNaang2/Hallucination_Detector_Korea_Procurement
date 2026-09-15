@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N03-E5",
+  "answer_sha256": "ed88b47d3e54d9658a4c0c9ff30f097199c3894e6c2e62665a1cc3e3ae927a01",
+  "context_sha256": "3c58e9e32fff41495ce2956acee19191fdedfdbc0b6c130ebc8f76d7280c4255",
+  "question_sha256": "c66e2bc1152e1112d012ff7d4ef9ff348b3f4e34b5170863ad342d7e92225366",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "666b7f7e6a52c14245946113de4a66e0090e72f944b9065032ba9654fc37f3a9",
+  "prompt_tokens": 2730,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 270,
+    "prompt_tokens": 2730,
+    "total_tokens": 3000,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 4.519439891999355,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01448046-000-2237c480301f0a8e-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1752,
+      "text_sha256": "4a5a98b9a1e344179b2f67a872e48f370085e94c27f9d1bb5cfa880c7e5332ad",
+      "document_id": "L1-R26BK01448046-000-2237c480301f0a8e",
+      "document_version": "2237c480301f0a8ec90108e08f9d6bae0aa0aadf248dc62c8612f178c78ca862",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/1. 입찰공고문_[재공고][2026 대학혁신지원사업] 세종대학교 원스탑지원시스템 유지보수 사업 용역 구매.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01448046-000-3873b26ef1fd0c84-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1516,
+      "text_sha256": "bd5e3e7a842388ab8b6d7f2cac13d6d1d616170520d5784b8d6b8cea1c3e2268",
+      "document_id": "L1-R26BK01448046-000-3873b26ef1fd0c84",
+      "document_version": "3873b26ef1fd0c84cacf1012c861c1d2fed5f055cf31350069904289c98fc331",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/4. 용역입찰유의서 및 계약일반조건.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

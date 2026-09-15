@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N06-E1",
+  "answer_sha256": "6f1db5a89ee4ab9c5ed12328b772896f6a124276bcbf6bbdcc350c51fb36b677",
+  "context_sha256": "c0478ef3e0d3584e3685cc7a52a47a19ddfba95544da2ae09b593d706bb08c73",
+  "question_sha256": "df36f02eef4a7935818d30713da00aba5d67cb6e142ab94808a855e02d69e147",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "48af38499ba607afd46d39a1818c7232d284070bd07791145ca3e2056b8d6683",
+  "prompt_tokens": 2823,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2823,
+    "total_tokens": 3335,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.175261462980416,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00043",
+      "citation": 1,
+      "text_start": 66096,
+      "text_end": 67836,
+      "text_sha256": "508a6743851b454819bf7cc924b1a9d3a2f6dba3bcbe9070b73e00832bce2d41",
+      "document_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b",
+      "document_version": "cb10a032aa2b1f6b7290ce31ddc8d3733b8935b99944daa6473f95a093efbaef",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01565865-000/원본/제안요청서_문서회계전산시스템 도입 및 기록물 DB구축.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00044",
+      "citation": 2,
+      "text_start": 67596,
+      "text_end": 69396,
+      "text_sha256": "d60571107614da272ea48a30e48cdca9e700e2fccdedee8258a47397799a8b7f",
+      "document_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b",
+      "document_version": "cb10a032aa2b1f6b7290ce31ddc8d3733b8935b99944daa6473f95a093efbaef",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01565865-000/원본/제안요청서_문서회계전산시스템 도입 및 기록물 DB구축.hwp"
+    }
+  ]
+}

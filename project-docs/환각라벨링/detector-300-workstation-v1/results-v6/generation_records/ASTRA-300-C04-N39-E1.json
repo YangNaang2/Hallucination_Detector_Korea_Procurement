@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N39-E1",
+  "answer_sha256": "2660965a3f8804cd48015917eb5e5bb3455a0fe52794b8bb11c1279f6fc83aea",
+  "context_sha256": "8155794495bc9fe7e5264e9627a4637e07a338f79bf324bb57a25c7ed9b8d0a6",
+  "question_sha256": "c7d7e14401c8646c1dca381d88ff532789008cace0bf85e7832a91977fce18d5",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "b778e9ccfd488eec536735a001d550e0604f6c4d0636fd40283dada2009be0d2",
+  "prompt_tokens": 2921,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 340,
+    "prompt_tokens": 2921,
+    "total_tokens": 3261,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.18856184501783,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00002",
+      "citation": 1,
+      "text_start": 3091,
+      "text_end": 4888,
+      "text_sha256": "45727fbf5ee2bcacef9eb89940a9d75aa4058c0cf87bbe0e984a87fdc8744356",
+      "document_id": "L1-R26BK01431532-000-c7e43e3070b259e2",
+      "document_version": "c7e43e3070b259e2d92d014354bc4ee69e74995cf25cb844d94eebd36439b226",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(제안요청서)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1772,
+      "text_sha256": "5f2d3ecf4a8f997ce8d408bd5e1429243232457d7ad9ac1d38f8945f189fa153",
+      "document_id": "L1-R26BK01431532-000-c7e43e3070b259e2",
+      "document_version": "c7e43e3070b259e2d92d014354bc4ee69e74995cf25cb844d94eebd36439b226",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(제안요청서)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

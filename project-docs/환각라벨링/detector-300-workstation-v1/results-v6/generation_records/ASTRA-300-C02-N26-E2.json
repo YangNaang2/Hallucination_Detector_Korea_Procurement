@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N26-E2",
+  "answer_sha256": "fcce344a2b5b9a017b1f4e751f0bb163a15c9aad71ada4a9c8ae2163d293b7a9",
+  "context_sha256": "14483742627c503f5bef3b08cec7c3ed2b66b1edcef0c874249126efc80fce63",
+  "question_sha256": "b16d2b094961751a3c9b17fe3bb86bc3741eaac851e6107cf38b95fe484a0c83",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "fcff857bedf41dfe56cb103d96609eeab8f757c57ef11d8efc4d6641e2146106",
+  "prompt_tokens": 2752,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 250,
+    "prompt_tokens": 2752,
+    "total_tokens": 3002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.109266480023507,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01497114-000-47a6b78a6f45214b-CH-00001",
+      "citation": 1,
+      "text_start": 1540,
+      "text_end": 3332,
+      "text_sha256": "bde6c48bfe9100c9724d28cdd3c356335cfd0e1c9554e87964e2e1ef43502101",
+      "document_id": "L1-R26BK01497114-000-47a6b78a6f45214b",
+      "document_version": "47a6b78a6f45214becf089be26e48e9c71127e9af638381263dcf799a7961768",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01497114-000/원본/제안요청서(상업용청소로봇).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01497114-000-47a6b78a6f45214b-CH-00002",
+      "citation": 2,
+      "text_start": 3092,
+      "text_end": 4833,
+      "text_sha256": "01231e7dd2bca6d0f48d320de66e75ac4bf41009b129edb6c15491125c4064e4",
+      "document_id": "L1-R26BK01497114-000-47a6b78a6f45214b",
+      "document_version": "47a6b78a6f45214becf089be26e48e9c71127e9af638381263dcf799a7961768",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01497114-000/원본/제안요청서(상업용청소로봇).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

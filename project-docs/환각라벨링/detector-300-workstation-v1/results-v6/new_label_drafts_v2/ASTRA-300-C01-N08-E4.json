@@ -1,0 +1,28 @@
+{
+  "question_id": "ASTRA-300-C01-N08-E4",
+  "answer_sha256": "1044808d3e6c3652b019ef2044b1193b97281f29b7053dc511496351f2a4ebf9",
+  "context_sha256": "f942ca9351b5b3dd1f9bab6ea51dfb7900568d6034a38659b0ff0201227fb7da",
+  "spans": [
+    {
+      "start": 329,
+      "end": 381,
+      "quote": "이 기준은 **변경 가능**하지 않으며, **일정**상으로는 공고일 현재의 기준으로 적용된다.",
+      "label": "uncertain",
+      "reason": "이 문장은 근거가 제공되지 않으며, 공고일 현재의 기준으로 적용된다는 주장은 공고서에서 직접적인 근거가 제공되지 않음.",
+      "evidence_quote": "",
+      "evidence_quote_exact_match": false
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      381
+    ]
+  ],
+  "review_status": "same-generator-model-draft; not adjudicated",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_prompt_sha256": "720a710dcfc9a8a4ca0c08b2d6224b1624e45c1f9ab7fdc8d915bc56b51c523b",
+  "source_sha256": "cdc9512f4570a8bea7ce643698f304137215370f48a7d75916f0fc73be9c12c9"
+}

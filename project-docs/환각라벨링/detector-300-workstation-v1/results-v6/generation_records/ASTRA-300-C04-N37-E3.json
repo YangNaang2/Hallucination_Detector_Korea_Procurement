@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N37-E3",
+  "answer_sha256": "a4d7da5fb29baadd9b6aecb6fb12475a85c14490cae2016f051bb259fdae81fb",
+  "context_sha256": "320140dee7830e59a52cb343d1280a5da7ed9f840580bd09319368ad3dd26255",
+  "question_sha256": "33ef9342697862fac024ca809f6ffe384024fc1ba53f3cbcca40a1719cc660bf",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "aabdd859734679741148323bb3304c833747829de568760ace6607649857d196",
+  "prompt_tokens": 2754,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 361,
+    "prompt_tokens": 2754,
+    "total_tokens": 3115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.589887328998884,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01511309-000-ef7b9f23f204b4de-CH-00004",
+      "citation": 1,
+      "text_start": 5933,
+      "text_end": 7701,
+      "text_sha256": "5ff967879317888dd59ccab74c788a0aacd29be649ffcc807d897f454fe11456",
+      "document_id": "L1-R26BK01511309-000-ef7b9f23f204b4de",
+      "document_version": "ef7b9f23f204b4de258fa701e8ccaccf09772e8527bca6c19f79a8cf537456db",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/공고문_2026년 TOMS 기능개선 및 유지관리 용역(한국농어촌공사 제2026-95호).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01511309-000-cca1a47bbf50e96e-CH-00064",
+      "citation": 2,
+      "text_start": 93996,
+      "text_end": 95783,
+      "text_sha256": "b2369536bd50d4ce6895d3ad15346f9d03d80fd3f9b00022878bfeec5af4f058",
+      "document_id": "L1-R26BK01511309-000-cca1a47bbf50e96e",
+      "document_version": "cca1a47bbf50e96e00a6a79dbaaacc3abec08583304d9adf9795bb9db5b2e761",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/붙임 2. 2026 TOMS 기능개선 및 유지관리 용역 제안요청서_(최종).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

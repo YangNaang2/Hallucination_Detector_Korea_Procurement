@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N40-E3",
+  "answer_sha256": "beb4884bf784db9b078bb759459e05376b0d47838eaf52344ffedaa59bfdeb27",
+  "context_sha256": "292b27e38118d2dc40c31c82ce01adf7f73ceb357c570b97f1d863831ba48e33",
+  "question_sha256": "faab2b3be6d36769c158cb4638d7cbb9b948e13100285db66c71d5afb654f16b",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "5b14bccdfbf622dfb3ca10bc36651182b17077b2b98c5c6d8b1d9e280b76a714",
+  "prompt_tokens": 2890,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 365,
+    "prompt_tokens": 2890,
+    "total_tokens": 3255,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.4397527660185,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01520501-000-e5173c68f650bfad-CH-00004",
+      "citation": 1,
+      "text_start": 6115,
+      "text_end": 7868,
+      "text_sha256": "eb281c2495d0d13e428eddb9640c7af6353f3e33fbbd03a616d082764952bd92",
+      "document_id": "L1-R26BK01520501-000-e5173c68f650bfad",
+      "document_version": "e5173c68f650bfad78c9d439ccce12b2c0b15d607f6ea9e75251f3c9e23592b7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01520501-000/원본/과업내용서(2026년 국립기상과학원 GPU 유지관리 용역)_변경_수정.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01520501-000-e5173c68f650bfad-CH-00012",
+      "citation": 2,
+      "text_start": 17971,
+      "text_end": 19657,
+      "text_sha256": "55f29a069470d551668af3f412aebc1d08f3fe93a551fa531f24d859256fba6c",
+      "document_id": "L1-R26BK01520501-000-e5173c68f650bfad",
+      "document_version": "e5173c68f650bfad78c9d439ccce12b2c0b15d607f6ea9e75251f3c9e23592b7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01520501-000/원본/과업내용서(2026년 국립기상과학원 GPU 유지관리 용역)_변경_수정.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

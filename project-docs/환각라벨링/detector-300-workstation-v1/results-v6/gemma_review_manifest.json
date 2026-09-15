@@ -1,0 +1,9 @@
+{
+  "model": "/home/piai/.cache/huggingface/hub/models--google--gemma-3-12b-it/snapshots/96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "quantization": "runtime NF4 double quantization, original weights unchanged",
+  "source_sha256": "9090a1eda0d0dbd0f1d0582d6089fbc970bdef01fa0e60743e9ade9d00954021",
+  "config_sha256": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+  "load_seconds": 16.490996075008297,
+  "role": "label drafts only; not deployed detector",
+  "no_download": true
+}

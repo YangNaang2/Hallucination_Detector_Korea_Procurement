@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N17-E1",
+  "answer_sha256": "cc84b4e28fce4523edd6847136816bcde219bbff56cea0955bb357eada85279a",
+  "context_sha256": "da4cff43cbcee42d32970b9fcd2bd11c6eecb3ed51352b1b7a612b5a65d0c125",
+  "spans": [
+    {
+      "start": 11,
+      "end": 56,
+      "quote": "**부산올랭의 전담요원 요구를 원문에 없는 등급·인원 수로 확정해도 된다는 점**",
+      "label": "uncertain",
+      "reason": "문제 재진술인지 허용 단정인지 모호하며 이후에는 미명시 사항 협의 조건을 정확히 설명한다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      451
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "등급·인원을 원문만으로 확정할 수 없다는 직접 결론이 빠짐",
+  "review_note": ""
+}

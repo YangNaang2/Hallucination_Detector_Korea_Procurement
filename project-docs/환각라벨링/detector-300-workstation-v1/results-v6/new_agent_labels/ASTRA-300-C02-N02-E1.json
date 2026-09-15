@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N02-E1",
+  "answer_sha256": "c1dbd58d9a41439d709ee4f66aebceac1d1c4fd25fc8d417e6d6ada19f7775d6",
+  "context_sha256": "b2638615fa35eb9facc85f2a737ef5f41c7e8bf0a8f8737414c1868a377b383f",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      642
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "외부 대리 발표 금지·PM 발표·불참시 서면평가·일정 변경 가능을 실제 두 자료에서 확인. 공고일 전 재직 조건은 생략됐지만 외부 영업 담당자 대체 불가라는 질문의 결론은 지지됨."
+}

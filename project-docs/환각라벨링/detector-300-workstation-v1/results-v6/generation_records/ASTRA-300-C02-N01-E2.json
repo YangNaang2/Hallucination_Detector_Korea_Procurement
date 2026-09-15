@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N01-E2",
+  "answer_sha256": "a31e199db9839d14097366500e4d2d95064237fd3339f59ad4f85037c30d65e4",
+  "context_sha256": "bdaf6c83f4d3670224ba0c8981f594ea6de95960b16be2fd6f9a934f01c8fab1",
+  "question_sha256": "523c0bf849281b77b000af2e03b673f4bbfe3a3f29794d411fcb1aae4b1da925",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "d4b3651e9fcc1947ba6aed2981003590b04dd9836bf7c94a9a229467c55d40ff",
+  "prompt_tokens": 2495,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2495,
+    "total_tokens": 3007,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 14.117163231014274,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00058",
+      "citation": 1,
+      "text_start": 84147,
+      "text_end": 85266,
+      "text_sha256": "167a5999e6fcc6940662789a93add60c4d848deae81d62c53367a6ab7a9b79e5",
+      "document_id": "L1-R26BK01550466-000-f6c69c65e0f23a26",
+      "document_version": "f6c69c65e0f23a26f852dd99f9c312ad542e3e7881feacdf261fcce057115459",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01550466-000/원본/3. 제안요청서(AI-OCR 기반 e-보고서 검수 자동화 사업).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00047",
+      "citation": 2,
+      "text_start": 67697,
+      "text_end": 69455,
+      "text_sha256": "5891ec479b405fba5f74c0575f95cfcb00defe468892aa40328e479a4365173f",
+      "document_id": "L1-R26BK01550466-000-f6c69c65e0f23a26",
+      "document_version": "f6c69c65e0f23a26f852dd99f9c312ad542e3e7881feacdf261fcce057115459",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01550466-000/원본/3. 제안요청서(AI-OCR 기반 e-보고서 검수 자동화 사업).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

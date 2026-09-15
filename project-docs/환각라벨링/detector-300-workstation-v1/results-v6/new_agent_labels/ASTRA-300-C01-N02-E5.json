@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N02-E5",
+  "answer_sha256": "7d61e2b55b46d21dffef1ec3d8371326d385f7e04890bb5eb8b0d6305374c948",
+  "context_sha256": "58e10b795a1b86b7de37bdd721e68ed69cc66fa7201f60197075ff901ed9c4ce",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      363
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "실제 근거 전체 대조: 원칙적 노트북 금지와 불가피한 경우 고정장치·발주기관 관리·승인 조건을 함께 설명하므로 as-is 허용 불가 판단은 지지됨."
+}

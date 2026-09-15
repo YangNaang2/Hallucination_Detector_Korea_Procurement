@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N23-E5",
+  "answer_sha256": "4cf4de4c90a7167863ad9388c1d5edf1bb04be0810bc38bf6b6738beee419fff",
+  "context_sha256": "7a6737f3316cff242b4c3defc32c350859dc4ed034bbb095355a24231c51450a",
+  "question_sha256": "3fa30b07cf7e731e4038d5f6b51aa798dd8606b36d5ae0f9160ee8efa3b55407",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "90f8f37b03e257fc52a7c1820699a9b86c51e9a32628c19b3f20dd8599ddb4fa",
+  "prompt_tokens": 2823,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2823,
+    "total_tokens": 3335,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 15.07282223898801,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01608743-000-e563093c07dfc208-CH-00003",
+      "citation": 1,
+      "text_start": 3117,
+      "text_end": 4917,
+      "text_sha256": "839224f17e005c890170bae4a6c99d577ac75c1d6ed5cc3dbd84a15b74cadc74",
+      "document_id": "L1-R26BK01608743-000-e563093c07dfc208",
+      "document_version": "e563093c07dfc2087de44eaad7fa3a77e181bac5bf9847381df5e11ae3010022",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01608743-000/원본/1. 입찰공고문(변환본)_스마트 교량 플랫폼 구축(1차) 사업.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01608743-000-329703be326a1821-CH-00050",
+      "citation": 2,
+      "text_start": 73034,
+      "text_end": 74831,
+      "text_sha256": "a0720fe97ed48db5ff56f7d56a3d7191954d6347bfc63c50f8d2fe8c8b6c16d6",
+      "document_id": "L1-R26BK01608743-000-329703be326a1821",
+      "document_version": "329703be326a18214fb045f75becf99a71da4f71a02c2609c101915834e8f4c5",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01608743-000/원본/3. (수정)제안요청서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

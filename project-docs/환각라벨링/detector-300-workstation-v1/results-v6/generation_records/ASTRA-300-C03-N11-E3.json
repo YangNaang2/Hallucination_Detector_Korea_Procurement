@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N11-E3",
+  "answer_sha256": "f3155ac5954df2fa84bbc7140dbddfa89c2f088a04fd06bf2636b09dda358fc7",
+  "context_sha256": "91b1c82b8a0b6c1fe23e8964d3713d73bf318e3d022ab9a5c72dfb9b5f504f21",
+  "question_sha256": "1a9e273d379f607bcca483377c26d36a5c74d1d5fffdfa0758d57679fd14a68a",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ffc8ab2b0abee26844779947c8debb051df77f46864cd8bb0f56398558884bc7",
+  "prompt_tokens": 2817,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 364,
+    "prompt_tokens": 2817,
+    "total_tokens": 3181,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.964602029998787,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01579684-000-4dae6c033b172173-CH-00001",
+      "citation": 1,
+      "text_start": 1487,
+      "text_end": 3262,
+      "text_sha256": "5a721a1fba240b05e5ec8bfbd99674ce891f69b0888e87e2bb5f56f336dd6293",
+      "document_id": "L1-R26BK01579684-000-4dae6c033b172173",
+      "document_version": "4dae6c033b172173c37c120f8d4cac5ba883b623bcee20ff70dbc9c2e45aeddf",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 입찰 공고문.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01579684-000-70f4cc06cdf8a386-CH-00019",
+      "citation": 2,
+      "text_start": 29236,
+      "text_end": 31027,
+      "text_sha256": "c61407ccaf8817c70a73ec0eea7d5cb7c9a379327bdf60c44278925c945c950b",
+      "document_id": "L1-R26BK01579684-000-70f4cc06cdf8a386",
+      "document_version": "70f4cc06cdf8a386163d89be9f6e83a8efe4dcacc821cd3e8a215dd0023506c6",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 제안요청서(사전규격공개의견반영).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

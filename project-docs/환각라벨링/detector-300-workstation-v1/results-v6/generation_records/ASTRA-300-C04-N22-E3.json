@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N22-E3",
+  "answer_sha256": "9d45061ea6daa1c893afb1ca4d17e324778b5b3e025ec046a4bd04b418937c43",
+  "context_sha256": "9bb1c0a09df817327b81ebd70fbc5acb2a18f1d68603a6c57eb3ecc0cf1c7fe6",
+  "question_sha256": "0bfebea95def0aefcaae37686682b8be69070ebd76330a593c978ae789b1af5c",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "f6b84ab8b8f3505899be39517436423839693bdec1368d625455517bbd326684",
+  "prompt_tokens": 2743,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 317,
+    "prompt_tokens": 2743,
+    "total_tokens": 3060,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 12.636269222013652,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01538557-000-79791513d620e291-CH-00025",
+      "citation": 1,
+      "text_start": 38291,
+      "text_end": 40069,
+      "text_sha256": "b6972861d399971c9058f08ebf27e0dcfa82af9d46677f3551dd139be483d1a5",
+      "document_id": "L1-R26BK01538557-000-79791513d620e291",
+      "document_version": "79791513d620e2912fd319c0f0f52a8224f227f3856ad9aeedc45bd3988ae965",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01538557-000/원본/26-HS043 00. 제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01538557-000-79791513d620e291-CH-00006",
+      "citation": 2,
+      "text_start": 9228,
+      "text_end": 10984,
+      "text_sha256": "3899d9b136b7724c4d6647f54433f9461625bfa18f47257802e94a6b97513e02",
+      "document_id": "L1-R26BK01538557-000-79791513d620e291",
+      "document_version": "79791513d620e2912fd319c0f0f52a8224f227f3856ad9aeedc45bd3988ae965",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01538557-000/원본/26-HS043 00. 제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

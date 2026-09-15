@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N20-E3",
+  "answer_sha256": "62a010c728f3e787cf900e9d03e8885fd5923326b62ee591a315dd7010f9fc6a",
+  "context_sha256": "23f206e94d1d9122101592660cfd6b1947f186fd1715974f9b1e6dbb20070e0c",
+  "spans": [
+    {
+      "start": 20,
+      "end": 50,
+      "quote": "**7개월의 개발 기간을 기준으로 1년 단위로 계획**",
+      "label": "unsupported",
+      "reason": "자료1은 개발기간7개월, 자료2는 사용자 교육·시험이관만 있어 정기 보안교육 1년 주기를 지지하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01501715-001-58d1ee1c2092b487-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      762
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "정기 보안교육 근거 부족을 밝히지 않고 무관한 사업개요를 길게 복사함",
+  "review_note": ""
+}

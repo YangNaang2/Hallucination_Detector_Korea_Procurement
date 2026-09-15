@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N03-E4",
+  "answer_sha256": "c488972bf777e2cd3ee4e1670dcf0bfd1d93f9456fd44c2a5bd1fc1458c706ef",
+  "context_sha256": "f1e7b2739e1da5482161a014534371194f6cb488874d20e468de56e27fd9478f",
+  "spans": [
+    {
+      "start": 0,
+      "end": 61,
+      "quote": "대학 시스템의 기술지원 확약서를 일반 SW사업자 등록으로 대체할 수 있는지에 대한 판단은 **불가능**이다. ",
+      "label": "contradiction",
+      "reason": "문서에서 기술지원확약서 제출을 요구하고 있으며, 일반 SW사업자 등록으로 대체 가능하다는 언급이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01448046-000-2237c480301f0a8e-CH-00001",
+        "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00004"
+      ]
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      659
+    ]
+  ],
+  "claim_labels": [
+    "contradiction",
+    "supported",
+    "supported",
+    "supported",
+    "supported",
+    "supported",
+    "supported",
+    "supported",
+    "supported"
+  ],
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_status": "independent Gemma claim-level draft; not agent approved or human gold",
+  "human_approved": false,
+  "source_sha256": "f3d58cd56c31dfd7050cc0b3b6cec75346d0738b70edd433595a8b9f7242c1a6"
+}

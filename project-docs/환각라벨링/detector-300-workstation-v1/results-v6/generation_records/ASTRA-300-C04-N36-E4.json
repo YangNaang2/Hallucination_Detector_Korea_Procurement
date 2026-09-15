@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N36-E4",
+  "answer_sha256": "f3cac29dcce45c69049ce1aec75554a072af0197d20c060adbf4de23b6e28104",
+  "context_sha256": "2468944d9138ff140d73481bafddd3871e7a95a72b36d8a0363b8089afed4049",
+  "question_sha256": "097d8f0f4a68fbc6f637d2b6f08b9983ee8939641e5614e7bf49cf0a648f0c3d",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "52e8760ac92c242e48f0b52d430d2df23492b4e42e28ac1b4988ff17a4cad5bd",
+  "prompt_tokens": 2721,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 409,
+    "prompt_tokens": 2721,
+    "total_tokens": 3130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.099919312022394,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01504777-000-026f943ce67c62cc-CH-00014",
+      "citation": 1,
+      "text_start": 21574,
+      "text_end": 23372,
+      "text_sha256": "a895e8367f418c91708e3fcc0af710148e37df2824b39f4db84c6713320945db",
+      "document_id": "L1-R26BK01504777-000-026f943ce67c62cc",
+      "document_version": "026f943ce67c62cc293c72aae1640013f7e97f3368a242682d6c69b7dd403230",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01504777-000/원본/과업지시서_2026 경기도장애인체육회 홈페이지 유지보수 및 고도화 과업내용 및 제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01504777-000-026f943ce67c62cc-CH-00020",
+      "citation": 2,
+      "text_start": 30825,
+      "text_end": 32568,
+      "text_sha256": "d95ecbe174728efa1f0fa0fb50ca486de936b89e4f010b971ea2b5a84159a69c",
+      "document_id": "L1-R26BK01504777-000-026f943ce67c62cc",
+      "document_version": "026f943ce67c62cc293c72aae1640013f7e97f3368a242682d6c69b7dd403230",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01504777-000/원본/과업지시서_2026 경기도장애인체육회 홈페이지 유지보수 및 고도화 과업내용 및 제안요청서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

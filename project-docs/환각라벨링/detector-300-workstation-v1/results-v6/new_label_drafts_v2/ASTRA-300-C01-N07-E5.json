@@ -1,0 +1,28 @@
+{
+  "question_id": "ASTRA-300-C01-N07-E5",
+  "answer_sha256": "8ef453d8d4ba83d2b8829eed01d1c7fbb30e57a1917057214519a1668fcede3f",
+  "context_sha256": "a75d9f7c0900a3a51259d80c963accca191324e49be9616e547442d3c0d16c10",
+  "spans": [
+    {
+      "start": 0,
+      "end": 93,
+      "quote": "장애 신고 후 방문과 복구 시간을 같은 시간으로 해석해도 된다는 점은 문서에서 명시적으로 정의된 바가 없으므로, 이는 **의무가 아니며, 변경 가능하다**고 판단된다.",
+      "label": "unsupported",
+      "reason": "문서에 근거하지 않는 추측",
+      "evidence_quote": "",
+      "evidence_quote_exact_match": false
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      326
+    ]
+  ],
+  "review_status": "same-generator-model-draft; not adjudicated",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_prompt_sha256": "e50041bb9769ca4c6b1dfd0d2ec32dc32ed723689083a15e77a3e7f44a2f989a",
+  "source_sha256": "cdc9512f4570a8bea7ce643698f304137215370f48a7d75916f0fc73be9c12c9"
+}

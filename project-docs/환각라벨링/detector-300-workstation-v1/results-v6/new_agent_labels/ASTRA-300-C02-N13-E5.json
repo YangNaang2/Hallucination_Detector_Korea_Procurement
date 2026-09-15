@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C02-N13-E5",
+  "answer_sha256": "010d89b8c4f9316a556319283617e92e533f3b471cb4ea33a7b96e502dde3456",
+  "context_sha256": "f0752ce95c0a8a37023827637ba890101cc559f159d045b570ef1b7899ddab9c",
+  "spans": [
+    {
+      "start": 151,
+      "end": 160,
+      "quote": "(PMR-007)",
+      "label": "citation_error",
+      "reason": "1개월·1명 이상·필요시 상주는 자료2 PSR-002이고 자료1 PMR-007은 안정화 일정이다.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00040"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 62,
+      "end": 65,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "해당 수치 조건은 자료2에 있음.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00040"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 381,
+      "end": 432,
+      "quote": "개발자 상주 지원을 계획에서 모두 빼는 것은 **근거가 없는 의무**로 간주될 수 없습니다.",
+      "label": "quality_only",
+      "reason": "문장 의미가 어색하지만 첫 결론과 필요시 조건이 뒤에 명시되어 있으며 반대 사실을 단정하지는 않음.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00040"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      432
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "계획에서 전부 제외 불가라는 결론은 근거가 있고 필요시 조건을 답변 전체에 포함했으므로 무조건 의무로 바뀐 환각으로 세지 않음."
+}

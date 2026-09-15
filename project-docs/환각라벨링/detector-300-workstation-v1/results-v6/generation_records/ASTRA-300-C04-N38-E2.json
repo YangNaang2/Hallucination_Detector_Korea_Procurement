@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N38-E2",
+  "answer_sha256": "de97a862ddebad1f8cb9b7fa1d0534bed94130ff31b110426f9dd0ffd9327254",
+  "context_sha256": "78481efde556691764a0fc36cdde9a49a37be9ecd67a2be21df1dda872d83e95",
+  "question_sha256": "344ffff82a08fa33e2fa4926692ad75f7b0d56d10d139ff09b94f2603bcf3f7f",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "21679b131c934e4c1c1ff6d7eb60b38af6cb498af2d5b5fc8316daf227c8496e",
+  "prompt_tokens": 2891,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 447,
+    "prompt_tokens": 2891,
+    "total_tokens": 3338,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.29524651999236,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01604996-000-3c970206f616ed99-CH-00026",
+      "citation": 1,
+      "text_start": 38874,
+      "text_end": 40511,
+      "text_sha256": "7cef673c316d795b19e461e4c9ebafe71f0c02fbc36524ccc1674778497e3c33",
+      "document_id": "L1-R26BK01604996-000-3c970206f616ed99",
+      "document_version": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01604996-000-3c970206f616ed99-CH-00027",
+      "citation": 2,
+      "text_start": 40271,
+      "text_end": 42037,
+      "text_sha256": "8f8edeb6a244011c8ad75ac39add878c70e572674b4d10c511df6d545f916788",
+      "document_id": "L1-R26BK01604996-000-3c970206f616ed99",
+      "document_version": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

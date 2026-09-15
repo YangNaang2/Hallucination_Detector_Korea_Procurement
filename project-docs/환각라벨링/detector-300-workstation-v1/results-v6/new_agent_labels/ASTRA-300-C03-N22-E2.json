@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C03-N22-E2",
+  "answer_sha256": "90771b5b7c19bba73c2bc8166f2b4cef41630a54bc1b8d425cfff12abf1b45e7",
+  "context_sha256": "22689c08d998475ef187599b4a25252edc7bc6edabc9a97ad39d256fe57465de",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      432
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료2 기존 HPC 연계와 플랫폼 일부 기능 개발/개선으로 결론 지지."
+}

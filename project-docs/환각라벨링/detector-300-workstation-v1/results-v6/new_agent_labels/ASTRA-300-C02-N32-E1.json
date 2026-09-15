@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N32-E1",
+  "answer_sha256": "dd845c01a01af497b00026c7cf6c0cc08b3cecb1dc1ca023e2ea6e0afd49f482",
+  "context_sha256": "42fb9cba3667564d2213fe81ceaa9ca7b30201b759551bf3c642336bd7b56209",
+  "spans": [
+    {
+      "start": 361,
+      "end": 409,
+      "quote": "**사업의 검수 기준**은 **제안서의 내용**과 **제안자 평가**를 통해 이루어지며",
+      "label": "unsupported",
+      "reason": "제공 자료는 과업심의 및 제안업체 기술평가로서 납품 검수 절차가 아님.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-57cd356f46790fed-CH-00029"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 411,
+      "end": 493,
+      "quote": "**개발팀 자체 시험**만으로는 **과업심의위원회**의 **과업내용 확정**과 **소프트웨어 개발사업의 적정 사업기간 산정**이 이루어지지 않으므로",
+      "label": "unsupported",
+      "reason": "검수와 과업 확정/기간 산정을 혼동하여 근거로 제시함.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-57cd356f46790fed-CH-00001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      547
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "실제 검수 요구사항이 제공되지 않았다는 한계를 알리지 않음",
+  "review_note": "개발팀 자체 시험만으로 완료 불가 자체는 확정할 근거가 부족하지만 검수 절차를 과업심의로 설명한 오류를 명확히 표시함."
+}

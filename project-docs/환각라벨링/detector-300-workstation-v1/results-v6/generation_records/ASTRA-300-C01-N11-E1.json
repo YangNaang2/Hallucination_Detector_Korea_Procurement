@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N11-E1",
+  "answer_sha256": "17f14bb1bda013bf32aea7fbb0b6bf8227fcda8d97c489c1918a8ee886d6ad7f",
+  "context_sha256": "7088408a29f4ccc583741c0a57d703343d53956ea42d90e203e53556eeeda4b4",
+  "question_sha256": "4941f98ad871d58de92600bfebb55067ce1d27c186b39b3c3c64e7fe9f3b833d",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "324a9aa823274c52b55a23b020ef8d5b7365ffc35f9fb6a73aa6d34cb73ee28f",
+  "prompt_tokens": 2863,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 444,
+    "prompt_tokens": 2863,
+    "total_tokens": 3307,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.911113231006311,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01579684-000-4dae6c033b172173-CH-00001",
+      "citation": 1,
+      "text_start": 1487,
+      "text_end": 3262,
+      "text_sha256": "5a721a1fba240b05e5ec8bfbd99674ce891f69b0888e87e2bb5f56f336dd6293",
+      "document_id": "L1-R26BK01579684-000-4dae6c033b172173",
+      "document_version": "4dae6c033b172173c37c120f8d4cac5ba883b623bcee20ff70dbc9c2e45aeddf",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 입찰 공고문.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01579684-000-70f4cc06cdf8a386-CH-00022",
+      "citation": 2,
+      "text_start": 33792,
+      "text_end": 35571,
+      "text_sha256": "f7c546f83aede84ec1b9766aa012898e199e09464031e8d85e107739cf045cdd",
+      "document_id": "L1-R26BK01579684-000-70f4cc06cdf8a386",
+      "document_version": "70f4cc06cdf8a386163d89be9f6e83a8efe4dcacc821cd3e8a215dd0023506c6",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 제안요청서(사전규격공개의견반영).hwp"
+    }
+  ]
+}

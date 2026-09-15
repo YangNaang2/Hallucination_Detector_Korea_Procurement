@@ -1,0 +1,78 @@
+{
+  "question_id": "ASTRA-300-C01-S01",
+  "answer_sha256": "92c76fa69649979ece55156d3e43231c1b499a04caf93eb05c30b38bb6c7187a",
+  "context_sha256": "a5bd1285432541e4b7be79e1dd1a044582ce471896d79a1f5410ea951557ee7a",
+  "question_sha256": "7a6a56d1389edc64547846aaf8bc8dccd473b5e049fc235d6e09e9389b36df22",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "1d7f905cf7d2f9e5eaad8dd66b2a7da9522a904c95103a90b600d4b52aa2701f",
+  "prompt_tokens": 2662,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 246,
+    "prompt_tokens": 2662,
+    "total_tokens": 2908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.533628426986979,
+  "source_evidence": [
+    {
+      "chunk_id": "C01-QA300-STATE-2.0.0-CH-001",
+      "citation": 1,
+      "text_start": 85,
+      "text_end": 788,
+      "text_sha256": "3d827bb4381e418651d6e139041bdd1bb0b2873bfba00cd4027b9f2484c2f27e",
+      "document_id": "C01-QA300-STATE-2.0.0",
+      "document_version": "2.0.0",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "scenario_id": "SC-QA300-C01-A",
+      "path": "project-docs/평가데이터/v2/retrieval/C01/L2/C01-QA300-STATE-2.0.0.json"
+    },
+    {
+      "chunk_id": "C01-STAFF-1.0.0-r1-CH-616af79fea86",
+      "citation": 2,
+      "text_start": 1061,
+      "text_end": 2284,
+      "text_sha256": "c76da0f75cf5b44362fe48bd46c283485930dd68eaf64ca3312ae486ab423b77",
+      "document_id": "C01-STAFF-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-STAFF-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "C01-PERF-1.0.0-r1-CH-fba69d20e486",
+      "citation": 3,
+      "text_start": 2277,
+      "text_end": 3363,
+      "text_sha256": "82ba887a95a356e5e6e3bed2526efaf097d7756bca2e99f9221384c8b2f4f0ad",
+      "document_id": "C01-PERF-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-PERF-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "C01-PROFILE-1.0.0-r1-CH-2fcaf8ec8e85",
+      "citation": 4,
+      "text_start": 68,
+      "text_end": 595,
+      "text_sha256": "678c30b588e254e5092feace33878b156098a2f8c627ab554ccdc257b085e8ff",
+      "document_id": "C01-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C01/r1/L2/C01-PROFILE-1.0.0-r1.json"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

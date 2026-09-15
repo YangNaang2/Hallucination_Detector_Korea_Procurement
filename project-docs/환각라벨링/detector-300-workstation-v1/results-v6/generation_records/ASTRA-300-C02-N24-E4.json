@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C02-N24-E4",
+  "answer_sha256": "a4d83b6b457a7fc59005a1ef14f238d6d6a3eee9d0d51ebd1d6b663e3217e192",
+  "context_sha256": "4f6cc2a9fa04fedc67dc6e5e1c1b7b919a411b3ff6146124b89a452699aede1d",
+  "question_sha256": "b74308f9d5d4a628580c1169087216290a503d2616f09c39502ce3f5879544c6",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "b327855745794d4fc931100ba98e0d2016ed04ff153112ff69d09921e2a885a5",
+  "prompt_tokens": 1733,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 241,
+    "prompt_tokens": 1733,
+    "total_tokens": 1974,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.466869074007263,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01508724-000-7fb2ab580f811e3c-CH-00050",
+      "citation": 1,
+      "text_start": 71166,
+      "text_end": 72948,
+      "text_sha256": "c086974182d9870b25c2646cb7822d0a3230b3b2517e324e77b84b5898a8bc7b",
+      "document_id": "L1-R26BK01508724-000-7fb2ab580f811e3c",
+      "document_version": "7fb2ab580f811e3c627ff4a9880db421e6707a58dc954458a26652233b9a6e6f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01508724-000/원본/2.  제안요청서_2026년 중소기업 전략기술로드맵 시스템 유지보수 및 기능개선 용역_최최종 (1).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,28 @@
+{
+  "question_id": "ASTRA-300-C01-N03-E4",
+  "answer_sha256": "c488972bf777e2cd3ee4e1670dcf0bfd1d93f9456fd44c2a5bd1fc1458c706ef",
+  "context_sha256": "f1e7b2739e1da5482161a014534371194f6cb488874d20e468de56e27fd9478f",
+  "spans": [
+    {
+      "start": 301,
+      "end": 331,
+      "quote": "일반 SW사업자 등록으로 대체할 수 있는 근거는 없다.",
+      "label": "unsupported",
+      "reason": "이 구절은 근거가 없는 추가 주장으로 간주된다.",
+      "evidence_quote": "",
+      "evidence_quote_exact_match": false
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      659
+    ]
+  ],
+  "review_status": "same-generator-model-draft; not adjudicated",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_prompt_sha256": "34b6fa618978131f86335f7729e44bbe903c21a2e50a33f1770f9b4c4fcaa460",
+  "source_sha256": "cdc9512f4570a8bea7ce643698f304137215370f48a7d75916f0fc73be9c12c9"
+}

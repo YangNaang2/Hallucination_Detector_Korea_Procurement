@@ -1,0 +1,64 @@
+{
+  "question_id": "ASTRA-300-C02-P01",
+  "answer_sha256": "d6754fc8bb48c395f523f8b7047a04b88406ec3ab391c6787261055246113ca7",
+  "context_sha256": "582d37453736685561c02240cf38f697d7c2475e584ba8bdab11ace72f721c18",
+  "question_sha256": "b54297b3e36fcaab03d9960632b057c4259a289a90547f092b38d9a8fca3dc21",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e9f5e9bd920943808442e3f83504e27419d2dba197dd1df5c31de884fb56513b",
+  "prompt_tokens": 2675,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2675,
+    "total_tokens": 3187,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.730673317011679,
+  "source_evidence": [
+    {
+      "chunk_id": "C02-PROFILE-1.0.0-r1-CH-007f12be020c",
+      "citation": 1,
+      "text_start": 69,
+      "text_end": 598,
+      "text_sha256": "2cdc416348244cca614ed821c23f192b00beebbe9c0839d6bff362ecccd8e138",
+      "document_id": "C02-PROFILE-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PROFILE-1.0.0-r1.json"
+    },
+    {
+      "chunk_id": "L1-R26BK01474723-000-7553e5b717a40050-CH-00024",
+      "citation": 2,
+      "text_start": 34902,
+      "text_end": 36693,
+      "text_sha256": "8c74a65b1e9f6cdf19f0c85d98edec35dfd560edcaf0245c2c0a2c45fcf73699",
+      "document_id": "L1-R26BK01474723-000-7553e5b717a40050",
+      "document_version": "7553e5b717a4005091965935896fc809cc95275b8382134fe52d19bbccd29e71",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01474723-000/원본/과업지시서(부산광역시 스마트시티 통합플랫폼 유지관리용역).hwpx"
+    },
+    {
+      "chunk_id": "C02-PERF-1.0.0-r1-CH-75d89737f60a",
+      "citation": 3,
+      "text_start": 2308,
+      "text_end": 3452,
+      "text_sha256": "c06ab9cdbbff2357ce3e87be3d0398e89dd05eebabaeb7b94e7d55c05e816646",
+      "document_id": "C02-PERF-1.0.0-r1",
+      "document_version": "1.0.0-r1",
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "security_level": "L2",
+      "scenario_id": null,
+      "path": "project-docs/가상기업/v1/generated/C02-C05/r1/C02/L2/C02-PERF-1.0.0-r1.json"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

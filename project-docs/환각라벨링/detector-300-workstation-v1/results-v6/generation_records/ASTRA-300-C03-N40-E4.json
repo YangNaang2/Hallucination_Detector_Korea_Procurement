@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N40-E4",
+  "answer_sha256": "5e5bfe70cf0366eb5e7a9f5bd87c9a6da1ad9bc43af4496671ed0aa9296c3d69",
+  "context_sha256": "5bc7faa2befb4195c60ef0affcc37934110ffff2df55c8c2fff8313e6d212d0e",
+  "question_sha256": "9e5a8c74b25707d0573e4b0d38119a438fc2ac4309514a4be2d3f50289765b82",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "bef6971ac178bf7f4a5a99af1fee2abc00b88a5e964cb886c0e036665129c7ae",
+  "prompt_tokens": 2864,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 377,
+    "prompt_tokens": 2864,
+    "total_tokens": 3241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.151497496000957,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01520501-000-4727be7a2594d403-CH-00004",
+      "citation": 1,
+      "text_start": 3776,
+      "text_end": 5576,
+      "text_sha256": "021341ea6c924d273810a518e92103593b08b1c2e284cd1fffb5209055e72b96",
+      "document_id": "L1-R26BK01520501-000-4727be7a2594d403",
+      "document_version": "4727be7a2594d4036943977e825844a00cfac016f61cadf90066346cbbb795ad",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01520501-000/원본/(2026-29) 공고서(용역-2026년도 국립기상과학원 고성능 컴퓨팅(GPU) 서버 유지관리 용역)_적격심사.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01520501-000-e5173c68f650bfad-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1760,
+      "text_sha256": "77b4e9a379ac09f3e33e05019cc190c2d61053896cf3ceb1888fbdc3600807b6",
+      "document_id": "L1-R26BK01520501-000-e5173c68f650bfad",
+      "document_version": "e5173c68f650bfad78c9d439ccce12b2c0b15d607f6ea9e75251f3c9e23592b7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01520501-000/원본/과업내용서(2026년 국립기상과학원 GPU 유지관리 용역)_변경_수정.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

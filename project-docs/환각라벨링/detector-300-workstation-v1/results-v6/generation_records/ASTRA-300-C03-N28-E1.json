@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N28-E1",
+  "answer_sha256": "6c22620217ef51567c4437d358ab4ce9a79b414250359b7514f36888039efb37",
+  "context_sha256": "f2a89f7333e1aef47aa2fe4b08958091494ff44125e65d1c88c7800d525f95cc",
+  "question_sha256": "8e0f44e783df3a0a38fd7a841dafbcdd690950582466692e0df5210ff3f1c38d",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "2c1909715e318380d1bcece8d45885e63392dc2f1f4f8db209ef8402d721811d",
+  "prompt_tokens": 2823,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 328,
+    "prompt_tokens": 2823,
+    "total_tokens": 3151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 12.897600008989684,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01595553-000-4bf76d9de1692aaf-CH-00007",
+      "citation": 1,
+      "text_start": 10609,
+      "text_end": 12402,
+      "text_sha256": "eef1ed85b8b974ab1c1e50fbee5f40d1c9ca2734cbb2c2a885691bbf5ce6ecfa",
+      "document_id": "L1-R26BK01595553-000-4bf76d9de1692aaf",
+      "document_version": "4bf76d9de1692aaf17a8b4771c4d4880d0ff3b7965fc9625dbc399ea2f28569e",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01595553-000/원본/제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01595553-000-5d16f11ba91cf9c1-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1797,
+      "text_sha256": "9e2333e47959baa8eb2b2b6bfdd04e99a81b50f1c96400835124ba56a65e9c5e",
+      "document_id": "L1-R26BK01595553-000-5d16f11ba91cf9c1",
+      "document_version": "5d16f11ba91cf9c17400b98f093bd6f618611af764a1324076c23a9e6f93a56f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01595553-000/원본/입찰공고문.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

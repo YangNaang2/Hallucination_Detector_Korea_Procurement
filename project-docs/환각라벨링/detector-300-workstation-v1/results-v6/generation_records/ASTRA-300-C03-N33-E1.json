@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N33-E1",
+  "answer_sha256": "312d71cae4699cfb98faac8bce4725df69581ce850e31f5588ada8309aa1d5db",
+  "context_sha256": "54dca67cec70e9458d4dba4b5bde3c2d33f6d8250d2ef9bc9c45251aded2c1c2",
+  "question_sha256": "d16a685ffe8013bd51b31369d69e86455f1aec47d807a78d8d25b624383905c1",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "f46a832e1d320080a2110fafc9316cbd59a4ba6a7c40fb9a95197a04839662db",
+  "prompt_tokens": 2424,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 402,
+    "prompt_tokens": 2424,
+    "total_tokens": 2826,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 16.18886114799534,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01599621-000-d7d271c3cafa59c3-CH-00019",
+      "citation": 1,
+      "text_start": 27198,
+      "text_end": 28693,
+      "text_sha256": "92be9361f64a86dd0b9c2deb13961433bc840f09060b6d57f4880a13fd1b25b2",
+      "document_id": "L1-R26BK01599621-000-d7d271c3cafa59c3",
+      "document_version": "d7d271c3cafa59c38e402510b7b08747351afb20032b4d896f443e7b2928fbf8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01599621-000/원본/[붙임] 제안요청서(드론용임무카메라).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01599621-000-d7d271c3cafa59c3-CH-00001",
+      "citation": 2,
+      "text_start": 1509,
+      "text_end": 2882,
+      "text_sha256": "bc5e8fa927ec6d56a761de1815fcf7d6a73960c2e213486db2fed9327c0417a0",
+      "document_id": "L1-R26BK01599621-000-d7d271c3cafa59c3",
+      "document_version": "d7d271c3cafa59c38e402510b7b08747351afb20032b4d896f443e7b2928fbf8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01599621-000/원본/[붙임] 제안요청서(드론용임무카메라).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

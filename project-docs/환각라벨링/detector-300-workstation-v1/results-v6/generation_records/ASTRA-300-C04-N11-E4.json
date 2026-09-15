@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N11-E4",
+  "answer_sha256": "4590da01896d1bf32532daf829585518af98d7cd2fd93f7367d3a1b53ff4f551",
+  "context_sha256": "8b43e7075a218dddd12f31553d00371d0dda13434f61e6f19a8d8a584883a2ed",
+  "question_sha256": "3c84eed014db8fd4ee4864c01b44bc38e95442d45ce4e6dc0742d1ac86f50d28",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "4c239b880f3f211aff4c0f56a7f88ec23af38cdaa3a72e9eb8c8bef119dcf448",
+  "prompt_tokens": 2747,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 331,
+    "prompt_tokens": 2747,
+    "total_tokens": 3078,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.601614661019994,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01579684-000-70f4cc06cdf8a386-CH-00017",
+      "citation": 1,
+      "text_start": 26144,
+      "text_end": 27922,
+      "text_sha256": "f578a79dfd34cb2a6ab7b1063e1b181cf7f34e21e899a11dd7bb5eaf3e9c6bc3",
+      "document_id": "L1-R26BK01579684-000-70f4cc06cdf8a386",
+      "document_version": "70f4cc06cdf8a386163d89be9f6e83a8efe4dcacc821cd3e8a215dd0023506c6",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 제안요청서(사전규격공개의견반영).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01579684-000-70f4cc06cdf8a386-CH-00014",
+      "citation": 2,
+      "text_start": 21583,
+      "text_end": 23382,
+      "text_sha256": "f6f9c0fc162d9070ee23f0f776616eed7a761bc7134d84f34b2b11acec8cca00",
+      "document_id": "L1-R26BK01579684-000-70f4cc06cdf8a386",
+      "document_version": "70f4cc06cdf8a386163d89be9f6e83a8efe4dcacc821cd3e8a215dd0023506c6",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01579684-000/원본/국립한밭대학교 학생종합경력관리시스템 기능 통합 구축 사업 제안요청서(사전규격공개의견반영).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

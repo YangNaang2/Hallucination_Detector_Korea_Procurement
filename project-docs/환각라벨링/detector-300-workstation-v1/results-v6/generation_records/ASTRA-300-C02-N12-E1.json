@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N12-E1",
+  "answer_sha256": "9905a7aa54ca6dfe5472a63c0eb7c843dc1868f2827c80faed4417f7b3faf154",
+  "context_sha256": "4db8be5c19cb02bc2b6c170cc06092d377b5e3e4ab24926bc6eebed4736c0b49",
+  "question_sha256": "d82d81125ad2be397c40e935cb70f983e127627d78969fcf43c97ef57ecad561",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "3ce156cdd226a61ee5be4090626ca669e17727cb93f6347a3275a3cd31204c5c",
+  "prompt_tokens": 2781,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 284,
+    "prompt_tokens": 2781,
+    "total_tokens": 3065,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.156643300986616,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01474723-000-7553e5b717a40050-CH-00001",
+      "citation": 1,
+      "text_start": 1538,
+      "text_end": 3289,
+      "text_sha256": "6ae38cb77d2a2658e8567e3ba94e790964257276092fb6383789068a07c02f46",
+      "document_id": "L1-R26BK01474723-000-7553e5b717a40050",
+      "document_version": "7553e5b717a4005091965935896fc809cc95275b8382134fe52d19bbccd29e71",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01474723-000/원본/과업지시서(부산광역시 스마트시티 통합플랫폼 유지관리용역).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01474723-000-7553e5b717a40050-CH-00002",
+      "citation": 2,
+      "text_start": 3049,
+      "text_end": 4687,
+      "text_sha256": "4516b88f30305db3c5702897e73d301696aa6628f7fe350840eb52c7ac957c74",
+      "document_id": "L1-R26BK01474723-000-7553e5b717a40050",
+      "document_version": "7553e5b717a4005091965935896fc809cc95275b8382134fe52d19bbccd29e71",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01474723-000/원본/과업지시서(부산광역시 스마트시티 통합플랫폼 유지관리용역).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

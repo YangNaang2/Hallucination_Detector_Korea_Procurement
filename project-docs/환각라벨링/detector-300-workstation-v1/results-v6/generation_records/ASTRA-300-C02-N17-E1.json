@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N17-E1",
+  "answer_sha256": "cc84b4e28fce4523edd6847136816bcde219bbff56cea0955bb357eada85279a",
+  "context_sha256": "da4cff43cbcee42d32970b9fcd2bd11c6eecb3ed51352b1b7a612b5a65d0c125",
+  "question_sha256": "af5ba62cbcea76b0265430842487c1761ad2ca0b85b858396977af46ac599301",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "c79120cd34051b086043dbc1ffb7007fed2402559aad7f2224d6885129ef433d",
+  "prompt_tokens": 2595,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 292,
+    "prompt_tokens": 2595,
+    "total_tokens": 2887,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.299150411010487,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00001",
+      "citation": 1,
+      "text_start": 1537,
+      "text_end": 3254,
+      "text_sha256": "a069c5bd646fcad1dc95f370c6119670342e27f4eb2f9260ad8db4863c3516a8",
+      "document_id": "L1-R26BK01543875-000-46ecd13bed8e09f5",
+      "document_version": "46ecd13bed8e09f58fcf0d2d0b65b57a898da56e83c026570e128bed5a8f3180",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/과업지시서[2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역].hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00010",
+      "citation": 2,
+      "text_start": 13885,
+      "text_end": 15623,
+      "text_sha256": "bb2156c4ca199a372f694841c31356540dfb34329d6177524b0b457a47b027db",
+      "document_id": "L1-R26BK01543875-000-46ecd13bed8e09f5",
+      "document_version": "46ecd13bed8e09f58fcf0d2d0b65b57a898da56e83c026570e128bed5a8f3180",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/과업지시서[2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역].hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

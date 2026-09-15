@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C02-N08-E5",
+  "answer_sha256": "8f057efb4633e42bdd7472fda102536c38a9d7d3537da9581607af72c4f32b25",
+  "context_sha256": "a7f86f1895674a275e8c5695d95e3409acb06f9309fcd5ad5e1456d90b45c9dd",
+  "question_sha256": "1e60805f700a9db8b36c7f3656f6e6de299ba73a3288b092db37adde9de84fe7",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "7d1f6e91e80a002741f9706ff6d3cc18bec02c81af9af9f2eb57dd82b5e2a982",
+  "prompt_tokens": 1622,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 371,
+    "prompt_tokens": 1622,
+    "total_tokens": 1993,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.627567136019934,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01491524-000-40cbdf94b865b078-CH-00012",
+      "citation": 1,
+      "text_start": 17047,
+      "text_end": 18512,
+      "text_sha256": "0f51be645feed013e4b3107af0f8be4bfcc184df939ba2b382ddc2aac5d63cf6",
+      "document_id": "L1-R26BK01491524-000-40cbdf94b865b078",
+      "document_version": "40cbdf94b865b078ac561a89783a5f15c1ebe9b9beea80437a8b7597df2f9d41",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01491524-000/원본/제안요청서_섬유생산기업정보시스템 통합유지보수 수행기관 선정.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

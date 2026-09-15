@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N01-E1",
+  "answer_sha256": "7ed0711663c507049b4bc241360e28447558cec275c4f81fc70342dae7d52283",
+  "context_sha256": "607478b27108acbe44968d41d9ed4fa75823a7d9d51de20f68c60f11ff0d420c",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      620
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "2cpu/16core 최소 규격은 상세히 설명하지 않았으나 질문의 사용권 비용 범위 판단은 충족함.",
+  "review_note": "전체 근거 직접 대조: [1] 영구서버 라이선스, [2] 향후 사용권 추가분 예측·라이선스 등 일체 비용 포함 의무가 있어 구독료만으로 계획 불가 판단은 지지됨. 라이선스 비용 고려는 타당한 추론이며 특정 추가금액을 창작한 것은 아님. 반복은 품질 문제로 별도 기록."
+}

@@ -1,0 +1,18 @@
+{
+  "question_id": "ASTRA-300-C01-N02-E5",
+  "answer_sha256": "7d61e2b55b46d21dffef1ec3d8371326d385f7e04890bb5eb8b0d6305374c948",
+  "context_sha256": "58e10b795a1b86b7de37bdd721e68ed69cc66fa7201f60197075ff901ed9c4ce",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      363
+    ]
+  ],
+  "review_status": "same-generator-model-draft; not adjudicated",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_prompt_sha256": "a5d96c28df058150b06a37c8dfb26f8bbf2b2c57deab56e015f7b035fc950f7d",
+  "source_sha256": "cdc9512f4570a8bea7ce643698f304137215370f48a7d75916f0fc73be9c12c9"
+}

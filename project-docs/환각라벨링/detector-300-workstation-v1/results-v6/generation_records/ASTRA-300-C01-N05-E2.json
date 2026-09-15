@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N05-E2",
+  "answer_sha256": "3e176035b0a9ddcef339c23ac5af2428fd6412861dfd86e94117b246c7e7a084",
+  "context_sha256": "effcb73cc0d4432e08b7257c3b47a9aca50752e5b9c48c9884954567d3a8cdad",
+  "question_sha256": "10677643f05a21056b5a27cb8d8de22bcada94727b3afa0ae711f82c3942b771",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "d2054c026626b84081288a2257ad4e6bb1d64c491b52077670503d695d6092da",
+  "prompt_tokens": 1858,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 421,
+    "prompt_tokens": 1858,
+    "total_tokens": 2279,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.783901574992342,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1796,
+      "text_sha256": "5cd7e0f39fd40a8e690a24141b54a7a366de07ca5690580984aa88614a621d66",
+      "document_id": "L1-R26BK01481037-000-f6bce1d46faa354c",
+      "document_version": "f6bce1d46faa354c21135a954cdc90779978024f362b8a65f7b36b1efc526bfb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01481037-000/원본/[별첨서류] 섬유소재 정보 제공 서비스 고도화 및 AI 검색 기능 도입.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01481037-000-d10785fe8d7334b1-CH-00001",
+      "citation": 2,
+      "text_start": 1493,
+      "text_end": 2055,
+      "text_sha256": "788d873ebf79599bd95ef54df52d3047ccf1f4a4a930f50c2a3421350cd680a0",
+      "document_id": "L1-R26BK01481037-000-d10785fe8d7334b1",
+      "document_version": "d10785fe8d7334b1ecd8e9868f0368d4e99138774fef71c4017ecf034d6bc5ec",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01481037-000/원본/[제안요청서] 섬유소재 정보 제공 서비스 고도화 및 AI 검색 기능 도입.pdf"
+    }
+  ]
+}

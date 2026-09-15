@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N21-E2",
+  "answer_sha256": "80eedcb80b4fcfae162fe4a601a7e4d96903a3a04d966b8b509552b223e2d07f",
+  "context_sha256": "d45111f788727db04c92dbdf7bba8c08f48318f426fac9c320842157098d404b",
+  "question_sha256": "bbdb2b1a59eaa271e8fb94fc38d64a93d84fc80b21cf510f7d3ef0e57b93b2a8",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "78edf9837a0bc435e7d287d39b945c166e537a5ec062a195c9b091d003dfc41d",
+  "prompt_tokens": 2808,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 378,
+    "prompt_tokens": 2808,
+    "total_tokens": 3186,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 14.969041615986498,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01574547-000-a18be783a219e51d-CH-00041",
+      "citation": 1,
+      "text_start": 58087,
+      "text_end": 59771,
+      "text_sha256": "a903cd5ec23c7b49e63255468ff9dee96fcb61e5f22240cc61bacd99f676cecd",
+      "document_id": "L1-R26BK01574547-000-a18be783a219e51d",
+      "document_version": "a18be783a219e51dc7a73992681b6135c22338de209b9ac26def8a9faab97643",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임2_제안요청서(항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01574547-000-a18be783a219e51d-CH-00042",
+      "citation": 2,
+      "text_start": 59531,
+      "text_end": 61314,
+      "text_sha256": "0a41d3fd55996461aa79e02354bc3dad5fb995a3880cead1deb292d00bc689eb",
+      "document_id": "L1-R26BK01574547-000-a18be783a219e51d",
+      "document_version": "a18be783a219e51dc7a73992681b6135c22338de209b9ac26def8a9faab97643",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임2_제안요청서(항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

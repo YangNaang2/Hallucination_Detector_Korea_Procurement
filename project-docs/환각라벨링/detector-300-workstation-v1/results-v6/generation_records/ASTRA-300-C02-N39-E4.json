@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N39-E4",
+  "answer_sha256": "92d09ce54e6106d00f88d065f63d2c6b5f95dcfbb45c069c85417a9709d14504",
+  "context_sha256": "61be74bd556827b651c4d68f55dfef55c134ba94afbcbb57f1565c9ac5229273",
+  "question_sha256": "bddb80e4d0e0e322d50469bfd39dfed7521661c2d286d627d70d312344f45581",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "285e992651d11c6c47ff3331ab6021a11a66b162ba86559930901e3cb188c4a5",
+  "prompt_tokens": 2613,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 261,
+    "prompt_tokens": 2613,
+    "total_tokens": 2874,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.218433406000258,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01431532-000-13886ffde94cecf1-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1767,
+      "text_sha256": "9fff48f65aea94e868c885b141acf3fd808804ffe2ea9cd3333dbca39d862b67",
+      "document_id": "L1-R26BK01431532-000-13886ffde94cecf1",
+      "document_version": "13886ffde94cecf1dd3e385a5624f64d330a98b132e6199eda497ff021eb41c0",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(입찰공고문)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업_2차 재공고.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01431532-000-c7e43e3070b259e2-CH-00012",
+      "citation": 2,
+      "text_start": 18560,
+      "text_end": 20141,
+      "text_sha256": "75892bbac622128ad95381bec35fac5ecdddac012375004418adad01d5a08b56",
+      "document_id": "L1-R26BK01431532-000-c7e43e3070b259e2",
+      "document_version": "c7e43e3070b259e2d92d014354bc4ee69e74995cf25cb844d94eebd36439b226",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01431532-000/원본/(제안요청서)_2026년도 2분기_한국음악저작권협회_클라우드시스템_모니터링사업.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

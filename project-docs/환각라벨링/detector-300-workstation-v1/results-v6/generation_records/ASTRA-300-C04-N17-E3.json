@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N17-E3",
+  "answer_sha256": "4a8c81c2173d10b733e1b952d128185cea11879a3a4abb5859855b976c5f9965",
+  "context_sha256": "db046efa57fd6578eb1ed6962091a5e4a1d01c98d01ae08228f4215caff0ab75",
+  "question_sha256": "32fc2edd4f9e2951cc37269a554856481cee64a822e4425afe7a277d9ce4af05",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "8d59e6ca2be87304839fcba73b55e158feb67cac48f11af29da6261efcf172a0",
+  "prompt_tokens": 2530,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 424,
+    "prompt_tokens": 2530,
+    "total_tokens": 2954,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.222073921991978,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1777,
+      "text_sha256": "55574803305e65d38aef6e7f5391581f6aea7c2a3fc23240815e2968a81cabd2",
+      "document_id": "L1-R26BK01543875-000-46ecd13bed8e09f5",
+      "document_version": "46ecd13bed8e09f58fcf0d2d0b65b57a898da56e83c026570e128bed5a8f3180",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/과업지시서[2026년 음식점 외국어 메뉴판 제작 플랫폼 「부산올랭」 홈페이지 운영 및 유지·관리  용역].hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01543875-000-d26254c91883adb0-CH-00004",
+      "citation": 2,
+      "text_start": 4428,
+      "text_end": 5628,
+      "text_sha256": "6c9295b2c7a8ed602b7a356b6b74bfa2c897b6272f0cf9839801f69b40f7d0d4",
+      "document_id": "L1-R26BK01543875-000-d26254c91883adb0",
+      "document_version": "d26254c91883adb0fb0804b77e30a2ffe89badc140d729ecaedab9a667e08250",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01543875-000/원본/공고문(제2026-1776호)(PDF).pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

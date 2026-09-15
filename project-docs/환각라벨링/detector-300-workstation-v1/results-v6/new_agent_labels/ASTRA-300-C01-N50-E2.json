@@ -1,0 +1,73 @@
+{
+  "question_id": "ASTRA-300-C01-N50-E2",
+  "answer_sha256": "f6661f659d923de9acb232cdb2fef899809016f30ea376c6bb4a43e339076cca",
+  "context_sha256": "a0a4c8fa4cebe6ecef0cae0e0ba40cf7a024180f2ba9c7a649edc2689df12c37",
+  "spans": [
+    {
+      "start": 95,
+      "end": 139,
+      "quote": "재직기간이 3년 이상인 경우를 제외하고는 무시할 수 있다는 점을 확인해야 한다.",
+      "label": "contradiction",
+      "reason": "자료2 PMR-001은 PM 수행 경력과 제안업체 3년 이상 재직을 함께 요구하며 총경력으로 재직기간을 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00028"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 245,
+      "end": 297,
+      "quote": "이는 PM의 총경력이 3년 이상인 경우에만 해당 업체의 재직기간을 고려할 수 있음을 의미한다.",
+      "label": "contradiction",
+      "reason": "자료2 PMR-001은 PM 수행 경력과 제안업체 3년 이상 재직을 함께 요구하며 총경력으로 재직기간을 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00028"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 298,
+      "end": 333,
+      "quote": "따라서 총경력이 3년 이상인 경우, 재직기간은 무시할 수 있다.",
+      "label": "contradiction",
+      "reason": "자료2 PMR-001은 PM 수행 경력과 제안업체 3년 이상 재직을 함께 요구하며 총경력으로 재직기간을 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00028"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 465,
+      "end": 500,
+      "quote": "따라서 총경력이 3년 이상인 경우, 재직기간은 무시할 수 있다.",
+      "label": "contradiction",
+      "reason": "자료2 PMR-001은 PM 수행 경력과 제안업체 3년 이상 재직을 함께 요구하며 총경력으로 재직기간을 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00028"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 141,
+      "end": 144,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "인용한 PMR-001 조건은 자료2에 있다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00028"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      500
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "총경력과 해당 업체 재직기간을 혼동해 핵심 판단을 역전함",
+  "review_note": ""
+}

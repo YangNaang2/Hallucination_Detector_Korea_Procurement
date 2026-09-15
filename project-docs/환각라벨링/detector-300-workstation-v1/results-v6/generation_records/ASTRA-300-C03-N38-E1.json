@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N38-E1",
+  "answer_sha256": "82f28bbb1b8c73bb37d01a14b4f5474d282543e651bda76f0d02af7bdd0a78e6",
+  "context_sha256": "4379b84d4290b52bb19c79504efcb22ccb3b87abf0fad712947aab6427bea0c7",
+  "question_sha256": "ba195242cc226a769d4e3d23c776e96eb99763cc25a52de544843a877b496284",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "6bd495f2eae0a1b09070d055994623cf88b59f3f2450c1b0912c5df42ef8ad60",
+  "prompt_tokens": 2786,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 483,
+    "prompt_tokens": 2786,
+    "total_tokens": 3269,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.918720357993152,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01604996-000-3c970206f616ed99-CH-00021",
+      "citation": 1,
+      "text_start": 31197,
+      "text_end": 32974,
+      "text_sha256": "66c1b3b8653362ea3159823c14263a4d5890ca23f7c15734456942b1c1e93b3a",
+      "document_id": "L1-R26BK01604996-000-3c970206f616ed99",
+      "document_version": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01604996-000-05270afabdb2b4b1-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1798,
+      "text_sha256": "44bd38e443cf428df9c67a96e6afc1a87cfb109355f339f69e2ca7113482aff1",
+      "document_id": "L1-R26BK01604996-000-05270afabdb2b4b1",
+      "document_version": "05270afabdb2b4b137056b328302aee771081924c28150cf802f0a0df516e4fe",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/과업지시서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

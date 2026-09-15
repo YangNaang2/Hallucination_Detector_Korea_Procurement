@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C01-N47-E5",
+  "answer_sha256": "4ab332a2c5a48019fd874085b298195882aef67efdb159b8d39fb22e19c7572e",
+  "context_sha256": "fb5276ec45f6eaa0f0613eafa640d84240437ae4290f41a7f6850e8c72ab612a",
+  "spans": [
+    {
+      "start": 266,
+      "end": 303,
+      "quote": "**장비 구매액**에 한정된 보증 적용을 허용하지 않음을 시사한다.",
+      "label": "unsupported",
+      "reason": "제공 근거는 과업 범위·보고·자료관리 의무이며 계약이행보증 산정 대상에 관한 조항이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-4eff91818809e0e7-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 426,
+      "end": 463,
+      "quote": "**장비 구매액**에 한정된 보증 적용을 허용하지 않음을 의미한다.",
+      "label": "unsupported",
+      "reason": "제공 근거는 과업 범위·보고·자료관리 의무이며 계약이행보증 산정 대상에 관한 조항이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-4eff91818809e0e7-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 470,
+      "end": 504,
+      "quote": "**EMS 계약이행보증을 장비 구매액에만 적용할 수는 없다**",
+      "label": "unsupported",
+      "reason": "제공 근거는 과업 범위·보고·자료관리 의무이며 계약이행보증 산정 대상에 관한 조항이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-4eff91818809e0e7-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 512,
+      "end": 541,
+      "quote": "문서는 **전체 과업 범위**에 대한 보증을 요구하며",
+      "label": "unsupported",
+      "reason": "제공 근거는 과업 범위·보고·자료관리 의무이며 계약이행보증 산정 대상에 관한 조항이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-4eff91818809e0e7-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      581
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "자료 부족을 인정한 뒤 보증 대상을 단정하는 모순된 답변",
+  "review_note": ""
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N41-E2",
+  "answer_sha256": "6acaf9ff2fb3a84660530e022e0e9f832d94d249899531d055a66d5cf3df5448",
+  "context_sha256": "328d3e9268b78bd3e266a0846d265e1ef9e4d2e442529c2d6127e051f5c4d2ae",
+  "question_sha256": "15a753a0b3a829bc02acf3c38cb60bb1ccdae1b022bc17d033495cd772da8967",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ce0b6cefe84e05f013dc44bf30b58fd43f200512deb92fc2d882203e01f4e7c1",
+  "prompt_tokens": 2669,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 357,
+    "prompt_tokens": 2669,
+    "total_tokens": 3026,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.330724380008178,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1284,
+      "text_sha256": "175ec08c8e2a3a1e21fc2f73dd50a0f9393c710435acf3f05ed49b28c66c4ed4",
+      "document_id": "L1-R26BK01553185-000-79dbf51f4ebe15fa",
+      "document_version": "79dbf51f4ebe15fa06c5d528dbca7f8b5c674daee6becc3f77263533833568a4",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026-10 차세대 종합정보시스템 유지보수공고문_.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01553185-000-8f73143a17bc2900-CH-00009",
+      "citation": 2,
+      "text_start": 13847,
+      "text_end": 15643,
+      "text_sha256": "37bf6704de156f4c2f7493e6de779693e0fc22787000385f0025cb302fcf6674",
+      "document_id": "L1-R26BK01553185-000-8f73143a17bc2900",
+      "document_version": "8f73143a17bc2900dd572d82114a5fea94bb88549d025f98edf5405d4aa99422",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026 혁신지원JOY사업 차세대 종합정보시스템 유지보수 용역(제안요청서)_최종_수정_20260518.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

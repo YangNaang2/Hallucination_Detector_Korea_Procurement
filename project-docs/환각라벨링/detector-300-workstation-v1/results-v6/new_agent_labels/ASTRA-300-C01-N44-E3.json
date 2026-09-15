@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N44-E3",
+  "answer_sha256": "510fd3572dca8a40941db344bfa29fb91ff2be0abf48cb15e7184f249cf3c895",
+  "context_sha256": "88cc2c313677d7c6c05bc3c1f23492bfc8a86b24846f17d1ca6d1e6cbe44d489",
+  "spans": [
+    {
+      "start": 40,
+      "end": 48,
+      "quote": "**필요하다**",
+      "label": "unsupported",
+      "reason": "50% 초과 하도급 예외사유 기재란과 공동수급체 출자비율 변경 사유만으로 공동수급 구성 검토가 필수라는 결론은 나오지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00084"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 510,
+      "end": 545,
+      "quote": "**하도급 비율이 커지는 경우 공동수급 구성 검토가 필요하다**",
+      "label": "unsupported",
+      "reason": "50% 초과 하도급 예외사유 기재란과 공동수급체 출자비율 변경 사유만으로 공동수급 구성 검토가 필수라는 결론은 나오지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00084"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      620
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "공동수급 구성 의무와 하도급 예외사유를 구별하지 못함",
+  "review_note": ""
+}

@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C04-N13-E2",
+  "answer_sha256": "18e1fea741b86ab5a0bb812ea903e05873953ea4a10773aa98e564083b5e7953",
+  "context_sha256": "ddc779c3be8326ddf88e637b6caf3eee0dc0b7332fc4bf91403e090c11d15b9d",
+  "question_sha256": "e5f8b810064ac644967c17c7788647e9d07fd444e17157da37d6859cb0178765",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "9d296cc909b305c97ac0a1fe348efe4ce86e9335acefb2d6e2f054fbf04da5b0",
+  "prompt_tokens": 1740,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 294,
+    "prompt_tokens": 1740,
+    "total_tokens": 2034,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.55635166799766,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00048",
+      "citation": 1,
+      "text_start": 70898,
+      "text_end": 72667,
+      "text_sha256": "aaaea58e7b50d90a92b21218cb576542b56167769dac815e56b831ae35fe732a",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

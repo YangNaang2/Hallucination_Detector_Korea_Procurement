@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C03-N17-E2",
+  "answer_sha256": "9d714c8bfc083b25cf409f22884f88a51ced5153a976c157d7a73428d64b8cc3",
+  "context_sha256": "d890e42429fe270fc076b2556bf2e8c728b5f4e78df2c33e90bdedb6be54e8de",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      216
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "두 원문의 동점시 기술점수 우선, 그마저 동점시 추첨과 정확히 일치."
+}

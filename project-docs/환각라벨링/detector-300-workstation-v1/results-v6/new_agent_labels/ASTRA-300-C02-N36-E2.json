@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N36-E2",
+  "answer_sha256": "81639215591672585820d093ab2570d203acbd389dbc9220bb32f3c47769256f",
+  "context_sha256": "87d078c8aaca1cd00e6c2fb7b76f3b29d7d74fd6f99004920221dadeab8e6801",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      737
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료1 참가자격·2개 이하·20%이상·협정서·불참 제재 모두 일치. 추가 조건 필요라는 결론 지지."
+}

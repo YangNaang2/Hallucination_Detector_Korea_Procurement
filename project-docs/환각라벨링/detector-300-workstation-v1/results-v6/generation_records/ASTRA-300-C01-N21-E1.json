@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N21-E1",
+  "answer_sha256": "de2a357c30d60f538dc8952ccd3e1deada3ea2642bab47893bc8a1e4fbc7b094",
+  "context_sha256": "f58f2a6c57eccf0d968da785a28b191972064b9cd206bdf1705de4324f394947",
+  "question_sha256": "130f76b217f18303d8b5d840f0b9bc578ec4aba26790a60d7319bb8e6abd1caf",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "fc94bddaa6539b110f6a42681a7b03c98a16c90d7c77080f38d2dd5c506f4052",
+  "prompt_tokens": 2487,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 260,
+    "prompt_tokens": 2487,
+    "total_tokens": 2747,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 17.57544156597578,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01574547-000-451e527905f868dd-CH-00002",
+      "citation": 1,
+      "text_start": 2602,
+      "text_end": 3880,
+      "text_sha256": "78b1801e83418e2b84a6ca1eb78b0e2621140c93e0915e59de10f2ccfaf6053e",
+      "document_id": "L1-R26BK01574547-000-451e527905f868dd",
+      "document_version": "451e527905f868dd92ee919594c80f64aaa9ff7107d98aa2e6ef25d4a4e5265b",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임1_입찰공고문_항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대 용역.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01574547-000-a18be783a219e51d-CH-00003",
+      "citation": 2,
+      "text_start": 4389,
+      "text_end": 6150,
+      "text_sha256": "4a31a1bb09a6c7087b955e1d2400c8c721e68e33f3e32fdba48bcaec322100c2",
+      "document_id": "L1-R26BK01574547-000-a18be783a219e51d",
+      "document_version": "a18be783a219e51dc7a73992681b6135c22338de209b9ac26def8a9faab97643",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01574547-000/원본/붙임2_제안요청서(항공사 데이터 연계를 위한 클라우드컴퓨팅서비스 임대).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

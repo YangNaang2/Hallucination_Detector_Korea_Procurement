@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N36-E1",
+  "answer_sha256": "4ae0185e2623a96cdd0b40abb6881786d2ef6e6870b2b0fec3e80330d79baf16",
+  "context_sha256": "f3b0dddcd2c5193044417296eaedeecd4b433ce061ce101afe4f17a24ba883fc",
+  "spans": [
+    {
+      "start": 282,
+      "end": 331,
+      "quote": "**공고문의 공동계약 관련 문구를 삭제하고 RFP 허용만 남기는 것은 허용될 수 있다**",
+      "label": "unsupported",
+      "reason": "제공된 COR 지침 및 기타사항은 공동계약 문구 삭제 권한이나 문서 우선순위를 정하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-026f943ce67c62cc-CH-00029"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 475,
+      "end": 524,
+      "quote": "**공고문의 공동계약 관련 문구를 삭제하고 RFP 허용만 남기는 것은 허용될 수 있다**",
+      "label": "unsupported",
+      "reason": "제공된 COR 지침 및 기타사항은 공동계약 문구 삭제 권한이나 문서 우선순위를 정하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-026f943ce67c62cc-CH-00029"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 532,
+      "end": 584,
+      "quote": "**공고문의 공동계약 해당 없음 문구를 삭제하고 RFP 허용만 남기는 것은 허용될 수 있다**",
+      "label": "unsupported",
+      "reason": "제공된 COR 지침 및 기타사항은 공동계약 문구 삭제 권한이나 문서 우선순위를 정하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-026f943ce67c62cc-CH-00029"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      585
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "실제 공동계약 조항이 제공 근거에 없어 확정할 수 없다는 한계를 알리지 않음",
+  "review_note": ""
+}

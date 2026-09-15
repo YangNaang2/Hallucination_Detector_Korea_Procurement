@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N37-E1",
+  "answer_sha256": "bab92d72e71a0bb5615cc4edcb5bbe8bf786a5a5d42d7f4224e6d40c0f27aa75",
+  "context_sha256": "0e6f7d39b925801875eae34e6ad2fe5a6d7237cf9bb288cb3071636365d528a7",
+  "question_sha256": "74e8edcc4483d999c6c87dfc11a19cc650452a0e7506042487097ad969273838",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "b944bdbf8c13118fb646b66e51f34285378ce4cbaede43c9fb99c0127bf59d5c",
+  "prompt_tokens": 2587,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 262,
+    "prompt_tokens": 2587,
+    "total_tokens": 2849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.358825122995768,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01511309-000-ef7b9f23f204b4de-CH-00002",
+      "citation": 1,
+      "text_start": 2998,
+      "text_end": 4759,
+      "text_sha256": "e5e15d38cb0696e84bb29da6efc7271a8fd844789dd9ffb9440c750c7cbbcc34",
+      "document_id": "L1-R26BK01511309-000-ef7b9f23f204b4de",
+      "document_version": "ef7b9f23f204b4de258fa701e8ccaccf09772e8527bca6c19f79a8cf537456db",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/공고문_2026년 TOMS 기능개선 및 유지관리 용역(한국농어촌공사 제2026-95호).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01511309-000-cca1a47bbf50e96e-CH-00092",
+      "citation": 2,
+      "text_start": 135198,
+      "text_end": 136867,
+      "text_sha256": "0ca90d8203b67276f9148aea899ab67b0e0204f00e95f1dbc3a159a75e3a0037",
+      "document_id": "L1-R26BK01511309-000-cca1a47bbf50e96e",
+      "document_version": "cca1a47bbf50e96e00a6a79dbaaacc3abec08583304d9adf9795bb9db5b2e761",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/붙임 2. 2026 TOMS 기능개선 및 유지관리 용역 제안요청서_(최종).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

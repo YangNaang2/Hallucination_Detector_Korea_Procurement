@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N38-E5",
+  "answer_sha256": "65ce954f9ceb4711dbfa58d52ec2b0c7f71e29cce525340f740010fa72a04c53",
+  "context_sha256": "1f2a45160bb114f273b19cf6668255045ea34264155be2da9302f2c179ff4a5b",
+  "question_sha256": "d852946246750e4321cd24450cb5231c251d61c1e75495bc4effbd41345827a6",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e0888f865e0447cb51c5dc80a010b3ec0ae965e442c8471224eeb0f3859acaf6",
+  "prompt_tokens": 2581,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 420,
+    "prompt_tokens": 2581,
+    "total_tokens": 3001,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 12.611496628989698,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01604996-000-3c970206f616ed99-CH-00012",
+      "citation": 1,
+      "text_start": 17709,
+      "text_end": 19461,
+      "text_sha256": "cdaae0efd247418ab6c8376567e6ea5e0455fc9aa024d2cc89e7c41f3bb1e156",
+      "document_id": "L1-R26BK01604996-000-3c970206f616ed99",
+      "document_version": "3c970206f616ed99f3553e6d193d57ee6b6f46f2e363c32f21ef73636f8645b9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/제안요청서 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발 (2차).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01604996-000-003886877bdae87c-CH-00003",
+      "citation": 2,
+      "text_start": 3705,
+      "text_end": 4907,
+      "text_sha256": "c3a55f5afad633fb690d17c63ed0188eb2d2b2dd5794db22507cb86bc666d51b",
+      "document_id": "L1-R26BK01604996-000-003886877bdae87c",
+      "document_version": "003886877bdae87cd9ed78c460dcad2de7f52c982d7ddb07672f9cf850451605",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01604996-000/원본/입찰 공고문 충남형 계약학과 온라인 ESG 분석·평가 교육 시스템 개발(2차).pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N03-E2",
+  "answer_sha256": "140012ea36236b68a56b72a7708bdbff12d9e2d954e0e58b0cbacf772e9633c0",
+  "context_sha256": "0aa9ec7a19b92d3e8406788ef38788413e79d523c4de26be389bb7d8d5d430ba",
+  "question_sha256": "3ed5e9e25a36cb54f1bd03b082d1b8ea12ec2f3777314ede9e6c5b3c9d57c47e",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "bfe7ce4ad92701e12daf94d18a21ffd36abfcab347d429e059e7355feea138dc",
+  "prompt_tokens": 2782,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 393,
+    "prompt_tokens": 2782,
+    "total_tokens": 3175,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.746916464995593,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00005",
+      "citation": 1,
+      "text_start": 7723,
+      "text_end": 9513,
+      "text_sha256": "bb4a1734c1b96f1fe44a7b9b7434deb38e816f52cbeb88a1e442b7ba5bd12825",
+      "document_id": "L1-R26BK01448046-000-9941e835ad1b0e19",
+      "document_version": "9941e835ad1b0e193ffde16fa2f45d04a236e03cb4e661c21dbb3d190f6d6545",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/3. 제안요청서.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00001",
+      "citation": 2,
+      "text_start": 1546,
+      "text_end": 3318,
+      "text_sha256": "ad3a91a649bbe7242ca8db952c3017a2ee7a9aa896c32b1aee0c3ccccb0c3ffb",
+      "document_id": "L1-R26BK01448046-000-9941e835ad1b0e19",
+      "document_version": "9941e835ad1b0e193ffde16fa2f45d04a236e03cb4e661c21dbb3d190f6d6545",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/3. 제안요청서.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

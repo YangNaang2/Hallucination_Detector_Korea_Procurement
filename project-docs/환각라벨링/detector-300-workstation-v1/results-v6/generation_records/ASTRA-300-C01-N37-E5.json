@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N37-E5",
+  "answer_sha256": "5abfd28862c0bb82bec34c27cd46c719d35313123335e10c4607eab0cbd23b65",
+  "context_sha256": "5c6fff43783a664b06590b6b79ac4685e2dda9153e6ba6ff9caf59e103ad2f54",
+  "question_sha256": "1ff3c347fdfe6278e3b7b16747601036addd513d38a9f492498d5e0d2c7ba17e",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "0d66084d6dfc391bbef07bd5c68623bd1c433dcbde708e6b2d8bfe8b43c1e4e7",
+  "prompt_tokens": 2012,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 404,
+    "prompt_tokens": 2012,
+    "total_tokens": 2416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 7.886156677006511,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01511309-000-cca1a47bbf50e96e-CH-00036",
+      "citation": 1,
+      "text_start": 53404,
+      "text_end": 54913,
+      "text_sha256": "37366203718a206ecc098ba1610c873e11a7564434448ddbe26ea0bbb03e34f4",
+      "document_id": "L1-R26BK01511309-000-cca1a47bbf50e96e",
+      "document_version": "cca1a47bbf50e96e00a6a79dbaaacc3abec08583304d9adf9795bb9db5b2e761",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/붙임 2. 2026 TOMS 기능개선 및 유지관리 용역 제안요청서_(최종).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01511309-000-1c63cb1a647da4b8-CH-00008",
+      "citation": 2,
+      "text_start": 12404,
+      "text_end": 13168,
+      "text_sha256": "b3a92f66f3c256ba0f8acab73dcc6a45d9a4aed53ce6ab31a8001d5dae75c0ee",
+      "document_id": "L1-R26BK01511309-000-1c63cb1a647da4b8",
+      "document_version": "1c63cb1a647da4b8fbbbc1be85db69ac8d234dcab32e230bc82c53429207cfe2",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01511309-000/원본/붙임 1. 2026 TOMS 기능개선 및 유지관리 용역 사업계획서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

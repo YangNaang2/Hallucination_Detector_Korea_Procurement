@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N32-E2",
+  "answer_sha256": "f1ca3e9ba42bc64bdfaad0c61104c141f2f0abf39e933d594a36a21b6b31ca7c",
+  "context_sha256": "ba3a574a825fbc88b66f4595cfa08b3619c7750519baa3f667cb3f1a193855a5",
+  "question_sha256": "7b046c3174ac1eeb9bce0f3fa5487001259fbf1b29f84f9dfcd8612231b22a7a",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e2fb3ee97f2d0049d5ea25656121f3eae83c2d00c8fe3c5201a9a463eec4e31d",
+  "prompt_tokens": 2612,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 323,
+    "prompt_tokens": 2612,
+    "total_tokens": 2935,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 12.928500187001191,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01548452-000-57cd356f46790fed-CH-00030",
+      "citation": 1,
+      "text_start": 45788,
+      "text_end": 47573,
+      "text_sha256": "1f065b5e4e36e268ae2d1351a03e9090f204d45201d24a8d7d9453d5f3e6c94f",
+      "document_id": "L1-R26BK01548452-000-57cd356f46790fed",
+      "document_version": "57cd356f46790fed967bd90e6f1c12784922ce3a14ba4f78f5c3fb7780144570",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01548452-000/원본/2. (제안요청서)「2026년 소망챗 고도화」.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01548452-000-57cd356f46790fed-CH-00037",
+      "citation": 2,
+      "text_start": 56516,
+      "text_end": 58289,
+      "text_sha256": "0b8becb8aed4836d97a8b41df79cb9eb948d0b973612a360be8eb43d51cd08f8",
+      "document_id": "L1-R26BK01548452-000-57cd356f46790fed",
+      "document_version": "57cd356f46790fed967bd90e6f1c12784922ce3a14ba4f78f5c3fb7780144570",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01548452-000/원본/2. (제안요청서)「2026년 소망챗 고도화」.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

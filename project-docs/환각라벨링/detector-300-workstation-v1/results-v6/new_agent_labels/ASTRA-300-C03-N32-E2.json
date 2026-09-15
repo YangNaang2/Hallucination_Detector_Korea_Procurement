@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C03-N32-E2",
+  "answer_sha256": "f1ca3e9ba42bc64bdfaad0c61104c141f2f0abf39e933d594a36a21b6b31ca7c",
+  "context_sha256": "ba3a574a825fbc88b66f4595cfa08b3619c7750519baa3f667cb3f1a193855a5",
+  "spans": [
+    {
+      "start": 256,
+      "end": 315,
+      "quote": "공동수급 구성원이 아닌 외부 자문자도 하도급으로 간주되며, 공동수급체 구성원의 자사인력으로 대체해야 한다.",
+      "label": "contradiction",
+      "reason": "바로 앞 인용의 외부 자문 등 비개발인력 참여인력 제외 예외를 뒤 설명에서 뒤집었다.",
+      "evidence_ids": [
+        "L1-R26BK01548452-000-57cd356f46790fed-CH-00030"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      471
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자사 투입인력으로 셀 수 없다는 결론은 맞지만 외부자문을 하도급 대체대상으로 설명한 이유가 틀림. 50% 조항과 예외는 자료2에 실제 존재."
+}

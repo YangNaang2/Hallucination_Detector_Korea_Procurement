@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N32-E5",
+  "answer_sha256": "6d1d96b58fa8b64491b4d010028d1e7306da1412bbc0636635111c070b473f6e",
+  "context_sha256": "9e432c7e2f53a21c98ba847bee1635636027b3af6eb5461f1da3fa6c85487e53",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      473
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료2의 외부전문업체 점검과 과업 확정 전 수정 가능 조건을 모두 반영했다. 내부 확인만으로 생략 가능하다는 근거는 없다."
+}

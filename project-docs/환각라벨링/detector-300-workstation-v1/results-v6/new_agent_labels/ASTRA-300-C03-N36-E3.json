@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C03-N36-E3",
+  "answer_sha256": "6563d7a423804a107bf9028c3da9269d7f48cf028f1ce6b959972c6469c267a2",
+  "context_sha256": "fb6179d4c9c21b2912d1060e8f7e9d22b5ac408b6f52660ad33e2ba3ee59dafd",
+  "spans": [
+    {
+      "start": 144,
+      "end": 158,
+      "quote": "응용SW개발, SW아키텍처",
+      "label": "contradiction",
+      "reason": "질문은 PM 평가이다. 자료2 첫 경력규정은 IT 프로젝트관리를 포함하고 응용SW개발/SW아키텍처는 다음 투입인력 평가 목록이다.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-026f943ce67c62cc-CH-00028"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 615,
+      "end": 629,
+      "quote": "응용SW개발, SW아키텍처",
+      "label": "contradiction",
+      "reason": "질문은 PM 평가이다. 자료2 첫 경력규정은 IT 프로젝트관리를 포함하고 응용SW개발/SW아키텍처는 다음 투입인력 평가 목록이다.",
+      "evidence_ids": [
+        "L1-R26BK01504777-000-026f943ce67c62cc-CH-00028"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      667
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "PM과 일반 투입인력의 직무분야 구분 오류",
+  "review_note": "총연수와 해당분야 구분이라는 결론은 맞지만 제시한 인정 분야가 다른 평가 항목이다."
+}

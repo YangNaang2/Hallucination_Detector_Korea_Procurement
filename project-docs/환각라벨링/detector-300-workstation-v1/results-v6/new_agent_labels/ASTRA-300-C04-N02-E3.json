@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C04-N02-E3",
+  "answer_sha256": "2271c4ba14166115e7446b5c6e0e0f3e0a988e24335ae4ee963d53c0131ca7e2",
+  "context_sha256": "257c125a720650b2390ff2b9310089a1a1bd317ec0b07f45825e67474d0084f5",
+  "spans": [
+    {
+      "start": 443,
+      "end": 508,
+      "quote": "**\"제안한 방안 및 기술의 적용 가능성\"**을 평가하는 것이 **기능점수 측정 전문성**을 반영하는 핵심 기준이다.",
+      "label": "unsupported",
+      "reason": "자료2 일반 기능요구사항 평가항목을 기능점수 측정 전문가 검증의 핵심 기준으로 정한 근거는 없다.",
+      "evidence_ids": [
+        "L1-R26BK01442409-000-00f88c71be789210-CH-00023"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      508
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "PSR-3 측정전문가를 사업수행인원에 포함한다는 핵심 요구는 정확히 설명함."
+}

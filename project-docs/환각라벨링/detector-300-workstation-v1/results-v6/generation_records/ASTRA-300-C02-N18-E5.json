@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N18-E5",
+  "answer_sha256": "1f8de90a1fc9a7974eca252ed462f491a963eea83e245c23969a0863e6898baf",
+  "context_sha256": "8be52d0cd09d7ea2784440ea3b43bec61d95c75071b3fa290982e767dc4e4bf2",
+  "question_sha256": "d7e55b6888cd73f5d1a314f5cf913909afe24a8b282ebc48f33ac4c08331764c",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ae2f5895cb7cffde1fecddf3b274b091885bdf80730d96b9efc3447dee9431c0",
+  "prompt_tokens": 2962,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 284,
+    "prompt_tokens": 2962,
+    "total_tokens": 3246,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.0267129749991,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01592548-000-398e9ccd53c3162b-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1798,
+      "text_sha256": "85880fc9e3364aceb6e2983206c90336f427b9de2b77dafd212e6f78737f04a2",
+      "document_id": "L1-R26BK01592548-000-398e9ccd53c3162b",
+      "document_version": "398e9ccd53c3162b256958579b926c60a6ec608f7302e0927afee9d859abf86d",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01592548-000/원본/중요 비전자기록물 DB구축 5개년 사업(2년차) 입찰 공고(협상의의한계약)_2026-109호.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01592548-000-723005033ab445b9-CH-00006",
+      "citation": 2,
+      "text_start": 9214,
+      "text_end": 11014,
+      "text_sha256": "6777ed514057fdc733405d459f12fd3fe8a1ea6720c04641768bdc53fe1f0377",
+      "document_id": "L1-R26BK01592548-000-723005033ab445b9",
+      "document_version": "723005033ab445b9eebf6156f34cfe8fcbec82e2d5f15366aceee1b789470803",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01592548-000/원본/제안요청서(중요 비전자기록물 DB구축 5개년 사업-2년차)_수정.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

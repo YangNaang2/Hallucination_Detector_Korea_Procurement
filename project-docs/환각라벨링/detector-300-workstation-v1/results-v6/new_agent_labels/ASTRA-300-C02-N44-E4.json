@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C02-N44-E4",
+  "answer_sha256": "9cdf73e9a2880fd51fb30833261d9b381b56b83d7cc06f4a6f7e9717f7664ddf",
+  "context_sha256": "29398ed7dafe78c79fa30e9f7e11f8c41d7b1767900235e160c46dd813dd3b2e",
+  "spans": [
+    {
+      "start": 238,
+      "end": 271,
+      "quote": "수탁자 점검은 \"위탁자\"의 사전 승낙 없이 생략할 수 없다.",
+      "label": "unsupported",
+      "reason": "사전승낙은 제5조 재위탁 조건이며 제8조 점검 생략 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00070"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 276,
+      "end": 310,
+      "quote": "수탁자 점검은 1년에 1회 교육과 점검을 통해 이루어져야 하며",
+      "label": "contradiction",
+      "reason": "제8조3항은 연1회 교육할 수 있다는 조항이며 점검 주기까지 연1회 의무로 정하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00070"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 353,
+      "end": 389,
+      "quote": "수탁자 점검은 개인정보 업무를 맡은 경우 생략할 수 없는 의무이며",
+      "label": "uncertain",
+      "reason": "감독/점검에 응할 의무는 있으나 특별한 사유 예외 및 위탁자 재량 표현을 생략한 과도한 단정일 수 있음.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00070"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      418
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "점검과 교육의 주기·조건 구분 오류",
+  "review_note": ""
+}

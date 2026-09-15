@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C03-N44-E5",
+  "answer_sha256": "42d8b5a99af2eaa443172387d2e645170c9cf470242b44e510e47daa8dfed185",
+  "context_sha256": "14630e02c6089536c446b8bb21ce07ce9810be8c6eaee760443ecf959ee54b82",
+  "spans": [
+    {
+      "start": 11,
+      "end": 46,
+      "quote": "**제안서와 요약서의 분량 제한을 같은 숫자로 설정해도 된다**",
+      "label": "contradiction",
+      "reason": "자료1은 순수 제안내용200쪽 이하와 필요시 요약서70페이지 이하로 서로 다른 제한을 제시한다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00050"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 460,
+      "end": 482,
+      "quote": "같은 숫자로 설정해도 문제가 되지 않는다",
+      "label": "contradiction",
+      "reason": "자료1은 순수 제안내용200쪽 이하와 필요시 요약서70페이지 이하로 서로 다른 제한을 제시한다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00050"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 491,
+      "end": 539,
+      "quote": "**질문의 핵심 판단은 '제안서와 요약서의 분량 제한을 같은 숫자로 설정해도 된다'**",
+      "label": "contradiction",
+      "reason": "자료1은 순수 제안내용200쪽 이하와 필요시 요약서70페이지 이하로 서로 다른 제한을 제시한다.",
+      "evidence_ids": [
+        "L1-R26BK01580570-000-e8d0a27ac3fb27bc-CH-00050"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      545
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "본문200쪽/요약70페이지 제한을 구분한 설명 뒤 결론을 뒤집음",
+  "review_note": ""
+}

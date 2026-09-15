@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C01-N15-E2",
+  "answer_sha256": "fe16e1f9b8fc366aaecc4bf93315f88134a5e7cc6896728ed25f7f8b4ec6021e",
+  "context_sha256": "e3866c99486351019c6f379cfc8b160d9be7a35e7fad1d8758f3a2f7bf950aa3",
+  "spans": [
+    {
+      "start": 76,
+      "end": 182,
+      "quote": "문서에서 명시적으로 제시된 **입찰 필수 인원**은 **계약 체결 시에 따라 달라질 수 있는 유동적 요소**이며, **산정표에 기재된 공수 예시**는 **입찰 시의 참고 자료**에 불과하다.",
+      "label": "unsupported",
+      "reason": "실제 제공 근거에는 공수 산정표나 입찰 필수 인원 및 유동성 규정이 없다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-abd556fa331300ba-CH-00009"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 243,
+      "end": 293,
+      "quote": "입찰자는 **청렴계약서 및 조세포탈 등 유죄판결 비대상자 서약서**를 반드시 제출해야 하며",
+      "label": "contradiction",
+      "reason": "공고 [2]는 입찰 참여로 제출한 것으로 간주한다. 별도 필수 제출로 단정하는 확대다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-6bf0d2546a9ff33c-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 184,
+      "end": 187,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "청렴계약 이행 및 조세포탈 서약 준수 조항은 [2]의 8절이다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-6bf0d2546a9ff33c-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 489,
+      "end": 510,
+      "quote": "이는 **입찰 시의 필수 요건**이지만",
+      "label": "contradiction",
+      "reason": "서명한 서약서 제출은 계약 체결 시이며 입찰서는 제출 간주라고 구분되어 있다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-6bf0d2546a9ff33c-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      642
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "공수 산정표가 실제 근거에 없어 인원 판단의 자료 부족을 밝혀야 하나 관련 없는 서약 조항으로 결론을 뒷받침함.",
+  "review_note": ""
+}

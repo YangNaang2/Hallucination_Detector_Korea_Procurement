@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-N17-E5",
+  "answer_sha256": "602b7ce9d47f40bb48ba21f3de7b052def104f38c2fb472dfc8f0fddd64320ea",
+  "context_sha256": "861d1ffc4668296a1b7277ed2d5cbb087a8d46c2979f2284a43b592225630e3e",
+  "spans": [
+    {
+      "start": 359,
+      "end": 390,
+      "quote": "변경 가능성이 있는 일정을 기준으로 하여 판단해야 한다.",
+      "label": "uncertain",
+      "reason": "변경 가능성 명시는 제안서 평가일시·장소에 붙어 있다. 일반적 일정 변경 주의인지 제출 마감에도 해당한다고 확장한 것인지 애매하다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-d26254c91883adb0-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 630,
+      "end": 661,
+      "quote": "변경 가능성이 있는 일정을 기준으로 하여 판단해야 한다.",
+      "label": "uncertain",
+      "reason": "변경 가능성 명시는 제안서 평가일시·장소에 붙어 있다. 일반적 일정 변경 주의인지 제출 마감에도 해당한다고 확장한 것인지 애매하다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-d26254c91883adb0-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      661
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "실제 근거 전체 대조. 가격 6월8일10시, 방문접수17시를 구분한 핵심 판단과 인용은 지지됨. 전자 제안서는 앞의 가격제안서 문맥으로 해석 가능하여 내용 오류로 확정하지 않음. 반복 품질 문제 별도."
+}

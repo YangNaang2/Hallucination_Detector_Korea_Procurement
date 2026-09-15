@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N46-E3",
+  "answer_sha256": "9c2554d121780c36d9fbb845e42a69116895c7930d25e8e0653ba20f9d7f93ee",
+  "context_sha256": "8f11f32eb46d24b7553d25fba3492980c212051a50e1ba45d53e3f0471880c05",
+  "question_sha256": "f4e39fb806a81bb228e69b1adc672e138d9c9b8e8dc3c2b075cfb1883e3132e8",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "27a86c72c94ee360057d0ee602fce1159cf460f78c3991f1e34083a980ec6eb7",
+  "prompt_tokens": 2723,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 2723,
+    "total_tokens": 2938,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.074637361976784,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00015",
+      "citation": 1,
+      "text_start": 23055,
+      "text_end": 24834,
+      "text_sha256": "15b8e0e7c5731ea863f01764e33a7b903848d1ed71984afc1d1931deba355a3b",
+      "document_id": "L1-R26BK01505476-000-b81b01796f0a6bcf",
+      "document_version": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00029",
+      "citation": 2,
+      "text_start": 44436,
+      "text_end": 46167,
+      "text_sha256": "fffcb3b383050f2158e25af5f42dfae17e78f439ec33061355c9859915e87659",
+      "document_id": "L1-R26BK01505476-000-b81b01796f0a6bcf",
+      "document_version": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

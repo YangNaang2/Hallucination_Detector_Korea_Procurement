@@ -1,0 +1,36 @@
+{
+  "question_id": "ASTRA-300-C04-N23-E2",
+  "answer_sha256": "4e4efc03de68c99d88917c2255394fc2548ae53f6e6b9311f8c55319e4fb3319",
+  "context_sha256": "90cc83c08060f6fd03393012d46bfb8aa1556f3c61a1fd34ef86d78b9f253e17",
+  "question_sha256": "35ecfa3c0641f7714ad8637b47c8d6bca1a41e2fa96f8b2360998017277467f7",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "57c2f942dbb57ac7950941048d14dcbfb65472f06a691cbda3453f281321807b",
+  "prompt_tokens": 1684,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 353,
+    "prompt_tokens": 1684,
+    "total_tokens": 2037,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 14.280389043997275,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01608743-000-329703be326a1821-CH-00048",
+      "citation": 1,
+      "text_start": 69994,
+      "text_end": 71731,
+      "text_sha256": "f2f689d2149e117da2837414893ed5f88ab8214b4eed9765b1ceeee032cd854e",
+      "document_id": "L1-R26BK01608743-000-329703be326a1821",
+      "document_version": "329703be326a18214fb045f75becf99a71da4f71a02c2609c101915834e8f4c5",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01608743-000/원본/3. (수정)제안요청서.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

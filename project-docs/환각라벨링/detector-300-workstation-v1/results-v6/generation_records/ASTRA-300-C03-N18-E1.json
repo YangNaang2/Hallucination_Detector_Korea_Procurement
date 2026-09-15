@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N18-E1",
+  "answer_sha256": "15b9a825f8d6552e81e0805322da27022d350372d0ea2336b68330b0a47d26d0",
+  "context_sha256": "3bb8f01a81a0ea2ddf97ee23e67b1ae25e3abfd58b5a1c788e6b9a22e512e2dd",
+  "question_sha256": "7a13d6f1bad29231436d692922e6a4bae28766183772c255cee529f9316249cb",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "c05f8a3dcacfc9dfa9f19846d2b08975447b45e29fc5b9e9d36ff162ad2169eb",
+  "prompt_tokens": 2890,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2890,
+    "total_tokens": 3402,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.291100209986325,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01592548-000-2ba073c042c5d471-CH-00002",
+      "citation": 1,
+      "text_start": 3034,
+      "text_end": 4834,
+      "text_sha256": "358e6b24f2ac30012635816caf0eaf831808acaf48fbc1464f867c30d01e0bc4",
+      "document_id": "L1-R26BK01592548-000-2ba073c042c5d471",
+      "document_version": "2ba073c042c5d471cad199c68612a62de77d517e24495f9ae52cc622d9e0c0f9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01592548-000/원본/과업지시서(중요 비전자기록물 DB구축 5개년 사업-2년차).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01592548-000-2ba073c042c5d471-CH-00001",
+      "citation": 2,
+      "text_start": 1514,
+      "text_end": 3274,
+      "text_sha256": "430c5cc2af4abc4c5f7ddf1ef691bd0efcf6d41b515b3b8f0350984b0366ce40",
+      "document_id": "L1-R26BK01592548-000-2ba073c042c5d471",
+      "document_version": "2ba073c042c5d471cad199c68612a62de77d517e24495f9ae52cc622d9e0c0f9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01592548-000/원본/과업지시서(중요 비전자기록물 DB구축 5개년 사업-2년차).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

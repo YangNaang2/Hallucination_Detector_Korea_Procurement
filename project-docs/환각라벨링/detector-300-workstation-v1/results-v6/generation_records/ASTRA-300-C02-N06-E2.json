@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N06-E2",
+  "answer_sha256": "08509228f7a1548a107b1e606fba81c417b7d127de6c1fb5f444e7c14005f7ba",
+  "context_sha256": "0696c4b8e9ccb4a6900f6c976e17b43aded6829855d9fba0f54f24c837383137",
+  "question_sha256": "0bdd3e953ee0d8fe141fc150f41bec21061908055778e1a0e9979cfb425db7b5",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "6001ce38f6a45aa3aeb66f73d11dd79dd78a735136921822c4f7a12729125bac",
+  "prompt_tokens": 2838,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 228,
+    "prompt_tokens": 2838,
+    "total_tokens": 3066,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.269577239989303,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1798,
+      "text_sha256": "b6914e0b43bc764cedadbd5fd46b30e4a244923e89ede254c1a539160edc2d85",
+      "document_id": "L1-R26BK01565865-000-8246c69cb409e6f6",
+      "document_version": "8246c69cb409e6f602bbccd90d6a7b38abfbb8fd3b8874e41469fdafc768d198",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01565865-000/원본/과업지시서_문서회계전산시스템 도입 및 기록물 DB구축.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00008",
+      "citation": 2,
+      "text_start": 12255,
+      "text_end": 14022,
+      "text_sha256": "b7df3b30ac42a01dd08fd2ea9e47e66ef4fc710f08d33e1493d1fe57fae408bf",
+      "document_id": "L1-R26BK01565865-000-cb10a032aa2b1f6b",
+      "document_version": "cb10a032aa2b1f6b7290ce31ddc8d3733b8935b99944daa6473f95a093efbaef",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01565865-000/원본/제안요청서_문서회계전산시스템 도입 및 기록물 DB구축.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

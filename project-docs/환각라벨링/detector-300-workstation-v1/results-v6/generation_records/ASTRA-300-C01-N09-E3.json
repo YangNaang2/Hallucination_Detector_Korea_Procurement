@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N09-E3",
+  "answer_sha256": "1f98f6cfceb7c95391641785d19c102697f33ac48cd9d2fa952428f4212d2e58",
+  "context_sha256": "8d9ac3b659bd9a74638eb03b5941dbb56c8000d1165b73c729513cb6ce5358ca",
+  "question_sha256": "82eb3ae92341eb2d653f8f4ab84ae18c290231350ece30495f1507e379c88ce6",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ddc481f18c8a8a9dee7b544df187c9b2fdfdb40f912b1de5849148d0c8a773d7",
+  "prompt_tokens": 2704,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 346,
+    "prompt_tokens": 2704,
+    "total_tokens": 3050,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.038543867005501,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00028",
+      "citation": 1,
+      "text_start": 42925,
+      "text_end": 44658,
+      "text_sha256": "6546d9d7edff3c5953b6c46e1ee5c1527de118c99452076bf240026358045817",
+      "document_id": "L1-R26BK01501352-000-7c0e75ad396e6eec",
+      "document_version": "7c0e75ad396e6eec6ab1b781b45614e506117a018d9c4a848d851b48279a3f15",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501352-000/원본/2. 제안요청서(하천둔치주차장 관제시스템 구축 사업).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00027",
+      "citation": 2,
+      "text_start": 41405,
+      "text_end": 43165,
+      "text_sha256": "ff8796d4332d6666a0e3e2d668e18f3d82af5a4f20908008f83a8b479cfa4595",
+      "document_id": "L1-R26BK01501352-000-7c0e75ad396e6eec",
+      "document_version": "7c0e75ad396e6eec6ab1b781b45614e506117a018d9c4a848d851b48279a3f15",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501352-000/원본/2. 제안요청서(하천둔치주차장 관제시스템 구축 사업).hwp"
+    }
+  ]
+}

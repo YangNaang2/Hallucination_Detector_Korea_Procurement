@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N20-E2",
+  "answer_sha256": "4c4452a29508a671983e7298f017e1e90a3264a42ab1224db1b565374277672b",
+  "context_sha256": "544120e2901a0858f617b69e39b1df94375d8733ececdb15ba5a7f32fe386f12",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      518
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "실제 전체 근거 [1]에 부득이한 교체(해외여행 포함) 즉시 보고를 명시. 답변은 조건과 보고 의무를 정확히 전달함."
+}

@@ -1,0 +1,63 @@
+{
+  "question_id": "ASTRA-300-C01-N14-E3",
+  "answer_sha256": "c67a4a8fa37f54677c522fe3e5f763635b0670644e39ad7d0478443e61c8a23d",
+  "context_sha256": "b02827dd0e8e1d1de143ba3511152e4c5f69bb764ad98b366b7273156a35469c",
+  "question_sha256": "2c60d228e413be3e00f022608adddea00e97d5de402c19d2107697ccb57f3590",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "4b7ba6df4535a9d35931dc660572166b7ea3080d504a29b986a95aa176ec0e30",
+  "prompt_tokens": 2507,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2507,
+    "total_tokens": 3019,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.664271873014513,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01465791-000-eb4ff4b6036faf37-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 443,
+      "text_sha256": "772c4a5fd4c05d28b254de3cd817174ba4b3a77bb861112e1064ed65f247b852",
+      "document_id": "L1-R26BK01465791-000-eb4ff4b6036faf37",
+      "document_version": "eb4ff4b6036faf371f9dfdb5e51a9fb4e308d517591ae89f3f4d6abce5d8ad7b",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01465791-000/원본_사용불가/8. 간소화방식 과업내용 확정 심의결과서(2026년).pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01465791-000-c71b73387303ff68-CH-00004",
+      "citation": 2,
+      "text_start": 5972,
+      "text_end": 7761,
+      "text_sha256": "59566e6aa1c225c556b8b2d246f068beb348dd7b81c79b06947590fd8d30b56c",
+      "document_id": "L1-R26BK01465791-000-c71b73387303ff68",
+      "document_version": "c71b73387303ff687f9a27c3c12c1fea51777600f88d493b8107d2d54585e97f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01465791-000/원본/6. 입찰공고문(26.04.15.).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01465791-000-dff8f6be276805db-CH-00000",
+      "citation": 3,
+      "text_start": 0,
+      "text_end": 747,
+      "text_sha256": "343d7f1853bb341705558ed729faf4b9aa2898a0d7a5ed06eef0c0e65395e355",
+      "document_id": "L1-R26BK01465791-000-dff8f6be276805db",
+      "document_version": "dff8f6be276805db4d62ae16749cd7bdcf13634286cbce941de837e3799dd52a",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01465791-000/원본_사용불가/5. 긴급입찰 사유서.hwp"
+    }
+  ]
+}

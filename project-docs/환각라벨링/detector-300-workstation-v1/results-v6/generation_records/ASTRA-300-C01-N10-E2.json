@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N10-E2",
+  "answer_sha256": "7fd0fc6cb27f82de1c9617f4bbb6f335903e11ffd555815904289e913d9f2102",
+  "context_sha256": "12c4548d9fe6b5d2def079503982c3e41e749d77439bd40338551eea95c9e828",
+  "question_sha256": "bad884609dbfc120724dbc0f94fcdf1e23fa16e787243cf75f0e6227f8637800",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "848edceb4087ed6674e8945291418ad25831de559f860b10cbe866e4a7a09d18",
+  "prompt_tokens": 2763,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 359,
+    "prompt_tokens": 2763,
+    "total_tokens": 3122,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.08483175400761,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01577397-000-df48155ac0564d45-CH-00004",
+      "citation": 1,
+      "text_start": 6112,
+      "text_end": 7871,
+      "text_sha256": "578657b75deec4edfb3b79ecb90c7c295a217e67ec5eecab650f3188d763b5d4",
+      "document_id": "L1-R26BK01577397-000-df48155ac0564d45",
+      "document_version": "df48155ac0564d45e7efdbfadc67e5c8fcd7cd5182dd06d82e3edfa70ebecdcb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/[입찰공고문]_KIOST 연구선 빅데이터 통합관리시스템(RUDAS) 고도화 용역.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01577397-000-df48155ac0564d45-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1766,
+      "text_sha256": "a3d70a11826931798da78bcbd928c9605f8b610da00af375a55e1dd719c7a5f3",
+      "document_id": "L1-R26BK01577397-000-df48155ac0564d45",
+      "document_version": "df48155ac0564d45e7efdbfadc67e5c8fcd7cd5182dd06d82e3edfa70ebecdcb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/[입찰공고문]_KIOST 연구선 빅데이터 통합관리시스템(RUDAS) 고도화 용역.hwp"
+    }
+  ]
+}

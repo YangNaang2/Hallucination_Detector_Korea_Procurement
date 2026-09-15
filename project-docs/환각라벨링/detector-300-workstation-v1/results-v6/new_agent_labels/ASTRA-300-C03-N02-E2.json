@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C03-N02-E2",
+  "answer_sha256": "1b4b797c48391856e3e393ccb46078496214a4d2079433fb694f64123a03f88a",
+  "context_sha256": "4245ecc732580fd6e9d1bf01176998fc47a695f5803c340c6f6dd493b529e6d8",
+  "spans": [
+    {
+      "start": 337,
+      "end": 347,
+      "quote": "변경이 불가능하다.",
+      "label": "unsupported",
+      "reason": "사업금액 포함은 변경 자체를 절대 금지하는 조항이 아니다. 자료2는 요구사항 조정과 협의를 기술한다.",
+      "evidence_ids": [
+        "L1-R26BK01442409-000-00f88c71be789210-CH-00004"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      423
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "최종검수후2개월·지원내용·예산포함 자체는 정확. 변경 절대 불가만 추가 단정."
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N30-E4",
+  "answer_sha256": "9e0b12c2598f044f58b0f064fc270edff0de390b3a2ba9a86598b86291029325",
+  "context_sha256": "281ac21ea5a85cac4c0654f28c275584814f319c28edc4de661d5c9b62625851",
+  "question_sha256": "71f4eaf9f45f6140ebe4a755deb424f2e9c96439ac9bfee543f9799ca43cb358",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "05936ed0af0288300d8252d8b0e38fa7108ba0f16b526f4d9324ec39e0fd46ba",
+  "prompt_tokens": 2776,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 380,
+    "prompt_tokens": 2776,
+    "total_tokens": 3156,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.199801326001761,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00018",
+      "citation": 1,
+      "text_start": 27520,
+      "text_end": 29298,
+      "text_sha256": "8c5cf614e4a5190e5adfe57ea9c714b9b6ebeaed79d76725292c3fddd1a71b73",
+      "document_id": "L1-R26BK01518323-000-c3cdf55e774fda9d",
+      "document_version": "c3cdf55e774fda9d968329f67eb8dc4dbec63f2201609e45db0b8cf8aaf0fddd",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01518323-000/원본/제안요청서(2026년 부산광역정신건강복지센터 홈페이지 재구축).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00043",
+      "citation": 2,
+      "text_start": 65791,
+      "text_end": 67568,
+      "text_sha256": "743c9cae6fbb3e22a5db7c4cef86136314218a72aff37969c5ce1dbb4e00711e",
+      "document_id": "L1-R26BK01518323-000-c3cdf55e774fda9d",
+      "document_version": "c3cdf55e774fda9d968329f67eb8dc4dbec63f2201609e45db0b8cf8aaf0fddd",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01518323-000/원본/제안요청서(2026년 부산광역정신건강복지센터 홈페이지 재구축).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

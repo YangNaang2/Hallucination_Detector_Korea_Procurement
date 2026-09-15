@@ -1,0 +1,28 @@
+{
+  "question_id": "ASTRA-300-C01-N09-E3",
+  "answer_sha256": "1f98f6cfceb7c95391641785d19c102697f33ac48cd9d2fa952428f4212d2e58",
+  "context_sha256": "8d9ac3b659bd9a74638eb03b5941dbb56c8000d1165b73c729513cb6ce5358ca",
+  "spans": [
+    {
+      "start": 231,
+      "end": 330,
+      "quote": "상호출자제한기업 집단에 속하는 회사인 경우에는 입찰에 참여할 수 없으며, 계약체결일 기준으로 입찰자가 상호출자제한 집단에 속하는 회사일 경우에도 계약체결 불가(차순위자와 협상)함",
+      "label": "unsupported",
+      "reason": "이 구절은 공동수급체 구성을 허용하지 아니함과는 다른 조건을 규정하며, 질문에 대한 답변에서 이를 사용하는 것은 근거가 부족한 추가 주장으로 간주됨.",
+      "evidence_quote": "상호출자제한기업 집단에 속하는 회사가 입찰에 참여할 수 없음을 규정",
+      "evidence_quote_exact_match": false
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      532
+    ]
+  ],
+  "review_status": "same-generator-model-draft; not adjudicated",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_prompt_sha256": "4546efb02794b14b74b37723f59cbe183279a666a9bf33250b99bcd19d0e7f14",
+  "source_sha256": "cdc9512f4570a8bea7ce643698f304137215370f48a7d75916f0fc73be9c12c9"
+}

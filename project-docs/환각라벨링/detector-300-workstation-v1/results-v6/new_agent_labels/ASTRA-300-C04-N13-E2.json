@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C04-N13-E2",
+  "answer_sha256": "18e1fea741b86ab5a0bb812ea903e05873953ea4a10773aa98e564083b5e7953",
+  "context_sha256": "ddc779c3be8326ddf88e637b6caf3eee0dc0b7332fc4bf91403e090c11d15b9d",
+  "spans": [
+    {
+      "start": 163,
+      "end": 194,
+      "quote": "\"진행 중인 용역\"은 \"최근 3년간\"의 범위를 벗어나므로",
+      "label": "unsupported",
+      "reason": "제공된 최근3년 실적이라는 문구만으로 진행중 사업이 기간 범위를 벗어났다고 단정할 수 없음. 완료 인정 조건은 제공되지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00048"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 349,
+      "end": 380,
+      "quote": "\"진행 중인 용역\"은 \"최근 3년간\"의 범위를 벗어나므로",
+      "label": "unsupported",
+      "reason": "제공된 최근3년 실적이라는 문구만으로 진행중 사업이 기간 범위를 벗어났다고 단정할 수 없음. 완료 인정 조건은 제공되지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01440737-000-b6281557e17a2b18-CH-00048"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      409
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "진행중 실적 인정 여부의 근거 부족을 알리지 않고 기간 논리를 잘못 적용함",
+  "review_note": ""
+}

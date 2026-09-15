@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N09-E5",
+  "answer_sha256": "d356715333a1e0d4564bf624a9dc748214ec3622482ff75b47f3b3a0527d5db0",
+  "context_sha256": "d543d6f2a26cabc65efece943c214e2ed0d7f604cb456cace598bc70109a2e55",
+  "question_sha256": "341da1180bd172b8958571afc88a790c048f9a39bb56ea4a8e07044c9d4b216b",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "79506144bb9f169a49e849918add2d4f9ecfc800bae4aebed98628f116ca3d57",
+  "prompt_tokens": 2744,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 336,
+    "prompt_tokens": 2744,
+    "total_tokens": 3080,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.106312035000883,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00025",
+      "citation": 1,
+      "text_start": 38303,
+      "text_end": 40086,
+      "text_sha256": "0f185f3edcb0267ce8651f883f55ae9d2d3f7ad7b6edf6f256d0445826ac1e42",
+      "document_id": "L1-R26BK01501352-000-7c0e75ad396e6eec",
+      "document_version": "7c0e75ad396e6eec6ab1b781b45614e506117a018d9c4a848d851b48279a3f15",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501352-000/원본/2. 제안요청서(하천둔치주차장 관제시스템 구축 사업).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00021",
+      "citation": 2,
+      "text_start": 32171,
+      "text_end": 33932,
+      "text_sha256": "79f7ea7bfbf249352386c55961dc60f64769764f95be9574077929153751efc6",
+      "document_id": "L1-R26BK01501352-000-7c0e75ad396e6eec",
+      "document_version": "7c0e75ad396e6eec6ab1b781b45614e506117a018d9c4a848d851b48279a3f15",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01501352-000/원본/2. 제안요청서(하천둔치주차장 관제시스템 구축 사업).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,54 @@
+{
+  "original_prediction_slots": 295,
+  "original_inputs_and_results_preserved": true,
+  "synthetic_training_cases": 248,
+  "train_only": true,
+  "generated": 214,
+  "generation_status": {
+    "stop": 197,
+    "length": 17
+  },
+  "new_prediction_slots": {
+    "mil3": 214,
+    "contrast3": 214
+  },
+  "unchecked_private_use_glyphs": [
+    {
+      "model": "mil3",
+      "question_id": "ASTRA-300-C04-N25-E5",
+      "start": 229,
+      "end": 232,
+      "text": "  ",
+      "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
+    },
+    {
+      "model": "mil3",
+      "question_id": "ASTRA-300-C04-N25-E5",
+      "start": 333,
+      "end": 336,
+      "text": "  ",
+      "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
+    },
+    {
+      "model": "contrast3",
+      "question_id": "ASTRA-300-C04-N25-E5",
+      "start": 229,
+      "end": 232,
+      "text": "  ",
+      "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
+    },
+    {
+      "model": "contrast3",
+      "question_id": "ASTRA-300-C04-N25-E5",
+      "start": 333,
+      "end": 336,
+      "text": "  ",
+      "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
+    }
+  ],
+  "agent_reviewed": 34,
+  "human_gold": 0,
+  "original_inference_seconds": 90.77448342213756,
+  "llama_server_preserved": true,
+  "complete": false
+}

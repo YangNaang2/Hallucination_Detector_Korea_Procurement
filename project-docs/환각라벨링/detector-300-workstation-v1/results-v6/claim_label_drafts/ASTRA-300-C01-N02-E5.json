@@ -1,0 +1,35 @@
+{
+  "question_id": "ASTRA-300-C01-N02-E5",
+  "answer_sha256": "7d61e2b55b46d21dffef1ec3d8371326d385f7e04890bb5eb8b0d6305374c948",
+  "context_sha256": "58e10b795a1b86b7de37bdd721e68ed69cc66fa7201f60197075ff901ed9c4ce",
+  "spans": [
+    {
+      "start": 0,
+      "end": 48,
+      "quote": "**핵심 판단:** 개발자가 개인 노트북으로 작업하는 방안은 허용할 수 없습니다.  \n",
+      "label": "contradiction",
+      "reason": "문서에 노트북 사용을 금지하고, 불가피한 경우 발주기관 승인 하에 고정장치 사용을 조건으로 명시하고 있어 개인 노트북 사용은 허용될 수 없습니다.",
+      "evidence_ids": [
+        "L1-R26BK01442409-000-00f88c71be789210-CH-00013",
+        "L1-R26BK01442409-000-00f88c71be789210-CH-00021"
+      ]
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      363
+    ]
+  ],
+  "claim_labels": [
+    "contradiction",
+    "supported",
+    "supported",
+    "supported"
+  ],
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_status": "independent Gemma claim-level draft; not agent approved or human gold",
+  "human_approved": false,
+  "source_sha256": "f3d58cd56c31dfd7050cc0b3b6cec75346d0738b70edd433595a8b9f7242c1a6"
+}

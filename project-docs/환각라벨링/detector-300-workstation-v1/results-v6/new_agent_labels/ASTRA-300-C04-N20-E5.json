@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C04-N20-E5",
+  "answer_sha256": "25b5ee5b7d30e4433786fe6078edf33046e39fde04698a406fb31cf7d3c06fa5",
+  "context_sha256": "5dfe136fd53efc3a51220a5d94eb3e13efe9921733c5479e2795ea353749ce10",
+  "spans": [
+    {
+      "start": 329,
+      "end": 383,
+      "quote": "**문서에서 '공동이행'과 '분담이행'을 구분하지 않고 단순히 '이행방식'으로 통일적으로 언급**",
+      "label": "contradiction",
+      "reason": "원문은 공동이행방식, 분담이행방식을 명시적으로 나열한다.",
+      "evidence_ids": [
+        "L1-R26BK01501715-001-845720c30ca9d5a4-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      567
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "분담이행 불가라는 핵심 결론과 첫 인용은 맞으나 후속 원문 서술에 잘못된 내용이 있음."
+}

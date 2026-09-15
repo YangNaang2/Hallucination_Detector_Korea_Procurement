@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C01-N22-E5",
+  "answer_sha256": "698b9b190a5e29f666546188c1893ba9bde1dd642bca887785dc79045af3d54f",
+  "context_sha256": "5b17a3883344bbcecda0625a1921202df7874ac26b161a191261dd406e9b9a56",
+  "spans": [
+    {
+      "start": 11,
+      "end": 55,
+      "quote": "**제안서 전체 분량과 본문 권장 분량을 하나의 상한으로 저장해도 된다는 점**",
+      "label": "contradiction",
+      "reason": "본문 50쪽 권장과 전체 제안서 제출서류 범위는 다르며 통합 상한으로 저장해도 된다는 규정은 없다.",
+      "evidence_ids": [
+        "L1-R26BK01538557-000-79791513d620e291-CH-00026"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 330,
+      "end": 371,
+      "quote": "**제안서 전체 분량과 본문 권장 분량을 하나의 상한으로 저장해도 된다**",
+      "label": "contradiction",
+      "reason": "본문 권장 분량과 전체 분량을 합쳐 제한하는 결론은 본문 범위 및 권고 성격을 없앤다.",
+      "evidence_ids": [
+        "L1-R26BK01538557-000-79791513d620e291-CH-00026"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 434,
+      "end": 484,
+      "quote": "**명시된 상한**은 **50쪽 이내**로, 이는 **제안서 본문의 상한**으로 간주된다.",
+      "label": "uncertain",
+      "reason": "앞에서 권장이라고 밝혔으므로 권장 상한의 뜻인지 강제 상한 단정인지 애매하다. 핵심 범위 통합 오류와 분리한다.",
+      "evidence_ids": [
+        "L1-R26BK01538557-000-79791513d620e291-CH-00026"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      484
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "권고 수준과 본문/전체 범위를 분리해 저장해야 한다는 핵심을 반대로 결론 냄.",
+  "review_note": ""
+}

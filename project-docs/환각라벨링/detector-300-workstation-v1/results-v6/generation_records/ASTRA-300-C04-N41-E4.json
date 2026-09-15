@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N41-E4",
+  "answer_sha256": "b649ba7296b3074b9dd8401c9ab9f2f38c25e37ac16f6da635d577b6dcc022a8",
+  "context_sha256": "0ec9e40a24a63bd14b8c54b20ba9f7cef76ccf45aec5844f5868c6e315933045",
+  "question_sha256": "87d2ca4d7567c577657638bde73bf7230141af09f9d4ad5212b5b8338ddd84d1",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "3bdf23a6fe5da76222db9f61e40c59f8b9d36dd20804d81f49b26b778fc69221",
+  "prompt_tokens": 2864,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 451,
+    "prompt_tokens": 2864,
+    "total_tokens": 3315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.990866595995612,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01553185-000-8f73143a17bc2900-CH-00016",
+      "citation": 1,
+      "text_start": 24659,
+      "text_end": 26411,
+      "text_sha256": "b563407aa093113f2d876802c407b48087cd1686e04c24040499fbaa58e9dfbc",
+      "document_id": "L1-R26BK01553185-000-8f73143a17bc2900",
+      "document_version": "8f73143a17bc2900dd572d82114a5fea94bb88549d025f98edf5405d4aa99422",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026 혁신지원JOY사업 차세대 종합정보시스템 유지보수 용역(제안요청서)_최종_수정_20260518.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01553185-000-8f73143a17bc2900-CH-00009",
+      "citation": 2,
+      "text_start": 13847,
+      "text_end": 15643,
+      "text_sha256": "37bf6704de156f4c2f7493e6de779693e0fc22787000385f0025cb302fcf6674",
+      "document_id": "L1-R26BK01553185-000-8f73143a17bc2900",
+      "document_version": "8f73143a17bc2900dd572d82114a5fea94bb88549d025f98edf5405d4aa99422",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01553185-000/원본/2026 혁신지원JOY사업 차세대 종합정보시스템 유지보수 용역(제안요청서)_최종_수정_20260518.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N13-E4",
+  "answer_sha256": "20735ce44eff9aba813e0403f2c6926d74033e704d6581c5d8e038ee93c4c0a4",
+  "context_sha256": "d51f1096d20fa835d980f38f00f574d28711563549efaca9e8cc26fd18ec39c4",
+  "question_sha256": "93897c40d86daa834d0a13693eb1804b386fb43e4346d1759a62914a1af93696",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "f4899a8b55f8da3f6d3b325528d5b1fe23f32f3de7714c0cab39f53955da0b93",
+  "prompt_tokens": 2868,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 342,
+    "prompt_tokens": 2868,
+    "total_tokens": 3210,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.406645633018343,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00054",
+      "citation": 1,
+      "text_start": 80088,
+      "text_end": 81834,
+      "text_sha256": "462fd8dd3caeb31e15e352ce537c7215c2b32e9f383c9141a954605a852671a1",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00032",
+      "citation": 2,
+      "text_start": 47118,
+      "text_end": 48863,
+      "text_sha256": "c6529baea091370f7b7b3c1da50832ba600aa01eb5dadbb5f9fe862d2bf549f0",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    }
+  ]
+}

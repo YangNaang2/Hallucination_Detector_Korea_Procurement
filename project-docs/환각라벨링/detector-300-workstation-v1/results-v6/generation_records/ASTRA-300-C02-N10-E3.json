@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N10-E3",
+  "answer_sha256": "6040738785acf555912e962143b5fbcc6fd74928119c5df339ee2329fa4ee02e",
+  "context_sha256": "58dc0f3f883dbc7c8b7fe9c45b085fa60832337e04898a8fe19335dcc05454ab",
+  "question_sha256": "3d4d525be3578f375e94d304057f18c82896bd744e845297c994679746d8ae12",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "c0fd01d59d806926948edf25bff4234a6c5e8c6693b3118fc3c3b431e56234ea",
+  "prompt_tokens": 2873,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 319,
+    "prompt_tokens": 2873,
+    "total_tokens": 3192,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 9.948524253995856,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00021",
+      "citation": 1,
+      "text_start": 32326,
+      "text_end": 34109,
+      "text_sha256": "fc0b4d7b6e39dbab6dd5fc7c8e78192090f50841572b65a2faf716f4b3a640ab",
+      "document_id": "L1-R26BK01577397-000-6f28cb3f41f21a21",
+      "document_version": "6f28cb3f41f21a21d6c024fed763a42ca8457f53853fd5257ae09781dd159770",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/RUDAS 고도화 제안요청서 및 과업지시서_사전협의 수정.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01577397-000-df48155ac0564d45-CH-00005",
+      "citation": 2,
+      "text_start": 7631,
+      "text_end": 9360,
+      "text_sha256": "b94a155ab521dae1561829963c862c16e64ace3512b35ff91159b7dacebc3ddd",
+      "document_id": "L1-R26BK01577397-000-df48155ac0564d45",
+      "document_version": "df48155ac0564d45e7efdbfadc67e5c8fcd7cd5182dd06d82e3edfa70ebecdcb",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01577397-000/원본/[입찰공고문]_KIOST 연구선 빅데이터 통합관리시스템(RUDAS) 고도화 용역.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

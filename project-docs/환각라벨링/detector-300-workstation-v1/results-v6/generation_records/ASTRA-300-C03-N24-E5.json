@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N24-E5",
+  "answer_sha256": "93ac9f3d5f55630f49950940149652248c79346f4ddedb57fc9311616287d60a",
+  "context_sha256": "d4cfa94f0233a5c83c6d8a2bfc88a120177f45ade0bc250b57b0d47712fd228e",
+  "question_sha256": "b65945981db1c896ad067d33fb95eec5b2fc6073e842832fb4c62d22a655bfe0",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "58935c8b7ab943f8edc83f22e38d9535cecc774fb5d5a8ca7ae9fd6ef8a1ebe2",
+  "prompt_tokens": 2778,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 184,
+    "prompt_tokens": 2778,
+    "total_tokens": 2962,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.985245966003276,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01508724-000-7fb2ab580f811e3c-CH-00043",
+      "citation": 1,
+      "text_start": 61291,
+      "text_end": 63021,
+      "text_sha256": "482ee6df76b767dcad4da97c230875fd3e6051dc81fba238da41e9f1f89f6a9c",
+      "document_id": "L1-R26BK01508724-000-7fb2ab580f811e3c",
+      "document_version": "7fb2ab580f811e3c627ff4a9880db421e6707a58dc954458a26652233b9a6e6f",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01508724-000/원본/2.  제안요청서_2026년 중소기업 전략기술로드맵 시스템 유지보수 및 기능개선 용역_최최종 (1).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01508724-000-fc60e3934f896b90-CH-00021",
+      "citation": 2,
+      "text_start": 32397,
+      "text_end": 34174,
+      "text_sha256": "082d22519083f40c24bd780c4e6057cedb90d6434643e74c8977c610b0450399",
+      "document_id": "L1-R26BK01508724-000-fc60e3934f896b90",
+      "document_version": "fc60e3934f896b9017e8fd3d28c574708063dbb878a2d960a395d282dc6f90b7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01508724-000/원본/2. 제안요청서_2026년 중소기업 전략기술로드맵 시스템 유지보수 및 기능개선.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

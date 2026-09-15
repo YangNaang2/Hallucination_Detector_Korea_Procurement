@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N03-E4",
+  "answer_sha256": "c488972bf777e2cd3ee4e1670dcf0bfd1d93f9456fd44c2a5bd1fc1458c706ef",
+  "context_sha256": "f1e7b2739e1da5482161a014534371194f6cb488874d20e468de56e27fd9478f",
+  "spans": [
+    {
+      "start": 128,
+      "end": 131,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "제안업체 자격 요건 6항 인용은 실제 제공 근거 [2]이다.",
+      "evidence_ids": [
+        "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00004"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      659
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "전체 근거 직접 대조: [1] 서류 목록에 기술지원확약서와 SW사업자 확인서가 별도, [2] 자격 4항/6항 별도 및 제안서류 일체 평가대상이라고 명시한다. 대체 불가와 평가 관련성은 지지된다. 자기검수 모델이 근거가 없다는 표현 자체를 unsupported로 본 것은 채택하지 않음."
+}

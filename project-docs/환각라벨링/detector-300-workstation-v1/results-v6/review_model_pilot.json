@@ -1,0 +1,13 @@
+{
+  "qwen_same_generator_review": "not accepted as final labels; unsupported marking of legitimate no-replacement claim and invented support quotations observed",
+  "gemma12b_review": "pilot only; treats supported notebook restriction as contradiction despite exception present in answer; semantic and JSON failures; do not expand without quality repair",
+  "independent_review_required": true,
+  "agent_reviews_completed": 5,
+  "no_human_approval": true,
+  "semantic_failure_examples": [
+    "ASTRA-300-C01-N02-E5",
+    "ASTRA-300-C01-N03-E4"
+  ],
+  "claim_review_failure": "Both Korean and English claim review pilots call a supported negative answer contradiction while the reason explicitly says it is supported. No pilot model draft promoted to agent gold.",
+  "agent_reviewed": 40
+}

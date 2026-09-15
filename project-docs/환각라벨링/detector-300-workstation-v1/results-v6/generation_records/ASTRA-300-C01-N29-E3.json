@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N29-E3",
+  "answer_sha256": "9993bd2e7f6b109ae8e4d27f089fc95645ecb27dda5a2eea61ac256fb15bdb95",
+  "context_sha256": "1e2b1c7052cd211f97f5781d2f79fcee5c191f4fb127c68ffea522b9f7ddcdcc",
+  "question_sha256": "8fa2c879d3d368fa0bcf62379a585ed60d8fdc3bda3133ca7dcdcebe393a3666",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "6f1dc2dae3d93106debbe2cbf21392fed75de9517cbb7f87d95d46b316d98e86",
+  "prompt_tokens": 2795,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 273,
+    "prompt_tokens": 2795,
+    "total_tokens": 3068,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 4.966762409021612,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01434357-000-625ad51b41d28cc1-CH-00010",
+      "citation": 1,
+      "text_start": 15390,
+      "text_end": 17165,
+      "text_sha256": "a3d893445dbf52af75470386c9b8f05e86663efee6d792c93d8657f15446297e",
+      "document_id": "L1-R26BK01434357-000-625ad51b41d28cc1",
+      "document_version": "625ad51b41d28cc162dc26c5340cd3313c20c0f83e54c3e409598928ed51d717",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01434357-000/원본/2. 입시지원시스템제안요청서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01434357-000-3ebd6d5f8c23c079-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1740,
+      "text_sha256": "4a01324c5201a9848894aa0cd853e25c23a2b607311c757eb82086dfb4349ecf",
+      "document_id": "L1-R26BK01434357-000-3ebd6d5f8c23c079",
+      "document_version": "3ebd6d5f8c23c07935c786cc71821a40235761f1c20cba70c3ef78467da3c0a7",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01434357-000/원본/1._(입찰공고)_입학관리시스템 운영 용역_제2025-용역-13(재공고).hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

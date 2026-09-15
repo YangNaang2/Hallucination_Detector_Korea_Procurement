@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N12-E5",
+  "answer_sha256": "739b38d7b47256566c29fa02582f2395409518ce0442f4f94bd4be89b2fab378",
+  "context_sha256": "a903d19996b4dcc867a23f87f528188bec14f7af6e7b20b11b56c3b4305b0618",
+  "question_sha256": "faa14110e40601a1a80b423a7d9793920304da747631ddd32419801a2f6c46c7",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "f114f602ad186b1e35f09176f2023b96b9f838067eba516d68bedaa1f00b4938",
+  "prompt_tokens": 2435,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 464,
+    "prompt_tokens": 2435,
+    "total_tokens": 2899,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 10.44457033200888,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01474723-000-7553e5b717a40050-CH-00007",
+      "citation": 1,
+      "text_start": 10051,
+      "text_end": 11848,
+      "text_sha256": "325c47e947dfbb0b683540cd0f96e3355f21cc0a9657ef65818f61fbf7084094",
+      "document_id": "L1-R26BK01474723-000-7553e5b717a40050",
+      "document_version": "7553e5b717a4005091965935896fc809cc95275b8382134fe52d19bbccd29e71",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01474723-000/원본/과업지시서(부산광역시 스마트시티 통합플랫폼 유지관리용역).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01474723-000-006fb459fca21c72-CH-00000",
+      "citation": 2,
+      "text_start": 0,
+      "text_end": 1096,
+      "text_sha256": "2a647a29583e328d84ba08927926837578143b1b189a43a1377b5f9633d7f9b8",
+      "document_id": "L1-R26BK01474723-000-006fb459fca21c72",
+      "document_version": "006fb459fca21c72f5026a74db9377cf58daaad980a992fcecf3b7e4e0593566",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01474723-000/원본/공고문(부산광역시 공고 제2026-1385) 스마트시티 통합플랫폼 유지관리용역).pdf"
+    }
+  ]
+}

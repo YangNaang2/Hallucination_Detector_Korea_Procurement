@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N13-E5",
+  "answer_sha256": "010d89b8c4f9316a556319283617e92e533f3b471cb4ea33a7b96e502dde3456",
+  "context_sha256": "f0752ce95c0a8a37023827637ba890101cc559f159d045b570ef1b7899ddab9c",
+  "question_sha256": "941fbf52f20afd18d9743b6dec2ca675606c448016ca849b70a6e0760bba4430",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "110d6e4ec81ad52aba99c30e351f1129d6ba948254d1ae19d46e6022b5b3136d",
+  "prompt_tokens": 2835,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 274,
+    "prompt_tokens": 2835,
+    "total_tokens": 3109,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 11.690425292996224,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00033",
+      "citation": 1,
+      "text_start": 48623,
+      "text_end": 50422,
+      "text_sha256": "1bba0a9375a4d5fbebd6c8e3554a829a13eb513f7a81db840c8ac470293d4567",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01440737-000-b6281557e17a2b18-CH-00040",
+      "citation": 2,
+      "text_start": 58739,
+      "text_end": 60537,
+      "text_sha256": "7ca20a511383c4553f24edea6504b1fcd628b7944fcb912daa4a5fdfba2078c0",
+      "document_id": "L1-R26BK01440737-000-b6281557e17a2b18",
+      "document_version": "b6281557e17a2b18bcfff08fde62dd50b4ae22248a9a3db0a3c259beef8483a8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01440737-000/원본/1. [제안요청서] 26년 부동산광고시장감시센터_관리시스템_기능개선_및_유지보수_260318.hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

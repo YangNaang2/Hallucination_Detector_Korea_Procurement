@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C04-N17-E3",
+  "answer_sha256": "4a8c81c2173d10b733e1b952d128185cea11879a3a4abb5859855b976c5f9965",
+  "context_sha256": "db046efa57fd6578eb1ed6962091a5e4a1d01c98d01ae08228f4215caff0ab75",
+  "spans": [
+    {
+      "start": 108,
+      "end": 136,
+      "quote": "**일반적인 SW 배점표**를 사용할 수 있다는 점",
+      "label": "unsupported",
+      "reason": "과업내용과 기술/가격 비중은 해당 사업 세부배점표를 일반 SW 배점표로 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 483,
+      "end": 517,
+      "quote": "**일반적인 SW 배점표**를 사용하여 정답을 만들 수 있다.",
+      "label": "unsupported",
+      "reason": "과업내용과 기술/가격 비중은 해당 사업 세부배점표를 일반 SW 배점표로 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 640,
+      "end": 676,
+      "quote": "**일반적인 SW 배점표**를 사용하여 정답을 만들 수 있다는 점",
+      "label": "unsupported",
+      "reason": "과업내용과 기술/가격 비중은 해당 사업 세부배점표를 일반 SW 배점표로 대체하도록 허용하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01543875-000-46ecd13bed8e09f5-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      687
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "세부배점표 미확보 한계를 인정하지 않고 대체를 허용함",
+  "review_note": ""
+}

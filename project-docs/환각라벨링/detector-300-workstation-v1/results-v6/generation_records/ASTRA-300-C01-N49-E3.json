@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N49-E3",
+  "answer_sha256": "24fbbd9d6713e8cf74d6eff542c3e248b0f5794ff7bea1fc81794191246851a7",
+  "context_sha256": "a2f041136f934b42b8333365d75737b0ec4972acd1cce094ba4434ea4776cb27",
+  "question_sha256": "c04dddec023f4b9a85528bb28d7606121f240eed80a6d8910da09305e7cc29bf",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "9afb2694e4a3b0fcac813c184a9b696c9c87123dc3f48da3e6dd2b24b801cf67",
+  "prompt_tokens": 2420,
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 2420,
+    "total_tokens": 2932,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.452557376993354,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c-CH-00009",
+      "citation": 1,
+      "text_start": 13171,
+      "text_end": 14480,
+      "text_sha256": "117fbe11a45c9162db3c05e2f22a75dcd984db4dc3c26a254f92471934851f74",
+      "document_id": "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c",
+      "document_version": "6ce8cbdfc1d1eb8c7a54858551e367bb453d10f24da4ccd842ef297c4e5b1c62",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01607392-000/원본/붙임1-2. 자율차 주행환경 DB 및 시나리오 라이브러리 구축·고도화_과업지시서(재공고)_260629.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c-CH-00007",
+      "citation": 2,
+      "text_start": 10329,
+      "text_end": 12040,
+      "text_sha256": "3df878d43ade71634790cdadd8785ade43145fc9ea1b5f423ae5906e47d6cf9f",
+      "document_id": "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c",
+      "document_version": "6ce8cbdfc1d1eb8c7a54858551e367bb453d10f24da4ccd842ef297c4e5b1c62",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01607392-000/원본/붙임1-2. 자율차 주행환경 DB 및 시나리오 라이브러리 구축·고도화_과업지시서(재공고)_260629.pdf"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

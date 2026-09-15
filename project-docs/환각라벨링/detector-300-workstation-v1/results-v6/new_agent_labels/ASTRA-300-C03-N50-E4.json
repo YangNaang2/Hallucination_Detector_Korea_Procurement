@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C03-N50-E4",
+  "answer_sha256": "2d56253e5f20a43b6111789162d4ceab0349e41a25b036b6e50f3484d294a779",
+  "context_sha256": "7b44a9d9a8e26807b2376c9ef6f7156ab20deb680a1f24a1d46d536ae5514cc1",
+  "spans": [
+    {
+      "start": 21,
+      "end": 51,
+      "quote": "회당 규칙과 최대 한도를 구분하지 않고 합산해도 된다.",
+      "label": "unsupported",
+      "reason": "자료1은 사회적 책임 항목의 중복평가·배점한도이고 회당 감점 규칙은 제공되지 않아 구분 생략 가능을 지지하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00050"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 218,
+      "end": 254,
+      "quote": "회당 규칙과 최대 한도를 구분하지 않고 합산해도 감점이 제한된다.",
+      "label": "unsupported",
+      "reason": "자료1은 사회적 책임 항목의 중복평가·배점한도이고 회당 감점 규칙은 제공되지 않아 구분 생략 가능을 지지하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00050"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 411,
+      "end": 440,
+      "quote": "회당 규칙과 최대 한도를 구분하지 않고 합산해도 가능",
+      "label": "unsupported",
+      "reason": "자료1은 사회적 책임 항목의 중복평가·배점한도이고 회당 감점 규칙은 제공되지 않아 구분 생략 가능을 지지하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00050"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 483,
+      "end": 493,
+      "quote": "변경 가능성은 없음",
+      "label": "unsupported",
+      "reason": "자료1은 사회적 책임 항목의 중복평가·배점한도이고 회당 감점 규칙은 제공되지 않아 구분 생략 가능을 지지하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01535546-000-30098fe2a1003915-CH-00050"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      493
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "회당 감점 규칙의 실제 조항이 없어 확인할 수 없다는 한계 누락",
+  "review_note": ""
+}

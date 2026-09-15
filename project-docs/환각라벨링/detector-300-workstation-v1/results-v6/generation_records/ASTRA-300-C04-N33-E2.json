@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N33-E2",
+  "answer_sha256": "8bc325ee83784ddb0b4a74338d5baf0fdd9b34e30146fcecc32ef2856d98a4d2",
+  "context_sha256": "02c09560b82d66a88cb1abf28283c26cb5531241204391f3de12ab1f32769ddf",
+  "question_sha256": "0b017dc48a91980092d6189bfc586dcd43c8615673581e74e16e8430eb57a983",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "d685eb765a480f399ebbb917eeb6b33bcd273758e4b4e163b580c9990ff2a1a2",
+  "prompt_tokens": 2645,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 386,
+    "prompt_tokens": 2645,
+    "total_tokens": 3031,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 8.64797376000206,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01599621-000-2ee9032e9ff7e9c7-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1782,
+      "text_sha256": "3c64a7dde608d369407138804c19fea336298b510e9cdccd7d438001586d94f1",
+      "document_id": "L1-R26BK01599621-000-2ee9032e9ff7e9c7",
+      "document_version": "2ee9032e9ff7e9c735a12331dd7a7212fc6c5127071d7216b6b285cdc8150b19",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01599621-000/원본/청렴계약이행각서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01599621-000-d7d271c3cafa59c3-CH-00017",
+      "citation": 2,
+      "text_start": 24157,
+      "text_end": 25906,
+      "text_sha256": "82e8d740b97432d68eaa57b9132de1d760cfa8c32fd25392ef83e86e43a9667c",
+      "document_id": "L1-R26BK01599621-000-d7d271c3cafa59c3",
+      "document_version": "d7d271c3cafa59c38e402510b7b08747351afb20032b4d896f443e7b2928fbf8",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01599621-000/원본/[붙임] 제안요청서(드론용임무카메라).hwpx"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

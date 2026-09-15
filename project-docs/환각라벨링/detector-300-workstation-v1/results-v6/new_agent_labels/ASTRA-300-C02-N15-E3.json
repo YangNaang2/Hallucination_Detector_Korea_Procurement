@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N15-E3",
+  "answer_sha256": "aee0512bda8a95c8eff282acde3e9eefed5ba3d2a4a65d3422f170f26c7589a0",
+  "context_sha256": "332666543b9224647c6306447acea5abfe871e2013a76506e6bbb72581c0a024",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      585
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "자료1 6.2 착수계 계약후15일/성과품 준공전7일과 일정조정 조건 일치."
+}

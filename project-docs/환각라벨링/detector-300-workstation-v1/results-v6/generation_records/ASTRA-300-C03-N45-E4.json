@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C03-N45-E4",
+  "answer_sha256": "e62a159aa92d36e5ddbfc1c2ee3a5b01b48cfbff28754fe4c380ecedb023dc58",
+  "context_sha256": "dfa9e6f151286d9743dfdd632322c29297d779e9ae61bb64c66903b7700d7dc3",
+  "question_sha256": "ef2c5e2fdf2adb52e3dd289ce9b5f92ae0c75705289c98830fa57947e059b24f",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ad995952b430821fa6691f863676daf174070c60b4f702443d0407459ddf8b7e",
+  "prompt_tokens": 2782,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 317,
+    "prompt_tokens": 2782,
+    "total_tokens": 3099,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 5.283064018993173,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5-CH-00014",
+      "citation": 1,
+      "text_start": 21276,
+      "text_end": 23068,
+      "text_sha256": "2802d09a7bb7ac5565424602df1d74f5784dfdf3c0f288d21c9cc7c52868b498",
+      "document_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5",
+      "document_version": "9b7dbaefc2a36fe5247f24fabf927f1c53074838972b2f41d4da416606a8a339",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/2.과업지시서.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5-CH-00013",
+      "citation": 2,
+      "text_start": 19732,
+      "text_end": 21516,
+      "text_sha256": "ad6e0b4290cb21193216051222d11d90a221131ca917c189e8e3e6ae19b98921",
+      "document_id": "L1-R26BK01593644-000-9b7dbaefc2a36fe5",
+      "document_version": "9b7dbaefc2a36fe5247f24fabf927f1c53074838972b2f41d4da416606a8a339",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-06/R26BK01593644-000/원본/2.과업지시서.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

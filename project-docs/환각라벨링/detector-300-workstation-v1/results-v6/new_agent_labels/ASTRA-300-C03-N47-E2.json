@@ -1,0 +1,117 @@
+{
+  "question_id": "ASTRA-300-C03-N47-E2",
+  "answer_sha256": "de9f9e8cd5e44446841c929ae909c8e47a51a9772798576fd5278225ee85702c",
+  "context_sha256": "d36a488e3bc9172a202eaa2f3b05401d394fee967b15e7577570f7b49b30ad8e",
+  "spans": [
+    {
+      "start": 211,
+      "end": 262,
+      "quote": "**\"최소 분량\"**과 관련된 감점이 아닌 **\"최대 분량\"** 이하일 때의 감점 조건이다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 402,
+      "end": 453,
+      "quote": "**\"최소 분량\"**과 관련된 감점이 아닌 **\"최대 분량\"** 이하일 때의 감점 조건이다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 267,
+      "end": 311,
+      "quote": "**\"최소 분량\"**과 관련된 감점은 문서에 명시된 내용으로는 확인되지 않는다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 458,
+      "end": 502,
+      "quote": "**\"최소 분량\"**과 관련된 감점은 문서에 명시된 내용으로는 확인되지 않는다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 598,
+      "end": 642,
+      "quote": "**\"최소 분량\"**과 관련된 감점은 문서에 명시된 내용으로는 확인되지 않는다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 373,
+      "end": 398,
+      "quote": "**최대 분량** 제한에 대한 감점 조건이다.",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 508,
+      "end": 555,
+      "quote": "**EMS 제안서가 최대 분량 이하이면 최소 분량 관련 감점은 없는 것으로 보인다**",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 572,
+      "end": 596,
+      "quote": "**\"최대 분량\"** 이하일 때의 감점이므로",
+      "label": "contradiction",
+      "reason": "총12쪽 미만 감점은 최소 분량 미달 감점이며 최대 분량 조건이 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 313,
+      "end": 316,
+      "quote": "[2]",
+      "label": "citation_error",
+      "reason": "12쪽 미만 감점은 자료1.",
+      "evidence_ids": [
+        "L1-R26BK01505744-000-977db6b66205b1a1-CH-00010"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      642
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "최소/최대 분량 개념을 뒤집어 감점 가능성을 부정함",
+  "review_note": ""
+}

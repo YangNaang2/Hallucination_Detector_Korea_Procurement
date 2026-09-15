@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C04-N15-E5",
+  "answer_sha256": "3ee20b3b26ed1a86c90a0ed385563117ab8d8a74fb6ece79897b1ed00645d566",
+  "context_sha256": "728dfae95312bc50ee132e3d56b482a089ca406978fc872edcf78fc2698d193e",
+  "spans": [
+    {
+      "start": 280,
+      "end": 316,
+      "quote": "**최종 성과품 제출 시점과 준공일을 동일하게 처리할 수 있음**",
+      "label": "contradiction",
+      "reason": "자료1은 최종성과품을 준공 전7일 이내로 구분한다. 일정협의 가능은 두 시점을 동일시하는 근거가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-4ac0e4f3a547e712-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 396,
+      "end": 418,
+      "quote": "**준공일과 동일하게 처리할 수 있음**",
+      "label": "contradiction",
+      "reason": "자료1은 최종성과품을 준공 전7일 이내로 구분한다. 일정협의 가능은 두 시점을 동일시하는 근거가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-4ac0e4f3a547e712-CH-00006"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 433,
+      "end": 469,
+      "quote": "**최종 성과품 제출 시점과 준공일을 동일하게 처리할 수 있다**",
+      "label": "contradiction",
+      "reason": "자료1은 최종성과품을 준공 전7일 이내로 구분한다. 일정협의 가능은 두 시점을 동일시하는 근거가 아니다.",
+      "evidence_ids": [
+        "L1-R26BK01476694-000-4ac0e4f3a547e712-CH-00006"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      483
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "준공 전 제출과 준공일을 혼동함",
+  "review_note": ""
+}

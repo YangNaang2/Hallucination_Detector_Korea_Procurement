@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C03-N15-E4",
+  "answer_sha256": "07706d1d83b80662a0454a9a2ed721b7f97a16e05bbb6f81676fb0dbdcb97978",
+  "context_sha256": "11f1c056d6b46f9386e5e09ad0d28d54aa576f135d386061a5a2acd162ea33c0",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      521
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "100점 만점 기술평가와 90% 반영비중의 환산 설명 부족",
+  "review_note": "90:10 및 기술점수와 비중 구별 결론은 실제 자료2와 일치."
+}

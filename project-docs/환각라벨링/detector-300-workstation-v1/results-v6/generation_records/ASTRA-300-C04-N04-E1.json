@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C04-N04-E1",
+  "answer_sha256": "e1d3835e27550eaf26ad29cfd753c4540ad26b968516284f678034acb452431a",
+  "context_sha256": "04f3763bfe60e16a456372b7f8e901d5b6e07d50a731aeb84fc29ed0891d8722",
+  "question_sha256": "d37a5486c022befee7da76ddf5ecb53fe02d18cc3d4c75627f116e01b7555dfc",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "075390d05794a98d3704344b98ba03ed6409b150ac99f469f72a0fac31ceb253",
+  "prompt_tokens": 2577,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 462,
+    "prompt_tokens": 2577,
+    "total_tokens": 3039,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.91079317801632,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00000",
+      "citation": 1,
+      "text_start": 0,
+      "text_end": 1739,
+      "text_sha256": "a79a66f6245e3ca31f9a639bf7c9c435d836c64a5ba9aca264ad718432635615",
+      "document_id": "L1-R26BK01478467-000-dbad4cc0cf10da6f",
+      "document_version": "dbad4cc0cf10da6f7f85450eb570809e0faaf178e35e3c78a2f1c76d653dc4ce",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01478467-000/원본/공고문.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01478467-000-11874311cf57e1ad-CH-00005",
+      "citation": 2,
+      "text_start": 7686,
+      "text_end": 9483,
+      "text_sha256": "b7270a07e9b2b36dd972a17fe2791588e21647d5988535209dee1b511c66fc18",
+      "document_id": "L1-R26BK01478467-000-11874311cf57e1ad",
+      "document_version": "11874311cf57e1ad0c3e31922c8e3ad30e50fc3f3c8686dbeeb225c7adaa93a4",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01478467-000/원본/제안요청서(농산업수출종합지원시스템 유지관리 및 고도화)_수정.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

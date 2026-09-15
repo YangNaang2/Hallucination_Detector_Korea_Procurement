@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C01-N46-E1",
+  "answer_sha256": "3c3931f78f17f6502645a654ca12dbe74a0f0fa049bb17ca8bd4ed22c0169f5f",
+  "context_sha256": "ca13943fea436d79625cdf10d99a76fc9d6209de56f6e960760f0e8b2438e7f6",
+  "question_sha256": "0233ebdad92cb2df2b7b938e6733b8b3535e681cc772125d59b59d14de2000e3",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "6d4097c39015131d1667655c5f3547b3cb38881c661ce7d7213992a7b950ac19",
+  "prompt_tokens": 2751,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 434,
+    "prompt_tokens": 2751,
+    "total_tokens": 3185,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 13.580693383002654,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00005",
+      "citation": 1,
+      "text_start": 7689,
+      "text_end": 9482,
+      "text_sha256": "d325dc588726962ec8e8b046e324e31a2aec1b631453d3ea91dbd01e07e4a96c",
+      "document_id": "L1-R26BK01505476-000-b81b01796f0a6bcf",
+      "document_version": "b81b01796f0a6bcfea88997badbcbf005c39cfce50c2220c6c058a2ab225e59c",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/제안요청서_'26년 첨단로봇 실증지원 디지털 플랫폼 유지관리 용역(최종).hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01505476-000-a4686780ddd5ee12-CH-00005",
+      "citation": 2,
+      "text_start": 7568,
+      "text_end": 9291,
+      "text_sha256": "05050f253115a4516abc61078d540150bec9b17f6f2b279243d44cffa811064a",
+      "document_id": "L1-R26BK01505476-000-a4686780ddd5ee12",
+      "document_version": "a4686780ddd5ee1288cc9d782fc3bc8b03b48136a9affd5bbe4da599e7d683b3",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505476-000/원본/입찰공고문_26K0039.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}

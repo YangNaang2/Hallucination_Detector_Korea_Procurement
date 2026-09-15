@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C03-N20-E4",
+  "answer_sha256": "313f966353f1587739422e143b5c99ace50204871391e75f6eba5db86adc7efa",
+  "context_sha256": "ea895fc9255324c1b683fc3314e243f8f354c131ed455d7b3e96a73448421d27",
+  "spans": [
+    {
+      "start": 219,
+      "end": 278,
+      "quote": "'계약상대자'가 자발적으로 실시하는 정기 점검만으로는 보안 점검으로 인정되지 않는다는 점을 명시하고 있다.",
+      "label": "uncertain",
+      "reason": "불시점검 포함이라는 핵심은 맞으나 자체점검 인정 여부까지 원문에 명시됐다는 표현은 확장 해석이다.",
+      "evidence_ids": [
+        "L1-R26BK01501715-001-58d1ee1c2092b487-CH-00021"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      506
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "제9조 정기 또는 불시점검과 제1조 보안책임 정확. 자발적 점검 불인정 표현은 의미가 모호해 확정 양성으로 세지 않음."
+}

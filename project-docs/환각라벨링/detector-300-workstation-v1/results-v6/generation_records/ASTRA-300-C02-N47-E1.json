@@ -1,0 +1,50 @@
+{
+  "question_id": "ASTRA-300-C02-N47-E1",
+  "answer_sha256": "ecc42767b7fccbb265e88621661bae90c8889b5c5d2925ec3ba9f69098394267",
+  "context_sha256": "6e66870506857cfd814a99cbf953d61ab1afa1a75b17b94d7a0482fc385422d7",
+  "question_sha256": "ee48bcb240d7bb161982b3ad46c3d07ec26c61a7c719282c021da6ed912b99b8",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "051825115b82ad7ec627ec174c29f300a72597fab537a5207fc6b891c03b1095",
+  "prompt_tokens": 2833,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 233,
+    "prompt_tokens": 2833,
+    "total_tokens": 3066,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 6.337888948008185,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01505744-000-977db6b66205b1a1-CH-00002",
+      "citation": 1,
+      "text_start": 3053,
+      "text_end": 4852,
+      "text_sha256": "ad848b54ce3847074d2d278ecfc3d0fa29ec4c06789da5b6a862ac31c5e4e562",
+      "document_id": "L1-R26BK01505744-000-977db6b66205b1a1",
+      "document_version": "977db6b66205b1a1a68607e520da2d96fa93ecfe3eaeed9362ec4815382d53f9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505744-000/원본/붙임 2. [제안요청서]글로벌특구인프라구축 EMS 개발 용역-260424.hwp"
+    },
+    {
+      "chunk_id": "L1-R26BK01505744-000-977db6b66205b1a1-CH-00008",
+      "citation": 2,
+      "text_start": 12321,
+      "text_end": 14072,
+      "text_sha256": "8538c41fd4f46dadf42d995eda055c23cd90395cc87e6bfea6ccab003d92283d",
+      "document_id": "L1-R26BK01505744-000-977db6b66205b1a1",
+      "document_version": "977db6b66205b1a1a68607e520da2d96fa93ecfe3eaeed9362ec4815382d53f9",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01505744-000/원본/붙임 2. [제안요청서]글로벌특구인프라구축 EMS 개발 용역-260424.hwp"
+    }
+  ],
+  "execution_source_sha256": "a8a7e721d94d479084e3650b804db06278ea6efb52488806e67ded8ca344e8d2"
+}
