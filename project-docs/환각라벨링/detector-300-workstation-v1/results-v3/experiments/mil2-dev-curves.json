@@ -1,0 +1,1892 @@
+[
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3311,
+      "fp": 14052,
+      "fn": 5,
+      "precision": 0.1906928526176352,
+      "recall": 0.9984921592279855,
+      "f1": 0.3202282508825378
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3279,
+      "fp": 12603,
+      "fn": 37,
+      "precision": 0.20646014355874576,
+      "recall": 0.9888419782870929,
+      "f1": 0.34159808313365975
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3063,
+      "fp": 10135,
+      "fn": 253,
+      "precision": 0.23208061827549628,
+      "recall": 0.9237032569360676,
+      "f1": 0.3709579750514715
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 2864,
+      "fp": 8641,
+      "fn": 452,
+      "precision": 0.24893524554541505,
+      "recall": 0.8636911942098915,
+      "f1": 0.38647864516564334
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 2696,
+      "fp": 7736,
+      "fn": 620,
+      "precision": 0.2584355828220859,
+      "recall": 0.8130277442702051,
+      "f1": 0.3922025021821356
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 2385,
+      "fp": 6591,
+      "fn": 931,
+      "precision": 0.2657085561497326,
+      "recall": 0.7192400482509047,
+      "f1": 0.38805727302310444
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 2069,
+      "fp": 5490,
+      "fn": 1247,
+      "precision": 0.2737134541606033,
+      "recall": 0.6239445114595898,
+      "f1": 0.38050574712643676
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 1807,
+      "fp": 4834,
+      "fn": 1509,
+      "precision": 0.2720975756663153,
+      "recall": 0.5449336550060314,
+      "f1": 0.36296073114391886
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 1440,
+      "fp": 3842,
+      "fn": 1876,
+      "precision": 0.2726240060583112,
+      "recall": 0.43425814234016885,
+      "f1": 0.3349616189811584
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 1254,
+      "fp": 3185,
+      "fn": 2062,
+      "precision": 0.28249605767064656,
+      "recall": 0.3781664656212304,
+      "f1": 0.32340425531914896
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 1013,
+      "fp": 2153,
+      "fn": 2303,
+      "precision": 0.31996209728363867,
+      "recall": 0.3054885404101327,
+      "f1": 0.31255785251465595
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 755,
+      "fp": 1493,
+      "fn": 2561,
+      "precision": 0.3358540925266904,
+      "recall": 0.22768395657418578,
+      "f1": 0.2713874910136592
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 591,
+      "fp": 1075,
+      "fn": 2725,
+      "precision": 0.3547418967587035,
+      "recall": 0.17822677925211097,
+      "f1": 0.23725411481332798
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 480,
+      "fp": 738,
+      "fn": 2836,
+      "precision": 0.39408866995073893,
+      "recall": 0.14475271411338964,
+      "f1": 0.211733568592854
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 366,
+      "fp": 443,
+      "fn": 2950,
+      "precision": 0.45241038318912236,
+      "recall": 0.11037394451145958,
+      "f1": 0.17745454545454545
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 238,
+      "fp": 165,
+      "fn": 3078,
+      "precision": 0.5905707196029777,
+      "recall": 0.07177322074788903,
+      "f1": 0.12799139553643452
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 100,
+      "fp": 36,
+      "fn": 3216,
+      "precision": 0.7352941176470589,
+      "recall": 0.030156815440289506,
+      "f1": 0.05793742757821553
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3312,
+      "fp": 14250,
+      "fn": 4,
+      "precision": 0.1885889989750598,
+      "recall": 0.9987937273823885,
+      "f1": 0.31727176932656387
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3307,
+      "fp": 13351,
+      "fn": 9,
+      "precision": 0.19852323208068196,
+      "recall": 0.997285886610374,
+      "f1": 0.33113046961049364
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3232,
+      "fp": 11617,
+      "fn": 84,
+      "precision": 0.2176577547309583,
+      "recall": 0.9746682750301568,
+      "f1": 0.35584916047343795
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 2970,
+      "fp": 10238,
+      "fn": 346,
+      "precision": 0.22486371895820714,
+      "recall": 0.8956574185765983,
+      "f1": 0.35947712418300654
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 2857,
+      "fp": 9372,
+      "fn": 459,
+      "precision": 0.2336249897783956,
+      "recall": 0.8615802171290712,
+      "f1": 0.3675779993567063
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 2656,
+      "fp": 8346,
+      "fn": 660,
+      "precision": 0.2414106526086166,
+      "recall": 0.8009650180940893,
+      "f1": 0.371001536527448
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 2489,
+      "fp": 7341,
+      "fn": 827,
+      "precision": 0.25320447609359104,
+      "recall": 0.7506031363088058,
+      "f1": 0.37867031796744255
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 2253,
+      "fp": 6437,
+      "fn": 1063,
+      "precision": 0.25926352128883773,
+      "recall": 0.6794330518697226,
+      "f1": 0.375312343828086
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 1971,
+      "fp": 5347,
+      "fn": 1345,
+      "precision": 0.2693358841213446,
+      "recall": 0.5943908323281062,
+      "f1": 0.3706977618958059
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 1705,
+      "fp": 4599,
+      "fn": 1611,
+      "precision": 0.27046319796954316,
+      "recall": 0.5141737032569361,
+      "f1": 0.35446985446985446
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 1423,
+      "fp": 3367,
+      "fn": 1893,
+      "precision": 0.29707724425887266,
+      "recall": 0.4291314837153197,
+      "f1": 0.35109795213422157
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 1073,
+      "fp": 2522,
+      "fn": 2243,
+      "precision": 0.2984700973574409,
+      "recall": 0.3235826296743064,
+      "f1": 0.3105194617276805
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 783,
+      "fp": 1807,
+      "fn": 2533,
+      "precision": 0.3023166023166023,
+      "recall": 0.23612786489746682,
+      "f1": 0.26515408059600404
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 624,
+      "fp": 1241,
+      "fn": 2692,
+      "precision": 0.3345844504021448,
+      "recall": 0.1881785283474065,
+      "f1": 0.24088013896931093
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 494,
+      "fp": 822,
+      "fn": 2822,
+      "precision": 0.37537993920972645,
+      "recall": 0.14897466827503017,
+      "f1": 0.21329879101899826
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 348,
+      "fp": 438,
+      "fn": 2968,
+      "precision": 0.44274809160305345,
+      "recall": 0.10494571773220748,
+      "f1": 0.1696733300828864
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "min2",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 171,
+      "fp": 190,
+      "fn": 3145,
+      "precision": 0.47368421052631576,
+      "recall": 0.051568154402895056,
+      "f1": 0.09301060647266794
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14355,
+      "fn": 0,
+      "precision": 0.1876520853375587,
+      "recall": 1.0,
+      "f1": 0.3160051460427884
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3315,
+      "fp": 14267,
+      "fn": 1,
+      "precision": 0.18854510294619498,
+      "recall": 0.9996984318455971,
+      "f1": 0.3172552397358599
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3295,
+      "fp": 13783,
+      "fn": 21,
+      "precision": 0.19293828317133155,
+      "recall": 0.9936670687575392,
+      "f1": 0.32313425517309013
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 3191,
+      "fp": 13279,
+      "fn": 125,
+      "precision": 0.19374620522161506,
+      "recall": 0.9623039806996381,
+      "f1": 0.3225512988982109
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 3104,
+      "fp": 12930,
+      "fn": 212,
+      "precision": 0.19358862417363104,
+      "recall": 0.9360675512665863,
+      "f1": 0.3208268733850129
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 3057,
+      "fp": 12412,
+      "fn": 259,
+      "precision": 0.19762104854871032,
+      "recall": 0.9218938480096501,
+      "f1": 0.3254724514240085
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 2996,
+      "fp": 11837,
+      "fn": 320,
+      "precision": 0.20198206701274185,
+      "recall": 0.9034981905910736,
+      "f1": 0.3301559314562786
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 2903,
+      "fp": 11281,
+      "fn": 413,
+      "precision": 0.20466723068245912,
+      "recall": 0.8754523522316043,
+      "f1": 0.33177142857142855
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 2723,
+      "fp": 10417,
+      "fn": 593,
+      "precision": 0.20722983257229832,
+      "recall": 0.8211700844390832,
+      "f1": 0.3309431210500729
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 2582,
+      "fp": 9632,
+      "fn": 734,
+      "precision": 0.21139675781889636,
+      "recall": 0.778648974668275,
+      "f1": 0.33251770766258854
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 2207,
+      "fp": 8393,
+      "fn": 1109,
+      "precision": 0.20820754716981132,
+      "recall": 0.6655609167671894,
+      "f1": 0.3171888473699339
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 1820,
+      "fp": 7009,
+      "fn": 1496,
+      "precision": 0.20613886057311134,
+      "recall": 0.548854041013269,
+      "f1": 0.29971181556195964
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 1498,
+      "fp": 5858,
+      "fn": 1818,
+      "precision": 0.20364328439369223,
+      "recall": 0.4517490952955368,
+      "f1": 0.28073463268365817
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 1134,
+      "fp": 4377,
+      "fn": 2182,
+      "precision": 0.20577027762656505,
+      "recall": 0.34197828709288297,
+      "f1": 0.25693893735130846
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 790,
+      "fp": 2575,
+      "fn": 2526,
+      "precision": 0.23476968796433878,
+      "recall": 0.2382388419782871,
+      "f1": 0.23649154318215837
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 463,
+      "fp": 1069,
+      "fn": 2853,
+      "precision": 0.30221932114882505,
+      "recall": 0.1396260554885404,
+      "f1": 0.191006600660066
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "mean",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 267,
+      "fp": 291,
+      "fn": 3049,
+      "precision": 0.478494623655914,
+      "recall": 0.08051869722557298,
+      "f1": 0.137842023748064
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14327,
+      "fn": 0,
+      "precision": 0.18794989514254945,
+      "recall": 1.0,
+      "f1": 0.3164273104632855
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3313,
+      "fp": 13894,
+      "fn": 3,
+      "precision": 0.19253792061370373,
+      "recall": 0.9990952955367913,
+      "f1": 0.3228572820737709
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3271,
+      "fp": 12876,
+      "fn": 45,
+      "precision": 0.20257632996841518,
+      "recall": 0.9864294330518697,
+      "f1": 0.3361249550429019
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 3062,
+      "fp": 12060,
+      "fn": 254,
+      "precision": 0.20248644359211745,
+      "recall": 0.9234016887816646,
+      "f1": 0.33214014535199043
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 2972,
+      "fp": 11401,
+      "fn": 344,
+      "precision": 0.20677659500452236,
+      "recall": 0.8962605548854041,
+      "f1": 0.33602804002487424
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 2836,
+      "fp": 10590,
+      "fn": 480,
+      "precision": 0.21123193803068674,
+      "recall": 0.8552472858866104,
+      "f1": 0.3387886751881496
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 2707,
+      "fp": 9793,
+      "fn": 609,
+      "precision": 0.21656,
+      "recall": 0.8163449939686369,
+      "f1": 0.3423115832068791
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 2557,
+      "fp": 9179,
+      "fn": 759,
+      "precision": 0.21787661895023858,
+      "recall": 0.7711097708082026,
+      "f1": 0.33975551421737976
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 2229,
+      "fp": 8271,
+      "fn": 1087,
+      "precision": 0.21228571428571427,
+      "recall": 0.6721954161640531,
+      "f1": 0.3226693688477128
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 2060,
+      "fp": 7498,
+      "fn": 1256,
+      "precision": 0.21552626072400083,
+      "recall": 0.6212303980699638,
+      "f1": 0.32002485629951843
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 1723,
+      "fp": 6079,
+      "fn": 1593,
+      "precision": 0.22084081004870545,
+      "recall": 0.5196019300361882,
+      "f1": 0.30994783234394674
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 1416,
+      "fp": 5082,
+      "fn": 1900,
+      "precision": 0.21791320406278855,
+      "recall": 0.4270205066344994,
+      "f1": 0.2885673527613613
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 1127,
+      "fp": 3949,
+      "fn": 2189,
+      "precision": 0.22202521670606776,
+      "recall": 0.3398673100120627,
+      "f1": 0.26858913250714966
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 864,
+      "fp": 2912,
+      "fn": 2452,
+      "precision": 0.2288135593220339,
+      "recall": 0.2605548854041013,
+      "f1": 0.2436548223350254
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 643,
+      "fp": 1975,
+      "fn": 2673,
+      "precision": 0.24560733384262795,
+      "recall": 0.19390832328106153,
+      "f1": 0.21671722278395686
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 407,
+      "fp": 1206,
+      "fn": 2909,
+      "precision": 0.2523248605083695,
+      "recall": 0.12273823884197829,
+      "f1": 0.16514505984986813
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "q25",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 232,
+      "fp": 490,
+      "fn": 3084,
+      "precision": 0.32132963988919666,
+      "recall": 0.06996381182147166,
+      "f1": 0.11490837048043585
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14347,
+      "fn": 0,
+      "precision": 0.18773707750665233,
+      "recall": 1.0,
+      "f1": 0.3161256494589828
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3315,
+      "fp": 14178,
+      "fn": 1,
+      "precision": 0.18950437317784258,
+      "recall": 0.9996984318455971,
+      "f1": 0.3186121389783267
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 3279,
+      "fp": 13910,
+      "fn": 37,
+      "precision": 0.19076153353889116,
+      "recall": 0.9888419782870929,
+      "f1": 0.31982443306510605
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 3203,
+      "fp": 13660,
+      "fn": 113,
+      "precision": 0.1899424776137105,
+      "recall": 0.9659227985524729,
+      "f1": 0.3174587442390604
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 3104,
+      "fp": 13305,
+      "fn": 212,
+      "precision": 0.18916448290572246,
+      "recall": 0.9360675512665863,
+      "f1": 0.3147275031685678
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 3084,
+      "fp": 12990,
+      "fn": 232,
+      "precision": 0.19186263531168346,
+      "recall": 0.9300361881785284,
+      "f1": 0.3181021144920062
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 3071,
+      "fp": 12764,
+      "fn": 245,
+      "precision": 0.19393748026523525,
+      "recall": 0.9261158021712907,
+      "f1": 0.32071432301185315
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 3044,
+      "fp": 12356,
+      "fn": 272,
+      "precision": 0.19766233766233765,
+      "recall": 0.9179734620024126,
+      "f1": 0.32528318016670227
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 2997,
+      "fp": 11952,
+      "fn": 319,
+      "precision": 0.20048163756773027,
+      "recall": 0.9037997587454765,
+      "f1": 0.3281686285245004
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 2847,
+      "fp": 11134,
+      "fn": 469,
+      "precision": 0.20363350261068594,
+      "recall": 0.8585645355850422,
+      "f1": 0.32919003295369137
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 2702,
+      "fp": 10350,
+      "fn": 614,
+      "precision": 0.20701808152007356,
+      "recall": 0.8148371531966224,
+      "f1": 0.3301564027370479
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 2480,
+      "fp": 9498,
+      "fn": 836,
+      "precision": 0.20704625146101185,
+      "recall": 0.7478890229191797,
+      "f1": 0.3243101870014385
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 2246,
+      "fp": 8545,
+      "fn": 1070,
+      "precision": 0.20813640997127236,
+      "recall": 0.6773220747889023,
+      "f1": 0.31842347770610335
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 1863,
+      "fp": 7627,
+      "fn": 1453,
+      "precision": 0.19631190727081138,
+      "recall": 0.5618214716525934,
+      "f1": 0.2909573637357489
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 1486,
+      "fp": 6665,
+      "fn": 1830,
+      "precision": 0.1823089191510244,
+      "recall": 0.44813027744270206,
+      "f1": 0.2591785122525508
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "max",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 1057,
+      "fp": 5107,
+      "fn": 2259,
+      "precision": 0.17147955872809864,
+      "recall": 0.3187575392038601,
+      "f1": 0.2229957805907173
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 1e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 3e-05,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.0001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.0003,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14358,
+      "fn": 0,
+      "precision": 0.1876202331107842,
+      "recall": 1.0,
+      "f1": 0.31595998094330635
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.001,
+    "windows": 886,
+    "characters": {
+      "tp": 3316,
+      "fp": 14355,
+      "fn": 0,
+      "precision": 0.1876520853375587,
+      "recall": 1.0,
+      "f1": 0.3160051460427884
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.003,
+    "windows": 886,
+    "characters": {
+      "tp": 3314,
+      "fp": 14223,
+      "fn": 2,
+      "precision": 0.18897188800821121,
+      "recall": 0.9993968636911942,
+      "f1": 0.317843955306191
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.01,
+    "windows": 886,
+    "characters": {
+      "tp": 3293,
+      "fp": 13653,
+      "fn": 23,
+      "precision": 0.1943231441048035,
+      "recall": 0.9930639324487334,
+      "f1": 0.32504195044911655
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.02,
+    "windows": 886,
+    "characters": {
+      "tp": 3198,
+      "fp": 13078,
+      "fn": 118,
+      "precision": 0.1964856230031949,
+      "recall": 0.9644149577804584,
+      "f1": 0.32645977950183747
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.03,
+    "windows": 886,
+    "characters": {
+      "tp": 3103,
+      "fp": 12655,
+      "fn": 213,
+      "precision": 0.19691585226551592,
+      "recall": 0.9357659831121834,
+      "f1": 0.32536437034706933
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.05,
+    "windows": 886,
+    "characters": {
+      "tp": 3044,
+      "fp": 12024,
+      "fn": 272,
+      "precision": 0.20201752057340058,
+      "recall": 0.9179734620024126,
+      "f1": 0.33115752828546563
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.075,
+    "windows": 886,
+    "characters": {
+      "tp": 2984,
+      "fp": 11392,
+      "fn": 332,
+      "precision": 0.20756816917084028,
+      "recall": 0.8998793727382388,
+      "f1": 0.3373276056974904
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.1,
+    "windows": 886,
+    "characters": {
+      "tp": 2885,
+      "fp": 10789,
+      "fn": 431,
+      "precision": 0.21098434986105016,
+      "recall": 0.8700241254523522,
+      "f1": 0.3396115361977634
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.15,
+    "windows": 886,
+    "characters": {
+      "tp": 2716,
+      "fp": 9789,
+      "fn": 600,
+      "precision": 0.21719312275089964,
+      "recall": 0.8190591073582629,
+      "f1": 0.3433411288793376
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.2,
+    "windows": 886,
+    "characters": {
+      "tp": 2539,
+      "fp": 8868,
+      "fn": 777,
+      "precision": 0.22258262470412904,
+      "recall": 0.7656815440289505,
+      "f1": 0.344902533451063
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.3,
+    "windows": 886,
+    "characters": {
+      "tp": 2116,
+      "fp": 6996,
+      "fn": 1200,
+      "precision": 0.23222124670763827,
+      "recall": 0.638118214716526,
+      "f1": 0.3405214032829096
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.4,
+    "windows": 886,
+    "characters": {
+      "tp": 1673,
+      "fp": 5246,
+      "fn": 1643,
+      "precision": 0.24179794768030063,
+      "recall": 0.5045235223160435,
+      "f1": 0.32691744015632634
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.5,
+    "windows": 886,
+    "characters": {
+      "tp": 1333,
+      "fp": 3739,
+      "fn": 1983,
+      "precision": 0.2628154574132492,
+      "recall": 0.4019903498190591,
+      "f1": 0.31783500238435863
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.6,
+    "windows": 886,
+    "characters": {
+      "tp": 983,
+      "fp": 2418,
+      "fn": 2333,
+      "precision": 0.2890326374595707,
+      "recall": 0.29644149577804585,
+      "f1": 0.2926901890725026
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.7,
+    "windows": 886,
+    "characters": {
+      "tp": 704,
+      "fp": 1259,
+      "fn": 2612,
+      "precision": 0.358634742740703,
+      "recall": 0.21230398069963813,
+      "f1": 0.26671718128433414
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.8,
+    "windows": 886,
+    "characters": {
+      "tp": 460,
+      "fp": 624,
+      "fn": 2856,
+      "precision": 0.42435424354243545,
+      "recall": 0.13872135102533173,
+      "f1": 0.20909090909090908
+    }
+  },
+  {
+    "model": "mil2",
+    "profile": "repeat192",
+    "aggregation": "relevance",
+    "threshold": 0.9,
+    "windows": 886,
+    "characters": {
+      "tp": 216,
+      "fp": 153,
+      "fn": 3100,
+      "precision": 0.5853658536585366,
+      "recall": 0.06513872135102533,
+      "f1": 0.11723202170963365
+    }
+  }
+]

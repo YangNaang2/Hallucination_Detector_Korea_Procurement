@@ -1,0 +1,20 @@
+{
+  "selected": {
+    "model": "mil3",
+    "aggregation": "min2",
+    "mode": "raw",
+    "threshold": 0.5,
+    "characters": {
+      "tp": 1144,
+      "fp": 1631,
+      "fn": 2172,
+      "precision": 0.41225225225225226,
+      "recall": 0.34499396863691195,
+      "f1": 0.37563618453455916
+    }
+  },
+  "source": "dev50 only",
+  "policy_sha256": "db38cb21814d527a63fa1e05947d60a967b98fe051ac19388a930f2831e79e10",
+  "human_gold": false,
+  "independent_test": false
+}

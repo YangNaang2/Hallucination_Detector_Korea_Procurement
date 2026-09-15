@@ -1,0 +1,15 @@
+{
+  "model": "mil2",
+  "profile": "repeat192",
+  "aggregation": "relevance",
+  "threshold": 0.8,
+  "windows": 886,
+  "characters": {
+    "tp": 460,
+    "fp": 624,
+    "fn": 2856,
+    "precision": 0.42435424354243545,
+    "recall": 0.13872135102533173,
+    "f1": 0.20909090909090908
+  }
+}

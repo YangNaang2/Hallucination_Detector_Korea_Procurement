@@ -1,0 +1,39 @@
+{
+  "status": "agent_rereview_proposals_only",
+  "scope": "Three high-FP training records reread against actual generation evidence; not a second full review of 295",
+  "labels_changed": false,
+  "human_approved": false,
+  "selection_bias": "Selected by previous-model FP, so unsuitable as an independent audit sample",
+  "records": [
+    {
+      "question_id": "ASTRA-300-C03-N48-E1",
+      "decision": "Boundary review proposed; frozen scoring labels retained",
+      "quote": "**최종 마감일**로 명시되어 있습니다.",
+      "start": 360,
+      "end": 382,
+      "reason": "Current stated deadline can be called final without implying immutable. Source allows schedule changes; claims that metadata alone fixes it remain unsupported. Existing pilot comments preserved.",
+      "source": "actual context [1]: price proposal June 29 to August 10 10:00; university may change schedule with notice.",
+      "answer_sha256": "2fde01508c19785503c3c7b726c5a7081b499e4e2505e7e19e0e1389df6895d5",
+      "context_sha256": "6d51836b19157254008572db0bf9c6328b208d59025716346c93e6f03a51f863"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N12-E4",
+      "decision": "Retain existing citation-error label; conditional wording remains a review question",
+      "reason": "MAR002 explicitly covers hardware and replacement when necessary. Main answer denying software-only scope is supported. Citation [1] should point to [2]. No incidents requiring replacement does not itself violate maintenance scope.",
+      "source": "actual context [2], MAR002: server/network/security hardware, genuine or equivalent parts and damaged cable replacement.",
+      "answer_sha256": "619f42147efea45dce4b9bc1477340ad2a97ccee0968834fed800b3a58b6e331",
+      "context_sha256": "5e8ac4cd511330136d47d099da79f2a4dbca1d1b177c4afc6fa26e9b43ddc2c6"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N25-E1",
+      "decision": "Retain unsupported penalty claim",
+      "quote": "**제안서 평가 시 부정적인 영향**을 줄 수 있으며",
+      "start": 372,
+      "end": 401,
+      "reason": "Response and recurrence prevention duties support attending to requests; actual evidence does not establish negative proposal evaluation consequences.",
+      "source": "actual context [1] SFR001 duties; [2] introduction and budget.",
+      "answer_sha256": "3911044b00b4e578573f8116bd6cfb13c9204708069ac468ae81ee0c9874bab6",
+      "context_sha256": "00ee7d5dd6f87dd0a027e260665d4ee9d3349f2e6f30526bc98a166005a9272e"
+    }
+  ]
+}
