@@ -1,0 +1,449 @@
+{
+  "purpose": "post-selected successful examples; NOT model performance estimate",
+  "selection": "50 label-empty no-warning + 50 actual positive with overlapping warnings and character precision >= .5; no uncertain labels; evaluation then dev then train then ID; selected AFTER viewing labels and predictions",
+  "partition_counts": {
+    "evaluation": 21,
+    "dev": 22,
+    "train": 57
+  },
+  "human_approved": false,
+  "model": {
+    "model": "contrast3",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.3,
+    "answer": {
+      "tp": 23,
+      "fp": 3,
+      "fn": 12,
+      "precision": 0.8846153846153846,
+      "recall": 0.6571428571428571,
+      "f1": 0.7540983606557377
+    },
+    "tn": 12,
+    "false_alarm_rate": 0.2,
+    "characters": {
+      "tp": 668,
+      "fp": 468,
+      "fn": 2648,
+      "precision": 0.5880281690140845,
+      "recall": 0.2014475271411339,
+      "f1": 0.3000898472596586
+    }
+  },
+  "code_sha256": "b27a3d414391e9393eb6da6c02829306589c5168ac7e220fddcade49335f2007",
+  "labels_sha256": "9e2b21defd0097dceb3424216e8301220343cfe5913902fce6955a215b3249f3",
+  "source_answers": 295,
+  "question_ids": [
+    "ASTRA-300-C01-N02-E5",
+    "ASTRA-300-C01-N13-E4",
+    "ASTRA-300-C01-N32-E5",
+    "ASTRA-300-C03-N02-E2",
+    "ASTRA-300-C03-N17-E2",
+    "ASTRA-300-C03-N44-E5",
+    "ASTRA-300-C04-N32-E3",
+    "ASTRA-300-C05-N13-E3",
+    "ASTRA-300-C05-N17-E4",
+    "ASTRA-300-C05-N36-E5",
+    "ASTRA-300-C05-N44-E2",
+    "ASTRA-300-C05-P05",
+    "ASTRA-300-C01-N07-E5",
+    "ASTRA-300-C02-N45-E3",
+    "ASTRA-300-C03-N03-E1",
+    "ASTRA-300-C03-N45-E4",
+    "ASTRA-300-C04-N45-E5",
+    "ASTRA-300-C05-N07-E4",
+    "ASTRA-300-C05-N29-E2",
+    "ASTRA-300-C05-N46-E5",
+    "ASTRA-300-C01-N12-E5",
+    "ASTRA-300-C01-N16-E1",
+    "ASTRA-300-C01-N21-E1",
+    "ASTRA-300-C01-N31-E1",
+    "ASTRA-300-C01-N33-E4",
+    "ASTRA-300-C01-N49-E3",
+    "ASTRA-300-C01-P01",
+    "ASTRA-300-C01-P03",
+    "ASTRA-300-C01-P04",
+    "ASTRA-300-C01-S01",
+    "ASTRA-300-C01-S02",
+    "ASTRA-300-C02-N05-E3",
+    "ASTRA-300-C02-N19-E4",
+    "ASTRA-300-C02-N23-E5",
+    "ASTRA-300-C02-N24-E4",
+    "ASTRA-300-C02-N26-E2",
+    "ASTRA-300-C02-N37-E1",
+    "ASTRA-300-C02-N39-E4",
+    "ASTRA-300-C02-N48-E5",
+    "ASTRA-300-C02-P01",
+    "ASTRA-300-C03-N01-E3",
+    "ASTRA-300-C03-N04-E5",
+    "ASTRA-300-C03-N12-E2",
+    "ASTRA-300-C03-N24-E5",
+    "ASTRA-300-C03-N26-E3",
+    "ASTRA-300-C03-N41-E3",
+    "ASTRA-300-C03-N42-E2",
+    "ASTRA-300-C03-N49-E5",
+    "ASTRA-300-C03-P01",
+    "ASTRA-300-C03-P03",
+    "ASTRA-300-C01-N22-E5",
+    "ASTRA-300-C01-N36-E1",
+    "ASTRA-300-C02-N20-E3",
+    "ASTRA-300-C02-N44-E4",
+    "ASTRA-300-C02-N47-E1",
+    "ASTRA-300-C04-N13-E2",
+    "ASTRA-300-C05-N20-E1",
+    "ASTRA-300-C05-S01",
+    "ASTRA-300-C05-S03",
+    "ASTRA-300-C01-N30-E2",
+    "ASTRA-300-C02-N03-E5",
+    "ASTRA-300-C02-N07-E1",
+    "ASTRA-300-C02-N30-E3",
+    "ASTRA-300-C02-N38-E5",
+    "ASTRA-300-C02-N46-E2",
+    "ASTRA-300-C03-N06-E3",
+    "ASTRA-300-C03-N30-E4",
+    "ASTRA-300-C04-N03-E2",
+    "ASTRA-300-C04-N10-E5",
+    "ASTRA-300-C04-N38-E2",
+    "ASTRA-300-C05-N03-E3",
+    "ASTRA-300-C05-N06-E5",
+    "ASTRA-300-C05-N28-E3",
+    "ASTRA-300-C01-N04-E3",
+    "ASTRA-300-C01-N05-E2",
+    "ASTRA-300-C01-N08-E4",
+    "ASTRA-300-C01-N11-E1",
+    "ASTRA-300-C01-N14-E3",
+    "ASTRA-300-C01-N18-E4",
+    "ASTRA-300-C01-N19-E3",
+    "ASTRA-300-C01-N24-E3",
+    "ASTRA-300-C01-N25-E2",
+    "ASTRA-300-C01-N35-E2",
+    "ASTRA-300-C01-N37-E5",
+    "ASTRA-300-C01-N39-E3",
+    "ASTRA-300-C01-N41-E1",
+    "ASTRA-300-C01-N42-E5",
+    "ASTRA-300-C01-N43-E4",
+    "ASTRA-300-C01-N48-E4",
+    "ASTRA-300-C01-P02",
+    "ASTRA-300-C01-P05",
+    "ASTRA-300-C02-N01-E2",
+    "ASTRA-300-C02-N04-E4",
+    "ASTRA-300-C02-N08-E5",
+    "ASTRA-300-C02-N09-E4",
+    "ASTRA-300-C02-N16-E2",
+    "ASTRA-300-C02-N18-E5",
+    "ASTRA-300-C02-N21-E2",
+    "ASTRA-300-C02-N25-E3",
+    "ASTRA-300-C02-N27-E1"
+  ],
+  "metrics": {
+    "answers": 100,
+    "scored_characters": 34594,
+    "reviewed_characters": 45206,
+    "masked_characters": 400,
+    "answer_characters": 45206,
+    "characters": {
+      "tp": 3068,
+      "fp": 495,
+      "fn": 2125,
+      "precision": 0.8610721302273365,
+      "recall": 0.5907953013672251,
+      "f1": 0.700776610324349
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 1124,
+      "fn": 165,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 50,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "answer_tn": 50,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 4,
+    "operational_whole_answer": {
+      "tp": 50,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tn": 50,
+      "normal_answers": 50,
+      "false_positive_rate": 0.0,
+      "truth_unresolved": 0,
+      "truth_unresolved_ids": [],
+      "automatic_decision_rate": 1.0,
+      "detector_abstention_rate": 0.0,
+      "abstained_actual_hallucinations": 0,
+      "policy": "raw warning presence; citation/quality-only warnings count as false warnings on factually normal answers; uncertain-only truth is unresolved and excluded, never normal",
+      "accuracy": 1.0
+    },
+    "by_company": {
+      "C01": {
+        "answers": 36,
+        "scored_characters": 13226,
+        "reviewed_characters": 17240,
+        "masked_characters": 109,
+        "answer_characters": 17240,
+        "characters": {
+          "tp": 1850,
+          "fp": 248,
+          "fn": 569,
+          "precision": 0.8817921830314586,
+          "recall": 0.7647788342290203,
+          "f1": 0.8191277396502104
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 653,
+          "fn": 78,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 15,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C02": {
+        "answers": 27,
+        "scored_characters": 9643,
+        "reviewed_characters": 12577,
+        "masked_characters": 131,
+        "answer_characters": 12577,
+        "characters": {
+          "tp": 725,
+          "fp": 143,
+          "fn": 907,
+          "precision": 0.8352534562211982,
+          "recall": 0.44424019607843135,
+          "f1": 0.58
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 267,
+          "fn": 50,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 10,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 4
+      },
+      "C03": {
+        "answers": 17,
+        "scored_characters": 5157,
+        "reviewed_characters": 6674,
+        "masked_characters": 0,
+        "answer_characters": 6674,
+        "characters": {
+          "tp": 113,
+          "fp": 17,
+          "fn": 99,
+          "precision": 0.8692307692307693,
+          "recall": 0.5330188679245284,
+          "f1": 0.6608187134502924
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 41,
+          "fn": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 15,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C04": {
+        "answers": 6,
+        "scored_characters": 2286,
+        "reviewed_characters": 3007,
+        "masked_characters": 50,
+        "answer_characters": 3007,
+        "characters": {
+          "tp": 254,
+          "fp": 6,
+          "fn": 307,
+          "precision": 0.9769230769230769,
+          "recall": 0.45276292335115864,
+          "f1": 0.6187576126674786
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 88,
+          "fn": 17,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 2,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C05": {
+        "answers": 14,
+        "scored_characters": 4282,
+        "reviewed_characters": 5708,
+        "masked_characters": 110,
+        "answer_characters": 5708,
+        "characters": {
+          "tp": 126,
+          "fp": 81,
+          "fn": 243,
+          "precision": 0.6086956521739131,
+          "recall": 0.34146341463414637,
+          "f1": 0.4375
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 75,
+          "fn": 13,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 8,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      }
+    },
+    "by_length": {
+      "lt600": {
+        "answers": 82,
+        "scored_characters": 23755,
+        "reviewed_characters": 30909,
+        "masked_characters": 185,
+        "answer_characters": 30909,
+        "characters": {
+          "tp": 1861,
+          "fp": 295,
+          "fn": 1175,
+          "precision": 0.8631725417439703,
+          "recall": 0.6129776021080369,
+          "f1": 0.7168721109399075
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 680,
+          "fn": 94,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 35,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 47,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 4
+      },
+      "ge600": {
+        "answers": 18,
+        "scored_characters": 10839,
+        "reviewed_characters": 14297,
+        "masked_characters": 215,
+        "answer_characters": 14297,
+        "characters": {
+          "tp": 1207,
+          "fp": 200,
+          "fn": 950,
+          "precision": 0.8578535891968728,
+          "recall": 0.559573481687529,
+          "f1": 0.6773288439955106
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 444,
+          "fn": 71,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "answer_tn": 3,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      }
+    },
+    "by_error_type": {
+      "unsupported": {
+        "tp": 2316,
+        "fn": 1603,
+        "recall": 0.590967083439653,
+        "precision": null,
+        "precision_reason": "detector has no subtype predictions"
+      },
+      "contradiction": {
+        "tp": 752,
+        "fn": 522,
+        "recall": 0.5902668759811617,
+        "precision": null,
+        "precision_reason": "detector has no subtype predictions"
+      }
+    }
+  }
+}
