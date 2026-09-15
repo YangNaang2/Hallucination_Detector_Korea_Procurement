@@ -14,4 +14,9 @@ class EvidenceAnchors(unittest.TestCase):
   a=anchor_ref(self.x,'둘째')
   self.assertEqual((a['citation'],a['chunk_id'],a['source_start'],a['source_end']),(2,'b',102,104))
   self.assertEqual(self.x['context'][a['context_start']:a['context_end']],a['quote'])
+ def test_table_reference_is_not_citation_boundary(self):
+  self.x['context']=self.x['context'].replace('첫째 앵커','| source_ids [2] | key |\n첫째 앵커')
+  a=anchor_ref(self.x,'둘째',2)
+  self.assertEqual(a['source_start'],102)
+  with self.assertRaises(ValueError):anchor_ref(self.x,'첫째',2)
 if __name__=='__main__':unittest.main()

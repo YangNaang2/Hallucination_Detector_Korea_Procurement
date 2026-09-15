@@ -8,7 +8,7 @@ def anchor_ref(x,needle,citation=None):
  for c in x['evidence']:
   if citation is not None and c['citation']!=citation:continue
   number=c['citation']
-  m=re.search(r'\['+str(number)+r'\][^\n]*\n(.*?)\n\[자료 '+str(number)+r' 끝\]',x['context'],re.S)
+  m=re.search(r'^\['+str(number)+r'\][^\n]*\n(.*?)\n\[자료 '+str(number)+r' 끝\]',x['context'],re.S|re.M)
   if m and needle in m.group(1):
    offset=m.group(1).index(needle);start=m.start(1)+offset
    return dict(scope='prompt_context',citation=number,chunk_id=c['chunk_id'],text_sha256=c['text_sha256'],quote=needle,context_start=start,context_end=start+len(needle),source_start=c['text_start']+offset,source_end=c['text_start']+offset+len(needle))

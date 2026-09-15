@@ -1,0 +1,35 @@
+{
+  "reviewed_answers": 295,
+  "unreviewed_answers": 0,
+  "prediction_slots": 885,
+  "successful_prediction_records": {
+    "klue": 295,
+    "xlmr": 295,
+    "bgem3": 295
+  },
+  "manual_evidence_anchors_verified": 743,
+  "canonical_chunks_verified": 645,
+  "probability_offsets_verified": 214331,
+  "non_whitespace_unchecked": 0,
+  "pilot25_originals_unchanged": true,
+  "denials_verified": 5,
+  "final_gold_count": 0,
+  "human_approval_pending": 295,
+  "index_sha256": "e76f9bc3320b65f0a85809f8bee936e817b13ab8fd0610d0763043187aaf4025",
+  "source_cache_sha256": "0afc91654c2410d5082dc997772447525c2b6bee8ec8e16220fb031b20bbe51b",
+  "checks": [
+    "canonical answer and context hashes",
+    "all 295 complete review ranges",
+    "citation-scoped anchors and canonical source offsets",
+    "no overlapping new manual spans",
+    "all 885 probability/coverage/threshold identities",
+    "preserved pilot25 against handoff commit",
+    "no inferred human approval"
+  ],
+  "unit_tests_passed": 26,
+  "handoff_check": "PASS 300 selected;295 generated;5 denials",
+  "completion": "885 inference and 295 agent review complete; human approval pending",
+  "original_llama_server_pid": 4922,
+  "original_llama_server_preserved": true,
+  "review_html_records_verified": 295
+}
