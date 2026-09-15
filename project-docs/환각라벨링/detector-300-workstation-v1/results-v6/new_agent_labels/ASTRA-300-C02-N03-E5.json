@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N03-E5",
+  "answer_sha256": "ed88b47d3e54d9658a4c0c9ff30f097199c3894e6c2e62665a1cc3e3ae927a01",
+  "context_sha256": "3c58e9e32fff41495ce2956acee19191fdedfdbc0b6c130ebc8f76d7280c4255",
+  "spans": [
+    {
+      "start": 252,
+      "end": 315,
+      "quote": "[2] 용역입찰유의서 및 계약일반조건에서도 입찰등록 마감과 인쇄본 제출 마감이 **다른 일정**로 구분되어 있으며",
+      "label": "citation_error",
+      "reason": "11시/15시 구분은 자료1 공고이며 자료2 일반조건은 구체 시각을 제시하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01448046-000-2237c480301f0a8e-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      399
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "별도시각 기록 결론과 날짜/시간 자체는 지지."
+}

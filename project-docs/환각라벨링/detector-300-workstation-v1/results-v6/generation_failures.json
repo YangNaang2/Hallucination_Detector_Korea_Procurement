@@ -1,0 +1,26 @@
+{
+  "attempted": 295,
+  "succeeded": 293,
+  "failed": [
+    {
+      "question_id": "ASTRA-300-C05-N34-E2",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 500: Internal Server Error",
+      "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+      "resolved": false,
+      "server_detail": "The model produced output that does not match the expected peg-native format",
+      "retry_count_lower_bound": 3
+    },
+    {
+      "question_id": "ASTRA-300-C05-N18-E3",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 500: Internal Server Error",
+      "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+      "resolved": false,
+      "server_detail": "The model produced output that does not match the expected peg-native format",
+      "retry_count_lower_bound": 3
+    }
+  ],
+  "original_server_untouched": true,
+  "native_recovery_status": "first question also returned HTTP500; separate recovery policy preserved; not silently merged"
+}

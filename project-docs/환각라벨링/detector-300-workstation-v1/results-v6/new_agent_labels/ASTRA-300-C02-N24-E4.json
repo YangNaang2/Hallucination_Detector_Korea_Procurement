@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N24-E4",
+  "answer_sha256": "a4d83b6b457a7fc59005a1ef14f238d6d6a3eee9d0d51ebd1d6b663e3217e192",
+  "context_sha256": "4f6cc2a9fa04fedc67dc6e5e1c1b7b919a411b3ff6146124b89a452699aede1d",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      395
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "입찰공고일 전날부터 평가일까지 계속재직 조건으로 평가직전 신규입사자 불가. 입사후라는 표현은 질문의 직전입사 문맥으로 해석."
+}

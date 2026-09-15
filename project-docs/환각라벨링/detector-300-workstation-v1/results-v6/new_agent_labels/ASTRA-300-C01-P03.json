@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-P03",
+  "answer_sha256": "2a575437678c69e87c894e779f194222d222a204c861d5890ccb6afa0bdd9911",
+  "context_sha256": "0a2fb5aa4a8b6688a47b749a7fb11998e52f7f806df22e0af64b2f59c51c0625",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      579
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "missing증빙미확보/대장생성은증빙아님에따라자동인정불가설명정확."
+}

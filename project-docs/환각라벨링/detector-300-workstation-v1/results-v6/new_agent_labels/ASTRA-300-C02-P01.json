@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-P01",
+  "answer_sha256": "d6754fc8bb48c395f523f8b7047a04b88406ec3ab391c6787261055246113ca7",
+  "context_sha256": "582d37453736685561c02240cf38f697d7c2475e584ba8bdab11ace72f721c18",
+  "spans": [
+    {
+      "start": 14,
+      "end": 40,
+      "quote": "부산 본점 조건이 회사 설정으로 확인될 수 없다",
+      "label": "contradiction",
+      "reason": "근거1 본점/지역 부산광역시. 실제 증명과 합성 설정 확인은 별개다.",
+      "evidence_ids": [
+        "C02-PROFILE-1.0.0-r1-CH-007f12be020c"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 254,
+      "end": 280,
+      "quote": "부산 본점 조건이 회사 설정으로 확인될 수 없다",
+      "label": "contradiction",
+      "reason": "근거1 본점/지역 부산광역시. 실제 증명과 합성 설정 확인은 별개다.",
+      "evidence_ids": [
+        "C02-PROFILE-1.0.0-r1-CH-007f12be020c"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      779
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "회사 설정의 지역 확인과 실제 증명서의 구분을 잘못 적용; 표가 잘림",
+  "review_note": ""
+}

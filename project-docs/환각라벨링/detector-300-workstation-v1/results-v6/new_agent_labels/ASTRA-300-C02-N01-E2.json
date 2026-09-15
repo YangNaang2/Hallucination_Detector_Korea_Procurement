@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N01-E2",
+  "answer_sha256": "a31e199db9839d14097366500e4d2d95064237fd3339f59ad4f85037c30d65e4",
+  "context_sha256": "bdaf6c83f4d3670224ba0c8981f594ea6de95960b16be2fd6f9a934f01c8fab1",
+  "spans": [
+    {
+      "start": 280,
+      "end": 292,
+      "quote": "[2] 공개 공고 원문",
+      "label": "citation_error",
+      "reason": "이어진 과업심의 및 영향평가 문장은 자료1이며 자료2 아님.",
+      "evidence_ids": [
+        "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00058"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      781
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "핵심 근거인 FP 방식 투입인력 요구/관리 금지 문구를 인용하지 않고 주변 조항 반복.",
+  "review_note": "최소인원 임의제시불가라는 결론은 자료1에 명확히 지지됨."
+}

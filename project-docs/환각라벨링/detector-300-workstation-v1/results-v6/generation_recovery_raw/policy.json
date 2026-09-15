@@ -1,0 +1,16 @@
+{
+  "parent_identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "run_id": "v6-raw-recovery-1",
+  "server_flags": "--no-jinja --chat-template chatml",
+  "endpoint": "http://127.0.0.1:18771",
+  "rendering": "original server /apply-template; exact original chat prompt preserved",
+  "route": "/completion",
+  "seed": 916,
+  "n_predict": 512,
+  "temperature": 0,
+  "top_k": 40,
+  "top_p": 1,
+  "min_p": 0,
+  "source_sha256": "561eac1e6ad521118b3e268b57c53d1004a9b20cf758a5071547f2eade067b57",
+  "reason": "two repeated peg-native chat parser failures; preserve raw completion; separate run and metrics"
+}

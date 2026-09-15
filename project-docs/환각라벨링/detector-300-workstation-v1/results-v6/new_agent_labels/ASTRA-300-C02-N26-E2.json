@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N26-E2",
+  "answer_sha256": "fcce344a2b5b9a017b1f4e751f0bb163a15c9aad71ada4a9c8ae2163d293b7a9",
+  "context_sha256": "14483742627c503f5bef3b08cec7c3ed2b66b1edcef0c874249126efc80fce63",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      377
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "안정적24시간연속운전은 단시간시연만으로 검증되었다고 할 수 없음. 별도 의무 수치 추가 없음."
+}

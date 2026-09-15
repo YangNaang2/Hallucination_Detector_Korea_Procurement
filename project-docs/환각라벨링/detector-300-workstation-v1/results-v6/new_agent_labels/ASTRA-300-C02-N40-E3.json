@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N40-E3",
+  "answer_sha256": "beb4884bf784db9b078bb759459e05376b0d47838eaf52344ffedaa59bfdeb27",
+  "context_sha256": "292b27e38118d2dc40c31c82ce01adf7f73ceb357c570b97f1d863831ba48e33",
+  "spans": [
+    {
+      "start": 267,
+      "end": 281,
+      "quote": "**[3] 계약의 변경**",
+      "label": "citation_error",
+      "reason": "지체상금은 자료1의4)항. 계약의변경은2)항으로 번호/제목 혼동.",
+      "evidence_ids": [
+        "L1-R26BK01520501-000-e5173c68f650bfad-CH-00004"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      545
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "등급별 허용시간 값이 없으므로 관행값을 임의대입하지 말라는 결론 정상."
+}

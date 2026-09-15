@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N04-E4",
+  "answer_sha256": "e0c074567c1c7c47f790ca362e49f6d17cd4c8a8d126e64b2c30f98e42691010",
+  "context_sha256": "075e10a3606793b2319136d80236e99ce728cec730e7d1712f4f417cc92d51b2",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      542
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "용역책임자 임원급 제시 조건 정확. 불필요한 원문 마커/메타설명은 품질상 군더더기."
+}

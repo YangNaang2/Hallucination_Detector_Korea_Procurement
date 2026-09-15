@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N51-E1",
+  "answer_sha256": "ac89ef67fda107ca1de449dc29f12b7aabdbfb7823c553945ae5367e653a8d0c",
+  "context_sha256": "30bde130bff0e2f04562b499683de9b0259672c4903a40291a2400f06430b5b0",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      449
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "분리발주 예정이라는 조건을 근거로 이번 확정원가에 자동포함 불가 설명. 미래에도영구변경불가를주장하지않음."
+}

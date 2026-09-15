@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-S01",
+  "answer_sha256": "92c76fa69649979ece55156d3e43231c1b499a04caf93eb05c30b38bb6c7187a",
+  "context_sha256": "a5bd1285432541e4b7be79e1dd1a044582ce471896d79a1f5410ea951557ee7a",
+  "spans": [
+    {
+      "start": 202,
+      "end": 230,
+      "quote": "기존 한빛IT 원장은 실제 발급 증명서를 의미하므로",
+      "label": "contradiction",
+      "reason": "기존 원장 역시 합성 자료이며 실제 발급 증명서 아님.",
+      "evidence_ids": [
+        "C01-PROFILE-1.0.0-r1-CH-2fcaf8ec8e85"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      374
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "가정 분기가 기존 마스터를 변경하지 않는 결론 자체 정확."
+}

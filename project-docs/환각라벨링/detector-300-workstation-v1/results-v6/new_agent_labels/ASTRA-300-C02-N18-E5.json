@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N18-E5",
+  "answer_sha256": "1f8de90a1fc9a7974eca252ed462f491a963eea83e245c23969a0863e6898baf",
+  "context_sha256": "8be52d0cd09d7ea2784440ea3b43bec61d95c75071b3fa290982e767dc4e4bf2",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      447
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "착수일120일을 계약일 기준과 임의동일시할 수 없음. 실제두날짜가 절대같을수없다는 주장이 아닌 확정근거 없음 문맥."
+}

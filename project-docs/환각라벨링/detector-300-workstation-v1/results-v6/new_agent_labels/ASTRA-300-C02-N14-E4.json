@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N14-E4",
+  "answer_sha256": "7af45440a0d1a128be9bfee8f486ce8bb9dcb9edd2a353ad295c738a29895802",
+  "context_sha256": "4bdcd6c178aa9df5aa52b691c9890a7b7b3838b8b3eac34d9832d0bb302253e0",
+  "spans": [
+    {
+      "start": 0,
+      "end": 57,
+      "quote": "차등점수제를 적용하는 사업으로 평가기를 설정해도 되는지에 대한 판단은 **가능하다**고 볼 수 있습니다",
+      "label": "contradiction",
+      "reason": "기술능력평가 차등점수제 미적용을 명시하므로 적용 사업으로 설정 불가.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-c71b73387303ff68-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 405,
+      "end": 453,
+      "quote": "**차등점수제가 적용되는 사업**에서도 **평가기 설정이 가능**하다고 볼 수 있습니다",
+      "label": "unsupported",
+      "reason": "차등점수제 미적용 근거로 적용 설정 가능을 유추할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01465791-000-c71b73387303ff68-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      454
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "중간 인용은 정확하나 결론이 반대."
+}

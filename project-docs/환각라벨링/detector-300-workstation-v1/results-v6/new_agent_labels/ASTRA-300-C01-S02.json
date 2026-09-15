@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-S02",
+  "answer_sha256": "9e0502c6921f6304f60c7ebf35a2af8a70ca7eec064f3e581359c194c568a4c5",
+  "context_sha256": "2386b9423f77b19617078b75c6bafe319efdaed7ff7e7313b107f9d5050f9656",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      886
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "운영SW4.5백만원+시험환경1.8백만원, 마진15% 분모 적용 및 VAT포함37,420,064 정확."
+}

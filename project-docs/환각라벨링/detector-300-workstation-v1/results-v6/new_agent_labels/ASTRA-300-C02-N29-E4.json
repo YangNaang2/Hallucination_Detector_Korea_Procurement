@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N29-E4",
+  "answer_sha256": "bfd884713e67d3ac67f6211b12f4eadcbb364f1b391331e85b8d137b4772d0b1",
+  "context_sha256": "a6c75a4a5bac3ed4b2c69e998891e05034d4083c6f94e42a735a2606a41a95f3",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      517
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "제공 발췌에 이 사업의 구체 복구시간이 없음을 명시적으로 설명하지 않음.",
+  "review_note": "타공고4시간을 임의재사용불가 결론은 타당. 평가표/보안조건은 지지되나 직접 복구시간 근거로는 약함."
+}

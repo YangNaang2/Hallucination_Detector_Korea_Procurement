@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N28-E5",
+  "answer_sha256": "15eed785531f434b3e33e8bb48df2f31d15ce81eee6ca9ac415e401a5d647447",
+  "context_sha256": "ba5f3f104fc13b8e8551a3f93a3a70ed0d82d22b03b1b629d16de26b2871d505",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      489
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "최초검색결과3초 요구와 대량데이터/큰이미지/동영상 예외 요약 지지. 평균화면로딩으로 임의대체 불가."
+}

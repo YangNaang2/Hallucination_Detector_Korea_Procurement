@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N05-E3",
+  "answer_sha256": "62766e530d9d08715395858142ba07d06b8d5bf71617a5b03038b064f5a63d0b",
+  "context_sha256": "409a10275791bf4df59b6fa1c8053d684dffd263d6965476f5ee51447e142e11",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      367
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "토큰추적/한도/자동차단,200만원한도 용역비포함 정확."
+}

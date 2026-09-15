@@ -1,0 +1,13 @@
+{
+  "parent_identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "run_id": "v6-native-parser-recovery-1",
+  "route": "/completion",
+  "seed": 916,
+  "n_predict": 512,
+  "temperature": 0,
+  "top_k": 40,
+  "top_p": 1,
+  "min_p": 0,
+  "source_sha256": "d30ebef01d47ad474d693c9e930536fd77a9dd196fd5d5d1bef39a69a2800e62",
+  "reason": "two repeated peg-native chat parser failures; preserve raw completion; separate run and metrics"
+}

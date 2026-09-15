@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N21-E2",
+  "answer_sha256": "80eedcb80b4fcfae162fe4a601a7e4d96903a3a04d966b8b509552b223e2d07f",
+  "context_sha256": "d45111f788727db04c92dbdf7bba8c08f48318f426fac9c320842157098d404b",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      576
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "PM/PL 정규직 조건, 불가피한 사유 외 교체불가 조건을 함께 제시하여 원문과 일치."
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N11-E2",
+  "answer_sha256": "e05a5cc4a99fc2686407936d04729418270aa55de0e3040fdce754e580ab34e3",
+  "context_sha256": "f55456eee73b29e1b007de3f19b1404cfbff3180d65e12c730c7190fe534a065",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      666
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "평가식에 공동수급 지분이 있다고 별도 참가허용을 확정하지 않는 구분 타당."
+}

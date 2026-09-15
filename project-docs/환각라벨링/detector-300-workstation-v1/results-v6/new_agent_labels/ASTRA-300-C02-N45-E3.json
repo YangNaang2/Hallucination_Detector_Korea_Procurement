@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N45-E3",
+  "answer_sha256": "53aba3f3474a34b93025c0656396bce0f3332279e73e59ff538554c09712dc6e",
+  "context_sha256": "1ac011714b2f280b3b8d51e9325a2ee8f660efa66be808465c18d35271997856",
+  "spans": [
+    {
+      "start": 344,
+      "end": 373,
+      "quote": "이는 상시 방문 지원을 수행하는 인력과 구분되어 있다",
+      "label": "unsupported",
+      "reason": "비상주 유지보수 요원이 상시방문 지원도 수행할 수 있으며 별도 인력분리 명시 없음.",
+      "evidence_ids": [
+        "L1-R26BK01593644-000-9b7dbaefc2a36fe5-CH-00002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 634,
+      "end": 663,
+      "quote": "이는 상시 방문 지원을 수행하는 인력과 구분되어 있다",
+      "label": "unsupported",
+      "reason": "비상주 유지보수 요원이 상시방문 지원도 수행할 수 있으며 별도 인력분리 명시 없음.",
+      "evidence_ids": [
+        "L1-R26BK01593644-000-9b7dbaefc2a36fe5-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      718
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "비상주라고 방문지원 의무 무시불가 결론 정확. 역할분리를 만들어낸 부분만 표시."
+}

@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-N48-E4",
+  "answer_sha256": "56eae37a358e1ede401bc657d75cd232b71123697f691f53e55241a632d92847",
+  "context_sha256": "dd8132acb7b7bc7e4b569ff59b7f5751f53687e3ca3d091e7a1f1a1baa4cae88",
+  "spans": [
+    {
+      "start": 418,
+      "end": 469,
+      "quote": "FP 자료 작성은 **사업수행 계획서** 및 **개발완료 테스트 계획서**에 포함되어야 하며",
+      "label": "unsupported",
+      "reason": "단계별 SW사업정보 산출물 리스트 명시는 있으나 FP 자료를 개발완료 테스트계획서에 포함 의무는 없음.",
+      "evidence_ids": [
+        "L1-R26BK01605618-000-d5a3ab742345a7d4-CH-00019"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      618
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "제공발췌에 FP 전문성 직접 요건 없음; 일반 SW사업정보 의무로 유추했음을 명확히 하지 않음.",
+  "review_note": ""
+}

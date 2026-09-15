@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N19-E4",
+  "answer_sha256": "88705555ba036e1d18c21ab0aa2ee251dc723ff240b2d4bc349cb211432bcb2e",
+  "context_sha256": "884962680742f09ae75cc0bd4e474ab4b1ea49efdb9658b4945f56bddde08791",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      760
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "시큐어코딩·접근권한·형상관리와 기능테스트는 구분되는 요구사항. 기능테스트만으로 충족불가 결론 지지."
+}

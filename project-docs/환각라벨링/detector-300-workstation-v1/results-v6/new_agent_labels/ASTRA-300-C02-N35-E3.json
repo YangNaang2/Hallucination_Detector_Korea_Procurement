@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C02-N35-E3",
+  "answer_sha256": "625206c29d044f40455069696da90cd03d997de0c75f1234d873501312729fab",
+  "context_sha256": "74384bb66e26d6752f88de0265bdb81bf7783023238e5e9d3f6ad49f13486225",
+  "spans": [
+    {
+      "start": 67,
+      "end": 92,
+      "quote": "하도급을 실시하는 경우에만 제출해야 하는 문서",
+      "label": "contradiction",
+      "reason": "제출대상은 일정 대금지급 위반사실 통보 후1년 이내 업체이며 단순 하도급 실시 여부로 정하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01415425-000-d1e61af4ee0bf2ae-CH-00007"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 187,
+      "end": 225,
+      "quote": "\"하도급을 실시하려는 경우\"에만 제출해야 하는 문서로 명시되어 있으며",
+      "label": "contradiction",
+      "reason": "13-2 승인절차와14-1 직불확약 제출대상을 혼동.",
+      "evidence_ids": [
+        "L1-R26BK01415425-000-d1e61af4ee0bf2ae-CH-00007"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 462,
+      "end": 521,
+      "quote": "하도급 대금 지급 비율은 \"소프트웨어 진흥법\"에 따라 제한되어 있으며, 이는 하도급의 허용 여부와 무관하다",
+      "label": "unsupported",
+      "reason": "하도급금액 제한비율은 허용범위와 관련. 대금지급비율 명세와 혼동.",
+      "evidence_ids": [
+        "L1-R26BK01415425-000-73cbf96b2bda78e6-CH-00028"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      522
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "직불확약 제출이 무조건하도급허용 아니라는 결론 자체는 타당."
+}

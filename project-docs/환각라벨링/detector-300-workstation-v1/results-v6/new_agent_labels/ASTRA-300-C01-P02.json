@@ -1,0 +1,73 @@
+{
+  "question_id": "ASTRA-300-C01-P02",
+  "answer_sha256": "20310275bbc19444eadff5fc89f9ba4a7720c8d4345d47c34a8aff706967c6fa",
+  "context_sha256": "50da479a32a48930db9bbcc9b3bc49f6764f70d5cb041cc17f85769cd950c4dd",
+  "spans": [
+    {
+      "start": 11,
+      "end": 74,
+      "quote": "**C01-PRJ-02의 69,999,999원을 7천만원으로 반올림해서 실적 금액 조건을 만족한다고 해도 된다**",
+      "label": "contradiction",
+      "reason": "계약총액69,999,999는70백만원미달. 공급가액 원단위반올림과총액하한충족은별도.",
+      "evidence_ids": [
+        "C01-PERF-1.0.0-r1-CH-6975e70ecc4f"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 314,
+      "end": 374,
+      "quote": "**69,999,999원을 7천만원으로 반올림**하는 것은 **반올림 정책**에 따라 허용 가능한 조정입니다",
+      "label": "contradiction",
+      "reason": "원단위공급가액계산정책은총액인상근거아님.",
+      "evidence_ids": [
+        "C01-PERF-1.0.0-r1-CH-6975e70ecc4f"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 94,
+      "end": 123,
+      "quote": "**반올림 정책**에 따라 계약금액을 조정할 수 있음",
+      "label": "contradiction",
+      "reason": "총액고정설정값을변경허용하지않음.",
+      "evidence_ids": [
+        "C01-PERF-1.0.0-r1-CH-6975e70ecc4f"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 397,
+      "end": 426,
+      "quote": "**반올림 정책**에 따라 계약금액을 조정할 수 있음",
+      "label": "contradiction",
+      "reason": "총액고정설정값을변경허용하지않음.",
+      "evidence_ids": [
+        "C01-PERF-1.0.0-r1-CH-6975e70ecc4f"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 486,
+      "end": 526,
+      "quote": "**69,999,999원을 7천만원으로 반올림**하면 해당 조건을 만족함",
+      "label": "contradiction",
+      "reason": "총액1원미달을임의올림으로충족처리가능하지않음.",
+      "evidence_ids": [
+        "L1-R26BK01487327-000-967ceaada41d70b7-CH-00018"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      623
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "VAT/공급가액계산과실적하한기준혼동."
+}

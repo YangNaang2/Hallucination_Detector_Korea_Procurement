@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N10-E3",
+  "answer_sha256": "6040738785acf555912e962143b5fbcc6fd74928119c5df339ee2329fa4ee02e",
+  "context_sha256": "58dc0f3f883dbc7c8b7fe9c45b085fa60832337e04898a8fe19335dcc05454ab",
+  "spans": [
+    {
+      "start": 328,
+      "end": 334,
+      "quote": "6.2 다.",
+      "label": "citation_error",
+      "reason": "자료1 실제번호6.1 다. 내용20%/3개사는 정확.",
+      "evidence_ids": [
+        "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00021"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      499
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "대표사포함3개이내 최소20% 조건 정확."
+}

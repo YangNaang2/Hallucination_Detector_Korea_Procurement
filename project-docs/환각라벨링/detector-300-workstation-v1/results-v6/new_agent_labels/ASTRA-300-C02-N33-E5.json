@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N33-E5",
+  "answer_sha256": "3753214f0ddab17afa9a748558b6f786c0d594a6c299dc396ee492da68c5e530",
+  "context_sha256": "95be9a87fdabe6abf83a67a5138c77f196dbbbf908be03cf542328d90d0bf008",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      390
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "재직증명서와 건강보험자격득실확인서 요구로 구두확인만 불가 정확."
+}

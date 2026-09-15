@@ -1,0 +1,73 @@
+{
+  "question_id": "ASTRA-300-C02-N51-E2",
+  "answer_sha256": "22849f9a2af31b27a404bb64cc920437c4803587b66641daeef4bdcda683d910",
+  "context_sha256": "a0ca280ad928d06d9112d8d1e6603b76e2362a2b3026245ca2f6fffd18727624",
+  "spans": [
+    {
+      "start": 393,
+      "end": 426,
+      "quote": "헬프데스크 전담자 조건을 삭제할 수 있는 **근거가 있다**",
+      "label": "contradiction",
+      "reason": "근거1 MPR-011은 전담자 1인 필수 지정. 근거2 공수 관리 제외가 이를 삭제하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00013"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 550,
+      "end": 583,
+      "quote": "헬프데스크 전담자 조건을 삭제할 수 있는 **근거가 있다**",
+      "label": "contradiction",
+      "reason": "근거1 MPR-011은 전담자 1인 필수 지정. 근거2 공수 관리 제외가 이를 삭제하지 않는다.",
+      "evidence_ids": [
+        "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00013"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 618,
+      "end": 639,
+      "quote": "헬프데스크 전담자 조건을 삭제해도 된다",
+      "label": "contradiction",
+      "reason": "필수 MPR-011과 충돌",
+      "evidence_ids": [
+        "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00013"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 159,
+      "end": 162,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "공수 제외 문구는 근거2",
+      "evidence_ids": [
+        "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00039"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 429,
+      "end": 432,
+      "quote": "[2]",
+      "label": "citation_error",
+      "reason": "헬프데스크 조건은 근거1",
+      "evidence_ids": [
+        "L1-R26BK01549747-000-f868bdca87f7fdfa-CH-00013"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      642
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": ""
+}

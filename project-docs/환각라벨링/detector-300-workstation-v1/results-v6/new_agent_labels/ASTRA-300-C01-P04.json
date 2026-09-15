@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-P04",
+  "answer_sha256": "54ae4ccb955e2b689d102d64ac56915035feae3b35fee7e6cbd4f9f07c29b395",
+  "context_sha256": "1c4d4fa9489f6ff818fe80306e64a28201e165ab389535a86284da01e3610654",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      439
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "미보유0036으로 단독 조건 미충족; 분담이행 대안 원문과 일치. 전체 적격을 보장하지 않음."
+}

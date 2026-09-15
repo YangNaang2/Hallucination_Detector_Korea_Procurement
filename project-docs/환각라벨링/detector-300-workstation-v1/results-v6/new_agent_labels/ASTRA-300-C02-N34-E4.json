@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C02-N34-E4",
+  "answer_sha256": "c468eced100f211e27e015646c203638f5b0b08beb2e91b3bce457da4bcc7854",
+  "context_sha256": "b742fcddd68e02616d49888e766cc9ec88f6390f1f0df4eb02841ceee2ca6a10",
+  "spans": [
+    {
+      "start": 90,
+      "end": 151,
+      "quote": "인천지역 상품을 우선적으로 구매해야 하는 **의무**로 명시되어 있으며, 이는 **의무 조건**으로 간주됩니다",
+      "label": "contradiction",
+      "reason": "제목은 권장, 본문은 지역경제활성화 노력 요청. 구매의무 확정으로 확대.",
+      "evidence_ids": [
+        "L1-R26BK01518315-000-e6f876c2fe7daba0-CH-00004"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 191,
+      "end": 242,
+      "quote": "이 조건은 **의무**로 규정되어 있으며, 문서에서 명시적으로 **의무 조건**으로 간주되고",
+      "label": "contradiction",
+      "reason": "우선구매 권장/노력을 확정 구매의무로 변형.",
+      "evidence_ids": [
+        "L1-R26BK01518315-000-e6f876c2fe7daba0-CH-00004"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 400,
+      "end": 425,
+      "quote": "**문서에 명시된 의무 조건을 변경하는 것**",
+      "label": "unsupported",
+      "reason": "원문은 모든납품 원산지 의무나 변경금지 조건을 규정하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01518315-000-e6f876c2fe7daba0-CH-00004"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      536
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "원산지 의무로 바꾸면 안된다는 결론은 옳으나 설명에서 권장을 의무로 오해."
+}

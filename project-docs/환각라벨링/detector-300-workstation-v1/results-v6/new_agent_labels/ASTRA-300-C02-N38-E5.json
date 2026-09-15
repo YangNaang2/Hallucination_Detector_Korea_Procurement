@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N38-E5",
+  "answer_sha256": "65ce954f9ceb4711dbfa58d52ec2b0c7f71e29cce525340f740010fa72a04c53",
+  "context_sha256": "1f2a45160bb114f273b19cf6668255045ea34264155be2da9302f2c179ff4a5b",
+  "spans": [
+    {
+      "start": 307,
+      "end": 324,
+      "quote": "[2] 공개 공고 원문에 따르면",
+      "label": "citation_error",
+      "reason": "기술85% 단서와 합산76.5 설명은 자료1. 자료2는 재공고 문장만 포함.",
+      "evidence_ids": [
+        "L1-R26BK01604996-000-3c970206f616ed99-CH-00012"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      618
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "SW사업 기술85%단서 생략불가 정확. 합산 일반설명과 함께 기재했으나 단서를 유지."
+}

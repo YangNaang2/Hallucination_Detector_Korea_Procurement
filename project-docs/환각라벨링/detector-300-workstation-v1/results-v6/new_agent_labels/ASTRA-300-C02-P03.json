@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C02-P03",
+  "answer_sha256": "3e7bae63f82c8945223423dc881aa21fe97beb8f3bb2789a67224c23f00ab79b",
+  "context_sha256": "64ab8ce23e176a724a02c3ae249ca5da258a35d31f6b536a460ef88357840403",
+  "spans": [
+    {
+      "start": 111,
+      "end": 127,
+      "quote": "P-02가 이미 수행하고 있다",
+      "label": "unsupported",
+      "reason": "근거3은 5월 시작 배치 초안. 현재 수행 확정 아님",
+      "evidence_ids": [
+        "C02-PLAN-1.0.0-r1-CH-002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 236,
+      "end": 261,
+      "quote": "중급 유지관리 기술자로의 역할을 수행하고 있다",
+      "label": "unsupported",
+      "reason": "기존 배치의 역할은 확인되지 않고 신규 역할은 계획",
+      "evidence_ids": [
+        "C02-PLAN-1.0.0-r1-CH-002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 305,
+      "end": 328,
+      "quote": "P-02가 이미 해당 역할을 수행하고 있다",
+      "label": "unsupported",
+      "reason": "배치 계획을 현재 수행 사실로 단정",
+      "evidence_ids": [
+        "C02-PLAN-1.0.0-r1-CH-002"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 131,
+      "end": 134,
+      "quote": "[1]",
+      "label": "citation_error",
+      "reason": "P-02 정보는 근거2,3",
+      "evidence_ids": [
+        "C02-STAFF-1.0.0-r1-CH-81cbb0e01cdb"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      370
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": ""
+}

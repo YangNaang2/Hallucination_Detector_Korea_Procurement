@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-P01",
+  "answer_sha256": "604b2a125ed4c2a8568fd8f8e72d668626d923d4f0c20c97cc5b861f72bdccec",
+  "context_sha256": "596e454c66f2c95f1dcb408be9ab328c714b834748c86fedbb3a8a0ce7d3c94f",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      493
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "금액조건만비교하는질문에70백만원VAT포함하한충족정확; 합성상태보존."
+}

@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N37-E1",
+  "answer_sha256": "bab92d72e71a0bb5615cc4edcb5bbe8bf786a5a5d42d7f4224e6d40c0f27aa75",
+  "context_sha256": "0e6f7d39b925801875eae34e6ad2fe5a6d7237cf9bb288cb3071636365d528a7",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      417
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "대표사포함4개사 이하,10%이상,계열사/중복금지 원문과일치."
+}

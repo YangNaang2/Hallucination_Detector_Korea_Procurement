@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C01-N49-E3",
+  "answer_sha256": "24fbbd9d6713e8cf74d6eff542c3e248b0f5794ff7bea1fc81794191246851a7",
+  "context_sha256": "a2f041136f934b42b8333365d75737b0ec4972acd1cce094ba4434ea4776cb27",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      792
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "길이 제한으로 사양 인용 말미가 잘림. 서버 구매·설치 포함이라는 핵심 결론은 설명.",
+  "review_note": "서버필수요구 및 시뮬레이터검증 조건 원문과일치."
+}

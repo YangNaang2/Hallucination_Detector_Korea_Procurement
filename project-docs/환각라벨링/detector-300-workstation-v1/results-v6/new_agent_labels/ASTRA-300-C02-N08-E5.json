@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N08-E5",
+  "answer_sha256": "8f057efb4633e42bdd7472fda102536c38a9d7d3537da9581607af72c4f32b25",
+  "context_sha256": "a7f86f1895674a275e8c5695d95e3409acb06f9309fcd5ad5e1456d90b45c9dd",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      568
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "별도 게시자료를 찾아 교차검토해야 한다는 질문의 직접 요구에 답하지 못하고 일반 접근성 효과만 설명.",
+  "review_note": "자료보완 절차는 근거 지지, 투명성 효과는 의견으로 표현."
+}

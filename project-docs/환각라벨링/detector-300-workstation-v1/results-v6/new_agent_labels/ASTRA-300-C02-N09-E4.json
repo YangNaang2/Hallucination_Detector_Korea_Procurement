@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N09-E4",
+  "answer_sha256": "3d9aeceb9d8ec3f604357d3e6e0bda71cf9e2696d6029d065e14cd9bacffe586",
+  "context_sha256": "6538c8de6a53fcf6cd33430fd218f0a28011e0bb1305d03ad5eed0aeb9508a77",
+  "spans": [
+    {
+      "start": 495,
+      "end": 535,
+      "quote": "퇴직공무원 채용 현황이 없는 경우는 제출하지 않아야 한다고 명시하고 있다",
+      "label": "unsupported",
+      "reason": "특정 채용 업체 제출대상 명시일 뿐, 현황없음 자료 제출 금지를 명시하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01501352-000-e3ef23f53f8fb25d-CH-00002"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      586
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "밀봉날인, 항목, 정성자료 식별금지 내용은 정확."
+}

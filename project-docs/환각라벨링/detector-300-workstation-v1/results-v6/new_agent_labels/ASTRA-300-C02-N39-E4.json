@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N39-E4",
+  "answer_sha256": "92d09ce54e6106d00f88d065f63d2c6b5f95dcfbb45c069c85417a9709d14504",
+  "context_sha256": "61be74bd556827b651c4d68f55dfef55c134ba94afbcbb57f1565c9ac5229273",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      406
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "우편불가/발송시입찰무효/방문접수 정확."
+}

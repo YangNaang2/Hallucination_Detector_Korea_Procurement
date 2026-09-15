@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N23-E5",
+  "answer_sha256": "4cf4de4c90a7167863ad9388c1d5edf1bb04be0810bc38bf6b6738beee419fff",
+  "context_sha256": "7a6737f3316cff242b4c3defc32c350859dc4ed034bbb095355a24231c51450a",
+  "spans": [
+    {
+      "start": 458,
+      "end": 495,
+      "quote": "**마감 후 수신이 완료된 경우에도 제안서는 유효하다고 간주**된다",
+      "label": "contradiction",
+      "reason": "마감시각까지 수신 완료 요구와 반대.",
+      "evidence_ids": [
+        "L1-R26BK01608743-000-e563093c07dfc208-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 653,
+      "end": 666,
+      "quote": "정답은 **\"예\"**이며",
+      "label": "contradiction",
+      "reason": "마감후 수신은 유효하지 않다는 원문 조건과 반대 결론.",
+      "evidence_ids": [
+        "L1-R26BK01608743-000-e563093c07dfc208-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      815
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "응답 말미가 길이 제한으로 잘림.",
+  "review_note": "원문은 정확히 인용했지만 시간조건과 최종답을 뒤집음."
+}

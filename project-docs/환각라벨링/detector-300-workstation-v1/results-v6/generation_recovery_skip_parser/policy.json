@@ -1,0 +1,15 @@
+{
+  "parent_identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "run_id": "v6-skip-parser-recovery-1",
+  "server_flags": "--skip-chat-parsing",
+  "endpoint": "http://127.0.0.1:18771",
+  "route": "/completion",
+  "seed": 916,
+  "n_predict": 512,
+  "temperature": 0,
+  "top_k": 40,
+  "top_p": 1,
+  "min_p": 0,
+  "source_sha256": "a48e9746da1550e00479189d0b37cdf1dc8a7e693686ccb91ff1213dee3c33cd",
+  "reason": "two repeated peg-native chat parser failures; preserve raw completion; separate run and metrics"
+}

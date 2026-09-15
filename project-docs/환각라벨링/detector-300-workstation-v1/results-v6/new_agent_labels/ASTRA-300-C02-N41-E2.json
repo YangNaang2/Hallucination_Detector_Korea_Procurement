@@ -1,0 +1,95 @@
+{
+  "question_id": "ASTRA-300-C02-N41-E2",
+  "answer_sha256": "6acaf9ff2fb3a84660530e022e0e9f832d94d249899531d055a66d5cf3df5448",
+  "context_sha256": "328d3e9268b78bd3e266a0846d265e1ef9e4d2e442529c2d6127e051f5c4d2ae",
+  "spans": [
+    {
+      "start": 11,
+      "end": 26,
+      "quote": "**인천을 제외해도 된다**",
+      "label": "contradiction",
+      "reason": "허용지역에 인천광역시 포함을 명시.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 435,
+      "end": 450,
+      "quote": "**인천을 제외해도 된다**",
+      "label": "contradiction",
+      "reason": "허용지역에 인천광역시 포함을 명시.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 471,
+      "end": 486,
+      "quote": "**인천을 제외해도 된다**",
+      "label": "contradiction",
+      "reason": "허용지역에 인천광역시 포함을 명시.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 243,
+      "end": 259,
+      "quote": "**인천을 제외할 수 있음**",
+      "label": "contradiction",
+      "reason": "공고 지역조건에서 인천을 삭제할 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 409,
+      "end": 425,
+      "quote": "**인천을 제외할 수 있음**",
+      "label": "contradiction",
+      "reason": "공고 지역조건에서 인천을 삭제할 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 520,
+      "end": 536,
+      "quote": "**인천을 제외할 수 있음**",
+      "label": "contradiction",
+      "reason": "공고 지역조건에서 인천을 삭제할 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 269,
+      "end": 288,
+      "quote": "**인천을 포함하지 않아도 된다**",
+      "label": "contradiction",
+      "reason": "회사위치가 인천일 의무와 허용범위에 인천 포함은 별개. 허용지역 제외 결론 잘못.",
+      "evidence_ids": [
+        "L1-R26BK01553185-000-79dbf51f4ebe15fa-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      556
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "지역 범위와 개별업체 소재지 선택을 혼동."
+}

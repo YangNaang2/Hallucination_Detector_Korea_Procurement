@@ -1,0 +1,4651 @@
+{
+  "title": "정답 확인 후 선별한 KLUE 동작 시연 50건",
+  "purpose": "post-selected success demonstration; NOT evaluation or generalization evidence",
+  "selection": "fixed current v6 predictions, 25 label-empty no-warning answers; 25 positive answers with character overlap and warning precision >= .5; no uncertain label; evaluation then dev then train, ID order",
+  "source_answers": 295,
+  "source_access_denials": 5,
+  "selected": 50,
+  "partition_counts": {
+    "evaluation": 21,
+    "dev": 22,
+    "train": 7
+  },
+  "model": {
+    "model": "contrast3",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.3,
+    "answer": {
+      "tp": 23,
+      "fp": 3,
+      "fn": 12,
+      "precision": 0.8846153846153846,
+      "recall": 0.6571428571428571,
+      "f1": 0.7540983606557377
+    },
+    "tn": 12,
+    "false_alarm_rate": 0.2,
+    "characters": {
+      "tp": 668,
+      "fp": 468,
+      "fn": 2648,
+      "precision": 0.5880281690140845,
+      "recall": 0.2014475271411339,
+      "f1": 0.3000898472596586
+    }
+  },
+  "human_approved": false,
+  "all_partitions_historically_exposed": true,
+  "source_label_path": "results-v1/annotation/adjudicated/proposals.json",
+  "labels_digest": "9e2b21defd0097dceb3424216e8301220343cfe5913902fce6955a215b3249f3",
+  "code_sha256": "9061e91c8f86e020b6d343b61039b7e19f8b9ed17b78873443511e6303ba7c83",
+  "candidates": {
+    "normal": 68,
+    "detected": 121
+  },
+  "cases": [
+    {
+      "question_id": "ASTRA-300-C01-N02-E5",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "8d7bfbb778abfd977c0b016db5cacf05f5ee633715b9dac3dd45658c535c0a99",
+      "context_sha256": "58e10b795a1b86b7de37bdd721e68ed69cc66fa7201f60197075ff901ed9c4ce",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N13-E4",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "5d0c319f2b93842ff16f03f3724c05e509ca394fd9b47c873232b22c857bec61",
+      "context_sha256": "d51f1096d20fa835d980f38f00f574d28711563549efaca9e8cc26fd18ec39c4",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N32-E5",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "11bcfb97feaefac86e0ec85f407731c8e16108a212237041af6834960230d06d",
+      "context_sha256": "9e432c7e2f53a21c98ba847bee1635636027b3af6eb5461f1da3fa6c85487e53",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N02-E2",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "571a1b45fe698d808a6341d4f1e3438573e3f20243797293f449de9223ed03cf",
+      "context_sha256": "4245ecc732580fd6e9d1bf01176998fc47a695f5803c340c6f6dd493b529e6d8",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N17-E2",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "9bb801d2bfda3ada9004579a37aba9c6c43c902e8de21f4feba181a08178af00",
+      "context_sha256": "d890e42429fe270fc076b2556bf2e8c728b5f4e78df2c33e90bdedb6be54e8de",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N44-E5",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "705dfc2019f7937f4008558655cda05d414c69c54071f9352760fe9b91c11301",
+      "context_sha256": "14630e02c6089536c446b8bb21ce07ce9810be8c6eaee760443ecf959ee54b82",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N32-E3",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "c0fd7b2c385f51056486c4d4064503480986260298919f3bba943dd06ed299a4",
+      "context_sha256": "1f31f6bbc02d83b8908a2c6078b9e4338a422be6afcd468398f382451e454833",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N13-E3",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "d230dda4def98b4b263ce7f444da8a6233c9cace3a0048c1bb9320f767797b09",
+      "context_sha256": "f94caa01ad7e0effbb23207c54330fab2a6973fe0b221dd3d6caef54246060bc",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N17-E4",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "8ab54205d769ddc6bda107e7d78e3ba77611401bf920f894dde99478e9dff072",
+      "context_sha256": "b291a39065565ef60b9ca9ad41499028c29c5c7b1a3a12159de515b293ca6194",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N36-E5",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "9c1636c762715159337ee1170e8e6f6c6e952e5745513fb8fb242cee83831d52",
+      "context_sha256": "c60562546559baebc070fb695ce7eec1c0f4a0ab3c09916a12bd650c7ed0e656",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N44-E2",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "1894418577e72e5e467b1ffd0f764d5996b04e42669d4d39c8dd4da16bcc4307",
+      "context_sha256": "c902a511d91758d597134a64dc346df259ba45bf7f1c0f6ab88cfc815e7361b0",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-P05",
+      "partition": "evaluation",
+      "category": "normal",
+      "answer_sha256": "205c8d738e71ac0dea63bea91814a50a1392eb9625c7c260aaaf75d844343cd8",
+      "context_sha256": "f7d2ad4e425ddfde2f2dbb48b99cd7af4315ba7b9c50e4a42ad90e3be8dea3c7",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "35ef91b3f41266ce9cdc9632c428b6a8558a08d797436af6a7d9733e79ac08b3",
+      "context_sha256": "a75d9f7c0900a3a51259d80c963accca191324e49be9616e547442d3c0d16c10",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N45-E3",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "09a68e8027daadc6650e76f2415839d45203e7f5ca01352af0f58a3119bafc3f",
+      "context_sha256": "1ac011714b2f280b3b8d51e9325a2ee8f660efa66be808465c18d35271997856",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N03-E1",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "aad8a4187894240a9ba62795011892c652c4a32f5c79472952a7a61562515ec9",
+      "context_sha256": "1295af41982611c96f8e8382de54f1b527a415ab44553fee2746f1b026b7efba",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N45-E4",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "a20934ccc266ccdc7185ae2a8a636c784f0a58fc53cd64272d8a0adb865d4918",
+      "context_sha256": "dfa9e6f151286d9743dfdd632322c29297d779e9ae61bb64c66903b7700d7dc3",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N45-E5",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "e176dab0671ffbd32c4e58c6866f2129f9b471a7c9a1c8d2e5897a1992daa2ba",
+      "context_sha256": "db47a16f564748e965f7a33fa45049e8f6e034d8c963333100641e574c94e1c8",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N07-E4",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "bae1924b0dcf04f8cee7450cda23f59d26b85b5e7913711a289aafb17b9ec91b",
+      "context_sha256": "c718df6008633893ba80780c526ad6f952c95471fc22c227b6b63ae015264f46",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N29-E2",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "48a662dfd6e8bbc4e1c49a3f3eb37f97a1cf83c90fbbb38b3636ed82b6dcabe4",
+      "context_sha256": "e89a69c00807ab175aa7bcd4e057c0512c2a0e8751ebc4d5dcfd8f106d2db336",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N46-E5",
+      "partition": "dev",
+      "category": "normal",
+      "answer_sha256": "5ccbb694cf6f5f8c0cebda17a22c9f625c5013e8700f65a65a41be2ff2b86af9",
+      "context_sha256": "27f9eb7acd3eff43fdafed5c620426c40ea48b2bb24b61ea2fbe56d3dfe4774f",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N12-E5",
+      "partition": "train",
+      "category": "normal",
+      "answer_sha256": "619a2b9fd5645d3a6d6454045d8266eb73de9abe5da54a688fb7199949462800",
+      "context_sha256": "a903d19996b4dcc867a23f87f528188bec14f7af6e7b20b11b56c3b4305b0618",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N16-E1",
+      "partition": "train",
+      "category": "normal",
+      "answer_sha256": "f396e7b4fb5104166a0ba4e4364af6378581598a769429a74974759b376b7161",
+      "context_sha256": "e766b075e2747a80f4fb18610525f10674855e576d88938acb47aeb2d27b4aed",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N21-E1",
+      "partition": "train",
+      "category": "normal",
+      "answer_sha256": "00f8b6c94f9214f289d8edeac8075d6d88fba11257a15e8db63edabd3d276b2b",
+      "context_sha256": "f58f2a6c57eccf0d968da785a28b191972064b9cd206bdf1705de4324f394947",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N31-E1",
+      "partition": "train",
+      "category": "normal",
+      "answer_sha256": "b83682820c97d77f8ae0859feed1ce61d6d8ecf7a7a700d57f559e012d2fd6cf",
+      "context_sha256": "e8ecb6e66386fda17217e9607b02e676a0bda4dcca2dd0df0984bc822626cd10",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N33-E4",
+      "partition": "train",
+      "category": "normal",
+      "answer_sha256": "c89ca043291426e377d6ef6176e76dc0a753b0a4b8e4525bf56a413303787ce5",
+      "context_sha256": "229d79c646669d389b77ff7b56287e02c4391865bc9ea88754b27a771f144cb2",
+      "labels": [],
+      "warnings": [],
+      "character_metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N22-E5",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "e9c25d5233a214006d8df4950b43f87eddf8e3480f479aa4afaae4f6449c3037",
+      "context_sha256": "5b17a3883344bbcecda0625a1921202df7874ac26b161a191261dd406e9b9a56",
+      "labels": [
+        {
+          "start": 8,
+          "end": 46,
+          "quote": "제안서 전체 분량과 본문 권장 분량을 하나의 상한으로 저장해도 된다.",
+          "label": "contradiction",
+          "reason": "본문에 한정된 권장 분량을 전체 상한으로 통합하면 범위와 권장 성격이 달라진다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N22-E5-E1"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 11,
+          "quote": "제안서"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "quote": "전체"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "quote": "분량과"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "quote": "본문"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "quote": "권장"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "quote": "분량을"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "quote": "하나의"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "quote": "상한으로"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "quote": "저장해도"
+        },
+        {
+          "start": 43,
+          "end": 46,
+          "quote": "된다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N36-E1",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "d2848045e50305ed9b08a90e2c83387e0a790066b7b6e6520a89ed7600c7019e",
+      "context_sha256": "f3b0dddcd2c5193044417296eaedeecd4b433ce061ce101afe4f17a24ba883fc",
+      "labels": [
+        {
+          "start": 260,
+          "end": 300,
+          "quote": "\"공동계약 해당 없음\" 문구는 **법적 근거가 없는** 것으로 판단된다.",
+          "label": "unsupported",
+          "reason": "지식재산권 공동소유 조항은 공동계약 해당없음의 법적 근거를 부정하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 331,
+          "end": 364,
+          "quote": "**계약 체결 시 법적 책임과 권한을 명시하는 핵심 요건**",
+          "label": "unsupported",
+          "reason": "제공 청크는 공동계약 문구의 이 법적 성격을 설명하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 695,
+          "end": 728,
+          "quote": "**계약 체결 시 법적 책임과 권한을 명시하는 핵심 요건**",
+          "label": "unsupported",
+          "reason": "제공 청크는 공동계약 문구의 이 법적 성격을 설명하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 368,
+          "end": 398,
+          "quote": "**단순히 삭제할 수 있는 사항이 아닌 필수적 문구**",
+          "label": "unsupported",
+          "reason": "규정상 필수 문구라는 요구는 입력에서 확인되지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 438,
+          "end": 470,
+          "quote": "**계약 당사자 간의 책임과 권한을 명시하는 법적 근거**",
+          "label": "unsupported",
+          "reason": "반복된 공동계약 문구의 법적 효력 설명은 지식재산권 조항에서 도출할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 660,
+          "end": 692,
+          "quote": "**계약 당사자 간의 책임과 권한을 명시하는 법적 근거**",
+          "label": "unsupported",
+          "reason": "반복된 공동계약 문구의 법적 효력 설명은 지식재산권 조항에서 도출할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 561,
+          "end": 580,
+          "quote": "**법적 근거가 있는 필수 문구**",
+          "label": "unsupported",
+          "reason": "앞선 법적 근거 없음 주장과도 충돌하며 입력에 필수 문구 규정이 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N36-E1-E5"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 278,
+          "end": 281,
+          "quote": "*법적"
+        },
+        {
+          "start": 282,
+          "end": 285,
+          "quote": "근거가"
+        },
+        {
+          "start": 286,
+          "end": 287,
+          "quote": "없"
+        },
+        {
+          "start": 289,
+          "end": 290,
+          "quote": "*"
+        }
+      ],
+      "character_metrics": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 162,
+        "precision": 1.0,
+        "recall": 0.047058823529411764,
+        "f1": 0.0898876404494382
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N20-E3",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "7c8d53c7500e0e7c645c405caac8338ff0b1d808591f58c934c7e32455d9b0b4",
+      "context_sha256": "23f206e94d1d9122101592660cfd6b1947f186fd1715974f9b1e6dbb20070e0c",
+      "labels": [
+        {
+          "start": 28,
+          "end": 58,
+          "quote": "**연 1회** 이상의 주기를 기준으로 계획해야 한다.",
+          "label": "unsupported",
+          "reason": "제공된 입력에 연1회 보안교육 요구는 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N20-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 484,
+          "end": 512,
+          "quote": "이는 **제안서의 일반적 요구 사항**에 부합한다.",
+          "label": "unsupported",
+          "reason": "연1회 이상이 일반 요구에 부합하는 주기라는 근거는 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N20-E3-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 487,
+          "end": 493,
+          "quote": "**제안서의"
+        },
+        {
+          "start": 494,
+          "end": 497,
+          "quote": "일반적"
+        },
+        {
+          "start": 498,
+          "end": 500,
+          "quote": "요구"
+        },
+        {
+          "start": 501,
+          "end": 506,
+          "quote": "사항**에"
+        },
+        {
+          "start": 507,
+          "end": 512,
+          "quote": "부합한다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 26,
+        "precision": 1.0,
+        "recall": 0.44680851063829785,
+        "f1": 0.6176470588235294
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N44-E4",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "d7d2bad8d8e506dcc5d12fad5e25dabd518813a1f72777a1eb8e3886acba1dad",
+      "context_sha256": "29398ed7dafe78c79fa30e9f7e11f8c41d7b1767900235e160c46dd813dd3b2e",
+      "labels": [
+        {
+          "start": 80,
+          "end": 164,
+          "quote": "수탁자에 대한 관리·감독은 「개인정보보호법」시행령 제16조 및 「개인정보의 안전성 확보조치 기준」(행정안전부 고시)에 따라 1년에 1회 수행해야 한다.",
+          "label": "contradiction",
+          "reason": "연1회는 교육할 수 있다는 조항이고 시행령16조는 파기 조항의 인용이다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N44-E4-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 216,
+          "end": 238,
+          "quote": "수탁자 점검은 1년에 1회 이뤄야 하므로",
+          "label": "contradiction",
+          "reason": "점검의 연1회 의무가 아니라 교육 가능주기다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N44-E4-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 278,
+          "end": 333,
+          "quote": "「개인정보보호법」 제28조에 따라 수탁자에 대한 관리·감독을 수행하지 못한 것으로 간주될 수 있다.",
+          "label": "unsupported",
+          "reason": "원문은 영28조를 위탁시 조치로 인용하고 이런 법28조 간주효과는 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N44-E4-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 206,
+          "end": 208,
+          "quote": "법적"
+        },
+        {
+          "start": 209,
+          "end": 212,
+          "quote": "근거에"
+        },
+        {
+          "start": 216,
+          "end": 219,
+          "quote": "수탁자"
+        },
+        {
+          "start": 220,
+          "end": 223,
+          "quote": "점검은"
+        },
+        {
+          "start": 224,
+          "end": 227,
+          "quote": "1년에"
+        },
+        {
+          "start": 228,
+          "end": 230,
+          "quote": "1회"
+        },
+        {
+          "start": 231,
+          "end": 234,
+          "quote": "이뤄야"
+        },
+        {
+          "start": 235,
+          "end": 238,
+          "quote": "하므로"
+        },
+        {
+          "start": 241,
+          "end": 242,
+          "quote": "적"
+        },
+        {
+          "start": 247,
+          "end": 250,
+          "quote": "생략이"
+        },
+        {
+          "start": 251,
+          "end": 255,
+          "quote": "불가능하"
+        },
+        {
+          "start": 278,
+          "end": 287,
+          "quote": "「개인정보보호법」"
+        },
+        {
+          "start": 288,
+          "end": 293,
+          "quote": "제28조에"
+        },
+        {
+          "start": 294,
+          "end": 296,
+          "quote": "따라"
+        },
+        {
+          "start": 297,
+          "end": 301,
+          "quote": "수탁자에"
+        },
+        {
+          "start": 302,
+          "end": 304,
+          "quote": "대한"
+        },
+        {
+          "start": 305,
+          "end": 311,
+          "quote": "관리·감독을"
+        },
+        {
+          "start": 312,
+          "end": 316,
+          "quote": "수행하지"
+        },
+        {
+          "start": 317,
+          "end": 319,
+          "quote": "못한"
+        },
+        {
+          "start": 320,
+          "end": 323,
+          "quote": "것으로"
+        },
+        {
+          "start": 324,
+          "end": 327,
+          "quote": "간주될"
+        },
+        {
+          "start": 328,
+          "end": 329,
+          "quote": "수"
+        },
+        {
+          "start": 330,
+          "end": 333,
+          "quote": "있다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 61,
+        "fp": 13,
+        "fn": 69,
+        "precision": 0.8243243243243243,
+        "recall": 0.46923076923076923,
+        "f1": 0.5980392156862745
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N47-E1",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "ca0a3d4ac92b735d72f1fd9925da626a84ccdc9a937c468ad8b1c97ede2cf776",
+      "context_sha256": "6e66870506857cfd814a99cbf953d61ab1afa1a75b17b94d7a0482fc385422d7",
+      "labels": [
+        {
+          "start": 8,
+          "end": 48,
+          "quote": "네, EMS 기술인력 평가에 입사 직후 기간제 직원까지 모두 포함해도 됨",
+          "label": "contradiction",
+          "reason": "3개월이상 정규직이라는 인정기준에 반한다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N47-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 83,
+          "end": 147,
+          "quote": "\"제안사에 3개월이상(입찰공고일로부터) 재직한 정규직 기준\"이 아닌 \"입사 직후 기간제 직원\"까지 포함할 수 있음.",
+          "label": "contradiction",
+          "reason": "명시된 정규직 재직기간 조건을 반대로 해석했다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N47-E1-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 348,
+          "end": 389,
+          "quote": "이는 제안사가 기간제 직원의 재직 기간을 포함해 평가할 수 있음을 의미함.",
+          "label": "contradiction",
+          "reason": "정규직 기준이 기간제 평가 허용을 뜻하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N47-E1-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 9,
+          "quote": "네"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "quote": "EMS"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "quote": "기술인력"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "quote": "평가에"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "quote": "입사"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "quote": "직후"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "quote": "기간제"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "quote": "직원까지"
+        },
+        {
+          "start": 39,
+          "end": 41,
+          "quote": "모두"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "quote": "포함해도"
+        },
+        {
+          "start": 47,
+          "end": 48,
+          "quote": "됨"
+        },
+        {
+          "start": 115,
+          "end": 117,
+          "quote": "\"이"
+        },
+        {
+          "start": 118,
+          "end": 120,
+          "quote": "아닌"
+        },
+        {
+          "start": 121,
+          "end": 124,
+          "quote": "\"입사"
+        },
+        {
+          "start": 125,
+          "end": 127,
+          "quote": "직후"
+        },
+        {
+          "start": 128,
+          "end": 131,
+          "quote": "기간제"
+        },
+        {
+          "start": 132,
+          "end": 137,
+          "quote": "직원\"까지"
+        },
+        {
+          "start": 138,
+          "end": 141,
+          "quote": "포함할"
+        },
+        {
+          "start": 142,
+          "end": 143,
+          "quote": "수"
+        },
+        {
+          "start": 144,
+          "end": 147,
+          "quote": "있음."
+        },
+        {
+          "start": 348,
+          "end": 350,
+          "quote": "이는"
+        },
+        {
+          "start": 351,
+          "end": 355,
+          "quote": "제안사가"
+        },
+        {
+          "start": 356,
+          "end": 359,
+          "quote": "기간제"
+        },
+        {
+          "start": 360,
+          "end": 363,
+          "quote": "직원의"
+        },
+        {
+          "start": 364,
+          "end": 366,
+          "quote": "재직"
+        },
+        {
+          "start": 367,
+          "end": 370,
+          "quote": "기간을"
+        },
+        {
+          "start": 371,
+          "end": 374,
+          "quote": "포함해"
+        },
+        {
+          "start": 375,
+          "end": 378,
+          "quote": "평가할"
+        },
+        {
+          "start": 379,
+          "end": 380,
+          "quote": "수"
+        },
+        {
+          "start": 381,
+          "end": 384,
+          "quote": "있음을"
+        },
+        {
+          "start": 385,
+          "end": 389,
+          "quote": "의미함."
+        }
+      ],
+      "character_metrics": {
+        "tp": 84,
+        "fp": 0,
+        "fn": 29,
+        "precision": 1.0,
+        "recall": 0.7433628318584071,
+        "f1": 0.8527918781725888
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N13-E2",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "68f891ed92d74dde7da722579114b10537c125396e585d41d9d462540c98276f",
+      "context_sha256": "ddc779c3be8326ddf88e637b6caf3eee0dc0b7332fc4bf91403e090c11d15b9d",
+      "labels": [
+        {
+          "start": 8,
+          "end": 33,
+          "quote": "정량 실적에 진행 중 용역을 포함시켜도 된다.",
+          "label": "unsupported",
+          "reason": "기간 조건만으로 이행완료 여부와 무관하게 인정된다고 추론할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N13-E2-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 132,
+          "end": 184,
+          "quote": "\"진행 중 용역\"은 \"최근 3년간\" 내에 포함될 수 있으므로, 해당 용역을 포함시킬 수 있다.",
+          "label": "unsupported",
+          "reason": "기간 내 발생과 실적 인정 범위는 별개인데 인정 가능을 단정했다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N13-E2-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 330,
+          "end": 382,
+          "quote": "\"진행 중 용역\"이 \"최근 3년간\" 내에 포함될 수 있으므로, 해당 용역을 포함시킬 수 있다.",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 인정 결론을 반복했다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N13-E2-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 10,
+          "quote": "정량"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "quote": "실적에"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "quote": "진행"
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "quote": "중"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "quote": "용역을"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "quote": "포함시켜도"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "quote": "된다."
+        },
+        {
+          "start": 133,
+          "end": 135,
+          "quote": "진행"
+        },
+        {
+          "start": 136,
+          "end": 137,
+          "quote": "중"
+        },
+        {
+          "start": 138,
+          "end": 142,
+          "quote": "용역\"은"
+        },
+        {
+          "start": 143,
+          "end": 146,
+          "quote": "\"최근"
+        },
+        {
+          "start": 147,
+          "end": 151,
+          "quote": "3년간\""
+        },
+        {
+          "start": 152,
+          "end": 154,
+          "quote": "내에"
+        },
+        {
+          "start": 155,
+          "end": 158,
+          "quote": "포함될"
+        },
+        {
+          "start": 159,
+          "end": 160,
+          "quote": "수"
+        },
+        {
+          "start": 161,
+          "end": 166,
+          "quote": "있으므로,"
+        },
+        {
+          "start": 167,
+          "end": 169,
+          "quote": "해당"
+        },
+        {
+          "start": 170,
+          "end": 173,
+          "quote": "용역을"
+        },
+        {
+          "start": 174,
+          "end": 178,
+          "quote": "포함시킬"
+        },
+        {
+          "start": 179,
+          "end": 180,
+          "quote": "수"
+        },
+        {
+          "start": 181,
+          "end": 184,
+          "quote": "있다."
+        },
+        {
+          "start": 346,
+          "end": 349,
+          "quote": "년간\""
+        },
+        {
+          "start": 350,
+          "end": 352,
+          "quote": "내에"
+        },
+        {
+          "start": 353,
+          "end": 356,
+          "quote": "포함될"
+        },
+        {
+          "start": 357,
+          "end": 358,
+          "quote": "수"
+        },
+        {
+          "start": 359,
+          "end": 364,
+          "quote": "있으므로,"
+        },
+        {
+          "start": 365,
+          "end": 367,
+          "quote": "해당"
+        },
+        {
+          "start": 368,
+          "end": 371,
+          "quote": "용역을"
+        },
+        {
+          "start": 372,
+          "end": 376,
+          "quote": "포함시킬"
+        },
+        {
+          "start": 377,
+          "end": 378,
+          "quote": "수"
+        },
+        {
+          "start": 379,
+          "end": 382,
+          "quote": "있다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 84,
+        "fp": 0,
+        "fn": 13,
+        "precision": 1.0,
+        "recall": 0.865979381443299,
+        "f1": 0.9281767955801105
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N20-E1",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "abaaed03744b17cc1ac7f3d35ba160ba075341bbac6f18b4807e636b931f7a3e",
+      "context_sha256": "5e3f8e9334608126b4f5c84deb2a24b55a4dc2bcefbdd56060421b0f48efab16",
+      "labels": [
+        {
+          "start": 22,
+          "end": 25,
+          "quote": "[1]",
+          "label": "citation_error",
+          "reason": "필수참석은자료2추진체계에있다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 144,
+          "end": 147,
+          "quote": "[1]",
+          "label": "citation_error",
+          "reason": "필수참석은자료2추진체계에있다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 222,
+          "end": 225,
+          "quote": "[1]",
+          "label": "citation_error",
+          "reason": "필수참석은자료2추진체계에있다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 365,
+          "end": 368,
+          "quote": "[1]",
+          "label": "citation_error",
+          "reason": "필수참석은자료2추진체계에있다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 186,
+          "end": 204,
+          "quote": "**불법**으로 간주될 수 있음.",
+          "label": "unsupported",
+          "reason": "참석요건미달의위법성은명시되지않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 253,
+          "end": 294,
+          "quote": "이 규정이 **필수적인 인력**인지, **필요한 인력**인지 명시되지 않아",
+          "label": "contradiction",
+          "reason": "필수참석이라고명시한다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N20-E1-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 181,
+          "end": 182,
+          "quote": "*"
+        },
+        {
+          "start": 186,
+          "end": 194,
+          "quote": "**불법**으로"
+        },
+        {
+          "start": 195,
+          "end": 198,
+          "quote": "간주될"
+        },
+        {
+          "start": 199,
+          "end": 200,
+          "quote": "수"
+        },
+        {
+          "start": 201,
+          "end": 203,
+          "quote": "있음"
+        },
+        {
+          "start": 295,
+          "end": 297,
+          "quote": "**"
+        },
+        {
+          "start": 302,
+          "end": 306,
+          "quote": "오류**"
+        },
+        {
+          "start": 307,
+          "end": 309,
+          "quote": "가능"
+        }
+      ],
+      "character_metrics": {
+        "tp": 14,
+        "fp": 9,
+        "fn": 35,
+        "precision": 0.6086956521739131,
+        "recall": 0.2857142857142857,
+        "f1": 0.3888888888888889
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-S01",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "8ad1d0a49bfbbe996248ac41c084f7f6a9d1edc9715f9af1bbde9975c6777c35",
+      "context_sha256": "b99a9d9828ec4d2083b759549eb60bd611eb4c346b667d3a45c50c17f8247e84",
+      "labels": [
+        {
+          "start": 18,
+          "end": 23,
+          "quote": "[2]에서",
+          "label": "citation_error",
+          "reason": "증빙가정note는자료1이다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-S01-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 200,
+          "end": 244,
+          "quote": "공고별 인정 규칙이 변경될 경우, 기존 실적 금액·날짜·고객이 변경될 수 있음.",
+          "label": "contradiction",
+          "reason": "평가인정범위와합성원장금액날짜고객은별개다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-S01-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 152,
+          "end": 155,
+          "quote": "PMS"
+        },
+        {
+          "start": 156,
+          "end": 158,
+          "quote": "증빙"
+        },
+        {
+          "start": 159,
+          "end": 161,
+          "quote": "가정"
+        },
+        {
+          "start": 162,
+          "end": 164,
+          "quote": "추가"
+        },
+        {
+          "start": 165,
+          "end": 166,
+          "quote": "시"
+        },
+        {
+          "start": 167,
+          "end": 169,
+          "quote": "기존"
+        },
+        {
+          "start": 170,
+          "end": 172,
+          "quote": "실적"
+        },
+        {
+          "start": 173,
+          "end": 176,
+          "quote": "금액·"
+        },
+        {
+          "start": 178,
+          "end": 182,
+          "quote": "·고객은"
+        },
+        {
+          "start": 183,
+          "end": 187,
+          "quote": "변경되지"
+        },
+        {
+          "start": 188,
+          "end": 191,
+          "quote": "않음."
+        },
+        {
+          "start": 200,
+          "end": 203,
+          "quote": "공고별"
+        },
+        {
+          "start": 204,
+          "end": 206,
+          "quote": "인정"
+        },
+        {
+          "start": 207,
+          "end": 210,
+          "quote": "규칙이"
+        },
+        {
+          "start": 211,
+          "end": 214,
+          "quote": "변경될"
+        },
+        {
+          "start": 215,
+          "end": 218,
+          "quote": "경우,"
+        },
+        {
+          "start": 219,
+          "end": 221,
+          "quote": "기존"
+        },
+        {
+          "start": 222,
+          "end": 224,
+          "quote": "실적"
+        },
+        {
+          "start": 225,
+          "end": 234,
+          "quote": "금액·날짜·고객이"
+        },
+        {
+          "start": 235,
+          "end": 238,
+          "quote": "변경될"
+        },
+        {
+          "start": 239,
+          "end": 240,
+          "quote": "수"
+        },
+        {
+          "start": 241,
+          "end": 244,
+          "quote": "있음."
+        }
+      ],
+      "character_metrics": {
+        "tp": 34,
+        "fp": 28,
+        "fn": 0,
+        "precision": 0.5483870967741935,
+        "recall": 1.0,
+        "f1": 0.7083333333333334
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-S03",
+      "partition": "evaluation",
+      "category": "detected",
+      "answer_sha256": "abf83318fdc1c8d9876ceabd15fb0536f79bb21e2aeba50d57c9664378d46162",
+      "context_sha256": "379f5b3d07904bbd09b85d887c658200dacbfa35b446f8cf5414aa9640d088a2",
+      "labels": [
+        {
+          "start": 185,
+          "end": 240,
+          "quote": "이는 2026-06-01 기준일 기준, 해당 인력이 3개월 이상 재직한 것으로 판단할 수 없습니다.",
+          "label": "contradiction",
+          "reason": "동일 입력의 입사일은 2024-01-02이며 종료일 null만으로 기간 판단을 부정할 수 없다.",
+          "evidence_ids": [
+            "C05-S03-E1",
+            "C05-S03-E4"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C05-S03-S01",
+          "original_label": "CONTRADICTION",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "같은 입력 C05-S03-E1의 입사일이 2024-01-02이므로 2026-06-01 기준일 기준 약 29개월임. 고용 종료일이 null이라는 사실만으로 재직기간을 부정한 것은 입력과 모순되므로 CONTRADICTION 동의.",
+            "source_cell": "T01.xlsx / 구절판정!I21:K21"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 323,
+          "end": 346,
+          "quote": "이는 3개월 이상 재직한 것으로 보여지지만",
+          "label": "unsupported",
+          "reason": "직전 문장의 신규 배치 시작·종료는 고용 재직기간을 증명하지 않는다.",
+          "evidence_ids": [
+            "C05-S03-E1",
+            "C05-S03-E4"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C05-S03-S02",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "직전 문장이 근거로 든 것은 C05-S03-E4의 staffing 시작일 2026-06-01·종료일 2026-11-30으로 신규 배치 기간이며 고용 재직기간이 아님. 그러나 일반적인 전제로 staffing 기간은 재직기간을 벗어날 수 없다 판단하여 생성한 답변일 순 있음. 하지만 문서에 \"staffing 기간이 재직기간보다 클 수 없다\"는 전제가 명시되어 있지 않음. 따라서 UNSUPPORTED 동의.",
+            "source_cell": "T01.xlsx / 구절판정!I22:K22"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "span_id": "C05-S03-R02",
+          "start": 71,
+          "end": 116,
+          "quote": "[1] 자료에서 제시된 C05-P-04, C05-P-07, C05-P-06 인력의",
+          "label": "citation_error",
+          "reviewer_label": "CITATION_ERROR",
+          "reason": "[1]은 P-04 한 명이다. P-07과 P-06은 실제 입력 [2], [3]에 있으므로 인용 연결 오류다.",
+          "evidence_ids": [
+            "C05-S03-INPUT-1",
+            "C05-S03-INPUT-2",
+            "C05-S03-INPUT-3"
+          ],
+          "origin": "reviewer_addition",
+          "agent_disposition": "accept_proposal",
+          "hallucination_target": false,
+          "final_human_approval": "pending",
+          "review_source": "T01.xlsx / 검수목록!F11:H11",
+          "occurrence": 1
+        },
+        {
+          "span_id": "C05-S03-R03",
+          "start": 388,
+          "end": 433,
+          "quote": "[1] 자료에서 제시된 C05-P-04, C05-P-07, C05-P-06 인력의",
+          "label": "citation_error",
+          "reviewer_label": "CITATION_ERROR",
+          "reason": "동일 인용 연결 오류의 두 번째 실제 위치도 보존한다.",
+          "evidence_ids": [
+            "C05-S03-INPUT-1",
+            "C05-S03-INPUT-2",
+            "C05-S03-INPUT-3"
+          ],
+          "origin": "reviewer_addition",
+          "agent_disposition": "accept_proposal",
+          "hallucination_target": false,
+          "final_human_approval": "pending",
+          "review_source": "T01.xlsx / 검수목록!F11:H11",
+          "occurrence": 2
+        }
+      ],
+      "warnings": [
+        {
+          "start": 188,
+          "end": 191,
+          "quote": "202"
+        },
+        {
+          "start": 193,
+          "end": 195,
+          "quote": "06"
+        },
+        {
+          "start": 196,
+          "end": 198,
+          "quote": "01"
+        },
+        {
+          "start": 199,
+          "end": 202,
+          "quote": "기준일"
+        },
+        {
+          "start": 326,
+          "end": 329,
+          "quote": "3개월"
+        },
+        {
+          "start": 330,
+          "end": 332,
+          "quote": "이상"
+        },
+        {
+          "start": 333,
+          "end": 336,
+          "quote": "재직한"
+        },
+        {
+          "start": 337,
+          "end": 340,
+          "quote": "것으로"
+        },
+        {
+          "start": 341,
+          "end": 343,
+          "quote": "보여"
+        },
+        {
+          "start": 352,
+          "end": 354,
+          "quote": "합성"
+        },
+        {
+          "start": 355,
+          "end": 360,
+          "quote": "시나리오\""
+        },
+        {
+          "start": 364,
+          "end": 365,
+          "quote": "된"
+        },
+        {
+          "start": 366,
+          "end": 367,
+          "quote": "것"
+        },
+        {
+          "start": 376,
+          "end": 377,
+          "quote": "이"
+        },
+        {
+          "start": 378,
+          "end": 383,
+          "quote": "아닙니다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 23,
+        "fp": 15,
+        "fn": 38,
+        "precision": 0.6052631578947368,
+        "recall": 0.3770491803278688,
+        "f1": 0.46464646464646464
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N30-E2",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "2fa431cad522565dc1eb5612b35ca51636727ea15a507e29182868a931c5bfd8",
+      "context_sha256": "f0f2a5c17beb328bdfc4c62416cc1d54d70539da24cee2fc366cae014259e469",
+      "labels": [
+        {
+          "start": 262,
+          "end": 289,
+          "quote": "두 가지 금액이 다르면 입찰이 무효로 간주됩니다.",
+          "label": "contradiction",
+          "reason": "무효는 어느 하나 미제출 시이고 불일치 시에는 전자입찰금액을 기준으로 인정한다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N30-E2-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 327,
+          "end": 357,
+          "quote": "이는 공고서에 기재된 금액을 기준으로 평가해야 합니다.",
+          "label": "contradiction",
+          "reason": "불일치 금액 처리 기준을 실제 전자입찰서 투찰금액에서 공고 금액으로 바꾼다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N30-E2-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 267,
+          "end": 269,
+          "quote": "금액"
+        },
+        {
+          "start": 271,
+          "end": 274,
+          "quote": "다르면"
+        },
+        {
+          "start": 275,
+          "end": 278,
+          "quote": "입찰이"
+        },
+        {
+          "start": 279,
+          "end": 282,
+          "quote": "무효로"
+        },
+        {
+          "start": 283,
+          "end": 286,
+          "quote": "간주됩"
+        },
+        {
+          "start": 294,
+          "end": 296,
+          "quote": "공고"
+        },
+        {
+          "start": 302,
+          "end": 303,
+          "quote": "된"
+        },
+        {
+          "start": 304,
+          "end": 307,
+          "quote": "금액은"
+        },
+        {
+          "start": 308,
+          "end": 310,
+          "quote": "실제"
+        },
+        {
+          "start": 311,
+          "end": 313,
+          "quote": "증빙"
+        },
+        {
+          "start": 314,
+          "end": 315,
+          "quote": "및"
+        },
+        {
+          "start": 316,
+          "end": 320,
+          "quote": "투찰가가"
+        },
+        {
+          "start": 321,
+          "end": 323,
+          "quote": "아니"
+        },
+        {
+          "start": 330,
+          "end": 334,
+          "quote": "공고서에"
+        }
+      ],
+      "character_metrics": {
+        "tp": 18,
+        "fp": 17,
+        "fn": 27,
+        "precision": 0.5142857142857142,
+        "recall": 0.4,
+        "f1": 0.45
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N03-E5",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "5b69c4c0cc661352b69f36fe3a272daa234531404ae3ffd8ee226baeada207d8",
+      "context_sha256": "3c58e9e32fff41495ce2956acee19191fdedfdbc0b6c130ebc8f76d7280c4255",
+      "labels": [
+        {
+          "start": 205,
+          "end": 246,
+          "quote": "2026-09-13 기준일 기준, 공고문에 명시된 일정은 변경되지 않으므로",
+          "label": "unsupported",
+          "reason": "당초 일정만 있으며 기준일 현재 변경 이력은 확인되지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N03-E5-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 359,
+          "end": 385,
+          "quote": "합성 시나리오에서는 이 일정을 변경할 수 없으며",
+          "label": "unsupported",
+          "reason": "시나리오에서 일정을 변경할 수 없다는 규칙은 제공되지 않았다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N03-E5-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 205,
+          "end": 215,
+          "quote": "2026-09-13"
+        },
+        {
+          "start": 216,
+          "end": 219,
+          "quote": "기준일"
+        },
+        {
+          "start": 224,
+          "end": 228,
+          "quote": "공고문에"
+        },
+        {
+          "start": 231,
+          "end": 232,
+          "quote": "된"
+        },
+        {
+          "start": 233,
+          "end": 236,
+          "quote": "일정은"
+        },
+        {
+          "start": 237,
+          "end": 239,
+          "quote": "변경"
+        },
+        {
+          "start": 240,
+          "end": 241,
+          "quote": "지"
+        },
+        {
+          "start": 242,
+          "end": 243,
+          "quote": "않"
+        },
+        {
+          "start": 293,
+          "end": 297,
+          "quote": "시각으로"
+        },
+        {
+          "start": 298,
+          "end": 300,
+          "quote": "기록"
+        },
+        {
+          "start": 301,
+          "end": 302,
+          "quote": "는"
+        },
+        {
+          "start": 303,
+          "end": 305,
+          "quote": "것은"
+        },
+        {
+          "start": 306,
+          "end": 309,
+          "quote": "위반일"
+        },
+        {
+          "start": 310,
+          "end": 311,
+          "quote": "수"
+        },
+        {
+          "start": 312,
+          "end": 315,
+          "quote": "있음."
+        }
+      ],
+      "character_metrics": {
+        "tp": 25,
+        "fp": 16,
+        "fn": 29,
+        "precision": 0.6097560975609756,
+        "recall": 0.46296296296296297,
+        "f1": 0.5263157894736842
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N07-E1",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "91aab5d96468a7670d3373283d7adde91cfd79fff98c0380ddfb28ecbc06c2ae",
+      "context_sha256": "8e91313283f62358316566a68588c4dc4b3891797387d5f7a360ff788565c565",
+      "labels": [
+        {
+          "start": 276,
+          "end": 325,
+          "quote": "계약 직전에 주소를 바꾸는 것만으로는 해당 지역의 데이터 수집 및 모델 적용이 불가능하다",
+          "label": "unsupported",
+          "reason": "사업 대상지역에 관한 근거는 업체의 주소이전과 기술 수행 가능성의 관계를 정하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N07-E1-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 359,
+          "end": 411,
+          "quote": "계약 직전 주소 변경으로 인해 **지역 특화 모델의 실증 및 보급 확대**가 어려울 수 있으며",
+          "label": "unsupported",
+          "reason": "주소변경이 실증·보급을 어렵게 한다는 인과관계의 근거가 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N07-E1-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 490,
+          "end": 523,
+          "quote": "이는 **계약 기간 내에 완료할 수 있는 조건**이 아니므로",
+          "label": "unsupported",
+          "reason": "180일 과업기간만 제시되어 있고 기간내 완료 불가능을 뒷받침하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N07-E1-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 274,
+          "end": 278,
+          "quote": "**계약"
+        },
+        {
+          "start": 279,
+          "end": 282,
+          "quote": "직전에"
+        },
+        {
+          "start": 283,
+          "end": 286,
+          "quote": "주소를"
+        },
+        {
+          "start": 287,
+          "end": 290,
+          "quote": "바꾸는"
+        },
+        {
+          "start": 291,
+          "end": 296,
+          "quote": "것만으로는"
+        },
+        {
+          "start": 297,
+          "end": 299,
+          "quote": "해당"
+        },
+        {
+          "start": 300,
+          "end": 303,
+          "quote": "지역의"
+        },
+        {
+          "start": 304,
+          "end": 307,
+          "quote": "데이터"
+        },
+        {
+          "start": 308,
+          "end": 310,
+          "quote": "수집"
+        },
+        {
+          "start": 311,
+          "end": 312,
+          "quote": "및"
+        },
+        {
+          "start": 313,
+          "end": 315,
+          "quote": "모델"
+        },
+        {
+          "start": 316,
+          "end": 319,
+          "quote": "적용이"
+        },
+        {
+          "start": 320,
+          "end": 326,
+          "quote": "불가능하다*"
+        }
+      ],
+      "character_metrics": {
+        "tp": 37,
+        "fp": 3,
+        "fn": 63,
+        "precision": 0.925,
+        "recall": 0.37,
+        "f1": 0.5285714285714286
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N30-E3",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "6f856264e8da954bdc3a93d18af946409ec924daa335f4899cedcbfe355f642a",
+      "context_sha256": "69a9c588f9ab1e0536f465bdb3f416fc63ff891782f2623767756fb0f5d876a2",
+      "labels": [
+        {
+          "start": 8,
+          "end": 38,
+          "quote": "홈페이지 제안서를 이메일로 보내는 방식이 인정되지 않음",
+          "label": "unsupported",
+          "reason": "제출 경로에 관한 근거가 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 49,
+          "end": 113,
+          "quote": "[1] 제안요청서(2026년 부산광역정신건강복지센터 홈페이지 재구축).hwp의 \"2. 사업수행 지침 가. 일반사항\"",
+          "label": "citation_error",
+          "reason": "해당 내용은 자료2 제안서 작성방법이다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 124,
+          "end": 150,
+          "quote": "**A4용지 규격의 전자문서로 작성**해야 하며",
+          "label": "contradiction",
+          "reason": "A4 전자문서 작성은 권고다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 208,
+          "end": 255,
+          "quote": "**이메일로 전송**하는 것이 **직접 제안서 제출**과 동일한 효력을 가지지 않음.",
+          "label": "unsupported",
+          "reason": "이메일의 효력을 부정하는 규정이 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 296,
+          "end": 332,
+          "quote": "이메일로 전송하는 것은 **제안서 제출 방식**에 해당하지 않으며",
+          "label": "unsupported",
+          "reason": "이메일 배제 규정이 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E5"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 393,
+          "end": 423,
+          "quote": "**이메일로 제안서를 전송하는 방식은 인정되지 않음**",
+          "label": "unsupported",
+          "reason": "알 수 없는 제출경로를 불허로 확정했다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N30-E3-E6"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 178,
+          "end": 181,
+          "quote": "그러나"
+        },
+        {
+          "start": 182,
+          "end": 184,
+          "quote": "이는"
+        },
+        {
+          "start": 185,
+          "end": 192,
+          "quote": "**전자문서의"
+        },
+        {
+          "start": 193,
+          "end": 195,
+          "quote": "제출"
+        },
+        {
+          "start": 196,
+          "end": 201,
+          "quote": "방식**을"
+        },
+        {
+          "start": 202,
+          "end": 207,
+          "quote": "의미하며,"
+        },
+        {
+          "start": 208,
+          "end": 214,
+          "quote": "**이메일로"
+        },
+        {
+          "start": 215,
+          "end": 221,
+          "quote": "전송**하는"
+        },
+        {
+          "start": 222,
+          "end": 224,
+          "quote": "것이"
+        },
+        {
+          "start": 225,
+          "end": 229,
+          "quote": "**직접"
+        },
+        {
+          "start": 230,
+          "end": 233,
+          "quote": "제안서"
+        },
+        {
+          "start": 234,
+          "end": 239,
+          "quote": "제출**과"
+        },
+        {
+          "start": 240,
+          "end": 243,
+          "quote": "동일한"
+        },
+        {
+          "start": 244,
+          "end": 247,
+          "quote": "효력을"
+        },
+        {
+          "start": 248,
+          "end": 251,
+          "quote": "가지지"
+        },
+        {
+          "start": 252,
+          "end": 255,
+          "quote": "않음."
+        },
+        {
+          "start": 268,
+          "end": 272,
+          "quote": "제안서는"
+        },
+        {
+          "start": 273,
+          "end": 279,
+          "quote": "**전자문서"
+        },
+        {
+          "start": 280,
+          "end": 283,
+          "quote": "형태로"
+        },
+        {
+          "start": 284,
+          "end": 290,
+          "quote": "제출**해야"
+        },
+        {
+          "start": 291,
+          "end": 294,
+          "quote": "하지만"
+        },
+        {
+          "start": 296,
+          "end": 300,
+          "quote": "이메일로"
+        },
+        {
+          "start": 301,
+          "end": 305,
+          "quote": "전송하는"
+        },
+        {
+          "start": 306,
+          "end": 308,
+          "quote": "것은"
+        },
+        {
+          "start": 309,
+          "end": 314,
+          "quote": "**제안서"
+        },
+        {
+          "start": 315,
+          "end": 317,
+          "quote": "제출"
+        },
+        {
+          "start": 318,
+          "end": 323,
+          "quote": "방식**에"
+        },
+        {
+          "start": 324,
+          "end": 326,
+          "quote": "해당"
+        },
+        {
+          "start": 327,
+          "end": 328,
+          "quote": "지"
+        }
+      ],
+      "character_metrics": {
+        "tp": 63,
+        "fp": 46,
+        "fn": 75,
+        "precision": 0.5779816513761468,
+        "recall": 0.45652173913043476,
+        "f1": 0.5101214574898786
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N38-E5",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "24f606e895fde6146db354f54ce9926dcb63664ae8b284eae36b2cb2e818ed0e",
+      "context_sha256": "1f2a45160bb114f273b19cf6668255045ea34264155be2da9302f2c179ff4a5b",
+      "labels": [
+        {
+          "start": 8,
+          "end": 54,
+          "quote": "일반 협상 안내만 보고 SW사업의 기술점수 단서를 생략해도 **можно** 한다.",
+          "label": "contradiction",
+          "reason": "가능하다는 혼합언어 결론은 필수 단서와 반대다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N38-E5-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 262,
+          "end": 295,
+          "quote": "이는 SW사업의 기술점수 단서를 생략할 수 있는 근거가 되며",
+          "label": "contradiction",
+          "reason": "해당 단서는 생략근거가 아니라 별도선정조건이다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N38-E5-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 297,
+          "end": 319,
+          "quote": "해당 조건을 충족했다고 판단할 수 있음.",
+          "label": "unsupported",
+          "reason": "업체 평가점수가 없어 충족 여부는 미확인이다.",
+          "evidence_ids": [
+            "ASTRA-300-C02-N38-E5-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 297,
+          "end": 299,
+          "quote": "해당"
+        },
+        {
+          "start": 300,
+          "end": 303,
+          "quote": "조건을"
+        },
+        {
+          "start": 304,
+          "end": 309,
+          "quote": "충족했다고"
+        },
+        {
+          "start": 310,
+          "end": 313,
+          "quote": "판단할"
+        },
+        {
+          "start": 314,
+          "end": 315,
+          "quote": "수"
+        },
+        {
+          "start": 316,
+          "end": 319,
+          "quote": "있음."
+        }
+      ],
+      "character_metrics": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 62,
+        "precision": 1.0,
+        "recall": 0.21518987341772153,
+        "f1": 0.3541666666666667
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C02-N46-E2",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "6854b8cb6eaaa42673fd51f6cf18cc9ccd187c3b3e586a3af30bd0fcc0549599",
+      "context_sha256": "f225bd7ea2e6383a72a78630813092815661751f9645a224c3151482d16619ba",
+      "labels": [
+        {
+          "start": 141,
+          "end": 167,
+          "quote": "\"대구 본점 표기\"가 명시적으로 요구되어 있음.",
+          "label": "unsupported",
+          "reason": "제시한 4.3 제출서류 구간에는 이 표현이 없다. 다른 원문 구간의 지역 조건과 구별한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S01",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "근거 C02-N46-E2-E1의 4.3 제출서류 구간에 해당 표현이 없음에 동의. 추가로 제안요청서 원문을 전수 검색한 결과 '대구'는 3.추진방법(제한경쟁(본점소재지(대구))) 한 곳뿐이고 그 구간은 C02-N46-E2-REFERENCE로 모델 입력에 없었음. 답변이 지목한 별지 제3호 서식도 본점 표기 요구가 없음. 지목 구간뿐 아니라 문서 전체에 해당 요구가 없으므로 CITATION_ERROR 동의",
+            "source_cell": "T01.xlsx / 구절판정!I5:K5"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 180,
+          "end": 243,
+          "quote": "공고문에 명시된 \"전국 제한\"은 제안사의 지점(본점/지점) 여부와 무관한 전국 범위의 입찰 참여가 허용되는 것으로",
+          "label": "unsupported",
+          "reason": "주어진 공고 인용에는 전국 참가 확정이 없다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S02",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "입찰공고문_26K0039.hwp 전문에 전국, 본점, 소재지에 대한 내용 0건이며 계약방법은 '제한경쟁'으로만 기재됨. 공고문이 전국 참가를 허용한다는 근거가 어디에도 없으므로 UNSUPPORTED 동의",
+            "source_cell": "T01.xlsx / 구절판정!I6:K6"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 344,
+          "end": 383,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S03",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "답변 내 반복이 11회이며 S03~S13이 11회를 같은 내용으로 반복하고 있음. GUIDELINES의 '반복 내용도 거짓·근거 없음이면 각 실제 출현 위치에 라벨링한다'에 따라 동의로 표기.",
+            "source_cell": "T01.xlsx / 구절판정!I7:K7"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 414,
+          "end": 453,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S04",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I8:K8"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 484,
+          "end": 523,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S05",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I9:K9"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 554,
+          "end": 593,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S06",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I10:K10"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 624,
+          "end": 663,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S07",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I11:K11"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 694,
+          "end": 733,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S08",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I12:K12"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 764,
+          "end": 803,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S09",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I13:K13"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 834,
+          "end": 873,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S10",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I14:K14"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 904,
+          "end": 943,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S11",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I15:K15"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 974,
+          "end": 1013,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S12",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I16:K16"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        },
+        {
+          "start": 1044,
+          "end": 1083,
+          "quote": "제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로",
+          "label": "unsupported",
+          "reason": "동일한 근거 없는 전국 참가 주장을 반복한다.",
+          "evidence_ids": [
+            "C02-N46-E2-E1",
+            "C02-N46-E2-E2"
+          ],
+          "human_decision": "pending",
+          "hallucination_target": true,
+          "span_id": "C02-N46-E2-S13",
+          "original_label": "UNSUPPORTED",
+          "review": {
+            "decision": "동의",
+            "replacement": "",
+            "comment": "C02-N46-E2-S03 의견과 동일. 동일 문장의 2번째 출현 위치이며 위치·범위 확인함. UNSUPPORTED 유지에 동의",
+            "source_cell": "T01.xlsx / 구절판정!I17:K17"
+          },
+          "origin": "existing_v1",
+          "agent_disposition": "accept_proposal",
+          "final_human_approval": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 209,
+          "end": 211,
+          "quote": "지점"
+        },
+        {
+          "start": 219,
+          "end": 220,
+          "quote": "한"
+        },
+        {
+          "start": 221,
+          "end": 223,
+          "quote": "전국"
+        },
+        {
+          "start": 224,
+          "end": 227,
+          "quote": "범위의"
+        },
+        {
+          "start": 228,
+          "end": 230,
+          "quote": "입찰"
+        },
+        {
+          "start": 231,
+          "end": 233,
+          "quote": "참여"
+        },
+        {
+          "start": 235,
+          "end": 237,
+          "quote": "허용"
+        },
+        {
+          "start": 356,
+          "end": 358,
+          "quote": "무관"
+        }
+      ],
+      "character_metrics": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 385,
+        "precision": 1.0,
+        "recall": 0.0399002493765586,
+        "f1": 0.07673860911270983
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N06-E3",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "d6c6460bb8a43a9a6b3449aa4483f31acabe7b005fd58275ad271224b014ecfc",
+      "context_sha256": "6530dd98bfdcf0e802692e7948654017c9b92441f1adcbd5c178b464118bb237",
+      "labels": [
+        {
+          "start": 8,
+          "end": 42,
+          "quote": "회계 담당자 교육을 원격 설명 한 번으로 대체할 수 없습니다.",
+          "label": "unsupported",
+          "reason": "교육방법과 횟수 요구가 제공되지 않아 대체불가를 확정할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N06-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 282,
+          "end": 316,
+          "quote": "회계 담당자 교육을 원격 설명 한 번으로 대체할 수 없습니다.",
+          "label": "unsupported",
+          "reason": "교육방법과 횟수 요구가 제공되지 않아 대체불가를 확정할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N06-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 162,
+          "end": 196,
+          "quote": "이는 회계 담당자 교육을 기술적으로 수행해야 하는 업무입니다.",
+          "label": "unsupported",
+          "reason": "기능개발 요구를 교육수행 의무로 바꿨다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N06-E3-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 487,
+          "end": 543,
+          "quote": "제안서에 기재된 교육 내용과 실제 교육 내용이 일치하지 않는 경우, 평가대상에서 제외될 수 있습니다.",
+          "label": "unsupported",
+          "reason": "허위제안 평가제외 조항이 실제교육 차이 모두의 평가제외를 정한 것은 아니다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N06-E3-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 165,
+          "end": 167,
+          "quote": "회계"
+        },
+        {
+          "start": 168,
+          "end": 171,
+          "quote": "담당자"
+        },
+        {
+          "start": 172,
+          "end": 175,
+          "quote": "교육을"
+        },
+        {
+          "start": 176,
+          "end": 181,
+          "quote": "기술적으로"
+        },
+        {
+          "start": 182,
+          "end": 186,
+          "quote": "수행해야"
+        },
+        {
+          "start": 187,
+          "end": 189,
+          "quote": "하는"
+        },
+        {
+          "start": 190,
+          "end": 192,
+          "quote": "업무"
+        }
+      ],
+      "character_metrics": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 99,
+        "precision": 1.0,
+        "recall": 0.175,
+        "f1": 0.2978723404255319
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C03-N30-E4",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "5f5bc2175345d22832ddfccd1bc37002075edc83ee500f838383dabcee44bbee",
+      "context_sha256": "281ac21ea5a85cac4c0654f28c275584814f319c28edc4de661d5c9b62625851",
+      "labels": [
+        {
+          "start": 8,
+          "end": 47,
+          "quote": "동시접속 조건과 응답시간을 별개로 테스트하더라도 전체 성능은 충족된다.",
+          "label": "contradiction",
+          "reason": "동시접속시 성능저하없는 운영을 확인해야 한다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N30-E4-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 228,
+          "end": 267,
+          "quote": "개별적으로 테스트해도 전체 성능 요구사항을 충족할 수 있음을 의미한다.",
+          "label": "unsupported",
+          "reason": "다른지표 정의만으로 시험분리의 충분성이 보장되지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N30-E4-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 330,
+          "end": 367,
+          "quote": "별개로 테스트해도 전체 성능 요구사항이 충족된다고 판단할 수 있다.",
+          "label": "contradiction",
+          "reason": "부하조건 아래 성능유지요구를 별개시험만으로 입증할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C03-N30-E4-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 12,
+          "quote": "동시접속"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "quote": "조건과"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "quote": "응답시간을"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "quote": "별개로"
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "quote": "테스트하더라도"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "quote": "전체"
+        },
+        {
+          "start": 38,
+          "end": 41,
+          "quote": "성능은"
+        },
+        {
+          "start": 42,
+          "end": 47,
+          "quote": "충족된다."
+        },
+        {
+          "start": 198,
+          "end": 201,
+          "quote": "조건과"
+        },
+        {
+          "start": 202,
+          "end": 204,
+          "quote": "응답"
+        },
+        {
+          "start": 206,
+          "end": 207,
+          "quote": "이"
+        },
+        {
+          "start": 208,
+          "end": 210,
+          "quote": "각각"
+        },
+        {
+          "start": 211,
+          "end": 213,
+          "quote": "다른"
+        },
+        {
+          "start": 216,
+          "end": 217,
+          "quote": "로"
+        },
+        {
+          "start": 220,
+          "end": 222,
+          "quote": "되어"
+        },
+        {
+          "start": 223,
+          "end": 227,
+          "quote": "있으며,"
+        },
+        {
+          "start": 228,
+          "end": 233,
+          "quote": "개별적으로"
+        },
+        {
+          "start": 234,
+          "end": 239,
+          "quote": "테스트해도"
+        },
+        {
+          "start": 240,
+          "end": 242,
+          "quote": "전체"
+        },
+        {
+          "start": 243,
+          "end": 245,
+          "quote": "성능"
+        },
+        {
+          "start": 246,
+          "end": 251,
+          "quote": "요구사항을"
+        },
+        {
+          "start": 252,
+          "end": 255,
+          "quote": "충족할"
+        },
+        {
+          "start": 256,
+          "end": 257,
+          "quote": "수"
+        },
+        {
+          "start": 258,
+          "end": 261,
+          "quote": "있음을"
+        },
+        {
+          "start": 262,
+          "end": 267,
+          "quote": "의미한다."
+        },
+        {
+          "start": 330,
+          "end": 333,
+          "quote": "별개로"
+        },
+        {
+          "start": 334,
+          "end": 339,
+          "quote": "테스트해도"
+        },
+        {
+          "start": 340,
+          "end": 342,
+          "quote": "전체"
+        },
+        {
+          "start": 343,
+          "end": 345,
+          "quote": "성능"
+        },
+        {
+          "start": 346,
+          "end": 351,
+          "quote": "요구사항이"
+        },
+        {
+          "start": 352,
+          "end": 357,
+          "quote": "충족된다고"
+        },
+        {
+          "start": 358,
+          "end": 361,
+          "quote": "판단할"
+        },
+        {
+          "start": 362,
+          "end": 363,
+          "quote": "수"
+        },
+        {
+          "start": 364,
+          "end": 367,
+          "quote": "있다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 92,
+        "fp": 17,
+        "fn": 0,
+        "precision": 0.8440366972477065,
+        "recall": 1.0,
+        "f1": 0.9154228855721394
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N03-E2",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "084e8de2e333b0837ad48ce64b7dc5e9090cebf1c9d02551f949e1c69fd32e59",
+      "context_sha256": "0aa9ec7a19b92d3e8406788ef38788413e79d523c4de26be389bb7d8d5d430ba",
+      "labels": [
+        {
+          "start": 51,
+          "end": 74,
+          "quote": "2026년 9월 13일 기준으로 적용된다.",
+          "label": "unsupported",
+          "reason": "대화 판단일이며 실제 입찰공고일로 확인되지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N03-E2-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 438,
+          "end": 447,
+          "quote": "(추정가격 기준)",
+          "label": "contradiction",
+          "reason": "해당사업 예산 대비라고 명시된다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N03-E2-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 333,
+          "end": 363,
+          "quote": "집계 기간: \"입찰공고일 기준 최근 년간 사업수행실적\"",
+          "label": "quality_only",
+          "reason": "추출문에 표시된5년을 답변에서 빠뜨렸다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N03-E2-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 51,
+          "end": 54,
+          "quote": "202"
+        },
+        {
+          "start": 433,
+          "end": 436,
+          "quote": "100"
+        }
+      ],
+      "character_metrics": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 24,
+        "precision": 0.5,
+        "recall": 0.1111111111111111,
+        "f1": 0.18181818181818182
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N10-E5",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "8e05869a82b135245cd61053e4226d88be89c57b63b311cb37689a112bd98ac9",
+      "context_sha256": "a37af3ba816e5990ad162585fec01554684fce751dd4435329b0805860cfefd4",
+      "labels": [
+        {
+          "start": 9,
+          "end": 49,
+          "quote": "결과물 권리를 수행사 단독 소유로 계약 초안에 넣어도 **불가능**하다.",
+          "label": "unsupported",
+          "reason": "소유권귀속 규정이 제공되지 않았다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N10-E5-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 279,
+          "end": 330,
+          "quote": "이는 결과물 권리를 수행사 단독 소유로 하지 않는 것이 **법적·계약적 의무**로 간주된다.",
+          "label": "unsupported",
+          "reason": "하자보수조항은 소유권귀속을 정하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N10-E5-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 347,
+          "end": 399,
+          "quote": "계약 초안에 결과물 권리를 수행사 단독 소유로 명시하는 것은 **법적·계약적 위험**이 있다.",
+          "label": "unsupported",
+          "reason": "소유권 조건 및 위험의 근거가 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N10-E5-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 444,
+          "end": 487,
+          "quote": "**결과물 권리를 수행사 단독 소유로 하지 않는 것이 합리적**으로 간주된다.",
+          "label": "unsupported",
+          "reason": "하자보수의무만으로 권리귀속을 추론할 수 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N10-E5-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 521,
+          "end": 552,
+          "quote": "해당 내용은 **공고문과 일치하지 않음**으로 판단된다.",
+          "label": "unsupported",
+          "reason": "제공청크에는 권리귀속 문구가 없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N10-E5-E5"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 282,
+          "end": 285,
+          "quote": "결과물"
+        },
+        {
+          "start": 286,
+          "end": 289,
+          "quote": "권리를"
+        },
+        {
+          "start": 290,
+          "end": 293,
+          "quote": "수행사"
+        },
+        {
+          "start": 294,
+          "end": 296,
+          "quote": "단독"
+        },
+        {
+          "start": 297,
+          "end": 300,
+          "quote": "소유로"
+        },
+        {
+          "start": 301,
+          "end": 303,
+          "quote": "하지"
+        },
+        {
+          "start": 304,
+          "end": 306,
+          "quote": "않는"
+        },
+        {
+          "start": 307,
+          "end": 309,
+          "quote": "것이"
+        },
+        {
+          "start": 310,
+          "end": 318,
+          "quote": "**법적·계약적"
+        },
+        {
+          "start": 319,
+          "end": 323,
+          "quote": "의무**"
+        },
+        {
+          "start": 328,
+          "end": 330,
+          "quote": "다."
+        },
+        {
+          "start": 386,
+          "end": 389,
+          "quote": "계약적"
+        }
+      ],
+      "character_metrics": {
+        "tp": 37,
+        "fp": 0,
+        "fn": 136,
+        "precision": 1.0,
+        "recall": 0.2138728323699422,
+        "f1": 0.3523809523809524
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C04-N38-E2",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "65e85cccb2074e8f696c2a6891f0266182e244c596c07835190baa69b50c1146",
+      "context_sha256": "78481efde556691764a0fc36cdde9a49a37be9ecd67a2be21df1dda872d83e95",
+      "labels": [
+        {
+          "start": 8,
+          "end": 64,
+          "quote": "ESG 기술핵심인력에 입사 한 달 된 직원을 바로 포함해도 **ไม่สามารถ** 인정할 수 있다.",
+          "label": "unsupported",
+          "reason": "입사기간에따른인력인정규정은입력에없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 75,
+          "end": 95,
+          "quote": "[1]에서 “기술·핵심인력 보유 상태",
+          "label": "citation_error",
+          "reason": "자가진단표는자료2다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 133,
+          "end": 156,
+          "quote": "기술핵심인력은 **5명 이상**이어야 하며",
+          "label": "contradiction",
+          "reason": "5명은만점구간이고그미만도점수가있다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 251,
+          "end": 304,
+          "quote": "**입사 한 달 된 직원**이 해당 실적에 기여하지 못하기 때문에, **직접 포함할 수 없다**",
+          "label": "unsupported",
+          "reason": "개인기여사실도없고회사실적과인력평가는별개다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 324,
+          "end": 361,
+          "quote": "기술핵심인력의 **경력 및 실적**이 **최근 5년 내**에 있는지",
+          "label": "unsupported",
+          "reason": "최근5년은기관사업실적이며개인경력기간규정이아니다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E5"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 411,
+          "end": 450,
+          "quote": "**발급일**이 **2026년 9월 13일** 전인지를 확인해야 한다.",
+          "label": "unsupported",
+          "reason": "판단일을증명서발급기한으로정한근거가없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E6"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 509,
+          "end": 556,
+          "quote": "“실적증명서” 발급일이 **2026년 9월 13일 전**이어야 함을 명시하고 있으므로",
+          "label": "unsupported",
+          "reason": "그발급기한은자료에없다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E7"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 558,
+          "end": 631,
+          "quote": "**입사 한 달 된 직원**이 **실적에 기여한 경력**이 **2026년 9월 13일 전**에 있어야 **실적 인정**이 가능하다.",
+          "label": "unsupported",
+          "reason": "개인기여와해당날짜를실적인정요건으로만들었다.",
+          "evidence_ids": [
+            "ASTRA-300-C04-N38-E2-E8"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 11,
+          "quote": "ESG"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "quote": "기술핵심인력에"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "quote": "입사"
+        },
+        {
+          "start": 23,
+          "end": 24,
+          "quote": "한"
+        },
+        {
+          "start": 25,
+          "end": 26,
+          "quote": "달"
+        },
+        {
+          "start": 27,
+          "end": 28,
+          "quote": "된"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "quote": "직원을"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "quote": "바로"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "quote": "포함해도"
+        },
+        {
+          "start": 41,
+          "end": 54,
+          "quote": "**ไม่สามารถ**"
+        },
+        {
+          "start": 55,
+          "end": 58,
+          "quote": "인정할"
+        },
+        {
+          "start": 59,
+          "end": 60,
+          "quote": "수"
+        },
+        {
+          "start": 61,
+          "end": 63,
+          "quote": "있다"
+        },
+        {
+          "start": 251,
+          "end": 255,
+          "quote": "**입사"
+        },
+        {
+          "start": 256,
+          "end": 257,
+          "quote": "한"
+        },
+        {
+          "start": 258,
+          "end": 259,
+          "quote": "달"
+        },
+        {
+          "start": 260,
+          "end": 261,
+          "quote": "된"
+        },
+        {
+          "start": 262,
+          "end": 267,
+          "quote": "직원**이"
+        },
+        {
+          "start": 268,
+          "end": 270,
+          "quote": "해당"
+        },
+        {
+          "start": 271,
+          "end": 274,
+          "quote": "실적에"
+        },
+        {
+          "start": 275,
+          "end": 279,
+          "quote": "기여하지"
+        },
+        {
+          "start": 280,
+          "end": 283,
+          "quote": "못하기"
+        },
+        {
+          "start": 284,
+          "end": 287,
+          "quote": "때문에"
+        },
+        {
+          "start": 289,
+          "end": 290,
+          "quote": "*"
+        },
+        {
+          "start": 302,
+          "end": 303,
+          "quote": "*"
+        },
+        {
+          "start": 304,
+          "end": 305,
+          "quote": "는"
+        },
+        {
+          "start": 306,
+          "end": 308,
+          "quote": "의미"
+        },
+        {
+          "start": 558,
+          "end": 562,
+          "quote": "**입사"
+        },
+        {
+          "start": 563,
+          "end": 564,
+          "quote": "한"
+        },
+        {
+          "start": 565,
+          "end": 566,
+          "quote": "달"
+        },
+        {
+          "start": 567,
+          "end": 568,
+          "quote": "된"
+        },
+        {
+          "start": 569,
+          "end": 574,
+          "quote": "직원**이"
+        },
+        {
+          "start": 575,
+          "end": 580,
+          "quote": "**실적에"
+        },
+        {
+          "start": 581,
+          "end": 584,
+          "quote": "기여한"
+        },
+        {
+          "start": 585,
+          "end": 590,
+          "quote": "경력**이"
+        },
+        {
+          "start": 591,
+          "end": 598,
+          "quote": "**2026년"
+        },
+        {
+          "start": 599,
+          "end": 601,
+          "quote": "9월"
+        },
+        {
+          "start": 602,
+          "end": 605,
+          "quote": "13일"
+        },
+        {
+          "start": 606,
+          "end": 610,
+          "quote": "전**에"
+        },
+        {
+          "start": 611,
+          "end": 614,
+          "quote": "있어야"
+        },
+        {
+          "start": 615,
+          "end": 619,
+          "quote": "**실적"
+        },
+        {
+          "start": 620,
+          "end": 625,
+          "quote": "인정**이"
+        },
+        {
+          "start": 626,
+          "end": 631,
+          "quote": "가능하다."
+        }
+      ],
+      "character_metrics": {
+        "tp": 130,
+        "fp": 3,
+        "fn": 134,
+        "precision": 0.9774436090225563,
+        "recall": 0.49242424242424243,
+        "f1": 0.654911838790932
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N03-E3",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "1e59888bf7a287a1220be2e0145a3445ac74d98cd6d0e09fe9e716264c871605",
+      "context_sha256": "526ab5c80dff6e5e1059b5a1fb72521ae1867c69578c4da31dda3b27555fedd2",
+      "labels": [
+        {
+          "start": 22,
+          "end": 44,
+          "quote": "계약일로부터 1일 이내에 제출해야 한다.",
+          "label": "contradiction",
+          "reason": "해당줄의15일을1일로바꾸었다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N03-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 192,
+          "end": 215,
+          "quote": "구체적인 기간은 원문에서 정의되지 않았다.",
+          "label": "contradiction",
+          "reason": "추출문에15가명시되어있다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N03-E3-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 242,
+          "end": 255,
+          "quote": "이 날로부터 1일 이내로",
+          "label": "contradiction",
+          "reason": "기한은15일이다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N03-E3-E3"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 29,
+          "end": 31,
+          "quote": "1일"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "quote": "이내"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "quote": "한다"
+        },
+        {
+          "start": 192,
+          "end": 196,
+          "quote": "구체적인"
+        },
+        {
+          "start": 199,
+          "end": 200,
+          "quote": "은"
+        },
+        {
+          "start": 201,
+          "end": 205,
+          "quote": "원문에서"
+        },
+        {
+          "start": 206,
+          "end": 210,
+          "quote": "정의되지"
+        },
+        {
+          "start": 211,
+          "end": 215,
+          "quote": "않았다."
+        },
+        {
+          "start": 225,
+          "end": 228,
+          "quote": "202"
+        }
+      ],
+      "character_metrics": {
+        "tp": 23,
+        "fp": 3,
+        "fn": 24,
+        "precision": 0.8846153846153846,
+        "recall": 0.48936170212765956,
+        "f1": 0.6301369863013698
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N06-E5",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "ebfa8ea9efb880eebec844d06b1e133680dae9bd7748bc6703da0b2ea6657346",
+      "context_sha256": "33ffe3791e62afa9c89e3527e6015f97ae58832a4cccffc0e628efe36cbd75e0",
+      "labels": [
+        {
+          "start": 311,
+          "end": 337,
+          "quote": "기존 규정에 따라 재고 및 보안 점검이 필요하며",
+          "label": "unsupported",
+          "reason": "재고점검조건은제공자료에없다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N06-E5-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 365,
+          "end": 400,
+          "quote": "발주기관의 사전 승인 없이 작업장 변경을 요청하는 것은 불법이며",
+          "label": "unsupported",
+          "reason": "협의하여결정하도록하며요청자체의불법규정은없다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N06-E5-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 374,
+          "end": 376,
+          "quote": "승인"
+        },
+        {
+          "start": 377,
+          "end": 379,
+          "quote": "없이"
+        },
+        {
+          "start": 380,
+          "end": 383,
+          "quote": "작업장"
+        },
+        {
+          "start": 384,
+          "end": 387,
+          "quote": "변경을"
+        },
+        {
+          "start": 388,
+          "end": 392,
+          "quote": "요청하는"
+        },
+        {
+          "start": 393,
+          "end": 395,
+          "quote": "것은"
+        },
+        {
+          "start": 396,
+          "end": 401,
+          "quote": "불법이며,"
+        },
+        {
+          "start": 402,
+          "end": 404,
+          "quote": "이는"
+        },
+        {
+          "start": 405,
+          "end": 408,
+          "quote": "업체의"
+        },
+        {
+          "start": 409,
+          "end": 413,
+          "quote": "책임으로"
+        },
+        {
+          "start": 414,
+          "end": 418,
+          "quote": "간주됨."
+        }
+      ],
+      "character_metrics": {
+        "tp": 20,
+        "fp": 14,
+        "fn": 26,
+        "precision": 0.5882352941176471,
+        "recall": 0.43478260869565216,
+        "f1": 0.5
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C05-N28-E3",
+      "partition": "dev",
+      "category": "detected",
+      "answer_sha256": "b6d4c0aab78ef4a8c9f7470ddf42ab3c0164191f045d1dff2028f837d194d77d",
+      "context_sha256": "4f52d20a8bf3e238994796e2edb02d4a02ee4cd1454df17f3d2b830630b4a439",
+      "labels": [
+        {
+          "start": 52,
+          "end": 55,
+          "quote": "[1]",
+          "label": "citation_error",
+          "reason": "인력병행규정은자료2이다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N28-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 273,
+          "end": 324,
+          "quote": "**근로시간** 및 **보안 규정**에 따라 **병행근무**가 **필수적**으로 인정됩니다.",
+          "label": "unsupported",
+          "reason": "출처는MHR요구사항이며근로시간규정은제시되지않았다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N28-E3-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 376,
+          "end": 408,
+          "quote": "**근로기준 및 보안 관리**에 따라 **불가능**합니다.",
+          "label": "unsupported",
+          "reason": "근로기준에따른금지출처는없다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N28-E3-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 429,
+          "end": 504,
+          "quote": "병행근무 기간의 **최소 기준**은 **근로기준 및 보안 규정**에 따라 **확정되어야 하므로, 근거가 부족한 사항**으로 간주됩니다.",
+          "label": "contradiction",
+          "reason": "제공근거에최소7일이명시된다.",
+          "evidence_ids": [
+            "ASTRA-300-C05-N28-E3-E4"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 279,
+          "end": 280,
+          "quote": "*"
+        },
+        {
+          "start": 329,
+          "end": 330,
+          "quote": "*"
+        },
+        {
+          "start": 334,
+          "end": 336,
+          "quote": "교체"
+        },
+        {
+          "start": 337,
+          "end": 340,
+          "quote": "시**"
+        },
+        {
+          "start": 341,
+          "end": 344,
+          "quote": "반드시"
+        },
+        {
+          "start": 345,
+          "end": 348,
+          "quote": "**7"
+        },
+        {
+          "start": 385,
+          "end": 387,
+          "quote": "보안"
+        },
+        {
+          "start": 388,
+          "end": 393,
+          "quote": "관리**에"
+        },
+        {
+          "start": 394,
+          "end": 396,
+          "quote": "따라"
+        },
+        {
+          "start": 397,
+          "end": 399,
+          "quote": "**"
+        }
+      ],
+      "character_metrics": {
+        "tp": 12,
+        "fp": 12,
+        "fn": 120,
+        "precision": 0.5,
+        "recall": 0.09090909090909091,
+        "f1": 0.15384615384615385
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N04-E3",
+      "partition": "train",
+      "category": "detected",
+      "answer_sha256": "9ea876d68be542860e7f0f4c9d2d9ae05fc6455118577e44bffa19cacdbd7918",
+      "context_sha256": "9f2256ee364ea123aee544d5ff2e1a17e5173429b79723aa1ae2bb1458ff9566",
+      "labels": [
+        {
+          "start": 69,
+          "end": 99,
+          "quote": "가격제안서 제출 마감일은 2026년 9월 13일입니다.",
+          "label": "unsupported",
+          "reason": "제공된 날짜9월13일은 판단기준일이며 가격입찰 마감일이 아니다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N04-E3-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 252,
+          "end": 275,
+          "quote": "가격제안서 마감일(2026년 9월 13일)",
+          "label": "unsupported",
+          "reason": "같은 날짜 역할 혼동을 반복했다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N04-E3-E2"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 69,
+          "end": 74,
+          "quote": "가격제안서"
+        },
+        {
+          "start": 75,
+          "end": 77,
+          "quote": "제출"
+        },
+        {
+          "start": 78,
+          "end": 82,
+          "quote": "마감일은"
+        },
+        {
+          "start": 83,
+          "end": 88,
+          "quote": "2026년"
+        },
+        {
+          "start": 89,
+          "end": 91,
+          "quote": "9월"
+        },
+        {
+          "start": 92,
+          "end": 99,
+          "quote": "13일입니다."
+        },
+        {
+          "start": 233,
+          "end": 236,
+          "quote": "마감일"
+        },
+        {
+          "start": 237,
+          "end": 242,
+          "quote": "2026년"
+        },
+        {
+          "start": 243,
+          "end": 245,
+          "quote": "5월"
+        },
+        {
+          "start": 246,
+          "end": 249,
+          "quote": "11일"
+        },
+        {
+          "start": 250,
+          "end": 251,
+          "quote": "과"
+        },
+        {
+          "start": 254,
+          "end": 257,
+          "quote": "제안서"
+        },
+        {
+          "start": 258,
+          "end": 261,
+          "quote": "마감일"
+        },
+        {
+          "start": 262,
+          "end": 267,
+          "quote": "2026년"
+        },
+        {
+          "start": 268,
+          "end": 270,
+          "quote": "9월"
+        },
+        {
+          "start": 271,
+          "end": 275,
+          "quote": "13일)"
+        },
+        {
+          "start": 276,
+          "end": 278,
+          "quote": "사이"
+        }
+      ],
+      "character_metrics": {
+        "tp": 42,
+        "fp": 16,
+        "fn": 3,
+        "precision": 0.7241379310344828,
+        "recall": 0.9333333333333333,
+        "f1": 0.8155339805825242
+      }
+    },
+    {
+      "question_id": "ASTRA-300-C01-N05-E2",
+      "partition": "train",
+      "category": "detected",
+      "answer_sha256": "01d67ccdaec3a9cd118a842fdbbbb43dee87fe4ebafc148894b4c24b08eaab5b",
+      "context_sha256": "effcb73cc0d4432e08b7257c3b47a9aca50752e5b9c48c9884954567d3a8cdad",
+      "labels": [
+        {
+          "start": 8,
+          "end": 45,
+          "quote": "진행 중 과업을 최근 수행실적 서식에 완료 실적으로 넣을 수 있다.",
+          "label": "contradiction",
+          "reason": "완료된 실적만 인정하는 명시 조건과 반대다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E1"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 252,
+          "end": 311,
+          "quote": "이는 2026년 9월 13일 기준으로도 2026년 11월 30일 이전의 실적을 포함할 수 있음이 확인된다.",
+          "label": "contradiction",
+          "reason": "판단기준일 이후 날짜 및 본 과업 종료일을 인정기한으로 바꾸었다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E2"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 366,
+          "end": 393,
+          "quote": "2026년 11월 30일 이전의 실적만 인정되므로",
+          "label": "contradiction",
+          "reason": "인정기준은 입찰참가신청 마감일까지 완료된 최근2년 실적이다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E3"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 395,
+          "end": 473,
+          "quote": "2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적을 포함할 수 있는 경우, 최근 2년 이내의 실적으로 인정할 수 있다.",
+          "label": "unsupported",
+          "reason": "미래 종료예정일 이전이라는 사실은 최근2년 완료 조건을 보장하지 않는다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E4"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 604,
+          "end": 661,
+          "quote": "2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적이 \"최근 2년 이내\"에 해당함.",
+          "label": "contradiction",
+          "reason": "본 과업 종료일 이전 전체 실적을 최근2년으로 동일시한다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E5"
+          ],
+          "human_decision": "pending"
+        },
+        {
+          "start": 671,
+          "end": 736,
+          "quote": "2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적을 최근 2년 이내의 실적으로 인정할 수 있음.",
+          "label": "unsupported",
+          "reason": "기간과 완료 여부 검증 없이 같은 결론을 반복했다.",
+          "evidence_ids": [
+            "ASTRA-300-C01-N05-E2-E6"
+          ],
+          "human_decision": "pending"
+        }
+      ],
+      "warnings": [
+        {
+          "start": 8,
+          "end": 10,
+          "quote": "진행"
+        },
+        {
+          "start": 11,
+          "end": 12,
+          "quote": "중"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "quote": "과업을"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "quote": "최근"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "quote": "수행실적"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "quote": "서식에"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "quote": "완료"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "quote": "실적으로"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "quote": "넣을"
+        },
+        {
+          "start": 40,
+          "end": 41,
+          "quote": "수"
+        },
+        {
+          "start": 42,
+          "end": 45,
+          "quote": "있다."
+        },
+        {
+          "start": 252,
+          "end": 254,
+          "quote": "이는"
+        },
+        {
+          "start": 255,
+          "end": 260,
+          "quote": "2026년"
+        },
+        {
+          "start": 261,
+          "end": 263,
+          "quote": "9월"
+        },
+        {
+          "start": 264,
+          "end": 267,
+          "quote": "13일"
+        },
+        {
+          "start": 268,
+          "end": 273,
+          "quote": "기준으로도"
+        },
+        {
+          "start": 274,
+          "end": 279,
+          "quote": "2026년"
+        },
+        {
+          "start": 280,
+          "end": 283,
+          "quote": "11월"
+        },
+        {
+          "start": 284,
+          "end": 287,
+          "quote": "30일"
+        },
+        {
+          "start": 288,
+          "end": 291,
+          "quote": "이전의"
+        },
+        {
+          "start": 292,
+          "end": 295,
+          "quote": "실적을"
+        },
+        {
+          "start": 296,
+          "end": 299,
+          "quote": "포함할"
+        },
+        {
+          "start": 300,
+          "end": 301,
+          "quote": "수"
+        },
+        {
+          "start": 302,
+          "end": 305,
+          "quote": "있음이"
+        },
+        {
+          "start": 306,
+          "end": 311,
+          "quote": "확인된다."
+        },
+        {
+          "start": 341,
+          "end": 346,
+          "quote": "2026년"
+        },
+        {
+          "start": 347,
+          "end": 349,
+          "quote": "9월"
+        },
+        {
+          "start": 350,
+          "end": 353,
+          "quote": "13일"
+        },
+        {
+          "start": 354,
+          "end": 359,
+          "quote": "기준으로도"
+        },
+        {
+          "start": 360,
+          "end": 364,
+          "quote": "유효하며"
+        },
+        {
+          "start": 366,
+          "end": 371,
+          "quote": "2026년"
+        },
+        {
+          "start": 372,
+          "end": 375,
+          "quote": "11월"
+        },
+        {
+          "start": 376,
+          "end": 379,
+          "quote": "30일"
+        },
+        {
+          "start": 382,
+          "end": 383,
+          "quote": "의"
+        },
+        {
+          "start": 384,
+          "end": 387,
+          "quote": "실적만"
+        },
+        {
+          "start": 388,
+          "end": 390,
+          "quote": "인정"
+        },
+        {
+          "start": 395,
+          "end": 400,
+          "quote": "2026년"
+        },
+        {
+          "start": 401,
+          "end": 403,
+          "quote": "9월"
+        },
+        {
+          "start": 404,
+          "end": 407,
+          "quote": "13일"
+        },
+        {
+          "start": 408,
+          "end": 413,
+          "quote": "기준으로는"
+        },
+        {
+          "start": 414,
+          "end": 419,
+          "quote": "2026년"
+        },
+        {
+          "start": 420,
+          "end": 423,
+          "quote": "11월"
+        },
+        {
+          "start": 424,
+          "end": 427,
+          "quote": "30일"
+        },
+        {
+          "start": 428,
+          "end": 431,
+          "quote": "이전의"
+        },
+        {
+          "start": 432,
+          "end": 435,
+          "quote": "실적을"
+        },
+        {
+          "start": 436,
+          "end": 439,
+          "quote": "포함할"
+        },
+        {
+          "start": 440,
+          "end": 441,
+          "quote": "수"
+        },
+        {
+          "start": 442,
+          "end": 444,
+          "quote": "있는"
+        },
+        {
+          "start": 445,
+          "end": 448,
+          "quote": "경우,"
+        },
+        {
+          "start": 449,
+          "end": 451,
+          "quote": "최근"
+        },
+        {
+          "start": 452,
+          "end": 454,
+          "quote": "2년"
+        },
+        {
+          "start": 455,
+          "end": 458,
+          "quote": "이내의"
+        },
+        {
+          "start": 459,
+          "end": 463,
+          "quote": "실적으로"
+        },
+        {
+          "start": 464,
+          "end": 467,
+          "quote": "인정할"
+        },
+        {
+          "start": 468,
+          "end": 469,
+          "quote": "수"
+        },
+        {
+          "start": 470,
+          "end": 473,
+          "quote": "있다."
+        },
+        {
+          "start": 482,
+          "end": 483,
+          "quote": "년"
+        },
+        {
+          "start": 484,
+          "end": 486,
+          "quote": "9월"
+        },
+        {
+          "start": 487,
+          "end": 489,
+          "quote": "13"
+        },
+        {
+          "start": 497,
+          "end": 502,
+          "quote": "2026년"
+        },
+        {
+          "start": 503,
+          "end": 506,
+          "quote": "11월"
+        },
+        {
+          "start": 507,
+          "end": 510,
+          "quote": "30일"
+        },
+        {
+          "start": 511,
+          "end": 514,
+          "quote": "이전의"
+        },
+        {
+          "start": 515,
+          "end": 518,
+          "quote": "실적이"
+        },
+        {
+          "start": 519,
+          "end": 522,
+          "quote": "'최근"
+        },
+        {
+          "start": 523,
+          "end": 525,
+          "quote": "2년"
+        },
+        {
+          "start": 526,
+          "end": 530,
+          "quote": "이내'에"
+        },
+        {
+          "start": 533,
+          "end": 534,
+          "quote": "하"
+        },
+        {
+          "start": 544,
+          "end": 546,
+          "quote": "다."
+        },
+        {
+          "start": 602,
+          "end": 603,
+          "quote": "→"
+        },
+        {
+          "start": 604,
+          "end": 609,
+          "quote": "2026년"
+        },
+        {
+          "start": 610,
+          "end": 612,
+          "quote": "9월"
+        },
+        {
+          "start": 613,
+          "end": 616,
+          "quote": "13일"
+        },
+        {
+          "start": 617,
+          "end": 622,
+          "quote": "기준으로는"
+        },
+        {
+          "start": 623,
+          "end": 628,
+          "quote": "2026년"
+        },
+        {
+          "start": 629,
+          "end": 632,
+          "quote": "11월"
+        },
+        {
+          "start": 633,
+          "end": 636,
+          "quote": "30일"
+        },
+        {
+          "start": 637,
+          "end": 640,
+          "quote": "이전의"
+        },
+        {
+          "start": 641,
+          "end": 644,
+          "quote": "실적이"
+        },
+        {
+          "start": 645,
+          "end": 648,
+          "quote": "\"최근"
+        },
+        {
+          "start": 649,
+          "end": 651,
+          "quote": "2년"
+        },
+        {
+          "start": 652,
+          "end": 656,
+          "quote": "이내\"에"
+        },
+        {
+          "start": 657,
+          "end": 661,
+          "quote": "해당함."
+        },
+        {
+          "start": 671,
+          "end": 676,
+          "quote": "2026년"
+        },
+        {
+          "start": 677,
+          "end": 679,
+          "quote": "9월"
+        },
+        {
+          "start": 680,
+          "end": 683,
+          "quote": "13일"
+        },
+        {
+          "start": 684,
+          "end": 689,
+          "quote": "기준으로는"
+        },
+        {
+          "start": 690,
+          "end": 695,
+          "quote": "2026년"
+        },
+        {
+          "start": 696,
+          "end": 699,
+          "quote": "11월"
+        },
+        {
+          "start": 700,
+          "end": 703,
+          "quote": "30일"
+        },
+        {
+          "start": 704,
+          "end": 707,
+          "quote": "이전의"
+        },
+        {
+          "start": 708,
+          "end": 711,
+          "quote": "실적을"
+        },
+        {
+          "start": 712,
+          "end": 714,
+          "quote": "최근"
+        },
+        {
+          "start": 715,
+          "end": 717,
+          "quote": "2년"
+        },
+        {
+          "start": 718,
+          "end": 721,
+          "quote": "이내의"
+        },
+        {
+          "start": 722,
+          "end": 726,
+          "quote": "실적으로"
+        },
+        {
+          "start": 727,
+          "end": 730,
+          "quote": "인정할"
+        },
+        {
+          "start": 731,
+          "end": 732,
+          "quote": "수"
+        },
+        {
+          "start": 733,
+          "end": 736,
+          "quote": "있음."
+        }
+      ],
+      "character_metrics": {
+        "tp": 244,
+        "fp": 54,
+        "fn": 5,
+        "precision": 0.8187919463087249,
+        "recall": 0.9799196787148594,
+        "f1": 0.8921389396709324
+      }
+    }
+  ]
+}

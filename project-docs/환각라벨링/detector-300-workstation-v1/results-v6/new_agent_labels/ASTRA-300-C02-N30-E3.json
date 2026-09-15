@@ -1,0 +1,84 @@
+{
+  "question_id": "ASTRA-300-C02-N30-E3",
+  "answer_sha256": "b5972a144d442ced1140ad0b373c2951336489ecb0f064c54a06076d60673c29",
+  "context_sha256": "69a9c588f9ab1e0536f465bdb3f416fc63ff891782f2623767756fb0f5d876a2",
+  "spans": [
+    {
+      "start": 251,
+      "end": 282,
+      "quote": "**이메일로 제안서를 전송하는 방식은 인정될 수 있다**",
+      "label": "unsupported",
+      "reason": "PDF 형식과 이메일 접수 허용은 별개이며 접수수단 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 355,
+      "end": 383,
+      "quote": "**이메일 전송이 그 중 하나로 간주될 수 있다**",
+      "label": "unsupported",
+      "reason": "전자문서는 파일형식이지 모든 전송수단 허용 규정 아님.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 453,
+      "end": 497,
+      "quote": "**이메일로 제안서를 전송하는 방식은 제안서의 전송 방식으로 인정될 수 있다**",
+      "label": "unsupported",
+      "reason": "제공근거에 이메일 접수 인정 없음.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 505,
+      "end": 540,
+      "quote": "**홈페이지 제안서를 이메일로 보내는 방식은 인정될 수 있다**",
+      "label": "unsupported",
+      "reason": "파일형식 조건에서 접수수단 허용을 추론.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 599,
+      "end": 637,
+      "quote": "**이메일로 전송하는 것이 제안서의 전송 방식으로 인정될 수 있다**",
+      "label": "unsupported",
+      "reason": "이메일 접수 인정 근거 없음.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 85,
+      "end": 102,
+      "quote": "[1] 제안서 작성 시 유의사항",
+      "label": "citation_error",
+      "reason": "작성지침은 자료2.",
+      "evidence_ids": [
+        "L1-R26BK01518323-000-c3cdf55e774fda9d-CH-00036"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      638
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "허용 여부 미확인을 명시해야 하나 가능으로 확대."
+}

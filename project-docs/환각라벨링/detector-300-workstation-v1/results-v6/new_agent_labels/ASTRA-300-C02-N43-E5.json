@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N43-E5",
+  "answer_sha256": "ae91165f3873fa0ccd5db8e39f5f1b85e7b087e0e0ce53cc7eccc3e956be8fdb",
+  "context_sha256": "bb68c06a7115b7df24a37f0c08ec8b02afe6c64e2e91b98286548908c26fe098",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      477
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "출자비율최고/실제업무주도 대표사요건 지지. 최저지분업체로 임의지정불가 설명."
+}

@@ -1,0 +1,62 @@
+{
+  "question_id": "ASTRA-300-C02-N25-E3",
+  "answer_sha256": "78ad08da001b340da785aa4c550364045d63bee864826023411e35e88bd882e7",
+  "context_sha256": "158aa181834b42bc3772e326dfe4865aee0a47080c7de4b1b108a29ee9765f7f",
+  "spans": [
+    {
+      "start": 361,
+      "end": 397,
+      "quote": "**인수인계를 미루는 것이 허용**될 수 있는 근거로 볼 수 있다",
+      "label": "unsupported",
+      "reason": "차기 업체 인계 의무는 운영 중 인력교체 통보/인계를 다음달로 지연해도 된다는 근거 아님.",
+      "evidence_ids": [
+        "L1-R26BK01469220-000-158d1add5a61076a-CH-00033"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 547,
+      "end": 589,
+      "quote": "인력 교체로 인한 인수인계 지연이 해당 일정 내에 포함될 수 있음을 시사한다",
+      "label": "unsupported",
+      "reason": "사업기간 상호협의 변경이 개별 인력 인계 지연 자동허용을 뜻하지 않음.",
+      "evidence_ids": [
+        "L1-R26BK01469220-000-158d1add5a61076a-CH-00033"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 597,
+      "end": 654,
+      "quote": "**의료플랫폼 운영 중 인력을 교체하면 다음 달까지 통보와 인수인계를 미루는 것은 허용**될 수 있으며",
+      "label": "unsupported",
+      "reason": "제공근거에 해당 지연 허용 조건 없음.",
+      "evidence_ids": [
+        "L1-R26BK01469220-000-158d1add5a61076a-CH-00033"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 141,
+      "end": 172,
+      "quote": "[1] 공개 공고 원문 — [붙임2] 과업지시서.hwpx",
+      "label": "citation_error",
+      "reason": "해당 문서와 인용문은 자료2.",
+      "evidence_ids": [
+        "L1-R26BK01469220-000-158d1add5a61076a-CH-00033"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      719
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "예정변경 가능성을 별도 통보/인계 지연 허용으로 확대."
+}

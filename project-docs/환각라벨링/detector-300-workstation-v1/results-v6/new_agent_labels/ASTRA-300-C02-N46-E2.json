@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N46-E2",
+  "answer_sha256": "4bcd2c8d1cfeb572f6152c4ade6f43a1d6961cb35e90fba658ad2033bdee5ddc",
+  "context_sha256": "f225bd7ea2e6383a72a78630813092815661751f9645a224c3151482d16619ba",
+  "spans": [
+    {
+      "start": 514,
+      "end": 563,
+      "quote": "제안사가 제안요청서의 내용을 재해석하여 대구 본점 표기를 전국 제한으로 변경할 수는 있다",
+      "label": "unsupported",
+      "reason": "정보확인 의무는 제안사의 임의 자격조건 변경 권한 아님.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-b81b01796f0a6bcf-CH-00018"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 639,
+      "end": 687,
+      "quote": "공고문에 \"전국 제한\"이 명시된 경우, 이는 **변경이 불가능**하다고 해석할 수 있다",
+      "label": "unsupported",
+      "reason": "명시 여부만으로 영구 변경불가를 추론할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01505476-000-a4686780ddd5ee12-CH-00007"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      791
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "실제 제공 발췌에 대구본점/전국제한 조건이 없음을 밝히지 않고 가정적 내용 반복. 마지막 문장 잘림.",
+  "review_note": ""
+}

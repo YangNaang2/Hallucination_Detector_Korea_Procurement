@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N07-E1",
+  "answer_sha256": "4b1fb04aca967e6ab68f940e83d7e2162bc6c67e08f6cb40081f89c8d9b484cf",
+  "context_sha256": "8e91313283f62358316566a68588c4dc4b3891797387d5f7a360ff788565c565",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      409
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "제공된 발췌에는 입찰 지역 자격 기준이 없으므로 주소변경만으로 충족 단정 불가 설명. 실제 미충족 확정이 아닌 근거부족 문맥."
+}

@@ -1,0 +1,51 @@
+{
+  "question_id": "ASTRA-300-C02-N27-E1",
+  "answer_sha256": "3cb9ece8757fd21095d08c3174b6fff6ff265ccb4c09657d68cb2f9e910d5a71",
+  "context_sha256": "3b7b49f7fa633811ff4e64c51e3cc0d98b46aa6f9d5701ca3ff2933db18db262",
+  "spans": [
+    {
+      "start": 0,
+      "end": 59,
+      "quote": "서산 유지보수에 모든 서버를 포함해 비용을 계산해도 되는지에 대한 판단은 **계약 조건에 따라 가능하다**",
+      "label": "unsupported",
+      "reason": "운영중단 감액/계약기간 연장 조항은 모든서버 포함 범위 근거가 아님.",
+      "evidence_ids": [
+        "L1-R26BK01529533-000-3a24e0eca1747f86-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 585,
+      "end": 622,
+      "quote": "**서버 포함 여부에 따른 비용 계산이 가능하다는 점을 시사**한다",
+      "label": "unsupported",
+      "reason": "기간 연장 가능성과 서버 범위는 별도.",
+      "evidence_ids": [
+        "L1-R26BK01529533-000-3a24e0eca1747f86-CH-00003"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 630,
+      "end": 686,
+      "quote": "**서산 유지보수에 모든 서버를 포함해 비용을 계산해도 되는지**는 **계약 조건에 따라 가능하다**",
+      "label": "unsupported",
+      "reason": "모든서버 포함가능이라는 결론을 제공근거로 지지할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01529533-000-3a24e0eca1747f86-CH-00003"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      836
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "유지관리 실제 서버 범위를 확인할 근거가 없음을 밝히지 않음.",
+  "review_note": ""
+}

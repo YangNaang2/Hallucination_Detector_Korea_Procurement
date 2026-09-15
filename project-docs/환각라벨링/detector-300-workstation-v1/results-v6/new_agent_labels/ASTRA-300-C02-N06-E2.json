@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N06-E2",
+  "answer_sha256": "08509228f7a1548a107b1e606fba81c417b7d127de6c1fb5f444e7c14005f7ba",
+  "context_sha256": "0696c4b8e9ccb4a6900f6c976e17b43aded6829855d9fba0f54f24c837383137",
+  "spans": [
+    {
+      "start": 0,
+      "end": 24,
+      "quote": "전자화 물량은 **1식**으로 관리해야 한다",
+      "label": "contradiction",
+      "reason": "전자화 기록물은 약72,500면. 1식은 통합업무시스템 수량.",
+      "evidence_ids": [
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00000"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 321,
+      "end": 350,
+      "quote": "따라서 전자화 물량은 이와 같은 단위로 관리해야 한다",
+      "label": "contradiction",
+      "reason": "시스템1식과 전자화면수 단위 혼동.",
+      "evidence_ids": [
+        "L1-R26BK01565865-000-8246c69cb409e6f6-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      351
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "전자화 물량72,500면을 답하지 않음.",
+  "review_note": ""
+}

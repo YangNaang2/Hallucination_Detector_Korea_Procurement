@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C02-N49-E4",
+  "answer_sha256": "62437eb2c7fea8ca8b0f8b7cc93b40692123a35025726471831f5532e8a4f1bd",
+  "context_sha256": "d7cab439619e97360ee08b1e27d174f04c739543eab65c53c3bca2ad1608e571",
+  "spans": [
+    {
+      "start": 14,
+      "end": 34,
+      "quote": "**매년 한 번으로 계획해도 된다**",
+      "label": "contradiction",
+      "reason": "계약시 전원교육 및 이후 매분기 교육 명시.",
+      "evidence_ids": [
+        "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c-CH-00016"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 124,
+      "end": 148,
+      "quote": "**매년 한 번으로 계획해도 문제가 없음**",
+      "label": "contradiction",
+      "reason": "매분기를 연1회로 대체할 수 없음.",
+      "evidence_ids": [
+        "L1-R26BK01607392-000-6ce8cbdfc1d1eb8c-CH-00016"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      375
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "분기교육 인용은 정확하나 결론이 반대."
+}

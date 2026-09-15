@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C01-S03",
+  "answer_sha256": "5bb23560c2df397a24bb5ef848b311a0d5e1ad4caa8d1be05c82c262dede70db",
+  "context_sha256": "bafb4a67dc17ab9e906be623fd2725ef90cb15521b5d0d8c9b22c826a2415f23",
+  "spans": [
+    {
+      "start": 138,
+      "end": 230,
+      "quote": "[1] 합성 회사 자료; 실제 발급 증명서 아님 — staffing-1에서, **배치 가능 기간**은 2026-04-01부터 2026-12-31까지로 설정되어 있으며",
+      "label": "citation_error",
+      "reason": "자료1 신규배치는5/16~12/17. 4/1~12/31가용기간은 다른 인력대장 자료2/3.",
+      "evidence_ids": [
+        "C01-QA300-PLAN-2.0.0-CH-001"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      733
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "신규배치 실제 시작·종료일을 기준으로 부분월을 계산해야 함을 답하지 않음. 끝문장 잘림.",
+  "review_note": "전월 인정 가능이라 확정하지는 않음; 가용기간과 실제배치기간 구분 설명 실패."
+}

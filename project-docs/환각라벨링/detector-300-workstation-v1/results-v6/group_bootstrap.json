@@ -6,39 +6,39 @@
   "results": {
     "train": {
       "A": {
-        "groups": 23,
-        "answers": 23,
+        "groups": 30,
+        "answers": 71,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.7777777777777778,
+              0.811308006119327,
               1.0
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.0,
-              0.6
+              0.14285714285714285,
+              0.5334615384615378
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.5072677757385591,
-              0.7397255440556044
+              0.5258674312999043,
+              0.6720435318350682
             ],
             "valid_resamples": 2000
           }
         }
       },
       "B": {
-        "groups": 23,
-        "answers": 23,
+        "groups": 30,
+        "answers": 71,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.7775641025641026,
+              0.8837209302325582,
               1.0
             ],
             "valid_resamples": 2000
@@ -52,62 +52,62 @@
           },
           "character_f1": {
             "interval95": [
-              0.8138110435591159,
-              0.9228329300490004
+              0.7727130242825607,
+              0.8884792575678195
             ],
             "valid_resamples": 2000
           }
         }
       },
       "C": {
-        "groups": 23,
-        "answers": 23,
+        "groups": 30,
+        "answers": 71,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              1.0,
+              0.8125,
               1.0
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.6666666666666666,
-              1.0
+              0.6756587837837837,
+              0.9394385026737966
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.1597642026326999,
-              0.34222071791884556
+              0.1966049789047196,
+              0.365029284438124
             ],
             "valid_resamples": 2000
           }
         }
       },
       "D": {
-        "groups": 23,
-        "answers": 23,
+        "groups": 30,
+        "answers": 71,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              1.0,
-              1.0
+              0.6764507154213037,
+              0.9393939393939394
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.25,
-              0.8888888888888888
+              0.28205128205128205,
+              0.6334090909090905
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.15657629268910633,
-              0.44445178335535
+              0.19256712002544552,
+              0.38200551135377553
             ],
             "valid_resamples": 2000
           }
@@ -116,69 +116,69 @@
     },
     "dev": {
       "A": {
-        "groups": 8,
-        "answers": 8,
+        "groups": 10,
+        "answers": 20,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              1.0,
+              0.6153846153846154,
               1.0
             ],
-            "valid_resamples": 1956
+            "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.39833333333333343,
+              0.5,
               1.0
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.06817795299938156,
-              0.4244604316546763
+              0.09625088952623294,
+              0.4065599920093288
             ],
             "valid_resamples": 2000
           }
         }
       },
       "B": {
-        "groups": 8,
-        "answers": 8,
+        "groups": 10,
+        "answers": 20,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.0,
-              1.0
-            ],
-            "valid_resamples": 1948
-          },
-          "normal_fpr": {
-            "interval95": [
-              0.0,
-              0.8333333333333334
+              0.3,
+              0.75
             ],
             "valid_resamples": 2000
           },
+          "normal_fpr": {
+            "interval95": [
+              0.14196428571428577,
+              0.8
+            ],
+            "valid_resamples": 1999
+          },
           "character_f1": {
             "interval95": [
-              0.0,
-              0.8774193548387097
+              0.11947390048390362,
+              0.5163838027455034
             ],
             "valid_resamples": 2000
           }
         }
       },
       "C": {
-        "groups": 8,
-        "answers": 8,
+        "groups": 10,
+        "answers": 20,
         "metrics": {
           "answer_recall": {
             "interval95": [
               1.0,
               1.0
             ],
-            "valid_resamples": 1955
+            "valid_resamples": 1999
           },
           "normal_fpr": {
             "interval95": [
@@ -189,35 +189,35 @@
           },
           "character_f1": {
             "interval95": [
-              0.017641085447718738,
-              0.37124041888078413
+              0.10954988002953119,
+              0.37709621151234335
             ],
             "valid_resamples": 2000
           }
         }
       },
       "D": {
-        "groups": 8,
-        "answers": 8,
+        "groups": 10,
+        "answers": 20,
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.0,
+              0.16666666666666666,
               1.0
             ],
-            "valid_resamples": 1968
+            "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              1.0,
+              0.75,
               1.0
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.0,
-              0.5720564562147487
+              0.08817407349199131,
+              0.5374472977228757
             ],
             "valid_resamples": 2000
           }
@@ -231,22 +231,22 @@
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.8085106382978723,
+              0.8125,
               1.0
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.5937210648148148,
-              0.9130434782608695
+              0.5806451612903226,
+              0.9032258064516129
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.21277042317843578,
-              0.3968495789349545
+              0.2149487736745397,
+              0.4070197403498926
             ],
             "valid_resamples": 2000
           }
@@ -265,15 +265,15 @@
           },
           "normal_fpr": {
             "interval95": [
-              0.3548387096774194,
-              0.6785714285714286
+              0.3461206896551724,
+              0.666964285714284
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.15563747729292726,
-              0.3295488270426697
+              0.16010263941907,
+              0.3285183185289282
             ],
             "valid_resamples": 2000
           }
@@ -285,22 +285,22 @@
         "metrics": {
           "answer_recall": {
             "interval95": [
-              0.8,
+              0.7966023226616447,
               1.0
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
-              0.5404885654885655,
-              0.8620689655172413
+              0.5454545454545454,
+              0.8571428571428571
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.1236584739541708,
-              0.2835029595585237
+              0.1265180890504236,
+              0.28146927313656706
             ],
             "valid_resamples": 2000
           }
@@ -313,21 +313,21 @@
           "answer_recall": {
             "interval95": [
               0.5,
-              0.8076923076923077
+              0.8064516129032258
             ],
             "valid_resamples": 2000
           },
           "normal_fpr": {
             "interval95": [
               0.25,
-              0.6538461538461539
+              0.6551724137931034
             ],
             "valid_resamples": 2000
           },
           "character_f1": {
             "interval95": [
-              0.12587963688574944,
-              0.3523884027181662
+              0.12883137984648227,
+              0.3498670857529166
             ],
             "valid_resamples": 2000
           }

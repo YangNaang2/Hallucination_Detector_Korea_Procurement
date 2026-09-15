@@ -1,0 +1,17 @@
+{
+  "question_id": "ASTRA-300-C02-N31-E2",
+  "answer_sha256": "2b516d132677bc5a59ba11b819f068214b5e868709703a131744acf6a4424463",
+  "context_sha256": "0ff04edeb72c439dad74577925000759fd481f70318590756d9d92d0428f8b6b",
+  "spans": [],
+  "reviewed_ranges": [
+    [
+      0,
+      466
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "개별시스템/검사 저작권 직접소유 조건 자료2에 명시, 유사실적만으로 대체불가."
+}

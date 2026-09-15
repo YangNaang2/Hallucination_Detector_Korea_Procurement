@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N48-E5",
+  "answer_sha256": "30689ddf2a26ffa0ca57f2d3cf5727ad8fec349c04e9c06066f7a18efd382d30",
+  "context_sha256": "833827f543a4ed89a0f0e8e12fb22b33e3eb7d0bb8957085743e785ce22fe087",
+  "spans": [
+    {
+      "start": 475,
+      "end": 517,
+      "quote": "**확정할 수는 있으나, 반드시 상주로 확정해야 한다고 명시된 것은 없다**",
+      "label": "uncertain",
+      "reason": "앞에서는 상호협의 조건을 정확히 설명하나 마지막 무조건확정 질문에 가능이라 답해 조건부/무조건 의미가 모호.",
+      "evidence_ids": [
+        "L1-R26BK01605618-000-d5a3ab742345a7d4-CH-00027"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      524
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "무조건확정 불가와 상호협의 후 가능을 최종결론에서 명료하게 구분하지 않음.",
+  "review_note": ""
+}

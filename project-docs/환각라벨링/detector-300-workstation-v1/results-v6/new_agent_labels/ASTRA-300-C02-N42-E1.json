@@ -1,0 +1,29 @@
+{
+  "question_id": "ASTRA-300-C02-N42-E1",
+  "answer_sha256": "a9b1a9dc46abdad679af97eafb02eb86e429636cff6fdce4e2fae1b925516cfb",
+  "context_sha256": "a81c5a383ffcfc9daa2cbc45f37d265ca0bb380e7c9a6e81dcee96f6383dc7bc",
+  "spans": [
+    {
+      "start": 435,
+      "end": 527,
+      "quote": "[2] 공개 공고 원문 — 26-HS061 03. 입찰공고문(협상(SW)).pdf에서는 사업범위를 \"연구정보 관리항목 정의 종합관리체계 설계\" 등으로 명시하고 있으며",
+      "label": "citation_error",
+      "reason": "구체범위는 자료1. 기간/예산은 자료2에서도 확인됨.",
+      "evidence_ids": [
+        "L1-R26BK01564087-000-df4355b8ff7bdf61-CH-00000"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      739
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "complete",
+  "omission": "",
+  "review_note": "화면만으로 연계/전송/표준화범위 대체불가 결론 지지. 양문서 기간기준 차이는 본질질문과별도."
+}

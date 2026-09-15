@@ -46,7 +46,7 @@
       "reason": "tokenizer omitted private-use document bullet; remains unchecked, not counted as covered"
     }
   ],
-  "agent_reviewed": 94,
+  "agent_reviewed": 154,
   "human_gold": 0,
   "original_inference_seconds": 90.77448342213756,
   "llama_server_preserved": true,

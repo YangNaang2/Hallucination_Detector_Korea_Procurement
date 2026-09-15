@@ -1,0 +1,40 @@
+{
+  "question_id": "ASTRA-300-C01-P05",
+  "answer_sha256": "74d7f0cab05ac0396e5839d1f2fe6963015b86ef09de3285e9cc09eaf78e650c",
+  "context_sha256": "934709e47c639d44507e835ae0967a62dafbd50368b2b773640ce623ecbed695",
+  "spans": [
+    {
+      "start": 0,
+      "end": 34,
+      "quote": "이 공고의 최근 3년 기준일은 2026-04-01로 확정되었다",
+      "label": "unsupported",
+      "reason": "회사 대장 상태 기준일을 공고일로 대체할 근거 없음.",
+      "evidence_ids": [
+        "C01-STAFF-1.0.0-r1-CH-616af79fea86"
+      ],
+      "human_decision": "pending"
+    },
+    {
+      "start": 161,
+      "end": 188,
+      "quote": "이는 문서에서 제공된 최근 3년 기준일로 간주된다",
+      "label": "unsupported",
+      "reason": "인력 대장 기준일은 실적 평가의 공고 기준일이 아님.",
+      "evidence_ids": [
+        "C01-STAFF-1.0.0-r1-CH-616af79fea86"
+      ],
+      "human_decision": "pending"
+    }
+  ],
+  "reviewed_ranges": [
+    [
+      0,
+      343
+    ]
+  ],
+  "review_status": "agent evidence review; not human gold",
+  "human_approved": false,
+  "question_fulfillment": "partial",
+  "omission": "인정 실적 건수와 점수 미계산; 실제 공고 기준일 확인 필요 설명 없음.",
+  "review_note": ""
+}
