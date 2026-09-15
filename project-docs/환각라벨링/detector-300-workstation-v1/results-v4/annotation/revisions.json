@@ -1,6 +1,6 @@
 {
   "source_sha256": "04ec65446f556f9e347b2fcbcd85c4c99b5ecf6505cf2a1ab667f7ba9dd5e9ef",
-  "revised_sha256": "5e0d71c85eaa815def73eac2bd0370cfbe3beb8ef6b468c4b3cdc66fe23d0c00",
+  "revised_sha256": "29f32ee09e4729bb9f243d28ea86cf12877d1c304249b86c7dbab5dd3d14c89d",
   "status": "agent-approved changes only; all other annotations retain original status; no human gold",
   "authorization": "User delegated judgement and changes in this task",
   "review_scope": "Two span decisions, not fresh full review of 295",
@@ -16,7 +16,21 @@
       "reason": "현재 명시된 제출기한을 최종 마감일로 바꾸어 말한 것만으로 변경 불가능성을 단정한 것은 아니다. 실제 근거 [1]에 제출 종료 시각이 존재한다. 다른 메타데이터만/고정 주장 라벨은 그대로 유지한다.",
       "evidence_quote": "전자입찰(가격입찰, 제안발표회 자료) 제출기간",
       "answer_sha256": "2fde01508c19785503c3c7b726c5a7081b499e4e2505e7e19e0e1389df6895d5",
-      "context_sha256": "6d51836b19157254008572db0bf9c6328b208d59025716346c93e6f03a51f863"
+      "context_sha256": "6d51836b19157254008572db0bf9c6328b208d59025716346c93e6f03a51f863",
+      "source_evidence": {
+        "chunk_id": "L1-R26BK01605618-000-d5a3ab742345a7d4-CH-00024",
+        "citation": 1,
+        "text_start": 36820,
+        "text_end": 38614,
+        "text_sha256": "0483a1f88c449c6e2e65fb69a0d34a6a3d22e3a499cdad49f9fa40508d8468b4",
+        "document_id": "L1-R26BK01605618-000-d5a3ab742345a7d4",
+        "document_version": "d5a3ab742345a7d49c508b289223139250008af2002c0bb89591920454b66e9f",
+        "company_id": null,
+        "tenant_id": null,
+        "security_level": "L1",
+        "scenario_id": null,
+        "path": "export/2026-06/R26BK01605618-000/원본/3. 제안요청서(2026년 동아보건대학교 대학 혁신을 위한 AI 스마트 캠퍼스 포털 고도화 사업).hwp"
+      }
     },
     {
       "question_id": "ASTRA-300-C05-N12-E4",
@@ -27,13 +41,27 @@
       "label": "unsupported",
       "reason": "근거 [2] MAR-002는 교체할 경우의 부품 조건을 정한다. 실제 교체가 발생하지 않으면 하드웨어 유지관리 범위 밖이라는 규정은 없다. 인용번호 오류와 별도인 근거 없는 조건 확장이다.",
       "evidence_ids": [
-        "ASTRA-300-C05-N12-E4-INPUT-2"
+        "L1-R26BK01474723-000-7553e5b717a40050-CH-00005"
       ],
       "human_decision": "pending",
       "final_human_approval": "pending",
       "agent_revision_status": "approved_by_agent_under_user_delegation",
       "answer_sha256": "619f42147efea45dce4b9bc1477340ad2a97ccee0968834fed800b3a58b6e331",
-      "context_sha256": "5e8ac4cd511330136d47d099da79f2a4dbca1d1b177c4afc6fa26e9b43ddc2c6"
+      "context_sha256": "5e8ac4cd511330136d47d099da79f2a4dbca1d1b177c4afc6fa26e9b43ddc2c6",
+      "source_evidence": {
+        "chunk_id": "L1-R26BK01474723-000-7553e5b717a40050-CH-00005",
+        "citation": 2,
+        "text_start": 7190,
+        "text_end": 8882,
+        "text_sha256": "da8d7d1b8bbb0e03763cafee16341030832ccd8dfe329eacb4e3306edc950a2f",
+        "document_id": "L1-R26BK01474723-000-7553e5b717a40050",
+        "document_version": "7553e5b717a4005091965935896fc809cc95275b8382134fe52d19bbccd29e71",
+        "company_id": null,
+        "tenant_id": null,
+        "security_level": "L1",
+        "scenario_id": null,
+        "path": "export/2026-04/R26BK01474723-000/원본/과업지시서(부산광역시 스마트시티 통합플랫폼 유지관리용역).hwpx"
+      }
     }
   ],
   "retained": [

@@ -20912,7 +20912,7 @@
         "label": "unsupported",
         "reason": "근거 [2] MAR-002는 교체할 경우의 부품 조건을 정한다. 실제 교체가 발생하지 않으면 하드웨어 유지관리 범위 밖이라는 규정은 없다. 인용번호 오류와 별도인 근거 없는 조건 확장이다.",
         "evidence_ids": [
-          "ASTRA-300-C05-N12-E4-INPUT-2"
+          "L1-R26BK01474723-000-7553e5b717a40050-CH-00005"
         ],
         "human_decision": "pending",
         "final_human_approval": "pending",
