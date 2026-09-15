@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N03-E4",
+  "answer_sha256": "c488972bf777e2cd3ee4e1670dcf0bfd1d93f9456fd44c2a5bd1fc1458c706ef",
+  "context_sha256": "f1e7b2739e1da5482161a014534371194f6cb488874d20e468de56e27fd9478f",
+  "question_sha256": "a50e29b3e3c4e594d9d8c9787fe2f303b99186e1899e9bed248e452383904bf4",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "ba5aee174a3c220b23a2bd0e055bdb19d3a88882ce1aca91784365737e405ec7",
+  "prompt_tokens": 2968,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 403,
+    "prompt_tokens": 2968,
+    "total_tokens": 3371,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 3.9124173439922743,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01448046-000-2237c480301f0a8e-CH-00001",
+      "citation": 1,
+      "text_start": 1512,
+      "text_end": 3311,
+      "text_sha256": "76abcb7f6655fd253d442273fff017d2f82b3ed1c5393b0719befa2779855436",
+      "document_id": "L1-R26BK01448046-000-2237c480301f0a8e",
+      "document_version": "2237c480301f0a8ec90108e08f9d6bae0aa0aadf248dc62c8612f178c78ca862",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/1. 입찰공고문_[재공고][2026 대학혁신지원사업] 세종대학교 원스탑지원시스템 유지보수 사업 용역 구매.pdf"
+    },
+    {
+      "chunk_id": "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00004",
+      "citation": 2,
+      "text_start": 6164,
+      "text_end": 7963,
+      "text_sha256": "e7b97929e6b27c6021b2607650361414ae265dce6a8db1be0fcb607bc6d10dde",
+      "document_id": "L1-R26BK01448046-000-9941e835ad1b0e19",
+      "document_version": "9941e835ad1b0e193ffde16fa2f45d04a236e03cb4e661c21dbb3d190f6d6545",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-04/R26BK01448046-000/원본/3. 제안요청서.pdf"
+    }
+  ]
+}

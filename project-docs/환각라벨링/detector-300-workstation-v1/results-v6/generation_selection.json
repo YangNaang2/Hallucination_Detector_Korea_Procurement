@@ -1,0 +1,12 @@
+{
+  "selected_generation": "v6-grounded-generation-1",
+  "reason": "Structured JSON pilot reversed OCR core judgement and weakened mandatory laptop locking to recommendation. Free-form pilot retains core judgement but contains unsupported expansions, retained as measurable failures. No claim regeneration is improved.",
+  "pilot_ids": [
+    "ASTRA-300-C01-N01-E1",
+    "ASTRA-300-C01-N02-E5",
+    "ASTRA-300-C01-N03-E4"
+  ],
+  "pilot_exposure": "First-three technical pilot spans train/evaluation/dev; all regenerated evaluations are exploratory; pilot data not independent. No question-specific prompt or expected answer input.",
+  "label_status": "Full new evidence review required before scores",
+  "no_original_overwrite": true
+}

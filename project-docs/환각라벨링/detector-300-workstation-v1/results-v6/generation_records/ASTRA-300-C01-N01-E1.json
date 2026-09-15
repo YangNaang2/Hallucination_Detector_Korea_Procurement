@@ -1,0 +1,49 @@
+{
+  "question_id": "ASTRA-300-C01-N01-E1",
+  "answer_sha256": "7ed0711663c507049b4bc241360e28447558cec275c4f81fc70342dae7d52283",
+  "context_sha256": "607478b27108acbe44968d41d9ed4fa75823a7d9d51de20f68c60f11ff0d420c",
+  "question_sha256": "fadb916393e89d4eb9f92d742fa42e4f1965ae5d87e52d84dbb80b457c208457",
+  "identity": "f5732bad32dd00c4ec6e0bc78590da2d3eaa2d1ade74f31d4fe279fc268ae5fb",
+  "prompt_sha256": "e6016930d93cfc055b21e0543f732d4b63268c823ca456804e1814d921d8a9a0",
+  "prompt_tokens": 2506,
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 391,
+    "prompt_tokens": 2506,
+    "total_tokens": 2897,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "seconds": 3.981306867004605,
+  "source_evidence": [
+    {
+      "chunk_id": "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00004",
+      "citation": 1,
+      "text_start": 5378,
+      "text_end": 6901,
+      "text_sha256": "bf3c58d47ed7391803302f30db319cf0a8bcb6b8841b548eb5587c2a89fa5853",
+      "document_id": "L1-R26BK01550466-000-f6c69c65e0f23a26",
+      "document_version": "f6c69c65e0f23a26f852dd99f9c312ad542e3e7881feacdf261fcce057115459",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01550466-000/원본/3. 제안요청서(AI-OCR 기반 e-보고서 검수 자동화 사업).hwpx"
+    },
+    {
+      "chunk_id": "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00032",
+      "citation": 2,
+      "text_start": 45350,
+      "text_end": 47013,
+      "text_sha256": "3ffed060d494c51f950c0682fdbef695483b42c60973d7b229711bb1deb4e576",
+      "document_id": "L1-R26BK01550466-000-16b67acc6a18c5e8",
+      "document_version": "16b67acc6a18c5e8100eabda06cb8496d691b1c82d3097d83f6f57a0d7117220",
+      "company_id": null,
+      "tenant_id": null,
+      "security_level": "L1",
+      "scenario_id": null,
+      "path": "export/2026-05/R26BK01550466-000/원본/2. 과업내용서(AI-OCR 기반 e-보고서 검수 자동화 사업).hwpx"
+    }
+  ]
+}
