@@ -1,0 +1,28 @@
+{
+  "selected": {
+    "model": "contrast3",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.3,
+    "answer": {
+      "tp": 23,
+      "fp": 3,
+      "fn": 12,
+      "precision": 0.8846153846153846,
+      "recall": 0.6571428571428571,
+      "f1": 0.7540983606557377
+    },
+    "tn": 12,
+    "false_alarm_rate": 0.2,
+    "characters": {
+      "tp": 668,
+      "fp": 468,
+      "fn": 2648,
+      "precision": 0.5880281690140845,
+      "recall": 0.2014475271411339,
+      "f1": 0.3000898472596586
+    }
+  },
+  "policy_sha256": "2e150074615747cb9f77b9dd1bf462fb5f964cf81b2f9aea48e9e3f68be28190",
+  "dev_success": true
+}
