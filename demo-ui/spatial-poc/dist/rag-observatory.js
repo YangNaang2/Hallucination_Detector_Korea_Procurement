@@ -6,15 +6,15 @@ const $=s=>document.querySelector(s);let data,notices,source,graph,bid,current=n
 function busy(value){$('#run').disabled=value;$('#cancel-request').hidden=!value;}
 function refreshMode(){
  const server=$('#execution-mode').value==='server';
- $('#mode-badge').textContent=server?(serverStatus?.mode==='test'?'테스트 응답 · 실제 모델 생성 아님':serverStatus?.mode==='model'?'모델 서버 모드 · 연결 확인 전':'생성 서버 미연결'):'저장 결과 데모';
- $('#mode-hint').textContent=server?(serverStatus?.mode==='test'?'실제 L1 검색 + 테스트 생성기 · 공고 판단 답변 아님':'공개 L1 문서만 검색합니다. 탐지는 미실시입니다.'):'자유 질문은 생성 서버 연결 후 사용할 수 있습니다.';
+ $('#mode-badge').textContent=server?(serverStatus?.mode==='test'?'테스트 응답 · 실제 모델 생성 아님':serverStatus?.mode==='model'?(serverStatus.model_connected?'실제 생성 · '+serverStatus.model_alias:'모델 서버 미연결'):'생성 서버 미연결'):'저장 결과 데모';
+ $('#mode-hint').textContent=server?(serverStatus?.mode==='test'?'실제 L1 검색 + 테스트 생성기 · 공고 판단 답변 아님':'공개 L1 검색 · 답변 완료 후 탐지 연결 상태에 따라 검사합니다.'):'자유 질문은 생성 서버 연결 후 사용할 수 있습니다.';
  $('#run').textContent=server?(serverStatus?.mode==='test'?'테스트 질문 전송':'질문 전송'):'저장 답변 확인';
  $('#test-controls').hidden=!(server&&serverStatus?.mode==='test');
  $('#detection-state').textContent=server?'탐지 미실시':'사람 검수 대기';
  document.querySelector('footer').textContent=server?'공개 L1 질문 서버 · '+(serverStatus?.mode==='test'?'테스트 응답 · 실제 모델 미실행':'생성 서버 모드')+' · 탐지 미실시':'공개 L1 자료 · 저장 결과 재생 · 형광펜은 검수 초안';
 }
 async function connectionStatus(){
- try{serverStatus=await httpSource.connect();$('#server-option').disabled=false;$('#server-option').textContent=serverStatus.mode==='test'?'L1 테스트 서버':serverStatus.mode==='model'?'L1 모델 서버 · 연결 확인 전':'L1 서버 · 생성 미연결';}
+ try{serverStatus=await httpSource.connect();$('#server-option').disabled=false;$('#server-option').textContent=serverStatus.mode==='test'?'L1 테스트 서버':serverStatus.mode==='model'?(serverStatus.model_connected?'실제 생성 · '+serverStatus.model_alias:'L1 모델 서버 · 미연결'):'L1 서버 · 생성 미연결';}
  catch{serverStatus=null;$('#server-option').disabled=true;$('#server-option').textContent='질문 서버 미연결';}
  refreshMode();
 }
@@ -36,7 +36,7 @@ function chooseNotice(id,push=true){
  $('#notice-dialog').close();const u=new URL(location.href);u.searchParams.set('bid',bid);if(push)history.pushState({bid},'',u);else history.replaceState({bid},'',u);
 }
 function render(){if(!current)return;$('#answer').innerHTML=renderAnswer(current.answer,current.contexts,current.spans,$('#highlights').checked);$('#answered-question').textContent=current.question;
- $('#quality').innerHTML=current.quality_notes.map(t=>'<p>추가 확인 · '+esc(t)+'</p>').join('');}
+ $('#quality').innerHTML=current.quality_notes.map(t=>'<p>추가 확인 · '+esc(t)+'</p>').join('')+(current.detection?'<details><summary>탐지 상세</summary><p>답변 완료 후 검사 · '+esc(current.detection.status)+'</p>'+current.spans.map((s,i)=>'<button data-detection-span="'+i+'">'+esc(s.quote)+'</button>').join('')+'<pre>'+esc(JSON.stringify({model:current.detection.model,threshold:current.detection.threshold,unchecked_ranges:current.detection.unchecked_ranges},null,2))+'</pre></details>':'');}
 function evidence(i){if(!current||!current.contexts[i])return;const c=current.contexts[i];graph.select(i);
  $('#source-nav').innerHTML=current.contexts.map((c,j)=>'<button data-source="'+j+'" aria-pressed="'+(i===j)+'">'+(c.citation===null?'추가 자료':'근거 ['+c.citation+']')+'</button>').join('');
  $('#evidence').innerHTML='<p class="badge">'+(c.scope==='test_input'?'테스트 생성기에 전달한 근거 · 모델 미실행':c.scope==='generation_input'?'생성 요청용 근거 · 요청 실패 시 사용 여부 미확인':c.scope==='prompt_context'?'생성 시 사용한 근거':'사후 추가 자료 · 생성 입력에 없었음')+'</p><h3>'+esc(c.filename)+'</h3><p class="muted">아래 구간이 답변의 모든 주장을 지지한다고 보장하지 않습니다.</p><pre>'+esc(c.text)+'</pre><details><summary>추적 정보</summary><code>문서 '+esc(c.document_id)+'</code><code>청크 '+esc(c.chunk_id)+'</code><p>버전 '+esc(c.document_version)+' · L1</p><p>정본 문자 ['+c.text_start+', '+c.text_end+') · Unicode 코드 포인트 · 0부터, 끝 제외</p></details>';
@@ -64,7 +64,10 @@ $('#ask-form').onsubmit=async e=>{
     if(!valid())return;
     if(event.type==='retrieval'){current.contexts=event.contexts;graph.setCase(current);$('#sources').disabled=!event.contexts.length;}
     if(event.type==='delta'){current.answer+=event.text;render();$('#status').textContent=(serverStatus.mode==='test'?'테스트 응답 수신 중 · 모델 미실행':'답변 수신 중')+' · 아직 완료되지 않음';}
-    if(event.type==='done'){current.answer=event.answer;if(event.generated)current.contexts=current.contexts.map(c=>({...c,scope:'prompt_context'}));current.answer_sha256=event.answer_sha256;render();$('#copy').disabled=false;$('#status').textContent=event.abstained?'자료부족 안내 · 답변 생성 안 함':serverStatus.mode==='test'?'테스트 스트림 완료 · 실제 모델 생성 아님 · 탐지 미실시':'답변 생성 완료 · 탐지 미실시';}
+    if(event.type==='detecting'){$('#status').textContent=serverStatus?.detector?.configured?'답변 생성 완료 · 탐지 처리 중':'답변 생성 완료 · 탐지 연결 확인';$('#detection-state').textContent='답변 완료 후 탐지';}
+    if(event.type==='done'){current.answer=event.answer;if(event.generated)current.contexts=current.contexts.map(c=>({...c,scope:'prompt_context'}));current.answer_sha256=event.answer_sha256;render();$('#copy').disabled=false;$('#status').textContent=event.abstained?'자료부족 안내 · 답변 생성 안 함':serverStatus.mode==='test'?'테스트 스트림 완료 · 실제 모델 생성 아님 · 탐지 미실시':'답변 생성 완료';
+     if(event.detection_result){const d=event.detection_result;current.spans=d.spans;current.detection=d;const labels={completed:'탐지 완료 · 검출 0건도 정확성 보장 아님',partial:'부분 검사 · 미검사 구간 있음',failed:'탐지 실패',cancelled:'탐지 취소',not_run:'탐지 미실시 · 체크포인트 미설정'};$('#detection-state').textContent=labels[d.status];$('#status').textContent+=' · '+labels[d.status];$('#highlights').disabled=!d.spans.length;$('#highlights').checked=!!d.spans.length;current.quality_notes=d.unchecked_ranges?.length?['답변에 탐지하지 못한 구간이 있습니다.']:[];render();graph.setCase(current);document.querySelector('footer').textContent='공개 L1 · 실제 생성 · '+labels[d.status];}
+    }
     if(event.type==='error'){streamFailed=true;$('#status').textContent=event.message;$('#retry-request').hidden=!event.retryable;current.quality_notes=['요청 미완료 · 표시된 내용은 부분 응답일 수 있습니다.'];render();}
    }
    if(streamFailed)$('#copy').disabled=true;
@@ -80,6 +83,7 @@ $('#cancel-request').onclick=()=>controller?.abort();
 $('#retry-request').onclick=()=>$('#ask-form').requestSubmit();
 $('#execution-mode').onchange=()=>{controller?.abort();epoch++;busy(false);clearAnswer();refreshMode();$('#status').textContent=$('#execution-mode').value==='server'?'질문을 입력해 주세요. 현재 모드를 확인한 뒤 전송하세요.':'저장 예시를 선택해 주세요.';};
 $('#examples').onclick=e=>{const b=e.target.closest('[data-example]');if(!b)return;$('#question').value=data.cases.find(c=>c.id===b.dataset.example).question;$('#status').textContent=$('#execution-mode').value==='server'?'예시 질문 선택됨 · 현재 서버 모드로 전송합니다.':'예시 선택됨 · 저장 답변 확인을 눌러 주세요.';$('#run').focus();};
+$('#quality').onclick=e=>{const b=e.target.closest('[data-detection-span]');if(b){const s=current.spans[Number(b.dataset.detectionSpan)];info('탐지 구절','<p>'+esc(s.quote)+'</p><p>'+esc(s.reason)+'</p><p>점수 '+esc(s.probability)+' · 정본 ['+s.start+', '+s.end+')</p><p>모델이 특정 근거 조항을 확정 연결한 결과는 아닙니다. 출처 보기에서 생성 입력을 확인하세요.</p>');}};
 $('#highlights').onchange=render;$('#sources').onclick=()=>evidence(0);
 $('#answer').onclick=e=>{const b=e.target.closest('[data-citation]');if(b)evidence(current.contexts.findIndex(c=>c.citation===Number(b.dataset.citation)));};
 $('#source-nav').onclick=e=>{const b=e.target.closest('[data-source]');if(b)evidence(Number(b.dataset.source));};
@@ -94,7 +98,7 @@ $('#expand').onclick=()=>expand(!$('.graph').classList.contains('expanded'));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('.graph').classList.contains('expanded')){expand(false);$('#expand').focus();}});
 $('#connection').onclick=async()=>{
  await connectionStatus();
- info('연결 상태','<p class="badge">'+esc(serverStatus?serverStatus.mode==='test'?'L1 테스트 서버 · 실제 모델 미실행':serverStatus.mode==='model'?'모델 설정 있음 · 실제 연결 점검 미실시':'L1 서버 연결 · 생성 서버 미설정':'질문 서버 미연결')+'</p><p>현재 공개 L1만 허용합니다. 기존 저장 결과의 생성 모델은 Qwen3-4B입니다.</p><p>새 답변의 환각 탐지는 미실시입니다. 실제 모델 실행 성공은 실제 요청 완료 후에만 확인할 수 있습니다.</p><details><summary>연결 정보</summary><p>구현 계약: l1-http-1 · 키워드 검색 · 같은 출처의 로컬 서버</p><p>Gemma 등 미연결 모델을 선택해 실행하는 기능은 제공하지 않습니다.</p></details>');
+ info('연결 상태','<p>로컬 개발 환경 · 자유 질문은 공개 L1만 허용</p><p>생성 모델: '+esc(serverStatus?.model_alias||'미설정')+' · '+(serverStatus?.model_connected?'모델 목록 응답 확인':'연결 미확인')+'</p><p>탐지기: '+(serverStatus?.detector?.configured?'체크포인트 설정됨':'체크포인트 미설정')+' · '+(serverStatus?.detector?.inference_verified?'실제 추론 완료 이력 있음':'실제 추론 미검증')+'</p><p>저장 결과의 모델과 현재 생성 모델은 별개입니다. 모델 목록 응답은 생성 성공을 의미하지 않습니다.</p><a href="/internal-review/">내부 검수 화면 열기</a>');
 };
 $('#data-button').onclick=()=>{const s=data.stats;info('데이터 현황','<p>기존 파일럿 기록입니다. 이 화면에서 새로 실행한 수가 아닙니다.</p><table><tr><td>공고</td><td>51건</td></tr><tr><td>전체 색인 문서 / 청크</td><td>'+s.documents+' / '+s.chunks+'</td></tr><tr><td>기존 생성 답변 / 정상 차단</td><td>'+s.generated+' / '+s.denied+'</td></tr><tr><td>공개 재생 예시</td><td>'+data.cases.length+'개 · L1만</td></tr></table><details><summary>기술 정보</summary><p>기준 실행 '+esc(data.source_revision)+' · 사람 승인 pending</p><p>L2·L3 본문은 이 화면에 제공하지 않습니다. 이 재생 JSON은 검색 코퍼스가 아닙니다.</p><a href="rag-pipeline.svg">파이프라인 구조도</a></details>');};
 $('#settings-button').onclick=()=>info('권한 시연 설정','<p class="badge">실제 인증 기능 아님</p><p>현재 공개 L1 문서만 볼 수 있습니다. 회사·역할 선택으로 L2·L3 권한을 부여하지 않습니다.</p><label>회사 문맥 <select disabled><option>공개 자료 검토</option></select></label><label>역할 <select disabled><option>미인증 · 공개 L1</option></select></label><p class="muted">회사별 문서 접근은 향후 서버 세션과 권한 필터 연결 후 제공됩니다. 팀 내부 라벨 검수 화면은 별도 파일입니다.</p>');

@@ -24,7 +24,7 @@ export function eventGuard({requestId,bid,snapshot,mode,documents}){
  const allowed=new Set(documents.filter(d=>d.bid_key===bid&&d.security_level==='L1').map(d=>d.document_id));
  return {
   async accept(e){
-   if(!e||e.schema_version!==VERSION||e.request_id!==requestId||e.bid!==bid||e.snapshot_id!==snapshot||e.mode!==mode||e.detection!=='not_run'||e.seq!==seq+1)throw Error('요청·순서·범위가 다른 응답');
+   if(!e||e.schema_version!==VERSION||e.request_id!==requestId||e.bid!==bid||e.snapshot_id!==snapshot||e.mode!==mode||!(e.detection==='not_run'||(e.type==='detecting'&&e.detection==='running')||(e.type==='done'&&e.detection_result?.status===e.detection&&['completed','partial','failed','cancelled'].includes(e.detection)))||e.seq!==seq+1)throw Error('요청·순서·범위가 다른 응답');
    if(phase==='done'||phase==='error')throw Error('완료 후 이벤트');
    if(e.type==='retrieval'){
     if(phase!=='start'||!Array.isArray(e.contexts)||e.contexts.length>3)throw Error('잘못된 검색 이벤트');
@@ -42,11 +42,19 @@ export function eventGuard({requestId,bid,snapshot,mode,documents}){
    }else if(e.type==='delta'){
     if(!['retrieved','streaming'].includes(phase)||typeof e.text!=='string'||Array.from(answer+e.text).length>32000)throw Error('잘못된 답변 조각');
     answer+=e.text;phase='streaming';
+   }else if(e.type==='detecting'){
+    if(mode!=='model'||phase!=='streaming'||e.answer!==answer||e.complete!==false||await sha(answer)!==e.answer_sha256)throw Error('잘못된 탐지 시작');
+    phase='detecting';
    }else if(e.type==='done'){
-    if(!['retrieved','streaming'].includes(phase)||e.complete!==true||typeof e.answer!=='string'||!e.answer.trim()||typeof e.abstained!=='boolean'||e.generated!==(mode==='model'&&!e.abstained))throw Error('잘못된 완료 응답');
+    if(!['retrieved','streaming','detecting'].includes(phase)||e.complete!==true||typeof e.answer!=='string'||!e.answer.trim()||typeof e.abstained!=='boolean'||e.generated!==(mode==='model'&&!e.abstained))throw Error('잘못된 완료 응답');
     if(e.abstained?(phase!=='retrieved'):(e.answer!==answer))throw Error('최종 정본 불일치');
     if(await sha(e.answer)!==e.answer_sha256)throw Error('정본 해시 불일치');
     if(mode==='test'&&!e.abstained&&!e.answer.startsWith('테스트 응답 · 실제 모델 생성 아님'))throw Error('테스트 표시 누락');
+    if(e.detection_result){
+     const d=e.detection_result,n=Array.from(e.answer).length;
+     if(mode!=='model'||phase!=='detecting'||!['not_run','completed','partial','failed','cancelled'].includes(d.status)||!Array.isArray(d.spans)||d.spans.length>10000)throw Error('잘못된 탐지 결과');
+     for(const s of d.spans){if(!['completed','partial'].includes(d.status)||!Number.isInteger(s.start)||!Number.isInteger(s.end)||s.start<0||s.end>n||s.start>=s.end||Array.from(e.answer).slice(s.start,s.end).join('')!==s.quote||!Number.isFinite(s.probability)||s.probability<0||s.probability>1)throw Error('탐지 구절 위치 오류');}
+    }
     phase='done';
    }else if(e.type==='error'){
     if(typeof e.code!=='string'||typeof e.message!=='string'||typeof e.retryable!=='boolean'||e.complete!==false)throw Error('잘못된 오류 이벤트');
@@ -76,7 +84,7 @@ export function createHttpSource(documents){
   if(status.mode==='test')body.test_behavior=behavior;
   const onAbort=()=>{void cancel(requestId);};signal.addEventListener('abort',onAbort,{once:true});
   try{
-   const r=await fetch('/api/l1/answers/stream',{method:'POST',signal:AbortSignal.any([signal,AbortSignal.timeout(70000)]),credentials:'same-origin',headers:{'Content-Type':'application/json','X-Astra-Token':status.csrf_token},body:JSON.stringify(body)});
+   const r=await fetch('/api/l1/answers/stream',{method:'POST',signal:AbortSignal.any([signal,AbortSignal.timeout(900000)]),credentials:'same-origin',headers:{'Content-Type':'application/json','X-Astra-Token':status.csrf_token},body:JSON.stringify(body)});
    if(!r.ok){const error=await r.json();throw Error(error.message||'요청 실패');}
    if(!r.headers.get('Content-Type')?.includes('application/x-ndjson')||!r.body)throw Error('잘못된 서버 응답 형식');
    const guard=eventGuard({requestId,bid,snapshot:status.snapshot_id,mode:status.mode,documents});

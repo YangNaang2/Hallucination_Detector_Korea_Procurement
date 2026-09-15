@@ -200,7 +200,7 @@ class ModelGenerator:
         self.endpoint, self.model, self.token = endpoint.rstrip('/'),model,token
 
     def stream(self, prompt, cancel, deadline, behavior):
-        payload = dict(model=self.model,messages=prompt,stream=True,max_tokens=768,
+        payload = dict(model=self.model,messages=prompt,stream=True,max_tokens=max(32,min(2048,int(os.environ.get("ASTRA_MAX_TOKENS","384")))),
                        temperature=0,chat_template_kwargs={'enable_thinking':False})
         headers={'Content-Type':'application/json','Accept':'text/event-stream'}
         if self.token:
@@ -209,7 +209,7 @@ class ModelGenerator:
             data=json.dumps(payload).encode(), headers=headers)
         opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect())
         try:
-            with opener.open(req,timeout=5) as response:
+            with opener.open(req,timeout=max(5,min(300,int(os.environ.get("ASTRA_MODEL_READ_TIMEOUT","120"))))) as response:
                 if 'text/event-stream' not in response.headers.get('Content-Type',''):
                     raise Fault('MODEL_FORMAT','모델 스트림 형식이 올바르지 않습니다.',502)
                 finished=False
@@ -326,7 +326,7 @@ class Service:
                 snapshot_id=self.corpus.snapshot,bid=body['bid'],seq=seq,type=kind,
                 mode=self.mode,detection='not_run',**payload)
         try:
-            deadline=time.monotonic()+60
+            deadline=time.monotonic()+getattr(self,"request_timeout",60)
             rows=self.corpus.search(body['bid'],body['question'])
             check_stop(cancel,deadline)
             # Check again immediately before constructing/returning evidence or model input.
