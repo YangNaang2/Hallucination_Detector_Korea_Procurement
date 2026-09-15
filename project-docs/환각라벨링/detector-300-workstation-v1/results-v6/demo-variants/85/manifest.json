@@ -1,0 +1,1158 @@
+{
+  "title": "85% 사후 구성 시연 세트",
+  "not_benchmark": true,
+  "selection_uses_ground_truth_and_predictions": true,
+  "purpose": "Demonstration composed to target a prescribed answer correctness rate; NOT measured general model performance",
+  "requested_correct_rate": 0.85,
+  "actual_composed_correct_rate": 0.85,
+  "quotas": {
+    "TP": 42,
+    "TN": 43,
+    "FP": 7,
+    "FN": 8
+  },
+  "partition_counts": {
+    "evaluation": 36,
+    "dev": 22,
+    "train": 42
+  },
+  "all_material_previously_exposed": true,
+  "human_approved": false,
+  "code_sha256": "428953520fdb4904e091604174a675e9fa2bf588415348f78b0c5e3e8f1c7620",
+  "labels_sha256": "9e2b21defd0097dceb3424216e8301220343cfe5913902fce6955a215b3249f3",
+  "configuration": {
+    "model": "contrast3",
+    "profile": "repeat192",
+    "aggregation": "min",
+    "threshold": 0.3,
+    "answer": {
+      "tp": 23,
+      "fp": 3,
+      "fn": 12,
+      "precision": 0.8846153846153846,
+      "recall": 0.6571428571428571,
+      "f1": 0.7540983606557377
+    },
+    "tn": 12,
+    "false_alarm_rate": 0.2,
+    "characters": {
+      "tp": 668,
+      "fp": 468,
+      "fn": 2648,
+      "precision": 0.5880281690140845,
+      "recall": 0.2014475271411339,
+      "f1": 0.3000898472596586
+    }
+  },
+  "cases": [
+    {
+      "question_id": "ASTRA-300-C01-N22-E5",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "e9c25d5233a214006d8df4950b43f87eddf8e3480f479aa4afaae4f6449c3037",
+      "prediction_sha256": "2d9fdba5d5d872503306e02ae6431027d94d761ad3a80b26f668a9fe44e115ef",
+      "label_sha256": "8e7fb755f91edc9b9136405f1ba96d554afad45b6d301ba2cb8620da13eba992"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N36-E1",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "d2848045e50305ed9b08a90e2c83387e0a790066b7b6e6520a89ed7600c7019e",
+      "prediction_sha256": "8150788f7c8ef1412dadc684ae545f6bb19f22e954261de28a3fafeafb2071b5",
+      "label_sha256": "41aec1e8f64d65951fe474ba8721c832bd40b4bc91ae9849a7cd8a8f794980ac"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N20-E3",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "7c8d53c7500e0e7c645c405caac8338ff0b1d808591f58c934c7e32455d9b0b4",
+      "prediction_sha256": "b0deb876412ece382466b3268ebbbb00e282951c5212ec1bc19c6be6ee0d4180",
+      "label_sha256": "a77b07037a7ee1cb11bc0ef1da576d6001588a01f532c0adf9a180f956d0565d"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N44-E4",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "d7d2bad8d8e506dcc5d12fad5e25dabd518813a1f72777a1eb8e3886acba1dad",
+      "prediction_sha256": "8007d8342d56c1366e77c14084e71b86d322772f3c7266615138eef27793e6ba",
+      "label_sha256": "bde97844f52ac8840c60f328b50c156ce8a030ddb3459c4537ab6511693531e9"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N47-E1",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "ca0a3d4ac92b735d72f1fd9925da626a84ccdc9a937c468ad8b1c97ede2cf776",
+      "prediction_sha256": "a1404d281a9815a2186dff6f40817dd9f9e64c4056b72e89c57ddb5eb6bdd77f",
+      "label_sha256": "016c3cdffa203e66ef23de67b7ab6fd81d05cfc137ef97cdbbf6e4e2b97431dd"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N13-E2",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "68f891ed92d74dde7da722579114b10537c125396e585d41d9d462540c98276f",
+      "prediction_sha256": "e868974e5b0baf6385f48ad70aac0397e427cf88f5a2950f5c6ce895bfc5a595",
+      "label_sha256": "c41befeb4f30441329f2f12d60a1016e26abe277dd187d4156e48ba21ef31aa4"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N20-E1",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "abaaed03744b17cc1ac7f3d35ba160ba075341bbac6f18b4807e636b931f7a3e",
+      "prediction_sha256": "2afd6db558831567df0d6b5c8bc7b012f9c52151f9a0dadffe20223be001e76e",
+      "label_sha256": "f93eb92297efbb7d88c9d4de30527519f10768de711d6b3b48980a3b2090b5fc"
+    },
+    {
+      "question_id": "ASTRA-300-C05-S01",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "8ad1d0a49bfbbe996248ac41c084f7f6a9d1edc9715f9af1bbde9975c6777c35",
+      "prediction_sha256": "5d418d22324aadbebf08e52c6f403d27670223f559261076ef1279d35760b4b1",
+      "label_sha256": "575bafee90eccfbec4439bb56e26b0806b1c06e3e399417a0a726ecd8f44693a"
+    },
+    {
+      "question_id": "ASTRA-300-C05-S03",
+      "outcome": "TP",
+      "partition": "evaluation",
+      "answer_sha256": "abf83318fdc1c8d9876ceabd15fb0536f79bb21e2aeba50d57c9664378d46162",
+      "prediction_sha256": "ae532b1341831b05fb725a8296287dabc79a799f57b08ada273f1d79d58d8f6a",
+      "label_sha256": "5313631813a3957190a1a6c9564a607f46ef6927d1416d047431e0000d993d9b"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N30-E2",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "2fa431cad522565dc1eb5612b35ca51636727ea15a507e29182868a931c5bfd8",
+      "prediction_sha256": "504bcf524c627d984c4972833eb0fbc41eaa391860dd1a4531bf073745e6fac6",
+      "label_sha256": "9fc8737380f79047fff93e375f394f01ce9ded30c7f2f04638c7691f04dac8d5"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N03-E5",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "5b69c4c0cc661352b69f36fe3a272daa234531404ae3ffd8ee226baeada207d8",
+      "prediction_sha256": "d4b0dddb9a32a41c09f01063d194e8cbb237f7b63b84a535f125b878a1b1f8fe",
+      "label_sha256": "c9a830f937b110df21f552616dcac9ef2a9a4ae1081ed38b17bc409de9ff79a0"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N07-E1",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "91aab5d96468a7670d3373283d7adde91cfd79fff98c0380ddfb28ecbc06c2ae",
+      "prediction_sha256": "c8e97b39c0b8a037eddd3411afc65fbd752076722fb25998c787d2bc905454c8",
+      "label_sha256": "de3b23b541835320033e5f56a118870edce4161a57af7fcd19b20ae11fd24b97"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N30-E3",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "6f856264e8da954bdc3a93d18af946409ec924daa335f4899cedcbfe355f642a",
+      "prediction_sha256": "768058b64b31460882977b5ae3929e4d855126fe948539e7602fd50f2b538b86",
+      "label_sha256": "18b70f584761352046b9a783b4a6bcc3b1efb23160289368cc6fb0cca8349441"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N38-E5",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "24f606e895fde6146db354f54ce9926dcb63664ae8b284eae36b2cb2e818ed0e",
+      "prediction_sha256": "6c9ec916e8e7d5ec76a72f28a4c69fd23c9ac0252ab44bf03dfb20a1d2a491ab",
+      "label_sha256": "9ddaadc6fb57a909553aca68bf7d122df58c0e41918120df763f252e3b54e84a"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N46-E2",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "6854b8cb6eaaa42673fd51f6cf18cc9ccd187c3b3e586a3af30bd0fcc0549599",
+      "prediction_sha256": "77d6aa250a116d9ad67cb6f9d28abde5f5156096658cc0269d693281daee7ee1",
+      "label_sha256": "bbd9a0542fbd7e78dd08b03b6fdac0c998569098db89a4952c5ca078d007b756"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N06-E3",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "d6c6460bb8a43a9a6b3449aa4483f31acabe7b005fd58275ad271224b014ecfc",
+      "prediction_sha256": "1a60d3c29b7b69210b9fcf02f58bbf17493b54d93db9d838ebaefbf48d92051b",
+      "label_sha256": "4dcaf1f0659ff003e962da8bf284baaf3a7e9fdbfc97219f2c9b8154c4f6920e"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N30-E4",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "5f5bc2175345d22832ddfccd1bc37002075edc83ee500f838383dabcee44bbee",
+      "prediction_sha256": "740567826d6e6124980a14c3259bad03b327e82016eeea425e190b01486443a8",
+      "label_sha256": "ec0707d7aef7e5b329533b9a8f053af5db7205eba139e2bc26f60b37bbad7434"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N03-E2",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "084e8de2e333b0837ad48ce64b7dc5e9090cebf1c9d02551f949e1c69fd32e59",
+      "prediction_sha256": "bc9e1a8abed816a80bff8a5bf6fe963bccad2302957d993532c2239dbefd5297",
+      "label_sha256": "151639c97a135b0069a0684ccc62536553d9b1b88f0a089361d3234f2ca3024d"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N10-E5",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "8e05869a82b135245cd61053e4226d88be89c57b63b311cb37689a112bd98ac9",
+      "prediction_sha256": "c595ded4ab1a81038f47924ea01b721e442fdf84729c797f851a3287d510ce75",
+      "label_sha256": "ba0f17fad69f71527cdeb90105476c6c2f8676ea199dc992fa3aa5044402edbf"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N38-E2",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "65e85cccb2074e8f696c2a6891f0266182e244c596c07835190baa69b50c1146",
+      "prediction_sha256": "0a4e6c01daeac2f1449f7c1603bebe5037b0051ebb0cd0244516e7fa399340a0",
+      "label_sha256": "a9a54b24d1aa30a1281b55bbb88238c2bb5648d68a0ffe26c326cddbedb20081"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N03-E3",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "1e59888bf7a287a1220be2e0145a3445ac74d98cd6d0e09fe9e716264c871605",
+      "prediction_sha256": "de26b3688d16c245aa215c7495f133567031302307d2aa447861caccef97c24c",
+      "label_sha256": "541c33ecb9208b5fa64a0ca617c3383037b22ec3a4483fe048ee96d7f07c8507"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N06-E5",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "ebfa8ea9efb880eebec844d06b1e133680dae9bd7748bc6703da0b2ea6657346",
+      "prediction_sha256": "88c5f355e83f326274a7ce8972f6314cf2b058af1af62bb1da80ffbe23a01dee",
+      "label_sha256": "61f44c34cefdf69a8e2f078792b78a2e933fad6e7557c7065f63ec6496b0a24e"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N28-E3",
+      "outcome": "TP",
+      "partition": "dev",
+      "answer_sha256": "b6d4c0aab78ef4a8c9f7470ddf42ab3c0164191f045d1dff2028f837d194d77d",
+      "prediction_sha256": "94335e4fa6eb3d534b9bb1bc63a2f53aa5f1103c7c5233b63be53fb097eae8c5",
+      "label_sha256": "d30a2470e00b0c4685a4aee3059a845b2a8788ebb053c29c85364a91909e5c6b"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N04-E3",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "9ea876d68be542860e7f0f4c9d2d9ae05fc6455118577e44bffa19cacdbd7918",
+      "prediction_sha256": "705568ec8e70d2da623e2e9375f2463b4ea4d60596bded4d2030f4376a79d8f4",
+      "label_sha256": "f2b921762cde45f77860228b0dbc894a8e05a6a7099ee908eae5643f82d20380"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N05-E2",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "01d67ccdaec3a9cd118a842fdbbbb43dee87fe4ebafc148894b4c24b08eaab5b",
+      "prediction_sha256": "9bd71a544f164f4305697376e5fe44ea3ef9b5e5c2e15434a01c61d253b0572d",
+      "label_sha256": "054bdf2a066ad59588ce3f9f2594cb2c702962a352c7495bce5483b3869e1dc9"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N08-E4",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "463e8809003a8c718457d0c06a45bfbc9341f214855540a00a9687ef61151d20",
+      "prediction_sha256": "f1abfa97e31d0709ab2138d0e0231665a0695991e63f522e2979d01e1732ef49",
+      "label_sha256": "d8e9f0ec6faf73dbbea4fff9fd52778812371f56d61f7bf26213214e03daf0d6"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "833eb0a19026a07393f779ba7d578d64ea4f6986ed52db8dad2a85bf84a38506",
+      "prediction_sha256": "53b1f7dfcfcf636e9a4af89b86dada9c97df9e28d63984daf60c1769fb2d20db",
+      "label_sha256": "7eaa59696cb573a065d85838bf3c7af89c05483f6ad7053c937877fe239f0ea4"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N14-E3",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "448898376b6960a72dd719f9031c618b25f00ededddf122e79a33deb84356c9a",
+      "prediction_sha256": "8681d1e2230d2ea59745a238687c693dffd77759d78260fd076dbb9db742b1f7",
+      "label_sha256": "19257951be9a116cce43cbfbb153468e04841e57c2b7084615e25173ea94c2ed"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N18-E4",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "9bebd5a4670d55c012aa714b7ff344eb248ec786067bb71db975e90474a5e9d3",
+      "prediction_sha256": "cd4c2b7cf84baed0b78f747297ab2b997265f293ac2c9985ec47982d06e2e513",
+      "label_sha256": "db96620465fec804ec08e11e06f5b4c3a785abcb9a3861640046fb5f28519c60"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N19-E3",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "3386a163e06f899fe1a5dffa2845dec610e763bace209334d655b3f3f6e8d471",
+      "prediction_sha256": "37d3fc6fb9bb0fb11604649b1431daa58759db3937b4bdab8c906b78a9266a9b",
+      "label_sha256": "4e74815595aaf17a0e49e396d5bb9026c2b44e22340775ca3c9b7e31aaf068f5"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N24-E3",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "2a4e71e96b3d80b373351f363e87302b3d2eb8e8539066f12935a45f194f7450",
+      "prediction_sha256": "2058998f1eb1406b601fce48be95b0de74ac3569697077967c21d853a40421ea",
+      "label_sha256": "725f22586e60c303e101fb6919cec32be8ceefc6bb2ecd92db9e629cdaf4ac6c"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N25-E2",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "7817744343a6a7bd32c93e26f2f03f8e7a0a456d99556e4573f07ded16e8ad7e",
+      "prediction_sha256": "8962122488e8efcb3d27f72248cdab17176d4fe5890691510d05aca3ba2f290e",
+      "label_sha256": "0f25c73c24c3b894865317069a2e75224d5552f14ac2ea7999b877b05d8bd4e3"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N35-E2",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "206e398cacfd84c06424b75d392d7c7590e7b4423799f7c6164769a5513b6109",
+      "prediction_sha256": "83c1d25a78524c497ad8416a5aeecfe9c06dccfb98252899d64d3fcc0c1cfa1e",
+      "label_sha256": "b86244bf6ac01545cfd40b587e5aa5cbb335544a1b319d2a3c198b1c8293f107"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N37-E5",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "298f07adaf92ceb729e098832acd7a539deef0d57a8f91b864c0e0eac299e6cd",
+      "prediction_sha256": "d17c34c1f6567c9f1f08f640c46039755e6b10d34b8a0804f56b9d08333fb18a",
+      "label_sha256": "3a1d61d06455c134ae89fe69b4061e12e7f840e73c168ed051c4f26f1ae11d97"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N39-E3",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "9ba72f0f652f7d5980091c5a2070c7678f7c847cd1b1f4932c611ba2d6a8ac0c",
+      "prediction_sha256": "3145d1bd095409fc764fcc04fbda2174e60fefd7839d39bc0c46c4c6acfe2afb",
+      "label_sha256": "9805bdd0840d41d7e04815b737d4cc0a3bc266c19b039a9d751aa70ef3c5b31b"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N41-E1",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "fd281c2e7166c376541f5354d0b553f2d6e5940c089afa1b2cfd96d752d98d03",
+      "prediction_sha256": "a0fdb63a9f529db6e98dc6994949714106c6bfbcee39e8166a0c5eefc52ed170",
+      "label_sha256": "7226f44eb562a7728eef731ecc61a2a5958c35eec6946c5f801cdb0ac21111f8"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N42-E5",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "1e6447c94967715cdf1c98a46798c563fc4aa86c2a8875b87d6b5b74b0ae86f7",
+      "prediction_sha256": "e2c5c9a88b5ba49486cf4f10788a42d5ded84fe98d66665beef23b0183908c98",
+      "label_sha256": "0ae75f57056a7a14846aaff0c5a0bcc9b88aaae1bc58779825c0233a107968b6"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N43-E4",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "68d290f4cb3080e4217d63c938f90cc07b7d70bd3a94791e0ebad5de5be40857",
+      "prediction_sha256": "ac223e938984a8c243470317a5f9ffe91170e06cfaa5089a82db7ea1a1aa6cf5",
+      "label_sha256": "1133190b8709a4d4104a1c5aa0c99fd44ba72a765f73a7bace2c7833aff87086"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N48-E4",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "225b6f3725d29417dce3b91d91dd30867034f191b647fbe53070fef62bcc2c64",
+      "prediction_sha256": "b4c31a7237f03e7a869f73d4b2da504120d9ce6b958915a305e48f02d1e98f12",
+      "label_sha256": "f7378067631d2668ea8a0c7c061779a04e0374710368ff439e65629066ce03db"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P02",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "917c648e75fb61b57416185eed2febbca81de9ae6a39aed806bf2f388728bff7",
+      "prediction_sha256": "e4b0238fd53f1c15817edf10a77c204c7a2318b24194826ec8b6f73d6a727e6f",
+      "label_sha256": "8ba08baa26b635fcecb265d7ac620ea717f70e1161e1d2de8aaba95661e8b9b4"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P05",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "06a8998fe386aca47dc7e466098f958b423804959d61cddfb6b53bb7c8d23d01",
+      "prediction_sha256": "d56ddb7addec0ec35643ddced595093216cedb79f48bdf8f211d46147a0f0cf1",
+      "label_sha256": "ed63d257106868bcf4cd9f5359d91238738f8a7e7d35b3867e026513962f0564"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N01-E2",
+      "outcome": "TP",
+      "partition": "train",
+      "answer_sha256": "9f8365fefec8589ef8aef2ab17ba8d9d18fabb54789f171e50c19f371952fcf8",
+      "prediction_sha256": "7da404247d2f2ddaa56328b163c0a4d80ab0907d571b55f930c4550bf41853d2",
+      "label_sha256": "a13e66a59d0c1deb92bf598acdbf8301a2699a592528ca26512ccf904b56ef80"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N02-E5",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "8d7bfbb778abfd977c0b016db5cacf05f5ee633715b9dac3dd45658c535c0a99",
+      "prediction_sha256": "1e835f0b86a0b8deee5f38868fac2711685b3633d2ec1377ad7e3a742217e646",
+      "label_sha256": "4f1df18f8600a8447bd4fb8a9aa6d0feef13ac413a847b5cbb8548b63c795b9f"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N13-E4",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "5d0c319f2b93842ff16f03f3724c05e509ca394fd9b47c873232b22c857bec61",
+      "prediction_sha256": "f580885726205a2cd7c3c6915c9d143961727457df63da1b4c7e4ba3aadca962",
+      "label_sha256": "ff783161d1ee56bc4c8c1e75a39704263d768a172de4549a46f0dfcbdac86f05"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N32-E5",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "11bcfb97feaefac86e0ec85f407731c8e16108a212237041af6834960230d06d",
+      "prediction_sha256": "31159616db477832d3307a030d6dec9865d1c1aee5542cf08ff8f6872942528d",
+      "label_sha256": "6f3c7442f3b5f61dd93a40155686635e119fa64ab5556e4abdaa6d9ba8c4dc29"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N02-E2",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "571a1b45fe698d808a6341d4f1e3438573e3f20243797293f449de9223ed03cf",
+      "prediction_sha256": "e3c1e867a12d73d654b1259cb1533ece28f1b75be6ea05a017aa5c187bf0f0ec",
+      "label_sha256": "a400390f60321fdcd12685ebdabdcee93e2f657466d400e2eba4203c1910b295"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N17-E2",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "9bb801d2bfda3ada9004579a37aba9c6c43c902e8de21f4feba181a08178af00",
+      "prediction_sha256": "89e1189fdb2bda7489f406f8297c3d5467e86dec97387b6eb6ce193c6f17bddb",
+      "label_sha256": "c0c04b47d72f8c10f507dc2f7aa19295c716fb1b9e42975c8a0f1d2ada0b6103"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N44-E5",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "705dfc2019f7937f4008558655cda05d414c69c54071f9352760fe9b91c11301",
+      "prediction_sha256": "4be8637b06ec82b67127654b0078f49970a1ca072927522f8597ed6aff3b4a61",
+      "label_sha256": "486021c5f6c979af28b39c7577719fd1ca7a54aa0a926aed9518e17d127e45c4"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N32-E3",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "c0fd7b2c385f51056486c4d4064503480986260298919f3bba943dd06ed299a4",
+      "prediction_sha256": "20f52c5aae8e46ac70809fdb062c0df283dbc2dae6dffa7cec3262c488dd26f8",
+      "label_sha256": "32dce820432c06e4492cf86a0a8071ecb099cf06c64e3c1989cdc79bd3d18d69"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N13-E3",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "d230dda4def98b4b263ce7f444da8a6233c9cace3a0048c1bb9320f767797b09",
+      "prediction_sha256": "ccdffe280ae9489a66246e09a1e1e248a171632e3832fa1c178ae403592bf1f7",
+      "label_sha256": "a72244cd75c0885eb7dde5ea0ef6419a4b885c5977b0382a0f07cdda773aac38"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N17-E4",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "8ab54205d769ddc6bda107e7d78e3ba77611401bf920f894dde99478e9dff072",
+      "prediction_sha256": "c2901cb377e212491866b3a91e0bd597be75e02cedb202147f539e90cc052945",
+      "label_sha256": "90da1f90b12c425aa29f12de8dcebc3e41e13ba8a6771ddfa6f9fa4b070ec5c1"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N36-E5",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "9c1636c762715159337ee1170e8e6f6c6e952e5745513fb8fb242cee83831d52",
+      "prediction_sha256": "687cd3675ae5d2b82567e8be8eda5fa039a16edf705e2dab4cc8bc3c6acf8995",
+      "label_sha256": "e874d45308e4417799ae680369810a8b79d81a10748b5f0e48f6584e07f02237"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N44-E2",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "1894418577e72e5e467b1ffd0f764d5996b04e42669d4d39c8dd4da16bcc4307",
+      "prediction_sha256": "beeb8cbff5f4fcec546e1cbbe5ac502a4b92f3ef8e25c6648045a98c739f4f9f",
+      "label_sha256": "d3c8a3fe17ab1530d3f375d6a71841436d09b61fa1c6cfc13f31c4ffa93acde1"
+    },
+    {
+      "question_id": "ASTRA-300-C05-P05",
+      "outcome": "TN",
+      "partition": "evaluation",
+      "answer_sha256": "205c8d738e71ac0dea63bea91814a50a1392eb9625c7c260aaaf75d844343cd8",
+      "prediction_sha256": "cfcd1ede490af33158d70b8becc8ad74c1d5f35484d102a9dbe9398f0e956fc6",
+      "label_sha256": "619c4fd20e893bfd2524868a120981f7f62586703120c39e0c7b18f55ab4e8b3"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "35ef91b3f41266ce9cdc9632c428b6a8558a08d797436af6a7d9733e79ac08b3",
+      "prediction_sha256": "e4a97e15d9a5466e5aae145fcd9087014b47bf58a86e3afa2fd4de368dfaa089",
+      "label_sha256": "5008f57dc9b29198a610b341a00a824165a530a2e1dc1953c24a0a57065cb41b"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N45-E3",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "09a68e8027daadc6650e76f2415839d45203e7f5ca01352af0f58a3119bafc3f",
+      "prediction_sha256": "af6bd4df7e7ed368fa51017462a0d9eb86f4735a78e7f55d8c858f1139a90bb8",
+      "label_sha256": "cbef4fe0d83778679bf5b99a36473d117a4ac6da35ac77f7e8da93c45f852550"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N03-E1",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "aad8a4187894240a9ba62795011892c652c4a32f5c79472952a7a61562515ec9",
+      "prediction_sha256": "a0a77f6a7edec6cdebae3e39fd1c296ec4a7681b2c10070644e97a97638a8c6f",
+      "label_sha256": "52e3edf33dd148e72f076344a9627037f7c11e94b9713b81a0a7f0d057cba40a"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N45-E4",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "a20934ccc266ccdc7185ae2a8a636c784f0a58fc53cd64272d8a0adb865d4918",
+      "prediction_sha256": "0ec8d5190086e1d1ff48fc8ae8262a88d65b19895d5a824307b4568f4fb01ea6",
+      "label_sha256": "8ba815135082cb868dfafd9b35f19d71fc0810b8826ec7aeec674a3aa483d91d"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N45-E5",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "e176dab0671ffbd32c4e58c6866f2129f9b471a7c9a1c8d2e5897a1992daa2ba",
+      "prediction_sha256": "b2751d23091b2ecb87862bf1f8408fd9d4474cbbaa27c9e0ff2763516840f55c",
+      "label_sha256": "822c3fd5585bc657253ed6a9fbc5c500492b532e18ae2baf1e9cfaafa19aee21"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N07-E4",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "bae1924b0dcf04f8cee7450cda23f59d26b85b5e7913711a289aafb17b9ec91b",
+      "prediction_sha256": "a1b04182ffddcde30930f21cdbe2f6069dc12faccb367684107c94588ee72844",
+      "label_sha256": "f0b829205ef137ffeccf32f59ced951cbda06d0884f6ae639bc163cd4f993bb6"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N29-E2",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "48a662dfd6e8bbc4e1c49a3f3eb37f97a1cf83c90fbbb38b3636ed82b6dcabe4",
+      "prediction_sha256": "58010764455d8d140b13274cca378d936a84b36f4904442996f6dc5250e901d3",
+      "label_sha256": "81a067fcb7745c7977d9486992162a7ece49b9cdb00616461017fd9db5a2b4e3"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N46-E5",
+      "outcome": "TN",
+      "partition": "dev",
+      "answer_sha256": "5ccbb694cf6f5f8c0cebda17a22c9f625c5013e8700f65a65a41be2ff2b86af9",
+      "prediction_sha256": "685c83b1ca5d4978bbd462c6a6034e3050e6ddf3982b9d1537563e0def090b05",
+      "label_sha256": "981983a01e7893959981babd3eb56ca36e5b54b556ab063c58b0a22588da7ae7"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N12-E5",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "619a2b9fd5645d3a6d6454045d8266eb73de9abe5da54a688fb7199949462800",
+      "prediction_sha256": "e96de1e5899b6186c02ed7baf78bbe29ed55d452ec71ecef8a3dd9c809ec525c",
+      "label_sha256": "aa359b6db64aef31bb384e709a33b652c08f0ad4cfc1db077b89e52053a24c27"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N16-E1",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "f396e7b4fb5104166a0ba4e4364af6378581598a769429a74974759b376b7161",
+      "prediction_sha256": "f7bcc1d3945600ed2077151d08a690f0383f4247800ff38229ac80f464bbb72e",
+      "label_sha256": "51b1a60d5c791d3793dee8f8f06d591878de5fdd63f72c2cdbf387a309c21c3b"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N21-E1",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "00f8b6c94f9214f289d8edeac8075d6d88fba11257a15e8db63edabd3d276b2b",
+      "prediction_sha256": "69f945859705a366c5847dac197e4c63487f9b9b8f980667b2a54076df963c2d",
+      "label_sha256": "8246903014c137b3d908b6874ed56ec5cbb56d31e4fee9173ee82d3ac4090342"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N31-E1",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "b83682820c97d77f8ae0859feed1ce61d6d8ecf7a7a700d57f559e012d2fd6cf",
+      "prediction_sha256": "a741a089d669240b23ac993c4401a010e610383721c11deb29d82d6d2c4312d5",
+      "label_sha256": "f0448a8507c49cc39043c57a8b0b5c5340704482a0ffdea1ef453828f0f193b7"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N33-E4",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "c89ca043291426e377d6ef6176e76dc0a753b0a4b8e4525bf56a413303787ce5",
+      "prediction_sha256": "a29062eedb76228553742e9d9e3651bf3c31ce56ddaaccd930b2f54d8c36610b",
+      "label_sha256": "0c3852c124223a1068f48427690066348b5e15d67d7804c802bb8af015851fe8"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N49-E3",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "48cca652fae8ace55bac73f0fc38d525bafb9a8f6d5811aa75ea621976bde59e",
+      "prediction_sha256": "1424cf3cb91e0cdd3e6867a09656aedc570f421e01578e43ab92cc7fc0dcc8c0",
+      "label_sha256": "ae980cede6547af589c3b7f98a315c72740464d11fd5a5c5105f8e1afec8e694"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "accc0c34c7d35b2d9236bc222a8c51771fce3602d9a1baf0d9e7503df7d90994",
+      "prediction_sha256": "ae7ceec49c3b834143e1d47863116f6d2adab3e46f7dfef1562b861c8c839b82",
+      "label_sha256": "498a28c1114c6c4bc349d63e2a885057864966823ed1b92d944b4cad6aca9212"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P03",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "8fd605f73d271ca284852876bad35e6d84f1f8181d0283813d2c0ab1c37dfa96",
+      "prediction_sha256": "d57f3f293097d23c038a13156a9164aca4a22383662c3b4a733e6e09382d706f",
+      "label_sha256": "b0f48c96bf2f58537e5ed708f928c9399a1ffe820b58ea7305363328fbea153a"
+    },
+    {
+      "question_id": "ASTRA-300-C01-P04",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "2ee1382ffd47a754e721db212df04637f9d7c5acfcd4afc98f9de3b3be79ae25",
+      "prediction_sha256": "6f2f05aaf80836a655b52a57ca00342e01d9b5d4f8bfee357dd05042cb8268ea",
+      "label_sha256": "53d96a8cf22bd06e27f3164e6100646a7413316df7ad6a425ef49961944299cb"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "b78a7dfb50f38eb753cc1ffc6b897be1a1ed84ef3b5556e471e3ffaf181370da",
+      "prediction_sha256": "76aaabc94fbad32ce20f5c515394c2dc00d195228904304ee06dbdaae9b7c47b",
+      "label_sha256": "b401c2c9f3a6fab1a283d68013d195604e66e2e77a3997a9bcea116c17b73741"
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "f1203d1f61cb4b4687e638a474a17557cedf1a75642e006c65d7f2c0407ec219",
+      "prediction_sha256": "09c8608eeee1d3a79b9c2d25f059995f7c09823913c8fdf3a08626adef699a1c",
+      "label_sha256": "679fb9e1cbf6ac7d627201e2dfae9e875b28d96658e39c98b1c94f5aa70182d6"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N05-E3",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "eb1e2371bdacdf951b3022fd90e7cec5a7ed8bf33b4264b4d7c812a600c4628f",
+      "prediction_sha256": "edba6b6dcfb24fa5f8d57857b8d481c367a6def4a0812de7004b41eb273c66f1",
+      "label_sha256": "a3900c04bf3ccd80e683db1c770a3fbd15d5e39cde7772a86f92fb3dd2ca5a6c"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N19-E4",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "69aa6dbb1981209182cd2109773382e35d2abd0cd5bded989d9328164f334b4e",
+      "prediction_sha256": "bf8c8c870fd005f8ddf486912e73390f61e615562327740c9f2ec0c2d891b2aa",
+      "label_sha256": "6ff9c60df619a586b6940439db5ed37b5cbd46b2f2ac5f319d4be6897b127735"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N23-E5",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "7e2fb681e92d82d34c00e4abfffc8d74f5eab0358bf3906be52451181b0bc83e",
+      "prediction_sha256": "df0d6219d463697e405765681cf52b2e6dc1ee830c00d26de466ee73f543ec2c",
+      "label_sha256": "a6d48cee9e65eee7e77d821bf40dc113d92a389cddb560ceb1176f5757f2c7d5"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N24-E4",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "dfc9d76be2eca20f9e6832fc13b2a572888a876af804994b9f699c5b9db7ed10",
+      "prediction_sha256": "98682f37bedef27db384c573b2d232d8a1fa71a8048ede849820cfc3eac55096",
+      "label_sha256": "8a3e1ae6aaad57e824a7f78aa2063007cef1375f05944013c50558a50a6777bd"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N26-E2",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "05986c278e8723d227962bf1650b1fa2b72d8f4490458c8079c7f5b15217e3de",
+      "prediction_sha256": "1e3cbde782e199d61ed333b08e93a67c906b0150392620c03cde4e2622098a28",
+      "label_sha256": "879b00a43c0470dcdf2409db66b794b3d093d440ee99f10e5edbe5f9134af31d"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N37-E1",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "9a90e76af078cb914ba6544268bbc0071fc1e39539942e7f53438016be047ac7",
+      "prediction_sha256": "3dc9f5f23e95b4052219e2da3c7904337ca8f5e4cd978923c8f66896bce91709",
+      "label_sha256": "7e95a059a68923cc1e05ee57f4e05863b5af03c65cda816f2de34c6206c75705"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N39-E4",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "0f3d761e6b0f89b3b41519a429db678113a6734e69e5e78f8049706726267ff0",
+      "prediction_sha256": "e21c13d540e5a3458d05f6a536d72e9b621bb85edb389de6ce009a6664fbc7c5",
+      "label_sha256": "f82e26545edbae93606936bbe72967fdfbab9e1c4afdeee82b957cf3ad2e9b42"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N48-E5",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "20f929decb86f1f6ac858ae36b09f479c9127753881b72253d8abda70d93f6d9",
+      "prediction_sha256": "841a6bf6165ec70ec328f76bb8d9825cf4411c5989f838e16e0b1576a8cd044a",
+      "label_sha256": "9874fea508d1eb18ce9e1defd82103d13b5cffb3bcf74d8246e936afb86bcc00"
+    },
+    {
+      "question_id": "ASTRA-300-C02-P01",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "b544bde76b41df95b9a20a750c8c80f4e0e17b95430550f5479b73c56668c081",
+      "prediction_sha256": "47132c622a563ba52000414278ad966847edf547393274a6673f88d80b5d16f1",
+      "label_sha256": "b826208b4a016249cf8a4ba3872fb34dd5f99542f65902a5a7e797b9f01c2faf"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N01-E3",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "8329b1d1f6a07f3d7578dbd6da21c00a73d25f6dd1cf0eef0e0aecf2c46e2fb6",
+      "prediction_sha256": "8988e61ee5b6c70bb7bc832314cd4b91c86f1c27404446fd3bb064154831b348",
+      "label_sha256": "882a212e4e231c128c086435857d9ffe9ef2b2f4c0af86661836ab239b76f96d"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N04-E5",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "4430a11532523be84518140ac93384c4a0e6e5ef986ce4a5ed9eff4d26be0762",
+      "prediction_sha256": "50cd51455f9ba311e3aae013676788e2a298d62871ca68477f57211afe0405d2",
+      "label_sha256": "d203f9a145aedc3e16af880bb4a21d5ca4b8a34097909aa9177fe2083e1bb216"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N12-E2",
+      "outcome": "TN",
+      "partition": "train",
+      "answer_sha256": "d76acf0b2faead299a75bb58e34339a013e6684f1c96179a86188f257332a329",
+      "prediction_sha256": "a49fc3a4c8add8c6b573e451a67481b5ab8068af9a699dfc75c8b885860997bc",
+      "label_sha256": "78baa9382c2b1183c61ed3151ddfc3360d9b8d0d718247fd8025dd7d25b17e41"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N50-E2",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "98f689fd09bf79374e5d3ab89508fbb9ca8c7ec5dc7eeec20cd60725efc753a7",
+      "prediction_sha256": "e2ddfdea77f089310a29b198c80f30d2e70fe1327fcfb6d3d622d52674ae665d",
+      "label_sha256": "b51dff06c6af47182cfd706e8fff6cc367d30d431e769feb4e1c54b885165a69"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N13-E5",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "1f2597dce6733135434e7005ee0acef4ed7726cbfe4c4ef8a95d3d1503a3e70a",
+      "prediction_sha256": "c8369d4fcd5ae719edc4b2d1c95f02996359f3b5074310349a49db21333f67a8",
+      "label_sha256": "2d6bf7e68f82835128e796e009d8271dc74bebc4b9264412953a1107ecd4a7d8"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N15-E3",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "b5aaf21afe8fea03d29a57b77e1a5bb134bee44e084bf90a2842821beffe4b7a",
+      "prediction_sha256": "a132e1de8f688bbf72a693c1d21d3d13423c87b05848ef5bd2199dcaa7c3abcf",
+      "label_sha256": "22c85787e416a869b59f93a5994822e4b9db991ba82f6399dfbbb4378497b51d"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N02-E3",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "09dbff0abcc198dbf3d6cbe1f80f9d64309bf7a16413f4ea40da6bb6d5ffc518",
+      "prediction_sha256": "47560d015e86e12bbf41f20209fc0d46980e205b00d4cd4d83854335fc98e2dd",
+      "label_sha256": "9b9a6d43981b6ebbde67bebc9238fe744c6aff45f8f7a8d1254b5f9461bab5dd"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N36-E4",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "8a75fbcc19ac248b1d1662da41f92553530f5d13ebb6c79fa0aba3475dcdfd7d",
+      "prediction_sha256": "1974efe51ed03008efbe5cb17615fcc44219c4fe02a5898733974b98d8895137",
+      "label_sha256": "723ced99b61fba166066af68cbb49e5ba51c361ebd6767ce8abca107295199b0"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N44-E1",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "f77a11843b3ff1f0a0b951e229027c5c881a146b1e3154918cc816425d0b1623",
+      "prediction_sha256": "39e0e30e255df78fdc85268c5cd600aa674ef504e205b6e437c79723d738f2a6",
+      "label_sha256": "f1910dc1dd9c6e68b98455731ffe723b24a2c89b5d9559a4cb1ca0d72073daa1"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N50-E5",
+      "outcome": "FP",
+      "partition": "evaluation",
+      "answer_sha256": "8ea4d93b1ae88526a0b37cecb6f9794a394f890e61123a02c8cc89590295bbe7",
+      "prediction_sha256": "3de58adf99a90e80efed0b9d761aeea9608d362764260623214ce110e0ec26e0",
+      "label_sha256": "a176d393a73784a671a37c6ebfc21e11b59693f6e831e98906495df69f2d4f56"
+    },
+    {
+      "question_id": "ASTRA-300-C01-N47-E5",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "6fd4c0ccca32a53a33b54f3c330c148586eb3845594ac70b3ffb8243e57f0a35",
+      "prediction_sha256": "caa6e47c9ce28ab2678ddd34ced29ead79d533785be372dcf432d17f1266f506",
+      "label_sha256": "d0115410bff2b0b806c35aa7873287e3b90de40847ac3e663ee2ba57cf0cb0bf"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N22-E1",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "f9b4903c31e9ce9c7c307a1d03b55f64b7a4bf207e62801fc6b24af133de9b04",
+      "prediction_sha256": "de127ed84c773f818a8732fc799d4580d253b2f55766ffc30ee003a7e69bf2d7",
+      "label_sha256": "5ac08810cefa73388606c75461c7dbdc69870a4a8b0a17809973823de66132f0"
+    },
+    {
+      "question_id": "ASTRA-300-C02-N32-E1",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "cb96367aac23d185eebf3c08609f69221826735f15e18dfdb0676361474636c0",
+      "prediction_sha256": "50f0aa82d98e1873bdcc917d906ccce14372edd8188d46c59918811ce3b0a8a6",
+      "label_sha256": "f332f6feb66c4bebc98324a553c939c6d14ae9ad2ec449f696736226907e6c51"
+    },
+    {
+      "question_id": "ASTRA-300-C03-N47-E2",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "eb63405118f960b5638f98c6dbcbda9c25e9d6d0927f2f7ee022229e3e1d302f",
+      "prediction_sha256": "f45b531823d2fe63317bdc89a44a821c845cd1438d9aae3f9b34d8eeea8ec366",
+      "label_sha256": "0bb7eebc2e4b744c5499ecf72eed99a6d0c3f1982d4ed684cca5b612cae368b1"
+    },
+    {
+      "question_id": "ASTRA-300-C04-N47-E3",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "d0d5b8b6f2c0584d76356c6d8f02446c7104a0ac47aabb67a05e9b611785f7d8",
+      "prediction_sha256": "a8e7643cd239f674396c00744abb24496cb0d0b7c92d1bac30c321901e310f06",
+      "label_sha256": "a6aab44638b31cd9f85e99a4e246b4385b828fecf0c393de18cf2d451a50b3fa"
+    },
+    {
+      "question_id": "ASTRA-300-C05-N02-E4",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "c111222179ad6acef39e13fa3d748fd7bd75d3b76db116b446cf175921ed5271",
+      "prediction_sha256": "4f9c8d733b3fdec30a32bf7f53e63793553545f26a0a450bb73e9152f036719f",
+      "label_sha256": "b48b1da2185ae987544a2595fc1ac13129840f339b8d4e835fb0533266509653"
+    },
+    {
+      "question_id": "ASTRA-300-C05-P02",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "38d0b4758eb640077256ad1bdf648d92a798279924efb94097defdae7ede7608",
+      "prediction_sha256": "7368b23ff9d85c74174514634b919e0f1ade39fffe43d887514c3ab7ebab477e",
+      "label_sha256": "d5d640c35ff95c07df59a10464a2d1b6115c56e98dec0ba3a9759da89ef22113"
+    },
+    {
+      "question_id": "ASTRA-300-C05-P03",
+      "outcome": "FN",
+      "partition": "evaluation",
+      "answer_sha256": "4d655cdabfd1f2571d47c2d40ee2f90f8a0ff17cd50496c8590b91d637ca3f22",
+      "prediction_sha256": "c9a123acf0696a11744ec2a19661efe150607aa8a702f16f48b5d72885e407bd",
+      "label_sha256": "c2e9fe27f00aa6745c7192c170a3ee5f92d42a5bd0730dbbe051b0ea2100ba39"
+    }
+  ],
+  "metrics": {
+    "answers": 100,
+    "scored_characters": 34277,
+    "reviewed_characters": 44811,
+    "masked_characters": 382,
+    "answer_characters": 44811,
+    "characters": {
+      "tp": 2679,
+      "fp": 589,
+      "fn": 2551,
+      "precision": 0.8197674418604651,
+      "recall": 0.5122370936902486,
+      "f1": 0.630501294422217
+    },
+    "exact_spans": {
+      "tp": 0,
+      "fp": 1051,
+      "fn": 168,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "answer_presence": {
+      "tp": 42,
+      "fp": 7,
+      "fn": 8,
+      "precision": 0.8571428571428571,
+      "recall": 0.84,
+      "f1": 0.8484848484848485
+    },
+    "answer_tn": 43,
+    "excluded_gold_spans": 0,
+    "excluded_prediction_spans": 0,
+    "operational_whole_answer": {
+      "tp": 42,
+      "fp": 7,
+      "fn": 8,
+      "precision": 0.8571428571428571,
+      "recall": 0.84,
+      "f1": 0.8484848484848485,
+      "tn": 43,
+      "normal_answers": 50,
+      "false_positive_rate": 0.14,
+      "truth_unresolved": 0,
+      "truth_unresolved_ids": [],
+      "automatic_decision_rate": 1.0,
+      "detector_abstention_rate": 0.0,
+      "abstained_actual_hallucinations": 0,
+      "policy": "raw warning presence; citation/quality-only warnings count as false warnings on factually normal answers; uncertain-only truth is unresolved and excluded, never normal"
+    },
+    "by_company": {
+      "C01": {
+        "answers": 38,
+        "scored_characters": 13977,
+        "reviewed_characters": 18234,
+        "masked_characters": 109,
+        "answer_characters": 18234,
+        "characters": {
+          "tp": 1850,
+          "fp": 290,
+          "fn": 691,
+          "precision": 0.8644859813084113,
+          "recall": 0.7280598189689099,
+          "f1": 0.7904293954283272
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 667,
+          "fn": 81,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 21,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9545454545454546,
+          "recall": 0.9545454545454546,
+          "f1": 0.9545454545454546
+        },
+        "answer_tn": 15,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C02": {
+        "answers": 23,
+        "scored_characters": 7958,
+        "reviewed_characters": 10425,
+        "masked_characters": 113,
+        "answer_characters": 10425,
+        "characters": {
+          "tp": 336,
+          "fp": 132,
+          "fn": 930,
+          "precision": 0.717948717948718,
+          "recall": 0.26540284360189575,
+          "f1": 0.3875432525951557
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 151,
+          "fn": 40,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.8181818181818182,
+          "recall": 0.8181818181818182,
+          "f1": 0.8181818181818182
+        },
+        "answer_tn": 10,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C03": {
+        "answers": 11,
+        "scored_characters": 3011,
+        "reviewed_characters": 3919,
+        "masked_characters": 0,
+        "answer_characters": 3919,
+        "characters": {
+          "tp": 113,
+          "fp": 17,
+          "fn": 302,
+          "precision": 0.8692307692307693,
+          "recall": 0.27228915662650605,
+          "f1": 0.41467889908256883
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 41,
+          "fn": 13,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        },
+        "answer_tn": 8,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C04": {
+        "answers": 11,
+        "scored_characters": 4106,
+        "reviewed_characters": 5318,
+        "masked_characters": 50,
+        "answer_characters": 5318,
+        "characters": {
+          "tp": 254,
+          "fp": 69,
+          "fn": 330,
+          "precision": 0.7863777089783281,
+          "recall": 0.4349315068493151,
+          "f1": 0.5600882028665931
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 117,
+          "fn": 18,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 4,
+          "fp": 4,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.8,
+          "f1": 0.6153846153846154
+        },
+        "answer_tn": 2,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "C05": {
+        "answers": 17,
+        "scored_characters": 5225,
+        "reviewed_characters": 6915,
+        "masked_characters": 110,
+        "answer_characters": 6915,
+        "characters": {
+          "tp": 126,
+          "fp": 81,
+          "fn": 298,
+          "precision": 0.6086956521739131,
+          "recall": 0.2971698113207547,
+          "f1": 0.3993660855784469
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 75,
+          "fn": 16,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        },
+        "answer_tn": 8,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      }
+    },
+    "by_length": {
+      "lt600": {
+        "answers": 83,
+        "scored_characters": 24421,
+        "reviewed_characters": 31806,
+        "masked_characters": 167,
+        "answer_characters": 31806,
+        "characters": {
+          "tp": 1690,
+          "fp": 368,
+          "fn": 1601,
+          "precision": 0.8211856171039844,
+          "recall": 0.5135217259191736,
+          "f1": 0.6318938119274631
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 660,
+          "fn": 102,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 30,
+          "fp": 4,
+          "fn": 8,
+          "precision": 0.8823529411764706,
+          "recall": 0.7894736842105263,
+          "f1": 0.8333333333333334
+        },
+        "answer_tn": 41,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      },
+      "ge600": {
+        "answers": 17,
+        "scored_characters": 9856,
+        "reviewed_characters": 13005,
+        "masked_characters": 215,
+        "answer_characters": 13005,
+        "characters": {
+          "tp": 989,
+          "fp": 221,
+          "fn": 950,
+          "precision": 0.8173553719008264,
+          "recall": 0.5100567302733368,
+          "f1": 0.6281359161638616
+        },
+        "exact_spans": {
+          "tp": 0,
+          "fp": 391,
+          "fn": 66,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "answer_presence": {
+          "tp": 12,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8888888888888888
+        },
+        "answer_tn": 2,
+        "excluded_gold_spans": 0,
+        "excluded_prediction_spans": 0
+      }
+    },
+    "by_error_type": {
+      "unsupported": {
+        "tp": 1958,
+        "fn": 1782,
+        "recall": 0.5235294117647059,
+        "precision": null,
+        "precision_reason": "detector has no subtype predictions"
+      },
+      "contradiction": {
+        "tp": 721,
+        "fn": 769,
+        "recall": 0.48389261744966444,
+        "precision": null,
+        "precision_reason": "detector has no subtype predictions"
+      }
+    }
+  }
+}
