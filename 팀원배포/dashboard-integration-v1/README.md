@@ -1,5 +1,7 @@
 # ASTRA 대시보드 개발 패키지 · 2026-09-15
 
+처음 받는 팀원은 [오늘 배포 시작 안내](오늘_배포_시작.md)를 먼저 읽습니다. 세 체크포인트 실제 CPU 스모크 결과는 detector-smoke.json, 파일 확인용 해시는 checkpoints.json입니다.
+
 배포 브랜치: feature/sample-expansion-demo. 이 폴더와 해당 브랜치의 저장소가 개발 패키지다. 독립 실행 바이너리나 모델 포함 ZIP이 아니다. 팀원은 GitHub 저장소 접근 권한이 필요하다. main으로 자동 병합하지 않는다.
 
 ## 지금 되는 것
@@ -11,7 +13,7 @@
 | Qwen 실제 생성 | 이 PC의 Qwen2.5-1.5B Q4_K_M / llama.cpp로 HTTP 및 브라우저 실행 확인 |
 | Qwen3-4B | 로컬 파일 존재. 이번 통합 실행에서는 사용하지 않음 |
 | Llama·Gemma | OpenAI 호환 로컬 SSE 어댑터로 연결 가능. 이번에 설치·실행 검증하지 않음 |
-| 환각 탐지 | 기존 HalluDetector를 사용하는 연결 코드 구현. 학습 가중치는 이 PC에서 미발견, 실제 추론 미검증 |
+| 환각 탐지 | KLUE·XLM-R·BGE-M3 실제 CPU 추론 및 반환 구절 offset 확인. 현재 서버는 KLUE 사용; 조달 정확도 검증은 별도 |
 | 팀 검수 | 25문항·88구절 조정안 조회, 팀/분류/보류/문항 필터, 구절 선택→근거 열기 |
 | 최종 사람 승인 | pending 유지. 승인 버튼·원본 수정 기능은 이번에 구현하지 않음 |
 | L2/L3 자유 질문 | 미연결. 내부 검수 조회는 별도 키를 요구하는 로컬 개발 기능 |
@@ -84,7 +86,7 @@ Linux 내부 검수 키는 python -c "import secrets; print(secrets.token_urlsaf
 - GGUF: project-docs/RAG파일럿/v1/runtime/generation_profiles.json에 모델 revision·SHA-256·alias가 있다. Windows 실행기가 해시를 대조한다.
 - 원천 전달: 비공개 release source-transfer-v1-20260913의 전달 지침을 사용한다. 저장소 문서의 체크섬 검증·압축 경계 검사를 유지한다.
 - 색인: 기존 index.sqlite를 개인 로컬 work 아래에 보관한다. 이 서버는 공개 문서 manifest와 청크·정본 해시를 시작 시 검증한다. 전체 DB를 웹 정적 경로에 노출하지 않는다.
-- 탐지 가중치: 워크스테이션에서 실제 run 폴더를 찾아야 한다. 다운로드 링크나 가중치 성능을 추정해 넣지 않았다. 연결 시 로컬 safetensors 해시가 상태 정보에 포함된다. 최초 학습 산출물의 출처/체크섬과 별도로 대조해야 한다.
+- 탐지 가중치: 사용자가 전달한 세 체크포인트를 확인했다. checkpoints.json의 SHA-256을 수신 파일과 대조한다. 가중치는 별도 전달하며 Git에는 포함하지 않는다. 연결 시 로컬 safetensors 해시가 상태 정보에 포함된다. 최초 학습 산출물의 출처/체크섬과 별도로 대조해야 한다.
 
 ## 테스트와 제출
 

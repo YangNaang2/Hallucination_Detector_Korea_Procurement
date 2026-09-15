@@ -53,9 +53,11 @@ class Detector:
   if self.path:
    if os.environ.get('ASTRA_DETECTOR_DEVICE','cpu') not in ['cpu','cuda']:raise ValueError('Detector device must be cpu or cuda')
    config=json.loads((self.path/'config.json').read_text(encoding='utf-8'))
+   if config.get('id2label')!={'0':'SUPPORTED','1':'HALLUCINATED'}:raise ValueError('Checkpoint label mapping must match training')
+   if max_length>config.get('max_position_embeddings',max_length)-2:raise ValueError('Configured length exceeds checkpoint capacity')
    if not list(self.path.glob('*.safetensors')) or not (self.path/'tokenizer.json').exists():raise ValueError('Local safetensors and fast tokenizer required')
    if not any('TokenClassification' in x for x in config.get('architectures',[])):raise ValueError('Not a token classification checkpoint')
-   self.identity=dict(model_type=config.get('model_type'),weights_sha256=fingerprint(self.path),labels={'0':'SUPPORTED','1':'HALLUCINATED'},input_format='CLS + 질문/문서 + SEP + answer + SEP')
+   self.identity=dict(model_type=config.get('model_type'),checkpoint_name=self.path.name,weights_sha256=fingerprint(self.path),labels={'0':'SUPPORTED','1':'HALLUCINATED'},input_format='CLS + 질문/문서 + SEP + answer + SEP')
  def status(self):return dict(configured=bool(self.path),identity=self.identity,inference_verified=False)
  def run(self,context,question,answer,cancel,timeout=180):
   if not self.path:return dict(status='not_run',reason='checkpoint_not_configured',spans=[],unchecked_ranges=[[0,len(answer)]])

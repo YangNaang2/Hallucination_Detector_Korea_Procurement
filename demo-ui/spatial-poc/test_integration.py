@@ -28,6 +28,12 @@ class IntegrationTests(BaseFixture):
  def test_detector_config_rejects_base_embedding(self):
   p=Path(self.tmp.name);(p/'config.json').write_text(json.dumps({'architectures':['XLMRobertaModel']}));(p/'tokenizer.json').write_text('{}');(p/'model.safetensors').write_bytes(b'not model')
   with self.assertRaises(ValueError):Detector(p)
+ def test_detector_reversed_labels_rejected(self):
+  p=Path(self.tmp.name);(p/'config.json').write_text(json.dumps({'architectures':['RobertaForTokenClassification'],'id2label':{'0':'HALLUCINATED','1':'SUPPORTED'}}))
+  with self.assertRaisesRegex(ValueError,'label mapping'):Detector(p)
+ def test_detector_excess_length_rejected(self):
+  p=Path(self.tmp.name);(p/'config.json').write_text(json.dumps({'id2label':{'0':'SUPPORTED','1':'HALLUCINATED'},'max_position_embeddings':514}))
+  with self.assertRaisesRegex(ValueError,'capacity'):Detector(p,max_length=1024)
  def test_detector_threshold_invalid(self):
   with self.assertRaises(ValueError):Detector(threshold=2)
  def test_review_gate_and_static_boundary(self):
