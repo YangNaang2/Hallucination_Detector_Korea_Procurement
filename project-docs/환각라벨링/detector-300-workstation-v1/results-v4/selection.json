@@ -1,0 +1,55 @@
+{
+  "selected": {
+    "config": {
+      "model": "epoch2",
+      "aggregation": "min2",
+      "reduction": "top10mean"
+    },
+    "metrics": {
+      "0.3": {
+        "answers": 50,
+        "reviewed": 15,
+        "positive_answers": 35,
+        "tp": 14,
+        "fp": 1,
+        "fn": 21,
+        "tn": 14,
+        "recall": 0.4,
+        "precision": 0.9333333333333333,
+        "false_alarm_rate": 0.06666666666666667,
+        "random_expected_recall": 0.3,
+        "maximum_possible_recall": 0.42857142857142855
+      },
+      "0.5": {
+        "answers": 50,
+        "reviewed": 25,
+        "positive_answers": 35,
+        "tp": 20,
+        "fp": 5,
+        "fn": 15,
+        "tn": 10,
+        "recall": 0.5714285714285714,
+        "precision": 0.8,
+        "false_alarm_rate": 0.3333333333333333,
+        "random_expected_recall": 0.5,
+        "maximum_possible_recall": 0.7142857142857143
+      },
+      "0.6": {
+        "answers": 50,
+        "reviewed": 30,
+        "positive_answers": 35,
+        "tp": 25,
+        "fp": 5,
+        "fn": 10,
+        "tn": 10,
+        "recall": 0.7142857142857143,
+        "precision": 0.8333333333333334,
+        "false_alarm_rate": 0.3333333333333333,
+        "random_expected_recall": 0.6,
+        "maximum_possible_recall": 0.8571428571428571
+      }
+    }
+  },
+  "policy_sha256": "51e27562b648147511ab145aa63c2e54bac3fa4114b4e9d3a029444448f28e63",
+  "checkpoint_sha256": "026d9de1b54226b0556e92dd0085382fa94c6b2fa58444c68d77672f5e99cb6c"
+}

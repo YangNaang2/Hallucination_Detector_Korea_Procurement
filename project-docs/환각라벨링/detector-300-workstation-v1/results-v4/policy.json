@@ -1,0 +1,32 @@
+{
+  "primary_budget": 0.6,
+  "secondary_budgets": [
+    0.3,
+    0.5
+  ],
+  "target_recall": 0.8,
+  "models": [
+    "epoch2",
+    "mil3"
+  ],
+  "aggregations": [
+    "min",
+    "min2",
+    "mean",
+    "q25",
+    "max",
+    "relevance"
+  ],
+  "reductions": [
+    "max",
+    "mean",
+    "top10mean"
+  ],
+  "selection": "dev50 maximum recall at 60% review; tie recall at 30%, then first deterministic candidate; no evaluation tuning",
+  "tie": "sha256 question_id, independent of labels",
+  "labels_sha256": "04ec65446f556f9e347b2fcbcd85c4c99b5ecf6505cf2a1ab667f7ba9dd5e9ef",
+  "split_sha256": "78f981b557a0e13eb7e1a52635d91b5b89329348dde96d2e5c9541b409942d1e",
+  "source_sha256": "d9d49b0b1f600a88b82ad39a5db99fdb0f2ece4d03bf85f9e869b34b4ba00e8a",
+  "label_status": "agent adjudication, not human gold",
+  "scope": "batch triage only; does not improve error localization by itself"
+}
