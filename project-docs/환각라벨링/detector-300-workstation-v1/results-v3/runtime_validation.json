@@ -1,0 +1,17 @@
+{
+  "records": [
+    "ASTRA-300-C01-N03-E4",
+    "ASTRA-300-C01-N06-E1",
+    "ASTRA-300-C01-N07-E5"
+  ],
+  "all_match": true,
+  "load_once": true,
+  "load_seconds": 5.892178276000777,
+  "warmup_seconds": 0.3406009019818157,
+  "inference_seconds": [
+    0.23160916799679399,
+    0.13070456200512126,
+    0.08523299399530515
+  ],
+  "uses_labels": false
+}

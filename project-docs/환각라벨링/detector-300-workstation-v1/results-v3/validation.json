@@ -1,0 +1,13 @@
+{
+  "completed": 295,
+  "failed": 0,
+  "windows": 5196,
+  "inference_seconds": 62.44295860125567,
+  "peak_allocated_bytes": 660082688,
+  "all_nonwhitespace_checked": true,
+  "original_inputs_labels_weights_and_v2_preserved": true,
+  "split_unchanged": true,
+  "selection_commit": "76d9b1e",
+  "human_gold_count": 0,
+  "llama_server_preserved": true
+}

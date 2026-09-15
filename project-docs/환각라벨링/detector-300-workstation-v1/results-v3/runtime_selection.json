@@ -1,0 +1,19 @@
+{
+  "selected": {
+    "model": "mil3",
+    "aggregation": "min2",
+    "mode": "raw",
+    "threshold": 0.5,
+    "characters": {
+      "tp": 1144,
+      "fp": 1631,
+      "fn": 2172,
+      "precision": 0.41225225225225226,
+      "recall": 0.34499396863691195,
+      "f1": 0.37563618453455916
+    },
+    "profile": "repeat192"
+  },
+  "checkpoint_sha256": "c780e0719a69ef57db5510d7860d27d18abb7c0a81c627d653ded692f13f110f",
+  "use_rules": false
+}
