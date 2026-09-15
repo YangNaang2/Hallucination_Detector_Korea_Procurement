@@ -1,0 +1,28 @@
+{
+  "load_seconds": 5.94608774597873,
+  "warmup_seconds": 0.29740213401964866,
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N03-E4",
+      "seconds": 0.22583962901262566,
+      "windows": 19,
+      "peak_allocated_bytes": 657877504
+    },
+    {
+      "question_id": "ASTRA-300-C01-N06-E1",
+      "seconds": 0.13266960700275376,
+      "windows": 11,
+      "peak_allocated_bytes": 657877504
+    },
+    {
+      "question_id": "ASTRA-300-C01-N07-E5",
+      "seconds": 0.08615103698684834,
+      "windows": 7,
+      "peak_allocated_bytes": 657877504
+    }
+  ],
+  "prediction_equality": true,
+  "models_loaded": 1,
+  "device": "CUDA",
+  "synthetic_warmup_excluded_from_scores": true
+}

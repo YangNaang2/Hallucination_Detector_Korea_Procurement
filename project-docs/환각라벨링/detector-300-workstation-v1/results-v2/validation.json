@@ -1,0 +1,25 @@
+{
+  "completed_selected_slots": 295,
+  "failed": 0,
+  "non_whitespace_unchecked": 0,
+  "full_same_baseline_coverage": true,
+  "window_count": 5196,
+  "record_wall_seconds_sum": 62.78476174824755,
+  "peak_allocated_bytes": 660082688,
+  "baseline_and_pilot_preserved": true,
+  "train_dev_evaluation_counts": {
+    "train": 182,
+    "dev": 50,
+    "evaluation": 63
+  },
+  "frozen_selection_commit": "831cf07",
+  "tests": "run test_detector300*.py and test_klue_quality.py",
+  "original_weights_preserved": true,
+  "original_llama_server_preserved": true,
+  "final_gold_count": 0,
+  "all295_not_independent_score": "train182 seen by fine-tuning; only evaluation63 used for final paired comparison",
+  "unit_tests_passed": 36,
+  "handoff_check": "PASS",
+  "resume": "all 295 skipped; no inference",
+  "deployment_status": "experimental candidate; held evaluation precision target not met"
+}

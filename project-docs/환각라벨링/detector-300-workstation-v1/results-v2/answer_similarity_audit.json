@@ -1,0 +1,5 @@
+{
+  "threshold": 0.9,
+  "cross_split_pairs": [],
+  "scope": "exact question grouping and exact answer grouping done before experiment; additional near-answer audit does not change frozen split"
+}

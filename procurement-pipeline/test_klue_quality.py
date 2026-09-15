@@ -30,3 +30,14 @@ class Rules(unittest.TestCase):
  def test_negative_not_positive(self):
   from klue_quality_rules import rule_spans
   self.assertFalse(rule_spans('하도급은 불가능합니다.','하도급 불가'))
+
+class Incomplete(unittest.TestCase):
+ def test_missing_answer_segment_rejected(self):
+  from klue_quality import combine
+  r={'offsets':[[0,1],[1,2]],'segments':[{'start':0,'end':1,'weights':[1],'probabilities':[[.2]]}]}
+  with self.assertRaises(AssertionError):combine(r,'min')
+ def test_inference_runner_fixed_before_evaluation(self):
+  from klue_quality import OUT,ROOT,load,file_sha
+  s=load(OUT/'selection.json')
+  self.assertEqual(s['runner_sha256'],file_sha(ROOT/'procurement-pipeline/klue_quality.py'))
+  self.assertEqual(s['rules_sha256'],file_sha(ROOT/'procurement-pipeline/klue_quality_rules.py'))
