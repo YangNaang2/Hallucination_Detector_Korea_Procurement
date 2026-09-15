@@ -1,0 +1,40 @@
+{
+  "question_count": 25,
+  "question_decisions": {
+    "수정 제안": 12,
+    "동의": 12,
+    "재검토": 1
+  },
+  "original_span_count": 68,
+  "original_span_decisions": {
+    "동의": 65,
+    "수정": 3
+  },
+  "relabel_proposals": 3,
+  "reviewer_additions": 14,
+  "agent_additions": 6,
+  "proposed_span_records": 88,
+  "proposed_labels": {
+    "UNSUPPORTED": 41,
+    "UNCERTAIN": 16,
+    "CONTRADICTION": 15,
+    "CITATION_ERROR": 14,
+    "QUALITY_ONLY": 2
+  },
+  "dispositions": {
+    "accept_proposal": 70,
+    "hold": 16,
+    "quality_only": 2
+  },
+  "original_protected_cells_unchanged": false,
+  "canonical_content_preserved": true,
+  "boundary_whitespace_changes": 16,
+  "empty_extra_sheets": 1,
+  "verified_prompt_chunks": 79,
+  "validation": "passed",
+  "human_approval": "pending",
+  "training_ready": false,
+  "agent_review_scope": "All 25 submitted question comments and 68 span comments read; changed/additional spans compared to answer and input evidence. Original HWP/PDF page rendering and source-wide word counts were not rerun.",
+  "source_cache_revalidation": "not performed; immutable v1 anchors and stored prompt hashes matched read-only local index",
+  "inter_annotator_agreement": "not computable: disjoint assignments, no independent overlapping double annotation"
+}
