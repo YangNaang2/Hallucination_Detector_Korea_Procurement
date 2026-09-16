@@ -1,0 +1,25 @@
+/home/piai/Documents/Codex/2026-09-13/files-pasted-by-the-user-ko/ko-lettucedetect/procurement-pipeline/test_adapter.py:83: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp3x3mi8u_/2026-05/adapter/manifest.jsonl' mode='r' encoding='utf-8'>
+  rows = {(x['notice_id'], x['version']): x for x in map(json.loads, (src / 'adapter' / 'manifest.jsonl').open(encoding='utf-8'))}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/piai/Documents/Codex/2026-09-13/files-pasted-by-the-user-ko/ko-lettucedetect/procurement-pipeline/test_adapter.py:93: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp3x3mi8u_/2026-05/adapter/text/aa02.jsonl' mode='r' encoding='utf-8'>
+  secs = [json.loads(l) for l in (src / a['attachments'][1]['text_path']).open(encoding='utf-8')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/piai/Documents/Codex/2026-09-13/files-pasted-by-the-user-ko/ko-lettucedetect/procurement-pipeline/test_adapter.py:112: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp3x3mi8u_/out/packets.jsonl' mode='r' encoding='utf-8'>
+  packets = [json.loads(l) for l in (Path(tmp) / 'out' / 'packets.jsonl').open(encoding='utf-8')]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.............................................................AI: 4건 → /tmp/tmp0t_4prvs/out/packets.jsonl (LLM 호출 0회)
+4 requests prepared, no LLM calls. Inspect requests/, then add --execute.
+.................................................................................................................batch test attempted 1 latest {'generated': 1}
+..batch test attempted 1 latest {'execution_failed': 1}
+batch test attempted 1 latest {'generated': 1}
+.batch test attempted 1 latest {'generated': 1}
+.batch test attempted 1 latest {'generated': 1}
+..verified baseline 25 remaining 275 selected 275
+batch test attempted 1 latest {'generated': 1}
+..........
+----------------------------------------------------------------------
+Ran 190 tests in 8.613s
+
+OK
+prepared 4 disjoint shards [69, 69, 69, 68]
+prepared 4 disjoint shards [69, 69, 69, 68]

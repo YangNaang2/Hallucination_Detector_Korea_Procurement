@@ -1,0 +1,24 @@
+{
+  "run_id": "lexical-corrected-smoke-v1",
+  "attempts": {
+    "ASTRA-300-C01-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-corrected-smoke-v1/ASTRA-300-C01-S04.json",
+        "status": "access_denied"
+      }
+    ],
+    "ASTRA-300-C01-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-corrected-smoke-v1/ASTRA-300-C01-S01.json",
+        "status": "generated"
+      }
+    ],
+    "ASTRA-300-C01-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-corrected-smoke-v1/ASTRA-300-C01-S02.json",
+        "status": "generated"
+      }
+    ]
+  },
+  "scope": "CPU lexical development smoke on original cohort; not new275, not dense performance evaluation"
+}

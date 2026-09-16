@@ -1,0 +1,1314 @@
+[
+  {
+    "question_id": "ASTRA-300-C01-N03-E4",
+    "question": "대학 시스템의 기술지원 확약서 요구를 일반 SW사업자 등록으로 대체할 수 있는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01448046-000",
+    "scenario_id": "SC-L1-R26BK01448046-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N07-E5",
+    "question": "장애 신고 후 방문과 복구 시간을 같은 시간으로 해석해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01587385-000",
+    "scenario_id": "SC-L1-R26BK01587385-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N12-E5",
+    "question": "부산 소액수의 견적의 참여 방식을 공동이행으로 임의 변경할 수 있는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01474723-000",
+    "scenario_id": "SC-L1-R26BK01474723-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N16-E1",
+    "question": "웹툰 공고의 인력 평가에서 회사 전체 직원 수를 개발자 수로 계산해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-L1-R26BK01487327-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N20-E2",
+    "question": "참여인력의 해외여행으로 인한 교체도 보고 대상인가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01501715-001",
+    "scenario_id": "SC-L1-R26BK01501715-001",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N24-E3",
+    "question": "예정가격을 공고 예산과 동일한 확정값으로 생성해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01508724-000",
+    "scenario_id": "SC-L1-R26BK01508724-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N28-E4",
+    "question": "제안서의 모호한 표현을 나중에 협의하면 된다고 처리해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01595553-000",
+    "scenario_id": "SC-L1-R26BK01595553-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N32-E5",
+    "question": "내부 개발자가 확인했으면 외부 취약점 점검 요구를 생략해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01548452-000",
+    "scenario_id": "SC-L1-R26BK01548452-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N36-E1",
+    "question": "체육회 공고문의 공동계약 해당 없음 문구를 삭제하고 RFP 허용만 남겨도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01504777-000",
+    "scenario_id": "SC-L1-R26BK01504777-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N40-E2",
+    "question": "GPU 장애 지체상금을 계약금액의 고정 비율로만 계산해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01520501-000",
+    "scenario_id": "SC-L1-R26BK01520501-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N44-E3",
+    "question": "하도급 비율이 커지는 경우 공동수급 구성 검토가 필요한가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01580570-000",
+    "scenario_id": "SC-L1-R26BK01580570-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-N48-E4",
+    "question": "개발 완료 후 FP 자료 작성에 필요한 전문성을 생략해도 되는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01605618-000",
+    "scenario_id": "SC-L1-R26BK01605618-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C01-P02",
+    "question": "C01-PRJ-02의 69,999,999원을 7천만원으로 반올림해서 실적 금액 조건을 만족한다고 해도 되나요?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-WB-C01",
+    "scenario_version": "1.0.0",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C01-S03",
+    "question": "한빛IT 새 배치의 5월과 12월 공수에 온전한 한 달씩을 적용할 수 있는가?",
+    "company_id": "C01",
+    "user_context": {
+      "tenant_id": "astra-c01",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-QA300-C01-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N04-E4",
+    "question": "용역책임자의 회사 내 직급은 아무 직급이나 가능한가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01478467-000",
+    "scenario_id": "SC-L1-R26BK01478467-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N08-E5",
+    "question": "제안요청서의 별도 게시 위치 안내는 첨부 자료 검토에 어떤 의미가 있는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01491524-000",
+    "scenario_id": "SC-L1-R26BK01491524-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N13-E5",
+    "question": "서비스 오픈 이후 개발자 상주 지원을 계획에서 모두 빼도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01440737-000",
+    "scenario_id": "SC-L1-R26BK01440737-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N17-E1",
+    "question": "부산올랭의 전담요원 요구를 원문에 없는 등급·인원 수로 확정해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01543875-000",
+    "scenario_id": "SC-L1-R26BK01543875-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N21-E2",
+    "question": "클라우드 PM·PL을 회사 밖 프리랜서로 두어도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01574547-000",
+    "scenario_id": "SC-L1-R26BK01574547-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N25-E3",
+    "question": "의료플랫폼 운영 중 인력을 교체하면 다음 달까지 통보와 인수인계를 미뤄도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01469220-000",
+    "scenario_id": "SC-L1-R26BK01469220-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N29-E4",
+    "question": "입학관리 장애 복구 목표를 다른 공고의 4시간으로 재사용해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01434357-000",
+    "scenario_id": "SC-L1-R26BK01434357-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N33-E5",
+    "question": "PM의 재직을 구두 확인만으로 완료했다고 처리할 수 있는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01599621-000",
+    "scenario_id": "SC-L1-R26BK01599621-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N37-E1",
+    "question": "TOMS 공동수급의 업체 수 상한을 다른 공고의 5개사로 적용해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01511309-000",
+    "scenario_id": "SC-L1-R26BK01511309-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N41-E2",
+    "question": "경민대 본점 지역 범위에서 인천을 제외해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01553185-000",
+    "scenario_id": "SC-L1-R26BK01553185-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N45-E3",
+    "question": "비상주라는 문구만으로 상시 방문지원 요구를 무시해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01593644-000",
+    "scenario_id": "SC-L1-R26BK01593644-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-N49-E4",
+    "question": "참여자 보안교육을 매년 한 번으로 계획해도 되는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01607392-000",
+    "scenario_id": "SC-L1-R26BK01607392-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C02-P03",
+    "question": "중급 유지관리 기술자로 P-03을 대신 제시할 수 있는가?",
+    "company_id": "C02",
+    "user_context": {
+      "tenant_id": "astra-c02",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01474723-000",
+    "scenario_id": "SC-C02-REVIEW-r1",
+    "scenario_version": "1.0.0-r1",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N01-E3",
+    "question": "공동수급 구성원의 지분에 하한이 있는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01550466-000",
+    "scenario_id": "SC-L1-R26BK01550466-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N05-E4",
+    "question": "이 사업의 협상 기준이 기술점수 비율인지 합산점수인지 구분해 달라.",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01481037-000",
+    "scenario_id": "SC-L1-R26BK01481037-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N09-E5",
+    "question": "장애 도착 기한과 복구 기한을 구분해야 하는 이유는 무엇인가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01501352-000",
+    "scenario_id": "SC-L1-R26BK01501352-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N14-E5",
+    "question": "시스템 개찰 표시시각만으로 가격 개찰을 확정할 수 있는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01465791-000",
+    "scenario_id": "SC-L1-R26BK01465791-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N18-E1",
+    "question": "비전자기록물 PM을 일반 개발경력만 있는 직원으로 충족 처리할 수 있는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01592548-000",
+    "scenario_id": "SC-L1-R26BK01592548-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N22-E2",
+    "question": "디지털융합 플랫폼을 기존 시스템과 무관하게 새로 만들면 되는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01538557-000",
+    "scenario_id": "SC-L1-R26BK01538557-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N26-E3",
+    "question": "로봇 AI 과업에 제시된 객체탐지 모델 요구를 확인해 달라.",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01497114-000",
+    "scenario_id": "SC-L1-R26BK01497114-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N30-E4",
+    "question": "동시접속 조건과 응답시간을 별개로 테스트해도 전체 성능 충족인가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518323-000",
+    "scenario_id": "SC-L1-R26BK01518323-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N34-E5",
+    "question": "보안성 검토결과 반영 비용을 사업자의 부담에서 자동 제외해도 되는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518315-000",
+    "scenario_id": "SC-L1-R26BK01518315-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N38-E1",
+    "question": "충남 ESG 지역 조건은 본점만 해당하는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01604996-000",
+    "scenario_id": "SC-L1-R26BK01604996-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N42-E2",
+    "question": "표준모델 사업의 수행실적 작성 요구를 전체 입찰 적격 판정으로 확대해도 되는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01564087-000",
+    "scenario_id": "SC-L1-R26BK01564087-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N46-E3",
+    "question": "이 사업도 FP 기반 투입인력 관리 금지 대상이라고 일반화해도 되는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01505476-000",
+    "scenario_id": "SC-L1-R26BK01505476-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-N50-E4",
+    "question": "놀이터 감점을 회당 규칙과 최대 한도를 구분하지 않고 합산해도 되는가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01535546-000",
+    "scenario_id": "SC-L1-R26BK01535546-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C03-P04",
+    "question": "P-02의 신규 0.4 FTE 계획은 기존 0.5와 병행 가능한가?",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518315-000",
+    "scenario_id": "SC-C03-REVIEW-r1",
+    "scenario_version": "1.0.0-r1",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N02-E3",
+    "question": "기능점수 측정을 위해 제안 조직에 어떤 전문성을 반영해야 하는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01442409-000",
+    "scenario_id": "SC-L1-R26BK01442409-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N06-E4",
+    "question": "금산 사업에 공동수급으로 참여하는 방안을 기본안으로 확정해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01565865-000",
+    "scenario_id": "SC-L1-R26BK01565865-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N10-E5",
+    "question": "결과물 권리를 수행사 단독 소유로 계약 초안에 넣어도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01577397-000",
+    "scenario_id": "SC-L1-R26BK01577397-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N14-E1",
+    "question": "법원 안내센터 자료에서 상세 RFP를 확보하지 못했을 때 인력 요건이 없다고 답해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01465791-000",
+    "scenario_id": "SC-L1-R26BK01465791-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N18-E2",
+    "question": "기록물 PM에게 다른 사업 병행을 허용하는 배치안을 바로 확정해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01592548-000",
+    "scenario_id": "SC-L1-R26BK01592548-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N22-E3",
+    "question": "개발 공수 제시와 기능점수 산정의 요구를 혼동해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01538557-000",
+    "scenario_id": "SC-L1-R26BK01538557-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N26-E4",
+    "question": "반도체 공급을 칩 수량만으로 견적 내도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01497114-000",
+    "scenario_id": "SC-L1-R26BK01497114-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N30-E5",
+    "question": "공고 이전에 발급한 재직증명서만으로 인력 증빙을 완료할 수 있는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518323-000",
+    "scenario_id": "SC-L1-R26BK01518323-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N34-E1",
+    "question": "인천e지갑의 기술자 계수를 일반적인 법정 기술등급 판정표로 써도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01518315-000",
+    "scenario_id": "SC-L1-R26BK01518315-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N39-E1",
+    "question": "협회 클라우드 모니터링 비용을 서버 수만으로 산정해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01431532-000",
+    "scenario_id": "SC-L1-R26BK01431532-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N43-E2",
+    "question": "승차권 웹뷰의 하도급계획 적정성 평가에서 중소기업 단독 참여는 어떤 예외로 다루는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01435344-000",
+    "scenario_id": "SC-L1-R26BK01435344-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N47-E3",
+    "question": "전남 소재 가점을 전국 업체 참가 금지로 해석해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01505744-000",
+    "scenario_id": "SC-L1-R26BK01505744-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-N51-E4",
+    "question": "지역개발공채를 총예산에 일괄 적용해도 되는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01549747-000",
+    "scenario_id": "SC-L1-R26BK01549747-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C04-P05",
+    "question": "서버 일부 공개 가격으로 전체 클라우드 원가를 확정할 수 있는가?",
+    "company_id": "C04",
+    "user_context": {
+      "tenant_id": "astra-c04",
+      "role": "cost_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2",
+        "L3"
+      ]
+    },
+    "bid_key": "R26BK01574547-000",
+    "scenario_id": "SC-C04-REVIEW-r1",
+    "scenario_version": "1.0.0-r1",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N03-E3",
+    "question": "계약 후 참여인력 명단을 언제까지 제출하도록 요구하는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01448046-000",
+    "scenario_id": "SC-L1-R26BK01448046-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N07-E4",
+    "question": "대금 청구 시 지역개발공채의 계산 기준에 VAT가 포함되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01587385-000",
+    "scenario_id": "SC-L1-R26BK01587385-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N12-E4",
+    "question": "장비 부품 교체가 전혀 없는 순수 SW 지원 과업으로 보아도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01474723-000",
+    "scenario_id": "SC-L1-R26BK01474723-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N16-E5",
+    "question": "계약 착수일이 늦어지면 종료일을 자동으로 같은 일수만큼 연장해도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01487327-000",
+    "scenario_id": "SC-L1-R26BK01487327-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N20-E1",
+    "question": "사이버 훈련 시각화 회의에 PM만 참석하면 충분한가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01501715-001",
+    "scenario_id": "SC-L1-R26BK01501715-001",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N24-E2",
+    "question": "일반 계좌 지급만을 가정하고 계약 준비를 끝내도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01508724-000",
+    "scenario_id": "SC-L1-R26BK01508724-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N28-E3",
+    "question": "승인받은 인력 교체라도 병행근무 기간을 생략할 수 있는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01595553-000",
+    "scenario_id": "SC-L1-R26BK01595553-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N32-E4",
+    "question": "퇴직자 영입 확인서 요구를 실제 채용 사실을 만들어 채워도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01548452-000",
+    "scenario_id": "SC-L1-R26BK01548452-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N36-E5",
+    "question": "계약이행보증의 기준을 제안 작성비 기준으로 계산해도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01504777-000",
+    "scenario_id": "SC-L1-R26BK01504777-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N40-E1",
+    "question": "일반 SW개발 자격만으로 GPU 유지관리 기술자 조건을 충족하는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01520501-000",
+    "scenario_id": "SC-L1-R26BK01520501-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N44-E2",
+    "question": "50플러스 공동수급의 최소 지분율에 일반적인 10%를 적용해도 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01580570-000",
+    "scenario_id": "SC-L1-R26BK01580570-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-N48-E3",
+    "question": "동아보건대 제안발표회 자료의 분량은 제안서 전체 분량과 같은가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01605618-000",
+    "scenario_id": "SC-L1-R26BK01605618-000",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-09-13"
+  },
+  {
+    "question_id": "ASTRA-300-C05-P02",
+    "question": "완료 EMS 실적 한 건이 평가 만점을 의미하는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01505744-000",
+    "scenario_id": "SC-C05-REVIEW-r1",
+    "scenario_version": "1.0.0-r1",
+    "decision_as_of": "2026-04-01"
+  },
+  {
+    "question_id": "ASTRA-300-C05-S03",
+    "question": "새온의 명부 9명을 모두 3개월 이상 재직 정규직 평가 인원으로 세면 되는가?",
+    "company_id": "C05",
+    "user_context": {
+      "tenant_id": "astra-c05",
+      "role": "bid_analyst",
+      "authenticated": true,
+      "membership_active": true,
+      "allowed_security_levels": [
+        "L1",
+        "L2"
+      ]
+    },
+    "bid_key": "R26BK01505744-000",
+    "scenario_id": "SC-QA300-C05-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  }
+]

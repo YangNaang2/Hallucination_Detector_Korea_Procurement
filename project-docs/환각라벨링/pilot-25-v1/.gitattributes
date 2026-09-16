@@ -1,0 +1,7 @@
+# Preserve literal raw-answer whitespace in review exports.
+review.html text eol=lf -whitespace
+*.tsv -text -whitespace
+*.jsonl text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.xlsx binary

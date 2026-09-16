@@ -1,0 +1,5 @@
+{
+  "ready": true,
+  "work": "work/rag-workstation-275",
+  "note": "No new275 LLM calls. GPU host server must be verified after reboot before starting shards."
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "dense-gpu-regression-v1",
+  "reviewer": "agent",
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "records": [
+    {
+      "question_id": "ASTRA-300-C01-N11-E1",
+      "judgment": "needs_correction",
+      "reason": "81111599와 임의 정정 불가 결론은 맞지만 근거 없는 국가조달청 확정 절차와 반복 주장을 추가함."
+    },
+    {
+      "question_id": "ASTRA-300-C01-P01",
+      "judgment": "qualified_correct",
+      "reason": "70,000,000원과 VAT 포함 7천만원 하한을 올바르게 비교. 합성 증빙 및 실제 증빙 유보가 있으나 실제 계약금액과 비교할 수 없다는 표현은 불필요하게 강함."
+    },
+    {
+      "question_id": "ASTRA-300-C01-S01",
+      "judgment": "incorrect",
+      "reason": "첫 결론이 기존 원장에도 적용된다고 하여 근거 및 뒤의 원장 불변 유보와 모순."
+    },
+    {
+      "question_id": "ASTRA-300-C01-S02",
+      "judgment": "needs_correction",
+      "reason": "총액 37,420,064원 및 공급가 34,018,240원은 맞음. VAT 추가 후 값을 VAT 제외 값이라고 설명하여 세금 기준 표현이 모순됨."
+    }
+  ]
+}

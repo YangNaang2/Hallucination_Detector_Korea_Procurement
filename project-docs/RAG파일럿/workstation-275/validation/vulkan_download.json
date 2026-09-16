@@ -1,0 +1,6 @@
+{
+  "path": "work/rag-workstation-275/llama-b10938-vulkan.tar.gz",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10938/llama-b10938-bin-ubuntu-vulkan-x64.tar.gz",
+  "bytes": 30163172,
+  "sha256": "cafef1d2cd2e39a94b5493ce0d5b756defce361a23f98c11eb2f9ac7a1b65ef3"
+}

@@ -2,13 +2,25 @@
 
 L1 = 공개 입찰공고와 첨부 문서. L2 = 입찰 참여 기업의 내부 실적·인력·인증. L3 = 해당 기업의 원가·투찰전략·협력사 견적.
 
+## 0. 나라장터 수집·파싱 파이프라인
+
+4·5·6월 공고 수집에 사용한 독립 실행형 파이프라인은
+[`collector/g2b_rag_pipeline/`](collector/g2b_rag_pipeline/)에 있다. 나라장터 OpenAPI 조회,
+첨부 다운로드, CPU 파싱, 미해결 PDF의 선택적 GPU OCR, manifest·`chunk_ready.jsonl` 재구성을 담당한다.
+
+API 키는 Git에 저장하지 않는다. `collector/g2b_rag_pipeline/.env.example`을 참고해 로컬 `.env`에
+`NARA_API_KEY`를 설정한다. 실행 결과와 원천 문서는 해당 폴더의 `data/`에 생성되며 Git 추적 대상이 아니다.
+설치·설정·재개 실행은 수집기 [README](collector/g2b_rag_pipeline/README.md)와
+[CHECKLIST](collector/g2b_rag_pipeline/CHECKLIST.md)를 따른다.
+
 **L2/L3는 자료 접근 등급이다. 3D 건물·내부 설비 단계와 무관하다.** 이번 코드에서는 3D 장면을 생성하지 않는다.
 
 회사 문서 후속 생성: `generate_c01_documents.py`의 회사별 공통 원장 투영 함수를 일반화하고, `generate_remaining_companies.py`로 C02~C05의 공통·공고별 문서 36개와 청크 140개를 생성했다. [산출물·원문 대조·합성 가정·재현 지침](../project-docs/가상기업/v1/generated/C02-C05/r1/README.md)을 참고한다. `--check`는 저장된 파일을 결정적 재생성 결과와 비교하며 C01 기존 출력도 byte 단위로 검사한다. 실제 DB 적재는 수행하지 않는다.
 
 2026-09-13 평가 데이터 v2: `build_qa300.py`로 회사별 60건, 공고 51건을 포함한 질문·기대답·근거 300건을 생성한다. 기존 25건 + 공개 공고 조건 255건 + 새 합성 시나리오 20건이며, 전부 회사 적격 비교 문항은 아니다. 별도 상태·배치·원가 문서 15개와 청크 106개를 추가하고 v1/r1은 보존했다. [데이터셋·검수·실행 지침](../project-docs/평가데이터/v2/README.md)을 참고한다. `run_qa300_checks.py`는 기존 회귀와 새 오류 주입 검사를 실행해 결과를 기록한다. v2 원본의 실제 답변·환각 span은 비워 두고, 사람 승인은 대기 중이다. 후속 로컬 RAG 파일럿의 25문항 실행 결과는 별도 저장했다(아래 7절). 전체 300문항 실행·span 라벨링·운영 DB 적재는 미완료다.
 
-Python 3.10 이상, 외부 패키지 설치 불필요. SQLite 기반 로컬 집계다. 실제 수집 파일 구조는 아직 제공되지 않아 아래 manifest 입력 계약을 사용한다.
+아래 집계·표본화 코드는 Python 3.10 이상에서 실행하며 외부 패키지가 필요 없다. SQLite 기반 로컬 집계이며,
+수집기가 생성한 파일을 `adapt_g2b.py`로 아래 manifest 입력 계약에 맞춰 사용한다.
 
 ## 1. 입력 계약
 

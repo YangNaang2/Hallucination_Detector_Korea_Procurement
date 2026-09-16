@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ASTRA · 실제 공고 탐색</title>
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.9.0/dist/maplibre-gl.css"><link rel="stylesheet" href="public-notices.css"></head>
-<body><header><a href="public-notices.html" class="brand">ASTRA <span>실제 공고 탐색</span></a><a href="index.html">기존 가상 공간 시연 ↗</a></header>
+<body><header><a href="public-notices.html" class="brand">ASTRA <span>실제 공고 탐색</span></a><a href="rag-observatory.html">RAG 연결 구조 ↗</a><a href="index.html">기존 가상 공간 시연 ↗</a></header>
 <main><section class="directory" aria-label="공고 검색과 필터">
 <h1>정보시스템 구축·운영</h1><p class="subtitle">4~6월 표본 51건 · 회사가 아닌 발주 공고를 탐색합니다.</p>
-<form id="filters"><label>공고·발주기관 검색<input id="query" type="search" placeholder="공고명, 기관명, 공고번호"></label>
+<form id="filters"><label>조건 언급 <small>필수 여부·충족 판정 아님</small><select id="condition"><option value="">모든 조건</option><option>지역</option><option>직접생산</option><option>공동수급</option><option>하도급</option><option>서비스 인증</option></select></label><label>공고·발주기관 검색<input id="query" type="search" placeholder="공고명, 기관명, 공고번호"></label>
 <fieldset><legend>사업금액 <small>공고정보 예산 · 억 원</small></legend><div class="range"><label>최소 이상<input id="min" type="number" min="0" step="any" placeholder="제한 없음"></label><label>최대 미만<input id="max" type="number" min="0" step="any" placeholder="제한 없음"></label></div>
 <div class="presets"><button type="button" data-range=",0.5">5천만원 미만</button><button type="button" data-range="0.5,1">5천만~1억</button><button type="button" data-range="1,3">1~3억</button><button type="button" data-range="3,">3억 이상</button></div></fieldset>
 <div class="row"><label>분야<select id="sector"><option value="">전체 분야</option></select></label><label>수집 월<select id="month"><option value="">전체 월</option><option>2026-04</option><option>2026-05</option><option>2026-06</option></select></label></div>

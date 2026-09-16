@@ -1,0 +1,1853 @@
+[
+  {
+    "question_id": "ASTRA-300-C01-N01-E1",
+    "split": "train",
+    "category": "contract",
+    "question": "OCR 사용권을 구독료만으로 계획해도 되는가?",
+    "expected_answer": "AI-OCR 솔루션 영구라이선스 요구를 확인해야 하며 구독만으로 대체한다고 확정할 수 없다.",
+    "actual_answer": "**판단**: OCR 사용권을 구독료만으로 계획해도 **불가**  \n**근거**: [1]에서 제안사가 사업 수행 시 사용할 장비 및 라이센스 등 사용권에 대한 향후 추가분을 미리 예측하여 라이센스 비용 등 일체의 비용을 포함하여야 함.  \n**유보사항**:  \n- OCR 사용권은 구독료만으로는 충분하지 않으며, **향후 추가분**에 대한 예상 비용도 포함해야 한다.  \n- **라이센스 비용**은 구독료 외에도 추가 비용이 발생할 수 있으므로, **전체적인 비용 계획**이 필요하다.  \n- **제안서**에서 OCR 사용권의 구독료와 향후 추가분에 대한 **구체적인 계획**이 명시되어야 한다.  \n- **제안사**가 제3자의 특허권 또는 저작권을 침해하지 않도록 철저히 관리해야 하므로, **사용권의 법적 근거**가 명시되어야 한다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N01-E1-a001/ASTRA-300-C01-N01-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N05-E2",
+    "split": "train",
+    "category": "performance",
+    "question": "진행 중 과업을 최근 수행실적 서식에 완료 실적으로 넣을 수 있는가?",
+    "expected_answer": "서식의 완료 실적 기준을 확인하고 진행 중 과업을 완료로 바꾸지 않는다.",
+    "actual_answer": "**판단:** 진행 중 과업을 최근 수행실적 서식에 완료 실적으로 넣을 수 있다.  \n**근거:** [1] 별지 제4호 '최근 2년간 수행실적 집계표'에 따르면, '최근 2년 이내'라는 기준은 입찰참가신청 마감일 기준으로 하여 완료된 실적분만 인정되며, '용역실적은 최근 2년간의 실적만 기재하되, 단일규모 일천만원 이상 실적 1개 이상 기재'라는 규정이 있다. [1] 별지 제4호 \"용역실적\" 항목에서 \"최근 2년 이내\"라는 기준이 명시되어 있고, 이는 2026년 9월 13일 기준으로도 2026년 11월 30일 이전의 실적을 포함할 수 있음이 확인된다.  \n**유보사항:** '최근 2년 이내'라는 기준이 2026년 9월 13일 기준으로도 유효하며, 2026년 11월 30일 이전의 실적만 인정되므로, 2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적을 포함할 수 있는 경우, 최근 2년 이내의 실적으로 인정할 수 있다. 다만, 2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적이 '최근 2년 이내'에 해당하는지 확인이 필요하다.  \n\n**산출식:**  \n- 2026년 9월 13일 기준으로 2026년 11월 30일 이전의 실적 → 2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적이 \"최근 2년 이내\"에 해당함.  \n- 따라서, 2026년 9월 13일 기준으로는 2026년 11월 30일 이전의 실적을 최근 2년 이내의 실적으로 인정할 수 있음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N05-E2-a001/ASTRA-300-C01-N05-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.4463,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N09-E3",
+    "split": "train",
+    "category": "multi_document",
+    "question": "부족한 자격을 공동수급으로 보완할 수 있다고 바로 안내해도 되는가?",
+    "expected_answer": "공동수급 불허 조건이 있으므로 해당 방식으로 자동 보완하지 않는다.",
+    "actual_answer": "**판단:** 부족한 자격을 공동수급으로 보완할 수 있다고 바로 안내할 수 없습니다.  \n**근거:** [2]에서 \"본 사업은 시스템 일체형 구축이 요구되는 사업으로, 공동수급체 구성을 허용하지 아니함\"하고 명시하고 있으며, 이는 공동수급체를 구성하는 것이 허용되지 않는 것으로 판단됩니다.  \n**유보사항:**  \n- [2]에 따르면 \"본 사업은 하드웨어와 소프트웨어가 기능적으로 불가분의 관계에 있고 실시간 연계 및 통합 운영이 요구되는 사업 특성상 공동수급체 구성을 허용하지 아니함\"으로 명시되어 있으므로, 공동수급체 구성이 허용되지 않음을 명확히 나타냅니다.  \n- 따라서, 부족한 자격을 공동수급으로 보완하는 것은 허용되지 않으며, 해당 사업에 입찰을 희망하는 업체는 자체 자격을 충족시켜야 합니다.  \n- 또한, [1]에서 \"본 사업은 시스템 통합 구축 사업의 특성을 고려하여 사업의 원활한 수행, 품질 확보 및 책임 소재의 명확화를 위하여 하도급을 허용하지 아니함\"으로 명시되어 있으므로, 공동수급체 구성이 허용되지 않는 점을 반복적으로 확인할 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N09-E3-a001/ASTRA-300-C01-N09-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N14-E3",
+    "split": "train",
+    "category": "fact",
+    "question": "이 용역의 예정 운영 기간을 일반적인 1년으로 대체해도 되는가?",
+    "expected_answer": "사업기간은 2026-05-01부터 2026-12-31까지다. 일반적인 1년으로 늘리지 않는다.",
+    "actual_answer": "**판단**: 예정 운영 기간을 일반적인 1년으로 대체할 수 없습니다.  \n**근거**: [1] 공고문에서 명시된 사업기간은 \"2026. 05. 01. ~ 2026. 12. 31.\"로 기술되어 있으며, 이는 공고일 기준으로 계약 기간을 정의하는 본래의 조건입니다. [1] \"과업내용확정심의결과서(간소화방식)심의일자 2026년 1월 26일\"에서 \"2026년 법원대표전화 통합관리시스템 유지관리 사업\"의 사업기간이 2026년 5월 1일부터 12월 31일까지임을 확인할 수 있습니다.  \n**유보사항**: 공고 기준일(2026-09-13) 기준으로 사업기간이 8개월(2026.05.01 ~ 2026.12.31)로 계산되며, 이는 1년(12개월)을 대체하는 것이 아니므로, 일반적인 1년 기준으로 대체할 수 없습니다. 또한, [3] 긴급입찰 사유서에 따르면 사업기간은 공고일 기준으로 계약 조건의 핵심 요소로 삼아야 하므로, 이에 대한 변경은 공고문과 규격서의 내용을 우선 적용해야 하며, 이는 공고문과 규격서가 서로 다를 경우 공고문이 우선 적용됨을 명시하고 있으므로, 1년 기준으로 대체하는 것은 규격서와 공고문의 내용과 일치하지 않으므로 금지됩니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N14-E3-a001/ASTRA-300-C01-N14-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N18-E4",
+    "split": "dev",
+    "category": "access_policy",
+    "question": "기록물 작업장을 인터넷과 연결한 상태로 운영해도 되는가?",
+    "expected_answer": "작업장 내부망과 외부 네트워크 차단 등 보안 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 기록물 작업장을 인터넷과 연결한 상태로 운영해도 **불가**  \n**근거**: [1] 공고문에 따르면 \"작업장 내 설치된 모든 사업 투입 장비의 네트워크는 내부적으로 구성하며, 외부 네트워크와의 연결을 차단해야 한다.\"  \n**유보사항**:  \n- 외부 네트워크와의 연결이 허용되지 않음.  \n- 인터넷과의 연결은 작업장 내부 네트워크 구성에 포함되어야 하며, 외부 네트워크 접근이 금지됨.  \n- 해당 기준은 공고문에서 명시된 **보안 및 정보 보호** 관련 지침으로, **실제 증빙**은 공고문과 일치하는 **원본 문서**에서 확인해야 함.  \n- 합성 시나리오에서는 **실제 투찰가**가 아닌 **규정 기준**에 따라 판단함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N18-E4-a001/ASTRA-300-C01-N18-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N22-E5",
+    "split": "train",
+    "category": "conflict",
+    "question": "제안서 전체 분량과 본문 권장 분량을 하나의 상한으로 저장해도 되는가?",
+    "expected_answer": "전체·요약·본문의 적용 범위와 권장 여부를 나누어 확인해야 한다.",
+    "actual_answer": "**판단**: 제안서 전체 분량과 본문 권장 분량을 하나의 상한으로 저장해도 된다.  \n**근거**: [1] 제안서 본문 내용은 50쪽 이내로 작성을 권장하며, 각 쪽은 쉽게 참조할 수 있도록 페이지 하단 중앙에 일련번호를 붙임.  \n**유보사항**: 제안서는 「제안서 작성 지침」에 따라 작성해야 하며, 이에 명시되지 않은 내용에 대한 추가적인 제안사항이 있는 경우 해당 항목에 포함하거나 기타항목에 추가하여 작성할 수 있으며, 또한 작성지침 항목 중 해당사항이 없는 경우는 해당 항목에 「해당없음」으로 간략히 기술해야 함.  \n\n[1] 제안서 본문 내용은 50쪽 이내로 작성을 권장하며, 각 쪽은 쉽게 참조할 수 있도록 페이지 하단 중앙에 일련번호를 붙임.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N22-E5-a001/ASTRA-300-C01-N22-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N26-E1",
+    "split": "train",
+    "category": "boundary",
+    "question": "로봇의 오염 제거율 90% 요구를 객체탐지 정확도 90%라고 바꿔도 되는가?",
+    "expected_answer": "AXR-018의 90% 이상은 청소 품질의 오염 제거율이다. 객체탐지 정확도나 가용률로 바꾸지 않는다.",
+    "actual_answer": "**판단**: 오염 제거율 90%를 객체탐지 정확도 90%로 바꿀 수 없습니다.  \n**근거**: [1]에서 \"고정밀 청소 품질(오염 제 removal율 90% 이상)\"은 \"오염 제 removal율\"로 명시되어 있으며, 이는 \"객체탐지 정확도\"와 구분된 특정 기술 지표입니다. [1] 제안요청서(상업용청소로봇).hwp, 13~14페이지 참조.  \n**유보사항**: 오염 제 removal율과 객체탐지 정확도는 서로 다른 기술 평가 기준으로, 공고문에서 구체적인 정의가 명시되어 있으므로, 변경은 불가능합니다. 또한, 공고문에서 \"오염 제 removal율 90% 이상\"은 \"오염 제 removal율\"을 기준으로 한 수치이며, \"객체탐지 정확도 90%\"은 다른 기술 지표로, 이 두 가지는 구분되어 있음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N26-E1-a001/ASTRA-300-C01-N26-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N30-E2",
+    "split": "train",
+    "category": "conflict",
+    "question": "전자입찰서와 종이 가격제안서 금액이 다르면 마음대로 하나를 선택해도 되는가?",
+    "expected_answer": "공고에서 정한 금액 우선순위와 미제출 무효 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 전자입찰서와 종이 가격제안서 금액이 다르면 마음대로 하나를 선택할 수 없습니다.  \n**근거**: [1] 공고서에 따르면 \"전자입찰서와 가격제안서 중 어느 하나라도 미제출 시 입찰무효 처리되며, 전자입찰서 투찰금액과 가격제안서 금액은 반드시 일치하여야 함(※ 불일치 시 전자입찰서 투찰금액을 기준으로 인정함)\"고 명시되어 있습니다.  \n**유보사항**: 공고서에 명시된 금액은 반드시 일치해야 하며, 불일치 시 전자입찰서 투찰금액을 기준으로 인정하므로, 두 가지 금액이 다르면 입찰이 무효로 간주됩니다. 또한, 공고서에서 명시된 금액은 실제 증빙 및 투찰가가 아니므로, 이는 공고서에 기재된 금액을 기준으로 평가해야 합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N30-E2-a002/ASTRA-300-C01-N30-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N34-E3",
+    "split": "dev",
+    "category": "access_policy",
+    "question": "시민 개인정보를 블록체인 온체인에 바로 저장하는 설계를 확정할 수 있는가?",
+    "expected_answer": "개인정보의 오프체인 저장 등 원문 보안 요구를 확인해야 한다.",
+    "actual_answer": "**판단**: 시민 개인정보를 블록체인 온체인에 바로 저장하는 설계를 확정할 수 없습니다.  \n**근거**: [1]에서 요구사항 PMR-9와 PMR-10에 따르면, 사업 수행에 필요한 개발기반 및 시험장비, 관련 S/W 등은 사업자 부담으로 되어 있으며, 보안 관리에 따라 자료는 발주기관이 지정한 위치에 저장 및 관리해야 하며, 개인 PC 등에 보관할 수 없습니다. 또한, 비공개 자료는 지정된 장소에 보관하고, 복사 및 외부반출을 금지하며, 보안책임자는 인계자‧인수자 서명을 포함한 “자료 인수인계 대장”을 작성하여 관리해야 합니다.  \n**유보사항**:  \n- [1]에 따르면, 비공개 자료는 발주기관이 지정한 위치(파일서버 등)에 저장 및 관리해야 하며, 개인 PC 등에 보관할 수 없습니다. 따라서, 시민 개인정보를 블록체인 온체인에 바로 저장하는 설계는 개인 PC에 보관할 수 없음을 고려할 수 있습니다.  \n- [1]에서 제안사는 발주기관으로부터 제공받은 제반 자료는 본 사업 이외의 목적에 사용할 수 없음을 명시하고 있으므로, 해당 데이터를 블록체인 온체인에 바로 저장하는 설계는 보안 및 관리 정책에 부합하지 않을 수 있습니다.  \n- [2]에 따르면, 사업 수행 시 필요한 시스템은 발주기관과 협의하여 결정하므로, 해당 설계는 발주기관과의 협의를 통해 확정될 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N34-E3-a001/ASTRA-300-C01-N34-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N38-E4",
+    "split": "train",
+    "category": "certification",
+    "question": "ESG 공고의 업종 조건을 SW사업자 등록 하나로 충족 처리해도 되는가?",
+    "expected_answer": "여러 업종의 조합 요구를 별도 확인해야 한다.",
+    "actual_answer": "**판단**: ESG 공고의 업종 조건을 SW사업자 등록 하나로 충족 처리할 수 없습니다.  \n**근거**: [2] 공고문에 따르면, 입찰참가 업체는 국가종합전자도달시스템(나라장터)에 **정보통신업(소프트웨어개발업, 업종코드 1468)**, **기타자유업(학술연구용역, 업종코드 1169)**, **교육서비스업(교육 및 컨설팅 관련업, 업종코드 3156)** 중 **2개 이상**의 업종을 소지해야 합니다. SW사업자 등록만으로는 해당 조건을 충족하지 못합니다.  \n**유보사항**: 업종 조건을 충족하기 위해서는 **소프트웨어개발업(1468)** 외 **또한 다른 1개 이상의 업종**을 소지해야 하며, 이는 업체의 사업 범위와 등록 정보에 따라 달라집니다. 또한, **소재지 조건**과 **중소기업 또는 비영리법인** 여부도 확인이 필요합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N38-E4-a001/ASTRA-300-C01-N38-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N42-E5",
+    "split": "train",
+    "category": "contract",
+    "question": "표준모델 산출물 권리를 회사 공통 정책으로 일괄 처리해도 되는가?",
+    "expected_answer": "해당 계약의 지식재산권 요구를 확인하고 회사 내부 정책으로 대체하지 않는다.",
+    "actual_answer": " 판단: **아니요**  \n 근거: [1] 공고문에 따르면, 표준모델 산출물 권리는 \"연구원으로부터 부정당업자의 입찰참가자격 제한을 받지 않거나\"의 조건을 충족해야 하며, 이는 \"회사 보유 인증\"이 아닌 \"서비스 보유 인증\"을 기준으로 하기 때문에, 회사 공통 정책으로 일괄 처리할 수 없습니다.  \n 유보사항: 공고문에서 \"연구원으로부터 부정당업자의 입찰참가자격 제한을 받지 않는 자\"가 조건으로 명시되어 있으므로, 회사의 공통 정책으로 일괄 처리할 경우 해당 조건을 충족하지 못할 가능성이 존재합니다. 또한, \"서비스 보유 인증\"과 \"회사 보유 인증\"의 구분이 명시적으로 지정되어 있으므로, 해당 정책으로 일괄 처리할 경우 법적·규정적 위험성이 발생할 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N42-E5-a001/ASTRA-300-C01-N42-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N46-E1",
+    "split": "test",
+    "category": "conflict",
+    "question": "로봇 플랫폼의 컨소시엄 허용 문구만 남기고 공동수급 불허를 무시해도 되는가?",
+    "expected_answer": "서로 다른 공동참여 문구를 보존하고 우선순위 확인 전 참여 가능을 확정하지 않는다.",
+    "actual_answer": " 판단: **예, 로봇 플랫폼의 컨소시엄 허용 문구만 남기고 공동수급 불허를 무시할 수 있다.**  \n 근거: [1]에서 \"본 사업은 컨소시엄 구성을 허용하며, 구성 업체 간 업무분담(역할)과 협력방안을 상세히 제시하여야 한다.\"고 명시되어 있고, 공동수급 불허는 \"공동수급체 전원 해당\"로 명시되어 있음.  \n 유보사항: 공통 원장은 변경되지 않으며, 합성 시나리오는 지정된 기준일·버전에서만 적용됨. 실제 공고 원문과 실제 투찰가가 아닌 합성 시나리오로 간주됨.  \n\n[1] \"본 사업은 컨소시엄 구성을 허용하며, 구성 업체 간 업무분담(역할)과 협력방안을 상세히 제시하여야 한다.\"",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N46-E1-a001/ASTRA-300-C01-N46-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.561,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-N50-E2",
+    "split": "train",
+    "category": "personnel",
+    "question": "놀이터 PM의 총경력이 길면 해당 업체 재직기간은 무시해도 되는가?",
+    "expected_answer": "제안업체 소속 재직기간 요건을 별도로 확인해야 한다.",
+    "actual_answer": " 판단: **아니요**, 놀이터 PM의 총경력이 길면 해당 업체 재직기간은 **무시해도 되지 않습니다**.  \n근거: [2] 공고 원문에 따르면, **사업관리자(PM)는 반드시 제안업체 소속으로서 3년 이상 재직 중이어야 함** [2] 제안요청서.hwpx: \"3년 이상 제안업체에 재직 중이어야 함\".  \n유보사항: **업체 재직기간과 PM의 총경력은 별도로 확인해야 하며, 재직기간이 3년 이상인 경우에도 PM의 총경력이 충분할 수 있으므로, 두 요건은 모두 충족해야 한다**.  \n- 재직기간과 PM의 총경력은 **분리된 요건**으로, 각각의 기준이 존재하므로 **둘 모두 확인**해야 함.  \n- 재직기간이 3년 미만이라면, PM의 총경력이 길다고 하여도 **재직기간 요건은 충족하지 못함**.  \n- 따라서, **업체 재직기간은 무시할 수 없는 요건**이며, **PM의 총경력과 별도로 확인**해야 함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-N50-E2-a001/ASTRA-300-C01-N50-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.899,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C01-P04",
+    "split": "train",
+    "category": "eligibility",
+    "question": "한빛IT가 단독 참여할 때 정보통신공사업 0036 조건을 충족하나요?",
+    "expected_answer": "합성 마스터에서 한빛IT는 0036을 보유하지 않아 단독 참여 모드의 이 조건은 미충족입니다. 원문에는 분담이행 가능 조항이 있으므로 별도 공동수급 구성을 검토할 수 있지만, 협정이나 구성원 자격이 자동 확보되는 것은 아닙니다.",
+    "actual_answer": "**판단**: 한빛IT가 단독 참여할 때 정보통신공사업 0036 조건을 충족하지 않는다.  \n**근거**: [2] 공고문에 따르면, 본 사업은 정보통신공사업(업종코드 : 0036) 등록을 필한 업체여야 함. [1] 합성 회사 자료에 따르면, 한빛IT는 0036 업종 코드를 보유하지 않으며, 미보유 상태이다.  \n**유보사항**: 한빛IT가 0036 업종 코드를 보유하지 않으므로, 단독 참여 시 정보통신공사업 0036 조건을 충족하지 못한다. 또한, [1] 자료에 따르면, 한빛IT는 0036 업종 코드를 위한 실제 발급 증명서가 없으며, 합성 증빙 레코드만 존재한다. 따라서, 실제 업무 수행을 위해 필요한 자격이 부족하다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C01-P04-a001/ASTRA-300-C01-P04.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N02-E1",
+    "split": "train",
+    "category": "personnel",
+    "question": "MyKSC 제안 발표를 외부 영업 담당자에게 맡겨도 되는가?",
+    "expected_answer": "제안사(주사업자)의 사업책임자 PM이 직접 발표해야 한다. 외부 영업 담당자로 대체하는 근거는 없다.",
+    "actual_answer": "판단: **아니요**, MyKSC 제안 발표를 외부 영업 담당자에게 맡겨도 **불가능**합니다.  \n근거: [2] 제안사 준수사항 > 보안유지 항목에 따르면, 제안사가 본 사업과 관련하여 취득한 업무 내용은 제3자에게 누설하여서는 안 되며, 한국과학기술정보연구원이 요구하는 보안사항을 철저히 준수해야 합니다. 제안 설명은 반드시 사업책임자(PM)가 발표해야 하며, 이 경우 사업책임자(PM)는 입찰참가자로 지정되어야 하므로, 외부 영업 담당자가 이 역할을 맡을 수 없습니다.  \n유보사항: 제안 설명회는 반드시 사업책임자(PM)가 발표해야 하므로, 외부 영업 담당자가 이 역할을 맡은 경우, 해당 제안사가 **법적·규정상 위반**에 해당할 수 있습니다. 또한, 보안 관리 및 기밀 보호를 위해 **내부 담당자**가 직접 발표해야 하는 점을 고려할 때, 외부 영업 담당자에게 맡기는 것은 **규정 위반**이 될 수 있습니다. 근거가 부족하거나 명확하지 않은 경우, **자료 부족**으로 간주됩니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N02-E1-a001/ASTRA-300-C02-N02-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N06-E2",
+    "split": "test",
+    "category": "fact",
+    "question": "전자화 물량은 어느 단위로 관리해야 하는가?",
+    "expected_answer": "약 72,500면의 종이기록물 전자화 물량이다. 파일 수나 공고 수가 아니며 과업 변경 시 별도 협의가 필요하다.",
+    "actual_answer": "판단: 전자화 물량은 **예산그룹** 단위로 관리해야 한다.  \n근거: [1]에서 \"예산과목의 통제여부를 월/분기/년 단위로 설정\"하고, \"예산과목의 예산전용여부 설정\" 및 \"예산과목의 구매성격을 물품, 용역, 공사, 없음으로 설정\"하는 것이 명시되어 있다. 또한, \"예산과목을 그룹핑하는 그룹의 등록 및 관리\"가 요구되어, 예산그룹 단위로 관리해야 한다는 근거가 있다.  \n유보사항: 원문에서 \"예산그룹별 예산과목을 수입/지출 유형에 따라 7단계까지 등록 및 관리\"하고 \"예산과목의 통제여부를 월/분기/년 단위로 설정\"하는 것이 명시되어 있으나, 이는 예산그룹 단위에서의 관리 방식을 명시하는 것이며, 구체적인 단위로의 관리 여부는 원문에서 명시된 바와 같이 \"예산그룹\" 단위로 인식해야 한다.  \n[1] \"예산과목의 통제여부를 월/분기/년 단위로 설정\"  \n[1] \"예산과목을 그룹핑하는 그룹의 등록 및 관리\"",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N06-E2-a001/ASTRA-300-C02-N06-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N10-E3",
+    "split": "train",
+    "category": "boundary",
+    "question": "공동수급 최소 지분과 업체 수 제한을 함께 확인해 달라.",
+    "expected_answer": "대표사 포함 3개사 이내이며 업체별 최소 지분율 20% 이상이다. 하도급은 불허한다.",
+    "actual_answer": "**판단**: 공동수급 최소 지분율은 20% 이상이며, 업체 수 제한은 3개사 이내입니다.  \n**근거**:  \n- [1]에서 \"사업자가 공동이행방식일 경우 공동수급은 3개 사 이하로 구성하며 구성원 모두 상기 입찰 자격을 충족하며 구성원별 최소 지분율은 2개 이상으로 제한하고 하도급은 불허함\"이라고 명시하며, [2]에서 \"공동이행방식 진행시 대표사 포함 3개사 이내, 업체별 최소 지분율 20% 이상\"라고 명시합니다.  \n**유보사항**:  \n- [1]과 [2]의 내용은 모두 공고원문에서 명시된 실제 규정으로, 합성 시나리오가 아닌 실제 공고 내용을 기준으로 판단했습니다.  \n- 지분율 20% 이상과 업체 수 3개 이내는 모두 공고에서 명시된 조건이며, 이는 제안서 평가 및 협상 대상 선정에 영향을 미치는 중요한 요건입니다.  \n- 근거가 충분하며, 자료 간 충돌은 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N10-E3-a001/ASTRA-300-C02-N10-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N15-E3",
+    "split": "train",
+    "category": "boundary",
+    "question": "착수계 제출을 준공 직전으로 미뤄도 되는가?",
+    "expected_answer": "착수계는 계약 후 15일 이내 제출해야 한다. 준공 직전 제출로 미루지 않는다.",
+    "actual_answer": "**판단**: 착수계 제출을 준공 직전으로 미루는 것은 **불가능**하다.  \n**근거**: [1] 공고문에 따르면, 착수계는 \"계약후 15일 이내\"에 제출해야 하며, 최종 성과품은 \"준공 전 7일 이내\"에 제출해야 한다. 이는 착수계 제출 시기와 준공 직전의 시기가 **격차가太大**하여, 착수계 제출을 준공 직전으로 미루는 것은 **계약상의 조건에 맞지 않는다**.  \n**유보사항**:  \n- 착수계 제출 시기와 준공 시기의 **격차가 7일 이상** 이므로, 착수계 제출을 준공 직전으로 미루는 것은 **계약상의 조건을 위반**할 수 있다.  \n- 공고문에 따르면, 착수계는 \"계약후 15일 이내\"에 제출해야 하므로, **시간적 여유가 없어** 착수계 제출을 준공 직전으로 미루는 것은 **불가능**하다.  \n- **계약상의 조건**에 따라 착수계 제출이 **기한 내에 이루어져야 한다**고 명시되어 있으므로, 준공 직전으로 미루는 것은 **계약상의 조건을 위반**할 수 있다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N15-E3-a001/ASTRA-300-C02-N15-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.6324,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N19-E4",
+    "split": "train",
+    "category": "certification",
+    "question": "일반 기능 시험만 통과하면 개발보안 요구도 충족됐다고 할 수 있는가?",
+    "expected_answer": "시큐어코딩 등 개발보안 요구는 기능 시험과 구분해 수행해야 한다.",
+    "actual_answer": "**판단**: 일반 기능 시험만 통과하면 개발보안 요구도 충족되지 않음  \n**근거**: [1] 공고문에 따르면 보안 요구사항은 데이터 보안 요건( SER-001 ), 보안관리지침 준수( SER-002 ), 형상관리( SER-003 )로 구성되어 있으며, 이들 요구사항은 기능 테스트와는 별도의 평가 항목으로 개별적으로 평가됨. 따라서 일반 기능 시험만 통과하면 보안 요구사항이 충족된다고 할 수 없음.  \n**유보사항**: 보안 요구사항은 기능 테스트와 별도로 평가되며, 개발보안 요건은 데이터 접근 권한 관리, 보안 기술 적용, 형상관리 등이 포함되어 있어 기능 테스트와는 구분되는 요건으로, 일반 기능 시험만 통과한다고 해서 보안 요구사항이 충족되었다고 할 수 없다. [1] 공고문에서 보안 요구사항은 \"보안 기술, 표준, 제안 방안 등을 문서화하여 제공\"하고 \"시큐어코딩 적용\"을 요구하고 있으므로, 이는 기능 테스트와 별도의 평가 항목으로 이루어짐.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N19-E4-a001/ASTRA-300-C02-N19-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N23-E5",
+    "split": "train",
+    "category": "boundary",
+    "question": "마감 전 송신을 시작했으면 마감 후 수신 완료도 유효하다고 할 수 있는가?",
+    "expected_answer": "마감 시점의 수신 여부 및 파일 하자에 관한 제출 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 마감 전 송신을 시작했으면 마감 후 수신 완료도 유효하다고 할 수 없습니다.  \n**근거**: [1]에 따르면, 제안서는 \"가격입찰서\" 진입 가능할 때까지 최종제출이 완료되어야 하며, 최종제출 이후에는 제안서 제출내역 수정 및 다운로드 불가능합니다. 또한, 제안서는 국가종합전자조달시스템에 수신되지 않은 경우 제출하지 아니한 것으로 간주됩니다.  \n**유보사항**: 제안서는 마감 전 송신 후 마감 후 수신 완료 시에도 유효함은 아니며, 수신 확인이 완료되어야 제안서 제출이 인정됩니다. 또한, 최종제출 이전에 파일 교체가 가능하므로, 송신 시작 후 마감 후 수신 완료가 유효하다고 할 수는 없습니다. 근거가 부족합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N23-E5-a001/ASTRA-300-C02-N23-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.5648,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N27-E1",
+    "split": "train",
+    "category": "cost",
+    "question": "서산 유지보수에 모든 서버를 포함해 비용을 계산해도 되는가?",
+    "expected_answer": "유지보수 포함 장비와 제외 서버 범위를 원문에서 구분해야 한다.",
+    "actual_answer": " 판단: 서산 유지보수에 모든 서버를 포함해 비용을 계산할 수 있다.  \n 근거: [1] 공고문에 따르면, 데이터 통합 관리 및 기술 이전 과정에서 모든 시스템 및 서버를 대상으로 유지보수를 수행해야 한다고 명시되어 있다. 또한, [2] 공고문에 따르면, 유지관리 대상 시스템은 서산시의 데이터 통합 플랫폼을 포함하며, 이는 모든 서버를 포함한 시스템을 의미한다.  \n 유보사항: 공고문에 명시된 유지관리 비용 산출 기준(분기별 분할 지급, 청구서 제출 및 지급 일정)은 실제 수행 시 기준일(2026-09-13)을 기준으로 계산되어야 하며, 해당일 기준으로 서버 포함 유지보수 비용이 정확히 산정될 수 있는 데이터가 부족하다. 또한, 서산시와 계약자는 유지관리 대가 지급 절차에 따라 실제 수행 결과를 기반으로 산출해야 하므로, 이는 계약 체결 후 실제 수행 기간과 결과에 따라 조정될 수 있다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N27-E1-a001/ASTRA-300-C02-N27-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N31-E2",
+    "split": "train",
+    "category": "certification",
+    "question": "유사 웹사이트 실적만 있으면 플랫폼 저작권 소유 조건까지 충족하는가?",
+    "expected_answer": "개별 시스템 및 검사 등에 대한 저작권을 직접 소유한 업체 조건이 있다. 유사 웹사이트 실적만으로 해당 권리 보유를 증명하지 않는다.",
+    "actual_answer": "**판단**: 유사 웹사이트 실적만 있으면 플랫폼 저작권 소유 조건까지 충족하지 않는다.  \n**근거**: [2] 공고문에 따르면, \"개별 시스템 및 검사 등에 대한 저작권을 직접 소유한 업체\"로 선정되어야 하며, 이는 \"유사 웹사이트 실적\"만으로는 충족할 수 없다. [2] \"개별 시스템 및 검사 등에 대한 저작권을 직접 소유한 업체\"라는 조건이 명시되어 있으므로, 유사 웹사이트 실적만으로는 저작권 소유 조건을 충족할 수 없다.  \n**유보사항**: 저작권 소유를 입증하기 위해서는 실제 개발 및 소유가 증빙되어야 하며, 유사 웹사이트 실적만으로는 충분하지 않다. [2] \"개별 시스템 및 검사 등에 대한 저작권을 직접 소유한 업체\"라는 조건이 명시되어 있으므로, 유사 웹사이트 실적만으로는 저작권 소유 조건을 충족할 수 없다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N31-E2-a001/ASTRA-300-C02-N31-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N35-E3",
+    "split": "test",
+    "category": "contract",
+    "question": "하도급대금 직불 확약서가 하도급의 무조건 허용을 뜻하는가?",
+    "expected_answer": "확약서의 지급 조건과 실제 하도급 허용·승인 조건을 분리해야 한다.",
+    "actual_answer": "판단: **아니요**, 하도급대금 직불 확약서는 하도급의 무조건 허용을 뜻하지 않습니다.  \n근거: [1] 공고문에 따르면, 하도급대금 직불조건부 입찰참가 확약서는 「국가를 당사자로 하는 계약에 관한 법률」 제27조의4에 따라, 하도급 계약이 법에 위반되지 않은 경우에만 제출해야 하는 문서이며, 이는 하도급의 허용 여부와 무관한 조건입니다. 또한, [2] 제안요청서에서 명시된 바와 같이, 하도급 금액의 비율이 제한되어 있으며, 이는 하도급의 무조건 허용을 의미하지 않습니다.  \n유보사항: 하도급대금 직불 확약서는 하도급 계약이 법에 위반되지 않았을 경우에만 제출해야 하는 문서로, 하도급의 무조건 허용을 뜻하지 않습니다. 또한, 하도급 금액의 비율이 제한되어 있으므로, 하도급의 무조건 허용을 뜻하지 않습니다. 근거가 부족하여 명확한 판단이 어려운 사항은 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N35-E3-a001/ASTRA-300-C02-N35-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N39-E4",
+    "split": "train",
+    "category": "fact",
+    "question": "협회 모니터링 제안서를 우편으로 접수할 수 있는가?",
+    "expected_answer": "방문접수와 우편 무효 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 우편으로 접수할 수 없습니다.  \n**근거**: [1] 공고문에 따르면 \"우편접수 불가능하며, 우편으로 발송 시 입찰 무효처리\"라고 명시되어 있습니다.  \n**유보사항**: 공고문에서 우편접수가 불가능함을 명시적으로 규정하고 있으므로, 우편으로 제안서를 발송하는 것은 입찰 무효로 처리될 수 있습니다. 또한, 제안서 제출처는 서울 강서구 공항대로42길 13 한국음악저작권협회 회원센터 KOMIT팀로 명시되어 있으나, 이는 제안서 제출 방법과 무관한 실제 지점 정보입니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N39-E4-a001/ASTRA-300-C02-N39-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N43-E5",
+    "split": "train",
+    "category": "performance",
+    "question": "승차권 웹뷰 공동수급 대표를 지분이 가장 작은 업체로 정해도 되는가?",
+    "expected_answer": "대표는 출자비율이 가장 높고 실제 업무를 주도할 수 있는 업체여야 한다. 구성원의 다른 공동수급체 중복 참가도 금지한다.",
+    "actual_answer": " 판단: **아니요**  \n 근거: [1]에서 공동수급 구성원별 계약참여 최소지분율은 10% 이상으로 하여야 함(가. 1항)이며, 공동도급으로 참여할 경우 공동수급체 대표는 출자비율이 가장 높은 업체로서 실제적으로 업무를 주도할 수 있어야 함(다.). 따라서 지분이 가장 작은 업체가 대표로 지정될 수는 없습니다.  \n 유보사항: [1]에 따르면 공동수급 구성원의 지분율은 10% 이상이어야 하지만, 이는 구성원 간의 지분율이 10% 이상일 경우에만 적용되며, 지분이 가장 작은 업체가 대표가 되려면 해당 업체의 지분율이 10% 이상이어야 하며, 이는 다른 구성원과의 지분율 비교에서 10% 이상이어야 함. 따라서 지분이 가장 작은 업체가 대표로 지정될 수는 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N43-E5-a001/ASTRA-300-C02-N43-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N47-E1",
+    "split": "test",
+    "category": "personnel",
+    "question": "EMS 기술인력 평가에 입사 직후 기간제 직원까지 모두 포함해도 되는가?",
+    "expected_answer": "재직기간과 정규직 조건을 확인해야 하며 전체 직원 수로 자동 채점하지 않는다.",
+    "actual_answer": "**판단**: 네, EMS 기술인력 평가에 입사 직후 기간제 직원까지 모두 포함해도 됨  \n**근거**: [2]에서 기술인력보유현황 평가기준에 따라 \"제안사에 3개월이상(입찰공고일로부터) 재직한 정규직 기준\"이 아닌 \"입사 직후 기간제 직원\"까지 포함할 수 있음.  \n**유보사항**: 제안서에서 기간제 직원의 재직 기간을 정확히 기재하고, 해당 직원이 기간제로 입사한 날짜와 입찰공고일까지의 기간을 확인해야 함.  \n\n[2]에서 \"기술인력보유현황\" 평가항목에 \"3개월이상(입찰공고일로부터) 재직한 정규직 기준\"이 명시되었으나, 이는 \"정규직\"을 제외한 \"기간제\" 직원에 대한 재직 기간을 기준으로 하지 않음을 나타내며, 이는 제안사가 기간제 직원의 재직 기간을 포함해 평가할 수 있음을 의미함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N47-E1-a001/ASTRA-300-C02-N47-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-N51-E2",
+    "split": "train",
+    "category": "multi_document",
+    "question": "투입공수 방식의 내용 요구 제외 문구를 이유로 헬프데스크 전담자 조건을 삭제해도 되는가?",
+    "expected_answer": "일반 조항은 투입공수 방식의 내용을 요구하지 않는다고 하지만 MPR-011은 홈페이지 운영·유지관리 경험 전담자 1인을 지정한다. 두 조항의 적용 범위를 구분하고 임의로 한쪽을 삭제하지 않는다.",
+    "actual_answer": "**판단**: 투입공수 방식의 내용 요구 제외 문구를 이유로 헬프데스크 전담자 조건을 삭제해도 된다.  \n**근거**: [2]에서 \"본 사업은 「소프트웨어사업 계약 및 관리감독에 관한 지침(과학기술정보통신부고시)(과학기술정보통신부 고시)」제7조 및 「행정기관 및 공공기관 정보시스템 구축ㆍ운영 지침(행정안전부 고시)」제42조에 따라 투입공수에 관한 내용(투입인력 수, 인적사항, 투입기간 등)을 제안요청하지 않으며, 사업수행 시 투입공수의 적정성 여부도 관리하지 아니함\"고 명시되어 있다. 이에 따라 헬프데스크 전담자의 투입인력 수나 인적사항에 대한 구체적인 요구는 없음으로 판단된다.  \n**유보사항**: 투입공수 방식의 제외 문구가 실제 수행 시 투입공수의 적정성 여부를 관리하지 않는다는 점을 고려하여, 헬프데스크 전담자의 투입 조건은 투입공수에 관한 구체적인 요구가 없으므로, 제외 문구를 이유로 조건을 삭제할 수 있음. 다만, 헬프데스크 전담자의 역할 수행에 따른 보안 및 관리 조건은 유지해야 함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-N51-E2-a001/ASTRA-300-C02-N51-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C02-P05",
+    "split": "train",
+    "category": "cost",
+    "question": "공개 기술지원 협약 합계를 확보 견적으로 보고 투찰가를 확정해도 되는가?",
+    "expected_answer": "아니다. 두 협약의 VAT 포함 합계 56,320,240원은 공개 참고액이며 C02 견적·확약서는 missing이다. 내부 민감도 계산은 가능하지만 총원가와 투찰가는 미확정이다.",
+    "actual_answer": "**판斷:** 공개 기술지원 협약 합계를 확보 견적으로 보고 투찰가를 확정해도 **불가능**합니다.  \n**근거:** [1]에서 제공된 합성 회사 자료에 따르면, **company_quote**는 **missing** 상태이며, **C02** 명의의 확약서·견적서가 **실제 발급 증명서가 아님**으로 인해 **증빙 미확보** 상태입니다. 또한, [2] 공고문에 따르면, **계약상대자는 계약체결 전 물품공급·기술지원확약서를 제출해야 하며**, 이는 **실제 증빙이 필요**합니다.  \n**유보사항:**  \n- **C02** 명의의 확약서·견적서가 **실제 발급 증명서가 아님**으로 인해 **증빙 미확보** 상태입니다.  \n- **공고 추출값**과 **합성 계획값**은 **다른 문서**로 분류되어 **실제 투찰가가 아님**을 명시해야 합니다.  \n- **개별 요건 충족**과 **전체 적격**을 **구분**해야 하며, **증빙 미확보** 상태로 인해 **전체 적격**을 확보할 수 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C02-P05-a001/ASTRA-300-C02-P05.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "manual_pdf",
+        "hit": null,
+        "reason": "page-based source; requires content review"
+      },
+      {
+        "kind": "manual_pdf",
+        "hit": null,
+        "reason": "page-based source; requires content review"
+      },
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N03-E1",
+    "split": "train",
+    "category": "eligibility",
+    "question": "세종대 유지보수에서 지사 주소만 서울이면 본점 요건을 충족했다고 해도 되는가?",
+    "expected_answer": "본점 소재지 서울특별시 조건을 확인해야 하며 지사 소재지만으로 대체하지 않는다.",
+    "actual_answer": "**판단**: No  \n**근거**: [1] 제안 일반 사항 4. 가 5) 사업자등록증 상의 본점 소재지가 서울특별시인 업체     5)  \n> \"사업자등록증 상의 본점 소재지가 서울특별시인 업체\"라는 조건이 제안 요건에 명시되어 있음.  \n**유보사항**: 사업자등록증 상의 본점 소재지가 서울특별시이어야 하며, 지사 주소만 서울이면 본점 요건을 충족하지 못함. 본점은 사업자등록증 상의 주소를 의미하므로, 지사 주소만 서울이면 본점 요건을 충족하지 못함. 본점 요건은 사업자등록증 상의 본점 소재지가 서울특별시여야 함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N03-E1-a001/ASTRA-300-C03-N03-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N07-E2",
+    "split": "train",
+    "category": "certification",
+    "question": "개발 직접생산 인증 외에 함께 확인해야 하는 세부품명은 무엇인가?",
+    "expected_answer": "빅데이터분석서비스 직접생산 요구를 개발서비스 요구와 별도로 확인한다.",
+    "actual_answer": "**판단**: 개발 직접생산 인증 외에 함께 확인해야 하는 세부품명은 **소프트웨어 사업자 신고분야**이다.  \n**근거**: [1] 공고문(최종).hwp에서 \"가. 「소프트웨어 진흥법」 제58조 및 동법 시행령 제53조에 의한 소프트웨어사업의 신고분야 중 컴퓨터 관련 서비스사업자(업종코드 1468)로 신고를 필한 업체\"와 \"나. 「중소기업제품 구매촉진 및 판로지원에 관한 법률」 제9조 및 같은 법 시행령 제10조에 따라 발급된 직접생산확인증명서[정보시스템개발서비스(8111159901), 빅데이터분석서비스(8111200202)]를 모두 소지한 업체\"에 따르면, 소프트웨어 사업자 신고분야가 제안요청서에서 제시된 업종코드 1468에 해당하는 것이며, 이는 직접생산 인증 외에 반드시 확인해야 하는 세부품명이다.  \n**유보사항**: 제안요청서(최종).pdf에서 \"SW사업정보 데이터는 사업수행계획서 작성 시 단계별 산출물 리스트에 반드시 명시하도록 함\" 및 \"SW사업정보 중 기능점수 데이터의 작성을 위해 사업수행 인원 중 기능점수 측정 전문가를 포함토록 함\"에 따르면, 소프트웨어 사업자 신고분야에 해당하는 업종코드 1468는 사업수행 계획서 작성 시 반드시 명시해야 하는 사항이므로, 해당 정보가 제안서에 명시되어야 하며, 이를 제대로 제출하지 않으면 입찰 자격이 부정가능해진다.  \n**수치/단위/산식**: 없음.  \n**증빙 상태**: 제안서에 명시되어야 하며, 해당 정보가 제대로 제출되지 않으면 입찰 자격이 부정가능.  \n**보유 주체**: 업체.  \n**합성 시나리오**: 없음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N07-E2-a001/ASTRA-300-C03-N07-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.3256,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N12-E2",
+    "split": "train",
+    "category": "contract",
+    "question": "정기점검 계획의 최소 주기를 어떻게 잡아야 하는가?",
+    "expected_answer": "월 1회 이상 정기점검 요구를 확인한다.",
+    "actual_answer": "**판단**: 정기점검 계획의 최소 주기는 월 1회 이상이어야 한다.  \n**근거**: [1]에 따르면, 점검주기는 월 1회 이상으로 하며, [붙임2,3]에 따라 점검표를 작성하여 제출해야 한다.  \n**유보사항**:  \n- 점검주기는 부산시의 불가피한 사정에 따라 변경될 수 있으므로, 실제 상황에 따라 유동적으로 조정해야 한다.  \n- 점검표 작성 및 제출은 [붙임2,3]에 따라 이루어져야 하므로, 해당 문서가 존재하는지 확인이 필요하다.  \n- 점검은 업무시간 내에 수행하는 것이 원칙이므로, 휴일이나 비상 상황에서는 예외적으로 조정될 수 있다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N12-E2-a001/ASTRA-300-C03-N12-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N16-E3",
+    "split": "train",
+    "category": "fact",
+    "question": "방문 제출 대신 택배로 접수할 수 있는가?",
+    "expected_answer": "직접 방문접수 및 우편·택배 등 제한을 확인해야 한다.",
+    "actual_answer": " 판단: **택배로 접수할 수 없습니다**.  \n 근거: [2] 공고문에 따르면, 제안서는 우편 또는 택배로 제출할 수 없습니다.  \n 유보사항: 제안서는 대표자 또는 대리인이 직접 제출해야 하며, 우편, 택배, 퀵서비스 접수는 불가능합니다. [1] 공고문에 따르면, 제안서는 2026년 5월 15일 11:00부터 12:00까지 1층 회의실에 직접 제출해야 하며, 우편, 택배, 퀵서비스로는 제안서를 제출할 수 없습니다.  \n 근거가 부족한 사항: 제안서의 제출 방법에 대한 구체적 조건이 제시되지 않았으나, 공고문에 명시적으로 택배로 제출할 수 없다고 명시되어 있으므로, 해당 조건은 공고문에 명시된 것으로 간주됩니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N16-E3-a001/ASTRA-300-C03-N16-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.6575,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N20-E4",
+    "split": "train",
+    "category": "access_policy",
+    "question": "정기 점검만 계약상 보안 점검으로 인정된다고 답해도 되는가?",
+    "expected_answer": "정기 또는 불시 보안점검 조건을 확인해야 한다.",
+    "actual_answer": "**판단:** 정기 점검만 계약상 보안 점검으로 인정된다고 답할 수 없습니다.  \n\n**근거:**  \n제9조(보안점검) ➀항에 따르면, '연구소' 또는 '연구소'의 대리자가 필요하다고 인정될 때 '계약상대자'에 대한 정기 또는 불시보안점검을 실시할 수 있으며, 필요한 보안조치 지시를 할 수 있습니다. 이는 '정기 점검'만을 기준으로 하지 않고, '불시점검'도 포함됩니다. 따라서 '정기 점검'만이 계약상 보안 점검으로 인정된다고 할 수 없습니다.  \n[1] 제9조(보안점검) ➀항: \"연구소 또는 연구소의 대리자가 필요하다고 인정될 때는 계약상대자에 대하여 정기 또는 불시보안점검을 실시할 수 있으며, 필요한 보안조치 지시를 할 수 있다.\"\n\n**유보사항:**  \n- 제9조(보안점검) ➀항은 '정기'와 '불시'를 모두 포함하므로, '정기 점검'만이 계약상 보안 점검으로 인정된다고 할 수 없다는 점이 명시적으로 제시된다.  \n- '정기 점검'이 계약상 보안 점검의 유일한 기준이 아니므로, '정기 점검만'을 기준으로 하면 부적절하다는 점이 유보사항이다.  \n- 제9조(보안점검) ➁항은 '정기 점검'이 아닌 '불시점검'이 포함된다는 점을 고려해야 한다.  \n- '정기 점검'이 계약상 보안 점검의 유일한 기준이 아니므로, '정기 점검만'을 기준으로 하면 부적절하다는 점이 유보사항이다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N20-E4-a001/ASTRA-300-C03-N20-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N24-E5",
+    "split": "train",
+    "category": "access_policy",
+    "question": "산출물 지식재산권이 공동소유라면 외부 반출도 자유로운가?",
+    "expected_answer": "공동소유와 산출물 외부 반출 제한을 별도 확인해야 한다.",
+    "actual_answer": "**판단**: 산출물 지식재산권이 공동소유라면 외부 반출도 자유로운 것이 아님  \n**근거**: [1]에서 \"본 제안서의 계약에 의한 성과물 (지식재산권)은 계약에 별도의 명시가 없는 한 발주기관과 계약상대자가 공동으로 소유하며, 별도의 정함이 없는 한 지분은 균등한 것으로 한다. 단, 본 용역을 통해 입수되는 DB정보는 제외함\"에 따르면, 지식재산권은 공동소유로 처리되지만, **외부 반출은 제한된 상태**로, **누출금지정보로 명시된 정보를 삭제하고 활용할 수 있으며, 이를 확인하는 공급자 대표 명의의 확약서를 제출해야 한다**고 명시되어 있음.  \n**유보사항**: 외부 반출 시 **누출금지정보를 삭제하고 활용**해야 하며, **확약서 제출**이 필수적임. 또한, **계약상대자가 제공받은 SW산출물을 제3자에 제공하려는 경우, 반드시 발주기관의 사전승인을 받도록 하여야 한다**고 명시되어 있으므로, **외부 반출은 제한된 상태**로, **공동소유일 경우도 외부 반출이 자유로우지 않음**.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N24-E5-a001/ASTRA-300-C03-N24-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N28-E1",
+    "split": "train",
+    "category": "cost",
+    "question": "농촌 플랫폼에서 낮은 입찰가격이면 가격평점이 항상 올라가는가?",
+    "expected_answer": "예정가격 대비 일정 비율 미만에 대한 별도 가격평점 규정을 확인해야 한다.",
+    "actual_answer": " 판단: 농촌 플랫폼에서 낮은 입찰가격이면 가격평점이 항상 올라가는 것은 **아니다**.  \n근거: [2] 공고문에 따르면, \"본 입찰은 SW사업으로 입찰가격이 예정가격의 100분의 80미만인 경우 가격점수 배점한도의 30%에 해당하는 평점을 부여합니다.\"라는 내용이 있으며, 이는 **입찰가격이 예정가격의 80% 미만일 때만 가격평점이 부여**되는 것이며, 낮은 가격이 항상 더 높은 평점을 받는다고 명시된 것은 없다.  \n유보사항:  \n- 예정가격이 공고문에 명시된 **24,170,000원(부가가치세 제외)**이며, **사업금액은 26,587,000원(부가가치세 포함)**로 명시되어 있음.  \n- **입찰가격이 예정가격의 80% 미만일 때만 가격평점이 부여**되는 것이며, 이외의 경우 가격평점이 부여되는 조건이 명시되지 않음.  \n- **가격평점이 항상 높은 입력이 되는 것은 아니며**, 예정가격에 따라 구체적인 평점 부여 조건이 달라질 수 있음.  \n- **실제 입찰가가 예정가격의 80% 미만일 경우만 가격평점이 부여**되는 것이며, 이는 **입찰가격의 절대적 낮음**이 아닌 **비율적 낮음**이 조건이 되므로, \"가격이 낮으면 항상 평점이 높다\"는 판단은 **근거가 부족하다**.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N28-E1-a001/ASTRA-300-C03-N28-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.5595,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N32-E2",
+    "split": "train",
+    "category": "personnel",
+    "question": "공동수급 구성원 밖의 외부 자문자를 자사 투입인력으로 셀 수 있는가?",
+    "expected_answer": "자사인력·구성원 소속·외부 자문 및 하도급 간주 기준을 구분해야 한다.",
+    "actual_answer": "**판단**: 불가  \n**근거**: [1]에서 \"공동수급체 소属 외의 인력은 하도급으로 간주하며, 공동수급체 구성원 자사인력으로 대체하여야 함\"에 따르면, 공동수급 구성원이 아닌 외부 인력은 하도급으로 간주되며, 자사 투입인력으로 대체해야 한다. 따라서 외부 자문자를 자사 투입인력으로 셀 수는 없다.  \n**유보사항**: 공동수급체 구성원 자사인력으로 대체할 수 있는 경우, 외부 자문인력은 제외된다. [1] \"※ 단, 외부 자문인력 등 통상적인 개발인력이 아닌 경우는 참여인력에서 제외함\"에 따르면, 외부 자문인력이 통상적인 개발인력이 아닌 경우, 참여인력에서 제외될 수 있다. 따라서, 외부 자문인력이 통상적인 개발인력이라면, 공동수급 구성원 자사인력으로 대체할 수 있는 경우가 있을 수 있으나, 이는 근거가 없는 추측으로 간주된다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N32-E2-a001/ASTRA-300-C03-N32-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N36-E3",
+    "split": "train",
+    "category": "performance",
+    "question": "체육회 PM 평가에서 경력 총연수와 해당분야 경력을 동일시해도 되는가?",
+    "expected_answer": "평가에 요구되는 관련분야 경력 구간을 따로 확인해야 한다.",
+    "actual_answer": " 판단: **체육회 PM 평가에서 경력 총연수와 해당분야 경력을 동일시할 수 없다.**  \n 근거: [2] 공고문에 따르면, 투입인력 평가 기준에서 \"경력 기간은 'IT분야 역량체계(ITSQF) 직무기술서'를 준용하여 '데이터분석, 데이터아키텍처, 정보기술기획, 정보기술컨설팅, 응용SW개발, SW아키텍처' 직무분야만 인정하며, 경력증명을 위하여 증빙자료를 제출해야 한다.\"고 명시하고 있으며, 이는 **경력 총연수와 해당분야 경력을 구분하여 평가**해야 한다는 의미를 내포하고 있다.  \n 유보사항:  \n- 경력 총연수와 해당분야 경력이 중복되는 경우, 해당분야 경력만 인정받는다.  \n- 경력증명서는 '정보기술 · 사업관리산업 인적자원개발위원회' 또는 '한국소프트웨어산업협회'에서 발급한 서류로 제출해야 한다.  \n- '경력 총연수'와 '해당분야 경력'은 구분하여 계산해야 하며, 두 가지가 모두 충족된 경우에도 **해당분야 경력만을 기준으로 평가**한다.  \n- 근거가 부족한 경우, **자료 부족으로 판단**한다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N36-E3-a001/ASTRA-300-C03-N36-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.6214,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N40-E4",
+    "split": "train",
+    "category": "eligibility",
+    "question": "GPU 유지관리에 공동수급을 기본 참여 방식으로 둘 수 있는가?",
+    "expected_answer": "공동계약 불허 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 공동수급을 기본 참여 방식으로 둘 수 없습니다.  \n**근거**: [1]에 따르면, 공동수급체의 경우 대표사는 반드시 입찰보증금 미납사실 및 부정당업자 제재이력을 확인하여 관련조항에 따른 입찰보증금을 납부해야 합니다. 다만, 이는 공동수급체가 입찰참가자격을 갖춘 경우에만 적용되며, 이 공고의 경우 공동수급체가 입찰참가자격을 갖춘 것으로 보여지지 않으므로, 공동수급을 기본 참여 방식으로 둘 수 없습니다.  \n**유보사항**: 공고서에 명시된 공동수급체의 입찰참가자격 요건이 충족되었는지 확인이 필요하며, 해당 요건이 충족되지 않은 경우 공동수급체의 입찰참가가 불가능할 수 있습니다. [1]에 따르면, 공동수급체의 경우 대표사는 반드시 입찰보증금 미납사실 및 부정당업자 제재이력을 확인해야 하며, 이는 공고서에 명시된 조건에 따라 공동수급체가 입찰참가자격을 갖춘 것으로 보여지지 않으므로, 공동수급을 기본 참여 방식으로 둘 수 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N40-E4-a001/ASTRA-300-C03-N40-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N44-E5",
+    "split": "dev",
+    "category": "fact",
+    "question": "제안서와 요약서의 분량 제한을 같은 숫자로 설정해도 되는가?",
+    "expected_answer": "본문과 요약서의 각 분량 제한을 나누어 관리해야 한다.",
+    "actual_answer": "**판단:** 제안서와 요약서의 분량 제한을 같은 숫자로 설정할 수 없습니다.  \n**근거:** [1] 제안서는 \"표지, 목차, 별지자료 등을 제외한 순수 제안내용이 200쪽을 넘지 아니한다.\"고 명시하며, 요약서는 \"70페이지 이내로 작성하되, 흑백으로 인쇄하여야 한다.\"고 명시되어 있습니다. 이로써 제안서와 요약서의 분량 제한이 서로 다르게 설정되어야 한다는 근거가 명시되어 있습니다.  \n**유보사항:** 제안서와 요약서는 각각 다른 기준에 따라 평가되며, 분량 제한이 다르게 설정된 것은 공고문에서 명시된 사항입니다. 따라서 분량 제한을 동일하게 설정하는 것은 제안서와 요약서의 평가 기준과 관련하여 부적절할 수 있습니다. 또한, 제안서는 200쪽 이내, 요약서는 70페이지 이내로 작성해야 하므로, 두 가지를 동일하게 설정하는 것은 제안서와 요약서의 평가 기준과 관련하여 부적절할 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N44-E5-a001/ASTRA-300-C03-N44-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-N48-E1",
+    "split": "train",
+    "category": "conflict",
+    "question": "동아보건대의 공고 마감을 메타데이터만 보고 고정해도 되는가?",
+    "expected_answer": "공고문은 2026-08-10 11:00, RFP 일정과 수집 메타데이터는 같은 날 10:00으로 다르다. 마감을 임의 확정하지 않고 정정 이력·발주기관 확인이 필요하다고 안내한다.",
+    "actual_answer": "**판단**: 동아보건대의 공고 마감을 메타데이터만 보고 고정해도 **사전에 고정할 수는 없습니다**.  \n**근거**: 공고문에 명시된 공고기간은 **2026. 06. 29.(월) ~ 08. 10.(월) 10:00**이며, 이는 **입찰참가등록 및 제안서 제출**의 마감일로 명시되어 있습니다. [1]  \n**유보사항**:  \n- 공고문에 명시된 **마감일**은 **2026년 8월 10일 10:00**이며, 이는 **메타데이터**로만 판단할 수 있는 **실제 일시**로 고정되어야 합니다.  \n- **공고기간**은 **2026년 6월 29일부터 8월 10일 10:00까지**로 명시되어 있으며, 이는 **입찰참가 등록 및 제안서 제출**의 **최종 마감일**로 명시되어 있습니다.  \n- **공고문에 명시된 일시**는 **실제 일정**이며, **메타데이터**로만 판단할 수 있습니다.  \n- **입찰참가 등록 및 제안서 제출**의 **마감일**은 **2026년 8월 10일 10:00**이며, 이는 **입찰참가가 불가능한 일시**로 고정되어야 합니다.  \n- **공고기간**은 **2026년 6월 29일부터 8월 10일 10:00까지**로 명시되어 있으며, 이는 **입찰참가가 가능하다는 의미**로 고정되어 있습니다.  \n- **입찰참가가 불가능한 일시**는 **2026년 8월 10일 10:00**이며, 이는 **메타데이터**로만 판단할 수 있습니다.  \n- **입찰참가 등록 및 제안서 제출**의 **마감일**은 **2026년 8월 10일 10:00**이며, 이는 **입찰참가가 불가능한 일시**로 고정되어 있습니다.  \n- **공고기간**은 **2026년 6월 29일부터 8월 10일 10:00까지**로 명시되어 있으며, 이는 **입찰참가가 가능하다는 의미**로 고정되어 있습니다.  \n- **입찰참가가 불가능한 일시**는 **2026년 8월 10일 10:00**이며, 이는 **메타데이터**로만 판단할 수 있습니다.  \n- **공고기간**은 **2026년 6월 29일부터 8월 10일 10:00까지**로 명시되어 있으며, 이는 **입찰참가가 가능하다는 의미**로 고정되어 있습니다.  \n- **입찰참가가 불가능한 일시**는 **2026년 8월 10일 10:00**이며, 이는 **메타데이터**",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-N48-E1-a001/ASTRA-300-C03-N48-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": true,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.8008,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-P02",
+    "split": "dev",
+    "category": "performance",
+    "question": "두 번째 블록체인 실적을 증빙 확보 완료로 세어도 되는가?",
+    "expected_answer": "완료 실적 설정은 있으나 C03-PRJ-02의 증빙은 missing이다. 대장 생성으로 실제 실적 증명이 확보되지는 않는다.",
+    "actual_answer": "**판단**: 두 번째 블록체인 실적을 증빙 확보 완료로 세는 것은 **불가능**하다.  \n**근거**: [2]에서 \"증빙 확보 상태\"는 \"missing — 증빙 미확보\"로 기재되어 있으며, 이는 실제 발급 증명서가 아님을 의미한다.  \n**유보사항**: 공고 기준일(2026-04-01) 기준으로는 실제 증빙이 확보되지 않았으므로, 증빙 확보 완료로의 변경은 **근거가 부족**하며, 시스템의 자동 처리 동작을 추가할 수 없다.  \n**계산값**: 계약금액은 66,000,000 KRW (VAT 포함)이며, 공급가액은 60,000,000 KRW (산식: round_half_up(gross / 1.1))로 계산됨.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-P02-a001/ASTRA-300-C03-P02.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C03-S03",
+    "split": "dev",
+    "category": "boundary",
+    "question": "인우의 합성 증빙 확보 적용일 이전에 새 증빙 상태로 질문에 답할 수 있는가?",
+    "expected_answer": "아니다. 적용일은 2026-05-20이며 그 이전 판단에는 기존 missing을 유지한다.",
+    "actual_answer": "**판단**: 인우의 합성 증빙 확보 적용일 이전에 새 증빙 상태로 질문에 답할 수 없습니다.  \n\n**근거**: [1]에 따르면, 합성 증빙 레코드의 적용 시작일은 2026-05-20이며, 판斷 기준일 2026-06-01은 이 날짜 이후입니다. 따라서 적용일 이전에는 합성 증빙 레코드가 활성화되지 않았으므로, 새 증빙 상태로 질문에 답할 수 없습니다.  \n\n**유보사항**: 합성 증빙 레코드는 실제 발급 증명서가 아니며, 유효 기간과 상태는 합성 원장의 설정에 따라 결정됩니다. 따라서 유효 기간 내에서만 해당 상태를 인정할 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C03-S03-a001/ASTRA-300-C03-S03.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N04-E1",
+    "split": "train",
+    "category": "certification",
+    "question": "유지관리와 개발 중 한 종류의 직접생산 확인만 있으면 충분한가?",
+    "expected_answer": "정보시스템유지관리와 정보시스템개발 두 종류 요구를 각각 대조해야 한다.",
+    "actual_answer": "**판단**: 유지관리와 개발 중 한 종류의 직접생산 확인만 있으면 충분하지 않다.  \n**근거**: [1] 공고문에 따르면, 농산업수출종합지원시스템 유지관리 및 고도화 용역은 「농산업수출종합지원시스템 운영 및 유지관리」「농산업 수출 보조금 지원사업 관리시스템 구축」「농산업 수출종합지원시스템 신규 서버로 이관」 등 다양한 유지관리 및 개발 업무가 포함되어 있으며, 이는 단일 항목의 직접생산만으로는 충분하지 않다는 의미를 담고 있다.  \n**유보사항**: [1] 공고문에서 명시된 「농산업수출종합지원시스템 유지관리 및 고도화 용역」의 대상은 유지관리와 개발을 모두 포함하고 있으므로, 한 종류의 직접생산만으로는 해당 용역의 전체 요구사항을 충족할 수 없다. 또한, [2] 제안요청서에서 「시스템 장비구성 요구사항」「기능 요구사항」「데이터 요구사항」「유지관리 수행 요구사항」 등 다양한 요건이 명시되어 있으므로, 단일 항목의 직접생산만으로는 해당 용역의 모든 요건을 충족할 수 없다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N04-E1-a001/ASTRA-300-C04-N04-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N08-E2",
+    "split": "train",
+    "category": "contract",
+    "question": "공동이행 허용을 근거로 하도급도 허용된다고 할 수 있는가?",
+    "expected_answer": "공동수급과 하도급은 별도 조건이며 하도급 불허 문구를 따로 적용한다.",
+    "actual_answer": "**판단**: 공동이행 허용을 근거로 하도급을 허용할 수는 없다.  \n**근거**: [1] 공고서_섬유생산기업정보시스템 통합유지보수 수행기관 선정 입찰공고.pdf 페이지 2에 따르면, \"공동수급(공동이행방식)은 허용하되, 하도급 불허(※단일 입찰 가능)\"라고 명시되어 있다. 이는 공동이행 허용과 하도급 허용을 구분하는 명시적인 규정이다.  \n**유보사항**: 공고문에서 \"하도급 불허\"가 명시되어 있으므로, 공동이행 허용을 근거로 하도급을 허용하는 것은 법적 근거가 없다. 또한, 공고문에 명시된 내용은 실제 입찰 및 계약 시 적용되는 조건으로, 허용 여부는 공고문의 명시에 따라 판단해야 한다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N08-E2-a001/ASTRA-300-C04-N08-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N12-E3",
+    "split": "train",
+    "category": "cost",
+    "question": "기초금액을 공급가액으로 그대로 사용해도 되는가?",
+    "expected_answer": "기초금액 71,970,330원은 추정가격 65,427,573원과 VAT 6,542,757원의 합계다. 기초금액 전체를 공급가액으로 쓰지 않는다.",
+    "actual_answer": "**판단**: 기초금액을 공급가액으로 그대로 사용할 수 없습니다.  \n**근거**: [2]에서 \"본 입찰의 예정가격은 기초금액의 ±3% 범위내에서 15개의 복수 예비가격을 작성하며, 입찰참가자가 2개씩 선택하여 가장 많이 추첨된 4개의 예비 가격을 산술평균한 가격으로 합니다.\"에 따르면, 기초금액은 예정가격의 계산 기준이지만, 공급가액으로 그대로 사용할 수는 없습니다. 예정가격은 기초금액의 ±3% 범위 내에서 산출되며, 공급가액은 예정가격에 따라 결정되며, 기초금액과 공급가액이 동일할 수는 없습니다.  \n**유보사항**: 공급가액은 예정가격에 따라 산출되며, 기초금액과의 관계는 명시적으로 제시된 계산 방식에 따라 결정됩니다. 따라서 기초금액을 공급가액으로 그대로 사용하는 것은 법적·계약적 기준에 부합하지 않습니다.  \n\n[2] \"본 입찰의 예정가격은 기초금액의 ±3% 범위내에서 15개의 복수 예비가격을 작성하며, 입찰참가자가 2개씩 선택하여 가장 많이 추첨된 4개의 예비 가격을 산술평균한 가격으로 합니다.\"",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N12-E3-a001/ASTRA-300-C04-N12-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N16-E4",
+    "split": "train",
+    "category": "fact",
+    "question": "웹툰 사업의 평가 절차에 차등점수 규정이 있는지 확인해 달라.",
+    "expected_answer": "기술능력평가 총배점한도 기준 순위 간 점수차를 3점 이내로 정해 차등점수를 부여한다. 원점수 차가 차등점수보다 크면 원점수 차를 적용한다.",
+    "actual_answer": "**판斷**: 웹툰 사업의 평가 절차에 차등점수 규정이 있습니다.  \n**근거**: [1]에 따르면, 「소프트웨어 기술성 평가기준 지침」 제4조제5항에 따라 본 사업은 기술능력평가의 변별력을 확보하기 위하여 총배점한도를 기준으로 3점* 이내의 순위간 점수차를 지정하여 차등점수제를 부여함.  \n**유보사항**:  \n- 차등점수제는 「소프트웨어 기술성 평가기준 지침」 제4조제5항에 명시된 규정에 따라 적용됨.  \n- 원점수 기준의 순위별 점수차가 차등점수보다 큰 경우 원점수차를 적용하며, 차등점수를 부여한 후 기술능력평가점수와 가격평가점수를 합산하여 동점인 경우 기술능력평가점수에 따라 순위를 정함.  \n- 해당 사업의 평가 절차는 「지방자치단체 입찰시 낙찰자 결정기준」에 따라 공개됨.  \n\n**수치/단위/산식**:  \n- 차등점수제 적용 범위: 총배점한도 기준으로 3점 이내의 순위간 점수차  \n- 차등점수제 적용 조건: 기술능력평가점수와 가격평가점수 합산 후 동점인 경우 기술능력평가점수 기준으로 순위 정함.  \n\n**근거 부족 사항**:  \n- 평가 절차에 대한 구체적 점수 배분 기준이 명시되지 않음.  \n- 실제 평가 점수와 순위가 어떻게 정해지는지에 대한 구체적 사항이 제공되지 않음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N16-E4-a001/ASTRA-300-C04-N16-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N20-E5",
+    "split": "train",
+    "category": "eligibility",
+    "question": "공동이행이 불가하더라도 분담이행으로 참여할 수 있다고 안내해도 되는가?",
+    "expected_answer": "공동이행·분담이행 및 하도급 제한을 각각 확인하며 방식 이름만 바꿔 우회하지 않는다.",
+    "actual_answer": "**판단**: 불가  \n**근거**: [1] ⑥항에 따르면, 본 입찰은 \"공동계약(공동이행방식, 분담이행방식) 및 하도급 불가\"로 명시되어 있음.  \n**유보사항**: 근거에 따르면 공동이행 및 하도급은 금지되어 있으나, 분담이행 방식은 명시적으로 허용되지 않았으므로, 분담이행으로 참여할 수 있다고 안내하는 것은 **법적·계약상 불가능**하다.  \n- [1] ⑥항: \"본 입찰은 공동계약(공동이행방식, 분담이행방식) 및 하도급 불가\"  \n- 이에 따라 분담이행 방식은 명시적으로 허용되지 않으므로, 해당 방식으로 참여할 수 없다.  \n- 이와 관련된 구체적인 계약 조건이나 예외 사항은 근거에 명시되지 않으므로, **계약상 불가능**하다고 판단됨.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N20-E5-a001/ASTRA-300-C04-N20-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N24-E1",
+    "split": "train",
+    "category": "personnel",
+    "question": "기술로드맵 사업에서 개발자만 배치하고 디자인 전문인력을 생략할 수 있는가?",
+    "expected_answer": "전문 디자이너 투입 요구를 확인하고 일반 개발 직무로 자동 대체하지 않는다.",
+    "actual_answer": "**판단**: 기술로드맵 사업에서 개발자만 배치하고 디자인 전문인력을 생략할 수 없습니다.  \n**근거**: [1]에서 요구사항명「저작권 및 지식재산권 보호」에 따라, 시스템 구축 시 사용되는 모든 디자인, 콘텐츠 및 SW는 저작권법에 위배되지 않아야 하며, 디자인과 콘텐츠는 발주기관에 사용권이 있습니다. 이에 따라 디자인 전문인력을 생략하는 것은 저작권 및 지식재산권 보호에 위반될 수 있습니다.  \n**유보사항**: 디자인 전문인력의 필요성은 저작권 및 지식재산권 보호와 관련된 요구사항에 따라 판단되며, 이는 실제 공고 원문 및 근거 자료에 명시되어 있음을 확인할 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N24-E1-a001/ASTRA-300-C04-N24-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N28-E2",
+    "split": "train",
+    "category": "boundary",
+    "question": "익명 평가 위반 감점과 평가위원 접촉 감점을 같은 규칙으로 저장해도 되는가?",
+    "expected_answer": "위반 행위별 기준과 감점 단위를 나누어 확인해야 한다.",
+    "actual_answer": " 판단: **같은 규칙으로 저장해도 됩니다.**  \n 근거: [1]에 따르면, \"사전접촉이 확인된 경우 제안서 평가 종합점수에서 5점을 감점합니다.\"라는 규정이 있으며, 이는 \"허용된 검색 자료\"에서 명시된 **제안서 평가 종합점수 감점**의 일환으로, **익명 평가 위반 감점**과 **평가위원 접촉 감점**은 **다른 감점 조건**이지만, **같은 평가 점수에 적용되는 감점 규칙**이므로, **같은 규칙으로 저장**할 수 있습니다.  \n 유보사항: **같은 규칙으로 저장**하는 경우, **다른 감점 조건**이지만, **동일한 평가 점수에 적용되는 감점 규칙**이므로, **같은 규칙으로 관리**하는 것이 **법적·규정적 정확성**에 부담이 적습니다. 다만, **각 감점 조건이 완전히 다르므로, 명시적으로 구분**하는 것이 **규정 준수**에 유리합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N28-E2-a001/ASTRA-300-C04-N28-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.7519,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N32-E3",
+    "split": "train",
+    "category": "access_policy",
+    "question": "원격 개발을 허용하면 개인 PC에서 제한 없이 작업해도 되는가?",
+    "expected_answer": "스마트워크 가상PC 등 원격지 개발의 보안 전제를 확인해야 한다.",
+    "actual_answer": " 판단: 원격 개발을 허용하면 개인 PC에서 제한 없이 작업해도 된다는 것은 **불가능**하다.  \n근거: [1]에서 원격지 개발에 따른 보안요구사항 중, \"개인소유 PC 및 보조기억장치 반입‧반출 통제\"가 명시되어 있음. 이는 개인 PC가 개발 작업에 사용될 수 있음을 허용하지만, **반입‧반출을 통제**함으로써 **제한**을 의미함.  \n유보사항: 원격지 개발 시, 개인 PC 사용이 허용되더라도 **보안상의 통제**가 필요하며, 이는 제안서에서 구체적인 보안 관리대책(시건장치, 출입통제 등)를 제시해야 함. 또한, 개발방법 등에 대한 구체적인 방안을 제시해야 함.  \n\n[1] \"원격지 개발에 따른 개발방법 등에 대한 구체적인 방안을 제시하여야 함\"  \n[1] \"원격지 개발에 따른 작업 장소 등에 대하여 구체적인 원격지 보안 관리대책(시건장치, 출입통제 등)을 실시하여야 함\"  \n[1] \"개인소유 PC 및 보조기억장치 반입‧반출 통제\"",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N32-E3-a001/ASTRA-300-C04-N32-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N36-E4",
+    "split": "train",
+    "category": "access_policy",
+    "question": "원격 작업 단말기를 수행사가 임의로 추가할 수 있는가?",
+    "expected_answer": "승인된 단말기와 원격접속 보안 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 원격 작업 단말기를 수행사가 임의로 추가할 수 없습니다.  \n**근거**: [1]에서 “원격지에서의 온라인 개발이 불가피하게 필요한 경우, 발주기관의 승인 하에 지정된 단말기에서만 접속 및 해당 단말기에 대한 접근 인원을 통제해야 함”에 따르면, 단말기의 사용 및 추가는 발주기관의 승인을 받아야 하며, 임의로 추가할 수 없습니다.  \n**유보사항**: 근거에 따르면, 단말기의 사용 및 추가는 발주기관의 승인을 받는 것이 원칙이므로, 수행사가 임의로 추가할 수 있는 경우는 없으며, 이에 대한 구체적인 규정은 근거에 명시되어 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N36-E4-a001/ASTRA-300-C04-N36-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.6649,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N41-E4",
+    "split": "train",
+    "category": "performance",
+    "question": "경민대 실적 평가의 기간과 공동계약 실적 금액 범위를 설명해 달라.",
+    "expected_answer": "서식은 입찰공고일 기준 최근 3년의 대학업무용역 중 준공 또는 수행 중인 실적을 기재하도록 한다. 공동도급은 제안사 지분 해당 금액만 기재하고, 하도급은 발주처 승인 시 작성한다. 이 서식 기재를 전체 적격 판정으로 확대하지 않는다.",
+    "actual_answer": "**판단**: 경민대 실적 평가의 기간은 **최근 3년간**이며, 공동계약 실적 금액 범위는 **제안사의 지분만 기재**해야 한다.  \n**근거**: [1] 병지 제04호에 따르면, \"입찰공고일 기준 최근 3년간 대학업무용역(실적증명 제출분만 기제) 준공 혹은 수행 중인 실적을 최근 연도순으로 기재\"하고, \"공동도급계약 실적일 경우에는 계약금액란에 제안사의 지분만을 기재\"해야 한다.  \n**유보사항**:  \n- 실적증명서는 **한국소프트웨어산업협회** 등의 실적증명으로 제출할 수 있으며, **증명서 발급일**이 **2026년 9월 13일** 이전이어야 한다.  \n- **공동계약**으로 이행한 경우, **비율과 비율에 따른 실적 금액**을 기재해야 하며, **비고**란에 **원도급 회사를 기재**해야 한다.  \n- **실적증명서**가 제출되지 않은 경우, **실적은 인정되지 않는다**.  \n- **수치·단위·VAT·기간·증빙 상태·보유 주체**는 **원본 자료에 기재된 내용**을 기준으로 하여야 하며, **합성 시나리오**는 **실제 증빙 및 실적 투찰가**가 아니므로 **기존 원장은 변경되지 않는다**.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N41-E4-a001/ASTRA-300-C04-N41-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N45-E5",
+    "split": "dev",
+    "category": "eligibility",
+    "question": "유지지원 직접생산 확인이 있으면 정보통신공사업 면허도 보유한 것으로 봐도 되는가?",
+    "expected_answer": "직접생산 확인과 업종 면허는 별도 증빙이다.",
+    "actual_answer": " 판단: **아니요**  \n 근거: [1]에서 \"직접생산확인증명서는 중소기업제품공공구매종합정보망에서 확인이 되지 않을 경우 입찰참가자격이 없습니다.\"와 \"정보통신공사업(0036) 면허 등록을 필한 업체\"는 별도의 요건으로 명시되어 있으며, 이는 직접생산확인증명서와 별개의 요건으로 간주됩니다. [2]에서도 \"소프트웨어산업진흥법 제24조의 규정에 의한 소프트웨어 사업자로서 컴퓨터관련서비스사업분야 신고를 필한 업체\"와 \"정보통신공사업(0036) 면허 등록을 필한 업체\"는 두 가지 distinct한 요건으로 제시되었습니다.  \n 유보사항: 직접생산확인증명서와 정보통신공사업 면허는 각각의 요건으로 구분되어 있으므로, 직접생산확인증명서가 있음을 기준으로 정보통신공사업 면허를 자동으로 간주할 수 없습니다. 또한, [1]과 [2] 모두에서 직접생산확인증명서와 정보통신공사업 면허는 별도의 요건으로 명시되어 있으므로, 두 가지 요건을 모두 충족해야 합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N45-E5-a001/ASTRA-300-C04-N45-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-N49-E1",
+    "split": "train",
+    "category": "certification",
+    "question": "자율차 사업 참여인력의 소속을 내부 명부만으로 인정해도 되는가?",
+    "expected_answer": "국민연금 가입 유지 및 경력·재직 증빙 요구를 확인해야 한다.",
+    "actual_answer": " 판단: 자율차 사업 참여인력의 소속을 내부 명부만으로 인정해도 되지 않음  \n 근거: [1] 공고원문에 따르면, 과업수행기관 대표자는 과업 착수계 제출 시 대표자의 보안각서와 함께 과업참여자가 자필서명한 보안각서를 첨부하여 제출해야 하며, 참여인력 교체 시 조치 등은 즉시 참여인력 교체신고서와 함께 교체 인력의 “보안각서”를 제출해야 함[1] (PDF page 24). 이는 참여인력의 소속을 내부 명부만으로 인정하는 것이 아니라, 보안각서와 자필서명을 통해 참여인력을 확인해야 함을 의미함.  \n 유보사항: 참여인력의 소속 확인은 보안각서와 자필서명을 통해 이루어져야 하며, 이는 내부 명부만으로는 충분하지 않음. 또한, 참여인력 교체 시에는 즉시 교체신고서와 함께 교체 인력의 보안각서를 제출해야 함으로, 참여인력의 소속 확인은 지속적으로 이루어져야 함.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-N49-E1-a001/ASTRA-300-C04-N49-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C04-P03",
+    "split": "test",
+    "category": "conflict",
+    "question": "ISMS 기준 준수 문구를 회사의 ISMS 인증 보유 요구로 확정해도 되는가?",
+    "expected_answer": "해당 인용은 관리체계 기준 준수 요구다. 별도 인증 보유 조항 확인 없이 회사 인증 필수 조건으로 바꾸거나 ISO와 동일시하지 않는다.",
+    "actual_answer": "**판단**: 불법·법 위반·처벌이나 시스템의 자동 처리 동작이 없으므로, ISMS 기준 준수 문구를 회사의 ISMS 인증 보유 요구로 확정할 수 없습니다.  \n\n**근거**:  \n- [1]에서 \"합성 자료 기반 내부 대장. 실제 발급 증명서가 아니다.\"와 \"독립 합성 대안; 기존 배치와 합산 검증, 실행 미승인\"에 따르면, ISMS 인증은 합성 레코드로만 제공되며, 실제 발급 증명서가 아닙니다.  \n- [2]에서 \"증빙 확보 상태 | synthetic_record — 합성 레코드 존재, 실제 발급문서 아님\"에 따르면, ISMS 인증의 증빙 확보 상태는 합성 레코드로만 제공되며, 실제 발급문서가 아닙니다.  \n\n**유보사항**:  \n- ISMS 인증의 실제 발급 증명서가 없으므로, 해당 인증이 실제 기관에서 발급된 것이 아니므로, 법적·행정적 기준에 따라 해당 인증을 실제 요구로 삼는 것은 불법·법 위반 또는 시스템의 자동 처리 동작으로 간주될 수 있습니다.  \n- 실제 발급 증명서가 없으므로, ISMS 인증의 실제 유효성과 기준 준수 여부를 확인할 수 없습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C04-P03-a001/ASTRA-300-C04-P03.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N01-E5",
+    "split": "train",
+    "category": "multi_document",
+    "question": "OCR 사업의 납품 범위에서 GPU 서버를 제외할 수 있는가?",
+    "expected_answer": "GPU 탑재 서버 구매를 포함하는 과업 범위를 확인해야 한다. 회사가 이미 보유했다는 뜻은 아니다.",
+    "actual_answer": "판단: **아니요**, OCR 사업의 납품 범위에서 GPU 서버를 제외할 수 없습니다.  \n근거: [1]에서 \"AI-OCR 전용 인프라 구축\" 요구사항은 \"GPU서버 1EA, AI / OCR 솔루션 1SET 도입\"을 명시하고 있으며, 이는 AI-OCR 솔루션의 학습 및 추론을 위한 최적화된 인프라 환경 구축을 목적으로 하므로, GPU 서버는 필수적인 구성 요소로 간주됩니다.  \n유보사항: GPU 서버의 기술적 성능 요건(예: 117 TFLOPS 이상, 354 TFLOPS 이상, 3.7 PFLOPS 이상 등)은 공고문에서 명시되어 있으므로, 해당 기술적 요건을 충족하지 못하는 경우 납품이 거절될 수 있습니다. 또한, AI-OCR 솔루션의 학습 및 추론을 위한 인프라 구축을 위해 GPU 서버가 필수적으로 도입되어야 하므로, 제외 시 기술적 요구사항이 불만족될 수 있습니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N01-E5-a001/ASTRA-300-C05-N01-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N05-E1",
+    "split": "train",
+    "category": "performance",
+    "question": "실적 서식의 단일 규모 하한과 공동수주 금액 처리 기준을 함께 설명해 달라.",
+    "expected_answer": "실적 서식은 단일 규모 일천만원 이상과 공동수주 시 수주비율 해당 금액을 기재하는 기준을 둔다. 이것만으로 참가 제한을 확정하지 않는다.",
+    "actual_answer": "**판단**:  \n실적 서식의 단일 규모 하한은 **단일규모 일천만원 이상 실적 1개 이상 기재**해야 하며, 공동수주 금액은 **응모업체의 수주비율 해당금액만 기재**하고, **‘비고’란에 공동수주자명, 수주비율, 총계약액**을 기재해야 한다.\n\n**근거**:  \n[1]에서 “용역실적은 최근 2년간의 실적만 기재하되, 단일규모 일천만원 이상 실적 1개 이상 기재”고 명시하며, “타기관/기업과 공동으로 수주한 경우의 계약금액은 응모업체의 수주비율 해당금액만 기재하고, ‘비고’란에 공동수주자명, 수주비율, 총계약액 기재”라고 명시하였다.\n\n**유보사항**:  \n- 근거에 따르면 **단일규모 일천만원 이상 실적 1개 이상**이어야 하므로, **단일규모 미만 실적은 기재할 수 없다**.\n- **공동수주 시 수주비율에 따른 금액만 기재**하고, **비고에 공동수주자명, 수주비율, 총계약액**을 명시해야 하므로, **비고에 해당 정보가 없으면 서류 미비로 간주**된다.\n- **실적 기간**은 **입찰참가신청 마감일 기준으로 하여 완료된 실적분만 인정**되므로, **입찰참가신청 마감일 이후 완료된 실적은 인정되지 않는다**.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N05-E1-a001/ASTRA-300-C05-N05-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N09-E2",
+    "split": "train",
+    "category": "eligibility",
+    "question": "대구 지역업체 가점을 전국 업체 참가를 금지하는 조건으로 해석해도 되는가?",
+    "expected_answer": "지역업체 참여 가점과 참가 지역제한을 구분해야 한다.",
+    "actual_answer": "**판단**: 대구 지역업체 가점을 전국 업체 참가를 금지하는 조건으로 해석할 수 없다.  \n**근거**: [1]에 따르면, 지역업체의 기준은 \"입찰공고일 현재 대구광역시에 본사를 두고 있는 업체\"로 명시되어 있으며, 이는 지역업체가 **전국 업체 참가를 금지하는 조건**이 되는 것이 아니라, **대구광역시 본사 소재 업체만을 대상으로 한 가점**임을 의미한다. 또한, [1]에서 \"지역업체의 기준은 입찰공고일 현재 대구광역시에 본사를 두고 있는 업체로 함\"이라는 문구는 **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 나타낸다.  \n**유보사항**:  \n- [1]에 따르면, \"지역업체\"의 기준은 \"대구광역시에 본사를 두고 있는 업체\"로 명시되어 있으나, 이는 **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 따라서, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 대상으로 한 가점**임을 의미한다.  \n- [1]에서 \"지역업체\"의 기준이 \"대구광역시에 본사를 두고 있는 업체\"라는 것은, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 나타낸다.  \n- 따라서, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 이로 인해, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 따라서, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 이로 인해, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 따라서, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역시 본사 소재 업체만을 지정한 것**임을 의미한다.  \n- 이로 인해, **전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라, 대구광역",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N09-E2-a001/ASTRA-300-C05-N09-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": true,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N14-E2",
+    "split": "train",
+    "category": "boundary",
+    "question": "법원 안내센터의 협상적격 기준은 가격점수까지 합산한 비율인가?",
+    "expected_answer": "기술능력 평가분야 배점한도에 대한 비율 기준으로 구분해야 한다.",
+    "actual_answer": "법원 안내센터의 협상적격 기준은 가격점수까지 합산한 비율이 아닙니다.  \n[1] 제안서 평가 부분에 따르면, 협상대상자 선정 및 협상기준에서는 제안서 기술평가(90%)와 가격평가(10%)를 종합평가한 결과 고득점자순으로 선정하며, 다만 기술능력평가는 차등점수제 미적용 대상입니다.  \n유보사항: 기술능력평가는 차등점수제 미적용 대상이므로, 가격평가(10%)는 기술능력평가와 별도로 계산된 점수로 볼 수 있습니다. 따라서 협상적격 기준은 기술능력평가와 가격평가의 합산이 아닌, 분리된 평가 기준에 따라 선정됩니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N14-E2-a001/ASTRA-300-C05-N14-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N18-E3",
+    "split": "dev",
+    "category": "eligibility",
+    "question": "지역민 우선 채용 노력 문구가 지역 외 업체 참가 금지를 뜻하는가?",
+    "expected_answer": "우선 채용 노력과 회사 참가 지역제한은 다른 조건이다.",
+    "actual_answer": "**판단**: 지역민 우선 채용 노력 문구가 지역 외 업체 참가 금지를 뜻하지 않음  \n**근거**: [1] 사업자(낙찰 후 계약자)는 지역민(천안시에 전입을 신고한 주민)을 우선 채용하도록 노력해야 함.  \n**유보사항**:  \n- 지역민 우선 채용은 **우선** 사항이지만, **금지**하는 것이 아니므로 지역 외 업체의 참가가 허용됨.  \n- 「천안시 지역건설산업 활성화 지원 조례」에 따른 **권장** 사항으로, **의무**가 아니므로 지역 외 업체의 참여가 허용됨.  \n- 「지방자치단체를 당사자로 하는 계약에 관한 법률」 등 관련 법령에 따라 **하도급**이 허용됨.  \n- 「공공기록물 관리에 관한 법률」 등과 관련된 **법적 책임**은 업체가 지负해야 하지만, **참가 금지**는 없음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N18-E3-a001/ASTRA-300-C05-N18-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.5441,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N22-E4",
+    "split": "train",
+    "category": "contract",
+    "question": "플랫폼 산출물을 외부에 반출할 권리가 자동으로 생기는가?",
+    "expected_answer": "지식재산권 공동소유와 산출물 반출 승인 조건은 별개다.",
+    "actual_answer": "**판단**: 플랫폼 산출물을 외부에 반출할 권리가 자동으로 생기지 않음  \n**근거**: [2] 공개 공고 원문 — 26-HS043 00. 제안요청서.hwp에 따르면, \"공급자는 공급받은 SW산출물에 대하여 제안요청서, 계약서 등에 누출금지정보로 명시한 정보를 삭제하고 활용해야 하며, 이를 확인하는 공급자 대표명의의 확약서를 발주기관에 제출해야 함\"과 \"공급자가 반출된 SW산출물을 제3자에게 제공하려는 경우 반드시 발주기관으로부터 사전승인을 받아야 함\"이 명시되어 있다. 이는 산출물의 외부 반출이 제3자에게 제공될 경우 사전 승인을 받는 것이 필요함을 나타내므로, 자동으로 권리를 부여하지 않음.  \n**유보사항**: [2]에 따르면, \"발주기관은 공급자가 제공받은 SW산출물을 무단으로 유출하거나 누출되는 경우 및 누출금지정보를 삭제하지 않고 활용하는 경우에는 「국가계약법 시행령」제76조제2항제3호에 따라 입찰참가자격을 제한함\"이 명시되어 있으므로, 산출물의 누출금지정보가 제대로 처리되지 않으면 입찰참가자격이 제한될 수 있음. 또한, \"공급자는 지식재산권의 활용을 위하여 SW산출물의 반출을 요청할 수 있으며, 발주기관에서는 「보안업무규정」 제4조 및 제안요청서에 명시된 누출금지정보에 해당하지 않을 경우 SW산출물을 제공함\"이 명시되어 있으므로, 누출금지정보가 제대로 처리되지 않으면 발주기관이 산출물의 제공을 거부할 수 있음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N22-E4-a001/ASTRA-300-C05-N22-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N26-E5",
+    "split": "train",
+    "category": "personnel",
+    "question": "PM을 신규 채용한 뒤 바로 제안 발표자로 삼아도 되는가?",
+    "expected_answer": "공고일 전 재직 등 PM 조건을 대조해야 하며 채용 사실만으로 충족 처리하지 않는다.",
+    "actual_answer": "**판단**: PM을 신규 채용한 뒤 바로 제안 발표자로 삼아도 **불가능**하다.  \n**근거**: [1] 공고 원문에 따르면, 제안 발표는 제안사의 **사업관리자(PM)**가 직접 발표해야 하며, 관리자(PM)가 수행할 수 없을 경우 **대리인 지정 공문**을 제출해야 한다. 신규 채용된 PM은 **즉시 제안 발표자로 인정**되지 않으며, **대리인 지정 공문**이 제출되지 않은 상태에서는 **제안 발표가 불가능**하다.  \n**유보사항**:  \n- 신규 채용된 PM이 **제안 발표자로 인정**되기 위해서는 **대리인 지정 공문**이 제출되어야 하며, 이는 **제안서 제출 후**에 제출해야 하는 **추가 절차**이다.  \n- **제안 발표회**에 참가하지 않을 경우, **서면 평가**만 이루어진다. 그러나 **발표자**가 **신규 채용된 PM**이면, **대리인 지정 공문**이 **미제출** 상태이므로 **발표자로 인정되지 않음**.  \n- **제안서 제출**과 **대리인 지정 공문** 제출은 **분리된 절차**이며, **제안서 제출 후**에 **대리인 지정 공문**을 **추가로 제출**해야 하며, 이는 **제안 발표에 영향을 미친다**.  \n\n**근거 부족**: 제안 발표자로 신규 채용된 PM을 인정하는 **법적 근거**나 **규정**이 **구체적으로 명시되지 않음**. 다만, **대리인 지정 공문**이 **필요**하다는 **명시적 규정**이 존재하므로, **신규 채용된 PM이 바로 제안 발표자로 인정될 수는 없다**고 판단된다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N26-E5-a001/ASTRA-300-C05-N26-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N30-E1",
+    "split": "train",
+    "category": "personnel",
+    "question": "정신건강 홈페이지의 기술인력 경력점수를 직원 수로 읽어도 되는가?",
+    "expected_answer": "ITSQF 직무별 경력점수 합계와 인원 수는 다른 지표다.",
+    "actual_answer": "**판단**: No  \n**근거**: [1]에서 기술인력 보유현황을 평가하는 데는 \"보유인력에 대한 평점의 총합\"을 기준으로 한다고 명시하며, 이 평점은 \"보유인력에 재직하고 있는 자\"의 수에 따라 결정된다. 다만, 이 평점은 단순히 직원 수로 계산할 수는 없고, **보유인력에 대한 평점의 총합**을 계산하는 것이 정확한 평가 기준이다.  \n**유보사항**:  \n- 기술인력 보유현황 평가에서는 **보유인력에 대한 평점의 총합**을 계산해야 하며, 이는 직원 수만으로는 구체적인 평점을 산출할 수 없다.  \n- 평가 기준에 따르면, **보유인력에 재직하고 있는 자**의 수를 기준으로 평점을 산출해야 하므로, 직원 수를 그대로 사용할 수는 없다.  \n- [1]에 따르면, \"보유인력에 대한 평점의 총합\"은 **40점 이상**일 때 6.0점, **35점 이상 ~ 40점 미만**일 때 5.4점 등으로 구분되며, 이는 **보유인력의 수에 따라 구체적인 평점을 산출**해야 하므로, 직원 수를 그대로 사용할 수 없다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N30-E1-a001/ASTRA-300-C05-N30-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.4232,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N34-E2",
+    "split": "dev",
+    "category": "cost",
+    "question": "익명 제안서에서 회사명을 여러 페이지에 노출하면 감점은 어떻게 확인해야 하는가?",
+    "expected_answer": "평가용 제안서에 제안사 정보를 기재하면 한 페이지당 정량평가 점수 1점 감점이다. 여러 페이지를 단순 1회로 합치지 않는다.",
+    "actual_answer": "**판단**: 익명 제안서에서 회사명을 여러 페이지에 노출하면 **한 페이지 당 정량평가 점수 1점 감점**이 적용된다.  \n**근거**: [1] 공개 공고 원문 — 붙임 제안요청서(게시).hwpx에서 \"제출 제안서 상에(회사명, 대표자명 등) 제안사 정보 미기재 원칙, 기재 시 한 페이지 당 정량평가 점수 1점 감점\"이라고 명시되어 있다.  \n**유보사항**: 제안서의 표지, 간지 등에 회사명이 기재된 경우, 해당 페이지는 감점 대상이 된다. 또한, 제안서의 내용이 익명으로 제출된 경우, 회사명이 기재되지 않아야 하며, 기재된 경우 감점이 발생할 수 있다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N34-E2-a001/ASTRA-300-C05-N34-E2.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.2561,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N38-E3",
+    "split": "train",
+    "category": "conflict",
+    "question": "기술핵심인력 한 명의 점수를 본문에 없는 구간까지 추정해 채점해도 되는가?",
+    "expected_answer": "본문 배점 구간과 자기평가표의 차이를 확인하고 해당 경계 점수는 보류한다.",
+    "actual_answer": "**판단:** 기술핵심인력 한 명의 점수를 본문에 없는 구간까지 추정해 채점해도 된다고 판단하지 않는다.  \n**근거:** [1]에서 제시된 서식 제15호와 서식 제16호는 인력 보유 현황 및 투입인력을 기술하는 구간을 명시하고 있으나, 구체적인 점수 기준이나 평가 기준이 제시되지 않았기 때문에, 기술핵심인력 한 명의 점수를 본문에 없는 구간까지 추정해 채점하는 것은 근거가 부족하다고 볼 수 있다.  \n**유보사항:** 제시된 자료에 기반하여 기술핵심인력의 점수를 추정하는 것은 불가능하며, 제시된 근거에 없는 기준을 기준으로 채점하는 것은 법적·절차적 측면에서 문제가 될 수 있다. 따라서, 기술핵심인력 한 명의 점수를 본문에 없는 구간까지 추정해 채점하는 것은 **근거 부족**으로 판단된다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N38-E3-a001/ASTRA-300-C05-N38-E3.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N42-E4",
+    "split": "train",
+    "category": "access_policy",
+    "question": "표준모델 사업 종료 후 PC에 발주기관 자료를 남겨두어도 되는가?",
+    "expected_answer": "제공된 모든 자료를 반환하고 PC 보관 자료를 완전히 삭제하는 등 유출 방지조치를 이행하며 보안확약서를 제출해야 한다.",
+    "actual_answer": "**판단:** 표준모델 사업 종료 후 PC에 발주기관 자료를 남겨두는 것은 **불법**이며, **제한**되어 있습니다.  \n**근거:** [1] 공고문에 따르면, \"사업 종료 후 사업과 관련된 모든 자료를 반환, PC보관 자료 완전 삭제 하는 등 자료가 외부 유출되지 않도록 필요한 보안조치를 이행하고‘보안확약서’를 제출한다.\"고 명시되어 있다. 이는 사업 종료 후 PC에 발주기관 자료를 남겨두는 행위가 **보안규정 위반**에 해당하며, **자료 유출 위험**이 발생할 수 있음을 의미한다.  \n**유보사항:** [1] 공고문에 따르면, \"사업 종료 후 사업과 관련된 모든 자료를 반환, PC보관 자료 완전 삭제 하는 등 자료가 외부 유출되지 않도록 필요한 보안조치를 이행하고‘보안확약서’를 제출한다.\"고 명시되어 있다. 이에 따라, **PC에 발주기관 자료를 남겨두는 행위는 보안규정 위반**으로 간주될 수 있으며, **자료 유출** 및 **법적 책임**이 발생할 수 있다. 따라서, **사업 종료 후 PC에 발주기관 자료를 남겨두는 것은 제한된 행위**로 간주된다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N42-E4-a001/ASTRA-300-C05-N42-E4.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 0.9461,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N46-E5",
+    "split": "test",
+    "category": "contract",
+    "question": "상생결제 이용을 위해 사전에 준비할 사항이 있는가?",
+    "expected_answer": "약정은행 등 사전 약정 조건을 확인해야 한다.",
+    "actual_answer": "**판단**: 상생결제 이용을 위해 사전에 준비할 사항이 있습니다.  \n**근거**: [1] 11. 상생결제제도 운영 나. 잔금 또는 대금을 상생결제 방식으로 청구할 의향이 있는 낙찰자는 계약체결 이전에 진흥원이 상생결제 약정 체결한 은행(대구은행, 신한은행 중 택 1)과 사전약정을 맺으셔야 합니다.  \n**유보사항**: 상생결제를 청구할 경우, 계약체결 전에 은행과의 사전약정이 필요하며, 해당 약정이 체결되지 않은 경우 상생결제가 불가능할 수 있습니다. 또한, 상생결제 약정 체결은 계약체결 전에 완료해야 하므로, 기간 및 절차에 유의해야 합니다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N46-E5-a001/ASTRA-300-C05-N46-E5.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-N50-E1",
+    "split": "train",
+    "category": "eligibility",
+    "question": "스마트 놀이터 구축에 SW·정보통신 등록만 있으면 업종 요건이 모두 충족되는가?",
+    "expected_answer": "산업디자인 관련 업종 요구도 별도 대조해야 한다.",
+    "actual_answer": "**판단**: 스마트 놀이터 구축에 SW·정보통신 등록만 있으면 업종 요건이 **모두 충족되지 않음**.  \n**근거**: [1] 제8조(위약금) 및 [1] 제7조(손해배상 책임)에 따르면, 사업 수행 중 정보 유출, 해킹 등 보안사고가 발생할 경우 사업자는 **전체 책임을 부담해야 하며**, 보안 위규 여부에 따라 **위약금 부과**가 이루어진다. 또한 [1] 제1조(목적)에 따르면, 보안 특약서는 **사업 제안서에 반드시 포함**되어야 하며, 이는 **SW·정보통신 등록만으로는 충족되지 않음**.  \n**유보사항**:  \n- SW·정보통신 등록만으로는 **보안 준수사항(별표1)**에 따라 **보안서약서 제출** 및 **보안 관리 체계 구축**이 필수적임.  \n- [1] 제10조(사업종료 후 보안)에 따르면, **사업 종료 시 모든 자료는 폐기 또는 반납**해야 하며, 이는 **SW·정보통신 등록만으로는 보장할 수 없음**.  \n- [1] 제12] 보안점검 리스트(수행업체)에 따라 **보안 점검 및 관리**가 필요하며, 이는 **SW·정보통신 등록만으로는 충족되지 않음**.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-N50-E1-a001/ASTRA-300-C05-N50-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  },
+  {
+    "question_id": "ASTRA-300-C05-P04",
+    "split": "test",
+    "category": "contract",
+    "question": "자체 인력 배치 초안이 하도급 허용 근거가 되는가?",
+    "expected_answer": "아니다. 공고는 직접 수행과 하도급 불허를 명시한다. 초안은 기존 소속 인력의 배치이며 외부 하도급을 승인하지 않는다.",
+    "actual_answer": "**판단**: 자체 인력 배치 초안이 하도급 허용 근거가 되지 않는다.  \n**근거**: [2]에서 \"staffing_status\" 항목은 \"독립 합성 대안; 기존 배치와 합산 검증, 실행 미승인\"으로 기재되어 있으며, 이는 하도급 허용에 필요한 독립적 근거가 아닌 합성 대안으로 간주된다. 또한, \"실적 인정 주의사항\"에 따르면, 공고별 인정 규칙 확인 전에는 총 계약액×지분을 자동 인정 실적으로 쓰지 않음. 하도급 실적도 별도 검토가 필요하다.  \n**유보사항**: 하도급 허용을 위해 자체 인력 배치 초안이 추가 검토 대상이 되어야 하며, 공고별 인정 규칙이 명시되어야만 하도급 허용이 가능하다.",
+    "status": "generated",
+    "record_path": "evaluation/runs/workstation275-gpu-v1-ASTRA-300-C05-P04-a001/ASTRA-300-C05-P04.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": false,
+        "quoted_interval_coverage": 0.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      },
+      {
+        "kind": "company_chunk",
+        "hit": true
+      },
+      {
+        "kind": "company_chunk",
+        "hit": false
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  }
+]

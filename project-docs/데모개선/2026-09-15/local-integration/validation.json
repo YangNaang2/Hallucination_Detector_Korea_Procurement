@@ -1,0 +1,20 @@
+{
+  "python_existing_tests": 17,
+  "python_integration_tests": 9,
+  "js_http_cases": 7,
+  "js_detection_cases": 8,
+  "js_saved_ux": "passed",
+  "real_generation_requests": 2,
+  "trained_detector_inference": "not_run_checkpoint_on_workstation_not_available",
+  "browser_checks": [
+    "real_generation_display",
+    "review_key_login",
+    "25_questions",
+    "7_held_question_filter",
+    "span_highlight_and_evidence_open"
+  ],
+  "mobile_visual": "not_verified_viewport_override_ignored",
+  "protected_data_changed": false,
+  "actual_index_notice_count": 51,
+  "training_run": false
+}

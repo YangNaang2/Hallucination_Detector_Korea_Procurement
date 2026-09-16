@@ -1,0 +1,20 @@
+{
+  "records": 25,
+  "companies": {
+    "C01": 5,
+    "C02": 5,
+    "C03": 5,
+    "C04": 5,
+    "C05": 5
+  },
+  "draft_spans": 57,
+  "hallucination_candidate_spans": 54,
+  "uncertain_candidates": 11,
+  "no_positive_span_answers": 11,
+  "truncated_answers": 4,
+  "invalid_citation_answers": 1,
+  "evidence_excerpts": 39,
+  "checks": "answer hashes, raw git blobs, exact span slices, exact source slices, context hashes, 5/company, reference IDs, company isolation, pending approval",
+  "human_approval": "pending",
+  "model_runs": 0
+}

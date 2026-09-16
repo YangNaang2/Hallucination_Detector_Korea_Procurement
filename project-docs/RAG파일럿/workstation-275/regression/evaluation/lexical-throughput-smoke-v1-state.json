@@ -1,0 +1,12 @@
+{
+  "run_id": "lexical-throughput-smoke-v1",
+  "attempts": {
+    "ASTRA-300-C01-N11-E1": [
+      {
+        "record_path": "evaluation/runs/lexical-throughput-smoke-v1/ASTRA-300-C01-N11-E1.json",
+        "status": "generated"
+      }
+    ]
+  },
+  "scope": "CPU lexical development smoke on original cohort; not new275, not dense performance evaluation"
+}

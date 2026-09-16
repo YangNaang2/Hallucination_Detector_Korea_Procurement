@@ -1,0 +1,10 @@
+{
+  "count": 275,
+  "seconds": 11.952402436174452,
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "device": "cpu",
+  "gold_used": false,
+  "vector_file": "work/rag-workstation-275/query_vectors.npz",
+  "human_approval": "pending"
+}

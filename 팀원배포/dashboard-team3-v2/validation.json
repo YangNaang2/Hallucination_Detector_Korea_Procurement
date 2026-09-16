@@ -1,0 +1,10 @@
+{
+  "files": 74,
+  "sha256_verified": true,
+  "python_no_site_packages": true,
+  "integration_tests": 11,
+  "standalone_http": true,
+  "review_originals": 4,
+  "weights_included": false,
+  "index_included": false
+}

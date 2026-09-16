@@ -1,0 +1,10 @@
+{
+  "sheets": 6,
+  "exact_answers_reconstructed": 25,
+  "expected_answers_verified": 25,
+  "approval_pending_rows": 25,
+  "visual_review": "all 6 sheet previews reviewed; Malgun Gothic exists on authoring PC; fallback needed on other systems",
+  "export_runtime_exit_code": 1,
+  "export_limitation": "Artifact runtime exited 1 after emitting export success without an error message; exported ZIP/XML, answer text and expected answers were independently validated.",
+  "human_approval": "pending"
+}

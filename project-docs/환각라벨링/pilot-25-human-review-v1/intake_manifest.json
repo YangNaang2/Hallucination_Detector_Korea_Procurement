@@ -1,0 +1,204 @@
+{
+  "version": "1.0.0",
+  "received_on": "2026-09-15",
+  "files": [
+    {
+      "team_id": "T01",
+      "original_filename": "팀원1_검수시트_7문항.xlsx",
+      "archive": "T01.xlsx",
+      "sha256": "9efcafb7cb7a39feb0464a4c15fc6efc7afac29dc81fd1ab28789063cb45bf85",
+      "template_sha256": "bd4b18f811a32fe5f423ac395dac50ba996829352e5dd3dbced8fc2c10a5b667",
+      "question_count": 7,
+      "span_count": 18,
+      "protected_cells_unchanged": true,
+      "format_deviations": [],
+      "canonical_content_preserved": true
+    },
+    {
+      "team_id": "T02",
+      "original_filename": "팀원2_검수시트_6문항_박승형_20260915_1.xlsx",
+      "archive": "T02.xlsx",
+      "sha256": "0044c02cfffc6671b92b1a3f5c8ecf23d731c1ad4c09be524d62da4719a41744",
+      "template_sha256": "ef4418190573d2d746f28c9c4f63cecdcdc06c0309b20775468957293fbd1f13",
+      "question_count": 6,
+      "span_count": 17,
+      "protected_cells_unchanged": true,
+      "format_deviations": [],
+      "canonical_content_preserved": true
+    },
+    {
+      "team_id": "T03",
+      "original_filename": "팀원3_검수시트_6문항_박지훈_20260915.xlsx",
+      "archive": "T03.xlsx",
+      "sha256": "552454674102f3f1948a9913cf7d20d38d412d49c6838e299a7ff7081cedfe70",
+      "template_sha256": "5b00776a0bcbb75a1d8f18727c60fbe28ac76fffbe627a7e4230866bdb96d0e6",
+      "question_count": 6,
+      "span_count": 17,
+      "protected_cells_unchanged": true,
+      "format_deviations": [],
+      "canonical_content_preserved": true
+    },
+    {
+      "team_id": "T04",
+      "original_filename": "팀원4_검수시트_6문항.xlsx",
+      "archive": "T04.xlsx",
+      "sha256": "3e219b7d20fe6601117858945158b1d1fceb7cc176099759c6474cc42dd82427",
+      "template_sha256": "dc1bb1d8007a5460a5854335b4a639b1ad824d06880f39289b11d3d521fc741c",
+      "question_count": 6,
+      "span_count": 16,
+      "protected_cells_unchanged": false,
+      "format_deviations": [
+        {
+          "sheet": "Sheet7",
+          "kind": "empty_extra_sheet_ignored"
+        },
+        {
+          "sheet": "근거",
+          "cell": "C10",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "25a3b8a057a998d35fb4e46277eb352292b3ee27909c9fd76783364c1abdd6c3",
+          "after_sha256": "37821316eacc81fa9f1e0008c68834312e76ec195d0a6cb202f3607607ca29cd",
+          "before_length": 232,
+          "after_length": 230
+        },
+        {
+          "sheet": "근거",
+          "cell": "C11",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "86aeab44f43028e64d1be422fd4f41b7f9e760a4cb4b533837d3dcf9efb61921",
+          "after_sha256": "b695104d483d2c5b15d7ca3ede325a047314ac7727498e14b012ddfaaf02cb5c",
+          "before_length": 366,
+          "after_length": 365
+        },
+        {
+          "sheet": "근거",
+          "cell": "C12",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "5894943fca1819200ac57e77980bb0c5f36efdd2b116ccc74c50898bbcafccf8",
+          "after_sha256": "cfaf1be48ddb9c410535b5d6e1050783c728ecaaf6e48c8efc864d8bf866f446",
+          "before_length": 362,
+          "after_length": 361
+        },
+        {
+          "sheet": "근거",
+          "cell": "C8",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "dabee30607fcb0d8f30f07f931cd5cca72c34340dec47bde67e2a55d9a477b89",
+          "after_sha256": "739c6bbd00c0a2be5fd5e5e23cb250135f835902568ead3a18c846484a4fe89e",
+          "before_length": 338,
+          "after_length": 337
+        },
+        {
+          "sheet": "근거",
+          "cell": "C9",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "aec9c077d256fc413dc7ab58d14c63591db18d998e4ac637a0e66e0ab1203d73",
+          "after_sha256": "427a43729221a815c992872852176938595e595b1514755d7a3afcf4f3dcffc9",
+          "before_length": 208,
+          "after_length": 206
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C10",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "cdb4a59358174efb923681f934b83485b375445639f0b04913123af86a8909d3",
+          "after_sha256": "529a492d6d86f757f337f09c44d94d80b078fb8b25990bb3be82838bca944c1f",
+          "before_length": 200,
+          "after_length": 197
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C12",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "3897b6e3a8eef68bc11e4b1e3b08ecb8252fad781be73a7b0ae0380531bee987",
+          "after_sha256": "48ee295c50652c14699ef4423f9c4a569d2be50fb87160de7045ed08e4c8177f",
+          "before_length": 207,
+          "after_length": 203
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C13",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "3d8edd36cdf7f04df56481b47bd5b5cd0f358db5a65462bcdd7846b7b9b3b760",
+          "after_sha256": "5f73fd530ee0c641e28ba8802e4b2a5874cc9ca0311da1ab56ceabefb7118a51",
+          "before_length": 72,
+          "after_length": 71
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C14",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "0a0b749e072abd49318e4021bf18514341e3a08590035ed485b5b2f1cf2c478d",
+          "after_sha256": "b676c5709fec306766994bddcd47fff26b02a4049c6471ae0a29f10d03388b8d",
+          "before_length": 257,
+          "after_length": 253
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C18",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "e2cf7d132fc8acb76ece8cc11e5c085a18ab0739970f458a34bbd24efce7655e",
+          "after_sha256": "14d870a172429641a6980aa2a20d84cb31bf860cc0ff2c4b4ed2ed4e22ba7e75",
+          "before_length": 260,
+          "after_length": 256
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C19",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "83e9c105e939e11b0b8aeeec8345835a97a3c187bfe9e108e27800defbcd76e6",
+          "after_sha256": "6eef2fa227cbf8b414d80930d6d17ba33a4392a50325726b05ed3d92c686e1d1",
+          "before_length": 245,
+          "after_length": 240
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C20",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "c0ae77e1cec37eee60eb21220a895224c21d2c330ae0a7236de66a505728b7ca",
+          "after_sha256": "de6d0037ea44988c837dc11125d8601c071b945848da80fc330dbab8df9c865e",
+          "before_length": 245,
+          "after_length": 239
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C5",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "ec2e532e7c3e23cee4ffcc289e69989c5fcb1cd15106ccbaf3e3ade50688d850",
+          "after_sha256": "5392abc4b0ccea5daa8b78b95b8a45f1e1b7ddddd638896207b0264cc7b78275",
+          "before_length": 201,
+          "after_length": 198
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C7",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "6a94f9fe1a1e8ecbabfd7655ac5c35e9f99c453fdd81900211e9b04531e743a8",
+          "after_sha256": "b2b85429fdfb1a68670e74031a63ce9365f042096f04e46f32bc22512a3648fb",
+          "before_length": 245,
+          "after_length": 242
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C8",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "4d3fcf561e7855b326dd8c3f99a2e2ba5e7c02e19c6ffa91b73b14ce73860a84",
+          "after_sha256": "daf69f3544627f8d00d8240fe12ded5fca292c34304164eacccfe18aa3f73b0b",
+          "before_length": 215,
+          "after_length": 212
+        },
+        {
+          "sheet": "답변전문",
+          "cell": "C9",
+          "kind": "boundary_whitespace_restored_from_v1",
+          "before_sha256": "e4ce653c6598221b78c077b806938c8532558255518b4bdd2d4ebdf46acf9d56",
+          "after_sha256": "2c009ac9bc663a000d9cefda16ed28b3acc48b6b26f01b85f61b6f80348ae52d",
+          "before_length": 201,
+          "after_length": 198
+        }
+      ],
+      "canonical_content_preserved": true
+    }
+  ],
+  "base_labels_sha256": "2b1727287d59c20cc250dda933ec524841bb7cf7543f3afb28264c66e0c8c2a2"
+}

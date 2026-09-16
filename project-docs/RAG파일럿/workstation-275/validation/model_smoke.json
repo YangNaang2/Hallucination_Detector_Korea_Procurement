@@ -1,0 +1,63 @@
+{
+  "scope": "Non-RAG public greeting only; excluded from 300 evaluation questions",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "안녕하세요."
+        }
+      }
+    ],
+    "created": 1789309772,
+    "model": "qwen3-4b-local",
+    "system_fingerprint": "b10938-f1e44dcc1",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_tokens": 26,
+      "total_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-tFJ028FVMbOuQ8hssRESl4q4VDzn5BSj",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 26,
+      "prompt_ms": 613.124,
+      "prompt_per_token_ms": 23.581692307692308,
+      "prompt_per_second": 42.40577762410214,
+      "predicted_n": 5,
+      "predicted_ms": 266.875,
+      "predicted_per_token_ms": 66.71875,
+      "predicted_per_second": 14.988290398126464
+    }
+  },
+  "seconds": 0.9430764589924365,
+  "gpu_acceleration": false,
+  "profile": {
+    "alias": "qwen3-4b-local",
+    "model": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "model_path": "qwen3/Qwen3-4B-Q4_K_M.gguf",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "quantization": "Q4_K_M",
+    "context": 4096,
+    "max_tokens": 768,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "enable_thinking": false,
+    "cache_type": "q8_0",
+    "max_evidence_chunks": 4,
+    "min_p": 0.05,
+    "presence_penalty": 0.0,
+    "batch": 128,
+    "ubatch": 32,
+    "threads": 8,
+    "profile_version": "cpu-lowmem-v2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "byte_identical_rebuild": true,
+  "output_sha256": {
+    "adjudication_proposals.jsonl": "22255ab7204c141b1cf7a39f8c30984ba50d98f49f10e99873d993591482f4ea",
+    "submitted_reviews.jsonl": "50cf16aaf94d31470c24febccac392b0649ac18e49c260f275f2d5a26eba9718",
+    "intake_manifest.json": "ec4290b083bf41b44397230194dc5d2e1a064922c5ddbeac6d787e95481e1982",
+    "validation_report.json": "dc4a46ce17ccfd76c469a4a76c91db66383b1d7746adae13330f44618d56ddd0",
+    "통합검수목록.tsv": "0c6aefdd6e08c7db9faf5c455980dcc516580f45dbbd471934443b1b49149f84",
+    "구절조정목록.tsv": "fb4b89129ebb7413dd60ddfdbdb40871def29b9ee414a7ee89ba84c52fdcc475",
+    "review.html": "6808a3b587039dba3660f4e87f75ca6afd7602b91ecc75ee0a26d3d1595b7cd2"
+  },
+  "html_article_count": 25,
+  "executable_scripts": 0,
+  "browser_visual_check": "not_run_file_URL_blocked_by_browser_policy"
+}

@@ -4,11 +4,12 @@ No source attachments, company documents, answers or inferred site coordinates.
 """
 import csv
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'project-docs/표본_정보시스템'
-with (SOURCE / '검수/요건추출시트_팀원1_3_통합.csv').open(encoding='utf-8-sig', newline='') as f:
+with (SOURCE / '검수/요건추출시트_51건_통합.csv').open(encoding='utf-8-sig', newline='') as f:
     sheet = list(csv.DictReader(f))
 with (SOURCE / '표본_목록.csv').open(encoding='utf-8-sig', newline='') as f:
     samples = list(csv.DictReader(f))
@@ -30,9 +31,9 @@ for m in samples:
                         budget=int(m['budget']), month=m['month'], sector=m['sector'],
                         deadline=m['deadline'] or None, url=m['url'],
                         attachmentCount=int(m['docs']), requirements=requirements,
-                        reviewAvailable=bool(requirements)))
+                        reviewAvailable=bool(requirements), conditionMentions=[label for label, pattern in {"지역": "지역|본점|본사", "직접생산": "직접생산", "공동수급": "공동수급|공동이행|분담이행", "하도급": "하도급", "서비스 인증": "CSAP|서비스 인증"}.items() if re.search(pattern, " ".join(x["text"] for x in requirements), re.I)]))
 payload = dict(scope='나라장터 정보시스템 구축·운영 표본', records=records,
-               source='표본_목록.csv / 요건추출시트_팀원1_3_통합.csv',
+               source='표본_목록.csv / 요건추출시트_51건_통합.csv',
                locationPolicy='기관명에 명시된 지역의 대표점이며 기관 주소·사업장·참가기업 위치가 아님')
 target = Path(__file__).parent / 'dist/public-notices.json'
 target.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')

@@ -1,0 +1,10 @@
+{
+  "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01415425&bidPbancOrd=000&fileSeq=2&fileType=&prcmBsneSeCd=03",
+  "bid_key": "R26BK01415425-000",
+  "attachment_id": "fileSeq=2",
+  "bytes": 247886,
+  "sha256": "2ca7974b3856f538b9546922ab9b96b102ccc309d8595f46645b02afd1056931",
+  "content_type": null,
+  "matching_baseline_documents": [],
+  "note": "Official download retrieved successfully. Not ingested: exact canonical parsing/cache remains unavailable."
+}

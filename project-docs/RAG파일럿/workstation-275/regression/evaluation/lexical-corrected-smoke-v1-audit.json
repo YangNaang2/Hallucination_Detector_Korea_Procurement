@@ -1,0 +1,21 @@
+{
+  "run_id": "lexical-corrected-smoke-v1",
+  "target_count": 25,
+  "record_count": 3,
+  "not_started": 22,
+  "counts": {
+    "generated": 2,
+    "access_denied": 1
+  },
+  "integrity_failures": [],
+  "truncated": 0,
+  "invalid_citation_answers": 0,
+  "empty_answers": 0,
+  "generation_seconds": {
+    "total": 278.7925778317731,
+    "median": 139.39628891588654
+  },
+  "semantic_correctness": "requires_agent_content_review",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

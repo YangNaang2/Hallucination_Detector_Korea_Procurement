@@ -1,0 +1,156 @@
+{
+  "run_id": "lexical-preflight",
+  "attempts": {
+    "ASTRA-300-C01-N11-E1": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C01-N11-E1.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C01-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C01-P01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C01-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C01-S01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C01-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C01-S02.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C01-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C01-S04.json",
+        "status": "access_denied"
+      }
+    ],
+    "ASTRA-300-C02-N11-E2": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C02-N11-E2.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C02-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C02-P01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C02-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C02-S01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C02-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C02-S02.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C02-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C02-S04.json",
+        "status": "access_denied"
+      }
+    ],
+    "ASTRA-300-C03-N11-E3": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C03-N11-E3.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C03-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C03-P01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C03-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C03-S01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C03-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C03-S02.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C03-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C03-S04.json",
+        "status": "access_denied"
+      }
+    ],
+    "ASTRA-300-C04-N37-E3": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C04-N37-E3.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C04-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C04-P01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C04-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C04-S01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C04-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C04-S02.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C04-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C04-S04.json",
+        "status": "access_denied"
+      }
+    ],
+    "ASTRA-300-C05-N11-E5": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C05-N11-E5.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C05-P01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C05-P01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C05-S01": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C05-S01.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C05-S02": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C05-S02.json",
+        "status": "retrieval_only"
+      }
+    ],
+    "ASTRA-300-C05-S04": [
+      {
+        "record_path": "evaluation/runs/lexical-preflight/ASTRA-300-C05-S04.json",
+        "status": "access_denied"
+      }
+    ]
+  },
+  "scope": "Retrieval/ACL only, no generation, not part of 275 evaluation"
+}

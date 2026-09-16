@@ -1,6 +1,8 @@
 """Mutation and boundary tests for the offline company design contract."""
 import copy
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 import validate_company_master as v
 
@@ -47,6 +49,16 @@ class CompanyMasterTests(unittest.TestCase):
 
     def test_valid_bundle(self):
         self.assertEqual(v.validate_bundle(self.base)['status'],'passed')
+
+    def test_csv_content_change_not_accepted_as_line_ending_change(self):
+        original = Path.read_bytes
+        target = v.REPO / self.base['analysis']['input_files'][0]['path']
+        def mutated(path):
+            data = original(path)
+            return data + b'changed' if path == target else data
+        with patch.object(Path, 'read_bytes', mutated):
+            with self.assertRaisesRegex(ValueError, 'input CSV changed'):
+                v.validate_bundle(self.base)
 
     def test_duplicate_person(self):
         self.rejects(lambda b:b['master']['companies'][0]['personnel'][1].update(person_id='C01-P-01'))

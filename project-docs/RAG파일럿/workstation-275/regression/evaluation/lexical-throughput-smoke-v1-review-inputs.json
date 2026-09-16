@@ -1,0 +1,27 @@
+[
+  {
+    "question_id": "ASTRA-300-C01-N11-E1",
+    "split": "dev",
+    "category": "certification",
+    "question": "한밭대 공고의 분류번호를 임의로 다른 직접생산 코드로 정정해도 되는가?",
+    "expected_answer": "원문에 표시된 분류번호와 품명을 보존하고 필요한 세부코드 확인을 분리한다.",
+    "actual_answer": "**판단**: 한밭대 공고의 분류번호를 임의로 다른 직접생산 코드로 정정해도 **불가**  \n**근거**: [2] 공고문에 따르면, 직접생산확인증명서는 「공공조달 분류번호 : 81111599(정보시스템개발서비스)」로 발급되어야 하며, 이는 입찰참가자격 조건에 명시적으로 기재되어 있음. 따라서 분류번호는 공고문에 명시된 코드로 고정되어야 하며, 임의로 변경할 수는 없음.  \n**유보사항**:  \n- 직접생산확인증명서의 발급 코드는 공고문에 명시된 「공공조달 분류번호 : 81111599(정보시스템개발서비스)」에 따라 발급되어야 하므로, 임의로 다른 코드로 변경할 수는 없음.  \n- 공고문에 명시된 분류번호는 입찰참가자격 조건의 핵심 요건으로, 변경 시 해당 자격이 무효가 될 수 있음.  \n- 공고문에 명시된 분류번호는 실제 발급된 문서와 일치해야 하며, 임의로 변경하는 것은 법적·조달규정상 문제가 발생할 수 있음.  \n\n**결론**: 직접생산확인증명서의 분류번호는 공고문에 명시된 「81111592(정보시스템개발서비스)」로 고정되어야 하며, 임의로 다른 코드로 변경할 수는 없음.",
+    "status": "generated",
+    "record_path": "evaluation/runs/lexical-throughput-smoke-v1/ASTRA-300-C01-N11-E1.json",
+    "integrity_issues": [],
+    "invalid_citations": [],
+    "truncated": false,
+    "empty": false,
+    "prompt_evidence_checks": [
+      {
+        "kind": "source_interval",
+        "hit": true,
+        "quoted_interval_coverage": 1.0,
+        "note": "골든 인용 전체가 최소 정답 구간은 아님. 교집합은 정답 근거 충족 판정이 아님."
+      }
+    ],
+    "agent_review": "pending",
+    "human_approval": "pending",
+    "hallucination_spans": null
+  }
+]

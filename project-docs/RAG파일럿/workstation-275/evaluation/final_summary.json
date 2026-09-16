@@ -1,0 +1,32 @@
+{
+  "unique_questions": 300,
+  "counts": {
+    "generated": 295,
+    "access_denied": 5
+  },
+  "new275_counts": {
+    "generated": 275
+  },
+  "new275_agent_review_counts": {
+    "incorrect": 69,
+    "correct": 73,
+    "partial": 133
+  },
+  "new275_truncated": 4,
+  "new275_invalid_citation_answers": 1,
+  "original25_preserved": true,
+  "selected_repair_ids": [
+    "ASTRA-300-C01-N01-E1",
+    "ASTRA-300-C01-N07-E5",
+    "ASTRA-300-C01-S03",
+    "ASTRA-300-C02-N06-E2",
+    "ASTRA-300-C03-P04",
+    "ASTRA-300-C04-S03"
+  ],
+  "initial_attempt_count": 276,
+  "repair_attempt_count": 6,
+  "selection_policy": "All changed-retrieval IDs use latest repair attempt, including failure; others latest initial attempt. Original v1 25 unchanged. Regression is separate.",
+  "interpretation": "Mixed conditions and agent review rubric; not independent single-condition accuracy. All 275 were exposed to post-run review before routing repairs.",
+  "human_approval": "pending",
+  "hallucination_span_labeling": "not_performed"
+}

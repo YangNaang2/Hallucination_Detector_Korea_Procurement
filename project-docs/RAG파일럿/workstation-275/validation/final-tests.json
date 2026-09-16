@@ -1,0 +1,8 @@
+{
+  "tests_run": 190,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "command": ".venv-rag-workstation/bin/python -m unittest discover -s procurement-pipeline -p 'test_*.py'",
+  "human_approval": "pending"
+}

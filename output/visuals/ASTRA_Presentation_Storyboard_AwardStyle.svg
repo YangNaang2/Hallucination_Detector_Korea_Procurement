@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">ASTRA 최종 발표 스토리보드</title>
+  <desc id="desc">수상작 발표의 전개 방식을 참고해 문제, 시스템 개요, 데이터, RAG, 환각 탐지, 평가와 데모의 18장 흐름을 보여주는 구조도</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060B14"/>
+      <stop offset="0.58" stop-color="#0B1522"/>
+      <stop offset="1" stop-color="#10202B"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF4D3F"/>
+      <stop offset="1" stop-color="#E31D3B"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#17B7A5"/>
+      <stop offset="1" stop-color="#0B7F91"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3575D3"/>
+      <stop offset="1" stop-color="#224A92"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#EF3E46"/>
+    </marker>
+    <style>
+      .kr { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+      .headline { font-size: 54px; font-weight: 900; fill: #FFFFFF; letter-spacing: -1.8px; }
+      .subhead { font-size: 22px; font-weight: 500; fill: #9FB3C8; }
+      .chapterNo { font-size: 19px; font-weight: 900; fill: #FFFFFF; letter-spacing: 1px; }
+      .chapterTitle { font-size: 29px; font-weight: 900; fill: #FFFFFF; }
+      .chapterMsg { font-size: 17px; font-weight: 600; fill: #C7D5E0; }
+      .slideNo { font-size: 16px; font-weight: 900; fill: #FF5A52; }
+      .slideTitle { font-size: 18px; font-weight: 700; fill: #F5F8FA; }
+      .slideNote { font-size: 15px; font-weight: 500; fill: #91A6B8; }
+      .patternTitle { font-size: 18px; font-weight: 900; fill: #FFFFFF; }
+      .patternBody { font-size: 16px; font-weight: 600; fill: #C7D5E0; }
+      .small { font-size: 15px; font-weight: 600; fill: #829AB1; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1810" cy="120" r="240" fill="#0B7F91" opacity="0.12"/>
+  <circle cx="130" cy="1030" r="260" fill="#E31D3B" opacity="0.10"/>
+
+  <!-- header -->
+  <g transform="translate(78 62)">
+    <text x="0" y="0" class="kr" font-size="22" font-weight="900" fill="#FF4D3F">ASTRA FINAL PRESENTATION</text>
+    <text x="0" y="62" class="kr headline">전체 시스템을 먼저 보여주고, 모듈별로 확대해 증명한다</text>
+    <text x="2" y="104" class="kr subhead">수상작의 전개 방식을 ASTRA에 맞춰 재구성한 18장 스토리보드</text>
+  </g>
+  <g transform="translate(1630 64)">
+    <rect width="212" height="52" rx="26" fill="#121F2C" stroke="#3B5164"/>
+    <circle cx="26" cy="26" r="8" fill="#17B7A5"/>
+    <text x="46" y="33" class="kr" font-size="17" font-weight="800" fill="#D8E5EE">권장 15-18분</text>
+  </g>
+
+  <!-- flow line -->
+  <path d="M116 225 H1800" fill="none" stroke="#5D7182" stroke-width="3"/>
+  <path d="M116 225 H1800" fill="none" stroke="#EF3E46" stroke-width="4" stroke-dasharray="116 164" opacity="0.95"/>
+  <g fill="#0B1522" stroke="#FF4D3F" stroke-width="4">
+    <circle cx="150" cy="225" r="12"/><circle cx="440" cy="225" r="12"/><circle cx="730" cy="225" r="12"/>
+    <circle cx="1020" cy="225" r="12"/><circle cx="1310" cy="225" r="12"/><circle cx="1600" cy="225" r="12"/>
+  </g>
+
+  <!-- chapter 1 -->
+  <g transform="translate(78 258)">
+    <rect width="544" height="292" rx="24" fill="#111C29" stroke="#E74649" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#hero)"/>
+    <rect y="50" width="544" height="24" fill="#E31D3B"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 01 · SLIDE 1-3</text>
+    <text x="24" y="62" class="kr chapterTitle">문제의 현장</text>
+    <text x="194" y="61" class="kr chapterMsg">왜 나라장터와 환각 탐지인가</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">01</text><text x="42" y="18" class="kr slideTitle">표지</text><text x="160" y="18" class="kr slideNote">프로젝트를 한 문장으로 정의</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">02</text><text x="42" y="68" class="kr slideTitle">문제 상황</text><text x="160" y="68" class="kr slideNote">공고 변경·조건 충돌·기밀 유출</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">03</text><text x="42" y="118" class="kr slideTitle">기존 방식의 한계</text><text x="190" y="118" class="kr slideNote">검색, 요약, 보안을 따로 처리</text>
+    </g>
+    <rect x="22" y="244" width="500" height="30" rx="15" fill="#35171D"/>
+    <text x="40" y="265" class="kr small" fill="#FF8A83">실제 사례 2-3개와 한 문장 결론으로 시작</text>
+  </g>
+
+  <!-- chapter 2 -->
+  <g transform="translate(688 258)">
+    <rect width="544" height="292" rx="24" fill="#111C29" stroke="#2D73BD" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#blue)"/>
+    <rect y="50" width="544" height="24" fill="#224A92"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 02 · SLIDE 4-6</text>
+    <text x="24" y="62" class="kr chapterTitle">해결책 공개</text>
+    <text x="194" y="61" class="kr chapterMsg">전체 그림을 먼저 이해시킨다</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">04</text><text x="42" y="18" class="kr slideTitle">프로젝트 목표</text><text x="175" y="18" class="kr slideNote">근거, 권한, 탐지를 한 흐름으로</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">05</text><text x="42" y="68" class="kr slideTitle">전체 파이프라인</text><text x="190" y="68" class="kr slideNote">Input, Process, Output</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">06</text><text x="42" y="118" class="kr slideTitle">사용자 시나리오</text><text x="190" y="118" class="kr slideNote">질문부터 검토 결과까지</text>
+    </g>
+    <rect x="22" y="244" width="500" height="30" rx="15" fill="#142746"/>
+    <text x="40" y="265" class="kr small" fill="#8CBDF0">이후 모든 기술 슬라이드는 5번 구조도의 일부를 확대</text>
+  </g>
+
+  <!-- chapter 3 -->
+  <g transform="translate(1298 258)">
+    <rect width="544" height="292" rx="24" fill="#111C29" stroke="#15998D" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#teal)"/>
+    <rect y="50" width="544" height="24" fill="#0B7F91"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 03 · SLIDE 7-9</text>
+    <text x="24" y="62" class="kr chapterTitle">데이터 기반</text>
+    <text x="194" y="61" class="kr chapterMsg">무엇을 어떻게 구축했는가</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">07</text><text x="42" y="18" class="kr slideTitle">수집과 표본화</text><text x="175" y="18" class="kr slideNote">13만 건에서 표본 51건까지</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">08</text><text x="42" y="68" class="kr slideTitle">L1·L2·L3</text><text x="175" y="68" class="kr slideNote">실제 공고와 합성 기업 자료</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">09</text><text x="42" y="118" class="kr slideTitle">평가 데이터</text><text x="175" y="118" class="kr slideNote">300개 Q-A-R과 사람 검수</text>
+    </g>
+    <rect x="22" y="244" width="500" height="30" rx="15" fill="#10332F"/>
+    <text x="40" y="265" class="kr small" fill="#7CDBD0">수치마다 실제 원문, 합성 설정, 평가 자료를 구분</text>
+  </g>
+
+  <!-- chapter 4 -->
+  <g transform="translate(78 588)">
+    <rect width="544" height="306" rx="24" fill="#111C29" stroke="#2D73BD" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#blue)"/>
+    <rect y="50" width="544" height="24" fill="#224A92"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 04 · SLIDE 10-12</text>
+    <text x="24" y="62" class="kr chapterTitle">RAG 엔진</text>
+    <text x="170" y="61" class="kr chapterMsg">근거를 찾고 답변을 만든다</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">10</text><text x="42" y="18" class="kr slideTitle">권한 필터</text><text x="160" y="18" class="kr slideNote">회사·역할·보안등급 제한</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">11</text><text x="42" y="68" class="kr slideTitle">하이브리드 검색</text><text x="195" y="68" class="kr slideNote">키워드와 벡터 순위 결합</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">12</text><text x="42" y="118" class="kr slideTitle">근거 기반 생성</text><text x="190" y="118" class="kr slideNote">로컬 LLM과 출처 연결</text>
+    </g>
+    <rect x="22" y="244" width="500" height="44" rx="14" fill="#142746"/>
+    <text x="40" y="272" class="kr small" fill="#8CBDF0">각 장에 전체 구조도 미니맵을 두고 현재 구간만 강조</text>
+  </g>
+
+  <!-- chapter 5 -->
+  <g transform="translate(688 588)">
+    <rect width="544" height="306" rx="24" fill="#111C29" stroke="#E74649" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#hero)"/>
+    <rect y="50" width="544" height="24" fill="#E31D3B"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 05 · SLIDE 13-15</text>
+    <text x="24" y="62" class="kr chapterTitle">환각 검증</text>
+    <text x="170" y="61" class="kr chapterMsg">생성 답변을 다시 확인한다</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">13</text><text x="42" y="18" class="kr slideTitle">탐지 구조</text><text x="160" y="18" class="kr slideNote">답변과 실제 입력 근거 대조</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">14</text><text x="42" y="68" class="kr slideTitle">모델 비교</text><text x="160" y="68" class="kr slideNote">KLUE, XLM-R, BGE-M3</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">15</text><text x="42" y="118" class="kr slideTitle">오류 사례</text><text x="160" y="118" class="kr slideNote">놓친 구절과 잘못 표시한 구절</text>
+    </g>
+    <rect x="22" y="244" width="500" height="44" rx="14" fill="#35171D"/>
+    <text x="40" y="272" class="kr small" fill="#FF8A83">성능 수치는 300문항 평가 완료 후 확정값만 삽입</text>
+  </g>
+
+  <!-- chapter 6 -->
+  <g transform="translate(1298 588)">
+    <rect width="544" height="306" rx="24" fill="#111C29" stroke="#15998D" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="544" height="74" rx="24" fill="url(#teal)"/>
+    <rect y="50" width="544" height="24" fill="#0B7F91"/>
+    <text x="24" y="29" class="kr chapterNo">CHAPTER 06 · SLIDE 16-18</text>
+    <text x="24" y="62" class="kr chapterTitle">검증과 시연</text>
+    <text x="194" y="61" class="kr chapterMsg">결과로 프로젝트를 증명한다</text>
+    <g transform="translate(22 98)">
+      <text x="0" y="18" class="kr slideNo">16</text><text x="42" y="18" class="kr slideTitle">통합 평가</text><text x="160" y="18" class="kr slideNote">검색, 답변, 탐지 지표 분리</text>
+      <line x1="0" y1="36" x2="500" y2="36" stroke="#2B3C4C"/>
+      <text x="0" y="68" class="kr slideNo">17</text><text x="42" y="68" class="kr slideTitle">라이브 데모</text><text x="175" y="68" class="kr slideNote">공고 선택부터 형광펜까지</text>
+      <line x1="0" y1="86" x2="500" y2="86" stroke="#2B3C4C"/>
+      <text x="0" y="118" class="kr slideNo">18</text><text x="42" y="118" class="kr slideTitle">성과와 한계</text><text x="175" y="118" class="kr slideNote">실제 구현, 미완료, 다음 단계</text>
+    </g>
+    <rect x="22" y="244" width="500" height="44" rx="14" fill="#10332F"/>
+    <text x="40" y="272" class="kr small" fill="#7CDBD0">마지막은 주장보다 데모 화면과 측정 결과를 크게 배치</text>
+  </g>
+
+  <!-- repeatable visual grammar -->
+  <g transform="translate(78 932)">
+    <rect width="1764" height="84" rx="22" fill="#0A111C" stroke="#314557"/>
+    <text x="26" y="34" class="kr patternTitle">반복할 시각 문법</text>
+    <text x="26" y="61" class="kr patternBody">섹션 표지</text>
+    <line x1="138" y1="42" x2="190" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="214" y="50" class="kr patternBody">전체 구조도</text>
+    <line x1="340" y1="42" x2="392" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="416" y="50" class="kr patternBody">현재 모듈 확대</text>
+    <line x1="570" y1="42" x2="622" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="646" y="50" class="kr patternBody">입력·처리·출력</text>
+    <line x1="794" y1="42" x2="846" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="870" y="50" class="kr patternBody">정량 평가</text>
+    <line x1="982" y1="42" x2="1034" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="1058" y="50" class="kr patternBody">대표 오류</text>
+    <line x1="1168" y1="42" x2="1220" y2="42" stroke="#EF3E46" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="1244" y="50" class="kr patternBody">데모</text>
+    <rect x="1434" y="18" width="300" height="48" rx="24" fill="#151F2B" stroke="#42586A"/>
+    <text x="1461" y="49" class="kr small">검증되지 않은 수치는 결과 자리만 확보</text>
+  </g>
+
+  <text x="80" y="1054" class="kr small">ko-LettuceDetect / ASTRA · 발표 구조 설계안 · 2026-09-16</text>
+</svg>

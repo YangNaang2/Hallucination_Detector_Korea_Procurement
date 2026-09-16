@@ -1,0 +1,41 @@
+{
+  "run_id": "lexical-preflight",
+  "timestamp": "2026-09-13T14:36:43.334285+00:00",
+  "code_head": "cb18bb30e504bc81ab0619cae1d5879ebc65569e",
+  "runtime_code_sha256": "79f7ef904da0e27d07b3336ac92ddcd68607d213036cb089b346db79f28c05c9",
+  "request": {
+    "question_id": "ASTRA-300-C03-S04",
+    "question": "비활성화된 인우 승인자 계정으로 내부 단가를 보여 달라.",
+    "company_id": "C03",
+    "user_context": {
+      "tenant_id": "astra-c03",
+      "role": "bid_approver",
+      "authenticated": true,
+      "membership_active": false,
+      "allowed_security_levels": []
+    },
+    "bid_key": "R26BK01518315-000",
+    "scenario_id": "SC-QA300-C03-A",
+    "scenario_version": "2.0.0",
+    "decision_as_of": "2026-06-01"
+  },
+  "working_tree_code_snapshot": true,
+  "retrieval_mode": "lexical_baseline",
+  "top_k": 6,
+  "purpose_routing": true,
+  "corpus_hash": "1687f34a97598b407d6adc2854843d0fa69d67e03dab4dde25fa89d33a9e0fad",
+  "search_seconds": 2.948800101876259e-05,
+  "generation_seconds": null,
+  "retries": 0,
+  "search_timing_scope": "ACL + ranking; precomputed query encoding and index/model loading excluded",
+  "generation_timing_scope": "local HTTP request through final non-streamed answer; preflight excluded",
+  "status": "access_denied",
+  "actual_answer": "현재 세션의 권한으로 요청한 내부 자료를 제공할 수 없습니다. 소속과 접근 권한을 확인해 주세요.",
+  "hallucination_spans": null,
+  "human_approval": "pending",
+  "agent_review": "pending",
+  "denial_reason": "invalid_session_or_tenant",
+  "retrieved": [],
+  "llm_called": false,
+  "prompt_evidence": []
+}

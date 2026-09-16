@@ -1,0 +1,10 @@
+{
+  "records": 300,
+  "unique_ids": 300,
+  "answer_hashes_verified": 300,
+  "record_hashes_verified": 300,
+  "original_v1_dataset_master_unchanged": true,
+  "required_ancestors_present": true,
+  "human_approval": "pending",
+  "hallucination_spans": null
+}

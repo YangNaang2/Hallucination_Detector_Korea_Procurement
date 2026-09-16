@@ -1,0 +1,67 @@
+{
+  "reviewer_count": 4,
+  "assignment_policy": "7/6/6/6 questions; greedy balancing of 1 + draft/candidate span rows + answer codepoints/400. Planning heuristic, not measured time or model quality.",
+  "groups": [
+    {
+      "team_id": "T01",
+      "reviewer": "팀원 1",
+      "target_count": 7,
+      "question_ids": [
+        "ASTRA-300-C01-N07-E5",
+        "ASTRA-300-C02-N46-E2",
+        "ASTRA-300-C03-S03",
+        "ASTRA-300-C04-N08-E2",
+        "ASTRA-300-C04-P04",
+        "ASTRA-300-C05-P05",
+        "ASTRA-300-C05-S03"
+      ],
+      "workload_estimate": 32.95,
+      "span_rows": 18
+    },
+    {
+      "team_id": "T02",
+      "reviewer": "팀원 2",
+      "target_count": 6,
+      "question_ids": [
+        "ASTRA-300-C01-S03",
+        "ASTRA-300-C02-S03",
+        "ASTRA-300-C03-N01-E3",
+        "ASTRA-300-C04-P01",
+        "ASTRA-300-C04-S03",
+        "ASTRA-300-C05-N09-E2"
+      ],
+      "workload_estimate": 30.27,
+      "span_rows": 17
+    },
+    {
+      "team_id": "T03",
+      "reviewer": "팀원 3",
+      "target_count": 6,
+      "question_ids": [
+        "ASTRA-300-C01-N01-E1",
+        "ASTRA-300-C02-N41-E2",
+        "ASTRA-300-C02-P02",
+        "ASTRA-300-C02-S01",
+        "ASTRA-300-C03-N48-E1",
+        "ASTRA-300-C03-P04"
+      ],
+      "workload_estimate": 31.13,
+      "span_rows": 17
+    },
+    {
+      "team_id": "T04",
+      "reviewer": "팀원 4",
+      "target_count": 6,
+      "question_ids": [
+        "ASTRA-300-C01-N02-E5",
+        "ASTRA-300-C01-N43-E4",
+        "ASTRA-300-C03-S02",
+        "ASTRA-300-C04-S01",
+        "ASTRA-300-C05-P03",
+        "ASTRA-300-C05-S02"
+      ],
+      "workload_estimate": 30.58,
+      "span_rows": 16
+    }
+  ]
+}

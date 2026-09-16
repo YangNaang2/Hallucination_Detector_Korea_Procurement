@@ -9,15 +9,18 @@ from datetime import date, datetime, timezone
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import re
 import sqlite3
 import subprocess
 import time
+import tempfile
 import urllib.request
 
 import context_qa300 as context
 import rag_pilot_routing as routing
+import rag_pilot_calculation as calculation
 
 ROOT = Path(__file__).resolve().parents[1]
 V2 = ROOT / 'project-docs/평가데이터/v2'
@@ -38,6 +41,9 @@ SYSTEM = '''당신은 공고 검토 보조자다. 한국어로 간결하게 답�
 합성 시나리오는 지정된 기준일·버전에서만 적용하고 기존 원장을 바꾸었다고 하지 마라.
 자료가 부족하거나 서로 충돌하면 그 사실과 추가 확인 사항을 말하고 추측하지 마라.
 개별 조건 충족을 전체 입찰 적격·평가 만점·실제 증빙 확보로 확대하지 마라.
+근거에 없는 불법·법 위반·처벌이나 시스템의 자동 처리 동작을 추가하지 마라.
+판단을 반복하는 별도 결론과 근거 없는 일반 주의사항을 덧붙이지 마라.
+missing/미확보는 문서에 레코드가 있어도 증빙 미확보다. 서비스 보유 인증을 회사 보유 인증으로 바꾸지 마라.
 권한 밖 자료의 내용·존재를 추측하지 마라. 근거에 없는 질문은 자료부족이라고 답하라.'''
 
 
@@ -52,7 +58,17 @@ def lines(path):
 def dump(path, obj):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    # Commit one complete checkpoint, including across interruptions during writes.
+    fd, temporary = tempfile.mkstemp(prefix='.' + path.name, dir=path.parent)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as stream:
+            stream.write(json.dumps(obj, ensure_ascii=False, indent=2) + '\n')
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
 
 
 def digest(text):
@@ -64,6 +80,10 @@ def repo_hash():
 
 
 def safe_path(base, relative):
+    # Source caches produced on Windows retain backslash separators on Linux.
+    relative = str(relative).replace('\\', '/')
+    if re.match(r'^[A-Za-z]:', relative) or relative.startswith('/'):
+        raise ValueError('absolute source path is not portable')
     p = (base / relative).resolve()
     if not p.is_relative_to(base.resolve()):
         raise ValueError('path escapes source root')
@@ -403,7 +423,7 @@ def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
     if purpose:order=rare_anchor_first(req['question'],candidates,order)
     if purpose and not req['scenario_id'].startswith('SC-L1-'):
         # Query-text/document-schema routing only. Never consult QA category/gold IDs.
-        priority = []
+        priority = routing.scenario_sections(req['question'], req['scenario_id'], candidates, order)
         if re.search(r'원가|마진|총액|합산|민감도|연습 가격|인건비', req['question']):
             priority += [i for i in order if candidates[i]['security_level']=='L3' and
                          candidates[i].get('scenario_id')==req['scenario_id'] and
@@ -421,6 +441,8 @@ def retrieve(req, chunks, reg, dense=None, top_k=6, purpose=False):
         private_count=sum(candidates[i]['security_level']!='L1' for i in priority)
         priority += [i for i in order if candidates[i]['security_level']!='L1' and i not in priority][:max(0,2-private_count)]
         order = list(dict.fromkeys(priority+order))
+    if purpose:
+        order = list(dict.fromkeys(routing.specific_public(req['question'], candidates, order) + order))
     picked = []
     for i in order:
         c = candidates[i]
@@ -463,6 +485,10 @@ def prompt(req, retrieved, chunks, reg):
         nature='합성 회사 자료; 실제 발급 증명서 아님' if c['synthetic'] else '공개 공고 원문'
         label=c.get('filename') or c.get('title') or c['text'].splitlines()[0].lstrip('# ')
         displays.append(f'[{i}] {nature} — {label}\n{c["text"]}\n[자료 {i} 끝]')
+        if c['synthetic'] and c['security_level']=='L3':
+            check = calculation.calculation_note(c['text'])
+            if check:
+                displays[-1] += f'\n[자료 {i}의 명시 입력·산식 검산; 인용 출처는 [{i}]] {check}'
     # Technical hash IDs stay in the audit mapping, not beside business classification codes.
     return [dict(role='system', content=SYSTEM), dict(role='user', content=header+'\n\n'.join(displays)+tail)]
 
@@ -509,7 +535,7 @@ def fit_prompt(req, retrieved, chunks, reg, profile=None):
         retrieved = retrieved[:-1]
 
 
-def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
+def run(run_id, use_dense=False, execute=False, purpose=False, only=None, requests_path=None):
     target = safe_path(OUT / 'evaluation/runs', run_id)
     if target.exists():
         raise ValueError('run ID already exists; preserve previous results')
@@ -525,10 +551,14 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
     if use_dense:
         from rag_pilot_embedding import Dense
         dense = Dense()
-    requests = read(OUT / 'runtime/requests.json')
+    requests = read(requests_path or OUT / 'runtime/requests.json')
+    if len({r['question_id'] for r in requests}) != len(requests):
+        raise ValueError('duplicate request ID')
+    for req in requests:
+        no_gold(req)
     if only:
         if not set(only) <= {r['question_id'] for r in requests}:
-            raise ValueError('retry scope must be within selected 25 questions')
+            raise ValueError('retry scope must be within selected requests')
         requests = [r for r in requests if r['question_id'] in only]
     for req in requests:
         begin = time.perf_counter()
@@ -564,7 +594,7 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
                 record['context_limit'] = profile['context']
                 record['context_budget_policy'] = 'drop lowest-ranked whole parent; never truncate entity'
             record['prompt_sha256'] = digest(json.dumps(messages, ensure_ascii=False))
-            record['prompt_version'] = 'plain-citations-task-last-v3'
+            record['prompt_version'] = 'plain-citations-task-last-v4-decimal'
             record['system_prompt_sha256'] = digest(SYSTEM)
             record['prompt_evidence'] = [dict(chunk_id=c['chunk_id'], citation=i+1, text_start=c['text_start'], text_end=c['text_end'], text_sha256=digest(c['text'])) for i,c in enumerate(retrieved)]
             # Full private prompt is local-only; compact evidence references are committed.
@@ -572,6 +602,10 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
             record.update(status='retrieval_only', llm_called=False)
             if execute:
                 start = time.perf_counter()
+                record.update(status='generation_running', llm_called=True,
+                              generation_profile=profile, model=profile['model'],
+                              model_revision=profile['revision'], quantization=profile['quantization'])
+                dump(target / (req['question_id']+'.json'), record)
                 try:
                     response = local_post('/v1/chat/completions', dict(model=profile['alias'], messages=messages,
                                temperature=profile['temperature'],top_p=profile['top_p'],top_k=profile['top_k'],
@@ -583,7 +617,8 @@ def run(run_id, use_dense=False, execute=False, purpose=False, only=None):
                                   model=profile['model'], quantization=profile['quantization'],
                                   model_revision=profile['revision'],generation_profile=profile,seed=42)
                 except Exception as e:
-                    record.update(status='generation_failed', error=str(e), llm_called=True)
+                    timed_out = isinstance(e, TimeoutError) or isinstance(getattr(e, 'reason', None), TimeoutError)
+                    record.update(status='timeout' if timed_out else 'generation_failed', error=str(e), llm_called=True)
                 record['generation_seconds'] = time.perf_counter()-start
         dump(target / (req['question_id']+'.json'), record)
         print(req['question_id'], record['status'], round(search_time, 2), flush=True)

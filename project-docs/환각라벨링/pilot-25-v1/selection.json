@@ -1,0 +1,33 @@
+{
+  "source_revision": "772bfd5",
+  "question_ids": [
+    "ASTRA-300-C01-N01-E1",
+    "ASTRA-300-C01-N02-E5",
+    "ASTRA-300-C01-N07-E5",
+    "ASTRA-300-C01-N43-E4",
+    "ASTRA-300-C01-S03",
+    "ASTRA-300-C02-N41-E2",
+    "ASTRA-300-C02-N46-E2",
+    "ASTRA-300-C02-P02",
+    "ASTRA-300-C02-S01",
+    "ASTRA-300-C02-S03",
+    "ASTRA-300-C03-N01-E3",
+    "ASTRA-300-C03-N48-E1",
+    "ASTRA-300-C03-P04",
+    "ASTRA-300-C03-S02",
+    "ASTRA-300-C03-S03",
+    "ASTRA-300-C04-N08-E2",
+    "ASTRA-300-C04-P01",
+    "ASTRA-300-C04-P04",
+    "ASTRA-300-C04-S01",
+    "ASTRA-300-C04-S03",
+    "ASTRA-300-C05-N09-E2",
+    "ASTRA-300-C05-P03",
+    "ASTRA-300-C05-P05",
+    "ASTRA-300-C05-S02",
+    "ASTRA-300-C05-S03"
+  ],
+  "selection_policy": "Purposeful 5/company. All 4 truncated answers and the invalid-citation answer; calculation/absence/expiry/entity/normal examples. Not prevalence sample; no new holdout.",
+  "prior_split_preserved": true,
+  "training_export_permitted": false
+}
