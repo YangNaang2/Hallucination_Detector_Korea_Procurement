@@ -1162,5 +1162,3 @@ class AttachmentParser:
         text = "\n\n".join(f"[ZIP:{b['member']}]\n{b['text']}" for b in blocks)
         q = extraction_quality(text)
         return ParseResult("parsed" if q >= self.min_quality else "low_quality", "zip", "zip_recursive", q, text, blocks, warnings)
-
-
