@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">ASTRA Input Process Output 파이프라인</title>
+  <desc id="desc">사전 구축과 사용자 질의 실행을 Input, Process, Output 두 개 흐름으로 설명하는 16대9 벡터 다이어그램</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#EEF4F8"/>
+    </linearGradient>
+    <linearGradient id="buildBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B5C75"/>
+      <stop offset="1" stop-color="#128A9E"/>
+    </linearGradient>
+    <linearGradient id="runBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#184778"/>
+      <stop offset="1" stop-color="#315F95"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#16324F" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowBuild" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1193A6"/>
+    </marker>
+    <marker id="arrowRun" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#376EA6"/>
+    </marker>
+    <style>
+      .kr { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+      .title { font-size: 54px; font-weight: 800; fill: #102A43; letter-spacing: -1.6px; }
+      .subtitle { font-size: 23px; font-weight: 500; fill: #627D98; }
+      .laneNo { font-size: 18px; font-weight: 800; fill: #FFFFFF; letter-spacing: 1.3px; }
+      .laneTitle { font-size: 31px; font-weight: 800; fill: #FFFFFF; }
+      .cardLabel { font-size: 19px; font-weight: 800; letter-spacing: 2px; }
+      .cardTitle { font-size: 28px; font-weight: 800; fill: #102A43; }
+      .body { font-size: 20px; font-weight: 500; fill: #334E68; }
+      .small { font-size: 17px; font-weight: 500; fill: #486581; }
+      .stepNo { font-size: 15px; font-weight: 800; fill: #FFFFFF; }
+      .stepTitle { font-size: 19px; font-weight: 800; fill: #102A43; }
+      .stepBody { font-size: 16px; font-weight: 500; fill: #486581; }
+      .metric { font-size: 27px; font-weight: 800; fill: #0B7189; }
+      .footer { font-size: 16px; font-weight: 600; fill: #526D82; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1780" cy="80" r="180" fill="#DDF4F1" opacity="0.45"/>
+  <circle cx="120" cy="1010" r="220" fill="#DBEAFE" opacity="0.38"/>
+
+  <text x="96" y="86" class="kr title">데이터에서 검증 가능한 답변까지</text>
+  <text x="98" y="127" class="kr subtitle">ASTRA 권한형 하이브리드 RAG · Input → Process → Output</text>
+  <g transform="translate(1575 65)">
+    <rect width="248" height="48" rx="24" fill="#FFFFFF" stroke="#CAD8E3"/>
+    <circle cx="26" cy="24" r="8" fill="#22A699"/>
+    <text x="45" y="31" class="kr small" font-weight="700">3주차 파일럿 구조</text>
+  </g>
+
+  <!-- BUILD TIME LANE -->
+  <g transform="translate(72 176)">
+    <rect width="1776" height="352" rx="28" fill="#FFFFFF" filter="url(#shadow)"/>
+    <path d="M28,0 H1748 A28,28 0 0 1 1776,28 V78 H0 V28 A28,28 0 0 1 28,0 Z" fill="url(#buildBand)"/>
+    <text x="30" y="33" class="kr laneNo">01 · BUILD TIME</text>
+    <text x="30" y="64" class="kr laneTitle">사전 구축 파이프라인</text>
+    <text x="440" y="50" class="kr" font-size="18" font-weight="600" fill="#D8F6F2">나라장터 원천 자료를 검색 코퍼스와 평가 기준으로 구조화</text>
+
+    <!-- input -->
+    <g transform="translate(30 101)">
+      <rect width="390" height="220" rx="20" fill="#F4F8FC" stroke="#B9CEE0" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#2F6F9F">INPUT</text>
+      <text x="24" y="72" class="kr cardTitle">구축 원천 데이터</text>
+      <circle cx="29" cy="107" r="4" fill="#2F6F9F"/><text x="44" y="114" class="kr body">나라장터 공고·첨부문서</text>
+      <circle cx="29" cy="143" r="4" fill="#2F6F9F"/><text x="44" y="150" class="kr body">표본 51건 요건추출시트</text>
+      <circle cx="29" cy="179" r="4" fill="#2F6F9F"/><text x="44" y="186" class="kr body">가상 기업 설계 기준</text>
+    </g>
+
+    <line x1="445" y1="211" x2="502" y2="211" stroke="#1193A6" stroke-width="6" marker-end="url(#arrowBuild)"/>
+
+    <!-- process -->
+    <g transform="translate(520 101)">
+      <rect width="775" height="220" rx="20" fill="#F1FBFA" stroke="#9FD8D2" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#0C887E">PROCESS</text>
+      <text x="24" y="72" class="kr cardTitle">정제·구조화·평가셋 구축</text>
+      <g transform="translate(24 98)">
+        <g>
+          <circle cx="22" cy="22" r="20" fill="#0C887E"/><text x="17" y="28" class="kr stepNo">1</text>
+          <text x="51" y="18" class="kr stepTitle">파싱·정제</text><text x="51" y="43" class="kr stepBody">원문 → 정본 텍스트</text>
+        </g>
+        <g transform="translate(190 0)">
+          <circle cx="22" cy="22" r="20" fill="#0C887E"/><text x="17" y="28" class="kr stepNo">2</text>
+          <text x="51" y="18" class="kr stepTitle">의미 청킹</text><text x="51" y="43" class="kr stepBody">문서·조건 단위</text>
+        </g>
+        <g transform="translate(380 0)">
+          <circle cx="22" cy="22" r="20" fill="#0C887E"/><text x="17" y="28" class="kr stepNo">3</text>
+          <text x="51" y="18" class="kr stepTitle">등급 구조화</text><text x="51" y="43" class="kr stepBody">L1 · L2 · L3</text>
+        </g>
+        <g transform="translate(585 0)">
+          <circle cx="22" cy="22" r="20" fill="#0C887E"/><text x="17" y="28" class="kr stepNo">4</text>
+          <text x="51" y="18" class="kr stepTitle">평가 기준</text><text x="51" y="43" class="kr stepBody">300개 Q-A-R 구축</text>
+        </g>
+      </g>
+      <g transform="translate(24 171)">
+        <rect width="225" height="31" rx="15" fill="#D9F4F0"/><text x="16" y="22" class="kr small" font-weight="700">L1 · 실제 공개 공고</text>
+        <rect x="236" width="246" height="31" rx="15" fill="#DDEBFA"/><text x="252" y="22" class="kr small" font-weight="700">L2 · 합성 기업 내부자료</text>
+        <rect x="493" width="244" height="31" rx="15" fill="#FDE5E3"/><text x="509" y="22" class="kr small" font-weight="700">L3 · 합성 민감자료</text>
+      </g>
+    </g>
+
+    <line x1="1320" y1="211" x2="1377" y2="211" stroke="#1193A6" stroke-width="6" marker-end="url(#arrowBuild)"/>
+
+    <!-- output -->
+    <g transform="translate(1395 101)">
+      <rect width="351" height="220" rx="20" fill="#F4FBF9" stroke="#9FD8D2" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#0C887E">OUTPUT</text>
+      <text x="24" y="72" class="kr cardTitle">구축된 자산</text>
+      <text x="24" y="116" class="kr metric">223개 문서 · 3,275개 청크</text>
+      <text x="24" y="153" class="kr body">권한형 RAG 검색 코퍼스</text>
+      <text x="24" y="189" class="kr body">300개 Q-A-R 평가셋</text>
+    </g>
+  </g>
+
+  <!-- RUN TIME LANE -->
+  <g transform="translate(72 566)">
+    <rect width="1776" height="352" rx="28" fill="#FFFFFF" filter="url(#shadow)"/>
+    <path d="M28,0 H1748 A28,28 0 0 1 1776,28 V78 H0 V28 A28,28 0 0 1 28,0 Z" fill="url(#runBand)"/>
+    <text x="30" y="33" class="kr laneNo">02 · RUN TIME</text>
+    <text x="30" y="64" class="kr laneTitle">사용자 질의 파이프라인</text>
+    <text x="440" y="50" class="kr" font-size="18" font-weight="600" fill="#DDEBFA">질문과 권한을 입력받아 근거·답변·환각 의심 구절을 함께 반환</text>
+
+    <!-- input -->
+    <g transform="translate(30 101)">
+      <rect width="390" height="220" rx="20" fill="#F4F8FC" stroke="#B9CEE0" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#376EA6">INPUT</text>
+      <text x="24" y="72" class="kr cardTitle">사용자 요청 문맥</text>
+      <rect x="22" y="91" width="346" height="54" rx="13" fill="#E8F1FB"/>
+      <text x="38" y="114" class="kr small" font-weight="700">“우리 회사가 이 공고의</text>
+      <text x="38" y="137" class="kr small" font-weight="700">실적 조건을 충족하나요?”</text>
+      <text x="24" y="177" class="kr body">선택 공고 · 회사 · 역할</text>
+      <text x="24" y="207" class="kr body">허용 보안등급 · 시나리오</text>
+    </g>
+
+    <line x1="445" y1="211" x2="502" y2="211" stroke="#376EA6" stroke-width="6" marker-end="url(#arrowRun)"/>
+
+    <!-- process -->
+    <g transform="translate(520 101)">
+      <rect width="775" height="220" rx="20" fill="#F4F8FC" stroke="#B9CEE0" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#376EA6">PROCESS</text>
+      <text x="24" y="72" class="kr cardTitle">권한형 검색·생성·검증</text>
+      <g transform="translate(24 98)">
+        <g>
+          <circle cx="20" cy="20" r="19" fill="#376EA6"/><text x="15" y="26" class="kr stepNo">1</text>
+          <text x="48" y="17" class="kr stepTitle">권한 필터</text><text x="48" y="42" class="kr stepBody">공고·회사·등급</text>
+        </g>
+        <g transform="translate(190 0)">
+          <circle cx="20" cy="20" r="19" fill="#376EA6"/><text x="15" y="26" class="kr stepNo">2</text>
+          <text x="48" y="17" class="kr stepTitle">하이브리드 검색</text><text x="48" y="42" class="kr stepBody">키워드 + 벡터</text>
+        </g>
+        <g transform="translate(403 0)">
+          <circle cx="20" cy="20" r="19" fill="#376EA6"/><text x="15" y="26" class="kr stepNo">3</text>
+          <text x="48" y="17" class="kr stepTitle">로컬 LLM</text><text x="48" y="42" class="kr stepBody">근거 기반 생성</text>
+        </g>
+        <g transform="translate(592 0)">
+          <circle cx="20" cy="20" r="19" fill="#376EA6"/><text x="15" y="26" class="kr stepNo">4</text>
+          <text x="48" y="17" class="kr stepTitle">이중 검증</text><text x="48" y="42" class="kr stepBody">규칙 + 환각 탐지</text>
+        </g>
+      </g>
+      <g transform="translate(24 171)">
+        <rect width="213" height="31" rx="15" fill="#E5EEF8"/><text x="16" y="22" class="kr small" font-weight="700">정확어 · 코드 · 금액</text>
+        <rect x="224" width="222" height="31" rx="15" fill="#E5EEF8"/><text x="240" y="22" class="kr small" font-weight="700">의미 유사 문맥 검색</text>
+        <rect x="457" width="280" height="31" rx="15" fill="#FDE5E3"/><text x="473" y="22" class="kr small" font-weight="700">근거 불일치 의심 구절 검사</text>
+      </g>
+    </g>
+
+    <line x1="1320" y1="211" x2="1377" y2="211" stroke="#376EA6" stroke-width="6" marker-end="url(#arrowRun)"/>
+
+    <!-- output -->
+    <g transform="translate(1395 101)">
+      <rect width="351" height="220" rx="20" fill="#F4FBF9" stroke="#9FD8D2" stroke-width="2"/>
+      <text x="24" y="34" class="kr cardLabel" fill="#0C887E">OUTPUT</text>
+      <text x="24" y="72" class="kr cardTitle">검토 가능한 결과</text>
+      <circle cx="29" cy="107" r="4" fill="#0C887E"/><text x="44" y="114" class="kr body">근거 기반 답변·출처</text>
+      <circle cx="29" cy="143" r="4" fill="#0C887E"/><text x="44" y="150" class="kr body">환각 의심 구절 표시</text>
+      <circle cx="29" cy="179" r="4" fill="#0C887E"/><text x="44" y="186" class="kr body">조건별 충족·미충족</text>
+      <circle cx="29" cy="207" r="4" fill="#0C887E"/><text x="44" y="214" class="kr small">자료부족·접근거절 포함</text>
+    </g>
+  </g>
+
+  <!-- FOOTNOTES -->
+  <g transform="translate(94 957)">
+    <rect width="535" height="48" rx="24" fill="#FFFFFF" stroke="#CAD8E3"/>
+    <circle cx="25" cy="24" r="7" fill="#0C887E"/>
+    <text x="43" y="30" class="kr footer">300개 Q-A-R은 검색 코퍼스가 아닌 평가 기준</text>
+    <rect x="550" width="566" height="48" rx="24" fill="#FFFFFF" stroke="#CAD8E3"/>
+    <circle cx="575" cy="24" r="7" fill="#376EA6"/>
+    <text x="593" y="30" class="kr footer">L2·L3는 실제 기업 자료가 아닌 평가용 합성 자료</text>
+    <rect x="1137" width="588" height="48" rx="24" fill="#FFFFFF" stroke="#CAD8E3"/>
+    <circle cx="1162" cy="24" r="7" fill="#E29A2D"/>
+    <text x="1180" y="30" class="kr footer">개별 조건 검토 결과이며 전체 적격 자동 확정은 아님</text>
+  </g>
+
+  <text x="96" y="1047" class="kr" font-size="15" font-weight="600" fill="#829AB1">ko-LettuceDetect / ASTRA · 2026-09-16 · 파일럿 manifest 기준</text>
+</svg>
