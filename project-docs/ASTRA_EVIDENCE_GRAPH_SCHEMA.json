@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/YangNaang2/ko-lettucedetect/project-docs/ASTRA_EVIDENCE_GRAPH_SCHEMA.json",
+  "title": "ASTRA Evidence Graph projection",
+  "type": "object",
+  "required": ["schema_version", "projection_kind", "graph_rag", "run_id", "source_manifest", "nodes", "edges"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "projection_kind": {"const": "read_only_relationship_visualization"},
+    "graph_rag": {"const": false},
+    "run_id": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string"},
+    "source_manifest": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "statistics": {"type": "object"},
+    "nodes": {"type": "array", "items": {"$ref": "#/$defs/node"}},
+    "edges": {"type": "array", "items": {"$ref": "#/$defs/edge"}}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["key", "path", "sha256"],
+      "properties": {
+        "key": {"type": "string"},
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "access": {
+      "type": "object",
+      "required": ["level", "tenant_id", "company_id", "allowed_roles"],
+      "properties": {
+        "level": {"enum": ["L1", "L2", "L3"]},
+        "tenant_id": {"type": ["string", "null"]},
+        "company_id": {"type": ["string", "null"]},
+        "allowed_roles": {"type": "array", "items": {"enum": ["viewer", "bid_analyst", "cost_analyst", "bid_approver"]}}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_path", "source_hash", "json_pointer"],
+      "properties": {
+        "source_path": {"type": "string"},
+        "source_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "json_pointer": {"type": "string"}
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "stable_id", "type", "label", "properties", "access", "provenance"],
+      "properties": {
+        "id": {"type": "string", "minLength": 3},
+        "stable_id": {"type": "string", "minLength": 3},
+        "type": {"enum": ["ProcurementNotice", "Document", "Requirement", "Company", "Person", "Project", "Certification", "Scenario", "Question", "Answer", "EvidenceWindow", "Citation", "HallucinationSpan", "Review"]},
+        "label": {"type": "string"},
+        "properties": {"type": "object"},
+        "access": {"$ref": "#/$defs/access"},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id", "source", "target", "type", "properties"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^edge:"},
+        "source": {"type": "string"},
+        "target": {"type": "string"},
+        "type": {"type": "string"},
+        "properties": {"type": "object"}
+      }
+    }
+  }
+}
