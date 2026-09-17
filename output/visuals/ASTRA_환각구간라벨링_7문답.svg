@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      text { font-family: "Noto Sans CJK KR", "Noto Sans KR", sans-serif; fill: #14233a; }
+      .title { font-size: 48px; font-weight: 800; letter-spacing: -1.5px; }
+      .subtitle { font-size: 22px; font-weight: 500; fill: #50627a; }
+      .section { font-size: 20px; font-weight: 800; fill: #0f766e; }
+      .card-title { font-size: 24px; font-weight: 800; }
+      .body { font-size: 18px; font-weight: 500; fill: #34455d; }
+      .small { font-size: 15px; font-weight: 500; fill: #607087; }
+      .code { font-size: 15px; font-weight: 700; fill: #17263d; }
+      .step { font-size: 18px; font-weight: 800; fill: #ffffff; }
+      .step-sub { font-size: 14px; font-weight: 600; fill: #dcecff; }
+      .num { font-size: 22px; font-weight: 900; fill: #ffffff; }
+      .warning { font-size: 18px; font-weight: 800; fill: #8a3b12; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#16314f" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8ca1ba"/>
+    </marker>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f6f9fc"/>
+  <rect x="0" y="0" width="18" height="1080" fill="#13a392"/>
+
+  <text x="74" y="72" class="section">ASTRA · 발표 질의응답 한 장 요약</text>
+  <text x="74" y="130" class="title">환각 구간 라벨링은 어떻게 진행했나?</text>
+  <text x="74" y="169" class="subtitle">답변 전체를 정상/환각으로만 나누지 않고, 실제 생성 근거와 대조해 잘못된 의미를 유지하는 최소 구절을 표시한다.</text>
+
+  <!-- process -->
+  <g filter="url(#shadow)">
+    <rect x="74" y="205" width="1772" height="120" rx="20" fill="#ffffff" stroke="#d8e2ee"/>
+  </g>
+  <g>
+    <rect x="98" y="229" width="218" height="72" rx="14" fill="#2563eb"/>
+    <text x="207" y="258" text-anchor="middle" class="step">정본 답변</text>
+    <text x="207" y="282" text-anchor="middle" class="step-sub">문자열·해시 고정</text>
+    <line x1="322" y1="265" x2="351" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="360" y="229" width="218" height="72" rx="14" fill="#0f9f8f"/>
+    <text x="469" y="258" text-anchor="middle" class="step">주장 구절 선택</text>
+    <text x="469" y="282" text-anchor="middle" class="step-sub">최소 의미 단위</text>
+    <line x1="584" y1="265" x2="613" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="622" y="229" width="218" height="72" rx="14" fill="#5b5bd6"/>
+    <text x="731" y="258" text-anchor="middle" class="step">근거 대조</text>
+    <text x="731" y="282" text-anchor="middle" class="step-sub">질문·입력 문서·기준일</text>
+    <line x1="846" y1="265" x2="875" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="884" y="229" width="218" height="72" rx="14" fill="#f59e0b"/>
+    <text x="993" y="258" text-anchor="middle" class="step">오류 유형 판정</text>
+    <text x="993" y="282" text-anchor="middle" class="step-sub">모순·무근거·인용·보류</text>
+    <line x1="1108" y1="265" x2="1137" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1146" y="229" width="218" height="72" rx="14" fill="#e4584b"/>
+    <text x="1255" y="258" text-anchor="middle" class="step">사람 검수·조정</text>
+    <text x="1255" y="282" text-anchor="middle" class="step-sub">초안과 최종 승인 분리</text>
+    <line x1="1370" y1="265" x2="1399" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1408" y="229" width="218" height="72" rx="14" fill="#1e4970"/>
+    <text x="1517" y="258" text-anchor="middle" class="step">Span JSONL</text>
+    <text x="1517" y="282" text-anchor="middle" class="step-sub">[start,end)·근거 ID</text>
+    <line x1="1632" y1="265" x2="1661" y2="265" stroke="#8ca1ba" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="1670" y="229" width="152" height="72" rx="14" fill="#334155"/>
+    <text x="1746" y="258" text-anchor="middle" class="step">평가·서비스</text>
+    <text x="1746" y="282" text-anchor="middle" class="step-sub">학습·경고·검수</text>
+  </g>
+
+  <!-- row 1 -->
+  <g filter="url(#shadow)">
+    <rect x="74" y="352" width="860" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+    <rect x="960" y="352" width="886" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+  </g>
+  <circle cx="112" cy="394" r="24" fill="#2563eb"/><text x="112" y="402" text-anchor="middle" class="num">1</text>
+  <text x="151" y="402" class="card-title">무엇을 환각으로 정의했나?</text>
+  <text x="104" y="444" class="body">• <tspan font-weight="800" fill="#c2413a">CONTRADICTION</tspan> — 입력 근거와 명시적으로 모순</text>
+  <text x="104" y="478" class="body">• <tspan font-weight="800" fill="#c27803">UNSUPPORTED</tspan> — 주장을 지지하는 입력 근거가 없음</text>
+  <text x="104" y="512" class="small">인용번호 오류는 CITATION_ERROR로 별도 관리하며, 누락·잘림·반복은 품질 문제로 분리한다.</text>
+
+  <circle cx="998" cy="394" r="24" fill="#0f9f8f"/><text x="998" y="402" text-anchor="middle" class="num">2</text>
+  <text x="1037" y="402" class="card-title">답변 전체인가, 문장/구간 단위인가?</text>
+  <text x="990" y="447" class="body">기본 라벨은 <tspan font-weight="800">문자 구간(span) 단위</tspan>다.</text>
+  <text x="990" y="480" class="body">잘못된 의미를 유지하는 최소 명사구·서술절만 선택하고, 맞는 주변 문장은 칠하지 않는다.</text>
+  <text x="990" y="513" class="small">답변 단위 정상/환각은 span 존재 여부로 파생하며, 위치는 Unicode code point [start,end)로 저장한다.</text>
+
+  <!-- row 2 -->
+  <g filter="url(#shadow)">
+    <rect x="74" y="562" width="860" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+    <rect x="960" y="562" width="886" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+  </g>
+  <circle cx="112" cy="604" r="24" fill="#5b5bd6"/><text x="112" y="612" text-anchor="middle" class="num">3</text>
+  <text x="151" y="612" class="card-title">정답·근거와 어떻게 비교했나?</text>
+  <text x="104" y="654" class="body">질문 + 생성 당시 모델에 들어간 근거 + 합성 시나리오·기준일을 함께 읽는다.</text>
+  <text x="104" y="687" class="body">답변 주장이 어느 근거 chunk의 어느 구간에서 지지·반박되는지 연결한다.</text>
+  <text x="104" y="720" class="small">기대답은 누락·업무 정확성의 보조 기준일 뿐, 그 자체를 원문 증거로 사용하지 않는다.</text>
+
+  <circle cx="998" cy="604" r="24" fill="#f59e0b"/><text x="998" y="612" text-anchor="middle" class="num">4</text>
+  <text x="1037" y="612" class="card-title">사람 판단 기준은?</text>
+  <text x="990" y="654" class="body">주체·숫자·날짜·금액·자격·의무/가능 표현과 조건·예외 범위를 원문과 대조한다.</text>
+  <text x="990" y="687" class="body">맞는 계산은 보존하고 적용 범위가 틀리면 그 역할이 드러나는 구절만 표시한다.</text>
+  <text x="990" y="720" class="small">“현실에서 거짓” 판정이 아니라 “생성 입력 근거가 지지하는가”를 우선 판단한다.</text>
+
+  <!-- row 3 -->
+  <g filter="url(#shadow)">
+    <rect x="74" y="772" width="560" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+    <rect x="654" y="772" width="560" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+    <rect x="1234" y="772" width="612" height="190" rx="18" fill="#ffffff" stroke="#d8e2ee"/>
+  </g>
+  <circle cx="112" cy="814" r="24" fill="#e4584b"/><text x="112" y="822" text-anchor="middle" class="num">5</text>
+  <text x="151" y="822" class="card-title">애매한 사례는?</text>
+  <text x="104" y="864" class="body">UNCERTAIN 또는 HOLD로 보류한다.</text>
+  <text x="104" y="897" class="body">원문 충돌을 임의로 합치지 않는다.</text>
+  <text x="104" y="930" class="small">보류·미검수 영역은 정상(O)으로 세지 않고 학습에서 마스킹/제외한다.</text>
+
+  <circle cx="692" cy="814" r="24" fill="#1e4970"/><text x="692" y="822" text-anchor="middle" class="num">6</text>
+  <text x="731" y="822" class="card-title">최종 라벨 데이터 형태는?</text>
+  <text x="684" y="862" class="code">question_id · answer_sha256 · context_sha256</text>
+  <text x="684" y="893" class="code">span {start,end,quote,label,reason,evidence_ids}</text>
+  <text x="684" y="924" class="small">reviewed_ranges · human_approval · approved_spans · training_ready</text>
+
+  <circle cx="1272" cy="814" r="24" fill="#334155"/><text x="1272" y="822" text-anchor="middle" class="num">7</text>
+  <text x="1311" y="822" class="card-title">평가·서비스에서 어떻게 쓰나?</text>
+  <text x="1264" y="862" class="body">학습: 승인 span → 토큰 BIO/마스크 변환</text>
+  <text x="1264" y="893" class="body">평가: 문자 P/R/F1·exact-span·답변 TP/FP/FN/TN</text>
+  <text x="1264" y="924" class="small">서비스: 의심 구절 강조 + 근거 이동 + 사람 검수 우선순위</text>
+
+  <!-- warning/footer -->
+  <rect x="74" y="986" width="1772" height="62" rx="14" fill="#fff2df" stroke="#f2b866"/>
+  <text x="102" y="1012" class="warning">80%·85% 100건은 정답·예측을 확인한 뒤 비율을 맞춘 시연 세트이며 전체 성능 평가가 아니다.</text>
+  <text x="102" y="1036" class="small">사람 최종 승인 전 라벨 · 별도 고정 100건의 채점 가능 96건 v6 잠정 정확도 67.71% · 근거: GUIDELINES.md, pilot-25-human-review-v1, results-v6</text>
+</svg>

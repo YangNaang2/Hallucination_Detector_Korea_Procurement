@@ -35,3 +35,7 @@ __pycache__/
 !project-docs/RAG파일럿/workstation-275/regression/evaluation/runs/
 !project-docs/RAG파일럿/workstation-275/repair-v2/evaluation/runs/
 !project-docs/RAG파일럿/workstation-275/shards/*/evaluation/runs/
+
+# 발표 자료 로컬 빌드 중간물
+.presentation-build/
+.chart-data-*/
