@@ -13,71 +13,385 @@
     }
   },
   "components": [
-    { "id": "g2b_api", "type": "external", "label": "나라장터 OpenAPI", "sublabel": "공공데이터포털 개방 API",
-      "pos": [50, 50], "size": [190, 60] },
-    { "id": "collector", "type": "backend", "label": "수집·파싱 파이프라인", "sublabel": "월별 실행 + 선택적 GPU OCR",
-      "sources": [{ "path": "procurement-pipeline/collector/g2b_rag_pipeline/run.py", "line": 23, "label": "pipeline/OCR 실행" }],
-      "pos": [50, 190], "size": [220, 64] },
-    { "id": "company_master", "type": "database", "label": "등급·ACL 원장", "sublabel": "L1 공개 · L2/L3 합성기업 5곳",
+    {
+      "id": "g2b_api",
+      "type": "external",
+      "label": "나라장터 OpenAPI",
+      "sublabel": "공공데이터포털 개방 API",
+      "pos": [
+        30,
+        38
+      ],
+      "size": [
+        190,
+        60
+      ]
+    },
+    {
+      "id": "collector",
+      "type": "backend",
+      "label": "수집·파싱 파이프라인",
+      "sublabel": "월별 실행 + 선택적 GPU OCR",
+      "sources": [
+        {
+          "path": "procurement-pipeline/collector/g2b_rag_pipeline/run.py",
+          "line": 23,
+          "label": "pipeline/OCR 실행"
+        }
+      ],
+      "pos": [
+        50,
+        132
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "company_master",
+      "type": "database",
+      "label": "등급·ACL 원장",
+      "sublabel": "L1 공개 · L2/L3 합성기업 5곳",
       "tag": "실제 기업 아님",
       "sources": [
-        { "path": "project-docs/가상기업/v1/company_master.json", "label": "회사 원장" },
-        { "path": "project-docs/가상기업/v1/access_rule_checks.json", "label": "ACL 검사" }
+        {
+          "path": "project-docs/가상기업/v1/company_master.json",
+          "label": "회사 원장"
+        },
+        {
+          "path": "project-docs/가상기업/v1/access_rule_checks.json",
+          "label": "ACL 검사"
+        }
       ],
-      "pos": [50, 330], "size": [220, 70] },
-    { "id": "indexer", "type": "backend", "label": "청킹·임베딩 색인", "sublabel": "parent 1800자/240 겹침 → E5 460/420",
+      "pos": [
+        50,
+        226
+      ],
+      "size": [
+        220,
+        70
+      ]
+    },
+    {
+      "id": "indexer",
+      "type": "backend",
+      "label": "청킹·임베딩 색인",
+      "sublabel": "parent 1800자/240 겹침 → E5 460/420",
       "sources": [
-        { "path": "procurement-pipeline/rag_pilot.py", "line": 156, "label": "public_chunks()" },
-        { "path": "procurement-pipeline/rag_pilot_embedding.py", "line": 24, "end_line": 38, "label": "window_ids()" }
+        {
+          "path": "procurement-pipeline/rag_pilot.py",
+          "line": 156,
+          "label": "public_chunks()"
+        },
+        {
+          "path": "procurement-pipeline/rag_pilot_embedding.py",
+          "line": 24,
+          "end_line": 38,
+          "label": "window_ids()"
+        }
       ],
-      "pos": [50, 470], "size": [220, 64] },
-
-    { "id": "demo_ui", "type": "frontend", "label": "데모 UI", "sublabel": "저장 답변 재생 · 실시간 질의",
-      "sources": [{ "path": "demo-ui/spatial-poc/integrated_server.py", "line": 20, "label": "모드 분기" }],
-      "pos": [560, 50], "size": [220, 64] },
-    { "id": "perm_filter", "type": "security", "label": "검색 전 권한 필터", "sublabel": "tenant · company · role · scenario",
+      "pos": [
+        50,
+        320
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "demo_ui",
+      "type": "frontend",
+      "label": "데모 UI",
+      "sublabel": "저장 답변 재생 · 실시간 질의",
+      "sources": [
+        {
+          "path": "demo-ui/spatial-poc/integrated_server.py",
+          "line": 20,
+          "label": "모드 분기"
+        }
+      ],
+      "pos": [
+        380,
+        38
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "perm_filter",
+      "type": "security",
+      "label": "검색 전 권한 필터",
+      "sublabel": "tenant · company · role · scenario",
       "tag": "파일럿 세션 정책",
-      "sources": [{ "path": "procurement-pipeline/rag_pilot.py", "line": 258, "end_line": 333, "label": "valid_session/eligible" }],
-      "pos": [560, 190], "size": [220, 64] },
-    { "id": "hybrid_search", "type": "backend", "label": "하이브리드 검색", "sublabel": "lexical + E5 dense → RRF k=60",
-      "sources": [{ "path": "procurement-pipeline/rag_pilot.py", "line": 397, "end_line": 452, "label": "retrieve()" }],
-      "pos": [560, 330], "size": [220, 64] },
-    { "id": "gen", "type": "backend", "label": "로컬 답변 생성", "sublabel": "Qwen3-4B GGUF · Vulkan GPU",
+      "sources": [
+        {
+          "path": "procurement-pipeline/rag_pilot.py",
+          "line": 258,
+          "end_line": 333,
+          "label": "valid_session/eligible"
+        }
+      ],
+      "pos": [
+        380,
+        150
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "hybrid_search",
+      "type": "backend",
+      "label": "하이브리드 검색",
+      "sublabel": "lexical + E5 dense → RRF k=60",
+      "sources": [
+        {
+          "path": "procurement-pipeline/rag_pilot.py",
+          "line": 397,
+          "end_line": 452,
+          "label": "retrieve()"
+        }
+      ],
+      "pos": [
+        380,
+        244
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "gen",
+      "type": "backend",
+      "label": "로컬 답변 생성",
+      "sublabel": "Qwen3-4B GGUF · Vulkan GPU",
       "tag": "Q4_K_M",
-      "sources": [{ "path": "procurement-pipeline/start_host_gpu_rag.py", "line": 29, "label": "qwen3-4b 프로필" }],
-      "pos": [560, 470], "size": [220, 64] },
-    { "id": "answer_store", "type": "database", "label": "정본 답변 저장소", "sublabel": "답변 · 인용 · 근거 hash",
-      "sources": [{ "path": "project-docs/RAG파일럿/workstation-275/evaluation/final_summary.json", "label": "295건 + 차단 5건" }],
-      "pos": [560, 610], "size": [220, 64] },
-
-    { "id": "ops_auth", "type": "security", "label": "운영 인증·인가", "sublabel": "IdP · tenant · 감사로그",
+      "sources": [
+        {
+          "path": "procurement-pipeline/start_host_gpu_rag.py",
+          "line": 29,
+          "label": "qwen3-4b 프로필"
+        }
+      ],
+      "pos": [
+        380,
+        338
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "answer_store",
+      "type": "database",
+      "label": "정본 답변 저장소",
+      "sublabel": "답변 · 인용 · 근거 hash",
+      "sources": [
+        {
+          "path": "project-docs/RAG파일럿/workstation-275/evaluation/final_summary.json",
+          "label": "295건 + 차단 5건"
+        }
+      ],
+      "pos": [
+        380,
+        432
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "ops_auth",
+      "type": "security",
+      "label": "운영 인증·인가",
+      "sublabel": "IdP · tenant · 감사로그",
       "tag": "미연결",
-      "sources": [{ "path": "demo-ui/spatial-poc/live-design/Live_RAG_전환설계.md", "label": "전환 설계" }],
-      "pos": [1030, 190], "size": [220, 64] },
-    { "id": "human_review", "type": "frontend", "label": "사람 구절 검수", "sublabel": "25문항 제출 완료",
+      "sources": [
+        {
+          "path": "demo-ui/spatial-poc/live-design/Live_RAG_전환설계.md",
+          "label": "전환 설계"
+        }
+      ],
+      "pos": [
+        700,
+        150
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "human_review",
+      "type": "frontend",
+      "label": "사람 구절 검수",
+      "sublabel": "25문항 제출 완료",
       "tag": "최종 승인 대기",
-      "sources": [{ "path": "project-docs/환각라벨링/pilot-25-human-review-v1/README.md", "label": "조정안 88개" }],
-      "pos": [1030, 530], "size": [220, 64] },
-    { "id": "klue", "type": "backend", "label": "KLUE 탐지기", "sublabel": "오탐 ↔ 재현율 trade-off 실험",
+      "sources": [
+        {
+          "path": "project-docs/환각라벨링/pilot-25-human-review-v1/README.md",
+          "label": "조정안 88개"
+        }
+      ],
+      "pos": [
+        700,
+        318
+      ],
+      "size": [
+        220,
+        64
+      ]
+    },
+    {
+      "id": "klue",
+      "type": "backend",
+      "label": "KLUE 탐지기",
+      "sublabel": "오탐 ↔ 재현율 trade-off 실험",
       "tag": "평가 진행 중",
-      "pos": [1030, 690], "size": [220, 64] }
+      "pos": [
+        700,
+        440
+      ],
+      "size": [
+        220,
+        64
+      ]
+    }
   ],
   "boundaries": [
-    { "kind": "region", "label": "오프라인 수집·색인 (워크스테이션 배치 실행)", "wraps": ["g2b_api", "collector", "company_master", "indexer"], "pad": 24 },
-    { "kind": "security-group", "label": "권한 검사 경계 (파일럿 세션 한정)", "wraps": ["perm_filter", "ops_auth"], "pad": 20 }
+    {
+      "kind": "region",
+      "label": "오프라인 수집·색인 (워크스테이션 배치 실행)",
+      "wraps": [
+        "g2b_api",
+        "collector",
+        "company_master",
+        "indexer"
+      ],
+      "pad": 18
+    },
+    {
+      "kind": "security-group",
+      "label": "권한 검사 경계 (파일럿 세션 한정)",
+      "wraps": [
+        "perm_filter",
+        "ops_auth"
+      ],
+      "pad": 10
+    }
   ],
   "connections": [
-    { "id": "e_g2b_collector", "from": "g2b_api", "to": "collector", "label": "공고·첨부 조회", "fromSide": "bottom", "toSide": "top" },
-    { "id": "e_collector_master", "from": "collector", "to": "company_master", "label": "공개 공고 원문 결합", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_master_indexer", "from": "company_master", "to": "indexer", "label": "L1/L2/L3 원문", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_master_permfilter", "from": "company_master", "to": "perm_filter", "label": "ACL 메타데이터", "variant": "security" },
-    { "id": "e_indexer_search", "from": "indexer", "to": "hybrid_search", "label": "parent chunk + 벡터" },
-    { "id": "e_ui_permfilter", "from": "demo_ui", "to": "perm_filter", "label": "질문 + 세션(tenant/role)", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_permfilter_search", "from": "perm_filter", "to": "hybrid_search", "label": "허용 문서만 전달", "variant": "security", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_search_gen", "from": "hybrid_search", "to": "gen", "label": "RRF 상위 근거 (parent ≤6)", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_gen_store", "from": "gen", "to": "answer_store", "label": "답변 + 인용 + hash", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
-    { "id": "e_permfilter_opsauth", "from": "perm_filter", "to": "ops_auth", "label": "운영 IdP·감사로그 미연결", "variant": "dashed" },
-    { "id": "e_store_klue", "from": "answer_store", "to": "klue", "label": "근거·답변 동일 입력", "variant": "dashed" },
-    { "id": "e_store_review", "from": "answer_store", "to": "human_review", "label": "구절 대조", "variant": "dashed" }
+    {
+      "id": "e_g2b_collector",
+      "from": "g2b_api",
+      "to": "collector",
+      "label": "공고·첨부 조회",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 9
+    },
+    {
+      "id": "e_collector_master",
+      "from": "collector",
+      "to": "company_master",
+      "label": "공개 공고 원문 결합",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 19
+    },
+    {
+      "id": "e_master_indexer",
+      "from": "company_master",
+      "to": "indexer",
+      "label": "L1/L2/L3 원문",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 19
+    },
+    {
+      "id": "e_master_permfilter",
+      "from": "company_master",
+      "to": "perm_filter",
+      "label": "ACL 메타데이터",
+      "variant": "security"
+    },
+    {
+      "id": "e_indexer_search",
+      "from": "indexer",
+      "to": "hybrid_search",
+      "label": "parent chunk + 벡터"
+    },
+    {
+      "id": "e_ui_permfilter",
+      "from": "demo_ui",
+      "to": "perm_filter",
+      "label": "질문 + 세션(tenant/role)",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        490,
+        116
+      ]
+    },
+    {
+      "id": "e_permfilter_search",
+      "from": "perm_filter",
+      "to": "hybrid_search",
+      "label": "허용 문서만 전달",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 19
+    },
+    {
+      "id": "e_search_gen",
+      "from": "hybrid_search",
+      "to": "gen",
+      "label": "RRF 상위 근거 (parent ≤6)",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 19
+    },
+    {
+      "id": "e_gen_store",
+      "from": "gen",
+      "to": "answer_store",
+      "label": "답변 + 인용 + hash",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 19
+    },
+    {
+      "id": "e_permfilter_opsauth",
+      "from": "perm_filter",
+      "to": "ops_auth",
+      "label": "운영 IdP·감사로그 미연결",
+      "variant": "dashed",
+      "labelDy": 56
+    },
+    {
+      "id": "e_store_klue",
+      "from": "answer_store",
+      "to": "klue",
+      "label": "근거·답변 동일 입력",
+      "variant": "dashed",
+      "labelDy": 20
+    },
+    {
+      "id": "e_store_review",
+      "from": "answer_store",
+      "to": "human_review",
+      "label": "구절 대조",
+      "variant": "dashed",
+      "labelDy": -40
+    }
   ]
 }
