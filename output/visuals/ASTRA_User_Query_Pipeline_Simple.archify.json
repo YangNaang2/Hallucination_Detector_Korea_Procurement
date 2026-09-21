@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "공공입찰 AI 사용자 질의 파이프라인",
+    "subtitle": "질문 입력에서 근거와 환각 의심 구절이 표시된 답변까지",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "output": "output/visuals/ASTRA_User_Query_Pipeline_Simple.html",
+    "legend": { "mode": "hidden" }
+  },
+  "lanes": [
+    { "id": "search", "label": "질문·검색" },
+    { "id": "answer", "label": "생성·검증" }
+  ],
+  "mainPath": ["user_query", "access", "hybrid", "generate", "detect", "result"],
+  "nodes": [
+    { "id": "user_query", "lane": "search", "col": 0, "type": "frontend", "label": "사용자 질문", "sublabel": "공고 선택 · 질문 입력", "width": 184, "height": 88 },
+    { "id": "access", "lane": "search", "col": 1, "type": "security", "label": "권한 필터", "sublabel": "L1/L2/L3 접근 범위 확인", "width": 184, "height": 88 },
+    { "id": "hybrid", "lane": "search", "col": 2, "type": "database", "label": "하이브리드 RAG 검색", "sublabel": "Lexical + Dense → RRF Top 6", "width": 200, "height": 88 },
+    { "id": "generate", "lane": "answer", "col": 2, "type": "backend", "label": "LLM 답변 생성", "sublabel": "검색 근거를 함께 입력", "width": 184, "height": 88 },
+    { "id": "detect", "lane": "answer", "col": 3, "type": "security", "label": "환각·규칙 검증", "sublabel": "의심 구절 · 숫자·날짜 대조", "width": 194, "height": 88 },
+    { "id": "result", "lane": "answer", "col": 4, "type": "frontend", "label": "검증 결과 제공", "sublabel": "답변 · 근거 · 형광펜", "width": 184, "height": 88 }
+  ],
+  "edges": [
+    { "from": "user_query", "to": "access" },
+    { "from": "access", "to": "hybrid" },
+    { "from": "hybrid", "to": "generate" },
+    { "from": "generate", "to": "detect" },
+    { "from": "detect", "to": "result" }
+  ]
+}
