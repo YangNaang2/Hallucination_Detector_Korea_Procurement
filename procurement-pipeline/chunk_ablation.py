@@ -300,9 +300,13 @@ def main():
     originals = baseline_chunks(local / "index.sqlite")
     private = [chunk for chunk in originals if chunk["security_level"] != "L1"]
     docs = public_documents(manifest, read(source_path))
-    questions = [q for q in jsonl(dataset_path) if q.get("public_notice_evidence") and q["expected_status"] != "access_denied"]
-    if len(questions) != 295:
-        raise ValueError(f"Expected 295 evaluable questions, found {len(questions)}")
+    candidates = [q for q in jsonl(dataset_path) if q.get("public_notice_evidence") and q["expected_status"] != "access_denied"]
+    excluded = [q["question_id"] for q in candidates if any(
+        ev.get("text_start") is None or ev.get("text_end") is None for ev in q["public_notice_evidence"]
+    )]
+    questions = [q for q in candidates if q["question_id"] not in set(excluded)]
+    if len(candidates) != 295 or len(questions) != 292:
+        raise ValueError(f"Expected 295 candidates / 292 offset-evaluable, found {len(candidates)} / {len(questions)}")
     encoder = Encoder(model_dir, args.device)
     query_texts = sorted({q["question"] for q in questions})
     query_started = time.perf_counter()
@@ -338,7 +342,9 @@ def main():
         "model": "intfloat/multilingual-e5-small", "model_revision": MODEL_REVISION,
         "model_sha256": sha256(model_dir / "model.safetensors"),
         "dataset_sha256": sha256(dataset_path), "source_cache_sha256": sha256(source_path),
-        "code_sha256": sha256(Path(__file__)), "questions": len(questions),
+        "code_sha256": sha256(Path(__file__)), "candidate_questions": len(candidates),
+        "questions": len(questions), "excluded_questions": excluded,
+        "exclusion_reason": "gold public evidence has null canonical offsets; not scored",
         "query_embeddings": len(query_texts), "query_embedding_seconds": query_seconds,
         "original_documents": len(docs), "baseline_private_chunks": len(private),
         "rrf_k": 60, "retrieval_top_k": 6, "generation_context_top_k": 4,
