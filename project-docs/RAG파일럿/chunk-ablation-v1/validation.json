@@ -1,0 +1,173 @@
+{
+  "status": "passed",
+  "result_status": "completed",
+  "candidate_questions": 295,
+  "scored_questions": 292,
+  "excluded_questions": [
+    "ASTRA-300-C02-P05",
+    "ASTRA-300-C02-S02",
+    "ASTRA-300-C03-P01"
+  ],
+  "strategies": 8,
+  "rows_per_strategy": {
+    "flat-token-460": 292,
+    "parent-900-w460": 292,
+    "parent-1200-w460": 292,
+    "parent-1800-first460": 292,
+    "parent-1800-w256": 292,
+    "parent-1800-w384": 292,
+    "parent-1800-w460": 292,
+    "parent-2400-w460": 292
+  },
+  "unique_question_ids_per_strategy": {
+    "flat-token-460": 292,
+    "parent-900-w460": 292,
+    "parent-1200-w460": 292,
+    "parent-1800-first460": 292,
+    "parent-1800-w256": 292,
+    "parent-1800-w384": 292,
+    "parent-1800-w460": 292,
+    "parent-2400-w460": 292
+  },
+  "current_window_count_matches_recorded_baseline": true,
+  "current_parent_count_matches_recorded_baseline": true,
+  "hit6_wilson_95": {
+    "flat-token-460": [
+      0.6937037352556817,
+      0.7930432266320312
+    ],
+    "parent-900-w460": [
+      0.711745077810636,
+      0.8088037564303905
+    ],
+    "parent-1200-w460": [
+      0.7226206588120277,
+      0.8182092988409865
+    ],
+    "parent-1800-first460": [
+      0.7081285101819402,
+      0.8056599495884235
+    ],
+    "parent-1800-w256": [
+      0.7518245830528384,
+      0.8430883703654773
+    ],
+    "parent-1800-w384": [
+      0.7481570630257256,
+      0.8399955159219273
+    ],
+    "parent-1800-w460": [
+      0.7335364853040268,
+      0.8275745957609756
+    ],
+    "parent-2400-w460": [
+      0.7408370517658587,
+      0.8337947782404691
+    ]
+  },
+  "paired_vs_current": {
+    "parent-1800-w256": {
+      "gained_hit6": 8,
+      "lost_hit6": 3,
+      "net": 5,
+      "gained_ids": [
+        "ASTRA-300-C01-N42-E5",
+        "ASTRA-300-C02-N08-E5",
+        "ASTRA-300-C02-N46-E2",
+        "ASTRA-300-C04-N09-E1",
+        "ASTRA-300-C04-N11-E4",
+        "ASTRA-300-C04-N44-E1",
+        "ASTRA-300-C04-P01",
+        "ASTRA-300-C05-N09-E2"
+      ],
+      "lost_ids": [
+        "ASTRA-300-C01-N12-E5",
+        "ASTRA-300-C03-N18-E1",
+        "ASTRA-300-C03-N37-E2"
+      ]
+    },
+    "parent-1800-w384": {
+      "gained_hit6": 7,
+      "lost_hit6": 3,
+      "net": 4,
+      "gained_ids": [
+        "ASTRA-300-C01-N42-E5",
+        "ASTRA-300-C02-N08-E5",
+        "ASTRA-300-C02-N30-E3",
+        "ASTRA-300-C03-N22-E2",
+        "ASTRA-300-C04-N24-E1",
+        "ASTRA-300-C04-N44-E1",
+        "ASTRA-300-C04-P01"
+      ],
+      "lost_ids": [
+        "ASTRA-300-C02-N43-E5",
+        "ASTRA-300-C03-N38-E1",
+        "ASTRA-300-C05-N50-E1"
+      ]
+    },
+    "parent-2400-w460": {
+      "gained_hit6": 14,
+      "lost_hit6": 12,
+      "net": 2,
+      "gained_ids": [
+        "ASTRA-300-C01-N10-E2",
+        "ASTRA-300-C01-N34-E3",
+        "ASTRA-300-C01-N42-E5",
+        "ASTRA-300-C02-N08-E5",
+        "ASTRA-300-C02-N25-E3",
+        "ASTRA-300-C02-N50-E3",
+        "ASTRA-300-C03-N19-E5",
+        "ASTRA-300-C03-N40-E4",
+        "ASTRA-300-C04-N11-E4",
+        "ASTRA-300-C04-N44-E1",
+        "ASTRA-300-C04-P01",
+        "ASTRA-300-C05-N09-E2",
+        "ASTRA-300-C05-N10-E1",
+        "ASTRA-300-C05-N26-E5"
+      ],
+      "lost_ids": [
+        "ASTRA-300-C01-N06-E1",
+        "ASTRA-300-C01-N15-E2",
+        "ASTRA-300-C01-N21-E1",
+        "ASTRA-300-C01-N44-E3",
+        "ASTRA-300-C01-N48-E4",
+        "ASTRA-300-C03-N11-E3",
+        "ASTRA-300-C03-N38-E1",
+        "ASTRA-300-C04-N12-E3",
+        "ASTRA-300-C04-N29-E1",
+        "ASTRA-300-C04-N34-E1",
+        "ASTRA-300-C04-N35-E5",
+        "ASTRA-300-C05-N48-E3"
+      ]
+    },
+    "parent-1800-first460": {
+      "gained_hit6": 6,
+      "lost_hit6": 13,
+      "net": -7,
+      "gained_ids": [
+        "ASTRA-300-C01-N42-E5",
+        "ASTRA-300-C02-N08-E5",
+        "ASTRA-300-C03-N19-E5",
+        "ASTRA-300-C03-N40-E4",
+        "ASTRA-300-C05-N09-E2",
+        "ASTRA-300-C05-N24-E2"
+      ],
+      "lost_ids": [
+        "ASTRA-300-C01-N06-E1",
+        "ASTRA-300-C01-N43-E4",
+        "ASTRA-300-C01-N50-E2",
+        "ASTRA-300-C02-N02-E1",
+        "ASTRA-300-C02-P01",
+        "ASTRA-300-C03-N18-E1",
+        "ASTRA-300-C03-N36-E3",
+        "ASTRA-300-C03-N37-E2",
+        "ASTRA-300-C04-N04-E1",
+        "ASTRA-300-C04-N13-E2",
+        "ASTRA-300-C04-N29-E1",
+        "ASTRA-300-C05-N12-E4",
+        "ASTRA-300-C05-N32-E4"
+      ]
+    }
+  },
+  "posthoc_metric": "Hit@4 was added only as an operational supplement because generation uses top 4; it was not a preregistered selection metric."
+}

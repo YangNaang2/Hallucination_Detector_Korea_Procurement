@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#f7f9fc"/>
+<style>text{font-family:Arial,"Noto Sans KR",sans-serif;fill:#172033}.title{font-size:29px;font-weight:700}.sub{font-size:15px;fill:#5b6578}.lab{font-size:15px}.val{font-size:14px;font-weight:700}.axis{font-size:12px;fill:#6c7484}</style>
+<text x="60" y="55" class="title">Parent–Embedding Window 청크 비교</text>
+<text x="60" y="84" class="sub">292건 회고적 개발 비교 · Gold Hit@6 · 답변 생성 미실행 · 독립 테스트 아님</text>
+<line x1="280.0" y1="115" x2="280.0" y2="555" stroke="#dbe1ea"/>
+<text x="280.0" y="579" text-anchor="middle" class="axis">0%</text>
+<line x1="444.0" y1="115" x2="444.0" y2="555" stroke="#dbe1ea"/>
+<text x="444.0" y="579" text-anchor="middle" class="axis">20%</text>
+<line x1="608.0" y1="115" x2="608.0" y2="555" stroke="#dbe1ea"/>
+<text x="608.0" y="579" text-anchor="middle" class="axis">40%</text>
+<line x1="772.0" y1="115" x2="772.0" y2="555" stroke="#dbe1ea"/>
+<text x="772.0" y="579" text-anchor="middle" class="axis">60%</text>
+<line x1="936.0" y1="115" x2="936.0" y2="555" stroke="#dbe1ea"/>
+<text x="936.0" y="579" text-anchor="middle" class="axis">80%</text>
+<line x1="1100.0" y1="115" x2="1100.0" y2="555" stroke="#dbe1ea"/>
+<text x="1100.0" y="579" text-anchor="middle" class="axis">100%</text>
+<text x="264" y="144" text-anchor="end" class="lab">Flat 460</text>
+<rect x="280" y="128" width="612.1917808219177" height="25" rx="5" fill="#64a6ef"/>
+<text x="902.1917808219177" y="146" class="val">74.66% · MRR 58.20%</text>
+<text x="264" y="196" text-anchor="end" class="lab">P900 / W460</text>
+<rect x="280" y="180" width="626.2328767123288" height="25" rx="5" fill="#64a6ef"/>
+<text x="916.2328767123288" y="198" class="val">76.37% · MRR 57.52%</text>
+<text x="264" y="248" text-anchor="end" class="lab">P1200 / W460</text>
+<rect x="280" y="232" width="634.6575342465753" height="25" rx="5" fill="#64a6ef"/>
+<text x="924.6575342465753" y="250" class="val">77.40% · MRR 58.08%</text>
+<text x="264" y="300" text-anchor="end" class="lab">P1800 / 첫 W만</text>
+<rect x="280" y="284" width="623.4246575342466" height="25" rx="5" fill="#64a6ef"/>
+<text x="913.4246575342466" y="302" class="val">76.03% · MRR 58.67%</text>
+<text x="264" y="352" text-anchor="end" class="lab">P1800 / W256</text>
+<rect x="280" y="336" width="657.1232876712329" height="25" rx="5" fill="#64a6ef"/>
+<text x="947.1232876712329" y="354" class="val">80.14% · MRR 60.01%</text>
+<text x="264" y="404" text-anchor="end" class="lab">P1800 / W384</text>
+<rect x="280" y="388" width="654.3150684931506" height="25" rx="5" fill="#2b6de0"/>
+<text x="944.3150684931506" y="406" class="val">79.79% · MRR 60.96%</text>
+<text x="264" y="456" text-anchor="end" class="lab">P1800 / W460 (현재)</text>
+<rect x="280" y="440" width="643.082191780822" height="25" rx="5" fill="#7f8da8"/>
+<text x="933.082191780822" y="458" class="val">78.42% · MRR 60.37%</text>
+<text x="264" y="508" text-anchor="end" class="lab">P2400 / W460</text>
+<rect x="280" y="492" width="648.6986301369864" height="25" rx="5" fill="#64a6ef"/>
+<text x="938.6986301369864" y="510" class="val">79.11% · MRR 58.05%</text>
+<rect x="60" y="610" width="1080" height="56" rx="12" fill="#eaf1ff"/>
+<text x="82" y="635" class="sub">균형 후보: Parent 1,800자 + Window 384토큰 — 최고 MRR@6, Hit@1, 생성 top4 보조지표.</text>
+<text x="82" y="658" class="sub">재현성: 256·384·460 설정의 95% 신뢰구간이 겹치므로 우위 확정이 아니라 후속 검증 후보로 해석.</text>
+</svg>
