@@ -1,0 +1,701 @@
+{
+  "run_id": "window384-gpu-v1",
+  "code_head": "6775cd2e0abddea1ff6ae770152a82a8e411570b",
+  "config": {
+    "requests_sha256": "abea5f29b3b6cc7a8c96540765ad540984365a3e0eb67519e5f5ed1ffaa40204",
+    "index_sha256": "4fb586434b27871cf123a22554354348b22325d3f6bdf01147a224d53bf3b8e0",
+    "embedding_sha256": "9c88424d9987105f2d7f616cc036cc8e23ef553df45594fd7d13070b6aba735c",
+    "vectors_sha256": "09d08e9303a21f35dad3d75f17a92198c6c867991dae5dd3c787d0bb96703d2e",
+    "queries_sha256": "51c14a709ef3cc25da938fb36be022a9c92fc7263fd91e9ed3e37be0905eebca",
+    "generation": {
+      "alias": "qwen3-4b-vulkan",
+      "model": "Qwen/Qwen3-4B-GGUF",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "model_path": "qwen3/Qwen3-4B-Q4_K_M.gguf",
+      "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "quantization": "Q4_K_M",
+      "context": 4096,
+      "max_tokens": 768,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "enable_thinking": false,
+      "cache_type": "f16",
+      "max_evidence_chunks": 4,
+      "min_p": 0.05,
+      "presence_penalty": 0.0,
+      "batch": 512,
+      "ubatch": 512,
+      "threads": 8,
+      "profile_version": "workstation-vulkan-v1",
+      "endpoint": "http://127.0.0.1:18769",
+      "parallel_slots": 4,
+      "backend": "Vulkan",
+      "device": "Vulkan0",
+      "gpu_layers": 999
+    },
+    "code": {
+      "adapt_g2b.py": "463bbd7224181fc03d2e3f159c10e139bfe5363dc3fc197e09af5aaedba74b1f",
+      "audit_workstation_rag.py": "1e367a0e2de2e67878d47a0d835b2a5145e707e9b0baffc9e80117ab0e4b3490",
+      "benchmark_rag_pilot.py": "4d0e8328619a00fea4dfe6a10fbee0045dfb2c5cf853e52aa592c0042735a299",
+      "build_label_pilot.py": "f3c44b51affcacd1b4c07d69b2763492492343d861fed05014b0cb66044505c1",
+      "build_qa300.py": "80d28d24fc42051f7ed10b7e3e43cd14592f672380800dfba123def651555aa5",
+      "check_rag_pilot.py": "ea76d24886cb9597e914288c5e063268d2ef98851f4796683c47ad419db85af0",
+      "chunk_ablation.py": "7fc71fa3ee1957d1a57268c77ab7c15b9982fc579bbd2285140fcbe93629f4be",
+      "common.py": "fbc7485f50b34637bd21b4d3bbb7036886e9522f3093c0dbc5c1d447754019c8",
+      "context_qa300.py": "4ff612a84e4cfd933808783fa1c59273837f342f04fd4e355384f0d23fb650d8",
+      "evaluate_rag_pilot.py": "2df9c6e4f2046811516b7613eeb738e77ddc45b3a70269741cec45b05de644ce",
+      "finalize_rag_pilot.py": "304c9f511a6b414e25982b139428fbc73b9384910abe75efd8caf739c1a59b61",
+      "finalize_workstation_rag.py": "f43827d02d8a298c3d24c518211de368e83d6cdace7a6d7d804a6d83d3f964e3",
+      "generate.py": "0b9b6aa91ee10b76c5db9240013726c9f5ac40b3a0ee3e2ec66d3360ac2dc15b",
+      "generate_c01_documents.py": "ecbc18005efbd41fc73c0a712e4318d79097de3cf4363ff176e67f5f1eeb3d90",
+      "generate_remaining_companies.py": "11be8329bd7c6819b4208f3650934234274a25727cfbf5f7a28189a9b870f223",
+      "import_pilot_reviews.py": "531d8edbd2a33b1c925db4ca9945a14dce7b616b47514ffcfd1e6bc37524501e",
+      "label_pilot_specs.py": "66426c892340a1de673f2e7c51b790adc4c1c71f1aa5b1f9c80039f4423c532a",
+      "make_example.py": "7aa1b7e04b8d5f81e26e20e84b260667c9d73b6b52532519290226de3bd3b63f",
+      "package_team_review.py": "adf58f6ae2c4fccbb4ff43c6aa95664b40bc80c6d516d2ec4a1303b01c6369dc",
+      "prepare.py": "7949653a5e3c12adc49c6a6a7931553f4d8632b2baee12bc0a38710d5fff31d7",
+      "prepare_detector300_handoff.py": "2917e6b0038e68bb036f587b823305656a08dd9772c00592f8139c6841320e3f",
+      "qa300_schemas.py": "3c9c2a8c02027ab30b9132b190c4e1b1bde98f729c934570b589f03bb81a1e57",
+      "rag_pilot.py": "11530cc4249da3cf84ccf1ba4558931c5548787571fe11c07d2f06de59eb8b39",
+      "rag_pilot_calculation.py": "1e393f5a3637894b470de0db2881c381712ed4776b39d4fd4fbe7a30923faf2b",
+      "rag_pilot_embedding.py": "b6cf9c119d5773c4a79a0679fbbd2b83721c1b3660a0fbe05e852eff2c7a21c8",
+      "rag_pilot_routing.py": "e10c24ea6bcc07404cc821126d2e7f8babe6d4c39f2add3b5889cdf42ecb3340",
+      "review_pilot_return_specs.py": "a1d3dcbe1208fe25eec4b74d238259d3e04a87beb25ecfb75197cbcade2dc33e",
+      "run_qa300_checks.py": "24d2da846b0008dbe1326bdeff2a0a82e9b0c6460f7c27a7535bbe9d634f4fae",
+      "run_workstation_shards.py": "4188bd93a54dc0f96bca889c7eaf79b974e9237d834382496d47463149314217",
+      "security_schema.py": "148f74fe620bcdec83642e6178c3fcae59a84d412042b7fa17c3181649a58540",
+      "setup_rag_pilot.py": "3054e9fdbad825ca74c0c5c99f86a851161453c97bd1fc72db0660e71f469237",
+      "setup_workstation_rag.py": "a77fbbdc4245f96eecd9f6314216c190ce8b8e1eadb90eca3fa293d0ab48a0af",
+      "start_host_gpu_rag.py": "e6712ff5cc37ca615fe9dcd5f5b304e5519e2bf79f72d84756c957bf5ce57743",
+      "start_workstation_rag_server.py": "e326d53a314f5264c3ac3c369e4c3558ac72294cc6992e274e3150d88f7849e3",
+      "summarize_rag_pilot.py": "09123edc893a844cad36b51689350da35ed08fb99c073c9f22b8005c74315c11",
+      "test_adapter.py": "e393a7dea3d7f6d2630446496ce93300048c09d6a74c37d10cb908387bc9710a",
+      "test_c01_documents.py": "1cba597e0b58cbae21c8f2bad2861c00c7ba7f29fea80d5a944ffd4b2d3c14e8",
+      "test_company_master.py": "fc84b48e1e265de8338035615313068b8245d152dd106aa571b706bd8c722c9f",
+      "test_finalize_workstation.py": "ba62543554d207c2b6f394ed2466ca59bd71733b245b18b571d3acb1e8c2a0cc",
+      "test_label_pilot.py": "acf5199f293debeca9f5f03a1ad0e98eda13c9b84554dd52f3a9f49c6e06e5b3",
+      "test_pilot_reviews.py": "72f7951c2f1f26b2873edeafbb3ac6e20772ee0d5d15eea7bf08df1200ffd8ae",
+      "test_pipeline.py": "8cd41f7694361afb84d941db61c2a3efde1718e0623abc944df6921bf343e1b0",
+      "test_qa300.py": "500a9b2aa669047860aace87bcf796a39ab5e91aef2f99a89ba60760e02f576d",
+      "test_rag_pilot.py": "9296969037ed79eab90532e166b33bb0251f51a0816d25616c32c2763d666f42",
+      "test_rag_pilot_calculation.py": "1d8be7075ffa010bb4aa56db88ad8802d09d186b35ff4f29789c37c9dbde1bb3",
+      "test_remaining_companies.py": "13abec71378ac34a58eca3cda3a09b5758caf48e65540c5712492f5d0dfba085",
+      "test_workstation_rag.py": "8c164eaec5f2a8285b0c29954368aad63df313302c698947f50cc348f1ff6459",
+      "test_workstation_routing.py": "03bcce5c588c6ec32f093954c51c7690f5730f71bb73485f2072e07ed462bcb1",
+      "test_workstation_shards.py": "382f3910d05b986820d1017dc59d237154f8ebcd99bc68c54e83e942dba09a37",
+      "validate_company_master.py": "917066daf72d9d9b1716f73a0839ea3850606cc02075911d5e48ffac7b2dba54",
+      "validate_qa300.py": "1335fd2869527ed171e42c39a118856807d69367355f88d23e1dd109605423b8",
+      "validate_team_workbooks.py": "5b652d37217afed27a862e5fc2f977ff5882be4d92005893f2679aede792f5e3",
+      "workstation_rag.py": "154d6ed29ff7f0030c9091ac5b2be6fa9a258d22593c9039f957ca84dc9e09cf"
+    },
+    "generation_model_sha256_verified": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "attempts": {
+    "ASTRA-300-C01-N04-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N04-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N04-E3-a001/ASTRA-300-C01-N04-E3.json",
+        "status": "generated",
+        "wall_seconds": 19.851435041986406
+      }
+    ],
+    "ASTRA-300-C01-N08-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N08-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N08-E4-a001/ASTRA-300-C01-N08-E4.json",
+        "status": "generated",
+        "wall_seconds": 7.107132854987867
+      }
+    ],
+    "ASTRA-300-C01-N12-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N12-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N12-E5-a001/ASTRA-300-C01-N12-E5.json",
+        "status": "generated",
+        "wall_seconds": 6.637783717946149
+      }
+    ],
+    "ASTRA-300-C01-N16-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N16-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N16-E1-a001/ASTRA-300-C01-N16-E1.json",
+        "status": "generated",
+        "wall_seconds": 9.896791205042973
+      }
+    ],
+    "ASTRA-300-C01-N20-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N20-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N20-E2-a001/ASTRA-300-C01-N20-E2.json",
+        "status": "generated",
+        "wall_seconds": 5.692798819043674
+      }
+    ],
+    "ASTRA-300-C01-N24-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N24-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N24-E3-a001/ASTRA-300-C01-N24-E3.json",
+        "status": "generated",
+        "wall_seconds": 7.574384941952303
+      }
+    ],
+    "ASTRA-300-C01-N28-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N28-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N28-E4-a001/ASTRA-300-C01-N28-E4.json",
+        "status": "generated",
+        "wall_seconds": 6.247794482973404
+      }
+    ],
+    "ASTRA-300-C01-N32-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N32-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N32-E5-a001/ASTRA-300-C01-N32-E5.json",
+        "status": "generated",
+        "wall_seconds": 12.770767959067598
+      }
+    ],
+    "ASTRA-300-C01-N36-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N36-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N36-E1-a001/ASTRA-300-C01-N36-E1.json",
+        "status": "generated",
+        "wall_seconds": 8.514382940949872
+      }
+    ],
+    "ASTRA-300-C01-N40-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N40-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N40-E2-a001/ASTRA-300-C01-N40-E2.json",
+        "status": "generated",
+        "wall_seconds": 7.287826415966265
+      }
+    ],
+    "ASTRA-300-C01-N44-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N44-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N44-E3-a001/ASTRA-300-C01-N44-E3.json",
+        "status": "generated",
+        "wall_seconds": 8.784009310998954
+      }
+    ],
+    "ASTRA-300-C01-N48-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-N48-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-N48-E4-a001/ASTRA-300-C01-N48-E4.json",
+        "status": "generated",
+        "wall_seconds": 9.649282176047564
+      }
+    ],
+    "ASTRA-300-C01-P01": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-P01-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-P01-a001/ASTRA-300-C01-P01.json",
+        "status": "generated",
+        "wall_seconds": 10.489221471943893
+      }
+    ],
+    "ASTRA-300-C01-P05": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-P05-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-P05-a001/ASTRA-300-C01-P05.json",
+        "status": "generated",
+        "wall_seconds": 13.30491375096608
+      }
+    ],
+    "ASTRA-300-C01-S04": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C01-S04-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C01-S04-a001/ASTRA-300-C01-S04.json",
+        "status": "access_denied",
+        "wall_seconds": 0.4125233649974689
+      }
+    ],
+    "ASTRA-300-C02-N04-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N04-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N04-E4-a001/ASTRA-300-C02-N04-E4.json",
+        "status": "generated",
+        "wall_seconds": 6.84393553098198
+      }
+    ],
+    "ASTRA-300-C02-N08-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N08-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N08-E5-a001/ASTRA-300-C02-N08-E5.json",
+        "status": "generated",
+        "wall_seconds": 13.85570633399766
+      }
+    ],
+    "ASTRA-300-C02-N12-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N12-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N12-E1-a001/ASTRA-300-C02-N12-E1.json",
+        "status": "generated",
+        "wall_seconds": 14.202756064012647
+      }
+    ],
+    "ASTRA-300-C02-N16-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N16-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N16-E2-a001/ASTRA-300-C02-N16-E2.json",
+        "status": "generated",
+        "wall_seconds": 7.162868381012231
+      }
+    ],
+    "ASTRA-300-C02-N20-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N20-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N20-E3-a001/ASTRA-300-C02-N20-E3.json",
+        "status": "generated",
+        "wall_seconds": 7.854625200969167
+      }
+    ],
+    "ASTRA-300-C02-N24-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N24-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N24-E4-a001/ASTRA-300-C02-N24-E4.json",
+        "status": "generated",
+        "wall_seconds": 10.723527785972692
+      }
+    ],
+    "ASTRA-300-C02-N28-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N28-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N28-E5-a001/ASTRA-300-C02-N28-E5.json",
+        "status": "generated",
+        "wall_seconds": 11.509339973912574
+      }
+    ],
+    "ASTRA-300-C02-N32-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N32-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N32-E1-a001/ASTRA-300-C02-N32-E1.json",
+        "status": "generated",
+        "wall_seconds": 12.510314253973775
+      }
+    ],
+    "ASTRA-300-C02-N36-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N36-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N36-E2-a001/ASTRA-300-C02-N36-E2.json",
+        "status": "generated",
+        "wall_seconds": 12.113764990936033
+      }
+    ],
+    "ASTRA-300-C02-N40-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N40-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N40-E3-a001/ASTRA-300-C02-N40-E3.json",
+        "status": "generated",
+        "wall_seconds": 11.12661520508118
+      }
+    ],
+    "ASTRA-300-C02-N44-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N44-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N44-E4-a001/ASTRA-300-C02-N44-E4.json",
+        "status": "generated",
+        "wall_seconds": 10.214433458982967
+      }
+    ],
+    "ASTRA-300-C02-N48-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-N48-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-N48-E5-a001/ASTRA-300-C02-N48-E5.json",
+        "status": "generated",
+        "wall_seconds": 7.913524996023625
+      }
+    ],
+    "ASTRA-300-C02-P01": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-P01-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-P01-a001/ASTRA-300-C02-P01.json",
+        "status": "generated",
+        "wall_seconds": 5.816707739955746
+      }
+    ],
+    "ASTRA-300-C02-P05": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-P05-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-P05-a001/ASTRA-300-C02-P05.json",
+        "status": "generated",
+        "wall_seconds": 9.855542103992775
+      }
+    ],
+    "ASTRA-300-C02-S04": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C02-S04-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C02-S04-a001/ASTRA-300-C02-S04.json",
+        "status": "access_denied",
+        "wall_seconds": 0.40293006296269596
+      }
+    ],
+    "ASTRA-300-C03-N04-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N04-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N04-E5-a001/ASTRA-300-C03-N04-E5.json",
+        "status": "generated",
+        "wall_seconds": 6.719041305943392
+      }
+    ],
+    "ASTRA-300-C03-N08-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N08-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N08-E1-a001/ASTRA-300-C03-N08-E1.json",
+        "status": "generated",
+        "wall_seconds": 7.769357968936674
+      }
+    ],
+    "ASTRA-300-C03-N12-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N12-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N12-E2-a001/ASTRA-300-C03-N12-E2.json",
+        "status": "generated",
+        "wall_seconds": 7.092341911047697
+      }
+    ],
+    "ASTRA-300-C03-N16-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N16-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N16-E3-a001/ASTRA-300-C03-N16-E3.json",
+        "status": "generated",
+        "wall_seconds": 6.914845780003816
+      }
+    ],
+    "ASTRA-300-C03-N20-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N20-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N20-E4-a001/ASTRA-300-C03-N20-E4.json",
+        "status": "generated",
+        "wall_seconds": 11.700322175980546
+      }
+    ],
+    "ASTRA-300-C03-N24-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N24-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N24-E5-a001/ASTRA-300-C03-N24-E5.json",
+        "status": "generated",
+        "wall_seconds": 10.828865074086934
+      }
+    ],
+    "ASTRA-300-C03-N28-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N28-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N28-E1-a001/ASTRA-300-C03-N28-E1.json",
+        "status": "generated",
+        "wall_seconds": 11.893090367084369
+      }
+    ],
+    "ASTRA-300-C03-N32-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N32-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N32-E2-a001/ASTRA-300-C03-N32-E2.json",
+        "status": "generated",
+        "wall_seconds": 6.177765752072446
+      }
+    ],
+    "ASTRA-300-C03-N36-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N36-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N36-E3-a001/ASTRA-300-C03-N36-E3.json",
+        "status": "generated",
+        "wall_seconds": 10.347386615001597
+      }
+    ],
+    "ASTRA-300-C03-N40-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N40-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N40-E4-a001/ASTRA-300-C03-N40-E4.json",
+        "status": "generated",
+        "wall_seconds": 8.693188598030247
+      }
+    ],
+    "ASTRA-300-C03-N44-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N44-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N44-E5-a001/ASTRA-300-C03-N44-E5.json",
+        "status": "generated",
+        "wall_seconds": 8.836946169030853
+      }
+    ],
+    "ASTRA-300-C03-N48-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-N48-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-N48-E1-a001/ASTRA-300-C03-N48-E1.json",
+        "status": "generated",
+        "wall_seconds": 23.340404015034437
+      }
+    ],
+    "ASTRA-300-C03-P01": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-P01-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-P01-a001/ASTRA-300-C03-P01.json",
+        "status": "generated",
+        "wall_seconds": 10.52667068305891
+      }
+    ],
+    "ASTRA-300-C03-P05": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-P05-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-P05-a001/ASTRA-300-C03-P05.json",
+        "status": "generated",
+        "wall_seconds": 8.255840149940923
+      }
+    ],
+    "ASTRA-300-C03-S04": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C03-S04-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C03-S04-a001/ASTRA-300-C03-S04.json",
+        "status": "access_denied",
+        "wall_seconds": 0.43099345406517386
+      }
+    ],
+    "ASTRA-300-C04-N04-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N04-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N04-E1-a001/ASTRA-300-C04-N04-E1.json",
+        "status": "generated",
+        "wall_seconds": 11.907703805947676
+      }
+    ],
+    "ASTRA-300-C04-N08-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N08-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N08-E2-a001/ASTRA-300-C04-N08-E2.json",
+        "status": "generated",
+        "wall_seconds": 7.741823935997672
+      }
+    ],
+    "ASTRA-300-C04-N12-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N12-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N12-E3-a001/ASTRA-300-C04-N12-E3.json",
+        "status": "generated",
+        "wall_seconds": 9.388824444962665
+      }
+    ],
+    "ASTRA-300-C04-N16-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N16-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N16-E4-a001/ASTRA-300-C04-N16-E4.json",
+        "status": "generated",
+        "wall_seconds": 7.982167046051472
+      }
+    ],
+    "ASTRA-300-C04-N20-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N20-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N20-E5-a001/ASTRA-300-C04-N20-E5.json",
+        "status": "generated",
+        "wall_seconds": 8.202144679962657
+      }
+    ],
+    "ASTRA-300-C04-N24-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N24-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N24-E1-a001/ASTRA-300-C04-N24-E1.json",
+        "status": "generated",
+        "wall_seconds": 6.999639817047864
+      }
+    ],
+    "ASTRA-300-C04-N28-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N28-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N28-E2-a001/ASTRA-300-C04-N28-E2.json",
+        "status": "generated",
+        "wall_seconds": 10.94371300097555
+      }
+    ],
+    "ASTRA-300-C04-N32-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N32-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N32-E3-a001/ASTRA-300-C04-N32-E3.json",
+        "status": "generated",
+        "wall_seconds": 12.163831696962006
+      }
+    ],
+    "ASTRA-300-C04-N36-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N36-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N36-E4-a001/ASTRA-300-C04-N36-E4.json",
+        "status": "generated",
+        "wall_seconds": 5.66524527000729
+      }
+    ],
+    "ASTRA-300-C04-N40-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N40-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N40-E5-a001/ASTRA-300-C04-N40-E5.json",
+        "status": "generated",
+        "wall_seconds": 7.739110014983453
+      }
+    ],
+    "ASTRA-300-C04-N44-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N44-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N44-E1-a001/ASTRA-300-C04-N44-E1.json",
+        "status": "generated",
+        "wall_seconds": 9.340913167921826
+      }
+    ],
+    "ASTRA-300-C04-N48-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-N48-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-N48-E2-a001/ASTRA-300-C04-N48-E2.json",
+        "status": "generated",
+        "wall_seconds": 7.92807135602925
+      }
+    ],
+    "ASTRA-300-C04-P01": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-P01-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-P01-a001/ASTRA-300-C04-P01.json",
+        "status": "generated",
+        "wall_seconds": 11.998694272013381
+      }
+    ],
+    "ASTRA-300-C04-P05": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-P05-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-P05-a001/ASTRA-300-C04-P05.json",
+        "status": "generated",
+        "wall_seconds": 7.519115293980576
+      }
+    ],
+    "ASTRA-300-C04-S04": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C04-S04-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C04-S04-a001/ASTRA-300-C04-S04.json",
+        "status": "access_denied",
+        "wall_seconds": 0.4182827710174024
+      }
+    ],
+    "ASTRA-300-C05-N04-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N04-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N04-E2-a001/ASTRA-300-C05-N04-E2.json",
+        "status": "generated",
+        "wall_seconds": 11.230837147915736
+      }
+    ],
+    "ASTRA-300-C05-N08-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N08-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N08-E3-a001/ASTRA-300-C05-N08-E3.json",
+        "status": "generated",
+        "wall_seconds": 10.906610333011486
+      }
+    ],
+    "ASTRA-300-C05-N12-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N12-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N12-E4-a001/ASTRA-300-C05-N12-E4.json",
+        "status": "generated",
+        "wall_seconds": 11.203027107054368
+      }
+    ],
+    "ASTRA-300-C05-N16-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N16-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N16-E5-a001/ASTRA-300-C05-N16-E5.json",
+        "status": "generated",
+        "wall_seconds": 8.16533841600176
+      }
+    ],
+    "ASTRA-300-C05-N20-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N20-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N20-E1-a001/ASTRA-300-C05-N20-E1.json",
+        "status": "generated",
+        "wall_seconds": 7.3767834269674495
+      }
+    ],
+    "ASTRA-300-C05-N24-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N24-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N24-E2-a001/ASTRA-300-C05-N24-E2.json",
+        "status": "generated",
+        "wall_seconds": 15.919087285990827
+      }
+    ],
+    "ASTRA-300-C05-N28-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N28-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N28-E3-a001/ASTRA-300-C05-N28-E3.json",
+        "status": "generated",
+        "wall_seconds": 6.0057707239175215
+      }
+    ],
+    "ASTRA-300-C05-N32-E4": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N32-E4-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N32-E4-a001/ASTRA-300-C05-N32-E4.json",
+        "status": "generated",
+        "wall_seconds": 11.343705010949634
+      }
+    ],
+    "ASTRA-300-C05-N36-E5": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N36-E5-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N36-E5-a001/ASTRA-300-C05-N36-E5.json",
+        "status": "generated",
+        "wall_seconds": 9.137089913943782
+      }
+    ],
+    "ASTRA-300-C05-N40-E1": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N40-E1-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N40-E1-a001/ASTRA-300-C05-N40-E1.json",
+        "status": "generated",
+        "wall_seconds": 6.182363479048945
+      }
+    ],
+    "ASTRA-300-C05-N44-E2": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N44-E2-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N44-E2-a001/ASTRA-300-C05-N44-E2.json",
+        "status": "generated",
+        "wall_seconds": 5.9590467140078545
+      }
+    ],
+    "ASTRA-300-C05-N48-E3": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-N48-E3-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-N48-E3-a001/ASTRA-300-C05-N48-E3.json",
+        "status": "generated",
+        "wall_seconds": 7.4517957190983
+      }
+    ],
+    "ASTRA-300-C05-P01": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-P01-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-P01-a001/ASTRA-300-C05-P01.json",
+        "status": "generated",
+        "wall_seconds": 8.983739915885963
+      }
+    ],
+    "ASTRA-300-C05-P05": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-P05-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-P05-a001/ASTRA-300-C05-P05.json",
+        "status": "generated",
+        "wall_seconds": 6.508552851038985
+      }
+    ],
+    "ASTRA-300-C05-S04": [
+      {
+        "attempt_id": "window384-gpu-v1-ASTRA-300-C05-S04-a001",
+        "record_path": "evaluation/runs/window384-gpu-v1-ASTRA-300-C05-S04-a001/ASTRA-300-C05-S04.json",
+        "status": "access_denied",
+        "wall_seconds": 0.4064808749826625
+      }
+    ]
+  },
+  "human_approval": "pending",
+  "hallucination_spans": null,
+  "selection_policy": "Latest attempted result, including failed/interrupted; no success-based selection.",
+  "pid": null,
+  "current_question": null
+}

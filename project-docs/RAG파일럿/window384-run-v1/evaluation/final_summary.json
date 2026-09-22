@@ -1,0 +1,34 @@
+{
+  "run_id": "window384-gpu-v1",
+  "unique_questions": 300,
+  "counts": {
+    "generated": 295,
+    "access_denied": 5
+  },
+  "attempt_count": 301,
+  "initial_generation_failure_ids_recovered_by_same_config_retry": [
+    "ASTRA-300-C05-N14-E2"
+  ],
+  "invalid_citation_answers": 2,
+  "inspected_retrieved_chunks": 1770,
+  "generation_seconds": {
+    "sum_successful_requests": 2578.2341471757973,
+    "median": 8.108424528036267,
+    "minimum": 2.694797789095901,
+    "maximum": 23.254688545013778,
+    "scope": "Successful local HTTP calls; model/index/query encoding and process startup excluded. Four calls ran concurrently."
+  },
+  "w460_comparison": {
+    "top6_order_changed": 279,
+    "top4_order_changed": 234,
+    "answer_changed": 283,
+    "same_question_count": 300,
+    "limitation": "Temperature 0.7 means answer changes cannot be attributed only to W384 retrieval."
+  },
+  "integrity_failures": [],
+  "runtime_gold_fields_present": false,
+  "content_review": "evaluation_in_progress",
+  "human_approval": "pending",
+  "hallucination_detection": "evaluation_in_progress",
+  "interpretation": "Execution and provenance audit only. Counts are not answer accuracy, hallucination accuracy, or independent-test performance."
+}
