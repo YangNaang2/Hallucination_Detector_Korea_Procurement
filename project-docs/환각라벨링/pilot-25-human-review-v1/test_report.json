@@ -1,0 +1,7 @@
+{
+  "tests_run": 19,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Structural regression and injected corruption/approval/tenant failures; not semantic model accuracy"
+}

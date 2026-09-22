@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
 const core=require('./dist/public-notices-core.js');
 const rows=JSON.parse(fs.readFileSync(__dirname+'/dist/public-notices.json','utf8')).records.map(r=>({...r,region:core.locate(r.agency)}));
 assert.equal(rows.length,51);assert.equal(new Set(rows.map(r=>r.id)).size,51);
-assert.equal(rows.filter(r=>r.reviewAvailable).length,21);
+assert.equal(rows.filter(r=>r.reviewAvailable).length,51);
 assert(rows.every(r=>r.reviewAvailable?r.requirements.length===10:r.requirements.length===0));
 assert.equal(core.locate('세종대학교'),null);assert.equal(core.locate('한국과학기술정보연구원'),null);
 assert.equal(core.locate('대구광역시').name,'대구');
@@ -16,4 +16,6 @@ assert(joined.length);assert(joined.every(r=>r.reviewAvailable&&r.budget>=1e8&&r
 for(const f of [{},{min:3e8},{review:true},{region:'미확인'},{query:'한국과학기술정보연구원'}]){
  const visible=core.filter(rows,f);assert.equal(core.group(visible).reduce((n,g)=>n+g.records.length,0),visible.filter(r=>r.region).length);
 }
-console.log('PASS: 51 IDs, 21 sheets; budget boundaries, invalid ranges, combined filters, unknown locations and map counts');
+console.log('PASS: 51 IDs, 51 sheets; budget boundaries, invalid ranges, combined filters, unknown locations and map counts');
+
+for(const condition of ["지역","직접생산","공동수급","하도급","서비스 인증"]){const filtered=core.filter(rows,{condition,min:5e7});assert(filtered.every(r=>r.conditionMentions.includes(condition)&&r.budget>=5e7));assert.equal(core.group(filtered).reduce((n,g)=>n+g.records.length,0),filtered.filter(r=>r.region).length);}

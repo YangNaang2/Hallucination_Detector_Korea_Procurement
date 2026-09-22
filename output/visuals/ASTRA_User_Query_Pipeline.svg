@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">ASTRA 사용자 질의 파이프라인</title>
+  <desc id="desc">사용자 질문 입력부터 권한 필터, 하이브리드 검색, 로컬 LLM 답변 생성, 규칙 및 환각 검증, 결과 제공까지의 6단계 흐름</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFCFE"/>
+      <stop offset="1" stop-color="#F1F6FA"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#16324F" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2F6FAD"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#078B86"/>
+    </marker>
+    <style>
+      .kr { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+      .headline { font-size: 58px; font-weight: 800; fill: #102A43; letter-spacing: -1.5px; }
+      .subhead { font-size: 23px; font-weight: 500; fill: #627D98; }
+      .phase { font-size: 21px; font-weight: 800; fill: #FFFFFF; }
+      .stepBadge { font-size: 19px; font-weight: 800; fill: #FFFFFF; }
+      .cardTitle { font-size: 29px; font-weight: 800; fill: #102A43; }
+      .cardBody { font-size: 19px; font-weight: 500; fill: #486581; }
+      .miniTitle { font-size: 18px; font-weight: 800; fill: #243B53; }
+      .miniBody { font-size: 16px; font-weight: 500; fill: #526D82; }
+      .footer { font-size: 17px; font-weight: 600; fill: #526D82; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1770" cy="90" r="180" fill="#DDF4F1" opacity="0.42"/>
+  <circle cx="40" cy="1040" r="240" fill="#DBEAFE" opacity="0.35"/>
+
+  <text x="86" y="90" class="kr headline">사용자 질문은 어떻게 답변으로 바뀌는가</text>
+  <text x="88" y="133" class="kr subhead">ASTRA 사용자 질의 파이프라인 · 권한 확인부터 근거 검색과 환각 검증까지</text>
+  <line x1="86" y1="164" x2="1834" y2="164" stroke="#1F4E83" stroke-width="3"/>
+
+  <!-- PHASE 1 -->
+  <g transform="translate(72 201)">
+    <rect width="1090" height="370" rx="28" fill="#F3F8FD" stroke="#4D86BE" stroke-width="3" stroke-dasharray="12 7"/>
+    <rect x="20" y="-21" width="300" height="52" rx="18" fill="#2F6FAD"/>
+    <text x="40" y="13" class="kr phase">Phase 1 · 검색과 답변 생성</text>
+
+    <!-- STEP 1 -->
+    <g transform="translate(26 56)">
+      <rect width="318" height="278" rx="18" fill="#FFFFFF" stroke="#B8CADD" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#3F76D7"/>
+      <text x="34" y="46" class="kr stepBadge">1 단계</text>
+      <text x="122" y="48" class="kr cardTitle">질문 입력</text>
+      <rect x="18" y="78" width="282" height="78" rx="12" fill="#EDF4FD"/>
+      <text x="34" y="108" class="kr miniTitle">“우리 회사가 이 공고의</text>
+      <text x="34" y="136" class="kr miniTitle">실적 조건을 충족하나요?”</text>
+      <text x="24" y="193" class="kr cardBody">선택 공고 · 회사</text>
+      <text x="24" y="225" class="kr cardBody">사용자 역할 · 질문</text>
+      <text x="24" y="256" class="kr miniBody">서비스 요청 문맥 구성</text>
+    </g>
+
+    <line x1="360" y1="195" x2="390" y2="195" stroke="#2F6FAD" stroke-width="6" marker-end="url(#arrowBlue)"/>
+
+    <!-- STEP 2 -->
+    <g transform="translate(405 56)">
+      <rect width="318" height="278" rx="18" fill="#FFFFFF" stroke="#B8CADD" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#3F76D7"/>
+      <text x="34" y="46" class="kr stepBadge">2 단계</text>
+      <text x="122" y="48" class="kr cardTitle">권한 확인</text>
+      <rect x="18" y="78" width="282" height="72" rx="12" fill="#F6F8FB" stroke="#D9E2EC"/>
+      <text x="34" y="106" class="kr miniTitle">공고 · tenant · 역할</text>
+      <text x="34" y="133" class="kr miniTitle">L1 / L2 / L3 허용 범위</text>
+      <text x="24" y="190" class="kr cardBody">검색 전에 후보 제한</text>
+      <text x="24" y="222" class="kr cardBody">다른 회사 자료 차단</text>
+      <text x="24" y="256" class="kr miniBody">서버 세션 기준으로 검증</text>
+    </g>
+
+    <line x1="739" y1="195" x2="769" y2="195" stroke="#2F6FAD" stroke-width="6" marker-end="url(#arrowBlue)"/>
+
+    <!-- STEP 3 -->
+    <g transform="translate(784 56)">
+      <rect width="280" height="278" rx="18" fill="#FFFFFF" stroke="#B8CADD" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#3F76D7"/>
+      <text x="34" y="46" class="kr stepBadge">3 단계</text>
+      <text x="122" y="48" class="kr cardTitle">근거 검색</text>
+      <rect x="18" y="78" width="244" height="51" rx="12" fill="#E6F0FB"/>
+      <text x="36" y="111" class="kr miniTitle">키워드 검색</text>
+      <text x="137" y="111" class="kr miniBody">코드·금액</text>
+      <rect x="18" y="141" width="244" height="51" rx="12" fill="#E6F0FB"/>
+      <text x="36" y="174" class="kr miniTitle">벡터 검색</text>
+      <text x="137" y="174" class="kr miniBody">의미·문맥</text>
+      <text x="24" y="224" class="kr cardBody">두 순위를 결합해</text>
+      <text x="24" y="254" class="kr cardBody">관련 청크 선정</text>
+    </g>
+  </g>
+
+  <!-- bridge to phase 2 -->
+  <path d="M1169 382 H1213" fill="none" stroke="#6B7F93" stroke-width="6" marker-end="url(#arrowTeal)"/>
+
+  <!-- PHASE 2 -->
+  <g transform="translate(1207 201)">
+    <rect width="641" height="746" rx="28" fill="#F1FBFA" stroke="#0B9D96" stroke-width="3" stroke-dasharray="12 7"/>
+    <rect x="20" y="-21" width="307" height="52" rx="18" fill="#078B86"/>
+    <text x="40" y="13" class="kr phase">Phase 2 · 생성 답변 검증</text>
+
+    <!-- STEP 4 -->
+    <g transform="translate(26 56)">
+      <rect width="589" height="192" rx="18" fill="#FFFFFF" stroke="#A7DAD6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#1A9B92"/>
+      <text x="34" y="46" class="kr stepBadge">4 단계</text>
+      <text x="122" y="48" class="kr cardTitle">근거 기반 답변 생성</text>
+      <rect x="18" y="76" width="553" height="54" rx="12" fill="#E6F6F4"/>
+      <text x="36" y="109" class="kr miniTitle">질문 + 실제 검색 근거 → 로컬 LLM</text>
+      <text x="24" y="163" class="kr cardBody">답변 정본과 인용번호를 함께 생성</text>
+    </g>
+
+    <line x1="320" y1="260" x2="320" y2="297" stroke="#078B86" stroke-width="6" marker-end="url(#arrowTeal)"/>
+
+    <!-- STEP 5 -->
+    <g transform="translate(26 310)">
+      <rect width="589" height="192" rx="18" fill="#FFFFFF" stroke="#A7DAD6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#1A9B92"/>
+      <text x="34" y="46" class="kr stepBadge">5 단계</text>
+      <text x="122" y="48" class="kr cardTitle">규칙 검사 + 환각 탐지</text>
+      <g transform="translate(18 76)">
+        <rect width="267" height="76" rx="12" fill="#FFF5DA"/>
+        <text x="18" y="30" class="kr miniTitle">규칙 검사</text>
+        <text x="18" y="57" class="kr miniBody">금액·VAT·기간·인증·FTE</text>
+        <rect x="286" width="267" height="76" rx="12" fill="#FDE9E7"/>
+        <text x="304" y="30" class="kr miniTitle">환각 탐지</text>
+        <text x="304" y="57" class="kr miniBody">답변과 입력 근거의 일치 검사</text>
+      </g>
+      <text x="24" y="178" class="kr miniBody">탐지 결과 0건도 답변 정확성을 보증하지는 않음</text>
+    </g>
+
+    <line x1="320" y1="514" x2="320" y2="551" stroke="#078B86" stroke-width="6" marker-end="url(#arrowTeal)"/>
+
+    <!-- STEP 6 -->
+    <g transform="translate(26 564)">
+      <rect width="589" height="156" rx="18" fill="#FFFFFF" stroke="#A7DAD6" stroke-width="2" filter="url(#shadow)"/>
+      <rect x="18" y="18" width="88" height="42" rx="12" fill="#1A9B92"/>
+      <text x="34" y="46" class="kr stepBadge">6 단계</text>
+      <text x="122" y="48" class="kr cardTitle">검토 가능한 결과 제공</text>
+      <text x="24" y="92" class="kr cardBody">답변 · 출처 · 관련 근거 구간</text>
+      <text x="24" y="125" class="kr cardBody">환각 의심 구절 · 충족/미충족/자료부족</text>
+    </g>
+  </g>
+
+  <!-- bottom summary -->
+  <g transform="translate(72 974)">
+    <rect width="1776" height="64" rx="22" fill="#102A43"/>
+    <text x="35" y="41" class="kr" font-size="21" font-weight="700" fill="#FFFFFF">핵심</text>
+    <text x="105" y="41" class="kr" font-size="21" font-weight="500" fill="#D9E8F5">전체 문서를 바로 LLM에 넣지 않고, 권한에 맞는 근거만 검색한 뒤 생성 답변을 다시 검증합니다.</text>
+    <text x="1640" y="41" class="kr" font-size="16" font-weight="600" fill="#9FB3C8">ASTRA · 2026-09-16</text>
+  </g>
+</svg>

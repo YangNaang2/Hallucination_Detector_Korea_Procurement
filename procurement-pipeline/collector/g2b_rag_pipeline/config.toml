@@ -1,0 +1,57 @@
+# 이 파일만 수정하면 됩니다. API 키는 첫 실행 때 입력받아 .env에 저장합니다.
+
+[run]
+year = 2026
+month = 5
+out = "./data"
+
+# true: 기존 월 데이터가 있으면 fetch/download를 가능한 한 재사용
+resume = true
+
+# true: CPU 파싱 완료 후 남은 PDF를 GPU OCR까지 자동 실행
+run_gpu_ocr = true
+gpu_ocr_dpi = 160
+
+[scope]
+# service=용역, goods=물품, construction=공사, foreign=외자, etc=기타
+business_types = ["service", "goods", "construction", "foreign", "etc"]
+
+[api_filters]
+# 빈 문자열 = 필터 없음
+keyword = ""
+demand_org = ""
+
+# 공공데이터포털 PPSSrch의 추가 검색 파라미터가 필요할 때만 사용
+[api_extra_params]
+# 예: ntceInsttNm = "서울특별시"
+
+[local_filters]
+# 아래 숫자 필터는 필요할 때만 주석 해제
+# min_budget = 100000000
+# max_budget = 1000000000
+
+contract_method = ""
+bid_name_contains = ""
+notice_org_contains = ""
+demand_org_contains = ""
+unknown_budget = "keep"  # keep | drop
+
+[attachment_filters]
+# all=첨부 전체, relevant=제안요청서/과업지시서/규격/시방 등 중심
+doc_mode = "all"
+eorder_fallback = false
+
+# 같은 문서의 여러 포맷 중 대표본 우선순위
+duplicate_format_priority = [
+  "hwpx", "docx", "hwp", "pdf", "txt", "xls", "xlsx", "zip"
+]
+
+[performance]
+# 사용 장비 nproc=20 기준 권장 시작값
+workers = 8
+api_concurrency = 4
+download_concurrency = 12
+chunk_days = 15
+page_size = 999
+max_file_mb = 100
+min_quality = 0.55

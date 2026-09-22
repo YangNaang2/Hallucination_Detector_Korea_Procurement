@@ -1,0 +1,56 @@
+{
+  "reviewers": 4,
+  "questions": 25,
+  "human_approval": "pending",
+  "training_ready": false,
+  "checks": [
+    "unique complete assignment",
+    "chunk hashes and canonical offsets",
+    "evidence exact quotes",
+    "source binary hashes",
+    "ZIP CRC and every entry hash",
+    "no extra package files"
+  ],
+  "packages": [
+    {
+      "team_id": "T01",
+      "questions": 7,
+      "span_rows": 18,
+      "context_chunk_occurrences": 23,
+      "files": 24,
+      "zip": "팀원1_환각검수_7문항.zip",
+      "zip_bytes": 2103389,
+      "zip_sha256": "dce00a2a0c026f5be712036866c5d39b68e0f745495f8a556f4064a6eccbc685"
+    },
+    {
+      "team_id": "T02",
+      "questions": 6,
+      "span_rows": 17,
+      "context_chunk_occurrences": 21,
+      "files": 20,
+      "zip": "팀원2_환각검수_6문항.zip",
+      "zip_bytes": 2925824,
+      "zip_sha256": "8a18643b12d3c2b1c49380bfa4e843c0e2c897cb2bcd298d57692c1c9133038e"
+    },
+    {
+      "team_id": "T03",
+      "questions": 6,
+      "span_rows": 17,
+      "context_chunk_occurrences": 19,
+      "files": 18,
+      "zip": "팀원3_환각검수_6문항.zip",
+      "zip_bytes": 1471047,
+      "zip_sha256": "16b2bcea98b69cf27bf609145d2d7c5f93bd81f674dbc214decfa673b49e698a"
+    },
+    {
+      "team_id": "T04",
+      "questions": 6,
+      "span_rows": 16,
+      "context_chunk_occurrences": 20,
+      "files": 18,
+      "zip": "팀원4_환각검수_6문항.zip",
+      "zip_bytes": 6247220,
+      "zip_sha256": "403ec955c4f3403edb585776a0165659b3f315b138f59b12199392100a8587c5"
+    }
+  ]
+}

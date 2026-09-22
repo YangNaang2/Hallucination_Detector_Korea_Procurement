@@ -1,0 +1,89 @@
+﻿문항ID	구절ID	정본구절	시작	끝	기존분류	제출분류	조정분류	처리제안	제안출처	이유	근거ID	최종승인
+ASTRA-300-C01-N01-E1	C01-N01-E1-S01	라이선스 비용 = (2cpu/16core) × (단위: core) × (단가: 예상 금액).	623	674	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	사양은 가격의 비례 산식이나 단가를 정의하지 않는다.	C01-N01-E1-E1,C01-N01-E1-E2	pending
+ASTRA-300-C01-N01-E1	C01-N01-E1-R06	**구체적인 금액 또는 단가**가 제공되지 않아, **확정 불가**함.	718	757		CONTRADICTION	UNCERTAIN	hold	reviewer_addition	가능 여부와 비용 산정의 확정 여부를 혼동한다. 금액 부족 자체는 사실일 수 있어 구절 전체를 근거 모순으로 확정하지 않는다.	C01-N01-E1-INPUT-1,C01-N01-E1-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S01	하도급 제한 범위 내에서만 허용됨.	115	134	UNSUPPORTED		CONTRADICTION	accept_proposal	existing_v1	재하도급 원칙적 불가와 반대로 제한 범위 내 허용을 주장한다. 전체 결론의 정오와 이 구절의 오류는 구분한다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S02	이 절차가 거치지 않은 경우 재하도급은 불법임.	216	242	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	제공된 조항만으로 위법성을 확정하는 문장이 아니다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S03	이는 재하도급의 경우에도 동일한 계약서를 사용해야 함.	427	457	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 계약서 요구를 재하도급에 그대로 확장했다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S04	이는 재하도급의 경우에도 적용됨.	551	569	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 규정과 재하도급의 적용 관계를 추가로 만들었다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S05	재하도급의 경우에도 이 서류 제출이 필요함.	634	658	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 제출 의무를 재하도급에도 자동 적용했다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S06	재하도급의 경우에도 이 제출이 필요함.	747	768	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 제출 의무를 재하도급에도 자동 적용했다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S07	이는 재하도급의 경우에도 적용됨.	840	858	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 규정과 재하도급의 적용 관계를 추가로 만들었다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S08	이는 재하도급의 경우에도 적용됨.	956	974	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 규정과 재하도급의 적용 관계를 추가로 만들었다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-S09	이는 재하도급의 경우에도 적용됨.	1084	1102	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	하도급 규정과 재하도급의 적용 관계를 추가로 만들었다.	C01-N43-E4-E2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R12	제2항 2가	81	87		CITATION_ERROR	CITATION_ERROR	accept_proposal	reviewer_addition	재하도급 불가의 실제 위치는 2항 나)다.	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R13	제2항 2나	251	257		CITATION_ERROR	CITATION_ERROR	accept_proposal	reviewer_addition	하도급 초과 신청 반려는 5항 나)다.	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R14	제2항 7가	578	584		CITATION_ERROR	CITATION_ERROR	accept_proposal	reviewer_addition	제출 의무 일반문은 7항 본문이며 가)는 특정 확인서 제출이다.	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R15	제2항 6가	358	364			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 6항 가)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R16	제2항 6라	466	472			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 6항 라)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R17	제2항 7나	667	673			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 7항 나)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R18	제2항 5가	777	783			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 5항 가)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R19	제2항 5나	867	873			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 5항 나)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-N43-E4	C01-N43-E4-R20	제2항 5라	983	989			CITATION_ERROR	accept_proposal	agent_addition	동일 유형 조항 번호 오류를 전체 문장으로 확인: 실제 위치 5항 라)	C01-N43-E4-INPUT-2	pending
+ASTRA-300-C01-S03	C01-S03-S01	2026년 5월과 12월 각각 한 달씩을 적용할 수 있는 자원이 존재한다.	170	211	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	계획 기간은 5월 16일~12월 17일이다. 자원 존재로 월 전체 공수를 확정할 수 없다.	C01-S03-E1,C01-S03-E2	pending
+ASTRA-300-C01-S03	C01-S03-S02	12월에는 1 FTE가 투입될 수 있다.	238	260	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	실제 신규 계획은 0.5 FTE이고 12월 증액 계획은 입력에 없다.	C01-S03-E1,C01-S03-E2	pending
+ASTRA-300-C01-S03	C01-S03-R04	**능력이 있다.**	5	16		CONTRADICTION	UNCERTAIN	hold	reviewer_addition	질문은 부분 월의 공수 계산인데 답변은 자원 능력으로 전환했다. 명백한 한 달 적용 주장은 기존 S01에 유지하고 짧은 능력 표현의 환각 여부는 보류한다.	C01-S03-INPUT-1	pending
+ASTRA-300-C02-N41-E2	C02-N41-E2-S01	인천을 제외해도 된다.	25	37	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	입력은 서울·경기(인천 포함)를 명시한다.	C02-N41-E2-E1	pending
+ASTRA-300-C02-N41-E2	C02-N41-E2-S02	[3]	48	51	CITATION_ERROR		CITATION_ERROR	accept_proposal	existing_v1	실제 프롬프트의 인용 번호는 1, 2뿐이다.	C02-N41-E2-E1	pending
+ASTRA-300-C02-N41-E2	C02-N41-E2-S03	인천을 제외하는 것은 자료상 불법적 조치로 간주된다.	187	216	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	공고의 참가조건과 법적 위법성 확정은 다르다.	C02-N41-E2-E1	pending
+ASTRA-300-C02-N41-E2	C02-N41-E2-S04	[3]	217	220	CITATION_ERROR		CITATION_ERROR	accept_proposal	existing_v1	실제 프롬프트의 인용 번호는 1, 2뿐이다.	C02-N41-E2-E1	pending
+ASTRA-300-C02-N41-E2	C02-N41-E2-S05	법적·규정적 조치로 간주된다.	313	329	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	해당 효과를 설명하는 근거가 없다.	C02-N41-E2-E1	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S01	"""대구 본점 표기""가 명시적으로 요구되어 있음."	141	167	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	제시한 4.3 제출서류 구간에는 이 표현이 없다. 다른 원문 구간의 지역 조건과 구별한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S02	"공고문에 명시된 ""전국 제한""은 제안사의 지점(본점/지점) 여부와 무관한 전국 범위의 입찰 참여가 허용되는 것으로"	180	243	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	주어진 공고 인용에는 전국 참가 확정이 없다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S03	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	344	383	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S04	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	414	453	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S05	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	484	523	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S06	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	554	593	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S07	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	624	663	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S08	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	694	733	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S09	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	764	803	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S10	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	834	873	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S11	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	904	943	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S12	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	974	1013	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-N46-E2	C02-N46-E2-S13	제안사의 지점 여부와 무관한 전국 범위의 입찰 참여를 허용하는 것이므로	1044	1083	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	동일한 근거 없는 전국 참가 주장을 반복한다.	C02-N46-E2-E1,C02-N46-E2-E2	pending
+ASTRA-300-C02-P02	C02-P02-R07	모두 만료된 것이 아닙니다	25	39		UNCERTAIN	QUALITY_ONLY	quality_only	reviewer_addition	뒤에서 개발 만료·유지관리 미만료를 명확히 구분한다. 부분부정 해석이 문맥과 일치하므로 표현 개선 메모로 두며 확정 환각/O 라벨로도 내보내지 않는다.	C02-P02-INPUT-1,C02-P02-INPUT-2	pending
+ASTRA-300-C02-P02	C02-P02-R08	유지관리 인증은 유효한 상태입니다	305	323		CONTRADICTION / UNSUPPORTED	UNCERTAIN	hold	reviewer_addition	합성 레코드 날짜 범위 내 상태를 뜻할 수도 있고 실제 증빙 유효 단정으로 읽힐 수도 있다. synthetic_record 자체를 무효 인증으로 해석하지 않는다.	C02-P02-INPUT-2	pending
+ASTRA-300-C02-S01	C02-S01-R09	기존 유효 상태	234	242		CONTRADICTION / UNCERTAIN	CONTRADICTION	accept_proposal	reviewer_addition	같은 대상의 기존 상태는 만료라고 근거에 명시한다. 유효성 상태라는 의역을 넣지 않고 실제 표기 기준으로 조정 제안한다.	C02-S01-INPUT-1	pending
+ASTRA-300-C02-S03	C02-S03-S01	기준일 잔여 FTE는 0.0 FTE로 계산되었으며	68	95	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	0.0은 제공된 다른 인력 레코드의 값이다. 목표 인력의 값이라는 연결이 없다.	C02-S03-E1,C02-S03-E2	pending
+ASTRA-300-C02-S03	C02-S03-S02	기존 배치의 잔여 FTE가 0.0 FTE인 점	216	241	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	다른 인력의 값을 현재 계획 인력의 잔여로 재사용했다.	C02-S03-E1,C02-S03-E2	pending
+ASTRA-300-C02-S03	C02-S03-S03	기준일 기준으로는 불법적임.	278	293	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	합성 FTE 초과를 법적 위법성으로 확정할 근거는 없다.	C02-S03-E1,C02-S03-E2	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S01	이는 **메타데이터**로만 판단할 수 있는 **실제 일시**로 고정되어야 합니다.	230	275	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	제공 입력은 RFP 일정이며 변경 가능성도 명시한다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S02	**최종 마감일**로 명시되어 있습니다.	360	382	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	변경 가능성을 무시한 최종 확정 표현이다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S03	**메타데이터**로만 판단할 수 있습니다.	417	440	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	입력 문서에 메타데이터만으로 판단해도 된다는 규칙은 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S04	**입찰참가가 불가능한 일시**로 고정되어야 합니다.	505	534	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	시각 기재를 최종 참가 불가 확정으로 확대했다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S05	**입찰참가가 가능하다는 의미**로 고정되어 있습니다.	597	627	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	공고기간만으로 실제 참가 가능 여부를 확정할 수 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S06	**메타데이터**로만 판단할 수 있습니다.	680	703	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	입력 문서에 메타데이터만으로 판단해도 된다는 규칙은 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S07	**입찰참가가 불가능한 일시**로 고정되어 있습니다.	768	797	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	시각 기재를 최종 참가 불가 확정으로 확대했다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S08	**입찰참가가 가능하다는 의미**로 고정되어 있습니다.	860	890	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	공고기간만으로 실제 참가 가능 여부를 확정할 수 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S09	**메타데이터**로만 판단할 수 있습니다.	943	966	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	입력 문서에 메타데이터만으로 판단해도 된다는 규칙은 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-S10	**입찰참가가 가능하다는 의미**로 고정되어 있습니다.	1029	1059	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	공고기간만으로 실제 참가 가능 여부를 확정할 수 없다.	C03-N48-E1-E1	pending
+ASTRA-300-C03-N48-E1	C03-N48-E1-R10	공고문에 명시된 공고기간은	68	82		CITATION_ERROR / quality_only	UNCERTAIN	hold	reviewer_addition	공고문을 입찰공고서 파일명으로 쓴 것인지 공고 첨부 전체의 통칭인지 모호하다. RFP와 공고서의 시각 충돌·검색 누락은 별도 유지한다.	C03-N48-E1-INPUT-1	pending
+ASTRA-300-C03-P04	C03-P04-S01	기존 확정 배치와 신규 배치의 FTE가 합산되지 않으므로	222	253	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	용량 검사는 기존 0.5와 신규 0.4의 합인 0.9로 수행한다.	C03-P04-E1,C03-P04-E2	pending
+ASTRA-300-C03-P04	C03-P04-R11	0.9 FTE를 초과하지 않으므로	184	202		UNSUPPORTED / quality_only	QUALITY_ONLY	quality_only	reviewer_addition	0.5+0.4=0.9이며 0.9를 초과하지 않는다는 문장 자체는 참이다. 이를 명시되지 않은 상한 주장으로 확대해 환각 처리하지 않고 논거 부실로 기록한다.	C03-P04-INPUT-1,C03-P04-INPUT-2	pending
+ASTRA-300-C04-N08-E2	C04-N08-E2-S01	페이지 2	91	96	CITATION_ERROR		CITATION_ERROR	accept_proposal	existing_v1	PDF page 1 구간에 있는 참가자격 조항이다. 내용 지지와 페이지 위치 오류를 분리한다.	C04-N08-E2-E1	pending
+ASTRA-300-C04-N08-E2	C04-N08-E2-R01	공동이행 허용을 근거로 하도급을 허용하는 것은 법적 근거가 없다	229	264		UNCERTAIN	UNCERTAIN	hold	reviewer_addition	해당 공고 조건 설명인지 법률 일반 주장인지 모호하다. 확정 환각으로 학습하지 않는다.	C04-N08-E2-INPUT-1	pending
+ASTRA-300-C04-P01	C04-P01-S01	별도의 증빙이 존재하며	114	126	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	CSAP 레코드의 증빙 확보 상태는 missing이다.	C04-P01-E1,C04-P01-E2	pending
+ASTRA-300-C04-P01	C04-P01-R05	두 인증은 서로 대체 관계가 아님을 명시한다	128	152		UNSUPPORTED	UNSUPPORTED	accept_proposal	reviewer_addition	[1] 회사 ISO 레코드는 비대체 규정을 명시하지 않는다. 올바른 결론과 입력에 명시됐다는 주장은 별개다.	C04-P01-INPUT-1,C04-P01-INPUT-2	pending
+ASTRA-300-C04-P04	C04-P04-S01	실제 계약 시작일은 별도로 정의된 확정 사실로 간주됩니다.	150	182	UNSUPPORTED		CONTRADICTION	accept_proposal	existing_v1	actual_contract_start는 null이며 확정 사실로 간주하지 말라고 명시한다.	C04-P04-E1	pending
+ASTRA-300-C04-P04	C04-P04-S02	가격 산정 기간과 실제 계약 시작일이 서로 다른 확정 사실로 간주되며	213	251	UNSUPPORTED		CONTRADICTION	accept_proposal	existing_v1	미설정 계약 시작일을 확정 사실로 바꾼다.	C04-P04-E1	pending
+ASTRA-300-C04-S01	C04-S01-S01	**C04** 보유 주체	24	37	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	해당 가정의 주체는 서비스 C04-SERVICE-01이다.	C04-S01-E1	pending
+ASTRA-300-C04-S01	C04-S01-S02	C04 보유 주체	201	210	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	회사와 서비스의 보유 주체를 혼동했다.	C04-S01-E1	pending
+ASTRA-300-C04-S03	C04-S03-U01	"""effective_until""은 ""valid_until""과 동일한 의미로"	341	382	UNCERTAIN		UNCERTAIN	hold	existing_v1	이 시나리오에 한정한 풀이인지 모든 필드에 대한 일반화인지 범위가 모호하다.	C04-S03-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U01	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	267	301	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U02	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	412	446	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U03	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	492	526	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U04	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	617	651	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U05	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	697	731	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U06	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	779	813	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U07	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	859	893	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U08	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	941	975	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U09	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	1021	1055	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-N09-E2	C05-N09-E2-U10	전국 업체가 대구광역시 본사 소재 업체를 포함하는 것이 아니라	1103	1137	UNCERTAIN		UNCERTAIN	hold	existing_v1	전국 업체가 전체 업체 집합인지 평가표의 구분인지 모호하므로 사람이 문맥을 판정한다.	C05-N09-E2-E1	pending
+ASTRA-300-C05-P03	C05-P03-S01	공고 기준일(2026-04-01)	274	292	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	입력 회사 대장의 상태 기준일이지 공고일로 확인된 값이 아니다.	C05-P03-E1,C05-P03-E2	pending
+ASTRA-300-C05-S02	C05-S02-S01	15,200,000 KRW × 19% = 2,888,000 KRW	509	545	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	산술의 곱셈 자체가 아니라 매출대비 마진을 원가 가산율로 적용한 의미 오류다.	C05-S02-E1,C05-S02-E4	pending
+ASTRA-300-C05-S02	C05-S02-S02	VAT 적용 금액: 15,200,000 KRW × 10% = 1,520,000 KRW	552	599	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	VAT는 마진 적용 후 세전 목표액에 적용해야 한다.	C05-S02-E1,C05-S02-E4	pending
+ASTRA-300-C05-S02	C05-S02-S03	목표 매출대비 마진 적용: 15,200,000 KRW + 2,888,000 KRW = 18,088,000 KRW	622	684	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	전체 범위 원가와 cost/(1-margin/100)를 사용해야 한다.	C05-S02-E1,C05-S02-E4	pending
+ASTRA-300-C05-S02	C05-S02-S04	VAT 적용: 18,088,000 KRW + 1,520,000 KRW = 19,608,000 KRW	691	746	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	올바른 범위 원가·마진·VAT 적용의 총액은 176,521,032원이다.	C05-S02-E1,C05-S02-E4	pending
+ASTRA-300-C05-S03	C05-S03-S01	이는 2026-06-01 기준일 기준, 해당 인력이 3개월 이상 재직한 것으로 판단할 수 없습니다.	185	240	CONTRADICTION		CONTRADICTION	accept_proposal	existing_v1	동일 입력의 입사일은 2024-01-02이며 종료일 null만으로 기간 판단을 부정할 수 없다.	C05-S03-E1,C05-S03-E4	pending
+ASTRA-300-C05-S03	C05-S03-S02	이는 3개월 이상 재직한 것으로 보여지지만	323	346	UNSUPPORTED		UNSUPPORTED	accept_proposal	existing_v1	직전 문장의 신규 배치 시작·종료는 고용 재직기간을 증명하지 않는다.	C05-S03-E1,C05-S03-E4	pending
+ASTRA-300-C05-S03	C05-S03-R02	[1] 자료에서 제시된 C05-P-04, C05-P-07, C05-P-06 인력의	71	116		CITATION_ERROR	CITATION_ERROR	accept_proposal	reviewer_addition	[1]은 P-04 한 명이다. P-07과 P-06은 실제 입력 [2], [3]에 있으므로 인용 연결 오류다.	C05-S03-INPUT-1,C05-S03-INPUT-2,C05-S03-INPUT-3	pending
+ASTRA-300-C05-S03	C05-S03-R03	[1] 자료에서 제시된 C05-P-04, C05-P-07, C05-P-06 인력의	388	433		CITATION_ERROR	CITATION_ERROR	accept_proposal	reviewer_addition	동일 인용 연결 오류의 두 번째 실제 위치도 보존한다.	C05-S03-INPUT-1,C05-S03-INPUT-2,C05-S03-INPUT-3	pending
