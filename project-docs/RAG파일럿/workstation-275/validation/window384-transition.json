@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "purpose": "Window 384 rebuild connection and integrity validation; not answer quality or hallucination evaluation",
+  "device": "cuda",
+  "gpu_name": "NVIDIA RTX A5000",
+  "precision": "float32",
+  "parent_chunking_unchanged": {
+    "parent_max_chars": 1800,
+    "overlap_chars": 240,
+    "company_entities": "reused intact",
+    "original_binary_hashes": "checked",
+    "offsets": "canonical Unicode code points [start,end)"
+  },
+  "embedding_config": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "license": "MIT",
+    "device": "cuda",
+    "gpu_name": "NVIDIA RTX A5000",
+    "precision": "float32",
+    "pooling": "attention-mask mean",
+    "normalization": "L2",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "limit_tokens": 512,
+    "token_window": 384,
+    "stride": 344,
+    "truncation": false,
+    "parent_chunks": 3275,
+    "embedding_windows": 8901,
+    "max_windows_per_parent": 4,
+    "dimension": 384,
+    "batch_size": 8,
+    "threads": 4,
+    "build_seconds": 27.251679200096987,
+    "corpus_hash": "1687f34a97598b407d6adc2854843d0fa69d67e03dab4dde25fa89d33a9e0fad",
+    "note": "parent entity text remains intact for generation; similarity is max over its windows"
+  },
+  "dense_load": "passed",
+  "vector_check": {
+    "shape": [
+      8901,
+      384
+    ],
+    "parents": 8901,
+    "chunk_ids": 3275,
+    "finite": true,
+    "norm_min": 0.9999998807907104,
+    "norm_max": 1.0000001192092896,
+    "norm_mean": 1.0,
+    "parent_min": 0,
+    "parent_max": 3274
+  },
+  "retrieval": {
+    "requests": 275,
+    "completed": 275,
+    "nonempty": 275,
+    "min_results": 6,
+    "max_results": 6,
+    "seconds": 16.916575954994187,
+    "first_10": [
+      {
+        "question_id": "ASTRA-300-C01-N01-E1",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00004",
+          "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00032",
+          "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00086",
+          "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00035",
+          "L1-R26BK01550466-000-16b67acc6a18c5e8-CH-00008",
+          "L1-R26BK01550466-000-f6c69c65e0f23a26-CH-00011"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N02-E5",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00013",
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00021",
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00014",
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00015",
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00033",
+          "L1-R26BK01442409-000-00f88c71be789210-CH-00019"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N03-E4",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01448046-000-2237c480301f0a8e-CH-00001",
+          "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00004",
+          "L1-R26BK01448046-000-2237c480301f0a8e-CH-00000",
+          "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00003",
+          "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00002",
+          "L1-R26BK01448046-000-9941e835ad1b0e19-CH-00001"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N04-E3",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00002",
+          "L1-R26BK01478467-000-11874311cf57e1ad-CH-00025",
+          "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00005",
+          "L1-R26BK01478467-000-11874311cf57e1ad-CH-00026",
+          "L1-R26BK01478467-000-dbad4cc0cf10da6f-CH-00004",
+          "L1-R26BK01478467-000-11874311cf57e1ad-CH-00030"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N05-E2",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00000",
+          "L1-R26BK01481037-000-d10785fe8d7334b1-CH-00000",
+          "L1-R26BK01481037-000-d10785fe8d7334b1-CH-00001",
+          "L1-R26BK01481037-000-3297cd30a484100e-CH-00001",
+          "L1-R26BK01481037-000-f6bce1d46faa354c-CH-00001",
+          "L1-R26BK01481037-000-3297cd30a484100e-CH-00000"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N06-E1",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00043",
+          "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00053",
+          "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00044",
+          "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00054",
+          "L1-R26BK01565865-000-cb10a032aa2b1f6b-CH-00048",
+          "L1-R26BK01565865-000-e4e4467307918cc2-CH-00000"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N07-E5",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00018",
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00003",
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00017",
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00014",
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00028",
+          "L1-R26BK01587385-000-e8504aebf2462fc0-CH-00027"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N08-E4",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01491524-000-ff03c8c704d3384a-CH-00001",
+          "L1-R26BK01491524-000-ff03c8c704d3384a-CH-00000",
+          "L1-R26BK01491524-000-40cbdf94b865b078-CH-00016",
+          "L1-R26BK01491524-000-40cbdf94b865b078-CH-00018",
+          "L1-R26BK01491524-000-40cbdf94b865b078-CH-00021",
+          "L1-R26BK01491524-000-40cbdf94b865b078-CH-00022"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N09-E3",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00028",
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00023",
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00024",
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00034",
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00038",
+          "L1-R26BK01501352-000-7c0e75ad396e6eec-CH-00035"
+        ]
+      },
+      {
+        "question_id": "ASTRA-300-C01-N10-E2",
+        "returned": 6,
+        "chunk_ids": [
+          "L1-R26BK01577397-000-df48155ac0564d45-CH-00004",
+          "L1-R26BK01577397-000-df48155ac0564d45-CH-00000",
+          "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00028",
+          "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00029",
+          "L1-R26BK01577397-000-6f28cb3f41f21a21-CH-00024",
+          "L1-R26BK01577397-000-df48155ac0564d45-CH-00001"
+        ]
+      }
+    ]
+  },
+  "hashes": {
+    "vectors_w384": "09d08e9303a21f35dad3d75f17a92198c6c867991dae5dd3c787d0bb96703d2e",
+    "vectors_backup_w460": "842a30221767c8f7ff336d237333eec01778dc36157377ec6068b3457fbad26e",
+    "query_vectors_w384": "28c6283c0f6cc86a10296352f8f937e20736f48e6f9c530b7b5467eebe758faf",
+    "query_vectors_backup_w460": "34b892be3fe25d975cec78f351aa6bd54ba44a380c45af41a9e4a0c1feb76b2f",
+    "embedding_config_w384": "9c88424d9987105f2d7f616cc036cc8e23ef553df45594fd7d13070b6aba735c",
+    "embedding_config_backup_w460": "ea64bdec2b6d5aa89fbf7f567b8d406fb70baa7997e62537191c2431cd70690a",
+    "code": "b6cf9c119d5773c4a79a0679fbbd2b83721c1b3660a0fbe05e852eff2c7a21c8"
+  },
+  "rebuild_total_seconds": 43.59518838301301,
+  "limitations": [
+    "No answer generation was run.",
+    "No hallucination detector was run.",
+    "Existing 300 answers and original W460 artifacts were not overwritten."
+  ],
+  "unit_tests": {
+    "command": "python -m unittest discover -s procurement-pipeline -p 'test_*.py'",
+    "passed": 190,
+    "failed": 0,
+    "seconds": 8.962
+  },
+  "rebuild_command_scope": "workstation_rag.configure() + rag_pilot_embedding.build() + query_vectors(); offline local model only",
+  "gpu_required_by_code": true
+}

@@ -17,8 +17,12 @@ class Encoder:
         from transformers import AutoModel, AutoTokenizer
         self.torch = torch
         torch.set_num_threads(4)
+        if not torch.cuda.is_available():
+            raise RuntimeError('CUDA GPU is required for embedding rebuild')
+        self.device = torch.device('cuda')
+        self.gpu_name = torch.cuda.get_device_name(0)
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL, local_files_only=True)
-        self.model = AutoModel.from_pretrained(MODEL, local_files_only=True, trust_remote_code=False)
+        self.model = AutoModel.from_pretrained(MODEL, local_files_only=True, trust_remote_code=False).to(self.device)
         self.model.eval()
 
     def window_ids(self, text, prefix):
@@ -26,12 +30,12 @@ class Encoder:
         # Every token appears; prefix also present in each continuation window.
         prefix_ids = self.tokenizer(prefix, add_special_tokens=False)['input_ids']
         windows = []
-        for start in range(0, max(1, len(ids)), 420):
-            window = ids[start:start+460]
+        for start in range(0, max(1, len(ids)), 344):
+            window = ids[start:start+384]
             if start:
                 window = prefix_ids + window
             windows.append(self.tokenizer.build_inputs_with_special_tokens(window))
-            if start + 460 >= len(ids):
+            if start + 384 >= len(ids):
                 break
         if any(len(w) > 512 for w in windows):
             raise ValueError('embedding window exceeds tokenizer limit')
@@ -39,13 +43,13 @@ class Encoder:
 
     def encode_ids(self, batch):
         torch = self.torch
-        padded = self.tokenizer.pad({'input_ids':batch}, padding=True, return_tensors='pt')
+        padded = self.tokenizer.pad({'input_ids':batch}, padding=True, return_tensors='pt').to(self.device)
         with torch.inference_mode():
             hidden = self.model(**padded).last_hidden_state
             mask = padded['attention_mask'].unsqueeze(-1).bool()
             mean = hidden.masked_fill(~mask, 0).sum(1) / mask.sum(1)
             output = torch.nn.functional.normalize(mean, p=2, dim=1)
-        return output.numpy().astype('float32')
+        return output.cpu().numpy().astype('float32')
 
 
 def build():
@@ -66,10 +70,10 @@ def build():
     np.savez(p.WORK / 'vectors.npz', vectors=np.concatenate(vectors), parents=np.array(parents),
              chunk_ids=np.array([c['chunk_id'] for c in chunks]))
     manifest = p.read(p.OUT/'index_manifest.json')
-    config = dict(model='intfloat/multilingual-e5-small', revision=REVISION, license='MIT', device='cpu',
+    config = dict(model='intfloat/multilingual-e5-small', revision=REVISION, license='MIT', device='cuda', gpu_name=encoder.gpu_name,
                   precision='float32', pooling='attention-mask mean', normalization='L2',
                   query_prefix='query: ', passage_prefix='passage: ', limit_tokens=512,
-                  token_window=460, stride=420, truncation=False,
+                  token_window=384, stride=344, truncation=False,
                   parent_chunks=len(chunks), embedding_windows=len(windows),
                   max_windows_per_parent=max(counts), dimension=384, batch_size=8, threads=4,
                   build_seconds=time.perf_counter()-start, corpus_hash=manifest['corpus_hash'],
