@@ -54,7 +54,7 @@ ASTRA RAG는 **Parent 1,800자·overlap 240자 구조를 유지**하면서, 각 
 - NaN/Inf: 0건
 - norm 범위: 0.99999988–1.00000012
 
-검증 기록은 `project-docs/RAG파일럿/workstation-275/validation/window384-transition.json`에 있다. Dense 로드 후 275문항 모두 검색을 완료했고 각 문항에서 상위 6개가 반환됐다. 전체 자동검사 190개가 통과했다.
+검증 기록은 `project-docs/RAG파일럿/workstation-275/validation/window384-transition.json`에 있다. Dense 로드 후 275문항 모두 검색을 완료했고 각 문항에서 상위 6개가 반환됐다. 최신 main 병합 후 전체 자동검사 217개가 통과했다.
 
 ## Git에 없는 로컬 산출물
 

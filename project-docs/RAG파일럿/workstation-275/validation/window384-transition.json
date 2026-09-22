@@ -198,9 +198,10 @@
   ],
   "unit_tests": {
     "command": "python -m unittest discover -s procurement-pipeline -p 'test_*.py'",
-    "passed": 190,
+    "passed": 217,
     "failed": 0,
-    "seconds": 8.962
+    "seconds": 9.066,
+    "phase": "after merging origin/main"
   },
   "rebuild_command_scope": "workstation_rag.configure() + rag_pilot_embedding.build() + query_vectors(); offline local model only",
   "gpu_required_by_code": true
