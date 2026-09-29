@@ -1,0 +1,436 @@
+{
+  "status": "automated_checks_passed_agent_visual_review_completed",
+  "pdf": "output/pdf/Blue_Jay_공공입찰_AI_종합보고서.pdf",
+  "pages": 46,
+  "expected_pages": 46,
+  "a4_all_pages": true,
+  "extractable_characters": 41922,
+  "sha256": "d83a252de521a3f15b3441991e57e1a096f8fc39c1a0531ecc190886fdd40909",
+  "overflow_pages": [],
+  "layout": [
+    {
+      "page": 2,
+      "title": "국문 초록",
+      "content_top": 738.7,
+      "content_height": 446.7,
+      "content_bottom": 292.0,
+      "overflow": false
+    },
+    {
+      "page": 3,
+      "title": "목차",
+      "content_bottom": 101.9,
+      "overflow": false
+    },
+    {
+      "page": 4,
+      "title": "목차",
+      "content_bottom": 94.9,
+      "overflow": false
+    },
+    {
+      "page": 5,
+      "title": "1. 연구 배경과 문제 정의",
+      "content_top": 702.7,
+      "content_height": 442.0,
+      "content_bottom": 260.7,
+      "overflow": false
+    },
+    {
+      "page": 6,
+      "title": "1.3 연구 목표와 기여",
+      "content_top": 738.7,
+      "content_height": 543.0,
+      "content_bottom": 195.7,
+      "overflow": false
+    },
+    {
+      "page": 7,
+      "title": "2. RAG와 근거 기반 답변 검증",
+      "content_top": 702.7,
+      "content_height": 544.5,
+      "content_bottom": 158.2,
+      "overflow": false
+    },
+    {
+      "page": 8,
+      "title": "3. 선행연구와 본 프로젝트의 접근",
+      "content_top": 738.7,
+      "content_height": 526.7,
+      "content_bottom": 212.0,
+      "overflow": false
+    },
+    {
+      "page": 9,
+      "title": "4. 사용자 질의 파이프라인",
+      "content_top": 702.7,
+      "content_height": 547.8,
+      "content_bottom": 154.9,
+      "overflow": false
+    },
+    {
+      "page": 10,
+      "title": "5. 단계별 Input·Process·Output",
+      "content_top": 738.7,
+      "content_height": 500.5,
+      "content_bottom": 238.2,
+      "overflow": false
+    },
+    {
+      "page": 11,
+      "title": "6. 수집 데이터와 변환 구조",
+      "content_top": 702.7,
+      "content_height": 483.9,
+      "content_bottom": 218.8,
+      "overflow": false
+    },
+    {
+      "page": 12,
+      "title": "6.4 4~6월 데이터 확보 현황",
+      "content_top": 738.7,
+      "content_height": 624.9,
+      "content_bottom": 113.8,
+      "overflow": false
+    },
+    {
+      "page": 13,
+      "title": "6.5 대표 공고 51건과 요건 추출",
+      "content_top": 738.7,
+      "content_height": 510.3,
+      "content_bottom": 228.4,
+      "overflow": false
+    },
+    {
+      "page": 14,
+      "title": "7. 가상 기업 5곳의 설계",
+      "content_top": 702.7,
+      "content_height": 493.0,
+      "content_bottom": 209.7,
+      "overflow": false
+    },
+    {
+      "page": 15,
+      "title": "7.3 L2·L3 문서 생성과 일관성 검증",
+      "content_top": 738.7,
+      "content_height": 482.6,
+      "content_bottom": 256.1,
+      "overflow": false
+    },
+    {
+      "page": 16,
+      "title": "8. 회사·등급·역할 기반 접근 통제",
+      "content_top": 738.7,
+      "content_height": 527.3,
+      "content_bottom": 211.4,
+      "overflow": false
+    },
+    {
+      "page": 17,
+      "title": "9. 질문·기대답·근거 300건",
+      "content_top": 702.7,
+      "content_height": 519.5,
+      "content_bottom": 183.2,
+      "overflow": false
+    },
+    {
+      "page": 18,
+      "title": "9.1 Q·A·R 연결의 실제 예",
+      "content_top": 738.7,
+      "content_height": 587.5,
+      "content_bottom": 151.2,
+      "overflow": false
+    },
+    {
+      "page": 19,
+      "title": "10. 팀원 검수와 환각 구절 조정",
+      "content_top": 738.7,
+      "content_height": 532.6,
+      "content_bottom": 206.1,
+      "overflow": false
+    },
+    {
+      "page": 20,
+      "title": "11. Parent와 Embedding Window",
+      "content_top": 702.7,
+      "content_height": 576.8,
+      "content_bottom": 125.9,
+      "overflow": false
+    },
+    {
+      "page": 21,
+      "title": "12. 하이브리드 검색과 RRF",
+      "content_top": 738.7,
+      "content_height": 500.3,
+      "content_bottom": 238.4,
+      "overflow": false
+    },
+    {
+      "page": 22,
+      "title": "13. 청킹 설정 비교 실험",
+      "content_top": 738.7,
+      "content_height": 575.7,
+      "content_bottom": 163.0,
+      "overflow": false
+    },
+    {
+      "page": 23,
+      "title": "14. Top 6에서 생성 근거 최대 4개로",
+      "content_top": 738.7,
+      "content_height": 527.3,
+      "content_bottom": 211.4,
+      "overflow": false
+    },
+    {
+      "page": 24,
+      "title": "15. 로컬 LLM 후보 비교",
+      "content_top": 702.7,
+      "content_height": 559.8,
+      "content_bottom": 142.9,
+      "overflow": false
+    },
+    {
+      "page": 25,
+      "title": "15.3 평가 점수와 로컬 운영 이유",
+      "content_top": 738.7,
+      "content_height": 471.8,
+      "content_bottom": 266.9,
+      "overflow": false
+    },
+    {
+      "page": 26,
+      "title": "16. 답변 스트리밍과 생성 계약",
+      "content_top": 738.7,
+      "content_height": 527.3,
+      "content_bottom": 211.4,
+      "overflow": false
+    },
+    {
+      "page": 27,
+      "title": "17. RAGTruth의 한국어 변환",
+      "content_top": 702.7,
+      "content_height": 561.2,
+      "content_bottom": 141.5,
+      "overflow": false
+    },
+    {
+      "page": 28,
+      "title": "18. 토큰 분류 학습과 구절 복원",
+      "content_top": 738.7,
+      "content_height": 573.8,
+      "content_bottom": 164.9,
+      "overflow": false
+    },
+    {
+      "page": 29,
+      "title": "19. 인코더 모델 비교",
+      "content_top": 738.7,
+      "content_height": 614.6,
+      "content_bottom": 124.1,
+      "overflow": false
+    },
+    {
+      "page": 30,
+      "title": "19.3 모델 구조별 추가 실험 결과",
+      "content_top": 738.7,
+      "content_height": 600.3,
+      "content_bottom": 138.4,
+      "overflow": false
+    },
+    {
+      "page": 31,
+      "title": "20. 탐지 평가지표와 해석",
+      "content_top": 738.7,
+      "content_height": 541.1,
+      "content_bottom": 197.6,
+      "overflow": false
+    },
+    {
+      "page": 32,
+      "title": "21. 대시보드와 근거 열람",
+      "content_top": 702.7,
+      "content_height": 610.2,
+      "content_bottom": 92.5,
+      "overflow": false
+    },
+    {
+      "page": 33,
+      "title": "21.3 탐지 상태와 내부 검수 화면",
+      "content_top": 738.7,
+      "content_height": 492.2,
+      "content_bottom": 246.5,
+      "overflow": false
+    },
+    {
+      "page": 34,
+      "title": "22. 300문항 실행 기록과 오류 분석",
+      "content_top": 738.7,
+      "content_height": 509.6,
+      "content_bottom": 229.1,
+      "overflow": false
+    },
+    {
+      "page": 35,
+      "title": "23. 100건 시연 자료의 해석",
+      "content_top": 738.7,
+      "content_height": 497.1,
+      "content_bottom": 241.6,
+      "overflow": false
+    },
+    {
+      "page": 36,
+      "title": "24. 환각 경고 효과의 가정 계산",
+      "content_top": 738.7,
+      "content_height": 559.7,
+      "content_bottom": 179.0,
+      "overflow": false
+    },
+    {
+      "page": 37,
+      "title": "25. 검증 범위와 잔여 위험",
+      "content_top": 738.7,
+      "content_height": 509.4,
+      "content_bottom": 229.3,
+      "overflow": false
+    },
+    {
+      "page": 38,
+      "title": "26. 종합 결론",
+      "content_top": 702.7,
+      "content_height": 524.3,
+      "content_bottom": 178.4,
+      "overflow": false
+    },
+    {
+      "page": 39,
+      "title": "27. 향후 고도화 계획",
+      "content_top": 738.7,
+      "content_height": 492.2,
+      "content_bottom": 246.5,
+      "overflow": false
+    },
+    {
+      "page": 40,
+      "title": "부록 A. 주요 설정과 버전 구분",
+      "content_top": 702.7,
+      "content_height": 538.4,
+      "content_bottom": 164.3,
+      "overflow": false
+    },
+    {
+      "page": 41,
+      "title": "부록 B. 코드베이스와 주요 산출물",
+      "content_top": 738.7,
+      "content_height": 497.8,
+      "content_bottom": 240.9,
+      "overflow": false
+    },
+    {
+      "page": 42,
+      "title": "부록 C. 데이터 계약과 상태 관리",
+      "content_top": 738.7,
+      "content_height": 527.0,
+      "content_bottom": 211.7,
+      "overflow": false
+    },
+    {
+      "page": 43,
+      "title": "부록 D. 평가 및 라벨 검수 지침",
+      "content_top": 738.7,
+      "content_height": 501.3,
+      "content_bottom": 237.4,
+      "overflow": false
+    },
+    {
+      "page": 44,
+      "title": "부록 E. 용어 및 약어",
+      "content_top": 738.7,
+      "content_height": 602.3,
+      "content_bottom": 136.4,
+      "overflow": false
+    },
+    {
+      "page": 45,
+      "title": "부록 F. 주요 수치와 출처 대조",
+      "content_top": 738.7,
+      "content_height": 538.9,
+      "content_bottom": 199.8,
+      "overflow": false
+    },
+    {
+      "page": 46,
+      "title": "참고문헌 및 프로젝트 자료",
+      "content_top": 738.7,
+      "content_height": 474.2,
+      "content_bottom": 264.5,
+      "overflow": false
+    }
+  ],
+  "required_terms": {
+    "137,745": true,
+    "300": true,
+    "17,537": true,
+    "0.7385": true,
+    "합성": true,
+    "사후 선별": true,
+    "참고문헌": true
+  },
+  "figures": 10,
+  "model_execution": "not_performed",
+  "human_approval": "not_recorded",
+  "automatic_checks": {
+    "all_korean_fonts_embedded": true,
+    "font_subsets": {
+      "/AAAAAA+MalgunGothicBold": true,
+      "/AAAAAB+MalgunGothicBold": true,
+      "/AAAAAA+MalgunGothic": true,
+      "/AAAAAB+MalgunGothic": true,
+      "/AAAAAC+MalgunGothic": true
+    },
+    "toc_targets_correct": true,
+    "toc_target_count": 43,
+    "qa_count": 300,
+    "qa_company_counts": {
+      "C01": 60,
+      "C02": 60,
+      "C03": 60,
+      "C04": 60,
+      "C05": 60
+    },
+    "qa_type_counts": {
+      "contract": 33,
+      "access_policy": 14,
+      "certification": 30,
+      "boundary": 40,
+      "performance": 16,
+      "multi_document": 13,
+      "cost": 35,
+      "conflict": 26,
+      "eligibility": 25,
+      "personnel": 44,
+      "fact": 19,
+      "access_control": 5
+    },
+    "confusion_accuracy": 0.8,
+    "hypothesis_missed_rate": 0.022,
+    "hypothesis_false_warning_rate": 0.178
+  },
+  "agent_visual_review": {
+    "status": "completed",
+    "all_pages_reviewed": 46,
+    "method": "Poppler PNG rendering; all-page contact sheets and full-size inspection of cover, contents, dense tables, diagrams, numerical charts, QAR example, UI and references",
+    "findings": "No clipping or overlapping text found. Enlarged UI capture and added 11-model table during review.",
+    "human_approval": "not_recorded"
+  },
+  "content_review": {
+    "status": "completed_with_source_limits_recorded",
+    "checked": [
+      "actual_notice_vs_synthetic_company",
+      "qa_example_and_300_distribution",
+      "source_versions_and_model_identity",
+      "reported_model_scores",
+      "selected_100_case_confusion_matrix",
+      "hypothetical_warning_rate_math"
+    ],
+    "model_accuracy_remeasured": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "dataset_id": "astra-synthetic-companies-ui-summary",
+  "version": "1.0.0",
+  "snapshot_as_of": "2026-04-01",
+  "synthetic": true,
+  "display_notice": "프로젝트 평가용 가상기업·합성 데이터",
+  "exposure_policy": "L2/L3 전체 원장은 공개 정적 번들에 포함하지 않고 서버 권한 검증 후 제공",
+  "companies": [
+    {
+      "company_id": "C01",
+      "tenant_id": "astra-c01",
+      "company_name": "가상 한빛IT",
+      "founded_on": "2014-03-10",
+      "enterprise_size": "소기업",
+      "region": "서울특별시",
+      "headcount": 12,
+      "specialties": ["공공 웹·포털", "자료 아카이브", "데이터 연계"],
+      "summary": "웹 개발 실적과 개발 인력을 중심으로 구성한 가상기업",
+      "registrations": [
+        {"code": "1468", "label": "컴퓨터관련서비스사업", "status": "registered"},
+        {"code": "0036", "label": "정보통신공사업", "status": "not_held"}
+      ],
+      "certifications": [
+        {"code": "SME", "label": "중소기업 확인", "status": "valid", "valid_until": "2027-03-31"},
+        {"code": "8111159901", "label": "정보시스템개발서비스 직접생산", "status": "valid", "valid_until": "2027-12-31"},
+        {"code": "8111189901", "label": "정보시스템유지관리서비스 직접생산", "status": "valid", "valid_until": "2027-12-31"}
+      ],
+      "portfolio": {"completed": 3, "in_progress": 1, "evidence_missing": 1},
+      "strengths": ["공공 웹·포털", "개발 인력", "자료 아카이브"],
+      "constraints": ["정보통신공사업 0036 미보유", "완료 실적 1건 증빙 미확보", "기존 투입 인력 존재"],
+      "available_detail_levels": ["L2_PROFILE", "L2_PERFORMANCE", "L2_STAFF", "L2_CERTIFICATION", "L3_COST_POLICY"]
+    },
+    {
+      "company_id": "C02",
+      "tenant_id": "astra-c02",
+      "company_name": "가상 해온시스템",
+      "founded_on": "2017-07-03",
+      "enterprise_size": "소기업",
+      "region": "부산광역시",
+      "headcount": 8,
+      "specialties": ["도시 통합관제 유지관리", "네트워크·GPU 운영"],
+      "summary": "지역 관제망 유지관리와 정보통신기술자를 중심으로 구성한 가상기업",
+      "registrations": [
+        {"code": "1468", "label": "컴퓨터관련서비스사업", "status": "registered"},
+        {"code": "0036", "label": "정보통신공사업", "status": "registered"}
+      ],
+      "certifications": [
+        {"code": "SME", "label": "중소기업 확인", "status": "valid", "valid_until": "2027-03-31"},
+        {"code": "8111189901", "label": "정보시스템유지관리서비스 직접생산", "status": "valid", "valid_until": "2027-12-31"},
+        {"code": "8111159901", "label": "정보시스템개발서비스 직접생산", "status": "expired", "valid_until": "2026-03-31"}
+      ],
+      "portfolio": {"completed": 2, "in_progress": 1, "evidence_missing": 0},
+      "strengths": ["정보통신공사업 등록", "유지관리 직접생산", "관제망·GPU 운영 경험"],
+      "constraints": ["개발 직접생산 확인 만료", "대형 개발 실적 부족", "기존 투입 인력 존재"],
+      "available_detail_levels": ["L2_PROFILE", "L2_PERFORMANCE", "L2_STAFF", "L2_CERTIFICATION", "L2_PLAN", "L3_COST", "L3_ESTIMATE", "L3_QUOTE", "L3_BID_REVIEW"]
+    },
+    {
+      "company_id": "C03",
+      "tenant_id": "astra-c03",
+      "company_name": "가상 인우블록",
+      "founded_on": "2022-02-14",
+      "enterprise_size": "소기업",
+      "region": "인천광역시",
+      "headcount": 6,
+      "specialties": ["블록체인 시민서비스", "모바일 지갑"],
+      "summary": "지역 기반 블록체인·모바일 서비스 경험을 가진 소규모 가상 개발사",
+      "registrations": [
+        {"code": "1468", "label": "컴퓨터관련서비스사업", "status": "registered"},
+        {"code": "0036", "label": "정보통신공사업", "status": "not_held"}
+      ],
+      "certifications": [
+        {"code": "SME", "label": "중소기업 확인", "status": "valid", "valid_until": "2027-03-31"},
+        {"code": "8111159901", "label": "정보시스템개발서비스 직접생산", "status": "valid", "valid_until": "2027-12-31"},
+        {"code": "8111189901", "label": "정보시스템유지관리서비스 직접생산", "status": "valid", "valid_until": "2027-12-31"}
+      ],
+      "portfolio": {"completed": 2, "in_progress": 1, "evidence_missing": 1},
+      "strengths": ["블록체인 시민서비스", "모바일 지갑", "인천 지역 경험"],
+      "constraints": ["소수 인력", "정보통신공사업 0036 미보유", "완료 실적 1건 증빙 미확보", "기존 투입 인력 존재"],
+      "available_detail_levels": ["L2_PROFILE", "L2_PERFORMANCE", "L2_STAFF", "L2_CERTIFICATION", "L2_PLAN", "L3_COST", "L3_ESTIMATE", "L3_QUOTE", "L3_BID_REVIEW"]
+    },
+    {
+      "company_id": "C04",
+      "tenant_id": "astra-c04",
+      "company_name": "가상 누리클라우드",
+      "founded_on": "2019-06-17",
+      "enterprise_size": "소기업",
+      "region": "대전광역시",
+      "headcount": 10,
+      "specialties": ["클라우드 운영", "보안 구성", "데이터 연계"],
+      "summary": "클라우드 운영과 보안 인력을 중심으로 구성한 가상 MSP",
+      "registrations": [
+        {"code": "1468", "label": "컴퓨터관련서비스사업", "status": "registered"},
+        {"code": "0036", "label": "정보통신공사업", "status": "registered"}
+      ],
+      "certifications": [
+        {"code": "SME", "label": "중소기업 확인", "status": "valid", "valid_until": "2027-03-31", "holder": "company"},
+        {"code": "8111189901", "label": "정보시스템유지관리서비스 직접생산", "status": "valid", "valid_until": "2027-12-31", "holder": "company"},
+        {"code": "ISO27001", "label": "정보보호 관리체계 인증", "status": "valid", "valid_until": "2028-02-29", "holder": "company"},
+        {"code": "CSAP", "label": "공급 예정 클라우드 서비스 인증", "status": "evidence_missing", "valid_until": null, "holder": "service"}
+      ],
+      "portfolio": {"completed": 2, "in_progress": 1, "evidence_missing": 0},
+      "strengths": ["정보통신공사업 등록", "클라우드 운영", "보안 인력", "ISO27001"],
+      "constraints": ["공급 예정 서비스 CSAP 증빙 미확보", "공동수급 지분 실적과 전체 계약액 구분 필요", "하도급 실적 존재", "기존 투입 인력 존재"],
+      "available_detail_levels": ["L2_PROFILE", "L2_PERFORMANCE", "L2_STAFF", "L2_CERTIFICATION", "L2_PLAN", "L3_COST", "L3_ESTIMATE", "L3_QUOTE", "L3_BID_REVIEW"]
+    },
+    {
+      "company_id": "C05",
+      "tenant_id": "astra-c05",
+      "company_name": "가상 새온에너지SW",
+      "founded_on": "2016-09-05",
+      "enterprise_size": "중기업",
+      "region": "전라남도",
+      "headcount": 9,
+      "specialties": ["EMS·PMS", "ESS·PV 연계 제어", "산업 모니터링"],
+      "summary": "전력 제어와 산업 모니터링 분야에 특화한 가상기업",
+      "registrations": [
+        {"code": "1468", "label": "컴퓨터관련서비스사업", "status": "registered"},
+        {"code": "28123", "label": "배전반 및 전기 자동제어반 제조업", "status": "registered"},
+        {"code": "0036", "label": "정보통신공사업", "status": "not_held"}
+      ],
+      "certifications": [
+        {"code": "SME", "label": "중소기업 확인", "status": "valid", "valid_until": "2027-03-31"},
+        {"code": "3912110604", "label": "모니터링장치 직접생산", "status": "valid", "valid_until": "2027-12-31"}
+      ],
+      "portfolio": {"completed": 2, "in_progress": 1, "evidence_missing": 1},
+      "strengths": ["EMS·PMS", "전력 제어", "제조업 등록", "모니터링장치 직접생산"],
+      "constraints": ["정보통신공사업 0036 미보유", "일반 포털 분야·지역 조건 제약", "완료 실적 1건 증빙 미확보", "기존 투입 인력 존재"],
+      "available_detail_levels": ["L2_PROFILE", "L2_PERFORMANCE", "L2_STAFF", "L2_CERTIFICATION", "L2_PLAN", "L3_COST", "L3_ESTIMATE", "L3_QUOTE", "L3_BID_REVIEW"]
+    }
+  ]
+}

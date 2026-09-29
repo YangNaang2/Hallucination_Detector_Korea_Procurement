@@ -1,0 +1,8 @@
+# Preserve original delivery bytes and hashes; do not normalize archived text.
+/presentations/archive/2026-09-29/** -text
+/presentations/final/최종리허설_LastDanceV2!.pptx -text
+/presentations/supporting-materials/2026-09-29/** -text
+/project-docs/청킹검증/delivery-archive/2026-09-29/** -text
+/project-docs/표본_정보시스템/검수/received-originals/** -text
+/project-docs/환각라벨링/demo-selection-archives/2026-09-29/** -text
+/팀원배포/archives/2026-09-15/** -text

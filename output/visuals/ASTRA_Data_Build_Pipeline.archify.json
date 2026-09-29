@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "공공입찰 AI 데이터 구축 파이프라인",
+    "subtitle": "나라장터 원천 데이터에서 RAG 검색 DB와 평가 데이터까지",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "output": "output/visuals/ASTRA_Data_Build_Pipeline.html",
+    "legend": { "mode": "hidden" }
+  },
+  "lanes": [
+    { "id": "collect", "label": "수집·정제" },
+    { "id": "structure", "label": "검수·구조화" },
+    { "id": "evaluation", "label": "평가 데이터" }
+  ],
+  "mainPath": ["g2b", "raw", "sample", "review", "secure_docs", "rag_index"],
+  "nodes": [
+    { "id": "g2b", "lane": "collect", "col": 0, "type": "cloud", "label": "나라장터 API 수집", "sublabel": "4·5·6월 약 13만 건", "width": 180, "height": 88 },
+    { "id": "raw", "lane": "collect", "col": 1, "type": "backend", "label": "원본 변환·정제", "sublabel": "raw → parsed → JSONL", "width": 180, "height": 88 },
+    { "id": "sample", "lane": "collect", "col": 2, "type": "database", "label": "표본 공고 선정", "sublabel": "핵심 공고 51건", "width": 180, "height": 88 },
+    { "id": "review", "lane": "structure", "col": 2, "type": "external", "label": "사람 검수·요건 추출", "sublabel": "공고문·제안요청서 대조", "width": 190, "height": 88 },
+    { "id": "secure_docs", "lane": "structure", "col": 3, "type": "security", "label": "가상기업·보안문서", "sublabel": "5개 기업 · L1/L2/L3", "width": 190, "height": 88 },
+    { "id": "rag_index", "lane": "structure", "col": 4, "type": "database", "label": "RAG 검색 DB", "sublabel": "청킹 · Lexical · Dense 색인", "width": 190, "height": 88 },
+    { "id": "eval_set", "lane": "evaluation", "col": 3, "type": "messagebus", "label": "검수 문항 300건", "sublabel": "질문 · 기대답 · 근거", "width": 190, "height": 88 }
+  ],
+  "edges": [
+    { "from": "g2b", "to": "raw" },
+    { "from": "raw", "to": "sample" },
+    { "from": "sample", "to": "review" },
+    { "from": "review", "to": "secure_docs" },
+    { "from": "secure_docs", "to": "rag_index" },
+    { "from": "review", "to": "eval_set", "label": "평가셋 생성", "variant": "dashed", "role": "branch" }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "package_id": "ASTRA-runtime-handoff-v1",
+  "created_at": "2026-09-16T21:55:00+09:00",
+  "scope": "local_model_retrieval_handoff",
+  "generation": {
+    "included": false,
+    "reason": "recipient_downloads_generator",
+    "recommended_model": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "filename": "Qwen3-4B-Q4_K_M.gguf",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "download_url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf"
+  },
+  "retriever": {
+    "included": true,
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "path": "models/retriever/e5",
+    "weights_sha256": "1a55775f53449dac10a2bcbc312469fac40b96d53198c407081a831f81c98477",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "dimension": 384
+  },
+  "detector": {
+    "included": true,
+    "model": "KLUE RoBERTa token classifier",
+    "path": "models/detector/klue",
+    "weights_sha256": "74523acd66c826c32d9d34954b99e41667286dec3f1e027d708266a7591dd782",
+    "labels": {
+      "0": "SUPPORTED",
+      "1": "HALLUCINATED"
+    },
+    "input_format": "[CLS] question/evidence [SEP] answer [SEP]",
+    "max_position_embeddings": 514,
+    "human_approval": "pending"
+  },
+  "retrieval": {
+    "index_path": "index/index.sqlite",
+    "index_sha256": "2b462bca269a9e7d7f9a450dfe125042b00187b6dd2567beb9ae44691c371c0f",
+    "chunk_export_path": "evidence/indexed_chunks.jsonl",
+    "chunk_export_sha256": "f5aedc525f3e2d408fa5d3ba25f4268d5bfee257551123c71db71b01260537db",
+    "chunk_count": 3275,
+    "notice_count": 51,
+    "security_level_counts": {
+      "L1": 3002,
+      "L2": 159,
+      "L3": 114
+    },
+    "companies": ["C01", "C02", "C03", "C04", "C05"],
+    "offset_unit": "Unicode code points [start,end)",
+    "production_index": false,
+    "human_approval": "pending"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "ASTRA 문서 청킹 및 검색 흐름",
+    "quality_profile": "showcase",
+    "animation": "none"
+  },
+  "lanes": [
+    { "id": "prepare", "label": "사전 구조화" },
+    { "id": "retrieve", "label": "질의 시 검색" }
+  ],
+  "phases": [
+    { "id": "chunking", "label": "문맥을 보존하는 청킹", "fromCol": 0, "toCol": 1, "variant": "emphasis" },
+    { "id": "search", "label": "질문과 관련된 근거 탐색", "fromCol": 2, "toCol": 3, "variant": "dashed" }
+  ],
+  "groups": [
+    { "id": "parent_unit", "label": "사람·생성 모델이 읽는 근거 단위", "lane": "prepare", "fromCol": 0, "toCol": 1, "variant": "emphasis" },
+    { "id": "embedding_unit", "label": "E5가 계산하는 검색 단위", "lane": "prepare", "fromCol": 2, "toCol": 2, "variant": "dashed" },
+    { "id": "return_unit", "label": "검색 결과", "lane": "retrieve", "fromCol": 2, "toCol": 3, "variant": "emphasis" }
+  ],
+  "mainPath": ["source", "parent", "window", "e5", "evidence"],
+  "semanticChecks": {
+    "allowedRoots": ["source", "question"],
+    "allowedTerminals": ["evidence"],
+    "requiredPaths": [
+      { "from": "source", "to": "evidence" },
+      { "from": "question", "to": "evidence" }
+    ]
+  },
+  "nodes": [
+    { "id": "source", "lane": "prepare", "col": 0, "type": "external", "label": "공고 원문", "width": 178 },
+    { "id": "parent", "lane": "prepare", "col": 1, "type": "database", "label": "Parent 청크 · 1,800자", "width": 190 },
+    { "id": "window", "lane": "prepare", "col": 2, "type": "backend", "label": "검색 윈도우 · 460토큰", "width": 190 },
+    { "id": "question", "lane": "retrieve", "col": 1, "type": "frontend", "label": "사용자 질문", "width": 174 },
+    { "id": "e5", "lane": "retrieve", "col": 2, "type": "backend", "label": "E5 의미 검색", "width": 190 },
+    { "id": "evidence", "lane": "retrieve", "col": 3, "type": "database", "label": "Parent 근거 반환", "width": 190 }
+  ],
+  "edges": [
+    { "id": "split_parent", "from": "source", "to": "parent", "label": "글자 기준 분할", "variant": "emphasis", "role": "main" },
+    { "id": "split_window", "from": "parent", "to": "window", "label": "토큰 기준 재분할", "variant": "emphasis", "role": "main" },
+    { "id": "window_search", "from": "window", "to": "e5", "label": "문서 벡터", "variant": "dashed", "role": "main", "fromSide": "bottom", "toSide": "top" },
+    { "id": "embed_question", "from": "question", "to": "e5", "label": "질문 벡터", "variant": "default", "role": "branch" },
+    { "id": "return_parent", "from": "e5", "to": "evidence", "label": "최고 관련도 선택", "variant": "emphasis", "role": "main" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "두 단위의 역할",
+      "items": [
+        "Parent: 최대 1,800자 · 240자 overlap",
+        "검색 윈도우: 최대 460토큰 · stride 420(40토큰 overlap)"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "검색 결과",
+      "items": [
+        "E5가 질문과 윈도우를 384차원 벡터로 비교",
+        "관련 구간을 찾은 뒤 Parent 전체를 답변 근거로 제공"
+      ]
+    }
+  ]
+}

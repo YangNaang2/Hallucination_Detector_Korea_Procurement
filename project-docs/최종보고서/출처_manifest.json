@@ -1,0 +1,158 @@
+{
+  "as_of": "2026-09-29",
+  "repository_base_commit": "d8e7f922d28b44d5ee91fe56f9c2979de8cae84e",
+  "inputs": [
+    {
+      "file": "최종리허설_LastDanceV2!.pptx",
+      "scope": "user_supplied",
+      "role": "최종 발표자료",
+      "bytes": 30312873,
+      "sha256": "7ab248ca3e37baace0a387d5710a62d3ee33059549769a32e1e3f4527113f547"
+    },
+    {
+      "file": "디지털트윈_화물적재_위험도분석보고서_A1.pdf",
+      "scope": "user_supplied",
+      "role": "보고서 형식 참고",
+      "bytes": 837008,
+      "sha256": "6bc811f0964e94b2739a00a522c4879e98c904a61b4b10f94b7cfd80e1a11f52"
+    },
+    {
+      "file": "selection_manifest.json",
+      "scope": "user_supplied",
+      "role": "사용자 제공 80% 시연 선정 기록",
+      "bytes": 47669,
+      "sha256": "0ed1068e817088b4f20bc81a063e842b0b60a551b77b6f4164f484141f8f8aa2"
+    },
+    {
+      "file": "SUMMARY.md",
+      "scope": "user_supplied",
+      "role": "사용자 제공 80% 시연 설명",
+      "bytes": 5150,
+      "sha256": "3023945adf089c3dfead34c3983127cc6ee969df5cf2008d30ff58f58f75a67f"
+    },
+    {
+      "file": "README.md",
+      "scope": "user_supplied",
+      "role": "사용자 제공 80% 시연 모델 식별",
+      "bytes": 2886,
+      "sha256": "2247d4170ae227d12464387964a975fff83e91fcbf081de5af41aeafb43c881e"
+    },
+    {
+      "file": "project-docs/프로젝트_진행현황_팀공유_2026-09-11.md",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 12619,
+      "sha256": "b9d1705f8d8389f394fb95803c0a938556b53aca28e4e1e14961a0c9b5dc327a"
+    },
+    {
+      "file": "project-docs/데이터현황/3개월_통합현황.md",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 6377,
+      "sha256": "efb3b897562181743e6e8b311b01f245d56d26dbc93ceb84638e351e4ab734f1"
+    },
+    {
+      "file": "project-docs/가상기업/v1/company_master.json",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 186939,
+      "sha256": "841f8981dc1fc699e576c4c3348ab0be31f8c5c6bde315568c9f66debeecd583"
+    },
+    {
+      "file": "project-docs/가상기업/v1/validation_report.json",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 2348,
+      "sha256": "76c0f5c5fd7cb38a5a30b2ce499e0b9e356b4b8ac89a738bf384debfc49c43c8"
+    },
+    {
+      "file": "project-docs/평가데이터/v2/evaluation/questions_300.jsonl",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 2538366,
+      "sha256": "b9d0f8f5d689342404f1cdf49485b4a92efc4ca1977389a935b9bc1d12b8a253"
+    },
+    {
+      "file": "project-docs/평가데이터/v2/evaluation/distribution.json",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 2892,
+      "sha256": "d425daf95816ad6ff39993a33621f38968909cc8507c4d41beb0f19d2a2ecbe7"
+    },
+    {
+      "file": "project-docs/RAG파일럿/workstation-275/evaluation/final_summary.json",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 1050,
+      "sha256": "af680bfda43c0beed09d3417ceb8714630ed1d7a2696feb4d53425b109d89375"
+    },
+    {
+      "file": "project-docs/환각라벨링/pilot-25-human-review-v1/README.md",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 6315,
+      "sha256": "a0d42a95dc155adb56341e4ffe0c51e0dada5ae3b5a36165e4e5f020185ce935"
+    },
+    {
+      "file": "procurement-pipeline/rag_pilot.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 37325,
+      "sha256": "71563e1797eca9a03ee83544fdc48c43b2363298c552ff6b87a95cca944dbf2f"
+    },
+    {
+      "file": "procurement-pipeline/rag_pilot_embedding.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 6331,
+      "sha256": "2c53101e91365db72672ee57f50da51042fbc7d3f428e734b908a02c9b054208"
+    },
+    {
+      "file": "demo-ui/spatial-poc/integrated_server.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 6131,
+      "sha256": "4ef6fc5f9cbac8958cc6af58bec262bafb9924ed447f27499206f31e1d2fcbb8"
+    },
+    {
+      "file": "demo-ui/spatial-poc/detector_bridge.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 5364,
+      "sha256": "789853614a18962a8d8a353f5ee2c6baf1c1653e5a014bf08518af74e1a10996"
+    },
+    {
+      "file": "src/dataset.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 5830,
+      "sha256": "7487ee75f297dd4f0d4223a53325ef06644e26583518299be83f7cd322daebc4"
+    },
+    {
+      "file": "src/evaluate.py",
+      "scope": "repository",
+      "role": "프로젝트 1차 자료",
+      "bytes": 4265,
+      "sha256": "828610506f4d99b1bd4a3010c219aabbc6a1330fa2731059e1d74e8904bbf334"
+    }
+  ],
+  "figure_provenance": {
+    "user_pipeline.png": "최종 PPT 13쪽의 사용자 흐름 재구성",
+    "collection.png": "3개월 통합 현황 주요 3분야 집계",
+    "chunking.png": "최종 PPT 16-18쪽의 설정 개념도",
+    "retrieval_metrics.png": "최종 PPT 18쪽의 보고값 전사",
+    "llm_memory.png": "최종 PPT 20-21쪽의 보고값 전사",
+    "translation.png": "최종 PPT 24쪽과 태그 복원 코드",
+    "detector_f1.png": "최종 PPT 25-26쪽 및 기존 실험 기록",
+    "dashboard.png": "공개 L1 저장 결과 데모 화면; 모델 호출 없음",
+    "confusion.png": "제공 시연 세트의 TP40 FN10 FP10 TN40; 사후 선별",
+    "hypothesis.png": "h=.11, recall=.80, specificity=.80 가정 계산"
+  },
+  "excluded": [
+    "원천 공고 파일",
+    "전체 원문 캐시",
+    "모델 가중치",
+    "색인 DB",
+    "비밀키"
+  ]
+}
