@@ -1,0 +1,263 @@
+{
+  "date": "2026-09-29",
+  "new_files": 28,
+  "total_bytes": 270866753,
+  "text_units_scanned": 3175,
+  "archives_scanned": 103,
+  "issues": [],
+  "skipped_identical_files": [],
+  "files": [
+    {
+      "source_name": "B1 AI 프로젝트 4주차 발표 자료.pptx",
+      "source_group": "desktop",
+      "path": "presentations/archive/2026-09-29/desktop/B1 AI 프로젝트 4주차 발표 자료.pptx",
+      "category": "presentation_history",
+      "bytes": 3386390,
+      "sha256": "20124ce7dacd10de5835a05b9cb9f72fc0e77d5d089b6d6a262e745aff1ba809",
+      "git_blob_sha1": "46cdfa68f88a5f10edc790e04c4e5d14453cf929"
+    },
+    {
+      "source_name": "B1 AI 프로젝트 5주차 발표 자료.pptx",
+      "source_group": "desktop",
+      "path": "presentations/archive/2026-09-29/desktop/B1 AI 프로젝트 5주차 발표 자료.pptx",
+      "category": "presentation_history",
+      "bytes": 30713482,
+      "sha256": "469aa42d222f7a9fa18efec90ef094fd591115fa5bf0223202aeac7c104e234f",
+      "git_blob_sha1": "17e3e418577a6913367141b6c64cce3db54d349c"
+    },
+    {
+      "source_name": "B1 AI 프로젝트 5주차 발표 자료_환각BeforeAfter추가.pptx",
+      "source_group": "desktop",
+      "path": "presentations/archive/2026-09-29/desktop/B1 AI 프로젝트 5주차 발표 자료_환각BeforeAfter추가.pptx",
+      "category": "presentation_history",
+      "bytes": 30720173,
+      "sha256": "03aaae6373dc9e8fcc199febba80d1c1ff8cf931d789c1042fec0b631263c2f6",
+      "git_blob_sha1": "b2aa1b1d835ca04393099ec51d505dbd743bce6c"
+    },
+    {
+      "source_name": "이게저에영V3!.pptx",
+      "source_group": "desktop",
+      "path": "presentations/archive/2026-09-29/desktop/이게저에영V3!.pptx",
+      "category": "presentation_history",
+      "bytes": 30736661,
+      "sha256": "69ded73783d9fd0059fc0a7bddea5c283f2f6a5b9001cd98e45bd33bf842b77c",
+      "git_blob_sha1": "acfb1a434e21a280733d30e71b0015cc4068959e"
+    },
+    {
+      "source_name": "최종리허설_LastDance!.pptx",
+      "source_group": "desktop",
+      "path": "presentations/archive/2026-09-29/desktop/최종리허설_LastDance!.pptx",
+      "category": "presentation_history",
+      "bytes": 30721127,
+      "sha256": "fd50b3cd8f027d8cc2805b294389c8a62a15bc4ae4e8b3266d6ffa74d8fcf27d",
+      "git_blob_sha1": "40358952d135da2cd0b672d6a85ab526b9d259a3"
+    },
+    {
+      "source_name": "최종리허설_LastDanceV2!.pptx",
+      "source_group": "desktop",
+      "path": "presentations/final/최종리허설_LastDanceV2!.pptx",
+      "category": "final_presentation",
+      "bytes": 46970283,
+      "sha256": "aaf77bf90bce6952d248f5430ec34a80b5015eb7ba608bec103f07d9a0770455",
+      "git_blob_sha1": "641b655be877222e7e3152cfeba5353e6b7e3689"
+    },
+    {
+      "source_name": "ASTRA_청크크기_Claude_분석요청.md",
+      "source_group": "downloads",
+      "path": "project-docs/청킹검증/delivery-archive/2026-09-29/ASTRA_청크크기_Claude_분석요청.md",
+      "category": "chunking_analysis_package",
+      "bytes": 1804,
+      "sha256": "1c1461d699c1b5ddaa242ff262504560590fdd846c041a4c7189644545609e9c",
+      "git_blob_sha1": "ca5e8a0a862486a327462486602cdac0dde89b9b"
+    },
+    {
+      "source_name": "ASTRA_청크크기_정량비교_Claude분석용_v1.zip",
+      "source_group": "downloads",
+      "path": "project-docs/청킹검증/delivery-archive/2026-09-29/ASTRA_청크크기_정량비교_Claude분석용_v1.zip",
+      "category": "chunking_analysis_package",
+      "bytes": 156013,
+      "sha256": "237f72fd747c25ced7d2b095f6df8b9e24ff180ba8602840fd3773a5db7b87a1",
+      "git_blob_sha1": "aecc54a04e10234628d02fdb96dbb3ffde3bdce7"
+    },
+    {
+      "source_name": "ASTRA_청크크기_정량비교_Claude분석용_v1.zip.sha256",
+      "source_group": "downloads",
+      "path": "project-docs/청킹검증/delivery-archive/2026-09-29/ASTRA_청크크기_정량비교_Claude분석용_v1.zip.sha256",
+      "category": "chunking_analysis_package",
+      "bytes": 121,
+      "sha256": "282ce9c91c44aed93657145564c5d47d17e000da9b78354ae543e20a6c3cd045",
+      "git_blob_sha1": "d1e2ea0e86a2a61e3518cff5b31941a566060b51"
+    },
+    {
+      "source_name": "KLUE_대시보드_시연_80퍼센트_100건.zip",
+      "source_group": "downloads",
+      "path": "project-docs/환각라벨링/demo-selection-archives/2026-09-29/KLUE_대시보드_시연_80퍼센트_100건.zip",
+      "category": "curated_demo_selection",
+      "bytes": 250798,
+      "sha256": "0e3c9561021c142462dc27e39bba0505a8bb0ed9903daa699faf3d47b71c169a",
+      "git_blob_sha1": "04b38bcdea7dee0b12b083d1ae00f87d1d52f135"
+    },
+    {
+      "source_name": "KLUE_대시보드_시연_85퍼센트_100건.zip",
+      "source_group": "downloads",
+      "path": "project-docs/환각라벨링/demo-selection-archives/2026-09-29/KLUE_대시보드_시연_85퍼센트_100건.zip",
+      "category": "curated_demo_selection",
+      "bytes": 252484,
+      "sha256": "bde777dca953cd94c40cf9ce983292a4b9b2686d2facfc2c7afaac185a47a55b",
+      "git_blob_sha1": "8c846bdb775a0d0f2f9c18d7d4dc23b6b235ae8e"
+    },
+    {
+      "source_name": "ASTRA_LLM선정_2장_11GB.pptx",
+      "source_group": "received",
+      "path": "presentations/supporting-materials/2026-09-29/ASTRA_LLM선정_2장_11GB.pptx",
+      "category": "supporting_material",
+      "bytes": 159533,
+      "sha256": "f582531c5e855fdd749072286c27d7bd488333288b690101f293f40c8a887f75",
+      "git_blob_sha1": "a1a29b27e9bd5fcf9923e6a27e5dfe9a38d1a3c7"
+    },
+    {
+      "source_name": "ASTRA_LLM선정보고서_메모리10GB.pdf",
+      "source_group": "received",
+      "path": "presentations/supporting-materials/2026-09-29/ASTRA_LLM선정보고서_메모리10GB.pdf",
+      "category": "supporting_material",
+      "bytes": 511604,
+      "sha256": "ae7b78aa491c6c20e656838c8064899a2507e3d3ab2ef8da0447b76b61285c09",
+      "git_blob_sha1": "539c47c1e6e652430ffb6b727207d1279a1a7f20"
+    },
+    {
+      "source_name": "ASTRA_RAG_청킹검색생성_SVG_4장.zip",
+      "source_group": "received",
+      "path": "presentations/supporting-materials/2026-09-29/ASTRA_RAG_청킹검색생성_SVG_4장.zip",
+      "category": "supporting_material",
+      "bytes": 186534,
+      "sha256": "2e554fd784c85d0a617ebc4c811343d6d15b77428ba3af24ee5e9f9bc1cf80a7",
+      "git_blob_sha1": "2ea53ff42644eb3eae2061bd2aca920ec563cdcc"
+    },
+    {
+      "source_name": "ASTRA_시안_큰틀_v0.1.html",
+      "source_group": "received",
+      "path": "presentations/supporting-materials/2026-09-29/ASTRA_시안_큰틀_v0.1.html",
+      "category": "supporting_material",
+      "bytes": 54159,
+      "sha256": "9b74df4d10d157471aed66cf7364b4fdc045df8c83ab2953699df79b058a36e6",
+      "git_blob_sha1": "4262760e807ea6def15f6d859b32dc9ce452c82a"
+    },
+    {
+      "source_name": "ASTRA_환각구간라벨링_상세_SVG_9장.zip",
+      "source_group": "received",
+      "path": "presentations/supporting-materials/2026-09-29/ASTRA_환각구간라벨링_상세_SVG_9장.zip",
+      "category": "supporting_material",
+      "bytes": 21058,
+      "sha256": "c58ff46942fdce0db14f082477a8454dc30ff2711ab2ef8d29eb625a6e435118",
+      "git_blob_sha1": "dd86909cfe4ff07d6a2f26ed61cfe9b53490c3bb"
+    },
+    {
+      "source_name": "LASTDANCE_4 (1).pptx",
+      "source_group": "received",
+      "path": "presentations/archive/2026-09-29/received/LASTDANCE_4 (1).pptx",
+      "category": "presentation_history",
+      "bytes": 30315973,
+      "sha256": "357ed523ca83403ea8b5c62295182aff3dc85c4ee10d53424bacf1e8371945f3",
+      "git_blob_sha1": "d907c41fa4f02d2d2633d2fc062a28a0b893514c"
+    },
+    {
+      "source_name": "LASTDANCE_4 (2).pptx",
+      "source_group": "received",
+      "path": "presentations/archive/2026-09-29/received/LASTDANCE_4 (2).pptx",
+      "category": "presentation_history",
+      "bytes": 30712269,
+      "sha256": "49eff91adebeba2c0f74e33162159f5ed9c193ddb80c56c62232a483a82aeef2",
+      "git_blob_sha1": "4fc8f2452577404fb53f871f89b9b15404e31607"
+    },
+    {
+      "source_name": "LASTDANCE_4.pptx",
+      "source_group": "received",
+      "path": "presentations/archive/2026-09-29/received/LASTDANCE_4.pptx",
+      "category": "presentation_history",
+      "bytes": 30650665,
+      "sha256": "532f10936971f36e2dc085815837bb67cddf1ab74934ed26c8fd3455d08c6d09",
+      "git_blob_sha1": "71f0d1663f823de6be440ca9cac16e5029fba7e7"
+    },
+    {
+      "source_name": "요건추출시트_팀원1.csv",
+      "source_group": "received",
+      "path": "project-docs/표본_정보시스템/검수/received-originals/요건추출시트_팀원1.csv",
+      "category": "requirement_sheet_original",
+      "bytes": 74951,
+      "sha256": "dc48fb29c3068cf4d6961968699f7ea47dc920a79bf083ebda94c590db536eb8",
+      "git_blob_sha1": "0e6193b7889621b5eb7f174d7306559737bd6e72"
+    },
+    {
+      "source_name": "요건추출시트_팀원2.xlsx",
+      "source_group": "received",
+      "path": "project-docs/표본_정보시스템/검수/received-originals/요건추출시트_팀원2.xlsx",
+      "category": "requirement_sheet_original",
+      "bytes": 35088,
+      "sha256": "f61523a6e79015ff61b9eec952bdabb7309efefa912fc0ad7161f1e02f1db5c4",
+      "git_blob_sha1": "35943b9d87f64a8fbcbef69b137801df1c84e5e8"
+    },
+    {
+      "source_name": "요건추출시트_팀원3.xlsx",
+      "source_group": "received",
+      "path": "project-docs/표본_정보시스템/검수/received-originals/요건추출시트_팀원3.xlsx",
+      "category": "requirement_sheet_original",
+      "bytes": 29006,
+      "sha256": "c1722d9963101bc0356a67b3c90854911f6bc80a5a05c96d94c2be1d8639bfbf",
+      "git_blob_sha1": "5985f2d314a4802d6af5f300d1e8734beaebb2c4"
+    },
+    {
+      "source_name": "요건추출시트_팀원4.csv",
+      "source_group": "received",
+      "path": "project-docs/표본_정보시스템/검수/received-originals/요건추출시트_팀원4.csv",
+      "category": "requirement_sheet_original",
+      "bytes": 69140,
+      "sha256": "4bfae3194170440e03cd89877bb02085fee574201fa8a6794eed1ee2bdd2633c",
+      "git_blob_sha1": "47cbe5ebc8f2aeb838c2e4a77beb04a7faec0daf"
+    },
+    {
+      "source_name": "요건추출시트_팀원5.csv",
+      "source_group": "received",
+      "path": "project-docs/표본_정보시스템/검수/received-originals/요건추출시트_팀원5.csv",
+      "category": "requirement_sheet_original",
+      "bytes": 76393,
+      "sha256": "ecef47d8a9e135509f3caed2d58ecde2210719f0c839817d074dd0477d408578",
+      "git_blob_sha1": "0db628fa508b9b177f6b6a05800a0b1e13792994"
+    },
+    {
+      "source_name": "ASTRA-dashboard-team3.zip",
+      "source_group": "local_delivery",
+      "path": "팀원배포/archives/2026-09-15/ASTRA-dashboard-team3.zip",
+      "category": "historical_team_package",
+      "bytes": 535847,
+      "sha256": "280211e91c168491a9222dba5b806d7f46d5ec581b40067f002708e297c873ba",
+      "git_blob_sha1": "631a24520383d61bd43c8f07a623b5597e44147c"
+    },
+    {
+      "source_name": "ASTRA-dashboard-team3.zip.sha256",
+      "source_group": "local_delivery",
+      "path": "팀원배포/archives/2026-09-15/ASTRA-dashboard-team3.zip.sha256",
+      "category": "historical_team_package",
+      "bytes": 93,
+      "sha256": "5c518c90fccb8f7bfaf996dcc662510860bd9b711aeaa8247aee969c96d8c435",
+      "git_blob_sha1": "b17f873f5cbd464bb937da33dd5fd0581ce16f2f"
+    },
+    {
+      "source_name": "ASTRA-LLM-evaluation-one-person.zip",
+      "source_group": "local_delivery",
+      "path": "팀원배포/archives/2026-09-15/ASTRA-LLM-evaluation-one-person.zip",
+      "category": "historical_team_package",
+      "bytes": 3525001,
+      "sha256": "b10780d2722c6f72cf6da47423a00c8dfa6bbe61c95775071b82a022c001869f",
+      "git_blob_sha1": "50c18b7c961caa2027de6f54af672499a00c9be0"
+    },
+    {
+      "source_name": "ASTRA-LLM-evaluation-one-person.zip.sha256",
+      "source_group": "local_delivery",
+      "path": "팀원배포/archives/2026-09-15/ASTRA-LLM-evaluation-one-person.zip.sha256",
+      "category": "historical_team_package",
+      "bytes": 103,
+      "sha256": "2e5857638053d942541d8abbf853a6bd64552003f6015d3226a735ad31f0778e",
+      "git_blob_sha1": "b605a192c48f4603158b0df5e7c1dfc2954e0f30"
+    }
+  ]
+}
