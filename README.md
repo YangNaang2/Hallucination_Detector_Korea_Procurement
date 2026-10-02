@@ -163,7 +163,7 @@ RAGTruth의 환각 구절에 태그를 붙여 한국어로 번역하고, 번역�
 
 ![문서 보안 등급·근거 확인·환각 의심 구절 표시 시연](docs/assets/blue-jay-evidence-detection.png)
 
-→ [학습 데이터 구성 코드](src/dataset.py) · [탐지 추론 코드](demo/detector.py) · [대시보드 탐지 연결부](demo-ui/spatial-poc/detector_bridge.py)
+→ [학습 데이터 구성 코드](src/dataset.py) · [탐지 추론 코드](demo/detector.py)
 
 ## 평가 결과와 해석 범위
 
@@ -204,7 +204,7 @@ Macro F1은 정상·환각 클래스의 F1을 동일한 비중으로 평균합�
 
 이 저장소는 나라장터 데이터 처리, RAG, 환각 탐지 모델의 학습·추론·평가와 데이터셋을 관리합니다. 모델 가중치·색인·비밀키는 포함하지 않습니다.
 
-기존 `demo-ui/`와 UI 배포 폴더는 이전 개발용 시제품입니다. 현재 대시보드 안내는 위 별도 저장소를 기준으로 합니다.
+기존 개발용 UI와 전용 배포 도구는 제거했습니다. 대시보드 소스와 실행 안내는 위 별도 저장소를 기준으로 합니다.
 
 ## 저장소 안내
 
@@ -214,7 +214,6 @@ Macro F1은 정상·환각 클래스의 F1을 동일한 비중으로 평균합�
 | [`src/`](src/) · [`scripts/`](scripts/) | 번역 데이터 처리·탐지 모델 학습·평가 |
 | [`demo/`](demo/) | 학습한 환각 탐지기의 추론 |
 | [BlueJay Dashboard](https://github.com/jihoon0915-gif/BlueJay_Dashboard) | 별도 저장소에서 관리하는 UI 대시보드 |
-| [`demo-ui/spatial-poc/`](demo-ui/spatial-poc/) | 이전 개발용 UI·질문 서버·탐지 연결부 |
 | [`project-docs/`](project-docs/) | 데이터 현황·합성 기업·평가셋·실행 결과·검수 기록 |
 | [`팀원배포/`](팀원배포/) | 개발 환경·배포·협업 안내 |
 | [`docs/assets/`](docs/assets/) | 최종 발표에서 추출한 README 이미지 |
