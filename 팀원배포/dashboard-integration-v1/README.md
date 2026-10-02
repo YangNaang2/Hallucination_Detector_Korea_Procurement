@@ -1,6 +1,6 @@
 # ASTRA 대시보드 개발 패키지 · 2026-09-15
 
-처음 받는 팀원은 [오늘 배포 시작 안내](오늘_배포_시작.md)를 먼저 읽습니다. 세 체크포인트 실제 CPU 스모크 결과는 detector-smoke.json, 파일 확인용 해시는 checkpoints.json입니다.
+처음 받는 팀원은 [오늘 배포 시작 안내](https://github.com/YangNaang2/ko-lettucedetect/blob/ddcec71d2e2c75a18549943948f916283d92982b/%ED%8C%80%EC%9B%90%EB%B0%B0%ED%8F%AC/dashboard-integration-v1/%EC%98%A4%EB%8A%98_%EB%B0%B0%ED%8F%AC_%EC%8B%9C%EC%9E%91.md)를 먼저 읽습니다. 세 체크포인트 실제 CPU 스모크 결과는 detector-smoke.json, 파일 확인용 해시는 checkpoints.json입니다.
 
 배포 브랜치: feature/sample-expansion-demo. 이 폴더와 해당 브랜치의 저장소가 개발 패키지다. 독립 실행 바이너리나 모델 포함 ZIP이 아니다. 팀원은 GitHub 저장소 접근 권한이 필요하다. main으로 자동 병합하지 않는다.
 

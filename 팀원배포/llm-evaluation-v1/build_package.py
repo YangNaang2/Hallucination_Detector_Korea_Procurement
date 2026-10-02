@@ -24,7 +24,7 @@ def main():
   add('project-docs/RAG파일럿/workstation-275/'+name)
  for name in ['README.md','조정사항.md','adjudication_proposals.jsonl','submitted_reviews.jsonl']:
   add('project-docs/환각라벨링/pilot-25-human-review-v1/'+name)
- for rel in ['project-docs/프로젝트_진행현황_팀공유_2026-09-11.md','project-docs/데이터현황/3개월_통합현황.md']:add(rel)
+ for rel in ['README.md','project-docs/데이터현황/3개월_통합현황.md']:add(rel)
  effective=json.loads((ROOT/'project-docs/RAG파일럿/workstation-275/evaluation/effective_results.json').read_text(encoding='utf-8'))
  records=effective['records']
  for rec in records:add(rec['record_path'])
@@ -37,7 +37,7 @@ def main():
  files['results_template.jsonl']=''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in slots).encode()
  plan=dict(version='1.0.0',status='design_not_executed',assignee_count=1,model_candidates=['llama','qwen','exaone'],models_selected=False,primary_track='fixed-retrieval',rubric_version='1.0',questions=300,companies=dict(collections.Counter(q['company_id'] for q in qs)),notices=len({q['bid_key'] for q in qs}),categories=dict(collections.Counter(q['category'] for q in qs)),expected_actions=dict(collections.Counter(q['expected_action'] for q in qs)),slots_if_three_models=900,expected_generation_targets_if_acl_preserved=885,source_cache_included=False,index_included=False,model_weights_included=False,prior_results='mixed_conditions_reference_only',span_gold='not_finalized_for_new_answers')
  files['experiment_plan.json']=json.dumps(plan,ensure_ascii=False,indent=2).encode()
- for name in ['README.md','metrics.md','담당자_AI프롬프트.md','validate_package.py','validation.json']:
+ for name in ['README.md','metrics.md','validate_package.py','validation.json']:
   files[name]=(HERE/name).read_bytes()
  manifest=dict(base_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),files=[dict(path=k,size=len(v),sha256=hashlib.sha256(v).hexdigest()) for k,v in sorted(files.items())])
  files['PACKAGE_MANIFEST.json']=json.dumps(manifest,ensure_ascii=False,indent=2).encode()
