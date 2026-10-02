@@ -8,11 +8,11 @@ Blue Jay는 나라장터 공고와 기업 자료를 함께 검토하는 입찰 �
 
 포스코 청년 AI·Big Data 아카데미 34기 B1조 프로젝트입니다. 저장소명은 `ko-lettucedetect`, 초기 서비스명은 `ASTRA`이며, 최종 발표에서는 **Blue Jay**를 사용합니다.
 
-[최종 발표 PPT](https://github.com/YangNaang2/ko-lettucedetect/blob/bb6b2ff2c158123eb5b997020f53bbc47801d4be/presentations/final/최종리허설_LastDanceV2!.pptx) · [종합 보고서](https://github.com/YangNaang2/ko-lettucedetect/blob/bb6b2ff2c158123eb5b997020f53bbc47801d4be/output/pdf/Blue_Jay_공공입찰_AI_종합보고서.pdf) · [300문항 데이터셋](project-docs/평가데이터/v2/README.md) · [데모 실행](#데모-실행)
+[최종 발표 PPT](https://github.com/YangNaang2/ko-lettucedetect/blob/bb6b2ff2c158123eb5b997020f53bbc47801d4be/presentations/final/최종리허설_LastDanceV2!.pptx) · [종합 보고서](https://github.com/YangNaang2/ko-lettucedetect/blob/bb6b2ff2c158123eb5b997020f53bbc47801d4be/output/pdf/Blue_Jay_공공입찰_AI_종합보고서.pdf) · [300문항 데이터셋](project-docs/평가데이터/v2/README.md) · [UI 대시보드](https://github.com/jihoon0915-gif/BlueJay_Dashboard)
 
 ![최종 발표에 수록한 Blue Jay 홈·로그인·공고 탐색 화면](docs/assets/blue-jay-dashboard.png)
 
-*최종 PPT에 수록한 시연 화면입니다. 아래 실행 안내는 이 저장소의 개발용 대시보드 기준이며, 발표 화면과 UI 버전·모델 설정이 다를 수 있습니다.*
+*최종 PPT에 수록한 시연 화면입니다. UI 소스와 실행 안내는 별도 [BlueJay Dashboard 저장소](https://github.com/jihoon0915-gif/BlueJay_Dashboard)에서 관리합니다.*
 
 ## 프로젝트가 해결하려는 문제
 
@@ -37,7 +37,7 @@ Blue Jay는 나라장터 공고와 기업 자료를 함께 검토하는 입찰 �
 5. **환각 탐지** — 생성 답변을 실제 전달된 근거와 대조해 의심 구절을 찾습니다.
 6. **결과 검토** — 답변, 출처, 의심 구절을 함께 확인합니다.
 
-현재 개발용 통합 서버의 탐지는 **답변 생성 완료 후** 수행합니다. 탐지하지 못한 구절도 있을 수 있으며, 미검출은 답변의 정확성을 보증하지 않습니다.
+기존 개발용 통합 서버에서는 탐지를 **답변 생성 완료 후** 수행했습니다. 별도 UI의 동작과 설정은 해당 저장소의 안내를 확인하세요. 탐지하지 못한 구절도 있을 수 있으며, 미검출은 답변의 정확성을 보증하지 않습니다.
 
 ## 데이터 구축: 공고 51건 · 가상 기업 5곳 · 평가 질문 300건
 
@@ -196,29 +196,15 @@ Macro F1은 정상·환각 클래스의 F1을 동일한 비중으로 평균합�
 
 </details>
 
-## 데모 실행
+## UI 대시보드
 
-Python 3.10 이상과 Git이 필요합니다. **저장 결과 모드**는 모델 다운로드 없이 실행할 수 있습니다.
+**[BlueJay Dashboard — UI 소스 및 실행 안내](https://github.com/jihoon0915-gif/BlueJay_Dashboard)**
 
-```bash
-git clone https://github.com/YangNaang2/ko-lettucedetect.git
-cd ko-lettucedetect
-python demo-ui/spatial-poc/integrated_server.py --generator disconnected --port 8769
-```
+대시보드는 팀원이 관리하는 별도 저장소에서 제공합니다. 화면 코드, 설치 방법과 실행 설정은 위 저장소를 확인하세요.
 
-브라우저에서 **http://127.0.0.1:8769/rag-observatory.html**을 엽니다. 공고 지도는 **http://127.0.0.1:8769/public-notices.html**에서 확인합니다. 종료는 실행 터미널에서 `Ctrl+C`입니다.
+이 저장소는 나라장터 데이터 처리, RAG, 환각 탐지 모델의 학습·추론·평가와 데이터셋을 관리합니다. 모델 가중치·색인·비밀키는 포함하지 않습니다.
 
-| 실행 범위 | 현재 저장소에서의 동작 |
-|---|---|
-| 저장 결과 모드 | 공고·예시 질문·저장 답변·출처 확인. 자유 질문의 새 답변은 생성하지 않음 |
-| 로컬 공개 L1 서버 | 선택 공고의 공개 문서 검색. 현재 이 서버는 키워드 검색이며, 위 배치 하이브리드 검색과 구분 |
-| 실제 생성·탐지 | 로컬 생성 서버·기존 색인·탐지 체크포인트를 별도 준비하고 연결 |
-| 내부 검수 | 별도 개발용 접근 키로 검수 자료 조회. 운영용 회사 인증을 대신하지 않음 |
-| L2·L3 자유 질문 | 배치 평가의 권한 검증과 별개로, 공개 개발 서버에는 미연결 |
-
-모델·색인·전체 원천 캐시·비밀키는 저장소에 포함하지 않습니다. 설정 파일의 모델명이 바뀌었다고 실제 설치·연결 모델이 바뀐 것으로 간주하지 않습니다. 기존 연결 검증에는 Qwen2.5-1.5B 등 다른 모델도 사용됐으므로, **실행 시 서버 상태와 모델 식별자를 확인**해야 합니다.
-
-실제 모델 연결, Windows·Linux 실행 절차, 테스트 명령은 [개발 패키지 안내](팀원배포/dashboard-integration-v1/README.md)와 [설정 예시](팀원배포/dashboard-integration-v1/.env.example)에 정리돼 있습니다.
+기존 `demo-ui/`와 UI 배포 폴더는 이전 개발용 시제품입니다. 현재 대시보드 안내는 위 별도 저장소를 기준으로 합니다.
 
 ## 저장소 안내
 
@@ -227,7 +213,8 @@ python demo-ui/spatial-poc/integrated_server.py --generator disconnected --port 
 | [`procurement-pipeline/`](procurement-pipeline/) | 수집·정제, 회사 문서·평가 자료 생성, 권한·RAG 실행·검증 |
 | [`src/`](src/) · [`scripts/`](scripts/) | 번역 데이터 처리·탐지 모델 학습·평가 |
 | [`demo/`](demo/) | 학습한 환각 탐지기의 추론 |
-| [`demo-ui/spatial-poc/`](demo-ui/spatial-poc/) | 지도·질문 대시보드·공개 L1 서버·내부 검수 |
+| [BlueJay Dashboard](https://github.com/jihoon0915-gif/BlueJay_Dashboard) | 별도 저장소에서 관리하는 UI 대시보드 |
+| [`demo-ui/spatial-poc/`](demo-ui/spatial-poc/) | 이전 개발용 UI·질문 서버·탐지 연결부 |
 | [`project-docs/`](project-docs/) | 데이터 현황·합성 기업·평가셋·실행 결과·검수 기록 |
 | [`팀원배포/`](팀원배포/) | 개발 환경·배포·협업 안내 |
 | [`docs/assets/`](docs/assets/) | 최종 발표에서 추출한 README 이미지 |
