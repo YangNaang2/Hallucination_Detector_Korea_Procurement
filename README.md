@@ -215,7 +215,6 @@ Macro F1은 정상·환각 클래스의 F1을 동일한 비중으로 평균합�
 | [`demo/`](demo/) | 학습한 환각 탐지기의 추론 |
 | [BlueJay Dashboard](https://github.com/jihoon0915-gif/BlueJay_Dashboard) | 별도 저장소에서 관리하는 UI 대시보드 |
 | [`project-docs/`](project-docs/) | 데이터 현황·합성 기업·평가셋·실행 결과·검수 기록 |
-| [`팀원배포/`](팀원배포/) | 개발 환경·배포·협업 안내 |
 | [`docs/assets/`](docs/assets/) | 최종 발표에서 추출한 README 이미지 |
 
 README는 최종 발표의 흐름을 기준으로 구성했습니다. 수치·화면·구현 상태의 출처와 버전은 [README 근거 기록](docs/README_SOURCES.md)에서 확인할 수 있습니다. 초기 번역 파일럿 안내는 [이전 README](https://github.com/YangNaang2/ko-lettucedetect/blob/bb6b2ff2c158123eb5b997020f53bbc47801d4be/README.md)에 보존돼 있습니다.

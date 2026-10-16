@@ -24,6 +24,10 @@ INDEX_DIR = HERE / "index"
 DEFAULT_EMBEDDER = "BAAI/bge-m3"
 
 
+# Folder instructions shipped with a corpus are not documents to index.
+GUIDE_FILES = {"여기에_문서를_넣으세요.md"}
+
+
 def read_text(path: Path) -> str:
     if path.suffix.lower() == ".pdf":
         try:
@@ -97,7 +101,8 @@ def main() -> None:
     args = ap.parse_args()
 
     src = Path(args.src)
-    files = sorted([p for p in src.rglob("*") if p.suffix.lower() in {".pdf", ".txt", ".md"}]) \
+    files = sorted([p for p in src.rglob("*") if p.suffix.lower() in {".pdf", ".txt", ".md"}
+                    and p.name not in GUIDE_FILES]) \
         if src.is_dir() else [src]
     if not files:
         raise SystemExit(f"[!] 읽을 문서가 없습니다: {src}")

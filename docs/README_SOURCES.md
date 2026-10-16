@@ -39,7 +39,7 @@ PowerPoint에서 해당 슬라이드를 1,600×900 PNG로 내보냈다. 원본 P
 | XLM-R/KLUE/BGE-M3 Macro F1 | 25 | `project-docs/Claude_인수인계_2026-09-11.md`, `결과분석_및_발표구성.md` |
 | 검색 Hit@6 79.79% · MRR0.6096 | 16–18 | `590aadf:project-docs/RAG파일럿/chunk-ablation-v1/README.md`, `summary.csv`; 분모292 |
 | 생성295 · 차단5 · 잘못된 인용2 | — | `590aadf:project-docs/RAG파일럿/window384-run-v1/evaluation/final_summary.json` |
-| 저장 모드·실제 연결 경계 | 33–36과 별도 | `demo-ui/spatial-poc/integrated_server.py`, `l1_server.py`, `detector_bridge.py`, `팀원배포/dashboard-integration-v1/README.md` |
+| 저장 모드·실제 연결 경계 | 33–36과 별도 | `c275de6:demo-ui/spatial-poc/integrated_server.py`, `l1_server.py`, `detector_bridge.py`, `c275de6:팀원배포/dashboard-integration-v1/README.md` |
 
 ## 수치 해석
 
